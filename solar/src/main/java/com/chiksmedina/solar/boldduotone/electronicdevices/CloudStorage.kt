@@ -1,0 +1,79 @@
+package com.chiksmedina.solar.boldduotone.electronicdevices
+
+import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
+import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
+import androidx.compose.ui.graphics.SolidColor
+import androidx.compose.ui.graphics.StrokeCap
+import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
+import androidx.compose.ui.graphics.StrokeJoin
+import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
+import androidx.compose.ui.graphics.vector.ImageVector
+import androidx.compose.ui.graphics.vector.ImageVector.Builder
+import androidx.compose.ui.graphics.vector.path
+import androidx.compose.ui.unit.dp
+import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
+
+public val ElectronicDevicesGroup.CloudStorage: ImageVector
+    get() {
+        if (_cloudStorage != null) {
+            return _cloudStorage!!
+        }
+        _cloudStorage = Builder(name = "CloudStorage", defaultWidth = 24.0.dp, defaultHeight =
+                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = EvenOdd) {
+                moveTo(8.9393f, 14.4393f)
+                curveTo(8.5f, 14.8787f, 8.5f, 15.5858f, 8.5f, 17.0f)
+                verticalLineTo(19.0f)
+                curveTo(8.5f, 20.4142f, 8.5f, 21.1213f, 8.9393f, 21.5607f)
+                curveTo(9.3787f, 22.0f, 10.0858f, 22.0f, 11.5f, 22.0f)
+                horizontalLineTo(12.5f)
+                curveTo(13.9142f, 22.0f, 14.6213f, 22.0f, 15.0607f, 21.5607f)
+                curveTo(15.5f, 21.1213f, 15.5f, 20.4142f, 15.5f, 19.0f)
+                verticalLineTo(17.0f)
+                curveTo(15.5f, 15.5858f, 15.5f, 14.8787f, 15.0607f, 14.4393f)
+                curveTo(14.6213f, 14.0f, 13.9142f, 14.0f, 12.5f, 14.0f)
+                horizontalLineTo(11.5f)
+                curveTo(10.0858f, 14.0f, 9.3787f, 14.0f, 8.9393f, 14.4393f)
+                close()
+                moveTo(10.25f, 18.0f)
+                curveTo(10.25f, 17.5858f, 10.5858f, 17.25f, 11.0f, 17.25f)
+                horizontalLineTo(13.0f)
+                curveTo(13.4142f, 17.25f, 13.75f, 17.5858f, 13.75f, 18.0f)
+                curveTo(13.75f, 18.4142f, 13.4142f, 18.75f, 13.0f, 18.75f)
+                horizontalLineTo(11.0f)
+                curveTo(10.5858f, 18.75f, 10.25f, 18.4142f, 10.25f, 18.0f)
+                close()
+            }
+            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+                moveTo(22.0f, 12.3529f)
+                curveTo(22.0f, 15.2327f, 19.8188f, 17.6089f, 17.0f, 17.9563f)
+                lineTo(15.5f, 17.9629f)
+                verticalLineTo(17.0f)
+                curveTo(15.5f, 15.5858f, 15.5f, 14.8787f, 15.0607f, 14.4393f)
+                curveTo(14.6213f, 14.0f, 13.9142f, 14.0f, 12.5f, 14.0f)
+                horizontalLineTo(11.5f)
+                curveTo(10.0858f, 14.0f, 9.3787f, 14.0f, 8.9393f, 14.4393f)
+                curveTo(8.5f, 14.8787f, 8.5f, 15.5858f, 8.5f, 17.0f)
+                verticalLineTo(17.9934f)
+                lineTo(7.0f, 18.0f)
+                horizontalLineTo(6.2857f)
+                curveTo(3.9188f, 18.0f, 2.0f, 16.1038f, 2.0f, 13.7647f)
+                curveTo(2.0f, 11.4256f, 3.9188f, 9.5294f, 6.2857f, 9.5294f)
+                curveTo(6.5698f, 9.5294f, 6.8475f, 9.5567f, 7.1162f, 9.6089f)
+                curveTo(6.8871f, 8.9978f, 6.7619f, 8.3369f, 6.7619f, 7.6471f)
+                curveTo(6.7619f, 4.5283f, 9.3203f, 2.0f, 12.4762f, 2.0f)
+                curveTo(15.4159f, 2.0f, 17.8371f, 4.1937f, 18.1551f, 7.015f)
+                curveTo(20.393f, 7.7802f, 22.0f, 9.8811f, 22.0f, 12.3529f)
+                close()
+            }
+        }
+        .build()
+        return _cloudStorage!!
+    }
+
+private var _cloudStorage: ImageVector? = null
