@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.TextFormattingGroup
 
-public val TextFormattingGroup.LinkRound: ImageVector
+val TextFormattingGroup.LinkRound: ImageVector
     get() {
         if (_linkRound != null) {
             return _linkRound!!
         }
-        _linkRound = Builder(name = "LinkRound", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _linkRound = Builder(
+            name = "LinkRound", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 15.0f)
                 horizontalLineTo(12.0f)
                 curveTo(15.3137f, 15.0f, 18.0f, 12.3137f, 18.0f, 9.0f)
@@ -37,7 +41,7 @@ public val TextFormattingGroup.LinkRound: ImageVector
                 curveTo(22.0f, 13.4633f, 21.4223f, 12.0615f, 20.4722f, 11.0f)
             }
         }
-        .build()
+            .build()
         return _linkRound!!
     }
 

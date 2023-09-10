@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.BoltCircle: ImageVector
+val EssentionalUiGroup.BoltCircle: ImageVector
     get() {
         if (_boltCircle != null) {
             return _boltCircle!!
         }
-        _boltCircle = Builder(name = "BoltCircle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _boltCircle = Builder(
+            name = "BoltCircle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.3567f, 6.7917f)
                 curveTo(12.7267f, 6.5686f, 13.3708f, 6.2467f, 13.9885f, 6.6333f)
                 curveTo(14.621f, 7.0291f, 14.5877f, 7.7606f, 14.5333f, 8.1838f)
@@ -95,9 +96,11 @@ public val EssentionalUiGroup.BoltCircle: ImageVector
                 lineTo(11.6948f, 9.1555f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 1.25f)
                 curveTo(6.0629f, 1.25f, 1.25f, 6.0629f, 1.25f, 12.0f)
                 curveTo(1.25f, 17.9371f, 6.0629f, 22.75f, 12.0f, 22.75f)
@@ -112,7 +115,7 @@ public val EssentionalUiGroup.BoltCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _boltCircle!!
     }
 

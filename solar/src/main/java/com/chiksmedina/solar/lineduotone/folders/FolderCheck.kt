@@ -1,7 +1,6 @@
 package com.chiksmedina.solar.lineduotone.folders
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
@@ -14,16 +13,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.FoldersGroup
 
-public val FoldersGroup.FolderCheck: ImageVector
+val FoldersGroup.FolderCheck: ImageVector
     get() {
         if (_folderCheck != null) {
             return _folderCheck!!
         }
-        _folderCheck = Builder(name = "FolderCheck", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _folderCheck = Builder(
+            name = "FolderCheck", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 6.9497f)
                 curveTo(2.0f, 6.0672f, 2.0f, 5.6259f, 2.0694f, 5.2584f)
                 curveTo(2.3746f, 3.6403f, 3.6403f, 2.3746f, 5.2584f, 2.0694f)
@@ -48,16 +51,18 @@ public val FoldersGroup.FolderCheck: ImageVector
                 verticalLineTo(6.9497f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Round, strokeLineJoin = StrokeJoin.Companion.Round, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Round, strokeLineJoin = StrokeJoin.Companion.Round, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 13.5f)
                 lineTo(11.3333f, 15.0f)
                 lineTo(14.0f, 12.0f)
             }
         }
-        .build()
+            .build()
         return _folderCheck!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.DesignToolsGroup
 
-public val DesignToolsGroup.PaintRoller: ImageVector
+val DesignToolsGroup.PaintRoller: ImageVector
     get() {
         if (_paintRoller != null) {
             return _paintRoller!!
         }
-        _paintRoller = Builder(name = "PaintRoller", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _paintRoller = Builder(
+            name = "PaintRoller", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.0f, 4.5f)
                 curveTo(6.0f, 3.5654f, 6.0f, 3.0981f, 6.201f, 2.75f)
                 curveTo(6.3326f, 2.522f, 6.522f, 2.3326f, 6.75f, 2.201f)
@@ -41,9 +42,11 @@ public val DesignToolsGroup.PaintRoller: ImageVector
                 curveTo(6.0f, 5.9019f, 6.0f, 5.4346f, 6.0f, 4.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.0021f, 3.939f)
                 curveTo(4.8475f, 4.0764f, 4.75f, 4.2767f, 4.75f, 4.4999f)
                 curveTo(4.75f, 4.7231f, 4.8475f, 4.9234f, 5.0021f, 5.0608f)
@@ -52,9 +55,11 @@ public val DesignToolsGroup.PaintRoller: ImageVector
                 curveTo(5.0f, 4.2779f, 5.0f, 4.1037f, 5.0021f, 3.939f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 16.0f)
                 verticalLineTo(20.0f)
                 curveTo(10.0f, 20.9428f, 10.0f, 21.4142f, 10.2929f, 21.7071f)
@@ -68,9 +73,11 @@ public val DesignToolsGroup.PaintRoller: ImageVector
                 curveTo(10.0f, 14.5858f, 10.0f, 15.0572f, 10.0f, 16.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.9941f, 5.25f)
                 horizontalLineTo(19.045f)
                 curveTo(19.4997f, 5.25f, 19.8048f, 5.2504f, 20.0413f, 5.2658f)
@@ -108,7 +115,7 @@ public val DesignToolsGroup.PaintRoller: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _paintRoller!!
     }
 

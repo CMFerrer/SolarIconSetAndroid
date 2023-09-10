@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Laptop: ImageVector
+val ElectronicDevicesGroup.Laptop: ImageVector
     get() {
         if (_laptop != null) {
             return _laptop!!
         }
-        _laptop = Builder(name = "Laptop", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _laptop = Builder(
+            name = "Laptop", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.3911f, 16.3358f)
                 curveTo(21.4356f, 16.3818f, 21.4579f, 16.4048f, 21.4787f, 16.4276f)
                 curveTo(21.7998f, 16.7802f, 21.9843f, 17.2358f, 21.999f, 17.7124f)
@@ -51,9 +52,11 @@ public val ElectronicDevicesGroup.Laptop: ImageVector
                 curveTo(9.0858f, 18.75f, 8.75f, 18.4142f, 8.75f, 18.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.3529f, 7.0f)
                 curveTo(4.3529f, 5.1144f, 4.3529f, 4.1716f, 4.9387f, 3.5858f)
                 curveTo(5.5245f, 3.0f, 6.4673f, 3.0f, 8.3529f, 3.0f)
@@ -72,7 +75,7 @@ public val ElectronicDevicesGroup.Laptop: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _laptop!!
     }
 

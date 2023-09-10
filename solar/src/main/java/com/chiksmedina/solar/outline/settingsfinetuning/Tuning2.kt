@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.settingsfinetuning
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SettingsFineTuningGroup
 
-public val SettingsFineTuningGroup.Tuning2: ImageVector
+val SettingsFineTuningGroup.Tuning2: ImageVector
     get() {
         if (_tuning2 != null) {
             return _tuning2!!
         }
-        _tuning2 = Builder(name = "Tuning2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _tuning2 = Builder(
+            name = "Tuning2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.25f, 7.0f)
                 curveTo(18.25f, 9.0711f, 16.5711f, 10.75f, 14.5f, 10.75f)
                 curveTo(12.4289f, 10.75f, 10.75f, 9.0711f, 10.75f, 7.0f)
@@ -38,9 +39,11 @@ public val SettingsFineTuningGroup.Tuning2: ImageVector
                 curveTo(12.25f, 8.2426f, 13.2574f, 9.25f, 14.5f, 9.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.75f, 17.0f)
                 curveTo(5.75f, 19.0711f, 7.4289f, 20.75f, 9.5f, 20.75f)
                 curveTo(11.5711f, 20.75f, 13.25f, 19.0711f, 13.25f, 17.0f)
@@ -54,9 +57,11 @@ public val SettingsFineTuningGroup.Tuning2: ImageVector
                 curveTo(11.75f, 18.2426f, 10.7426f, 19.25f, 9.5f, 19.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.25f, 16.9585f)
                 curveTo(14.25f, 16.5443f, 14.5858f, 16.2085f, 15.0f, 16.2085f)
                 horizontalLineTo(22.0f)
@@ -66,9 +71,11 @@ public val SettingsFineTuningGroup.Tuning2: ImageVector
                 curveTo(14.5858f, 17.7085f, 14.25f, 17.3727f, 14.25f, 16.9585f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.0f, 6.2085f)
                 curveTo(9.4142f, 6.2085f, 9.75f, 6.5443f, 9.75f, 6.9585f)
                 curveTo(9.75f, 7.3727f, 9.4142f, 7.7085f, 9.0f, 7.7085f)
@@ -78,9 +85,11 @@ public val SettingsFineTuningGroup.Tuning2: ImageVector
                 lineTo(9.0f, 6.2085f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(1.25f, 16.9585f)
                 curveTo(1.25f, 16.5443f, 1.5858f, 16.2085f, 2.0f, 16.2085f)
                 horizontalLineTo(4.0f)
@@ -90,9 +99,11 @@ public val SettingsFineTuningGroup.Tuning2: ImageVector
                 curveTo(1.5858f, 17.7085f, 1.25f, 17.3727f, 1.25f, 16.9585f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 6.2085f)
                 curveTo(22.4142f, 6.2085f, 22.75f, 6.5443f, 22.75f, 6.9585f)
                 curveTo(22.75f, 7.3727f, 22.4142f, 7.7085f, 22.0f, 7.7085f)
@@ -103,7 +114,7 @@ public val SettingsFineTuningGroup.Tuning2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _tuning2!!
     }
 

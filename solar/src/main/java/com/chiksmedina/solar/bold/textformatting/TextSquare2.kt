@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.textformatting
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TextFormattingGroup
 
-public val TextFormattingGroup.TextSquare2: ImageVector
+val TextFormattingGroup.TextSquare2: ImageVector
     get() {
         if (_textSquare2 != null) {
             return _textSquare2!!
         }
-        _textSquare2 = Builder(name = "TextSquare2", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _textSquare2 = Builder(
+            name = "TextSquare2", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.4672f, 2.0002f)
                 curveTo(14.4105f, 1.9989f, 14.3551f, 2.0039f, 14.3018f, 2.0146f)
                 curveTo(13.5511f, 2.0f, 12.7218f, 2.0f, 11.8069f, 2.0f)
@@ -83,9 +84,11 @@ public val TextFormattingGroup.TextSquare2: ImageVector
                 horizontalLineTo(7.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.0f, 11.75f)
                 curveTo(19.0f, 11.3358f, 19.3358f, 11.0f, 19.75f, 11.0f)
                 horizontalLineTo(21.75f)
@@ -95,9 +98,11 @@ public val TextFormattingGroup.TextSquare2: ImageVector
                 curveTo(19.3358f, 12.5f, 19.0f, 12.1642f, 19.0f, 11.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(1.75f, 11.0f)
                 curveTo(1.3358f, 11.0f, 1.0f, 11.3358f, 1.0f, 11.75f)
                 curveTo(1.0f, 12.1642f, 1.3358f, 12.5f, 1.75f, 12.5f)
@@ -108,7 +113,7 @@ public val TextFormattingGroup.TextSquare2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _textSquare2!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Hanger2: ImageVector
+val EssentionalUiGroup.Hanger2: ImageVector
     get() {
         if (_hanger2 != null) {
             return _hanger2!!
         }
-        _hanger2 = Builder(name = "Hanger2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _hanger2 = Builder(
+            name = "Hanger2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.2859f, 3.9091f)
                 curveTo(10.2859f, 3.3422f, 10.8238f, 2.75f, 11.6599f, 2.75f)
                 curveTo(12.496f, 2.75f, 13.0339f, 3.3422f, 13.0339f, 3.9091f)
@@ -103,7 +107,7 @@ public val EssentionalUiGroup.Hanger2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hanger2!!
     }
 

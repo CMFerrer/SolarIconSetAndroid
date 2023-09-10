@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MapLocationGroup
 
-public val MapLocationGroup.MapPointWave: ImageVector
+val MapLocationGroup.MapPointWave: ImageVector
     get() {
         if (_mapPointWave != null) {
             return _mapPointWave!!
         }
-        _mapPointWave = Builder(name = "MapPointWave", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _mapPointWave = Builder(
+            name = "MapPointWave", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 22.0003f)
                 curveTo(17.5228f, 22.0003f, 22.0f, 19.9856f, 22.0f, 17.5003f)
                 curveTo(22.0f, 16.2337f, 20.837f, 15.0892f, 18.9654f, 14.2715f)
@@ -34,9 +36,11 @@ public val MapLocationGroup.MapPointWave: ImageVector
                 curveTo(2.0f, 19.9856f, 6.4771f, 22.0003f, 12.0f, 22.0003f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.0f, 8.5146f)
                 curveTo(5.0f, 4.9167f, 8.134f, 2.0f, 12.0f, 2.0f)
                 curveTo(15.866f, 2.0f, 19.0f, 4.9167f, 19.0f, 8.5146f)
@@ -52,7 +56,7 @@ public val MapLocationGroup.MapPointWave: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _mapPointWave!!
     }
 

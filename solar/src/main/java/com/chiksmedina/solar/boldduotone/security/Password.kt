@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.security
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SecurityGroup
 
-public val SecurityGroup.Password: ImageVector
+val SecurityGroup.Password: ImageVector
     get() {
         if (_password != null) {
             return _password!!
         }
-        _password = Builder(name = "Password", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _password = Builder(
+            name = "Password", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 12.0f)
                 curveTo(2.0f, 8.2288f, 2.0f, 6.3432f, 3.1716f, 5.1716f)
                 curveTo(4.3432f, 4.0f, 6.2288f, 4.0f, 10.0f, 4.0f)
@@ -37,9 +38,11 @@ public val SecurityGroup.Password: ImageVector
                 curveTo(2.0f, 17.6569f, 2.0f, 15.7712f, 2.0f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.7504f, 10.0f)
                 curveTo(12.7504f, 9.5858f, 12.4146f, 9.25f, 12.0004f, 9.25f)
                 curveTo(11.5861f, 9.25f, 11.2504f, 9.5858f, 11.2504f, 10.0f)
@@ -67,9 +70,11 @@ public val SecurityGroup.Password: ImageVector
                 verticalLineTo(10.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.7328f, 9.25f)
                 curveTo(7.147f, 9.25f, 7.4828f, 9.5858f, 7.4828f, 10.0f)
                 verticalLineTo(10.7006f)
@@ -97,9 +102,11 @@ public val SecurityGroup.Password: ImageVector
                 curveTo(5.9828f, 9.5858f, 6.3186f, 9.25f, 6.7328f, 9.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.0182f, 10.0f)
                 curveTo(18.0182f, 9.5858f, 17.6824f, 9.25f, 17.2682f, 9.25f)
                 curveTo(16.854f, 9.25f, 16.5182f, 9.5858f, 16.5182f, 10.0f)
@@ -128,7 +135,7 @@ public val SecurityGroup.Password: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _password!!
     }
 

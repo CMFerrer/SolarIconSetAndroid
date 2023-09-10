@@ -1,10 +1,8 @@
 package com.chiksmedina.solar.linear.files
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
 import androidx.compose.ui.graphics.StrokeJoin
@@ -15,16 +13,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.FilesGroup
 
-public val FilesGroup.FileCheck: ImageVector
+val FilesGroup.FileCheck: ImageVector
     get() {
         if (_fileCheck != null) {
             return _fileCheck!!
         }
-        _fileCheck = Builder(name = "FileCheck", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _fileCheck = Builder(
+            name = "FileCheck", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.3929f, 4.0536f)
                 lineTo(14.8912f, 4.6111f)
                 lineTo(14.8912f, 4.6111f)
@@ -147,24 +149,28 @@ public val FilesGroup.FileCheck: ImageVector
                 verticalLineTo(1.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.0f, 2.5f)
                 verticalLineTo(5.0f)
                 curveTo(13.0f, 7.357f, 13.0f, 8.5355f, 13.7322f, 9.2678f)
                 curveTo(14.4645f, 10.0f, 15.643f, 10.0f, 18.0f, 10.0f)
                 horizontalLineTo(22.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.0f, 16.5f)
                 lineTo(7.3333f, 18.0f)
                 lineTo(10.0f, 15.0f)
             }
         }
-        .build()
+            .build()
         return _fileCheck!!
     }
 

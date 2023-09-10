@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.textformatting
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TextFormattingGroup
 
-public val TextFormattingGroup.Link: ImageVector
+val TextFormattingGroup.Link: ImageVector
     get() {
         if (_link != null) {
             return _link!!
         }
-        _link = Builder(name = "Link", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _link = Builder(
+            name = "Link", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.7284f, 3.8841f)
                 curveTo(17.1627f, 2.4442f, 19.2608f, 2.414f, 20.4223f, 3.5799f)
                 curveTo(21.5859f, 4.7481f, 21.5546f, 6.8593f, 20.1193f, 8.3002f)
@@ -41,9 +42,11 @@ public val TextFormattingGroup.Link: ImageVector
                 lineTo(15.7284f, 3.8841f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.485f, 9.4709f)
                 curveTo(14.1926f, 9.1774f, 13.7178f, 9.1765f, 13.4243f, 9.4688f)
                 curveTo(13.1309f, 9.7611f, 13.1299f, 10.236f, 13.4223f, 10.5295f)
@@ -62,7 +65,7 @@ public val TextFormattingGroup.Link: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _link!!
     }
 

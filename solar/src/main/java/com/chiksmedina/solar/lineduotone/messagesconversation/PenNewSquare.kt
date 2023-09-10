@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.lineduotone.messagesconversation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.MessagesConversationGroup
 
-public val MessagesConversationGroup.PenNewSquare: ImageVector
+val MessagesConversationGroup.PenNewSquare: ImageVector
     get() {
         if (_penNewSquare != null) {
             return _penNewSquare!!
         }
-        _penNewSquare = Builder(name = "PenNewSquare", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _penNewSquare = Builder(
+            name = "PenNewSquare", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 10.5f)
                 verticalLineTo(12.0f)
                 curveTo(22.0f, 16.714f, 22.0f, 19.0711f, 20.5355f, 20.5355f)
@@ -35,9 +36,11 @@ public val MessagesConversationGroup.PenNewSquare: ImageVector
                 curveTo(4.9289f, 2.0f, 7.286f, 2.0f, 12.0f, 2.0f)
                 horizontalLineTo(13.5f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.3009f, 2.8062f)
                 lineTo(16.652f, 3.4551f)
                 lineTo(10.6872f, 9.4199f)
@@ -59,9 +62,11 @@ public val MessagesConversationGroup.PenNewSquare: ImageVector
                 curveTo(20.1188f, 1.7313f, 18.3759f, 1.7313f, 17.3009f, 2.8062f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(16.6522f, 3.4551f)
                 curveTo(16.6522f, 3.4551f, 16.7333f, 4.8338f, 17.9499f, 6.0503f)
                 curveTo(19.1664f, 7.2669f, 20.5451f, 7.348f, 20.5451f, 7.348f)
@@ -69,7 +74,7 @@ public val MessagesConversationGroup.PenNewSquare: ImageVector
                 lineTo(8.4126f, 13.9f)
             }
         }
-        .build()
+            .build()
         return _penNewSquare!!
     }
 

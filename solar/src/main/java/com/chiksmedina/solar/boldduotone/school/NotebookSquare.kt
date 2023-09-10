@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.school
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SchoolGroup
 
-public val SchoolGroup.NotebookSquare: ImageVector
+val SchoolGroup.NotebookSquare: ImageVector
     get() {
         if (_notebookSquare != null) {
             return _notebookSquare!!
         }
-        _notebookSquare = Builder(name = "NotebookSquare", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _notebookSquare = Builder(
+            name = "NotebookSquare", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 9.0f)
                 curveTo(2.0f, 5.2288f, 2.0f, 3.3431f, 3.1716f, 2.1716f)
                 curveTo(4.3432f, 1.0f, 6.2288f, 1.0f, 10.0f, 1.0f)
@@ -39,9 +40,11 @@ public val SchoolGroup.NotebookSquare: ImageVector
                 verticalLineTo(9.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.0f, 12.9108f)
                 verticalLineTo(7.4965f)
                 curveTo(6.0f, 6.6725f, 6.6654f, 6.0007f, 7.4872f, 6.0609f)
@@ -55,9 +58,11 @@ public val SchoolGroup.NotebookSquare: ImageVector
                 curveTo(6.6793f, 14.4151f, 6.0f, 13.7437f, 6.0f, 12.9108f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.5f, 15.7262f)
                 curveTo(12.5025f, 15.7249f, 12.505f, 15.7236f, 12.5074f, 15.7223f)
                 curveTo(13.1174f, 15.4009f, 14.1634f, 14.8896f, 15.0f, 14.6852f)
@@ -72,7 +77,7 @@ public val SchoolGroup.NotebookSquare: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _notebookSquare!!
     }
 

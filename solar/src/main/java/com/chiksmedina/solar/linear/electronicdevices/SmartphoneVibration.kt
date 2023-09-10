@@ -1,10 +1,8 @@
 package com.chiksmedina.solar.linear.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
 import androidx.compose.ui.graphics.StrokeJoin
@@ -15,16 +13,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
+val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
     get() {
         if (_smartphoneVibration != null) {
             return _smartphoneVibration!!
         }
-        _smartphoneVibration = Builder(name = "SmartphoneVibration", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _smartphoneVibration = Builder(
+            name = "SmartphoneVibration", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 8.0f)
                 curveTo(5.0f, 5.1716f, 5.0f, 3.7574f, 5.8787f, 2.8787f)
                 curveTo(6.7574f, 2.0f, 8.1716f, 2.0f, 11.0f, 2.0f)
@@ -40,15 +42,19 @@ public val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
                 verticalLineTo(8.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.5f, 19.0f)
                 horizontalLineTo(9.5f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 6.0f)
                 lineTo(21.2236f, 7.5528f)
                 curveTo(21.0829f, 7.8343f, 21.0829f, 8.1657f, 21.2236f, 8.4472f)
@@ -62,9 +68,11 @@ public val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
                 curveTo(21.0829f, 15.8343f, 21.0829f, 16.1657f, 21.2236f, 16.4472f)
                 lineTo(22.0f, 18.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 6.0f)
                 lineTo(2.7764f, 7.5528f)
                 curveTo(2.9172f, 7.8343f, 2.9172f, 8.1657f, 2.7764f, 8.4472f)
@@ -79,7 +87,7 @@ public val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
                 lineTo(2.0f, 18.0f)
             }
         }
-        .build()
+            .build()
         return _smartphoneVibration!!
     }
 

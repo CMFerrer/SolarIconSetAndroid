@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.time
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TimeGroup
 
-public val TimeGroup.WatchSquareMinimalistic: ImageVector
+val TimeGroup.WatchSquareMinimalistic: ImageVector
     get() {
         if (_watchSquareMinimalistic != null) {
             return _watchSquareMinimalistic!!
         }
-        _watchSquareMinimalistic = Builder(name = "WatchSquareMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _watchSquareMinimalistic = Builder(
+            name = "WatchSquareMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.6741f, 6.7777f)
                 curveTo(5.0f, 7.7866f, 5.0f, 9.1911f, 5.0f, 12.0f)
                 curveTo(5.0f, 14.8089f, 5.0f, 16.2134f, 5.6741f, 17.2223f)
@@ -50,9 +51,11 @@ public val TimeGroup.WatchSquareMinimalistic: ImageVector
                 curveTo(11.25f, 8.5858f, 11.5858f, 8.25f, 12.0f, 8.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.25f, 2.0f)
                 curveTo(6.25f, 1.5858f, 6.5858f, 1.25f, 7.0f, 1.25f)
                 horizontalLineTo(17.0f)
@@ -71,7 +74,7 @@ public val TimeGroup.WatchSquareMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _watchSquareMinimalistic!!
     }
 

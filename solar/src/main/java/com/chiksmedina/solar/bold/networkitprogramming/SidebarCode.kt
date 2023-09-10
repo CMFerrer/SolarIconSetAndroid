@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.SidebarCode: ImageVector
+val NetworkItProgrammingGroup.SidebarCode: ImageVector
     get() {
         if (_sidebarCode != null) {
             return _sidebarCode!!
         }
-        _sidebarCode = Builder(name = "SidebarCode", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sidebarCode = Builder(
+            name = "SidebarCode", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 11.0f)
                 curveTo(2.0f, 7.2288f, 2.0f, 5.3432f, 3.1716f, 4.1716f)
                 curveTo(4.3432f, 3.0f, 6.2288f, 3.0f, 10.0f, 3.0f)
@@ -73,7 +77,7 @@ public val NetworkItProgrammingGroup.SidebarCode: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sidebarCode!!
     }
 

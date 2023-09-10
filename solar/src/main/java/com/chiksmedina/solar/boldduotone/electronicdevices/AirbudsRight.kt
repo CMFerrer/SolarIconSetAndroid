@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,25 +12,31 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.AirbudsRight: ImageVector
+val ElectronicDevicesGroup.AirbudsRight: ImageVector
     get() {
         if (_airbudsRight != null) {
             return _airbudsRight!!
         }
-        _airbudsRight = Builder(name = "AirbudsRight", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _airbudsRight = Builder(
+            name = "AirbudsRight", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.6176f, 22.0f)
                 curveTo(20.9334f, 22.0f, 22.0f, 20.8807f, 22.0f, 19.5f)
                 horizontalLineTo(17.2353f)
                 curveTo(17.2353f, 20.8807f, 18.3019f, 22.0f, 19.6176f, 22.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.0f, 7.8889f)
                 verticalLineTo(5.5417f)
                 curveTo(13.0f, 5.3483f, 13.0f, 5.2515f, 13.0038f, 5.1698f)
@@ -57,9 +60,11 @@ public val ElectronicDevicesGroup.AirbudsRight: ImageVector
                 verticalLineTo(5.125f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.0f, 16.4995f)
                 curveTo(13.0f, 19.5371f, 10.5376f, 21.9995f, 7.5f, 21.9995f)
                 curveTo(4.4624f, 21.9995f, 2.0f, 19.5371f, 2.0f, 16.4995f)
@@ -67,9 +72,11 @@ public val ElectronicDevicesGroup.AirbudsRight: ImageVector
                 curveTo(10.5376f, 10.9995f, 13.0f, 13.4619f, 13.0f, 16.4995f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(10.7347f, 4.9506f)
                 curveTo(10.8171f, 5.3565f, 10.5549f, 5.7524f, 10.1489f, 5.8348f)
                 curveTo(8.485f, 6.1725f, 7.1725f, 7.485f, 6.8348f, 9.1489f)
@@ -79,9 +86,11 @@ public val ElectronicDevicesGroup.AirbudsRight: ImageVector
                 curveTo(10.2565f, 4.2824f, 10.6523f, 4.5446f, 10.7347f, 4.9506f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.0f, 13.25f)
                 curveTo(5.5858f, 13.25f, 5.25f, 13.5858f, 5.25f, 14.0f)
                 verticalLineTo(19.0f)
@@ -106,7 +115,7 @@ public val ElectronicDevicesGroup.AirbudsRight: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _airbudsRight!!
     }
 

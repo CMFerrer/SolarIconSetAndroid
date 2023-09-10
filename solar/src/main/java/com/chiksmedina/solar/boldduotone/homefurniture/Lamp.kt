@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.homefurniture
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Lamp: ImageVector
+val HomeFurnitureGroup.Lamp: ImageVector
     get() {
         if (_lamp != null) {
             return _lamp!!
         }
-        _lamp = Builder(name = "Lamp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _lamp = Builder(
+            name = "Lamp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.968f, 7.4445f)
                 curveTo(5.5769f, 5.0991f, 5.8814f, 3.9264f, 6.6675f, 3.1514f)
                 curveTo(6.8954f, 2.9268f, 7.1494f, 2.7303f, 7.4241f, 2.5662f)
@@ -47,9 +48,11 @@ public val HomeFurnitureGroup.Lamp: ImageVector
                 lineTo(4.968f, 7.4445f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(16.7586f, 14.9351f)
                 curveTo(16.7568f, 14.9565f, 16.7559f, 14.9781f, 16.7559f, 15.0f)
                 verticalLineTo(17.0f)
@@ -60,9 +63,11 @@ public val HomeFurnitureGroup.Lamp: ImageVector
                 curveTo(17.6605f, 14.827f, 17.0097f, 14.9112f, 16.7586f, 14.9351f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(11.2559f, 21.25f)
                 verticalLineTo(15.0f)
                 horizontalLineTo(12.7559f)
@@ -70,9 +75,11 @@ public val HomeFurnitureGroup.Lamp: ImageVector
                 horizontalLineTo(11.2559f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.2559f, 21.25f)
                 horizontalLineTo(9.0059f)
                 curveTo(8.5917f, 21.25f, 8.2559f, 21.5858f, 8.2559f, 22.0f)
@@ -85,7 +92,7 @@ public val HomeFurnitureGroup.Lamp: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _lamp!!
     }
 

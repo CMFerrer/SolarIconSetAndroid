@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.homefurniture
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,17 +12,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.RemoteControllerMinimalistic: ImageVector
+val HomeFurnitureGroup.RemoteControllerMinimalistic: ImageVector
     get() {
         if (_remoteControllerMinimalistic != null) {
             return _remoteControllerMinimalistic!!
         }
-        _remoteControllerMinimalistic = Builder(name = "RemoteControllerMinimalistic", defaultWidth
-                = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _remoteControllerMinimalistic = Builder(
+            name = "RemoteControllerMinimalistic", defaultWidth
+            = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9584f, 1.25f)
                 horizontalLineTo(12.0416f)
                 curveTo(13.4108f, 1.25f, 14.4957f, 1.25f, 15.3621f, 1.3381f)
@@ -89,9 +90,11 @@ public val HomeFurnitureGroup.RemoteControllerMinimalistic: ImageVector
                 curveTo(9.9289f, 14.75f, 8.25f, 13.0711f, 8.25f, 11.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.0f, 5.0f)
                 curveTo(13.0f, 5.5523f, 12.5523f, 6.0f, 12.0f, 6.0f)
                 curveTo(11.4477f, 6.0f, 11.0f, 5.5523f, 11.0f, 5.0f)
@@ -99,9 +102,11 @@ public val HomeFurnitureGroup.RemoteControllerMinimalistic: ImageVector
                 curveTo(12.5523f, 4.0f, 13.0f, 4.4477f, 13.0f, 5.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.0f, 17.0f)
                 curveTo(13.0f, 17.5523f, 12.5523f, 18.0f, 12.0f, 18.0f)
                 curveTo(11.4477f, 18.0f, 11.0f, 17.5523f, 11.0f, 17.0f)
@@ -110,7 +115,7 @@ public val HomeFurnitureGroup.RemoteControllerMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _remoteControllerMinimalistic!!
     }
 

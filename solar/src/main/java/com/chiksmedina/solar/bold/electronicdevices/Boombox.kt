@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Boombox: ImageVector
+val ElectronicDevicesGroup.Boombox: ImageVector
     get() {
         if (_boombox != null) {
             return _boombox!!
         }
-        _boombox = Builder(name = "Boombox", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _boombox = Builder(
+            name = "Boombox", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.75f, 16.0f)
                 curveTo(5.75f, 15.0203f, 6.3761f, 14.1869f, 7.25f, 13.878f)
                 verticalLineTo(15.0f)
@@ -36,9 +37,11 @@ public val ElectronicDevicesGroup.Boombox: ImageVector
                 curveTo(6.7574f, 18.25f, 5.75f, 17.2426f, 5.75f, 16.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.409f, 14.409f)
                 curveTo(15.1017f, 13.7163f, 16.1338f, 13.5697f, 16.9701f, 13.9692f)
                 lineTo(16.1768f, 14.7626f)
@@ -50,9 +53,11 @@ public val ElectronicDevicesGroup.Boombox: ImageVector
                 curveTo(13.5303f, 16.7123f, 13.5303f, 15.2877f, 14.409f, 14.409f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.052f, 1.25f)
                 horizontalLineTo(11.948f)
                 curveTo(11.0495f, 1.25f, 10.3003f, 1.25f, 9.7055f, 1.3299f)
@@ -110,7 +115,7 @@ public val ElectronicDevicesGroup.Boombox: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _boombox!!
     }
 

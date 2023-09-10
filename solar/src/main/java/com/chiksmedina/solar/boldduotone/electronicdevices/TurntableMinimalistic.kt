@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.TurntableMinimalistic: ImageVector
+val ElectronicDevicesGroup.TurntableMinimalistic: ImageVector
     get() {
         if (_turntableMinimalistic != null) {
             return _turntableMinimalistic!!
         }
-        _turntableMinimalistic = Builder(name = "TurntableMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
-                    = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _turntableMinimalistic = Builder(
+            name = "TurntableMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
+                = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 2.0f)
                 curveTo(13.7005f, 2.0f, 15.0943f, 2.0f, 16.2501f, 2.0687f)
                 lineTo(17.7501f, 2.2216f)
@@ -37,9 +38,11 @@ public val ElectronicDevicesGroup.TurntableMinimalistic: ImageVector
                 curveTo(4.9289f, 2.0f, 7.286f, 2.0f, 12.0f, 2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 6.25f)
                 curveTo(8.8244f, 6.25f, 6.25f, 8.8244f, 6.25f, 12.0f)
                 curveTo(6.25f, 15.1756f, 8.8244f, 17.75f, 12.0f, 17.75f)
@@ -55,9 +58,11 @@ public val ElectronicDevicesGroup.TurntableMinimalistic: ImageVector
                 curveTo(13.1793f, 6.3421f, 12.5997f, 6.25f, 12.0f, 6.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.75f, 12.0f)
                 curveTo(10.75f, 11.5858f, 10.4142f, 11.25f, 10.0f, 11.25f)
                 curveTo(9.5858f, 11.25f, 9.25f, 11.5858f, 9.25f, 12.0f)
@@ -67,9 +72,11 @@ public val ElectronicDevicesGroup.TurntableMinimalistic: ImageVector
                 curveTo(11.3096f, 13.25f, 10.75f, 12.6904f, 10.75f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.7501f, 7.9644f)
                 verticalLineTo(2.2213f)
                 lineTo(16.2501f, 2.0684f)
@@ -83,7 +90,7 @@ public val ElectronicDevicesGroup.TurntableMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _turntableMinimalistic!!
     }
 

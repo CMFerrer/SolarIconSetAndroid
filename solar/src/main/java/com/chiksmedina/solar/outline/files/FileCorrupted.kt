@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FilesGroup
 
-public val FilesGroup.FileCorrupted: ImageVector
+val FilesGroup.FileCorrupted: ImageVector
     get() {
         if (_fileCorrupted != null) {
             return _fileCorrupted!!
         }
-        _fileCorrupted = Builder(name = "FileCorrupted", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _fileCorrupted = Builder(
+            name = "FileCorrupted", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.25f, 2.8336f)
                 curveTo(11.7897f, 2.7559f, 11.1621f, 2.7501f, 10.0324f, 2.7501f)
                 curveTo(8.1151f, 2.7501f, 6.7523f, 2.7516f, 5.719f, 2.8899f)
@@ -131,7 +135,7 @@ public val FilesGroup.FileCorrupted: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _fileCorrupted!!
     }
 

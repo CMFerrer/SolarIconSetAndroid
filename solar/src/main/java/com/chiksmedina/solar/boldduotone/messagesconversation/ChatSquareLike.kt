@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.messagesconversation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MessagesConversationGroup
 
-public val MessagesConversationGroup.ChatSquareLike: ImageVector
+val MessagesConversationGroup.ChatSquareLike: ImageVector
     get() {
         if (_chatSquareLike != null) {
             return _chatSquareLike!!
         }
-        _chatSquareLike = Builder(name = "ChatSquareLike", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _chatSquareLike = Builder(
+            name = "ChatSquareLike", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.6288f, 20.4718f)
                 lineTo(13.0867f, 21.3877f)
                 curveTo(12.6035f, 22.204f, 11.3965f, 22.204f, 10.9133f, 21.3877f)
@@ -49,9 +50,11 @@ public val MessagesConversationGroup.ChatSquareLike: ImageVector
                 curveTo(14.2595f, 19.4062f, 14.0492f, 19.7614f, 13.6288f, 20.4718f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.9901f, 14.3082f)
                 curveTo(9.6633f, 13.3304f, 7.5f, 11.4674f, 7.5f, 9.7148f)
                 curveTo(7.5f, 7.0376f, 9.9751f, 6.0381f, 12.0f, 8.1061f)
@@ -62,7 +65,7 @@ public val MessagesConversationGroup.ChatSquareLike: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chatSquareLike!!
     }
 

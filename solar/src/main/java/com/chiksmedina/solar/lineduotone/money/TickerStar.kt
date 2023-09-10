@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.lineduotone.money
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.MoneyGroup
 
-public val MoneyGroup.TickerStar: ImageVector
+val MoneyGroup.TickerStar: ImageVector
     get() {
         if (_tickerStar != null) {
             return _tickerStar!!
         }
-        _tickerStar = Builder(name = "TickerStar", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _tickerStar = Builder(
+            name = "TickerStar", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.0037f, 4.0f)
                 horizontalLineTo(9.9963f)
                 curveTo(6.2181f, 4.0f, 4.329f, 4.0f, 3.1553f, 5.1716f)
@@ -45,9 +46,11 @@ public val MoneyGroup.TickerStar: ImageVector
                 curveTo(19.671f, 4.0f, 17.7819f, 4.0f, 14.0037f, 4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.1459f, 10.0225f)
                 curveTo(11.5259f, 9.3408f, 11.7159f, 9.0f, 12.0f, 9.0f)
                 curveTo(12.2841f, 9.0f, 12.4741f, 9.3408f, 12.8541f, 10.0225f)
@@ -82,7 +85,7 @@ public val MoneyGroup.TickerStar: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _tickerStar!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.LikeGroup
 
-public val LikeGroup.Hearts: ImageVector
+val LikeGroup.Hearts: ImageVector
     get() {
         if (_hearts != null) {
             return _hearts!!
         }
-        _hearts = Builder(name = "Hearts", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _hearts = Builder(
+            name = "Hearts", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 5.5009f)
                 lineTo(11.4596f, 6.021f)
                 curveTo(11.601f, 6.1679f, 11.7961f, 6.2509f, 12.0f, 6.2509f)
@@ -204,7 +208,7 @@ public val LikeGroup.Hearts: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hearts!!
     }
 

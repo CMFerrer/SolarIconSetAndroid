@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.AstronomyGroup
 
-public val AstronomyGroup.Satellite: ImageVector
+val AstronomyGroup.Satellite: ImageVector
     get() {
         if (_satellite != null) {
             return _satellite!!
         }
-        _satellite = Builder(name = "Satellite", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _satellite = Builder(
+            name = "Satellite", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(13.0861f, 5.0412f)
                 lineTo(2.3324f, 10.3592f)
                 curveTo(1.9611f, 10.5428f, 1.5113f, 10.3906f, 1.3276f, 10.0193f)
@@ -54,9 +55,11 @@ public val AstronomyGroup.Satellite: ImageVector
                 curveTo(13.1873f, 5.2444f, 13.1333f, 5.1392f, 13.0861f, 5.0412f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.8236f, 10.5271f)
                 lineTo(21.1314f, 9.9047f)
                 lineTo(20.1206f, 9.7599f)
@@ -74,9 +77,11 @@ public val AstronomyGroup.Satellite: ImageVector
                 curveTo(22.3842f, 5.4445f, 22.5022f, 8.4751f, 20.8236f, 10.5271f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.3144f, 12.2174f)
                 lineTo(18.9588f, 10.9142f)
                 curveTo(18.8608f, 10.867f, 18.7557f, 10.8131f, 18.6435f, 10.7516f)
@@ -85,9 +90,11 @@ public val AstronomyGroup.Satellite: ImageVector
                 curveTo(15.01f, 12.4284f, 16.7525f, 12.6972f, 18.3144f, 12.2174f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.5897f, 10.3504f)
                 lineTo(15.109f, 7.8311f)
                 curveTo(14.1564f, 6.8078f, 13.5879f, 5.9759f, 13.249f, 5.3572f)
@@ -97,7 +104,7 @@ public val AstronomyGroup.Satellite: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _satellite!!
     }
 

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MedicineGroup
 
-public val MedicineGroup.DropperMinimalistic2: ImageVector
+val MedicineGroup.DropperMinimalistic2: ImageVector
     get() {
         if (_dropperMinimalistic2 != null) {
             return _dropperMinimalistic2!!
         }
-        _dropperMinimalistic2 = Builder(name = "DropperMinimalistic2", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _dropperMinimalistic2 = Builder(
+            name = "DropperMinimalistic2", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.0f, 8.0f)
                 verticalLineTo(15.8831f)
                 curveTo(19.0f, 16.6438f, 18.6809f, 17.3697f, 18.1203f, 17.8841f)
@@ -57,9 +59,11 @@ public val MedicineGroup.DropperMinimalistic2: ImageVector
                 curveTo(9.5858f, 16.75f, 9.25f, 16.4142f, 9.25f, 16.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.7325f, 3.0f)
                 curveTo(13.3866f, 2.4022f, 12.7403f, 2.0f, 12.0f, 2.0f)
                 curveTo(11.2597f, 2.0f, 10.6134f, 2.4022f, 10.2676f, 3.0f)
@@ -67,7 +71,7 @@ public val MedicineGroup.DropperMinimalistic2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _dropperMinimalistic2!!
     }
 

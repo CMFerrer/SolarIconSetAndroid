@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.broken.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Muted: ImageVector
+val VideoAudioSoundGroup.Muted: ImageVector
     get() {
         if (_muted != null) {
             return _muted!!
         }
-        _muted = Builder(name = "Muted", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _muted = Builder(
+            name = "Muted", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(1.9586f, 8.5768f)
                 curveTo(2.2448f, 8.0456f, 2.7924f, 7.5304f, 3.34f, 7.2771f)
                 curveTo(3.9393f, 6.9998f, 4.6263f, 6.9998f, 6.0002f, 6.9998f)
@@ -48,16 +49,18 @@ public val VideoAudioSoundGroup.Muted: ImageVector
                 curveTo(1.6454f, 14.8414f, 1.6086f, 14.237f, 1.5349f, 13.0282f)
                 curveTo(1.524f, 12.849f, 1.5152f, 12.6722f, 1.5093f, 12.4998f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 10.0f)
                 lineTo(18.0f, 14.0f)
                 moveTo(18.0f, 10.0f)
                 lineTo(22.0f, 14.0f)
             }
         }
-        .build()
+            .build()
         return _muted!!
     }
 

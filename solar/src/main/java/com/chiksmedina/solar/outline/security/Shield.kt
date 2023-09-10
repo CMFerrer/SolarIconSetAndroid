@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SecurityGroup
 
-public val SecurityGroup.Shield: ImageVector
+val SecurityGroup.Shield: ImageVector
     get() {
         if (_shield != null) {
             return _shield!!
         }
-        _shield = Builder(name = "Shield", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _shield = Builder(
+            name = "Shield", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.7234f, 2.0511f)
                 curveTo(10.1673f, 1.5566f, 11.0625f, 1.25f, 12.0f, 1.25f)
                 curveTo(12.9375f, 1.25f, 13.8327f, 1.5566f, 15.2766f, 2.0511f)
@@ -95,7 +99,7 @@ public val SecurityGroup.Shield: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _shield!!
     }
 

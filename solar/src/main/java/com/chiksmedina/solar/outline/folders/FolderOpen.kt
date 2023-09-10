@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FoldersGroup
 
-public val FoldersGroup.FolderOpen: ImageVector
+val FoldersGroup.FolderOpen: ImageVector
     get() {
         if (_folderOpen != null) {
             return _folderOpen!!
         }
-        _folderOpen = Builder(name = "FolderOpen", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _folderOpen = Builder(
+            name = "FolderOpen", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.8788f, 1.25f)
                 curveTo(7.9054f, 1.25f, 7.9324f, 1.25f, 7.9598f, 1.25f)
                 curveTo(7.971f, 1.25f, 7.982f, 1.25f, 7.9929f, 1.25f)
@@ -125,7 +129,7 @@ public val FoldersGroup.FolderOpen: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _folderOpen!!
     }
 

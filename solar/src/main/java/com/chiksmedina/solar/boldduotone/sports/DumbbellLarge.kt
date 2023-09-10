@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SportsGroup
 
-public val SportsGroup.DumbbellLarge: ImageVector
+val SportsGroup.DumbbellLarge: ImageVector
     get() {
         if (_dumbbellLarge != null) {
             return _dumbbellLarge!!
         }
-        _dumbbellLarge = Builder(name = "DumbbellLarge", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _dumbbellLarge = Builder(
+            name = "DumbbellLarge", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.2915f, 15.3036f)
                 lineTo(8.6964f, 19.7085f)
                 lineTo(9.0634f, 20.0756f)
@@ -68,9 +69,11 @@ public val SportsGroup.DumbbellLarge: ImageVector
                 lineTo(16.0378f, 12.3671f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.6077f, 3.924f)
                 lineTo(20.076f, 5.3923f)
                 lineTo(20.2017f, 5.5181f)
@@ -83,9 +86,11 @@ public val SportsGroup.DumbbellLarge: ImageVector
                 curveTo(17.5695f, 2.8857f, 17.9156f, 3.2318f, 18.6077f, 3.924f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.3926f, 20.0756f)
                 lineTo(3.9244f, 18.6074f)
                 curveTo(3.2322f, 17.9152f, 2.8861f, 17.5691f, 2.8861f, 17.1391f)
@@ -97,9 +102,11 @@ public val SportsGroup.DumbbellLarge: ImageVector
                 curveTo(6.4309f, 21.1139f, 6.0848f, 20.7678f, 5.3926f, 20.0756f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(16.0376f, 12.3668f)
                 lineTo(12.3669f, 16.0375f)
                 lineTo(7.962f, 11.6326f)
@@ -108,7 +115,7 @@ public val SportsGroup.DumbbellLarge: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _dumbbellLarge!!
     }
 

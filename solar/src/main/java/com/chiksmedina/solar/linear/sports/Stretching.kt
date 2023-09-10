@@ -1,7 +1,6 @@
 package com.chiksmedina.solar.linear.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
@@ -14,24 +13,30 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.SportsGroup
 
-public val SportsGroup.Stretching: ImageVector
+val SportsGroup.Stretching: ImageVector
     get() {
         if (_stretching != null) {
             return _stretching!!
         }
-        _stretching = Builder(name = "Stretching", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _stretching = Builder(
+            name = "Stretching", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.5f, 4.5f)
                 moveToRelative(-2.5f, 0.0f)
                 arcToRelative(2.5f, 2.5f, 0.0f, true, true, 5.0f, 0.0f)
                 arcToRelative(2.5f, 2.5f, 0.0f, true, true, -5.0f, 0.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 21.9998f)
                 lineTo(8.8486f, 20.6269f)
                 curveTo(9.3044f, 20.4644f, 9.6858f, 20.142f, 9.922f, 19.7197f)
@@ -48,7 +53,7 @@ public val SportsGroup.Stretching: ImageVector
                 lineTo(15.6667f, 14.9581f)
             }
         }
-        .build()
+            .build()
         return _stretching!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.PinCircle: ImageVector
+val EssentionalUiGroup.PinCircle: ImageVector
     get() {
         if (_pinCircle != null) {
             return _pinCircle!!
         }
-        _pinCircle = Builder(name = "PinCircle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _pinCircle = Builder(
+            name = "PinCircle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.75f)
                 curveTo(6.8914f, 2.75f, 2.75f, 6.8914f, 2.75f, 12.0f)
                 curveTo(2.75f, 17.1086f, 6.8914f, 21.25f, 12.0f, 21.25f)
@@ -37,9 +38,11 @@ public val EssentionalUiGroup.PinCircle: ImageVector
                 curveTo(6.0629f, 22.75f, 1.25f, 17.9371f, 1.25f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.9849f, 7.4046f)
                 lineTo(16.6067f, 9.028f)
                 curveTo(17.0951f, 9.5169f, 17.5202f, 9.9424f, 17.7997f, 10.3196f)
@@ -123,7 +126,7 @@ public val EssentionalUiGroup.PinCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _pinCircle!!
     }
 

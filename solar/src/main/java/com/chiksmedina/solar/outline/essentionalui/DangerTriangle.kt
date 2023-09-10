@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.DangerTriangle: ImageVector
+val EssentionalUiGroup.DangerTriangle: ImageVector
     get() {
         if (_dangerTriangle != null) {
             return _dangerTriangle!!
         }
-        _dangerTriangle = Builder(name = "DangerTriangle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _dangerTriangle = Builder(
+            name = "DangerTriangle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 7.25f)
                 curveTo(12.4142f, 7.25f, 12.75f, 7.5858f, 12.75f, 8.0f)
                 verticalLineTo(13.0f)
@@ -34,9 +35,11 @@ public val EssentionalUiGroup.DangerTriangle: ImageVector
                 curveTo(11.25f, 7.5858f, 11.5858f, 7.25f, 12.0f, 7.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 17.0f)
                 curveTo(12.5523f, 17.0f, 13.0f, 16.5523f, 13.0f, 16.0f)
                 curveTo(13.0f, 15.4477f, 12.5523f, 15.0f, 12.0f, 15.0f)
@@ -44,9 +47,11 @@ public val EssentionalUiGroup.DangerTriangle: ImageVector
                 curveTo(11.0f, 16.5523f, 11.4477f, 17.0f, 12.0f, 17.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.2944f, 4.4764f)
                 curveTo(9.3663f, 3.1149f, 10.5018f, 2.25f, 12.0f, 2.25f)
                 curveTo(13.4981f, 2.25f, 14.6336f, 3.1149f, 15.7056f, 4.4764f)
@@ -83,7 +88,7 @@ public val EssentionalUiGroup.DangerTriangle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _dangerTriangle!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.arrows
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ArrowsGroup
 
-public val ArrowsGroup.SquareSortHorizontal: ImageVector
+val ArrowsGroup.SquareSortHorizontal: ImageVector
     get() {
         if (_squareSortHorizontal != null) {
             return _squareSortHorizontal!!
         }
-        _squareSortHorizontal = Builder(name = "SquareSortHorizontal", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _squareSortHorizontal = Builder(
+            name = "SquareSortHorizontal", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.5355f, 20.5355f)
                 curveTo(22.0f, 19.0711f, 22.0f, 16.714f, 22.0f, 12.0f)
                 curveTo(22.0f, 7.286f, 22.0f, 4.9289f, 20.5355f, 3.4645f)
@@ -35,9 +36,11 @@ public val ArrowsGroup.SquareSortHorizontal: ImageVector
                 curveTo(16.714f, 22.0f, 19.0711f, 22.0f, 20.5355f, 20.5355f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.2545f, 11.445f)
                 curveTo(11.561f, 11.7237f, 11.5836f, 12.198f, 11.305f, 12.5045f)
                 curveTo(11.0263f, 12.811f, 10.552f, 12.8336f, 10.2455f, 12.555f)
@@ -55,9 +58,11 @@ public val ArrowsGroup.SquareSortHorizontal: ImageVector
                 lineTo(11.2545f, 11.445f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.7455f, 16.4451f)
                 curveTo(12.439f, 16.7237f, 12.4164f, 17.198f, 12.695f, 17.5045f)
                 curveTo(12.9737f, 17.811f, 13.448f, 17.8336f, 13.7545f, 17.555f)
@@ -76,7 +81,7 @@ public val ArrowsGroup.SquareSortHorizontal: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _squareSortHorizontal!!
     }
 

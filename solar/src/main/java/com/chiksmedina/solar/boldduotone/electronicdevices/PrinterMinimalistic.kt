@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.PrinterMinimalistic: ImageVector
+val ElectronicDevicesGroup.PrinterMinimalistic: ImageVector
     get() {
         if (_printerMinimalistic != null) {
             return _printerMinimalistic!!
         }
-        _printerMinimalistic = Builder(name = "PrinterMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _printerMinimalistic = Builder(
+            name = "PrinterMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.1213f, 21.1213f)
                 curveTo(18.0f, 20.2426f, 18.0f, 18.8284f, 18.0f, 16.0f)
                 lineTo(18.0f, 12.6595f)
@@ -35,9 +36,11 @@ public val ElectronicDevicesGroup.PrinterMinimalistic: ImageVector
                 curveTo(14.8284f, 22.0f, 16.2426f, 22.0f, 17.1213f, 21.1213f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.1209f, 2.8787f)
                 curveTo(16.2422f, 2.0f, 14.828f, 2.0f, 11.9995f, 2.0f)
                 curveTo(9.1711f, 2.0f, 7.7569f, 2.0f, 6.8782f, 2.8787f)
@@ -48,9 +51,11 @@ public val ElectronicDevicesGroup.PrinterMinimalistic: ImageVector
                 curveTo(17.8297f, 4.0316f, 17.6132f, 3.371f, 17.1209f, 2.8787f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(16.0f, 6.0f)
                 horizontalLineTo(8.0f)
                 curveTo(5.1716f, 6.0f, 3.7574f, 6.0f, 2.8787f, 6.8787f)
@@ -76,7 +81,7 @@ public val ElectronicDevicesGroup.PrinterMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _printerMinimalistic!!
     }
 

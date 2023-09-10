@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.medicine
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MedicineGroup
 
-public val MedicineGroup.AdhesivePlaster2: ImageVector
+val MedicineGroup.AdhesivePlaster2: ImageVector
     get() {
         if (_adhesivePlaster2 != null) {
             return _adhesivePlaster2!!
         }
-        _adhesivePlaster2 = Builder(name = "AdhesivePlaster2", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _adhesivePlaster2 = Builder(
+            name = "AdhesivePlaster2", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.8786f, 11.2929f)
                 curveTo(10.2692f, 11.6834f, 10.2692f, 12.3166f, 9.8786f, 12.7071f)
                 curveTo(9.4881f, 13.0976f, 8.855f, 13.0976f, 8.4644f, 12.7071f)
@@ -32,9 +33,11 @@ public val MedicineGroup.AdhesivePlaster2: ImageVector
                 curveTo(8.855f, 10.9024f, 9.4881f, 10.9024f, 9.8786f, 11.2929f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.7073f, 15.5355f)
                 curveTo(13.0978f, 15.145f, 13.0978f, 14.5118f, 12.7073f, 14.1213f)
                 curveTo(12.3167f, 13.7307f, 11.6836f, 13.7307f, 11.293f, 14.1213f)
@@ -42,9 +45,11 @@ public val MedicineGroup.AdhesivePlaster2: ImageVector
                 curveTo(11.6836f, 15.926f, 12.3167f, 15.926f, 12.7073f, 15.5355f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.7073f, 8.4645f)
                 curveTo(13.0978f, 8.8551f, 13.0978f, 9.4882f, 12.7073f, 9.8787f)
                 curveTo(12.3167f, 10.2693f, 11.6836f, 10.2693f, 11.293f, 9.8787f)
@@ -52,9 +57,11 @@ public val MedicineGroup.AdhesivePlaster2: ImageVector
                 curveTo(11.6836f, 8.074f, 12.3167f, 8.074f, 12.7073f, 8.4645f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.5354f, 12.7071f)
                 curveTo(15.9259f, 12.3166f, 15.9259f, 11.6834f, 15.5354f, 11.2929f)
                 curveTo(15.1449f, 10.9024f, 14.5117f, 10.9024f, 14.1212f, 11.2929f)
@@ -62,9 +69,11 @@ public val MedicineGroup.AdhesivePlaster2: ImageVector
                 curveTo(14.5117f, 13.0976f, 15.1449f, 13.0976f, 15.5354f, 12.7071f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.0541f, 3.0541f)
                 curveTo(5.4597f, 0.6486f, 9.3598f, 0.6486f, 11.7653f, 3.0541f)
                 lineTo(20.9459f, 12.2347f)
@@ -91,7 +100,7 @@ public val MedicineGroup.AdhesivePlaster2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _adhesivePlaster2!!
     }
 

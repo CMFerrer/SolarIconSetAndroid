@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SchoolGroup
 
-public val SchoolGroup.CaseRoundMinimalistic: ImageVector
+val SchoolGroup.CaseRoundMinimalistic: ImageVector
     get() {
         if (_caseRoundMinimalistic != null) {
             return _caseRoundMinimalistic!!
         }
-        _caseRoundMinimalistic = Builder(name = "CaseRoundMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _caseRoundMinimalistic = Builder(
+            name = "CaseRoundMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.8777f, 4.2499f)
                 curveTo(10.187f, 3.375f, 11.0214f, 2.75f, 11.9999f, 2.75f)
                 curveTo(12.9784f, 2.75f, 13.8128f, 3.375f, 14.1221f, 4.2499f)
@@ -69,7 +73,7 @@ public val SchoolGroup.CaseRoundMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _caseRoundMinimalistic!!
     }
 

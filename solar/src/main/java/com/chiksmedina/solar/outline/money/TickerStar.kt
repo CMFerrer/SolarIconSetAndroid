@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MoneyGroup
 
-public val MoneyGroup.TickerStar: ImageVector
+val MoneyGroup.TickerStar: ImageVector
     get() {
         if (_tickerStar != null) {
             return _tickerStar!!
         }
-        _tickerStar = Builder(name = "TickerStar", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _tickerStar = Builder(
+            name = "TickerStar", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.94f, 3.25f)
                 horizontalLineTo(14.06f)
                 curveTo(15.9014f, 3.25f, 17.3595f, 3.25f, 18.5007f, 3.4031f)
@@ -161,7 +165,7 @@ public val MoneyGroup.TickerStar: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _tickerStar!!
     }
 

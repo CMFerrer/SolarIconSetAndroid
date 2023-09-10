@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.AstronomyGroup
 
-public val AstronomyGroup.Planet3: ImageVector
+val AstronomyGroup.Planet3: ImageVector
     get() {
         if (_planet3 != null) {
             return _planet3!!
         }
-        _planet3 = Builder(name = "Planet3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _planet3 = Builder(
+            name = "Planet3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.1923f, 9.1659f)
                 curveTo(2.9051f, 10.059f, 2.75f, 11.0114f, 2.75f, 12.0f)
                 curveTo(2.75f, 12.4327f, 2.7797f, 12.8585f, 2.8372f, 13.2755f)
@@ -85,7 +89,7 @@ public val AstronomyGroup.Planet3: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _planet3!!
     }
 

@@ -1,12 +1,10 @@
 package com.chiksmedina.solar.linear.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.EssentionalUiGroup
 
-public val EssentionalUiGroup.Winrar: ImageVector
+val EssentionalUiGroup.Winrar: ImageVector
     get() {
         if (_winrar != null) {
             return _winrar!!
         }
-        _winrar = Builder(name = "Winrar", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _winrar = Builder(
+            name = "Winrar", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 9.0f)
                 curveTo(4.0681f, 9.0f, 3.6022f, 9.0f, 3.2346f, 9.1522f)
                 curveTo(2.7446f, 9.3552f, 2.3552f, 9.7446f, 2.1522f, 10.2346f)
@@ -109,14 +111,16 @@ public val EssentionalUiGroup.Winrar: ImageVector
                 curveTo(15.9319f, 22.0f, 16.3978f, 22.0f, 16.7654f, 21.8478f)
                 curveTo(17.1743f, 21.6784f, 17.5131f, 21.3792f, 17.7321f, 21.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.0f, 11.0f)
                 lineTo(15.0f, 13.0f)
             }
         }
-        .build()
+            .build()
         return _winrar!!
     }
 

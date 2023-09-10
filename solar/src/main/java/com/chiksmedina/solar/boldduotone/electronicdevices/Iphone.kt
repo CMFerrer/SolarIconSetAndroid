@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Iphone: ImageVector
+val ElectronicDevicesGroup.Iphone: ImageVector
     get() {
         if (_iphone != null) {
             return _iphone!!
         }
-        _iphone = Builder(name = "Iphone", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _iphone = Builder(
+            name = "Iphone", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.0f, 9.8014f)
                 verticalLineTo(13.8676f)
                 curveTo(20.0f, 17.7013f, 20.0f, 19.6181f, 18.8284f, 20.809f)
@@ -49,9 +50,11 @@ public val ElectronicDevicesGroup.Iphone: ImageVector
                 curveTo(20.0f, 4.051f, 20.0f, 5.9678f, 20.0f, 9.8014f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.25f, 18.9836f)
                 curveTo(8.25f, 18.5671f, 8.5858f, 18.2295f, 9.0f, 18.2295f)
                 horizontalLineTo(15.0f)
@@ -62,7 +65,7 @@ public val ElectronicDevicesGroup.Iphone: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _iphone!!
     }
 

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.PlayStream: ImageVector
+val VideoAudioSoundGroup.PlayStream: ImageVector
     get() {
         if (_playStream != null) {
             return _playStream!!
         }
-        _playStream = Builder(name = "PlayStream", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _playStream = Builder(
+            name = "PlayStream", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(5.4669f, 4.3921f)
                 curveTo(5.7595f, 4.6853f, 5.759f, 5.1601f, 5.4658f, 5.4527f)
                 curveTo(3.7872f, 7.128f, 2.75f, 9.4422f, 2.75f, 12.0f)
@@ -65,9 +67,11 @@ public val VideoAudioSoundGroup.PlayStream: ImageVector
                 curveTo(15.4671f, 8.2997f, 15.4566f, 7.8249f, 15.7429f, 7.5256f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.6563f, 10.4511f)
                 curveTo(14.5521f, 11.1088f, 15.0f, 11.4376f, 15.0f, 12.0f)
                 curveTo(15.0f, 12.5624f, 14.5521f, 12.8912f, 13.6563f, 13.5489f)
@@ -84,7 +88,7 @@ public val VideoAudioSoundGroup.PlayStream: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _playStream!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.CreativeCommons: ImageVector
+val EssentionalUiGroup.CreativeCommons: ImageVector
     get() {
         if (_creativeCommons != null) {
             return _creativeCommons!!
         }
-        _creativeCommons = Builder(name = "CreativeCommons", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _creativeCommons = Builder(
+            name = "CreativeCommons", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9426f, 1.25f)
                 horizontalLineTo(12.0574f)
                 curveTo(14.3658f, 1.25f, 16.1748f, 1.25f, 17.5863f, 1.4397f)
@@ -65,9 +66,11 @@ public val EssentionalUiGroup.CreativeCommons: ImageVector
                 curveTo(9.6218f, 2.75f, 7.9136f, 2.7516f, 6.6136f, 2.9264f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.2857f, 8.75f)
                 curveTo(7.2834f, 8.75f, 5.75f, 10.253f, 5.75f, 12.0f)
                 curveTo(5.75f, 13.747f, 7.2834f, 15.25f, 9.2857f, 15.25f)
@@ -83,9 +86,11 @@ public val EssentionalUiGroup.CreativeCommons: ImageVector
                 curveTo(10.281f, 8.8496f, 9.7973f, 8.75f, 9.2857f, 8.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.2857f, 8.75f)
                 curveTo(15.2834f, 8.75f, 13.75f, 10.253f, 13.75f, 12.0f)
                 curveTo(13.75f, 13.747f, 15.2834f, 15.25f, 17.2857f, 15.25f)
@@ -102,7 +107,7 @@ public val EssentionalUiGroup.CreativeCommons: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _creativeCommons!!
     }
 

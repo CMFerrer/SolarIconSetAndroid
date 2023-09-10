@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.messagesconversation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MessagesConversationGroup
 
-public val MessagesConversationGroup.ChatSquare: ImageVector
+val MessagesConversationGroup.ChatSquare: ImageVector
     get() {
         if (_chatSquare != null) {
             return _chatSquare!!
         }
-        _chatSquare = Builder(name = "ChatSquare", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _chatSquare = Builder(
+            name = "ChatSquare", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.9749f, 13.8133f)
                 curveTo(20.4809f, 14.5722f, 18.7904f, 14.9999f, 17.0f, 14.9999f)
                 curveTo(10.9249f, 14.9999f, 6.0f, 10.0751f, 6.0f, 3.9999f)
@@ -48,9 +49,11 @@ public val MessagesConversationGroup.ChatSquare: ImageVector
                 curveTo(21.8463f, 15.3656f, 21.9379f, 14.7305f, 21.9749f, 13.8133f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.0867f, 21.3876f)
                 lineTo(13.6288f, 20.4718f)
                 curveTo(14.0492f, 19.7614f, 14.2595f, 19.4062f, 14.5972f, 19.2098f)
@@ -74,9 +77,11 @@ public val MessagesConversationGroup.ChatSquare: ImageVector
                 curveTo(11.3965f, 22.2039f, 12.6035f, 22.2039f, 13.0867f, 21.3876f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.5f, 2.0f)
                 horizontalLineTo(10.5f)
                 curveTo(8.56f, 2.0f, 7.1949f, 2.0f, 6.1543f, 2.1534f)
@@ -91,7 +96,7 @@ public val MessagesConversationGroup.ChatSquare: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chatSquare!!
     }
 

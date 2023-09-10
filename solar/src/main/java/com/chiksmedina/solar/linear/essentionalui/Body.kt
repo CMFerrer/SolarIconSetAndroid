@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.EssentionalUiGroup
 
-public val EssentionalUiGroup.Body: ImageVector
+val EssentionalUiGroup.Body: ImageVector
     get() {
         if (_body != null) {
             return _body!!
         }
-        _body = Builder(name = "Body", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _body = Builder(
+            name = "Body", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0623f, 22.0f)
                 horizontalLineTo(11.9377f)
                 curveTo(11.1787f, 22.0f, 10.7991f, 22.0f, 10.4691f, 21.8506f)
@@ -59,7 +63,7 @@ public val EssentionalUiGroup.Body: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _body!!
     }
 

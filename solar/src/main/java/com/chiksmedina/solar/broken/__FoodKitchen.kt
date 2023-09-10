@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.broken
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BrokenGroup
+import com.chiksmedina.solar.BrokenSolar
 import com.chiksmedina.solar.broken.foodkitchen.Bottle
 import com.chiksmedina.solar.broken.foodkitchen.ChefHat
 import com.chiksmedina.solar.broken.foodkitchen.ChefHatHeart
@@ -20,22 +20,39 @@ import com.chiksmedina.solar.broken.foodkitchen.TeaCup
 import com.chiksmedina.solar.broken.foodkitchen.Whisk
 import com.chiksmedina.solar.broken.foodkitchen.Wineglass
 import com.chiksmedina.solar.broken.foodkitchen.WineglassTriangle
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object FoodKitchenGroup
+object FoodKitchenGroup
 
-public val BrokenGroup.FoodKitchen: FoodKitchenGroup
-  get() = FoodKitchenGroup
+val BrokenSolar.FoodKitchen: FoodKitchenGroup
+    get() = FoodKitchenGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val FoodKitchenGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val FoodKitchenGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Bottle,
+            ChefHat,
+            ChefHatHeart,
+            ChefHatMinimalistic,
+            Corkscrew,
+            Cup,
+            CupHot,
+            CupPaper,
+            Donut,
+            DonutBitten,
+            Ladle,
+            OvenMitts,
+            OvenMittsMinimalistic,
+            RollingPin,
+            TeaCup,
+            Whisk,
+            Wineglass,
+            WineglassTriangle
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Bottle, ChefHat, ChefHatHeart, ChefHatMinimalistic, Corkscrew, Cup, CupHot,
-        CupPaper, Donut, DonutBitten, Ladle, OvenMitts, OvenMittsMinimalistic, RollingPin, TeaCup,
-        Whisk, Wineglass, WineglassTriangle)
-    return __AllIcons!!
-  }

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.broken.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Display: ImageVector
+val ElectronicDevicesGroup.Display: ImageVector
     get() {
         if (_display != null) {
             return _display!!
         }
-        _display = Builder(name = "Display", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _display = Builder(
+            name = "Display", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 10.0f)
                 verticalLineTo(9.0f)
                 curveTo(22.0f, 6.1716f, 22.0f, 4.7574f, 21.1213f, 3.8787f)
@@ -39,9 +40,11 @@ public val ElectronicDevicesGroup.Display: ImageVector
                 curveTo(18.8284f, 16.0f, 20.2426f, 16.0f, 21.1213f, 15.1213f)
                 curveTo(21.4211f, 14.8215f, 21.6186f, 14.4594f, 21.7487f, 14.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 19.0f)
                 verticalLineTo(16.5f)
                 moveTo(12.0f, 19.0f)
@@ -50,7 +53,7 @@ public val ElectronicDevicesGroup.Display: ImageVector
                 lineTo(6.0f, 21.0f)
             }
         }
-        .build()
+            .build()
         return _display!!
     }
 

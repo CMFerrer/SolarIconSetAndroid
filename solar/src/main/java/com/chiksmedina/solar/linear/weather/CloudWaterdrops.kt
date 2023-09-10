@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.linear.weather
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.WeatherGroup
 
-public val WeatherGroup.CloudWaterdrops: ImageVector
+val WeatherGroup.CloudWaterdrops: ImageVector
     get() {
         if (_cloudWaterdrops != null) {
             return _cloudWaterdrops!!
         }
-        _cloudWaterdrops = Builder(name = "CloudWaterdrops", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _cloudWaterdrops = Builder(
+            name = "CloudWaterdrops", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.381f, 8.0272f)
                 curveTo(14.9767f, 7.8191f, 15.6178f, 7.7059f, 16.2857f, 7.7059f)
                 curveTo(16.9404f, 7.7059f, 17.5693f, 7.8147f, 18.1551f, 8.015f)
@@ -42,9 +43,11 @@ public val WeatherGroup.CloudWaterdrops: ImageVector
                 curveTo(20.393f, 8.7802f, 22.0f, 10.8811f, 22.0f, 13.3529f)
                 curveTo(22.0f, 15.6958f, 20.5562f, 17.7055f, 18.5f, 18.5604f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.0f, 20.3331f)
                 curveTo(11.0f, 21.2536f, 10.3284f, 21.9998f, 9.5f, 21.9998f)
                 curveTo(8.6716f, 21.9998f, 8.0f, 21.2536f, 8.0f, 20.3331f)
@@ -53,9 +56,11 @@ public val WeatherGroup.CloudWaterdrops: ImageVector
                 curveTo(10.5488f, 19.1753f, 11.0f, 19.8282f, 11.0f, 20.3331f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(16.0f, 20.3331f)
                 curveTo(16.0f, 21.2536f, 15.3284f, 21.9998f, 14.5f, 21.9998f)
                 curveTo(13.6716f, 21.9998f, 13.0f, 21.2536f, 13.0f, 20.3331f)
@@ -64,9 +69,11 @@ public val WeatherGroup.CloudWaterdrops: ImageVector
                 curveTo(15.5488f, 19.1753f, 16.0f, 19.8282f, 16.0f, 20.3331f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.5f, 15.3331f)
                 curveTo(13.5f, 16.2536f, 12.8284f, 16.9998f, 12.0f, 16.9998f)
                 curveTo(11.1716f, 16.9998f, 10.5f, 16.2536f, 10.5f, 15.3331f)
@@ -76,7 +83,7 @@ public val WeatherGroup.CloudWaterdrops: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cloudWaterdrops!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FoodKitchenGroup
 
-public val FoodKitchenGroup.Donut: ImageVector
+val FoodKitchenGroup.Donut: ImageVector
     get() {
         if (_donut != null) {
             return _donut!!
         }
-        _donut = Builder(name = "Donut", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _donut = Builder(
+            name = "Donut", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.9236f, 10.2072f)
                 curveTo(2.8097f, 10.7872f, 2.75f, 11.3866f, 2.75f, 12.0f)
                 curveTo(2.75f, 12.2264f, 2.7581f, 12.451f, 2.7741f, 12.6733f)
@@ -142,7 +146,7 @@ public val FoodKitchenGroup.Donut: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _donut!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MapLocationGroup
 
-public val MapLocationGroup.PointOnMapPerspective: ImageVector
+val MapLocationGroup.PointOnMapPerspective: ImageVector
     get() {
         if (_pointOnMapPerspective != null) {
             return _pointOnMapPerspective!!
         }
-        _pointOnMapPerspective = Builder(name = "PointOnMapPerspective", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _pointOnMapPerspective = Builder(
+            name = "PointOnMapPerspective", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.0f, 2.75f)
                 curveTo(15.7574f, 2.75f, 14.75f, 3.7574f, 14.75f, 5.0f)
                 curveTo(14.75f, 6.2426f, 15.7574f, 7.25f, 17.0f, 7.25f)
@@ -94,7 +98,7 @@ public val MapLocationGroup.PointOnMapPerspective: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _pointOnMapPerspective!!
     }
 

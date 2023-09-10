@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.security
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SecurityGroup
 
-public val SecurityGroup.Shield: ImageVector
+val SecurityGroup.Shield: ImageVector
     get() {
         if (_shield != null) {
             return _shield!!
         }
-        _shield = Builder(name = "Shield", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _shield = Builder(
+            name = "Shield", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.25f, 2.0734f)
                 curveTo(10.6437f, 2.1865f, 9.9316f, 2.4303f, 8.8377f, 2.8047f)
                 lineTo(8.2649f, 3.0008f)
@@ -33,9 +34,11 @@ public val SecurityGroup.Shield: ImageVector
                 verticalLineTo(2.0734f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.25f, 9.0406f)
                 lineTo(3.0f, 11.7906f)
                 verticalLineTo(11.9914f)
@@ -44,9 +47,11 @@ public val SecurityGroup.Shield: ImageVector
                 verticalLineTo(9.0406f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.75f, 21.9597f)
                 verticalLineTo(9.0406f)
                 lineTo(21.0f, 11.7906f)
@@ -55,9 +60,11 @@ public val SecurityGroup.Shield: ImageVector
                 curveTo(13.5907f, 21.7504f, 13.2608f, 21.8945f, 12.75f, 21.9597f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.75f, 7.4594f)
                 verticalLineTo(2.0734f)
                 curveTo(13.3563f, 2.1865f, 14.0684f, 2.4303f, 15.1623f, 2.8047f)
@@ -68,7 +75,7 @@ public val SecurityGroup.Shield: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _shield!!
     }
 

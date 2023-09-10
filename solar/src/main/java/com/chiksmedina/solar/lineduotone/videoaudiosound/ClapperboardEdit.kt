@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.lineduotone.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.ClapperboardEdit: ImageVector
+val VideoAudioSoundGroup.ClapperboardEdit: ImageVector
     get() {
         if (_clapperboardEdit != null) {
             return _clapperboardEdit!!
         }
-        _clapperboardEdit = Builder(name = "ClapperboardEdit", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _clapperboardEdit = Builder(
+            name = "ClapperboardEdit", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.9979f, 10.5f)
                 curveTo(21.9816f, 6.7682f, 21.8357f, 4.7646f, 20.5355f, 3.4645f)
                 curveTo(19.0711f, 2.0f, 16.714f, 2.0f, 12.0f, 2.0f)
@@ -33,9 +34,11 @@ public val VideoAudioSoundGroup.ClapperboardEdit: ImageVector
                 curveTo(2.0f, 16.714f, 2.0f, 19.0711f, 3.4645f, 20.5355f)
                 curveTo(4.7053f, 21.7764f, 6.5869f, 21.9658f, 10.0f, 21.9948f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.5f, 8.0f)
                 horizontalLineTo(2.5f)
                 moveTo(7.0f, 8.0f)
@@ -43,9 +46,11 @@ public val VideoAudioSoundGroup.ClapperboardEdit: ImageVector
                 moveTo(13.5f, 8.0f)
                 lineTo(17.0f, 2.5f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.562f, 13.9354f)
                 lineTo(18.9791f, 13.5183f)
                 curveTo(19.6702f, 12.8272f, 20.7906f, 12.8272f, 21.4817f, 13.5183f)
@@ -77,7 +82,7 @@ public val VideoAudioSoundGroup.ClapperboardEdit: ImageVector
                 lineTo(13.1448f, 21.0109f)
             }
         }
-        .build()
+            .build()
         return _clapperboardEdit!!
     }
 

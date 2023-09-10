@@ -1,12 +1,10 @@
 package com.chiksmedina.solar.lineduotone.maplocation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.MapLocationGroup
 
-public val MapLocationGroup.Radar2: ImageVector
+val MapLocationGroup.Radar2: ImageVector
     get() {
         if (_radar2 != null) {
             return _radar2!!
         }
-        _radar2 = Builder(name = "Radar2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _radar2 = Builder(
+            name = "Radar2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 11.9996f)
                 lineTo(5.002f, 6.3355f)
                 curveTo(4.5729f, 5.9881f, 3.9387f, 6.0518f, 3.636f, 6.5135f)
@@ -33,9 +35,11 @@ public val MapLocationGroup.Radar2: ImageVector
                 curveTo(23.0887f, 9.2531f, 19.9229f, 3.7697f, 14.5882f, 2.3403f)
                 curveTo(11.9556f, 1.6349f, 9.2868f, 2.0486f, 7.0869f, 3.2897f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.8658f, 5.5946f)
                 curveTo(9.4728f, 5.7254f, 9.2604f, 6.1501f, 9.3912f, 6.5431f)
                 curveTo(9.5221f, 6.9361f, 9.9468f, 7.1486f, 10.3398f, 7.0177f)
@@ -73,7 +77,7 @@ public val MapLocationGroup.Radar2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _radar2!!
     }
 

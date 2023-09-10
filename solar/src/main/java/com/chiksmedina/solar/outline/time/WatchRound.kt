@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.TimeGroup
 
-public val TimeGroup.WatchRound: ImageVector
+val TimeGroup.WatchRound: ImageVector
     get() {
         if (_watchRound != null) {
             return _watchRound!!
         }
-        _watchRound = Builder(name = "WatchRound", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _watchRound = Builder(
+            name = "WatchRound", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.1637f, 1.25f)
                 horizontalLineTo(12.8363f)
                 curveTo(13.5671f, 1.25f, 14.1822f, 1.25f, 14.6808f, 1.3104f)
@@ -94,7 +98,7 @@ public val TimeGroup.WatchRound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _watchRound!!
     }
 

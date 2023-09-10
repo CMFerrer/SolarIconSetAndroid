@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.money
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MoneyGroup
 
-public val MoneyGroup.CardRecive: ImageVector
+val MoneyGroup.CardRecive: ImageVector
     get() {
         if (_cardRecive != null) {
             return _cardRecive!!
         }
-        _cardRecive = Builder(name = "CardRecive", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cardRecive = Builder(
+            name = "CardRecive", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.4697f, 20.5303f)
                 curveTo(18.7626f, 20.8232f, 19.2374f, 20.8232f, 19.5303f, 20.5303f)
                 lineTo(21.5303f, 18.5303f)
@@ -41,9 +42,11 @@ public val MoneyGroup.CardRecive: ImageVector
                 lineTo(18.4697f, 20.5303f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 4.0f)
                 horizontalLineTo(14.0f)
                 curveTo(17.7712f, 4.0f, 19.6569f, 4.0f, 20.8284f, 5.1716f)
@@ -53,9 +56,11 @@ public val MoneyGroup.CardRecive: ImageVector
                 curveTo(4.3432f, 4.0f, 6.2288f, 4.0f, 10.0f, 4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.0f, 20.0f)
                 horizontalLineTo(14.0f)
                 curveTo(14.6595f, 20.0f, 15.2613f, 20.0f, 15.8118f, 19.9937f)
@@ -92,7 +97,7 @@ public val MoneyGroup.CardRecive: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cardRecive!!
     }
 

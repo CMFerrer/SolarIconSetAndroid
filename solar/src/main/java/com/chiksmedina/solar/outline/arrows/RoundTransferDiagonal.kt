@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsGroup
 
-public val ArrowsGroup.RoundTransferDiagonal: ImageVector
+val ArrowsGroup.RoundTransferDiagonal: ImageVector
     get() {
         if (_roundTransferDiagonal != null) {
             return _roundTransferDiagonal!!
         }
-        _roundTransferDiagonal = Builder(name = "RoundTransferDiagonal", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _roundTransferDiagonal = Builder(
+            name = "RoundTransferDiagonal", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.2068f, 4.7884f)
                 curveTo(4.0989f, 6.4838f, 2.75f, 9.0844f, 2.75f, 12.0f)
                 curveTo(2.75f, 17.1086f, 6.8914f, 21.25f, 12.0f, 21.25f)
@@ -53,7 +57,7 @@ public val ArrowsGroup.RoundTransferDiagonal: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _roundTransferDiagonal!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.AstronomyGroup
 
-public val AstronomyGroup.BlackHole: ImageVector
+val AstronomyGroup.BlackHole: ImageVector
     get() {
         if (_blackHole != null) {
             return _blackHole!!
         }
-        _blackHole = Builder(name = "BlackHole", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _blackHole = Builder(
+            name = "BlackHole", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.7349f, 14.6536f)
                 curveTo(12.4655f, 14.6313f, 12.2173f, 14.4637f, 12.105f, 14.1973f)
                 curveTo(11.944f, 13.8156f, 12.123f, 13.3758f, 12.5047f, 13.2148f)
@@ -37,9 +38,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(12.6137f, 14.8274f, 12.6759f, 14.7406f, 12.7349f, 14.6536f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.4866f, 14.6947f)
                 curveTo(10.8852f, 14.8073f, 11.2996f, 14.5754f, 11.4122f, 14.1768f)
                 curveTo(11.4299f, 14.1139f, 11.4391f, 14.0507f, 11.4404f, 13.9883f)
@@ -53,9 +56,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(9.0088f, 14.095f, 9.7398f, 14.4838f, 10.4866f, 14.6947f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.676f, 11.9462f)
                 curveTo(6.9315f, 12.2722f, 7.403f, 12.3292f, 7.7289f, 12.0737f)
                 curveTo(8.0549f, 11.8181f, 8.112f, 11.3467f, 7.8564f, 11.0207f)
@@ -65,9 +70,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(5.7908f, 10.6673f, 6.2022f, 11.3419f, 6.676f, 11.9462f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.8399f, 7.6716f)
                 curveTo(4.8889f, 8.0829f, 5.2621f, 8.3766f, 5.6734f, 8.3276f)
                 curveTo(6.0847f, 8.2786f, 6.3783f, 7.9054f, 6.3293f, 7.4941f)
@@ -77,9 +84,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(4.781f, 6.0701f, 4.7458f, 6.8825f, 4.8399f, 7.6716f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.0079f, 3.0793f)
                 curveTo(5.7661f, 3.4156f, 5.8428f, 3.8842f, 6.1791f, 4.126f)
                 curveTo(6.5155f, 4.3678f, 6.9841f, 4.2911f, 7.2259f, 3.9548f)
@@ -89,9 +98,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(6.4928f, 2.4602f, 6.2339f, 2.7649f, 6.0079f, 3.0793f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.7628f, 9.086f)
                 curveTo(11.6976f, 9.1725f, 11.6355f, 9.2593f, 11.5764f, 9.3463f)
                 curveTo(11.8459f, 9.3685f, 12.0941f, 9.5362f, 12.2064f, 9.8026f)
@@ -105,9 +116,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(11.9464f, 8.2851f, 12.0123f, 8.7553f, 11.7628f, 9.086f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.8248f, 9.3051f)
                 curveTo(13.4262f, 9.1926f, 13.0118f, 9.4245f, 12.8992f, 9.8231f)
                 curveTo(12.8815f, 9.8859f, 12.8723f, 9.9491f, 12.871f, 10.0115f)
@@ -121,9 +134,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(15.3026f, 9.9049f, 14.5716f, 9.516f, 13.8248f, 9.3051f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.6354f, 12.0537f)
                 curveTo(17.3798f, 11.7277f, 16.9084f, 11.6706f, 16.5824f, 11.9262f)
                 curveTo(16.2565f, 12.1818f, 16.1994f, 12.6532f, 16.455f, 12.9792f)
@@ -133,9 +148,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(18.5206f, 13.3325f, 18.1092f, 12.6579f, 17.6354f, 12.0537f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(19.4715f, 16.3282f)
                 curveTo(19.4225f, 15.9169f, 19.0493f, 15.6232f, 18.638f, 15.6723f)
                 curveTo(18.2267f, 15.7213f, 17.933f, 16.0944f, 17.982f, 16.5057f)
@@ -145,9 +162,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(19.5304f, 17.9297f, 19.5656f, 17.1173f, 19.4715f, 16.3282f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.3035f, 20.9206f)
                 curveTo(18.5452f, 20.5843f, 18.4686f, 20.1156f, 18.1322f, 19.8738f)
                 curveTo(17.7959f, 19.6321f, 17.3273f, 19.7087f, 17.0855f, 20.0451f)
@@ -157,9 +176,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(17.8186f, 21.5397f, 18.0775f, 21.2349f, 18.3035f, 20.9206f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0815f, 7.5727f)
                 curveTo(11.8259f, 7.2467f, 11.883f, 6.7753f, 12.2089f, 6.5197f)
                 curveTo(12.8132f, 6.0459f, 13.4878f, 5.6345f, 14.2071f, 5.3178f)
@@ -169,9 +190,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(12.8085f, 7.9557f, 12.337f, 7.8987f, 12.0815f, 7.5727f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.8275f, 5.5171f)
                 curveTo(15.7785f, 5.1058f, 16.0722f, 4.7326f, 16.4835f, 4.6836f)
                 curveTo(17.2726f, 4.5896f, 18.085f, 4.6248f, 18.8893f, 4.8273f)
@@ -181,9 +204,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(16.2497f, 6.2221f, 15.8765f, 5.9284f, 15.8275f, 5.5171f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.0291f, 6.0229f)
                 curveTo(20.2709f, 5.6866f, 20.7395f, 5.6099f, 21.0759f, 5.8517f)
                 curveTo(21.3902f, 6.0776f, 21.6949f, 6.3366f, 21.9882f, 6.6298f)
@@ -193,9 +218,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(19.864f, 6.8279f, 19.7873f, 6.3592f, 20.0291f, 6.0229f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.1025f, 17.4801f)
                 curveTo(12.4284f, 17.2246f, 12.4855f, 16.7531f, 12.2299f, 16.4272f)
                 curveTo(11.9744f, 16.1012f, 11.5029f, 16.0441f, 11.177f, 16.2997f)
@@ -205,9 +232,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(10.8236f, 18.3653f, 11.4982f, 17.9539f, 12.1025f, 17.4801f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.8279f, 19.3162f)
                 curveTo(8.2392f, 19.2672f, 8.5329f, 18.8941f, 8.4838f, 18.4827f)
                 curveTo(8.4348f, 18.0714f, 8.0617f, 17.7778f, 7.6504f, 17.8268f)
@@ -217,9 +246,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(6.2264f, 19.3751f, 7.0388f, 19.4103f, 7.8279f, 19.3162f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.2355f, 18.1482f)
                 curveTo(3.5719f, 18.39f, 4.0405f, 18.3133f, 4.2823f, 17.977f)
                 curveTo(4.524f, 17.6406f, 4.4474f, 17.172f, 4.111f, 16.9302f)
@@ -229,9 +260,11 @@ public val AstronomyGroup.BlackHole: ImageVector
                 curveTo(2.6165f, 17.6633f, 2.9212f, 17.9222f, 3.2355f, 18.1482f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.9276f, 12.4529f)
                 curveTo(9.3338f, 13.2885f, 9.9443f, 13.9944f, 10.7532f, 14.395f)
                 curveTo(9.9602f, 14.5776f, 9.043f, 14.6153f, 8.1052f, 14.4824f)
@@ -264,7 +297,7 @@ public val AstronomyGroup.BlackHole: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _blackHole!!
     }
 

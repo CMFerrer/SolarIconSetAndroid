@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SsdSquare: ImageVector
+val ElectronicDevicesGroup.SsdSquare: ImageVector
     get() {
         if (_ssdSquare != null) {
             return _ssdSquare!!
         }
-        _ssdSquare = Builder(name = "SsdSquare", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _ssdSquare = Builder(
+            name = "SsdSquare", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.4999f, 3.0f)
                 horizontalLineTo(16.4999f)
                 curveTo(17.6045f, 3.0f, 18.4999f, 3.5294f, 18.9999f, 5.1177f)
@@ -37,9 +39,11 @@ public val ElectronicDevicesGroup.SsdSquare: ImageVector
                 curveTo(5.4999f, 3.5294f, 6.3953f, 3.0f, 7.4999f, 3.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.6629f, 14.529f)
                 curveTo(21.74f, 14.6512f, 21.7995f, 14.7844f, 21.8454f, 14.9348f)
                 lineTo(21.8514f, 14.9557f)
@@ -98,7 +102,7 @@ public val ElectronicDevicesGroup.SsdSquare: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ssdSquare!!
     }
 

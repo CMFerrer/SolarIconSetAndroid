@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.homefurniture
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.BedsideTable4: ImageVector
+val HomeFurnitureGroup.BedsideTable4: ImageVector
     get() {
         if (_bedsideTable4 != null) {
             return _bedsideTable4!!
         }
-        _bedsideTable4 = Builder(name = "BedsideTable4", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bedsideTable4 = Builder(
+            name = "BedsideTable4", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 9.75f)
                 curveTo(2.0f, 9.3081f, 2.0f, 8.892f, 2.0019f, 8.5f)
                 horizontalLineTo(11.25f)
@@ -48,9 +49,11 @@ public val HomeFurnitureGroup.BedsideTable4: ImageVector
                 curveTo(8.25f, 11.3358f, 8.5858f, 11.0f, 9.0f, 11.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.9743f, 7.0f)
                 horizontalLineTo(2.0257f)
                 curveTo(2.0919f, 4.9788f, 2.328f, 3.7651f, 3.1716f, 2.9216f)
@@ -60,9 +63,11 @@ public val HomeFurnitureGroup.BedsideTable4: ImageVector
                 curveTo(21.672f, 3.7651f, 21.9082f, 4.9788f, 21.9743f, 7.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.75f, 8.5f)
                 horizontalLineTo(21.9981f)
                 curveTo(22.0f, 8.892f, 22.0f, 9.3081f, 22.0f, 9.75f)
@@ -87,7 +92,7 @@ public val HomeFurnitureGroup.BedsideTable4: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bedsideTable4!!
     }
 

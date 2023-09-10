@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.CrownLine: ImageVector
+val EssentionalUiGroup.CrownLine: ImageVector
     get() {
         if (_crownLine != null) {
             return _crownLine!!
         }
-        _crownLine = Builder(name = "CrownLine", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _crownLine = Builder(
+            name = "CrownLine", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.8382f, 11.1263f)
                 lineTo(21.609f, 13.5616f)
                 curveTo(21.2313f, 17.5742f, 21.0425f, 19.5805f, 19.8599f, 20.7902f)
@@ -56,7 +60,7 @@ public val EssentionalUiGroup.CrownLine: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _crownLine!!
     }
 

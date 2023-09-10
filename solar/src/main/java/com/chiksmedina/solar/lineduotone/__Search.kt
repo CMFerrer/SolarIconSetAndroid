@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.lineduotone
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.LineduotoneGroup
+import com.chiksmedina.solar.LineDuotoneSolar
 import com.chiksmedina.solar.lineduotone.search.Magnifer
 import com.chiksmedina.solar.lineduotone.search.MagniferBug
 import com.chiksmedina.solar.lineduotone.search.MagniferZoomIn
@@ -14,22 +14,24 @@ import com.chiksmedina.solar.lineduotone.search.RoundedMagnifer
 import com.chiksmedina.solar.lineduotone.search.RoundedMagniferBug
 import com.chiksmedina.solar.lineduotone.search.RoundedMagniferZoomIn
 import com.chiksmedina.solar.lineduotone.search.RoundedMagniferZoomOut
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object SearchGroup
+object SearchGroup
 
-public val LineduotoneGroup.Search: SearchGroup
-  get() = SearchGroup
+val LineDuotoneSolar.Search: SearchGroup
+    get() = SearchGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val SearchGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val SearchGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Magnifer, MagniferBug, MagniferZoomIn, MagniferZoomOut, MinimalisticMagnifer,
+            MinimalisticMagniferBug, MinimalisticMagniferZoomIn, MinimalisticMagniferZoomOut,
+            RoundedMagnifer, RoundedMagniferBug, RoundedMagniferZoomIn, RoundedMagniferZoomOut
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Magnifer, MagniferBug, MagniferZoomIn, MagniferZoomOut, MinimalisticMagnifer,
-        MinimalisticMagniferBug, MinimalisticMagniferZoomIn, MinimalisticMagniferZoomOut,
-        RoundedMagnifer, RoundedMagniferBug, RoundedMagniferZoomIn, RoundedMagniferZoomOut)
-    return __AllIcons!!
-  }

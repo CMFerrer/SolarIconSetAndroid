@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.textformatting
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.TextFormattingGroup
 
-public val TextFormattingGroup.EraserCircle: ImageVector
+val TextFormattingGroup.EraserCircle: ImageVector
     get() {
         if (_eraserCircle != null) {
             return _eraserCircle!!
         }
-        _eraserCircle = Builder(name = "EraserCircle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _eraserCircle = Builder(
+            name = "EraserCircle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.8883f, 16.8959f)
                 curveTo(12.3621f, 17.4222f, 11.9147f, 17.8697f, 11.5096f, 18.1788f)
                 curveTo(11.078f, 18.508f, 10.6076f, 18.75f, 10.0318f, 18.75f)
@@ -73,9 +74,11 @@ public val TextFormattingGroup.EraserCircle: ImageVector
                 lineTo(8.4573f, 11.8798f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 1.25f)
                 curveTo(6.0629f, 1.25f, 1.25f, 6.0629f, 1.25f, 12.0f)
                 curveTo(1.25f, 17.9371f, 6.0629f, 22.75f, 12.0f, 22.75f)
@@ -90,7 +93,7 @@ public val TextFormattingGroup.EraserCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _eraserCircle!!
     }
 

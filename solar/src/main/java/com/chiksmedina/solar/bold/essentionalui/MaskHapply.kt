@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.MaskHapply: ImageVector
+val EssentionalUiGroup.MaskHapply: ImageVector
     get() {
         if (_maskHapply != null) {
             return _maskHapply!!
         }
-        _maskHapply = Builder(name = "MaskHapply", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _maskHapply = Builder(
+            name = "MaskHapply", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.0f, 11.9012f)
                 verticalLineTo(6.4291f)
                 curveTo(21.0f, 4.16f, 21.0f, 3.0254f, 20.2927f, 2.4047f)
@@ -87,7 +91,7 @@ public val EssentionalUiGroup.MaskHapply: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _maskHapply!!
     }
 

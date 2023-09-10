@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.BusinessStatisticGroup
 
-public val BusinessStatisticGroup.CourseDown: ImageVector
+val BusinessStatisticGroup.CourseDown: ImageVector
     get() {
         if (_courseDown != null) {
             return _courseDown!!
         }
-        _courseDown = Builder(name = "CourseDown", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _courseDown = Builder(
+            name = "CourseDown", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0001f, 18.0f)
                 lineTo(14.6204f, 10.6653f)
                 curveTo(13.6227f, 9.6737f, 13.1239f, 9.1779f, 12.5052f, 9.178f)
@@ -35,7 +39,7 @@ public val BusinessStatisticGroup.CourseDown: ImageVector
                 horizontalLineTo(16.4179f)
             }
         }
-        .build()
+            .build()
         return _courseDown!!
     }
 

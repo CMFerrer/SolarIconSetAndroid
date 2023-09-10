@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SportsGroup
 
-public val SportsGroup.Hiking: ImageVector
+val SportsGroup.Hiking: ImageVector
     get() {
         if (_hiking != null) {
             return _hiking!!
         }
-        _hiking = Builder(name = "Hiking", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _hiking = Builder(
+            name = "Hiking", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.0f, 4.5f)
                 curveTo(14.0f, 5.8807f, 12.8807f, 7.0f, 11.5f, 7.0f)
                 curveTo(10.1193f, 7.0f, 9.0f, 5.8807f, 9.0f, 4.5f)
@@ -32,9 +33,11 @@ public val SportsGroup.Hiking: ImageVector
                 curveTo(12.8807f, 2.0f, 14.0f, 3.1193f, 14.0f, 4.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.0f, 7.25f)
                 curveTo(19.4142f, 7.25f, 19.75f, 7.5858f, 19.75f, 8.0f)
                 verticalLineTo(10.4943f)
@@ -115,9 +118,11 @@ public val SportsGroup.Hiking: ImageVector
                 curveTo(11.8379f, 9.5438f, 11.8337f, 9.5454f, 11.829f, 9.5473f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(8.7115f, 9.763f)
                 curveTo(8.8425f, 10.156f, 8.6301f, 10.5807f, 8.2372f, 10.7117f)
                 lineTo(6.5652f, 11.269f)
@@ -133,9 +138,11 @@ public val SportsGroup.Hiking: ImageVector
                 curveTo(8.1558f, 9.1577f, 8.5805f, 9.3701f, 8.7115f, 9.763f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.416f, 16.8762f)
                 curveTo(9.7607f, 17.1059f, 9.8538f, 17.5716f, 9.624f, 17.9162f)
                 lineTo(6.624f, 22.4162f)
@@ -146,7 +153,7 @@ public val SportsGroup.Hiking: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hiking!!
     }
 

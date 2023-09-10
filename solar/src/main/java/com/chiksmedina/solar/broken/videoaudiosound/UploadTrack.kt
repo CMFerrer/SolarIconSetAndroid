@@ -1,10 +1,8 @@
 package com.chiksmedina.solar.broken.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
 import androidx.compose.ui.graphics.StrokeJoin
@@ -15,16 +13,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.UploadTrack: ImageVector
+val VideoAudioSoundGroup.UploadTrack: ImageVector
     get() {
         if (_uploadTrack != null) {
             return _uploadTrack!!
         }
-        _uploadTrack = Builder(name = "UploadTrack", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _uploadTrack = Builder(
+            name = "UploadTrack", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 15.0f)
                 curveTo(12.0f, 16.1046f, 11.1046f, 17.0f, 10.0f, 17.0f)
                 curveTo(8.8954f, 17.0f, 8.0f, 16.1046f, 8.0f, 15.0f)
@@ -32,15 +34,19 @@ public val VideoAudioSoundGroup.UploadTrack: ImageVector
                 curveTo(11.1046f, 13.0f, 12.0f, 13.8954f, 12.0f, 15.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 15.0f)
                 verticalLineTo(9.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.0584f, 11.0294f)
                 lineTo(12.7416f, 10.371f)
                 curveTo(12.5592f, 10.2798f, 12.468f, 10.2342f, 12.3926f, 10.1765f)
@@ -58,9 +64,11 @@ public val VideoAudioSoundGroup.UploadTrack: ImageVector
                 curveTo(14.7098f, 11.3551f, 14.4926f, 11.2465f, 14.0584f, 11.0294f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.0f, 21.8f)
                 curveTo(13.3538f, 21.9311f, 12.6849f, 22.0f, 12.0f, 22.0f)
                 curveTo(6.4771f, 22.0f, 2.0f, 17.5228f, 2.0f, 12.0f)
@@ -70,9 +78,11 @@ public val VideoAudioSoundGroup.UploadTrack: ImageVector
                 curveTo(22.0f, 6.4771f, 17.5228f, 2.0f, 12.0f, 2.0f)
                 curveTo(10.1786f, 2.0f, 8.4709f, 2.487f, 7.0f, 3.3378f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.0f, 22.0f)
                 verticalLineTo(15.0f)
                 moveTo(18.0f, 15.0f)
@@ -81,7 +91,7 @@ public val VideoAudioSoundGroup.UploadTrack: ImageVector
                 lineTo(15.5f, 17.5f)
             }
         }
-        .build()
+            .build()
         return _uploadTrack!!
     }
 

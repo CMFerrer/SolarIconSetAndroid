@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.money
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MoneyGroup
 
-public val MoneyGroup.Sale: ImageVector
+val MoneyGroup.Sale: ImageVector
     get() {
         if (_sale != null) {
             return _sale!!
         }
-        _sale = Builder(name = "Sale", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sale = Builder(
+            name = "Sale", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.5936f, 2.3188f)
                 curveTo(11.483f, 1.8937f, 12.517f, 1.8937f, 13.4064f, 2.3188f)
                 curveTo(13.7928f, 2.5035f, 14.1468f, 2.8055f, 14.6371f, 3.2237f)
@@ -158,9 +159,11 @@ public val MoneyGroup.Sale: ImageVector
                 curveTo(13.1376f, 3.9235f, 12.9424f, 3.7654f, 12.7573f, 3.6769f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.5426f, 8.4574f)
                 curveTo(15.8365f, 8.7513f, 15.8365f, 9.2278f, 15.5426f, 9.5217f)
                 lineTo(9.5217f, 15.5426f)
@@ -170,9 +173,11 @@ public val MoneyGroup.Sale: ImageVector
                 curveTo(14.7722f, 8.1635f, 15.2487f, 8.1635f, 15.5426f, 8.4574f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.5122f, 14.5087f)
                 curveTo(15.5122f, 15.0629f, 15.0629f, 15.5122f, 14.5087f, 15.5122f)
                 curveTo(13.9545f, 15.5122f, 13.5052f, 15.0629f, 13.5052f, 14.5087f)
@@ -180,9 +185,11 @@ public val MoneyGroup.Sale: ImageVector
                 curveTo(15.0629f, 13.5052f, 15.5122f, 13.9545f, 15.5122f, 14.5087f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.4948f, 9.4913f)
                 curveTo(10.4948f, 10.0455f, 10.0455f, 10.4948f, 9.4913f, 10.4948f)
                 curveTo(8.9371f, 10.4948f, 8.4878f, 10.0455f, 8.4878f, 9.4913f)
@@ -191,7 +198,7 @@ public val MoneyGroup.Sale: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sale!!
     }
 

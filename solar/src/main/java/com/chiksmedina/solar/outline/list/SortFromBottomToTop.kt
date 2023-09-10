@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ListGroup
 
-public val ListGroup.SortFromBottomToTop: ImageVector
+val ListGroup.SortFromBottomToTop: ImageVector
     get() {
         if (_sortFromBottomToTop != null) {
             return _sortFromBottomToTop!!
         }
-        _sortFromBottomToTop = Builder(name = "SortFromBottomToTop", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sortFromBottomToTop = Builder(
+            name = "SortFromBottomToTop", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.7628f, 3.2885f)
                 curveTo(17.0691f, 3.1865f, 17.4063f, 3.2918f, 17.6f, 3.5501f)
                 lineTo(20.6f, 7.55f)
@@ -53,7 +57,7 @@ public val ListGroup.SortFromBottomToTop: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sortFromBottomToTop!!
     }
 

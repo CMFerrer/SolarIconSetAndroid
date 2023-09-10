@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.linear.maplocation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.MapLocationGroup
 
-public val MapLocationGroup.PeopleNearby: ImageVector
+val MapLocationGroup.PeopleNearby: ImageVector
     get() {
         if (_peopleNearby != null) {
             return _peopleNearby!!
         }
-        _peopleNearby = Builder(name = "PeopleNearby", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _peopleNearby = Builder(
+            name = "PeopleNearby", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.0f, 4.0f)
                 curveTo(14.0f, 5.1046f, 13.1046f, 6.0f, 12.0f, 6.0f)
                 curveTo(10.8954f, 6.0f, 10.0f, 5.1046f, 10.0f, 4.0f)
@@ -32,9 +33,11 @@ public val MapLocationGroup.PeopleNearby: ImageVector
                 curveTo(13.1046f, 2.0f, 14.0f, 2.8954f, 14.0f, 4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.0478f, 10.849f)
                 lineTo(6.285f, 10.1375f)
                 lineTo(6.285f, 10.1375f)
@@ -296,9 +299,11 @@ public val MapLocationGroup.PeopleNearby: ImageVector
                 horizontalLineTo(19.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(19.4537f, 14.5f)
                 curveTo(21.0372f, 15.2961f, 22.0f, 16.3475f, 22.0f, 17.5f)
                 curveTo(22.0f, 19.9853f, 17.5228f, 22.0f, 12.0f, 22.0f)
@@ -306,7 +311,7 @@ public val MapLocationGroup.PeopleNearby: ImageVector
                 curveTo(2.0f, 16.3475f, 2.9629f, 15.2961f, 4.5463f, 14.5f)
             }
         }
-        .build()
+            .build()
         return _peopleNearby!!
     }
 

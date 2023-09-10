@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SdCard: ImageVector
+val ElectronicDevicesGroup.SdCard: ImageVector
     get() {
         if (_sdCard != null) {
             return _sdCard!!
         }
-        _sdCard = Builder(name = "SdCard", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sdCard = Builder(
+            name = "SdCard", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.6206f, 2.7623f)
                 curveTo(12.4868f, 2.7506f, 12.3532f, 2.75f, 12.0f, 2.75f)
                 curveTo(9.6218f, 2.75f, 7.9136f, 2.7516f, 6.6136f, 2.9264f)
@@ -94,7 +98,7 @@ public val ElectronicDevicesGroup.SdCard: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sdCard!!
     }
 

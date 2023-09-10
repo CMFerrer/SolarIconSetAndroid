@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MoneyGroup
 
-public val MoneyGroup.BillList: ImageVector
+val MoneyGroup.BillList: ImageVector
     get() {
         if (_billList != null) {
             return _billList!!
         }
-        _billList = Builder(name = "BillList", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _billList = Builder(
+            name = "BillList", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.245f, 2.0f)
                 horizontalLineTo(16.755f)
                 curveTo(17.9139f, 2.0f, 18.4933f, 2.0f, 18.9606f, 2.1626f)
@@ -93,7 +97,7 @@ public val MoneyGroup.BillList: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _billList!!
     }
 

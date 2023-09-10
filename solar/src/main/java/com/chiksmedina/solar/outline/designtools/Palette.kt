@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.DesignToolsGroup
 
-public val DesignToolsGroup.Palette: ImageVector
+val DesignToolsGroup.Palette: ImageVector
     get() {
         if (_palette != null) {
             return _palette!!
         }
-        _palette = Builder(name = "Palette", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _palette = Builder(
+            name = "Palette", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.9686f, 1.25f)
                 horizontalLineTo(6.0314f)
                 curveTo(6.7048f, 1.25f, 7.2555f, 1.25f, 7.7031f, 1.2866f)
@@ -142,7 +146,7 @@ public val DesignToolsGroup.Palette: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _palette!!
     }
 

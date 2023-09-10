@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.EssentionalUiGroup
 
-public val EssentionalUiGroup.Balloon: ImageVector
+val EssentionalUiGroup.Balloon: ImageVector
     get() {
         if (_balloon != null) {
             return _balloon!!
         }
-        _balloon = Builder(name = "Balloon", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _balloon = Builder(
+            name = "Balloon", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 17.9998f)
                 curveTo(16.142f, 18.0343f, 19.5937f, 14.0798f, 19.5603f, 9.8043f)
                 curveTo(19.5268f, 5.5287f, 16.142f, 2.0348f, 12.0f, 2.0003f)
@@ -32,9 +33,11 @@ public val EssentionalUiGroup.Balloon: ImageVector
                 curveTo(4.5942f, 13.9549f, 7.858f, 17.9653f, 12.0f, 17.9998f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.75f, 5.9939f)
                 curveTo(11.7534f, 5.5798f, 12.0919f, 5.2467f, 12.5061f, 5.25f)
                 curveTo(14.5591f, 5.2666f, 16.2334f, 6.9409f, 16.25f, 8.9939f)
@@ -44,9 +47,11 @@ public val EssentionalUiGroup.Balloon: ImageVector
                 curveTo(12.0797f, 6.7466f, 11.7467f, 6.4082f, 11.75f, 5.9939f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.1801f, 17.9011f)
                 curveTo(12.7949f, 17.9691f, 12.4007f, 18.0031f, 12.0f, 17.9998f)
                 curveTo(11.6006f, 17.9964f, 11.2094f, 17.9561f, 10.8284f, 17.8822f)
@@ -60,9 +65,11 @@ public val EssentionalUiGroup.Balloon: ImageVector
                 lineTo(13.1801f, 17.9011f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.25f, 19.7859f)
                 curveTo(11.3004f, 19.8033f, 11.3526f, 19.8174f, 11.4067f, 19.828f)
                 curveTo(11.5182f, 19.85f, 11.6788f, 19.85f, 12.0f, 19.85f)
@@ -75,7 +82,7 @@ public val EssentionalUiGroup.Balloon: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _balloon!!
     }
 

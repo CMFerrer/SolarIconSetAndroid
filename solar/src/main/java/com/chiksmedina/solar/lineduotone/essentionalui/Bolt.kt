@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.lineduotone.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.EssentionalUiGroup
 
-public val EssentionalUiGroup.Bolt: ImageVector
+val EssentionalUiGroup.Bolt: ImageVector
     get() {
         if (_bolt != null) {
             return _bolt!!
         }
-        _bolt = Builder(name = "Bolt", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _bolt = Builder(
+            name = "Bolt", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.926f, 9.7054f)
                 curveTo(13.5474f, 9.3339f, 13.5474f, 8.7415f, 13.5474f, 7.5568f)
                 verticalLineTo(7.2471f)
@@ -35,9 +36,11 @@ public val EssentionalUiGroup.Bolt: ImageVector
                 curveTo(4.4894f, 13.9117f, 5.5989f, 13.9117f, 7.8177f, 13.9117f)
                 curveTo(9.0508f, 13.9117f, 9.6673f, 13.9117f, 10.054f, 14.2754f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.9259f, 9.7056f)
                 lineTo(13.9459f, 9.7248f)
                 curveTo(14.3326f, 10.0885f, 14.9492f, 10.0885f, 16.1822f, 10.0885f)
@@ -52,7 +55,7 @@ public val EssentionalUiGroup.Bolt: ImageVector
                 lineTo(10.054f, 14.2755f)
             }
         }
-        .build()
+            .build()
         return _bolt!!
     }
 

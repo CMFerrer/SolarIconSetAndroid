@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.DesignToolsGroup
 
-public val DesignToolsGroup.FlipVertical: ImageVector
+val DesignToolsGroup.FlipVertical: ImageVector
     get() {
         if (_flipVertical != null) {
             return _flipVertical!!
         }
-        _flipVertical = Builder(name = "FlipVertical", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _flipVertical = Builder(
+            name = "FlipVertical", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.1136f, 22.0f)
                 horizontalLineTo(5.8864f)
                 curveTo(4.1843f, 22.0f, 3.3332f, 22.0f, 3.054f, 21.4576f)
@@ -40,9 +41,11 @@ public val DesignToolsGroup.FlipVertical: ImageVector
                 curveTo(20.6669f, 22.0f, 19.8158f, 22.0f, 18.1136f, 22.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.1136f, 2.0f)
                 lineTo(5.8864f, 2.0f)
                 curveTo(4.1843f, 2.0f, 3.3332f, 2.0f, 3.054f, 2.5424f)
@@ -58,9 +61,11 @@ public val DesignToolsGroup.FlipVertical: ImageVector
                 curveTo(20.6669f, 2.0f, 19.8158f, 2.0f, 18.1136f, 2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(1.25f, 12.0f)
                 curveTo(1.25f, 11.5858f, 1.5858f, 11.25f, 2.0f, 11.25f)
                 horizontalLineTo(6.0f)
@@ -87,7 +92,7 @@ public val DesignToolsGroup.FlipVertical: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _flipVertical!!
     }
 

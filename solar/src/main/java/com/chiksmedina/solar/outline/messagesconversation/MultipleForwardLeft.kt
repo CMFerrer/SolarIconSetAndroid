@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MessagesConversationGroup
 
-public val MessagesConversationGroup.MultipleForwardLeft: ImageVector
+val MessagesConversationGroup.MultipleForwardLeft: ImageVector
     get() {
         if (_multipleForwardLeft != null) {
             return _multipleForwardLeft!!
         }
-        _multipleForwardLeft = Builder(name = "MultipleForwardLeft", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _multipleForwardLeft = Builder(
+            name = "MultipleForwardLeft", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.0109f, 3.9897f)
                 curveTo(9.2927f, 4.2932f, 9.2752f, 4.7677f, 8.9716f, 5.0496f)
                 lineTo(3.7554f, 9.8932f)
@@ -85,7 +89,7 @@ public val MessagesConversationGroup.MultipleForwardLeft: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _multipleForwardLeft!!
     }
 

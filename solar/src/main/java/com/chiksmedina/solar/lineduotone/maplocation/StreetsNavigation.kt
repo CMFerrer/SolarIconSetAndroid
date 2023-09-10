@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.lineduotone.maplocation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.MapLocationGroup
 
-public val MapLocationGroup.StreetsNavigation: ImageVector
+val MapLocationGroup.StreetsNavigation: ImageVector
     get() {
         if (_streetsNavigation != null) {
             return _streetsNavigation!!
         }
-        _streetsNavigation = Builder(name = "StreetsNavigation", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _streetsNavigation = Builder(
+            name = "StreetsNavigation", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.0f, 16.9208f)
                 curveTo(19.1395f, 16.8215f, 19.9218f, 16.5974f, 20.5376f, 16.092f)
                 curveTo(20.7401f, 15.9258f, 20.9258f, 15.7401f, 21.092f, 15.5376f)
@@ -40,9 +41,11 @@ public val MapLocationGroup.StreetsNavigation: ImageVector
                 curveTo(3.0742f, 15.7401f, 3.2599f, 15.9258f, 3.4624f, 16.092f)
                 curveTo(4.0782f, 16.5974f, 4.8605f, 16.8215f, 6.0f, 16.9208f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.5f, 15.5f)
                 lineTo(14.0f, 10.5f)
                 moveTo(3.5f, 3.0f)
@@ -50,9 +53,11 @@ public val MapLocationGroup.StreetsNavigation: ImageVector
                 moveTo(20.5f, 3.5f)
                 lineTo(14.0f, 10.5f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.2673f, 19.2006f)
                 lineTo(13.932f, 16.5295f)
                 curveTo(13.089f, 14.8432f, 12.6675f, 14.0f, 12.0f, 14.0f)
@@ -70,7 +75,7 @@ public val MapLocationGroup.StreetsNavigation: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _streetsNavigation!!
     }
 

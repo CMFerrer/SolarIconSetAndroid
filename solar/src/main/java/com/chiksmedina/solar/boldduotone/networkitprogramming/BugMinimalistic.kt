@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.networkitprogramming
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
+val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
     get() {
         if (_bugMinimalistic != null) {
             return _bugMinimalistic!!
         }
-        _bugMinimalistic = Builder(name = "BugMinimalistic", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _bugMinimalistic = Builder(
+            name = "BugMinimalistic", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 10.0f)
                 curveTo(5.0f, 6.134f, 8.134f, 3.0f, 12.0f, 3.0f)
                 curveTo(15.866f, 3.0f, 19.0f, 6.134f, 19.0f, 10.0f)
@@ -33,9 +34,11 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 verticalLineTo(10.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.75f, 15.5f)
                 curveTo(9.75f, 15.0858f, 10.0858f, 14.75f, 10.5f, 14.75f)
                 horizontalLineTo(13.5f)
@@ -45,9 +48,11 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 curveTo(10.0858f, 16.25f, 9.75f, 15.9142f, 9.75f, 15.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.5f, 9.75f)
                 curveTo(10.0858f, 9.75f, 9.75f, 10.0858f, 9.75f, 10.5f)
                 curveTo(9.75f, 10.9142f, 10.0858f, 11.25f, 10.5f, 11.25f)
@@ -57,9 +62,11 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 horizontalLineTo(10.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.416f, 2.6241f)
                 curveTo(17.7607f, 2.3944f, 17.8538f, 1.9287f, 17.624f, 1.5841f)
                 curveTo(17.3943f, 1.2394f, 16.9286f, 1.1463f, 16.584f, 1.376f)
@@ -68,9 +75,11 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 lineTo(17.416f, 2.6241f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.8297f, 8.4584f)
                 curveTo(18.7198f, 7.9695f, 18.5587f, 7.4999f, 18.3525f, 7.0556f)
                 curveTo(18.3753f, 7.0436f, 18.3991f, 7.0326f, 18.4236f, 7.0228f)
@@ -81,9 +90,11 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 curveTo(18.931f, 8.4354f, 18.8804f, 8.4496f, 18.8297f, 8.4584f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.0f, 13.7501f)
                 horizontalLineTo(22.0f)
                 curveTo(22.4142f, 13.7501f, 22.75f, 13.4143f, 22.75f, 13.0001f)
@@ -92,9 +103,11 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 verticalLineTo(13.7501f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.9422f, 18.7019f)
                 curveTo(18.1871f, 18.3097f, 18.3942f, 17.8915f, 18.5584f, 17.4524f)
                 curveTo(18.6321f, 17.4581f, 18.7063f, 17.475f, 18.7785f, 17.5039f)
@@ -105,9 +118,11 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 curveTo(18.1109f, 18.8524f, 18.0167f, 18.7849f, 17.9422f, 18.7019f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.4416f, 17.4524f)
                 curveTo(5.6059f, 17.8915f, 5.813f, 18.3097f, 6.0578f, 18.7019f)
                 curveTo(5.9833f, 18.7849f, 5.8891f, 18.8524f, 5.7785f, 18.8966f)
@@ -118,9 +133,11 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 curveTo(5.2937f, 17.475f, 5.3678f, 17.4581f, 5.4416f, 17.4524f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 12.2501f)
                 horizontalLineTo(2.0f)
                 curveTo(1.5858f, 12.2501f, 1.25f, 12.5859f, 1.25f, 13.0001f)
@@ -129,9 +146,11 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 verticalLineTo(12.2501f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.6475f, 7.0556f)
                 curveTo(5.4413f, 7.4999f, 5.2802f, 7.9695f, 5.1703f, 8.4584f)
                 curveTo(5.1196f, 8.4496f, 5.069f, 8.4354f, 5.0193f, 8.4155f)
@@ -142,9 +161,11 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 curveTo(5.6009f, 7.0326f, 5.6247f, 7.0436f, 5.6475f, 7.0556f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.5282f, 3.9203f)
                 lineTo(6.584f, 2.6241f)
                 curveTo(6.2393f, 2.3944f, 6.1462f, 1.9287f, 6.376f, 1.5841f)
@@ -154,7 +175,7 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bugMinimalistic!!
     }
 

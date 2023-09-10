@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FoodKitchenGroup
 
-public val FoodKitchenGroup.Corkscrew: ImageVector
+val FoodKitchenGroup.Corkscrew: ImageVector
     get() {
         if (_corkscrew != null) {
             return _corkscrew!!
         }
-        _corkscrew = Builder(name = "Corkscrew", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _corkscrew = Builder(
+            name = "Corkscrew", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9874f, 2.1112f)
                 curveTo(11.1356f, 0.9629f, 12.9972f, 0.9629f, 14.1454f, 2.1112f)
                 lineTo(21.8888f, 9.8546f)
@@ -81,7 +85,7 @@ public val FoodKitchenGroup.Corkscrew: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _corkscrew!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.linear.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.AstronomyGroup
 
-public val AstronomyGroup.Atom: ImageVector
+val AstronomyGroup.Atom: ImageVector
     get() {
         if (_atom != null) {
             return _atom!!
         }
-        _atom = Builder(name = "Atom", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _atom = Builder(
+            name = "Atom", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.9423f, 3.0577f)
                 curveTo(23.4117f, 5.527f, 21.4099f, 11.5324f, 16.4712f, 16.4711f)
                 curveTo(11.5326f, 21.4097f, 5.5272f, 23.4115f, 3.0579f, 20.9422f)
@@ -37,9 +38,11 @@ public val AstronomyGroup.Atom: ImageVector
                 curveTo(11.5324f, 2.5903f, 5.527f, 0.5885f, 3.0577f, 3.0578f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.5f, 12.0f)
                 curveTo(14.5f, 13.3807f, 13.3807f, 14.5f, 12.0f, 14.5f)
                 curveTo(10.6193f, 14.5f, 9.5f, 13.3807f, 9.5f, 12.0f)
@@ -48,7 +51,7 @@ public val AstronomyGroup.Atom: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _atom!!
     }
 

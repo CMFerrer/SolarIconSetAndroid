@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.lineduotone.shoppingecommerce
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.ShoppingEcommerceGroup
 
-public val ShoppingEcommerceGroup.BagHeart: ImageVector
+val ShoppingEcommerceGroup.BagHeart: ImageVector
     get() {
         if (_bagHeart != null) {
             return _bagHeart!!
         }
-        _bagHeart = Builder(name = "BagHeart", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _bagHeart = Builder(
+            name = "BagHeart", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.7417f, 20.5545f)
                 curveTo(4.9413f, 22.0f, 7.174f, 22.0f, 11.6394f, 22.0f)
                 horizontalLineTo(12.3606f)
@@ -52,9 +53,11 @@ public val ShoppingEcommerceGroup.BagHeart: ImageVector
                 curveTo(5.7652f, 6.922f, 5.7652f, 6.922f, 5.7652f, 6.922f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 12.1913f)
                 lineTo(11.4813f, 12.7331f)
                 curveTo(11.7713f, 13.0108f, 12.2287f, 13.0108f, 12.5187f, 12.7331f)
@@ -119,9 +122,11 @@ public val ShoppingEcommerceGroup.BagHeart: ImageVector
                 lineTo(12.5135f, 15.2609f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.0f, 6.0f)
                 verticalLineTo(5.0f)
                 curveTo(9.0f, 3.3431f, 10.3431f, 2.0f, 12.0f, 2.0f)
@@ -129,7 +134,7 @@ public val ShoppingEcommerceGroup.BagHeart: ImageVector
                 verticalLineTo(6.0f)
             }
         }
-        .build()
+            .build()
         return _bagHeart!!
     }
 

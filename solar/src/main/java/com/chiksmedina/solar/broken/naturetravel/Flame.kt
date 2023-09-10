@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.NatureTravelGroup
 
-public val NatureTravelGroup.Flame: ImageVector
+val NatureTravelGroup.Flame: ImageVector
     get() {
         if (_flame != null) {
             return _flame!!
         }
-        _flame = Builder(name = "Flame", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _flame = Builder(
+            name = "Flame", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.3709f, 8.0f)
                 curveTo(8.362f, 6.4756f, 9.3435f, 4.9097f, 9.956f, 3.3771f)
                 curveTo(10.2157f, 2.7273f, 11.0161f, 2.422f, 11.5727f, 2.846f)
@@ -43,7 +47,7 @@ public val NatureTravelGroup.Flame: ImageVector
                 curveTo(15.8734f, 21.5911f, 16.4265f, 21.3508f, 16.9653f, 21.0116f)
             }
         }
-        .build()
+            .build()
         return _flame!!
     }
 

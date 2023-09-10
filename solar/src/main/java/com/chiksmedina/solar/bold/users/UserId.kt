@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.UsersGroup
 
-public val UsersGroup.UserId: ImageVector
+val UsersGroup.UserId: ImageVector
     get() {
         if (_userId != null) {
             return _userId!!
         }
-        _userId = Builder(name = "UserId", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _userId = Builder(
+            name = "UserId", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.0f, 4.0f)
                 horizontalLineTo(14.0f)
                 curveTo(17.7712f, 4.0f, 19.6569f, 4.0f, 20.8284f, 5.1716f)
@@ -71,7 +75,7 @@ public val UsersGroup.UserId: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _userId!!
     }
 

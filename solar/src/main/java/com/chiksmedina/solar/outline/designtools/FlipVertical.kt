@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.DesignToolsGroup
 
-public val DesignToolsGroup.FlipVertical: ImageVector
+val DesignToolsGroup.FlipVertical: ImageVector
     get() {
         if (_flipVertical != null) {
             return _flipVertical!!
         }
-        _flipVertical = Builder(name = "FlipVertical", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _flipVertical = Builder(
+            name = "FlipVertical", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.8264f, 1.25f)
                 curveTo(5.8463f, 1.25f, 5.8663f, 1.25f, 5.8864f, 1.25f)
                 lineTo(18.1737f, 1.25f)
@@ -170,7 +174,7 @@ public val DesignToolsGroup.FlipVertical: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _flipVertical!!
     }
 

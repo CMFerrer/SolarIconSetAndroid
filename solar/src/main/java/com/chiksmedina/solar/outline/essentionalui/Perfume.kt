@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Perfume: ImageVector
+val EssentionalUiGroup.Perfume: ImageVector
     get() {
         if (_perfume != null) {
             return _perfume!!
         }
-        _perfume = Builder(name = "Perfume", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _perfume = Builder(
+            name = "Perfume", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9506f, 1.25f)
                 horizontalLineTo(10.0494f)
                 curveTo(10.7142f, 1.25f, 11.2871f, 1.2499f, 11.7458f, 1.3116f)
@@ -124,7 +128,7 @@ public val EssentionalUiGroup.Perfume: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _perfume!!
     }
 

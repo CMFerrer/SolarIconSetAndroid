@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MapLocationGroup
 
-public val MapLocationGroup.Global: ImageVector
+val MapLocationGroup.Global: ImageVector
     get() {
         if (_global != null) {
             return _global!!
         }
-        _global = Builder(name = "Global", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _global = Builder(
+            name = "Global", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.2065f, 3.1819f)
                 curveTo(8.9543f, 3.2618f, 8.7053f, 3.3526f, 8.4602f, 3.4541f)
                 curveTo(7.3379f, 3.919f, 6.3182f, 4.6003f, 5.4593f, 5.4593f)
@@ -103,7 +107,7 @@ public val MapLocationGroup.Global: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _global!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Shuffle: ImageVector
+val VideoAudioSoundGroup.Shuffle: ImageVector
     get() {
         if (_shuffle != null) {
             return _shuffle!!
         }
-        _shuffle = Builder(name = "Shuffle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _shuffle = Builder(
+            name = "Shuffle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.4697f, 4.4697f)
                 curveTo(19.7626f, 4.1768f, 20.2374f, 4.1768f, 20.5303f, 4.4697f)
                 lineTo(22.5303f, 6.4697f)
@@ -97,7 +101,7 @@ public val VideoAudioSoundGroup.Shuffle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _shuffle!!
     }
 

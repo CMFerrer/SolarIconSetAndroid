@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.ClapperboardOpen: ImageVector
+val VideoAudioSoundGroup.ClapperboardOpen: ImageVector
     get() {
         if (_clapperboardOpen != null) {
             return _clapperboardOpen!!
         }
-        _clapperboardOpen = Builder(name = "ClapperboardOpen", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _clapperboardOpen = Builder(
+            name = "ClapperboardOpen", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.0588f, 4.708f)
                 curveTo(17.6563f, 3.8918f, 16.8018f, 3.3985f, 15.8937f, 3.458f)
                 curveTo(15.771f, 3.466f, 15.6312f, 3.4923f, 15.3827f, 3.554f)
@@ -106,7 +110,7 @@ public val VideoAudioSoundGroup.ClapperboardOpen: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _clapperboardOpen!!
     }
 

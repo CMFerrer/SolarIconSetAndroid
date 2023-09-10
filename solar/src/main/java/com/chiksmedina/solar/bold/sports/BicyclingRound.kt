@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SportsGroup
 
-public val SportsGroup.BicyclingRound: ImageVector
+val SportsGroup.BicyclingRound: ImageVector
     get() {
         if (_bicyclingRound != null) {
             return _bicyclingRound!!
         }
-        _bicyclingRound = Builder(name = "BicyclingRound", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bicyclingRound = Builder(
+            name = "BicyclingRound", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.0f, 4.0f)
                 curveTo(16.0f, 5.1046f, 15.1046f, 6.0f, 14.0f, 6.0f)
                 curveTo(12.8954f, 6.0f, 12.0f, 5.1046f, 12.0f, 4.0f)
@@ -31,9 +33,11 @@ public val SportsGroup.BicyclingRound: ImageVector
                 curveTo(15.1046f, 2.0f, 16.0f, 2.8954f, 16.0f, 4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.919f, 8.506f)
                 curveTo(10.0125f, 7.7843f, 8.6759f, 8.0421f, 8.1027f, 9.0491f)
                 curveTo(7.5479f, 10.0238f, 7.9604f, 11.2644f, 8.9883f, 11.713f)
@@ -82,7 +86,7 @@ public val SportsGroup.BicyclingRound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bicyclingRound!!
     }
 

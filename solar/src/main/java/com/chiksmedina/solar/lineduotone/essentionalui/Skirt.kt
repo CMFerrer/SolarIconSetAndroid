@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.lineduotone.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.EssentionalUiGroup
 
-public val EssentionalUiGroup.Skirt: ImageVector
+val EssentionalUiGroup.Skirt: ImageVector
     get() {
         if (_skirt != null) {
             return _skirt!!
         }
-        _skirt = Builder(name = "Skirt", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _skirt = Builder(
+            name = "Skirt", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.1624f, 5.5f)
                 horizontalLineTo(17.4124f)
                 verticalLineTo(5.6107f)
@@ -154,9 +155,11 @@ public val EssentionalUiGroup.Skirt: ImageVector
                 lineTo(1.3626f, 17.7362f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.5655f, 6.0927f)
                 curveTo(10.6167f, 5.6816f, 10.325f, 5.3069f, 9.9139f, 5.2558f)
                 curveTo(9.5029f, 5.2046f, 9.1282f, 5.4963f, 9.077f, 5.9073f)
@@ -197,7 +200,7 @@ public val EssentionalUiGroup.Skirt: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _skirt!!
     }
 

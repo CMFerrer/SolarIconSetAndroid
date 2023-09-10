@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.security
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SecurityGroup
 
-public val SecurityGroup.Siren: ImageVector
+val SecurityGroup.Siren: ImageVector
     get() {
         if (_siren != null) {
             return _siren!!
         }
-        _siren = Builder(name = "Siren", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _siren = Builder(
+            name = "Siren", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.75f, 2.0f)
                 curveTo(12.75f, 1.5858f, 12.4142f, 1.25f, 12.0f, 1.25f)
                 curveTo(11.5858f, 1.25f, 11.25f, 1.5858f, 11.25f, 2.0f)
@@ -34,9 +35,11 @@ public val SecurityGroup.Siren: ImageVector
                 verticalLineTo(2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.0f, 10.0649f)
                 curveTo(14.5858f, 10.0649f, 14.25f, 10.4007f, 14.25f, 10.8149f)
                 curveTo(14.25f, 11.2292f, 14.5858f, 11.5649f, 15.0f, 11.5649f)
@@ -46,9 +49,11 @@ public val SecurityGroup.Siren: ImageVector
                 curveTo(17.9963f, 11.3367f, 16.618f, 10.0649f, 15.0f, 10.0649f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9664f, 7.25f)
                 curveTo(10.5947f, 7.25f, 9.5193f, 7.25f, 8.6549f, 7.3206f)
                 curveTo(7.7748f, 7.3925f, 7.0477f, 7.5414f, 6.3896f, 7.8767f)
@@ -100,9 +105,11 @@ public val SecurityGroup.Siren: ImageVector
                 curveTo(11.25f, 17.9142f, 11.5858f, 18.25f, 12.0f, 18.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.5303f, 5.5303f)
                 lineTo(20.0303f, 7.0303f)
                 curveTo(19.7374f, 7.3232f, 19.2626f, 7.3232f, 18.9697f, 7.0303f)
@@ -112,9 +119,11 @@ public val SecurityGroup.Siren: ImageVector
                 curveTo(21.8232f, 4.7626f, 21.8232f, 5.2374f, 21.5303f, 5.5303f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.5303f, 4.4697f)
                 curveTo(3.2374f, 4.1768f, 2.7626f, 4.1768f, 2.4697f, 4.4697f)
                 curveTo(2.1768f, 4.7626f, 2.1768f, 5.2374f, 2.4697f, 5.5303f)
@@ -125,7 +134,7 @@ public val SecurityGroup.Siren: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _siren!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.arrowsaction
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsActionGroup
 
-public val ArrowsActionGroup.Reorder: ImageVector
+val ArrowsActionGroup.Reorder: ImageVector
     get() {
         if (_reorder != null) {
             return _reorder!!
         }
-        _reorder = Builder(name = "Reorder", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _reorder = Builder(
+            name = "Reorder", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.4463f, 3.25f)
                 curveTo(8.3135f, 3.25f, 7.3877f, 3.25f, 6.6569f, 3.3482f)
                 curveTo(5.8929f, 3.4509f, 5.2306f, 3.6732f, 4.7019f, 4.2019f)
@@ -103,9 +104,11 @@ public val ArrowsActionGroup.Reorder: ImageVector
                 curveTo(5.2918f, 15.7507f, 4.9811f, 15.75f, 4.5f, 15.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9678f, 14.25f)
                 curveTo(11.528f, 14.25f, 11.1486f, 14.25f, 10.8374f, 14.2782f)
                 curveTo(10.5082f, 14.308f, 10.1822f, 14.3741f, 9.875f, 14.5514f)
@@ -155,9 +158,11 @@ public val ArrowsActionGroup.Reorder: ImageVector
                 curveTo(10.4163f, 16.011f, 10.511f, 15.9163f, 10.625f, 15.8505f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.4678f, 14.25f)
                 horizontalLineTo(19.5322f)
                 curveTo(19.972f, 14.25f, 20.3514f, 14.25f, 20.6627f, 14.2782f)
@@ -208,7 +213,7 @@ public val ArrowsActionGroup.Reorder: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _reorder!!
     }
 

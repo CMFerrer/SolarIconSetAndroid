@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.MedicineGroup
 
-public val MedicineGroup.Bone: ImageVector
+val MedicineGroup.Bone: ImageVector
     get() {
         if (_bone != null) {
             return _bone!!
         }
-        _bone = Builder(name = "Bone", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _bone = Builder(
+            name = "Bone", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.3562f, 15.2061f)
                 lineTo(10.9313f, 16.6311f)
                 curveTo(10.5378f, 17.0246f, 10.562f, 17.674f, 10.7105f, 18.2103f)
@@ -43,7 +47,7 @@ public val MedicineGroup.Bone: ImageVector
                 lineTo(15.2061f, 12.3562f)
             }
         }
-        .build()
+            .build()
         return _bone!!
     }
 

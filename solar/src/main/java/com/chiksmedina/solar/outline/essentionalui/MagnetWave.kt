@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.MagnetWave: ImageVector
+val EssentionalUiGroup.MagnetWave: ImageVector
     get() {
         if (_magnetWave != null) {
             return _magnetWave!!
         }
-        _magnetWave = Builder(name = "MagnetWave", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _magnetWave = Builder(
+            name = "MagnetWave", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(1.25f, 12.0f)
                 curveTo(1.25f, 6.6152f, 5.6152f, 2.25f, 11.0f, 2.25f)
                 horizontalLineTo(16.5f)
@@ -70,9 +71,11 @@ public val EssentionalUiGroup.MagnetWave: ImageVector
                 horizontalLineTo(15.1944f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.0199f, 5.4238f)
                 curveTo(21.3381f, 5.1586f, 21.811f, 5.2016f, 22.0762f, 5.5198f)
                 lineTo(21.5f, 6.0f)
@@ -112,9 +115,11 @@ public val EssentionalUiGroup.MagnetWave: ImageVector
                 lineTo(21.0199f, 5.4238f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.1556f, 8.6358f)
                 curveTo(19.9545f, 8.2737f, 19.4979f, 8.1432f, 19.1358f, 8.3444f)
                 curveTo(18.7768f, 8.5438f, 18.6455f, 8.9944f, 18.8393f, 9.355f)
@@ -149,7 +154,7 @@ public val EssentionalUiGroup.MagnetWave: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _magnetWave!!
     }
 

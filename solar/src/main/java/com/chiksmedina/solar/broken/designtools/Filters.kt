@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,24 +12,30 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.DesignToolsGroup
 
-public val DesignToolsGroup.Filters: ImageVector
+val DesignToolsGroup.Filters: ImageVector
     get() {
         if (_filters != null) {
             return _filters!!
         }
-        _filters = Builder(name = "Filters", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _filters = Builder(
+            name = "Filters", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 20.2832f)
                 curveTo(13.0615f, 21.2333f, 14.4633f, 21.811f, 16.0f, 21.811f)
                 curveTo(19.3137f, 21.811f, 22.0f, 19.1247f, 22.0f, 15.811f)
                 curveTo(22.0f, 13.0152f, 20.0878f, 10.6661f, 17.5f, 10.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.0f, 2.8027f)
                 curveTo(9.8825f, 2.2922f, 10.9071f, 2.0f, 12.0f, 2.0f)
                 curveTo(15.3137f, 2.0f, 18.0f, 4.6863f, 18.0f, 8.0f)
@@ -40,9 +43,11 @@ public val DesignToolsGroup.Filters: ImageVector
                 curveTo(8.6863f, 14.0f, 6.0f, 11.3137f, 6.0f, 8.0f)
                 curveTo(6.0f, 7.2987f, 6.1203f, 6.6256f, 6.3414f, 6.0f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.0f, 21.9999f)
                 lineTo(8.0f, 21.2499f)
                 horizontalLineTo(8.0f)
@@ -95,7 +100,7 @@ public val DesignToolsGroup.Filters: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _filters!!
     }
 

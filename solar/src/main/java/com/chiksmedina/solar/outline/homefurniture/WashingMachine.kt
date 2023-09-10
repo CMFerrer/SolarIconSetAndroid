@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.homefurniture
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.WashingMachine: ImageVector
+val HomeFurnitureGroup.WashingMachine: ImageVector
     get() {
         if (_washingMachine != null) {
             return _washingMachine!!
         }
-        _washingMachine = Builder(name = "WashingMachine", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _washingMachine = Builder(
+            name = "WashingMachine", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.9436f, 1.25f)
                 horizontalLineTo(13.0564f)
                 curveTo(14.8942f, 1.25f, 16.3498f, 1.25f, 17.489f, 1.4031f)
@@ -110,9 +111,11 @@ public val HomeFurnitureGroup.WashingMachine: ImageVector
                 curveTo(9.9289f, 18.75f, 8.25f, 17.0711f, 8.25f, 15.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.5f, 5.5f)
                 curveTo(15.5f, 6.0523f, 15.0523f, 6.5f, 14.5f, 6.5f)
                 curveTo(13.9477f, 6.5f, 13.5f, 6.0523f, 13.5f, 5.5f)
@@ -120,9 +123,11 @@ public val HomeFurnitureGroup.WashingMachine: ImageVector
                 curveTo(15.0523f, 4.5f, 15.5f, 4.9477f, 15.5f, 5.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.5f, 5.5f)
                 curveTo(18.5f, 6.0523f, 18.0523f, 6.5f, 17.5f, 6.5f)
                 curveTo(16.9477f, 6.5f, 16.5f, 6.0523f, 16.5f, 5.5f)
@@ -131,7 +136,7 @@ public val HomeFurnitureGroup.WashingMachine: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _washingMachine!!
     }
 

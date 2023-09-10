@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.linear
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.LinearGroup
+import com.chiksmedina.solar.LinearSolar
 import com.chiksmedina.solar.linear.arrowsaction.ArrowToDownLeft
 import com.chiksmedina.solar.linear.arrowsaction.ArrowToDownRight
 import com.chiksmedina.solar.linear.arrowsaction.ArrowToTopLeft
@@ -60,29 +60,79 @@ import com.chiksmedina.solar.linear.arrowsaction.Upload
 import com.chiksmedina.solar.linear.arrowsaction.UploadMinimalistic
 import com.chiksmedina.solar.linear.arrowsaction.UploadSquare
 import com.chiksmedina.solar.linear.arrowsaction.UploadTwiceSquare
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object ArrowsActionGroup
+object ArrowsActionGroup
 
-public val LinearGroup.ArrowsAction: ArrowsActionGroup
-  get() = ArrowsActionGroup
+val LinearSolar.ArrowsAction: ArrowsActionGroup
+    get() = ArrowsActionGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val ArrowsActionGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val ArrowsActionGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            ArrowToDownLeft,
+            ArrowToDownRight,
+            ArrowToTopLeft,
+            ArrowToTopRight,
+            CircleBottomDown,
+            CircleBottomUp,
+            CircleTopDown,
+            CircleTopUp,
+            Download,
+            DownloadMinimalistic,
+            DownloadSquare,
+            DownloadTwiceSquare,
+            Exit,
+            Export,
+            Forward,
+            Forward2,
+            Import,
+            Login,
+            Login2,
+            Login3,
+            Logout,
+            Logout2,
+            Logout3,
+            Maximize,
+            MaximizeSquare,
+            MaximizeSquare2,
+            MaximizeSquare3,
+            MaximizeSquareMinimalistic,
+            Minimize,
+            MinimizeSquare,
+            MinimizeSquare2,
+            MinimizeSquare3,
+            MinimizeSquareMinimalistic,
+            ReciveSquare,
+            ReciveTwiceSquare,
+            Reorder,
+            Reply,
+            Reply2,
+            Scale,
+            ScreenShare,
+            SendSquare,
+            SendTwiceSquare,
+            SquareBottomDown,
+            SquareBottomUp,
+            SquareTopDown,
+            SquareTopUp,
+            UndoLeft,
+            UndoLeftRound,
+            UndoLeftRoundSquare,
+            UndoLeftSquare,
+            UndoRight,
+            UndoRightRound,
+            UndoRightRoundSquare,
+            UndoRightSquare,
+            Upload,
+            UploadMinimalistic,
+            UploadSquare,
+            UploadTwiceSquare
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(ArrowToDownLeft, ArrowToDownRight, ArrowToTopLeft, ArrowToTopRight,
-        CircleBottomDown, CircleBottomUp, CircleTopDown, CircleTopUp, Download,
-        DownloadMinimalistic, DownloadSquare, DownloadTwiceSquare, Exit, Export, Forward, Forward2,
-        Import, Login, Login2, Login3, Logout, Logout2, Logout3, Maximize, MaximizeSquare,
-        MaximizeSquare2, MaximizeSquare3, MaximizeSquareMinimalistic, Minimize, MinimizeSquare,
-        MinimizeSquare2, MinimizeSquare3, MinimizeSquareMinimalistic, ReciveSquare,
-        ReciveTwiceSquare, Reorder, Reply, Reply2, Scale, ScreenShare, SendSquare, SendTwiceSquare,
-        SquareBottomDown, SquareBottomUp, SquareTopDown, SquareTopUp, UndoLeft, UndoLeftRound,
-        UndoLeftRoundSquare, UndoLeftSquare, UndoRight, UndoRightRound, UndoRightRoundSquare,
-        UndoRightSquare, Upload, UploadMinimalistic, UploadSquare, UploadTwiceSquare)
-    return __AllIcons!!
-  }

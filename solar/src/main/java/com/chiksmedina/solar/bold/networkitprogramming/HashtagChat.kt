@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.HashtagChat: ImageVector
+val NetworkItProgrammingGroup.HashtagChat: ImageVector
     get() {
         if (_hashtagChat != null) {
             return _hashtagChat!!
         }
-        _hashtagChat = Builder(name = "HashtagChat", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _hashtagChat = Builder(
+            name = "HashtagChat", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.8144f, 21.2359f)
                 lineTo(17.5433f, 21.6938f)
                 curveTo(17.3017f, 22.102f, 16.6982f, 22.102f, 16.4567f, 21.6938f)
@@ -49,9 +51,11 @@ public val NetworkItProgrammingGroup.HashtagChat: ImageVector
                 curveTo(18.1297f, 20.7031f, 18.0246f, 20.8807f, 17.8144f, 21.2359f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.2007f, 2.2773f)
                 curveTo(10.5998f, 2.3882f, 10.8335f, 2.8016f, 10.7226f, 3.2007f)
                 lineTo(9.3201f, 8.25f)
@@ -90,7 +94,7 @@ public val NetworkItProgrammingGroup.HashtagChat: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hashtagChat!!
     }
 

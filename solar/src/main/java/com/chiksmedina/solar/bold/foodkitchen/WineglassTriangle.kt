@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.foodkitchen
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.FoodKitchenGroup
 
-public val FoodKitchenGroup.WineglassTriangle: ImageVector
+val FoodKitchenGroup.WineglassTriangle: ImageVector
     get() {
         if (_wineglassTriangle != null) {
             return _wineglassTriangle!!
         }
-        _wineglassTriangle = Builder(name = "WineglassTriangle", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _wineglassTriangle = Builder(
+            name = "WineglassTriangle", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.2991f, 3.0f)
                 horizontalLineTo(4.701f)
                 curveTo(3.2001f, 3.0f, 2.4376f, 4.7941f, 3.4838f, 5.8638f)
@@ -33,9 +34,11 @@ public val FoodKitchenGroup.WineglassTriangle: ImageVector
                 curveTo(21.5624f, 4.7941f, 20.7999f, 3.0f, 19.2991f, 3.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.449f, 10.5f)
                 horizontalLineTo(7.551f)
                 lineTo(11.2498f, 14.7162f)
@@ -52,7 +55,7 @@ public val FoodKitchenGroup.WineglassTriangle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _wineglassTriangle!!
     }
 

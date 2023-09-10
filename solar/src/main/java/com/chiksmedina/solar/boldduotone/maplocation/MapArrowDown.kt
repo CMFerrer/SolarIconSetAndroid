@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.maplocation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MapLocationGroup
 
-public val MapLocationGroup.MapArrowDown: ImageVector
+val MapLocationGroup.MapArrowDown: ImageVector
     get() {
         if (_mapArrowDown != null) {
             return _mapArrowDown!!
         }
-        _mapArrowDown = Builder(name = "MapArrowDown", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _mapArrowDown = Builder(
+            name = "MapArrowDown", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.0374f, 14.1437f)
                 curveTo(7.7827f, 14.2711f, 7.4731f, 14.1602f, 7.3571f, 13.9001f)
                 lineTo(3.1645f, 4.4984f)
@@ -37,9 +38,11 @@ public val MapLocationGroup.MapArrowDown: ImageVector
                 lineTo(8.0374f, 14.1437f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(8.609f, 15.5342f)
                 curveTo(8.3697f, 15.6538f, 8.267f, 15.9407f, 8.376f, 16.185f)
                 lineTo(10.5266f, 21.0076f)
@@ -50,7 +53,7 @@ public val MapLocationGroup.MapArrowDown: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _mapArrowDown!!
     }
 

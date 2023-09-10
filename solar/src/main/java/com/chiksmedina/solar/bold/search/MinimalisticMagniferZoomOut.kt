@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.search
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,17 +12,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SearchGroup
 
-public val SearchGroup.MinimalisticMagniferZoomOut: ImageVector
+val SearchGroup.MinimalisticMagniferZoomOut: ImageVector
     get() {
         if (_minimalisticMagniferZoomOut != null) {
             return _minimalisticMagniferZoomOut!!
         }
-        _minimalisticMagniferZoomOut = Builder(name = "MinimalisticMagniferZoomOut", defaultWidth =
-                24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _minimalisticMagniferZoomOut = Builder(
+            name = "MinimalisticMagniferZoomOut", defaultWidth =
+            24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.1279f, 11.1429f)
                 curveTo(20.1279f, 16.1924f, 16.0698f, 20.2859f, 11.0639f, 20.2859f)
                 curveTo(6.0581f, 20.2859f, 2.0f, 16.1924f, 2.0f, 11.1429f)
@@ -33,9 +34,11 @@ public val SearchGroup.MinimalisticMagniferZoomOut: ImageVector
                 curveTo(16.0698f, 2.0f, 20.1279f, 6.0934f, 20.1279f, 11.1429f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFFffffff)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFFffffff)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.2944f, 11.1429f)
                 curveTo(8.2944f, 10.7221f, 8.6326f, 10.381f, 9.0497f, 10.381f)
                 horizontalLineTo(13.0781f)
@@ -45,9 +48,11 @@ public val SearchGroup.MinimalisticMagniferZoomOut: ImageVector
                 curveTo(8.6326f, 11.9048f, 8.2944f, 11.5637f, 8.2944f, 11.1429f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.8194f, 19.7006f)
                 curveTo(17.7301f, 18.6064f, 18.6357f, 17.6929f, 19.7205f, 17.783f)
                 curveTo(19.9085f, 17.7986f, 20.1337f, 17.867f, 20.363f, 17.9367f)
@@ -67,7 +72,7 @@ public val SearchGroup.MinimalisticMagniferZoomOut: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _minimalisticMagniferZoomOut!!
     }
 

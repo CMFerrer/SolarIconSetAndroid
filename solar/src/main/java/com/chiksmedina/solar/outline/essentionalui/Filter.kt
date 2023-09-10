@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Filter: ImageVector
+val EssentionalUiGroup.Filter: ImageVector
     get() {
         if (_filter != null) {
             return _filter!!
         }
-        _filter = Builder(name = "Filter", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _filter = Builder(
+            name = "Filter", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.953f, 2.25f)
                 curveTo(4.9686f, 2.25f, 4.9843f, 2.25f, 5.0f, 2.25f)
                 lineTo(19.047f, 2.25f)
@@ -108,7 +112,7 @@ public val EssentionalUiGroup.Filter: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _filter!!
     }
 

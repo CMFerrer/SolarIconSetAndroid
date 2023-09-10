@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.DesignToolsGroup
 
-public val DesignToolsGroup.AlignTop: ImageVector
+val DesignToolsGroup.AlignTop: ImageVector
     get() {
         if (_alignTop != null) {
             return _alignTop!!
         }
-        _alignTop = Builder(name = "AlignTop", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _alignTop = Builder(
+            name = "AlignTop", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(1.25f, 3.0f)
                 curveTo(1.25f, 2.5858f, 1.5858f, 2.25f, 2.0f, 2.25f)
                 lineTo(22.0f, 2.25f)
@@ -131,7 +135,7 @@ public val DesignToolsGroup.AlignTop: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _alignTop!!
     }
 

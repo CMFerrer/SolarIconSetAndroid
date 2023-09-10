@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.PostsCarouselHorizontal: ImageVector
+val EssentionalUiGroup.PostsCarouselHorizontal: ImageVector
     get() {
         if (_postsCarouselHorizontal != null) {
             return _postsCarouselHorizontal!!
         }
-        _postsCarouselHorizontal = Builder(name = "PostsCarouselHorizontal", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _postsCarouselHorizontal = Builder(
+            name = "PostsCarouselHorizontal", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.448f, 4.25f)
                 horizontalLineTo(12.552f)
                 curveTo(13.4505f, 4.25f, 14.1997f, 4.2499f, 14.7945f, 4.3299f)
@@ -70,9 +71,11 @@ public val EssentionalUiGroup.PostsCarouselHorizontal: ImageVector
                 curveTo(10.536f, 5.75f, 9.8884f, 5.7516f, 9.4054f, 5.8165f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.5f, 5.75f)
                 curveTo(20.5335f, 5.75f, 19.75f, 6.5335f, 19.75f, 7.5f)
                 verticalLineTo(16.5f)
@@ -90,9 +93,11 @@ public val EssentionalUiGroup.PostsCarouselHorizontal: ImageVector
                 horizontalLineTo(21.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 4.25f)
                 curveTo(1.5858f, 4.25f, 1.25f, 4.5858f, 1.25f, 5.0f)
                 curveTo(1.25f, 5.4142f, 1.5858f, 5.75f, 2.0f, 5.75f)
@@ -111,7 +116,7 @@ public val EssentionalUiGroup.PostsCarouselHorizontal: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _postsCarouselHorizontal!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.AstronomyGroup
 
-public val AstronomyGroup.BlackHole3: ImageVector
+val AstronomyGroup.BlackHole3: ImageVector
     get() {
         if (_blackHole3 != null) {
             return _blackHole3!!
         }
-        _blackHole3 = Builder(name = "BlackHole3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _blackHole3 = Builder(
+            name = "BlackHole3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.9276f, 12.4529f)
                 curveTo(9.3338f, 13.2885f, 9.9443f, 13.9944f, 10.7532f, 14.395f)
                 curveTo(9.9602f, 14.5776f, 9.043f, 14.6153f, 8.1052f, 14.4824f)
@@ -53,7 +57,7 @@ public val AstronomyGroup.BlackHole3: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _blackHole3!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SportsGroup
 
-public val SportsGroup.Water: ImageVector
+val SportsGroup.Water: ImageVector
     get() {
         if (_water != null) {
             return _water!!
         }
-        _water = Builder(name = "Water", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _water = Builder(
+            name = "Water", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.5816f, 6.0104f)
                 curveTo(5.2723f, 4.9947f, 6.7152f, 5.0326f, 7.4435f, 5.9094f)
                 curveTo(8.4255f, 7.0915f, 9.8098f, 8.2498f, 12.0f, 8.2498f)
@@ -85,7 +89,7 @@ public val SportsGroup.Water: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _water!!
     }
 

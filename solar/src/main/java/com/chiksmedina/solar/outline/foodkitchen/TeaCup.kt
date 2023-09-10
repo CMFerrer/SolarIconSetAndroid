@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FoodKitchenGroup
 
-public val FoodKitchenGroup.TeaCup: ImageVector
+val FoodKitchenGroup.TeaCup: ImageVector
     get() {
         if (_teaCup != null) {
             return _teaCup!!
         }
-        _teaCup = Builder(name = "TeaCup", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _teaCup = Builder(
+            name = "TeaCup", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.5305f, 1.4697f)
                 curveTo(10.8234f, 1.7626f, 10.8234f, 2.2374f, 10.5305f, 2.5303f)
                 curveTo(10.2711f, 2.7897f, 10.2711f, 3.2103f, 10.5305f, 3.4697f)
@@ -112,7 +116,7 @@ public val FoodKitchenGroup.TeaCup: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _teaCup!!
     }
 

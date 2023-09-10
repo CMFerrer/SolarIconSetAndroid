@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsActionGroup
 
-public val ArrowsActionGroup.MaximizeSquare2: ImageVector
+val ArrowsActionGroup.MaximizeSquare2: ImageVector
     get() {
         if (_maximizeSquare2 != null) {
             return _maximizeSquare2!!
         }
-        _maximizeSquare2 = Builder(name = "MaximizeSquare2", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _maximizeSquare2 = Builder(
+            name = "MaximizeSquare2", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 12.0f)
                 curveTo(2.0f, 7.286f, 2.0f, 4.9289f, 3.4645f, 3.4645f)
                 curveTo(4.9289f, 2.0f, 7.286f, 2.0f, 12.0f, 2.0f)
@@ -93,7 +97,7 @@ public val ArrowsActionGroup.MaximizeSquare2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _maximizeSquare2!!
     }
 

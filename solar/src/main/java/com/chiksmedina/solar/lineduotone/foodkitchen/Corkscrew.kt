@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.lineduotone.foodkitchen
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.FoodKitchenGroup
 
-public val FoodKitchenGroup.Corkscrew: ImageVector
+val FoodKitchenGroup.Corkscrew: ImageVector
     get() {
         if (_corkscrew != null) {
             return _corkscrew!!
         }
-        _corkscrew = Builder(name = "Corkscrew", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _corkscrew = Builder(
+            name = "Corkscrew", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.2611f, 13.4823f)
                 lineTo(17.7308f, 14.0126f)
                 lineTo(17.7308f, 14.0126f)
@@ -81,9 +82,11 @@ public val FoodKitchenGroup.Corkscrew: ImageVector
                 lineTo(20.8281f, 10.9152f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(1.4697f, 21.4695f)
                 curveTo(1.1768f, 21.7624f, 1.1768f, 22.2372f, 1.4697f, 22.5301f)
                 curveTo(1.7626f, 22.823f, 2.2374f, 22.823f, 2.5303f, 22.5301f)
@@ -240,9 +243,11 @@ public val FoodKitchenGroup.Corkscrew: ImageVector
                 lineTo(5.0826f, 19.9779f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0002f, 12.0f)
                 curveTo(22.0002f, 13.1874f, 21.0377f, 14.15f, 19.8502f, 14.15f)
                 curveTo(18.6628f, 14.15f, 17.7002f, 13.1874f, 17.7002f, 12.0f)
@@ -251,7 +256,7 @@ public val FoodKitchenGroup.Corkscrew: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _corkscrew!!
     }
 

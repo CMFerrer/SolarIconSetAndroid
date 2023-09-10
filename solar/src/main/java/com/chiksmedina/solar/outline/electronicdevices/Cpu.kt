@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Cpu: ImageVector
+val ElectronicDevicesGroup.Cpu: ImageVector
     get() {
         if (_cpu != null) {
             return _cpu!!
         }
-        _cpu = Builder(name = "Cpu", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cpu = Builder(
+            name = "Cpu", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
+            = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.0f, 1.25f)
                 curveTo(9.4142f, 1.25f, 9.75f, 1.5858f, 9.75f, 2.0f)
                 verticalLineTo(3.2627f)
@@ -159,7 +163,7 @@ public val ElectronicDevicesGroup.Cpu: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cpu!!
     }
 

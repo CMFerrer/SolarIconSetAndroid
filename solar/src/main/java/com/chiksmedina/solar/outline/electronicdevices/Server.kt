@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Server: ImageVector
+val ElectronicDevicesGroup.Server: ImageVector
     get() {
         if (_server != null) {
             return _server!!
         }
-        _server = Builder(name = "Server", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _server = Builder(
+            name = "Server", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.948f, 1.5f)
                 horizontalLineTo(18.052f)
                 curveTo(18.9505f, 1.5f, 19.6997f, 1.5f, 20.2945f, 1.5799f)
@@ -139,7 +143,7 @@ public val ElectronicDevicesGroup.Server: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _server!!
     }
 

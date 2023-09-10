@@ -1,10 +1,8 @@
 package com.chiksmedina.solar.linear.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
 import androidx.compose.ui.graphics.StrokeJoin
@@ -15,16 +13,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartphoneRotate2: ImageVector
+val ElectronicDevicesGroup.SmartphoneRotate2: ImageVector
     get() {
         if (_smartphoneRotate2 != null) {
             return _smartphoneRotate2!!
         }
-        _smartphoneRotate2 = Builder(name = "SmartphoneRotate2", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _smartphoneRotate2 = Builder(
+            name = "SmartphoneRotate2", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.4439f, 19.1222f)
                 lineTo(18.9742f, 19.6525f)
                 lineTo(18.9742f, 19.6525f)
@@ -206,22 +208,26 @@ public val ElectronicDevicesGroup.SmartphoneRotate2: ImageVector
                 lineTo(15.2436f, 15.2438f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.5f, 6.986f)
                 lineTo(22.0f, 8.0f)
                 curveTo(22.0f, 4.9853f, 19.8377f, 2.4827f, 17.0f, 2.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.5f, 17.014f)
                 lineTo(2.0f, 16.0f)
                 curveTo(2.0f, 19.0147f, 4.1623f, 21.5172f, 7.0f, 22.0f)
             }
         }
-        .build()
+            .build()
         return _smartphoneRotate2!!
     }
 

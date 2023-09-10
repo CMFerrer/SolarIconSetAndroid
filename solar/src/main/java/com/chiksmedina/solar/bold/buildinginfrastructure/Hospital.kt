@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.BuildingInfrastructureGroup
 
-public val BuildingInfrastructureGroup.Hospital: ImageVector
+val BuildingInfrastructureGroup.Hospital: ImageVector
     get() {
         if (_hospital != null) {
             return _hospital!!
         }
-        _hospital = Builder(name = "Hospital", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _hospital = Builder(
+            name = "Hospital", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.5f, 8.5f)
                 curveTo(21.5f, 7.0955f, 21.5f, 6.3933f, 21.1629f, 5.8889f)
                 curveTo(21.017f, 5.6705f, 20.8295f, 5.483f, 20.6111f, 5.3371f)
@@ -126,7 +130,7 @@ public val BuildingInfrastructureGroup.Hospital: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hospital!!
     }
 

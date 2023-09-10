@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.GalleryCircle: ImageVector
+val VideoAudioSoundGroup.GalleryCircle: ImageVector
     get() {
         if (_galleryCircle != null) {
             return _galleryCircle!!
         }
-        _galleryCircle = Builder(name = "GalleryCircle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _galleryCircle = Builder(
+            name = "GalleryCircle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.8301f, 10.7772f)
                 lineTo(3.2577f, 10.4031f)
                 curveTo(4.4661f, 9.3457f, 6.2874f, 9.4064f, 7.4228f, 10.5418f)
@@ -64,7 +68,7 @@ public val VideoAudioSoundGroup.GalleryCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _galleryCircle!!
     }
 

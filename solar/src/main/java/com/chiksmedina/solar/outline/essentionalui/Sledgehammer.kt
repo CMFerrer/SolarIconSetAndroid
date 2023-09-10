@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Sledgehammer: ImageVector
+val EssentionalUiGroup.Sledgehammer: ImageVector
     get() {
         if (_sledgehammer != null) {
             return _sledgehammer!!
         }
-        _sledgehammer = Builder(name = "Sledgehammer", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sledgehammer = Builder(
+            name = "Sledgehammer", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.1554f, 3.2472f)
                 curveTo(9.636f, 3.6435f, 9.0261f, 4.2512f, 8.1431f, 5.1341f)
                 curveTo(7.2602f, 6.017f, 6.6525f, 6.627f, 6.2562f, 7.1464f)
@@ -107,7 +111,7 @@ public val EssentionalUiGroup.Sledgehammer: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sledgehammer!!
     }
 

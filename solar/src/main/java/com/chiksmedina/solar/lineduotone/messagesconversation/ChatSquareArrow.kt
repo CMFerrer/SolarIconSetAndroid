@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.lineduotone.messagesconversation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.MessagesConversationGroup
 
-public val MessagesConversationGroup.ChatSquareArrow: ImageVector
+val MessagesConversationGroup.ChatSquareArrow: ImageVector
     get() {
         if (_chatSquareArrow != null) {
             return _chatSquareArrow!!
         }
-        _chatSquareArrow = Builder(name = "ChatSquareArrow", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _chatSquareArrow = Builder(
+            name = "ChatSquareArrow", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.978f, 21.4554f)
                 lineTo(13.6213f, 21.8409f)
                 lineTo(13.6213f, 21.8409f)
@@ -215,9 +216,11 @@ public val MessagesConversationGroup.ChatSquareArrow: ImageVector
                 lineTo(20.237f, 14.424f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 4.2222f)
                 lineTo(11.473f, 3.6886f)
                 curveTo(11.3303f, 3.8295f, 11.25f, 4.0217f, 11.25f, 4.2222f)
@@ -287,7 +290,7 @@ public val MessagesConversationGroup.ChatSquareArrow: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chatSquareArrow!!
     }
 

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.HashtagCircle: ImageVector
+val NetworkItProgrammingGroup.HashtagCircle: ImageVector
     get() {
         if (_hashtagCircle != null) {
             return _hashtagCircle!!
         }
-        _hashtagCircle = Builder(name = "HashtagCircle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _hashtagCircle = Builder(
+            name = "HashtagCircle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.092f, 10.75f)
                 lineTo(13.342f, 13.25f)
                 horizontalLineTo(9.908f)
@@ -31,9 +33,11 @@ public val NetworkItProgrammingGroup.HashtagCircle: ImageVector
                 horizontalLineTo(14.092f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.0f)
                 curveTo(6.4771f, 2.0f, 2.0f, 6.4771f, 2.0f, 12.0f)
                 curveTo(2.0f, 17.5228f, 6.4771f, 22.0f, 12.0f, 22.0f)
@@ -80,7 +84,7 @@ public val NetworkItProgrammingGroup.HashtagCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hashtagCircle!!
     }
 

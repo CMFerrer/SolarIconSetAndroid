@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartphoneRotate2: ImageVector
+val ElectronicDevicesGroup.SmartphoneRotate2: ImageVector
     get() {
         if (_smartphoneRotate2 != null) {
             return _smartphoneRotate2!!
         }
-        _smartphoneRotate2 = Builder(name = "SmartphoneRotate2", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _smartphoneRotate2 = Builder(
+            name = "SmartphoneRotate2", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 9.626f)
                 curveTo(2.0f, 10.8181f, 2.9593f, 11.7773f, 4.8778f, 13.6959f)
                 lineTo(10.3042f, 19.1223f)
@@ -53,9 +54,11 @@ public val ElectronicDevicesGroup.SmartphoneRotate2: ImageVector
                 curveTo(15.2751f, 17.3109f, 16.1862f, 17.3109f, 16.7481f, 16.749f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.2606f, 1.8743f)
                 curveTo(16.3301f, 1.466f, 16.7174f, 1.1913f, 17.1258f, 1.2607f)
                 curveTo(20.3254f, 1.8051f, 22.75f, 4.6212f, 22.75f, 8.0001f)
@@ -69,9 +72,11 @@ public val ElectronicDevicesGroup.SmartphoneRotate2: ImageVector
                 curveTo(16.4659f, 2.67f, 16.1912f, 2.2827f, 16.2606f, 1.8743f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.7394f, 22.1259f)
                 curveTo(7.6699f, 22.5343f, 7.2826f, 22.809f, 6.8742f, 22.7395f)
                 curveTo(3.6746f, 22.1952f, 1.25f, 19.379f, 1.25f, 16.0001f)
@@ -86,7 +91,7 @@ public val ElectronicDevicesGroup.SmartphoneRotate2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _smartphoneRotate2!!
     }
 

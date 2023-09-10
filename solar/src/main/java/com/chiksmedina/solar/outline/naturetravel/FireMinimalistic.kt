@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NatureTravelGroup
 
-public val NatureTravelGroup.FireMinimalistic: ImageVector
+val NatureTravelGroup.FireMinimalistic: ImageVector
     get() {
         if (_fireMinimalistic != null) {
             return _fireMinimalistic!!
         }
-        _fireMinimalistic = Builder(name = "FireMinimalistic", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _fireMinimalistic = Builder(
+            name = "FireMinimalistic", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.8869f, 4.2907f)
                 curveTo(6.9373f, 6.1337f, 4.75f, 9.3083f, 4.75f, 13.504f)
                 curveTo(4.75f, 17.1845f, 7.9492f, 20.25f, 12.0f, 20.25f)
@@ -48,7 +52,7 @@ public val NatureTravelGroup.FireMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _fireMinimalistic!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SportsGroup
 
-public val SportsGroup.Basketball: ImageVector
+val SportsGroup.Basketball: ImageVector
     get() {
         if (_basketball != null) {
             return _basketball!!
         }
-        _basketball = Builder(name = "Basketball", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _basketball = Builder(
+            name = "Basketball", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.3666f, 3.492f)
                 curveTo(8.8659f, 3.8881f, 9.5388f, 4.4415f, 10.2722f, 5.0993f)
                 curveTo(10.9741f, 5.7288f, 11.7444f, 6.4654f, 12.4748f, 7.2604f)
@@ -80,7 +84,7 @@ public val SportsGroup.Basketball: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _basketball!!
     }
 

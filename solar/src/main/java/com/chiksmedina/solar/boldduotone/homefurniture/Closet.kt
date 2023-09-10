@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.homefurniture
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Closet: ImageVector
+val HomeFurnitureGroup.Closet: ImageVector
     get() {
         if (_closet != null) {
             return _closet!!
         }
-        _closet = Builder(name = "Closet", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _closet = Builder(
+            name = "Closet", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0256f, 15.75f)
                 curveTo(2.0918f, 17.7712f, 2.328f, 18.9849f, 3.1715f, 19.8284f)
                 curveTo(3.4759f, 20.1328f, 3.8285f, 20.3582f, 4.2499f, 20.5249f)
@@ -77,9 +78,11 @@ public val HomeFurnitureGroup.Closet: ImageVector
                 curveTo(14.2499f, 7.5858f, 14.5857f, 7.25f, 14.9999f, 7.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 2.0f)
                 horizontalLineTo(11.25f)
                 verticalLineTo(7.25f)
@@ -88,9 +91,11 @@ public val HomeFurnitureGroup.Closet: ImageVector
                 curveTo(4.3432f, 2.0f, 6.2288f, 2.0f, 10.0f, 2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0019f, 8.75f)
                 curveTo(2.0f, 9.142f, 2.0f, 9.5581f, 2.0f, 10.0f)
                 verticalLineTo(13.0f)
@@ -101,7 +106,7 @@ public val HomeFurnitureGroup.Closet: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _closet!!
     }
 

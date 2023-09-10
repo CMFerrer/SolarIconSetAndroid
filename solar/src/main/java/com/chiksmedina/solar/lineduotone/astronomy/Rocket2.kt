@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.lineduotone.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.AstronomyGroup
 
-public val AstronomyGroup.Rocket2: ImageVector
+val AstronomyGroup.Rocket2: ImageVector
     get() {
         if (_rocket2 != null) {
             return _rocket2!!
         }
-        _rocket2 = Builder(name = "Rocket2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _rocket2 = Builder(
+            name = "Rocket2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 5.3652f)
                 lineTo(22.75f, 5.3652f)
                 verticalLineTo(5.3652f)
@@ -187,9 +188,11 @@ public val AstronomyGroup.Rocket2: ImageVector
                 lineTo(7.1665f, 10.1551f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.7089f, 10.282f)
                 lineTo(8.2389f, 9.7513f)
                 lineTo(8.2381f, 9.7505f)
@@ -452,9 +455,11 @@ public val AstronomyGroup.Rocket2: ImageVector
                 lineTo(7.1789f, 10.8126f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.5482f, 13.0f)
                 lineTo(3.8565f, 14.6897f)
                 curveTo(3.4318f, 15.1139f, 2.7432f, 15.1139f, 2.3185f, 14.6897f)
@@ -468,9 +473,11 @@ public val AstronomyGroup.Rocket2: ImageVector
                 moveTo(6.936f, 17.1588f)
                 lineTo(5.2264f, 18.8308f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.6329f, 17.186f)
                 curveTo(10.9258f, 16.8931f, 10.9258f, 16.4182f, 10.6329f, 16.1253f)
                 curveTo(10.34f, 15.8324f, 9.8651f, 15.8324f, 9.5722f, 16.1253f)
@@ -504,9 +511,11 @@ public val AstronomyGroup.Rocket2: ImageVector
                 lineTo(6.7965f, 13.353f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.3732f, 12.6445f)
                 curveTo(12.6667f, 12.3523f, 12.6677f, 11.8774f, 12.3754f, 11.5839f)
                 curveTo(12.0831f, 11.2904f, 11.6083f, 11.2894f, 11.3148f, 11.5816f)
@@ -544,7 +553,7 @@ public val AstronomyGroup.Rocket2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _rocket2!!
     }
 

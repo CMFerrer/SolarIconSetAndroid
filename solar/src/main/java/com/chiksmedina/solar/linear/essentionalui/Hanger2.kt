@@ -1,12 +1,10 @@
 package com.chiksmedina.solar.linear.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.EssentionalUiGroup
 
-public val EssentionalUiGroup.Hanger2: ImageVector
+val EssentionalUiGroup.Hanger2: ImageVector
     get() {
         if (_hanger2 != null) {
             return _hanger2!!
         }
-        _hanger2 = Builder(name = "Hanger2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _hanger2 = Builder(
+            name = "Hanger2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.5359f, 3.9091f)
                 curveTo(9.5359f, 2.8547f, 10.4868f, 2.0f, 11.6599f, 2.0f)
                 curveTo(12.8329f, 2.0f, 13.7839f, 2.8547f, 13.7839f, 3.9091f)
@@ -41,9 +43,11 @@ public val EssentionalUiGroup.Hanger2: ImageVector
                 curveTo(1.3832f, 14.1648f, 2.0872f, 16.0f, 3.7025f, 16.0f)
                 horizontalLineTo(6.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.0f, 18.0f)
                 curveTo(6.0f, 16.1144f, 6.0f, 15.1716f, 6.5858f, 14.5858f)
                 curveTo(7.1716f, 14.0f, 8.1144f, 14.0f, 10.0f, 14.0f)
@@ -58,7 +62,7 @@ public val EssentionalUiGroup.Hanger2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hanger2!!
     }
 

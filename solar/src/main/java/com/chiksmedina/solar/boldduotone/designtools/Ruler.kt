@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.DesignToolsGroup
 
-public val DesignToolsGroup.Ruler: ImageVector
+val DesignToolsGroup.Ruler: ImageVector
     get() {
         if (_ruler != null) {
             return _ruler!!
         }
-        _ruler = Builder(name = "Ruler", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _ruler = Builder(
+            name = "Ruler", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 15.6157f)
                 curveTo(2.0f, 16.463f, 2.6818f, 17.1448f, 4.0454f, 18.5083f)
                 lineTo(5.4917f, 19.9546f)
@@ -47,9 +48,11 @@ public val DesignToolsGroup.Ruler: ImageVector
                 curveTo(2.5393f, 14.2396f, 2.0f, 14.8623f, 2.0f, 15.6157f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.2377f, 3.6912f)
                 curveTo(13.2107f, 3.6642f, 13.1821f, 3.6397f, 13.1523f, 3.6177f)
                 lineTo(12.103f, 4.6658f)
@@ -60,9 +63,11 @@ public val DesignToolsGroup.Ruler: ImageVector
                 lineTo(13.2377f, 3.6912f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.1164f, 5.8126f)
                 curveTo(11.0891f, 5.7853f, 11.0604f, 5.7607f, 11.0303f, 5.7385f)
                 lineTo(9.9816f, 6.7872f)
@@ -73,9 +78,11 @@ public val DesignToolsGroup.Ruler: ImageVector
                 lineTo(11.1164f, 5.8126f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.995f, 7.9339f)
                 curveTo(8.9678f, 7.9067f, 8.939f, 7.882f, 8.909f, 7.8598f)
                 lineTo(7.8603f, 8.9085f)
@@ -86,9 +93,11 @@ public val DesignToolsGroup.Ruler: ImageVector
                 lineTo(8.995f, 7.9339f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.8737f, 10.0552f)
                 curveTo(6.8465f, 10.028f, 6.8177f, 10.0033f, 6.7877f, 9.9811f)
                 lineTo(5.739f, 11.0298f)
@@ -99,9 +108,11 @@ public val DesignToolsGroup.Ruler: ImageVector
                 lineTo(6.8737f, 10.0552f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(4.7524f, 12.1765f)
                 curveTo(4.7252f, 12.1493f, 4.6964f, 12.1246f, 4.6663f, 12.1025f)
                 lineTo(3.6182f, 13.1518f)
@@ -113,7 +124,7 @@ public val DesignToolsGroup.Ruler: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ruler!!
     }
 

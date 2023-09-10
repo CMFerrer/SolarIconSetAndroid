@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.EssentionalUiGroup
 
-public val EssentionalUiGroup.MaskSad: ImageVector
+val EssentionalUiGroup.MaskSad: ImageVector
     get() {
         if (_maskSad != null) {
             return _maskSad!!
         }
-        _maskSad = Builder(name = "MaskSad", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _maskSad = Builder(
+            name = "MaskSad", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.0f, 6.2077f)
                 verticalLineTo(11.4061f)
                 curveTo(21.0f, 16.8106f, 16.761f, 19.4332f, 14.1014f, 20.5469f)
@@ -41,9 +42,11 @@ public val EssentionalUiGroup.MaskSad: ImageVector
                 curveTo(21.0f, 2.9742f, 21.0f, 4.052f, 21.0f, 6.2077f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.1711f, 8.7831f)
                 curveTo(7.2945f, 8.5399f, 7.7569f, 8.207f, 8.5002f, 8.207f)
                 curveTo(9.2434f, 8.207f, 9.7058f, 8.5399f, 9.8293f, 8.7831f)
@@ -55,9 +58,11 @@ public val EssentionalUiGroup.MaskSad: ImageVector
                 curveTo(6.5354f, 9.2957f, 6.9859f, 9.1478f, 7.1711f, 8.7831f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.5002f, 8.207f)
                 curveTo(14.7569f, 8.207f, 14.2945f, 8.5399f, 14.1711f, 8.7831f)
                 curveTo(13.9859f, 9.1478f, 13.5354f, 9.2957f, 13.1649f, 9.1135f)
@@ -69,9 +74,11 @@ public val EssentionalUiGroup.MaskSad: ImageVector
                 curveTo(16.7058f, 8.5399f, 16.2434f, 8.207f, 15.5002f, 8.207f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.9959f, 13.8125f)
                 curveTo(7.696f, 14.0937f, 7.6712f, 14.5731f, 7.9569f, 14.8683f)
                 curveTo(8.2402f, 15.1612f, 8.7095f, 15.1748f, 9.0098f, 14.9007f)
@@ -105,7 +112,7 @@ public val EssentionalUiGroup.MaskSad: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _maskSad!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.arrows
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsGroup
 
-public val ArrowsGroup.RefreshCircle: ImageVector
+val ArrowsGroup.RefreshCircle: ImageVector
     get() {
         if (_refreshCircle != null) {
             return _refreshCircle!!
         }
-        _refreshCircle = Builder(name = "RefreshCircle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _refreshCircle = Builder(
+            name = "RefreshCircle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.7127f, 10.6736f)
                 curveTo(7.1672f, 8.1549f, 9.3854f, 6.25f, 12.0437f, 6.25f)
                 curveTo(13.6212f, 6.25f, 15.0431f, 6.9209f, 16.0328f, 7.9907f)
@@ -44,9 +45,11 @@ public val ArrowsGroup.RefreshCircle: ImageVector
                 lineTo(6.7127f, 10.6736f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.6485f, 10.6959f)
                 curveTo(16.8523f, 10.704f, 17.044f, 10.7947f, 17.1795f, 10.9472f)
                 lineTo(18.5607f, 12.5019f)
@@ -66,9 +69,11 @@ public val ArrowsGroup.RefreshCircle: ImageVector
                 curveTo(16.2464f, 10.7631f, 16.4447f, 10.6878f, 16.6485f, 10.6959f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 1.25f)
                 curveTo(6.0629f, 1.25f, 1.25f, 6.0629f, 1.25f, 12.0f)
                 curveTo(1.25f, 17.9371f, 6.0629f, 22.75f, 12.0f, 22.75f)
@@ -83,7 +88,7 @@ public val ArrowsGroup.RefreshCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _refreshCircle!!
     }
 

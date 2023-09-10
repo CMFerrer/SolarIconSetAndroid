@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Cosmetic: ImageVector
+val EssentionalUiGroup.Cosmetic: ImageVector
     get() {
         if (_cosmetic != null) {
             return _cosmetic!!
         }
-        _cosmetic = Builder(name = "Cosmetic", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cosmetic = Builder(
+            name = "Cosmetic", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.75f, 5.618f)
                 curveTo(7.75f, 4.3171f, 6.3809f, 3.4709f, 5.2174f, 4.0527f)
                 lineTo(3.2174f, 5.0527f)
@@ -55,9 +56,11 @@ public val EssentionalUiGroup.Cosmetic: ImageVector
                 horizontalLineTo(6.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.5f, 4.2499f)
                 curveTo(13.0482f, 4.2499f, 10.25f, 7.0482f, 10.25f, 10.4999f)
                 curveTo(10.25f, 13.6979f, 12.6518f, 16.3349f, 15.75f, 16.7054f)
@@ -81,7 +84,7 @@ public val EssentionalUiGroup.Cosmetic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cosmetic!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.FlashDrive: ImageVector
+val ElectronicDevicesGroup.FlashDrive: ImageVector
     get() {
         if (_flashDrive != null) {
             return _flashDrive!!
         }
-        _flashDrive = Builder(name = "FlashDrive", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _flashDrive = Builder(
+            name = "FlashDrive", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(19.8302f, 10.441f)
                 lineTo(18.2959f, 12.0f)
                 lineTo(18.1853f, 12.1106f)
@@ -38,9 +39,11 @@ public val ElectronicDevicesGroup.FlashDrive: ImageVector
                 curveTo(22.0f, 8.2361f, 21.2767f, 8.9711f, 19.8302f, 10.441f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 14.1422f)
                 curveTo(2.0f, 15.4903f, 3.0849f, 16.5752f, 5.2547f, 18.745f)
                 curveTo(7.4245f, 20.9148f, 8.5093f, 21.9997f, 9.8575f, 21.9997f)
@@ -62,9 +65,11 @@ public val ElectronicDevicesGroup.FlashDrive: ImageVector
                 lineTo(5.7852f, 13.6122f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.2476f, 6.8731f)
                 curveTo(19.5405f, 7.166f, 19.5405f, 7.6409f, 19.2476f, 7.9338f)
                 lineTo(18.5405f, 8.6409f)
@@ -74,9 +79,11 @@ public val ElectronicDevicesGroup.FlashDrive: ImageVector
                 curveTo(18.4798f, 6.5802f, 18.9547f, 6.5802f, 19.2476f, 6.8731f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.1265f, 4.752f)
                 curveTo(17.4194f, 5.0449f, 17.4194f, 5.5198f, 17.1265f, 5.8127f)
                 lineTo(16.4194f, 6.5198f)
@@ -87,7 +94,7 @@ public val ElectronicDevicesGroup.FlashDrive: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _flashDrive!!
     }
 

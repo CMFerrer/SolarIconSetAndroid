@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.EssentionalUiGroup
 
-public val EssentionalUiGroup.Magnet: ImageVector
+val EssentionalUiGroup.Magnet: ImageVector
     get() {
         if (_magnet != null) {
             return _magnet!!
         }
-        _magnet = Builder(name = "Magnet", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _magnet = Builder(
+            name = "Magnet", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 2.0f)
                 horizontalLineTo(19.5f)
                 curveTo(20.3284f, 2.0f, 21.0f, 2.6716f, 21.0f, 3.5f)
@@ -49,7 +53,7 @@ public val EssentionalUiGroup.Magnet: ImageVector
                 verticalLineTo(22.0f)
             }
         }
-        .build()
+            .build()
         return _magnet!!
     }
 

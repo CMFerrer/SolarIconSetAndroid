@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SportsGroup
 
-public val SportsGroup.Dumbbells2: ImageVector
+val SportsGroup.Dumbbells2: ImageVector
     get() {
         if (_dumbbells2 != null) {
             return _dumbbells2!!
         }
-        _dumbbells2 = Builder(name = "Dumbbells2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _dumbbells2 = Builder(
+            name = "Dumbbells2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.3103f, 2.7754f)
                 curveTo(17.1477f, 2.8061f, 16.9387f, 2.8596f, 16.6132f, 2.9436f)
                 lineTo(13.9018f, 3.6429f)
@@ -243,7 +247,7 @@ public val SportsGroup.Dumbbells2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _dumbbells2!!
     }
 

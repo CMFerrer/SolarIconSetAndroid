@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.search
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SearchGroup
 
-public val SearchGroup.MagniferZoomIn: ImageVector
+val SearchGroup.MagniferZoomIn: ImageVector
     get() {
         if (_magniferZoomIn != null) {
             return _magniferZoomIn!!
         }
-        _magniferZoomIn = Builder(name = "MagniferZoomIn", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _magniferZoomIn = Builder(
+            name = "MagniferZoomIn", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.1566f, 20.3133f)
                 curveTo(16.2137f, 20.3133f, 20.3133f, 16.2137f, 20.3133f, 11.1566f)
                 curveTo(20.3133f, 6.0996f, 16.2137f, 2.0f, 11.1566f, 2.0f)
@@ -32,9 +33,11 @@ public val SearchGroup.MagniferZoomIn: ImageVector
                 curveTo(2.0f, 16.2137f, 6.0996f, 20.3133f, 11.1566f, 20.3133f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.1565f, 8.0244f)
                 curveTo(11.5557f, 8.0244f, 11.8793f, 8.3481f, 11.8793f, 8.7473f)
                 verticalLineTo(10.4341f)
@@ -54,9 +57,11 @@ public val SearchGroup.MagniferZoomIn: ImageVector
                 curveTo(10.4336f, 8.3481f, 10.7572f, 8.0244f, 11.1565f, 8.0244f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.1001f, 18.1224f)
                 lineTo(20.7664f, 21.7887f)
                 curveTo(21.0487f, 22.071f, 21.5064f, 22.071f, 21.7887f, 21.7887f)
@@ -66,7 +71,7 @@ public val SearchGroup.MagniferZoomIn: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _magniferZoomIn!!
     }
 

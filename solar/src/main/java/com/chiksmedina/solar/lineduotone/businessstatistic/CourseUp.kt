@@ -1,10 +1,8 @@
 package com.chiksmedina.solar.lineduotone.businessstatistic
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
 import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -13,17 +11,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.BusinessStatisticGroup
 
-public val BusinessStatisticGroup.CourseUp: ImageVector
+val BusinessStatisticGroup.CourseUp: ImageVector
     get() {
         if (_courseUp != null) {
             return _courseUp!!
         }
-        _courseUp = Builder(name = "CourseUp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Round, strokeLineJoin = StrokeJoin.Companion.Round, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _courseUp = Builder(
+            name = "CourseUp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Round, strokeLineJoin = StrokeJoin.Companion.Round, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 7.0f)
                 lineTo(14.6203f, 14.3347f)
                 curveTo(13.6227f, 15.3263f, 13.1238f, 15.822f, 12.5051f, 15.822f)
@@ -33,15 +35,17 @@ public val BusinessStatisticGroup.CourseUp: ImageVector
                 curveTo(7.4151f, 12.6076f, 6.9163f, 13.1043f, 5.9187f, 14.0977f)
                 lineTo(2.0f, 18.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0001f, 12.5458f)
                 verticalLineTo(7.0f)
                 horizontalLineTo(16.418f)
             }
         }
-        .build()
+            .build()
         return _courseUp!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.NotesGroup
 
-public val NotesGroup.DocumentText: ImageVector
+val NotesGroup.DocumentText: ImageVector
     get() {
         if (_documentText != null) {
             return _documentText!!
         }
-        _documentText = Builder(name = "DocumentText", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _documentText = Builder(
+            name = "DocumentText", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.1716f, 3.1716f)
                 curveTo(3.0f, 4.3432f, 3.0f, 6.2288f, 3.0f, 10.0f)
                 verticalLineTo(14.0f)
@@ -61,7 +65,7 @@ public val NotesGroup.DocumentText: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _documentText!!
     }
 

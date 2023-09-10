@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.EssentionalUiGroup
 
-public val EssentionalUiGroup.HomeWifiAngle: ImageVector
+val EssentionalUiGroup.HomeWifiAngle: ImageVector
     get() {
         if (_homeWifiAngle != null) {
             return _homeWifiAngle!!
         }
-        _homeWifiAngle = Builder(name = "HomeWifiAngle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _homeWifiAngle = Builder(
+            name = "HomeWifiAngle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.1061f, 22.0f)
                 horizontalLineTo(10.8939f)
                 curveTo(7.4474f, 22.0f, 5.7241f, 22.0f, 4.549f, 20.9882f)
@@ -42,9 +43,11 @@ public val EssentionalUiGroup.HomeWifiAngle: ImageVector
                 curveTo(18.2759f, 22.0f, 16.5526f, 22.0f, 13.1061f, 22.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.4498f, 12.1922f)
                 curveTo(14.4329f, 8.9359f, 9.5671f, 8.9359f, 6.5502f, 12.1922f)
                 curveTo(6.2687f, 12.4961f, 5.7941f, 12.5142f, 5.4903f, 12.2327f)
@@ -54,9 +57,11 @@ public val EssentionalUiGroup.HomeWifiAngle: ImageVector
                 curveTo(18.2059f, 12.5142f, 17.7313f, 12.4961f, 17.4498f, 12.1922f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.4499f, 14.3507f)
                 curveTo(13.5375f, 12.2866f, 10.4625f, 12.2866f, 8.5502f, 14.3507f)
                 curveTo(8.2687f, 14.6546f, 7.7941f, 14.6727f, 7.4903f, 14.3912f)
@@ -66,9 +71,11 @@ public val EssentionalUiGroup.HomeWifiAngle: ImageVector
                 curveTo(16.2059f, 14.6727f, 15.7314f, 14.6546f, 15.4499f, 14.3507f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.4499f, 16.5097f)
                 curveTo(12.6421f, 15.6379f, 11.358f, 15.6379f, 10.5502f, 16.5097f)
                 curveTo(10.2687f, 16.8136f, 9.7942f, 16.8317f, 9.4903f, 16.5502f)
@@ -79,7 +86,7 @@ public val EssentionalUiGroup.HomeWifiAngle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _homeWifiAngle!!
     }
 

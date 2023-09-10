@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MessagesConversationGroup
 
-public val MessagesConversationGroup.ChatSquare: ImageVector
+val MessagesConversationGroup.ChatSquare: ImageVector
     get() {
         if (_chatSquare != null) {
             return _chatSquare!!
         }
-        _chatSquare = Builder(name = "ChatSquare", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _chatSquare = Builder(
+            name = "ChatSquare", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.6288f, 20.4718f)
                 lineTo(13.0867f, 21.3877f)
                 curveTo(12.6035f, 22.204f, 11.3965f, 22.204f, 10.9133f, 21.3877f)
@@ -47,7 +51,7 @@ public val MessagesConversationGroup.ChatSquare: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chatSquare!!
     }
 

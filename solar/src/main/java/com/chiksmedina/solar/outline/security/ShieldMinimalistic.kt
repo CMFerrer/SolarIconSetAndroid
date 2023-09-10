@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SecurityGroup
 
-public val SecurityGroup.ShieldMinimalistic: ImageVector
+val SecurityGroup.ShieldMinimalistic: ImageVector
     get() {
         if (_shieldMinimalistic != null) {
             return _shieldMinimalistic!!
         }
-        _shieldMinimalistic = Builder(name = "ShieldMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _shieldMinimalistic = Builder(
+            name = "ShieldMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.75f)
                 curveTo(11.3423f, 2.75f, 10.6951f, 2.9616f, 9.0806f, 3.5143f)
                 lineTo(8.5078f, 3.7104f)
@@ -83,7 +87,7 @@ public val SecurityGroup.ShieldMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _shieldMinimalistic!!
     }
 

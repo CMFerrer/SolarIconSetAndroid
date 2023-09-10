@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TransportPartsServiceGroup
 
-public val TransportPartsServiceGroup.Suspension: ImageVector
+val TransportPartsServiceGroup.Suspension: ImageVector
     get() {
         if (_suspension != null) {
             return _suspension!!
         }
-        _suspension = Builder(name = "Suspension", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _suspension = Builder(
+            name = "Suspension", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.0f, 6.5f)
                 verticalLineTo(4.5f)
                 curveTo(3.0f, 4.0353f, 3.0f, 3.803f, 3.0384f, 3.6098f)
@@ -93,7 +97,7 @@ public val TransportPartsServiceGroup.Suspension: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _suspension!!
     }
 

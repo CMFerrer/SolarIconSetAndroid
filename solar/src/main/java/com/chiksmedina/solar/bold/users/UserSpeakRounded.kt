@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.users
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,32 +12,40 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.UsersGroup
 
-public val UsersGroup.UserSpeakRounded: ImageVector
+val UsersGroup.UserSpeakRounded: ImageVector
     get() {
         if (_userSpeakRounded != null) {
             return _userSpeakRounded!!
         }
-        _userSpeakRounded = Builder(name = "UserSpeakRounded", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _userSpeakRounded = Builder(
+            name = "UserSpeakRounded", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 6.75f)
                 moveToRelative(-4.0f, 0.0f)
                 arcToRelative(4.0f, 4.0f, 0.0f, true, true, 8.0f, 0.0f)
                 arcToRelative(4.0f, 4.0f, 0.0f, true, true, -8.0f, 0.0f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.0f, 17.75f)
                 arcToRelative(7.0f, 4.0f, 0.0f, true, false, 14.0f, 0.0f)
                 arcToRelative(7.0f, 4.0f, 0.0f, true, false, -14.0f, 0.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.357f, 2.3642f)
                 curveTo(18.5702f, 2.0091f, 19.0309f, 1.8939f, 19.386f, 2.107f)
                 lineTo(19.0002f, 2.7501f)
@@ -79,9 +84,11 @@ public val UsersGroup.UserSpeakRounded: ImageVector
                 curveTo(18.2581f, 3.1762f, 18.1448f, 2.7179f, 18.357f, 2.3642f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.3293f, 4.4147f)
                 curveTo(16.5146f, 4.0442f, 16.9651f, 3.894f, 17.3356f, 4.0793f)
                 lineTo(17.0002f, 4.7501f)
@@ -119,7 +126,7 @@ public val UsersGroup.UserSpeakRounded: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _userSpeakRounded!!
     }
 

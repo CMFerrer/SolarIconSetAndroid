@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.linear.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,24 +11,30 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.MusicLibrary: ImageVector
+val VideoAudioSoundGroup.MusicLibrary: ImageVector
     get() {
         if (_musicLibrary != null) {
             return _musicLibrary!!
         }
-        _musicLibrary = Builder(name = "MusicLibrary", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _musicLibrary = Builder(
+            name = "MusicLibrary", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(19.562f, 7.0f)
                 curveTo(19.7906f, 5.6952f, 18.7866f, 4.5f, 17.4619f, 4.5f)
                 horizontalLineTo(6.5381f)
                 curveTo(5.2135f, 4.5f, 4.2095f, 5.6952f, 4.4381f, 7.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.4999f, 4.5f)
                 curveTo(17.5283f, 4.2409f, 17.5425f, 4.1114f, 17.5427f, 4.0044f)
                 curveTo(17.545f, 2.9807f, 16.7739f, 2.1206f, 15.7561f, 2.0114f)
@@ -41,9 +44,11 @@ public val VideoAudioSoundGroup.MusicLibrary: ImageVector
                 curveTo(7.2258f, 2.1206f, 6.4548f, 2.9807f, 6.457f, 4.0043f)
                 curveTo(6.4573f, 4.1114f, 6.4715f, 4.2409f, 6.4998f, 4.5f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.5606f, 12.6995f)
                 lineTo(12.2076f, 13.3612f)
                 lineTo(12.2076f, 13.3612f)
@@ -227,9 +232,11 @@ public val VideoAudioSoundGroup.MusicLibrary: ImageVector
                 lineTo(12.8754f, 12.0172f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.3835f, 13.793f)
                 curveTo(1.9375f, 10.6294f, 1.7145f, 9.0477f, 2.6623f, 8.0238f)
                 curveTo(3.6102f, 7.0f, 5.2976f, 7.0f, 8.6724f, 7.0f)
@@ -246,7 +253,7 @@ public val VideoAudioSoundGroup.MusicLibrary: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _musicLibrary!!
     }
 

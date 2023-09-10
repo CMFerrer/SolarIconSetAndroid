@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.RadioMinimalistic: ImageVector
+val ElectronicDevicesGroup.RadioMinimalistic: ImageVector
     get() {
         if (_radioMinimalistic != null) {
             return _radioMinimalistic!!
         }
-        _radioMinimalistic = Builder(name = "RadioMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _radioMinimalistic = Builder(
+            name = "RadioMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.75f, 14.0f)
                 curveTo(5.75f, 12.7574f, 6.7574f, 11.75f, 8.0f, 11.75f)
                 curveTo(9.2426f, 11.75f, 10.25f, 12.7574f, 10.25f, 14.0f)
@@ -31,9 +33,11 @@ public val ElectronicDevicesGroup.RadioMinimalistic: ImageVector
                 curveTo(6.7574f, 16.25f, 5.75f, 15.2426f, 5.75f, 14.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.3195f, 3.6788f)
                 curveTo(15.6943f, 3.5024f, 15.8552f, 3.0556f, 15.6788f, 2.6808f)
                 curveTo(15.5024f, 2.306f, 15.0556f, 2.1452f, 14.6808f, 2.3216f)
@@ -82,7 +86,7 @@ public val ElectronicDevicesGroup.RadioMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _radioMinimalistic!!
     }
 

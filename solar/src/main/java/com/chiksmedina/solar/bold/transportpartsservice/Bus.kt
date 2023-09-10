@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TransportPartsServiceGroup
 
-public val TransportPartsServiceGroup.Bus: ImageVector
+val TransportPartsServiceGroup.Bus: ImageVector
     get() {
         if (_bus != null) {
             return _bus!!
         }
-        _bus = Builder(name = "Bus", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bus = Builder(
+            name = "Bus", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
+            = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.0f)
                 curveTo(8.2288f, 2.0f, 6.3432f, 2.0f, 5.1716f, 3.1716f)
                 curveTo(4.1085f, 4.2347f, 4.01f, 5.8857f, 4.0009f, 9.0f)
@@ -87,7 +91,7 @@ public val TransportPartsServiceGroup.Bus: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bus!!
     }
 

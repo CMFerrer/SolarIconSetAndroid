@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.MessagesConversationGroup
 
-public val MessagesConversationGroup.Forward: ImageVector
+val MessagesConversationGroup.Forward: ImageVector
     get() {
         if (_forward != null) {
             return _forward!!
         }
-        _forward = Builder(name = "Forward", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _forward = Builder(
+            name = "Forward", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(8.0001f, 10.1308f)
                 curveTo(9.6134f, 8.9767f, 11.4547f, 8.5708f, 13.0f, 8.5708f)
                 verticalLineTo(6.2262f)
@@ -37,7 +41,7 @@ public val MessagesConversationGroup.Forward: ImageVector
                 curveTo(4.0f, 17.5676f, 4.3773f, 15.621f, 5.0001f, 14.0735f)
             }
         }
-        .build()
+            .build()
         return _forward!!
     }
 

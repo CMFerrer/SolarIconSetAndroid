@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.HomeAngle2: ImageVector
+val EssentionalUiGroup.HomeAngle2: ImageVector
     get() {
         if (_homeAngle2 != null) {
             return _homeAngle2!!
         }
-        _homeAngle2 = Builder(name = "HomeAngle2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _homeAngle2 = Builder(
+            name = "HomeAngle2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.25f, 18.0f)
                 curveTo(11.25f, 18.4142f, 11.5858f, 18.75f, 12.0f, 18.75f)
                 curveTo(12.4142f, 18.75f, 12.75f, 18.4142f, 12.75f, 18.0f)
@@ -33,9 +35,11 @@ public val EssentionalUiGroup.HomeAngle2: ImageVector
                 verticalLineTo(18.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 1.25f)
                 curveTo(11.2749f, 1.25f, 10.6134f, 1.4491f, 9.8893f, 1.7871f)
                 curveTo(9.1883f, 2.1143f, 8.3777f, 2.5972f, 7.3618f, 3.2023f)
@@ -92,7 +96,7 @@ public val EssentionalUiGroup.HomeAngle2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _homeAngle2!!
     }
 

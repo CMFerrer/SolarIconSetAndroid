@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartSpeaker: ImageVector
+val ElectronicDevicesGroup.SmartSpeaker: ImageVector
     get() {
         if (_smartSpeaker != null) {
             return _smartSpeaker!!
         }
-        _smartSpeaker = Builder(name = "SmartSpeaker", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _smartSpeaker = Builder(
+            name = "SmartSpeaker", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.2393f, 2.4614f)
                 curveTo(5.1512f, 2.8518f, 3.5622f, 4.5537f, 3.321f, 6.6582f)
                 lineTo(3.3053f, 6.7952f)
@@ -64,9 +65,11 @@ public val ElectronicDevicesGroup.SmartSpeaker: ImageVector
                 curveTo(8.3468f, 5.1326f, 8.4102f, 5.0476f, 8.489f, 4.9798f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0001f, 15.7501f)
                 curveTo(11.0596f, 15.7501f, 10.2165f, 15.7046f, 9.4614f, 15.6261f)
                 curveTo(9.6754f, 15.2002f, 9.9267f, 14.9078f, 10.2107f, 14.7057f)
@@ -76,9 +79,11 @@ public val ElectronicDevicesGroup.SmartSpeaker: ImageVector
                 curveTo(13.7867f, 15.7049f, 12.9436f, 15.7501f, 12.0001f, 15.7501f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.9023f, 15.0568f)
                 curveTo(20.4436f, 15.3987f, 19.7769f, 15.8105f, 18.8231f, 16.1839f)
                 curveTo(17.325f, 16.7704f, 15.1505f, 17.2501f, 12.0001f, 17.2501f)
@@ -96,7 +101,7 @@ public val ElectronicDevicesGroup.SmartSpeaker: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _smartSpeaker!!
     }
 

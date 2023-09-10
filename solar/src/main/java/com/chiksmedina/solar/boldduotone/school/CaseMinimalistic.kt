@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SchoolGroup
 
-public val SchoolGroup.CaseMinimalistic: ImageVector
+val SchoolGroup.CaseMinimalistic: ImageVector
     get() {
         if (_caseMinimalistic != null) {
             return _caseMinimalistic!!
         }
-        _caseMinimalistic = Builder(name = "CaseMinimalistic", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _caseMinimalistic = Builder(
+            name = "CaseMinimalistic", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.5812f, 2.25f)
                 lineTo(10.5608f, 2.25f)
                 curveTo(10.4473f, 2.25f, 10.359f, 2.25f, 10.2754f, 2.255f)
@@ -97,9 +99,11 @@ public val SchoolGroup.CaseMinimalistic: ImageVector
                 curveTo(14.8679f, 4.9396f, 14.8416f, 4.8778f, 14.8175f, 4.8157f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.1621f, 8.4995f)
                 curveTo(2.0f, 9.6033f, 2.0f, 11.0494f, 2.0f, 12.9998f)
                 curveTo(2.0f, 16.7711f, 2.0f, 18.6567f, 3.1716f, 19.8283f)
@@ -120,7 +124,7 @@ public val SchoolGroup.CaseMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _caseMinimalistic!!
     }
 

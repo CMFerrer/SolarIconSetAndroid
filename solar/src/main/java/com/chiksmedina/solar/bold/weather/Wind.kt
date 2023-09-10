@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.WeatherGroup
 
-public val WeatherGroup.Wind: ImageVector
+val WeatherGroup.Wind: ImageVector
     get() {
         if (_wind != null) {
             return _wind!!
         }
-        _wind = Builder(name = "Wind", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _wind = Builder(
+            name = "Wind", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.25f, 5.5f)
                 curveTo(6.25f, 3.7051f, 7.7051f, 2.25f, 9.5f, 2.25f)
                 curveTo(11.2949f, 2.25f, 12.75f, 3.7051f, 12.75f, 5.5f)
@@ -71,7 +75,7 @@ public val WeatherGroup.Wind: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _wind!!
     }
 

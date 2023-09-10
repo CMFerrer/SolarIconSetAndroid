@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SportsGroup
 
-public val SportsGroup.StretchingRound: ImageVector
+val SportsGroup.StretchingRound: ImageVector
     get() {
         if (_stretchingRound != null) {
             return _stretchingRound!!
         }
-        _stretchingRound = Builder(name = "StretchingRound", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _stretchingRound = Builder(
+            name = "StretchingRound", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 4.5f)
                 curveTo(17.0f, 5.8807f, 15.8807f, 7.0f, 14.5f, 7.0f)
                 curveTo(13.1193f, 7.0f, 12.0f, 5.8807f, 12.0f, 4.5f)
@@ -32,9 +33,11 @@ public val SportsGroup.StretchingRound: ImageVector
                 curveTo(15.8807f, 2.0f, 17.0f, 3.1193f, 17.0f, 4.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.5072f, 14.4639f)
                 curveTo(17.7239f, 14.1069f, 19.75f, 15.8031f, 19.75f, 18.0486f)
                 verticalLineTo(21.9957f)
@@ -46,9 +49,11 @@ public val SportsGroup.StretchingRound: ImageVector
                 curveTo(14.8202f, 14.9147f, 15.0983f, 14.5298f, 15.5072f, 14.4639f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.3633f, 10.3462f)
                 curveTo(13.8381f, 11.094f, 14.0951f, 12.1107f, 14.0951f, 13.4346f)
                 curveTo(14.0951f, 18.5174f, 10.1339f, 22.7503f, 5.0f, 22.7503f)
@@ -73,7 +78,7 @@ public val SportsGroup.StretchingRound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _stretchingRound!!
     }
 

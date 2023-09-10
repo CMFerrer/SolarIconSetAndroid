@@ -11,17 +11,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SportsGroup
 
-public val SportsGroup.DumbbellLargeMinimalistic: ImageVector
+val SportsGroup.DumbbellLargeMinimalistic: ImageVector
     get() {
         if (_dumbbellLargeMinimalistic != null) {
             return _dumbbellLargeMinimalistic!!
         }
-        _dumbbellLargeMinimalistic = Builder(name = "DumbbellLargeMinimalistic", defaultWidth =
-                24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _dumbbellLargeMinimalistic = Builder(
+            name = "DumbbellLargeMinimalistic", defaultWidth =
+            24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.6239f, 2.7557f)
                 curveTo(13.5585f, 2.7481f, 13.4924f, 2.7481f, 13.4269f, 2.7557f)
                 curveTo(13.3458f, 2.7652f, 13.2249f, 2.8026f, 12.984f, 2.9938f)
@@ -148,7 +152,7 @@ public val SportsGroup.DumbbellLargeMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _dumbbellLargeMinimalistic!!
     }
 

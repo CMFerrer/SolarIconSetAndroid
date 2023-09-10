@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.buildinginfrastructure
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.BuildingInfrastructureGroup
 
-public val BuildingInfrastructureGroup.Home: ImageVector
+val BuildingInfrastructureGroup.Home: ImageVector
     get() {
         if (_home != null) {
             return _home!!
         }
-        _home = Builder(name = "Home", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _home = Builder(
+            name = "Home", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.5f, 3.0f)
                 horizontalLineTo(16.0f)
                 curveTo(15.7239f, 3.0f, 15.5f, 3.2239f, 15.5f, 3.5f)
@@ -34,9 +35,11 @@ public val BuildingInfrastructureGroup.Home: ImageVector
                 curveTo(19.0f, 3.2239f, 18.7762f, 3.0f, 18.5f, 3.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.75f, 9.5f)
                 curveTo(10.75f, 8.8096f, 11.3097f, 8.25f, 12.0f, 8.25f)
                 curveTo(12.6904f, 8.25f, 13.25f, 8.8096f, 13.25f, 9.5f)
@@ -44,9 +47,11 @@ public val BuildingInfrastructureGroup.Home: ImageVector
                 curveTo(11.3097f, 10.75f, 10.75f, 10.1904f, 10.75f, 9.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(20.75f, 10.9605f)
                 lineTo(21.5315f, 11.5857f)
                 curveTo(21.855f, 11.8444f, 22.3269f, 11.792f, 22.5857f, 11.4685f)
@@ -100,9 +105,11 @@ public val BuildingInfrastructureGroup.Home: ImageVector
                 horizontalLineTo(12.0494f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.75f, 9.5f)
                 curveTo(10.75f, 8.8096f, 11.3097f, 8.25f, 12.0f, 8.25f)
                 curveTo(12.6904f, 8.25f, 13.25f, 8.8096f, 13.25f, 9.5f)
@@ -111,7 +118,7 @@ public val BuildingInfrastructureGroup.Home: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _home!!
     }
 

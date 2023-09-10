@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.ScissorsSquare: ImageVector
+val EssentionalUiGroup.ScissorsSquare: ImageVector
     get() {
         if (_scissorsSquare != null) {
             return _scissorsSquare!!
         }
-        _scissorsSquare = Builder(name = "ScissorsSquare", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _scissorsSquare = Builder(
+            name = "ScissorsSquare", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.4645f, 3.4645f)
                 curveTo(2.0f, 4.9289f, 2.0f, 7.286f, 2.0f, 12.0f)
                 curveTo(2.0f, 16.714f, 2.0f, 19.0711f, 3.4645f, 20.5355f)
@@ -55,7 +59,7 @@ public val EssentionalUiGroup.ScissorsSquare: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _scissorsSquare!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.BluetoothWave: ImageVector
+val ElectronicDevicesGroup.BluetoothWave: ImageVector
     get() {
         if (_bluetoothWave != null) {
             return _bluetoothWave!!
         }
-        _bluetoothWave = Builder(name = "BluetoothWave", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bluetoothWave = Builder(
+            name = "BluetoothWave", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9098f, 2.7741f)
                 lineTo(13.7426f, 4.0757f)
                 curveTo(14.2829f, 4.4593f, 14.7547f, 4.7943f, 15.0842f, 5.1095f)
@@ -176,7 +180,7 @@ public val ElectronicDevicesGroup.BluetoothWave: ImageVector
                 curveTo(16.1435f, 7.9826f, 16.2842f, 7.5293f, 16.6507f, 7.3364f)
             }
         }
-        .build()
+            .build()
         return _bluetoothWave!!
     }
 

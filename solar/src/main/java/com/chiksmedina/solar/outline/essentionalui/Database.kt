@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Database: ImageVector
+val EssentionalUiGroup.Database: ImageVector
     get() {
         if (_database != null) {
             return _database!!
         }
-        _database = Builder(name = "Database", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _database = Builder(
+            name = "Database", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.25f, 6.0f)
                 curveTo(3.25f, 4.4583f, 4.4803f, 3.2645f, 6.0077f, 2.5008f)
                 curveTo(7.58f, 1.7146f, 9.6997f, 1.25f, 12.0f, 1.25f)
@@ -69,7 +73,7 @@ public val EssentionalUiGroup.Database: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _database!!
     }
 

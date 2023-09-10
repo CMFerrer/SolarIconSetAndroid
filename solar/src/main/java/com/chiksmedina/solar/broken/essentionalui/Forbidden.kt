@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.broken.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,22 +11,28 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.EssentionalUiGroup
 
-public val EssentionalUiGroup.Forbidden: ImageVector
+val EssentionalUiGroup.Forbidden: ImageVector
     get() {
         if (_forbidden != null) {
             return _forbidden!!
         }
-        _forbidden = Builder(name = "Forbidden", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _forbidden = Builder(
+            name = "Forbidden", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.5f, 5.5f)
                 lineTo(5.5f, 18.4998f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.6063f, 3.7574f)
                 curveTo(7.4734f, 2.8903f, 7.9069f, 2.4567f, 8.4582f, 2.2284f)
                 curveTo(9.0095f, 2.0f, 9.6227f, 2.0f, 10.8489f, 2.0f)
@@ -56,7 +59,7 @@ public val EssentionalUiGroup.Forbidden: ImageVector
                 curveTo(2.4567f, 7.9069f, 2.8903f, 7.4734f, 3.7574f, 6.6063f)
             }
         }
-        .build()
+            .build()
         return _forbidden!!
     }
 

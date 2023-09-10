@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FoodKitchenGroup
 
-public val FoodKitchenGroup.ChefHatHeart: ImageVector
+val FoodKitchenGroup.ChefHatHeart: ImageVector
     get() {
         if (_chefHatHeart != null) {
             return _chefHatHeart!!
         }
-        _chefHatHeart = Builder(name = "ChefHatHeart", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _chefHatHeart = Builder(
+            name = "ChefHatHeart", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.2529f, 4.2555f)
                 curveTo(8.094f, 2.4795f, 9.9026f, 1.25f, 12.0f, 1.25f)
                 curveTo(14.0974f, 1.25f, 15.906f, 2.4795f, 16.7471f, 4.2555f)
@@ -110,7 +114,7 @@ public val FoodKitchenGroup.ChefHatHeart: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chefHatHeart!!
     }
 

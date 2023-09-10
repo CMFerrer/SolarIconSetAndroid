@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.PinCircle: ImageVector
+val EssentionalUiGroup.PinCircle: ImageVector
     get() {
         if (_pinCircle != null) {
             return _pinCircle!!
         }
-        _pinCircle = Builder(name = "PinCircle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _pinCircle = Builder(
+            name = "PinCircle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.9998f, 12.0f)
                 curveTo(21.9998f, 17.5228f, 17.5226f, 22.0f, 11.9998f, 22.0f)
                 curveTo(6.4769f, 22.0f, 1.9998f, 17.5228f, 1.9998f, 12.0f)
@@ -57,7 +61,7 @@ public val EssentionalUiGroup.PinCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _pinCircle!!
     }
 

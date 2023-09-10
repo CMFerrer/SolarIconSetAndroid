@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.outline
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.OutlineGroup
+import com.chiksmedina.solar.OutlineSolar
 import com.chiksmedina.solar.outline.homefurniture.Armchair
 import com.chiksmedina.solar.outline.homefurniture.Armchair2
 import com.chiksmedina.solar.outline.homefurniture.BarChair
@@ -37,25 +37,56 @@ import com.chiksmedina.solar.outline.homefurniture.Trellis
 import com.chiksmedina.solar.outline.homefurniture.VolumeKnob
 import com.chiksmedina.solar.outline.homefurniture.WashingMachine
 import com.chiksmedina.solar.outline.homefurniture.WashingMachineMinimalistic
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object HomeFurnitureGroup
+object HomeFurnitureGroup
 
-public val OutlineGroup.HomeFurniture: HomeFurnitureGroup
-  get() = HomeFurnitureGroup
+val OutlineSolar.HomeFurniture: HomeFurnitureGroup
+    get() = HomeFurnitureGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val HomeFurnitureGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val HomeFurnitureGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Armchair,
+            Armchair2,
+            BarChair,
+            Bath,
+            Bed,
+            BedsideTable,
+            BedsideTable2,
+            BedsideTable3,
+            BedsideTable4,
+            Chair,
+            Chair2,
+            Chandelier,
+            Closet,
+            Closet2,
+            Condicioner,
+            Condicioner2,
+            FloorLamp,
+            FloorLampMinimalistic,
+            Fridge,
+            Lamp,
+            Mirror,
+            RemoteController,
+            RemoteController2,
+            RemoteControllerMinimalistic,
+            SmartVacuumCleaner,
+            SmartVacuumCleaner2,
+            Sofa,
+            Sofa2,
+            Sofa3,
+            Speaker,
+            SpeakerMinimalistic,
+            Trellis,
+            VolumeKnob,
+            WashingMachine,
+            WashingMachineMinimalistic
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Armchair, Armchair2, BarChair, Bath, Bed, BedsideTable, BedsideTable2,
-        BedsideTable3, BedsideTable4, Chair, Chair2, Chandelier, Closet, Closet2, Condicioner,
-        Condicioner2, FloorLamp, FloorLampMinimalistic, Fridge, Lamp, Mirror, RemoteController,
-        RemoteController2, RemoteControllerMinimalistic, SmartVacuumCleaner, SmartVacuumCleaner2,
-        Sofa, Sofa2, Sofa3, Speaker, SpeakerMinimalistic, Trellis, VolumeKnob, WashingMachine,
-        WashingMachineMinimalistic)
-    return __AllIcons!!
-  }

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.broken.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.AstronomyGroup
 
-public val AstronomyGroup.StarAngle: ImageVector
+val AstronomyGroup.StarAngle: ImageVector
     get() {
         if (_starAngle != null) {
             return _starAngle!!
         }
-        _starAngle = Builder(name = "StarAngle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _starAngle = Builder(
+            name = "StarAngle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.9299f, 12.7732f)
                 curveTo(2.3588f, 14.4238f, 2.0733f, 15.2491f, 2.4383f, 15.7587f)
                 curveTo(2.8035f, 16.2683f, 3.5774f, 16.1248f, 5.1253f, 15.8376f)
@@ -52,9 +53,11 @@ public val AstronomyGroup.StarAngle: ImageVector
                 curveTo(3.2304f, 6.6637f, 2.4499f, 6.6304f, 2.124f, 7.1891f)
                 curveTo(1.7981f, 7.7478f, 2.1425f, 8.5284f, 2.8315f, 10.0895f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.9239f, 8.7986f)
                 lineTo(15.0f, 9.6506f)
                 moveTo(9.7916f, 17.8913f)
@@ -83,7 +86,7 @@ public val AstronomyGroup.StarAngle: ImageVector
                 curveTo(17.379f, 20.0922f, 17.0322f, 19.9916f, 16.3385f, 19.7904f)
             }
         }
-        .build()
+            .build()
         return _starAngle!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.foodkitchen
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.FoodKitchenGroup
 
-public val FoodKitchenGroup.CupHot: ImageVector
+val FoodKitchenGroup.CupHot: ImageVector
     get() {
         if (_cupHot != null) {
             return _cupHot!!
         }
-        _cupHot = Builder(name = "CupHot", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _cupHot = Builder(
+            name = "CupHot", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.6266f, 16.3991f)
                 curveTo(3.8036f, 19.054f, 3.8921f, 20.3815f, 4.7571f, 21.1907f)
                 curveTo(5.6221f, 22.0f, 6.9525f, 22.0f, 9.6133f, 22.0f)
@@ -39,18 +40,22 @@ public val FoodKitchenGroup.CupHot: ImageVector
                 curveTo(3.0845f, 8.2673f, 3.1511f, 9.2669f, 3.2844f, 11.2661f)
                 lineTo(3.3422f, 12.133f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 17.0f)
                 horizontalLineTo(18.0f)
                 curveTo(20.2091f, 17.0f, 22.0f, 15.2091f, 22.0f, 13.0f)
                 curveTo(22.0f, 10.7909f, 20.2091f, 9.0f, 18.0f, 9.0f)
                 horizontalLineTo(17.0f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 18.75f)
                 curveTo(10.4142f, 18.75f, 10.75f, 18.4142f, 10.75f, 18.0f)
                 curveTo(10.75f, 17.5858f, 10.4142f, 17.25f, 10.0f, 17.25f)
@@ -74,9 +79,11 @@ public val FoodKitchenGroup.CupHot: ImageVector
                 verticalLineTo(17.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.0508f, 5.0614f)
                 lineTo(6.4614f, 4.4857f)
                 curveTo(6.6882f, 4.1678f, 6.6143f, 3.7262f, 6.2964f, 3.4994f)
@@ -94,7 +101,7 @@ public val FoodKitchenGroup.CupHot: ImageVector
                 lineTo(10.5419f, 1.9375f)
             }
         }
-        .build()
+            .build()
         return _cupHot!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.list
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ListGroup
 
-public val ListGroup.ListDownMinimalistic: ImageVector
+val ListGroup.ListDownMinimalistic: ImageVector
     get() {
         if (_listDownMinimalistic != null) {
             return _listDownMinimalistic!!
         }
-        _listDownMinimalistic = Builder(name = "ListDownMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _listDownMinimalistic = Builder(
+            name = "ListDownMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.25f, 6.0f)
                 curveTo(2.25f, 5.5858f, 2.5858f, 5.25f, 3.0f, 5.25f)
                 horizontalLineTo(20.0f)
@@ -49,9 +50,11 @@ public val ListGroup.ListDownMinimalistic: ImageVector
                 curveTo(2.5858f, 16.75f, 2.25f, 16.4142f, 2.25f, 16.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.0119f, 18.5694f)
                 curveTo(17.2928f, 18.8102f, 17.7072f, 18.8102f, 17.9881f, 18.5694f)
                 lineTo(21.4881f, 15.5694f)
@@ -65,7 +68,7 @@ public val ListGroup.ListDownMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _listDownMinimalistic!!
     }
 

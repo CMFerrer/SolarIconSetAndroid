@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Panorama: ImageVector
+val VideoAudioSoundGroup.Panorama: ImageVector
     get() {
         if (_panorama != null) {
             return _panorama!!
         }
-        _panorama = Builder(name = "Panorama", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _panorama = Builder(
+            name = "Panorama", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.7971f, 3.3568f)
                 curveTo(18.441f, 2.8672f, 19.3233f, 2.6892f, 20.1838f, 3.066f)
                 curveTo(20.894f, 3.3771f, 21.5116f, 3.7492f, 21.9628f, 4.1897f)
@@ -108,7 +112,7 @@ public val VideoAudioSoundGroup.Panorama: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _panorama!!
     }
 

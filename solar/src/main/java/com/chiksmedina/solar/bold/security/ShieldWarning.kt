@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SecurityGroup
 
-public val SecurityGroup.ShieldWarning: ImageVector
+val SecurityGroup.ShieldWarning: ImageVector
     get() {
         if (_shieldWarning != null) {
             return _shieldWarning!!
         }
-        _shieldWarning = Builder(name = "ShieldWarning", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _shieldWarning = Builder(
+            name = "ShieldWarning", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.0f, 10.4167f)
                 curveTo(3.0f, 7.2191f, 3.0f, 5.6203f, 3.3775f, 5.0824f)
                 curveTo(3.755f, 4.5445f, 5.2583f, 4.03f, 8.2649f, 3.0008f)
@@ -53,7 +57,7 @@ public val SecurityGroup.ShieldWarning: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _shieldWarning!!
     }
 

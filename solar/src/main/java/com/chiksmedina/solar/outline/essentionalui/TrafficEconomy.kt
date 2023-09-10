@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.TrafficEconomy: ImageVector
+val EssentionalUiGroup.TrafficEconomy: ImageVector
     get() {
         if (_trafficEconomy != null) {
             return _trafficEconomy!!
         }
-        _trafficEconomy = Builder(name = "TrafficEconomy", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _trafficEconomy = Builder(
+            name = "TrafficEconomy", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.9028f, 22.5434f)
                 curveTo(11.9881f, 22.9582f, 14.1495f, 22.7453f, 16.1139f, 21.9317f)
                 curveTo(18.0782f, 21.1181f, 19.7571f, 19.7402f, 20.9383f, 17.9724f)
@@ -47,9 +48,11 @@ public val EssentionalUiGroup.TrafficEconomy: ImageVector
                 curveTo(5.902f, 21.1048f, 7.8175f, 22.1287f, 9.9028f, 22.5434f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 8.25f)
                 curveTo(12.4142f, 8.25f, 12.75f, 8.5858f, 12.75f, 9.0f)
                 verticalLineTo(11.25f)
@@ -69,9 +72,11 @@ public val EssentionalUiGroup.TrafficEconomy: ImageVector
                 curveTo(11.25f, 8.5858f, 11.5858f, 8.25f, 12.0f, 8.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.6869f, 1.5886f)
                 curveTo(14.2858f, 1.4854f, 13.8769f, 1.7269f, 13.7737f, 2.128f)
                 curveTo(13.6704f, 2.5291f, 13.9119f, 2.938f, 14.3131f, 3.0413f)
@@ -82,7 +87,7 @@ public val EssentionalUiGroup.TrafficEconomy: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _trafficEconomy!!
     }
 

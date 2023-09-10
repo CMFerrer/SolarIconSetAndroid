@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SportsGroup
 
-public val SportsGroup.BodyShape: ImageVector
+val SportsGroup.BodyShape: ImageVector
     get() {
         if (_bodyShape != null) {
             return _bodyShape!!
         }
-        _bodyShape = Builder(name = "BodyShape", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bodyShape = Builder(
+            name = "BodyShape", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.8363f, 17.4618f)
                 curveTo(21.393f, 16.4153f, 20.8141f, 15.4629f, 20.3001f, 14.6175f)
                 curveTo(20.1159f, 14.3144f, 19.94f, 14.025f, 19.7817f, 13.75f)
@@ -44,9 +45,11 @@ public val SportsGroup.BodyShape: ImageVector
                 curveTo(22.75f, 20.1844f, 22.3695f, 18.7204f, 21.8363f, 17.4618f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.69f, 1.7059f)
                 curveTo(4.5275f, 1.3249f, 4.0868f, 1.1478f, 3.7058f, 1.3103f)
                 curveTo(3.3249f, 1.4728f, 3.1479f, 1.9136f, 3.3103f, 2.2945f)
@@ -91,7 +94,7 @@ public val SportsGroup.BodyShape: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bodyShape!!
     }
 

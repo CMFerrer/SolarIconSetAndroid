@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.AstronomyGroup
 
-public val AstronomyGroup.StarRings: ImageVector
+val AstronomyGroup.StarRings: ImageVector
     get() {
         if (_starRings != null) {
             return _starRings!!
         }
-        _starRings = Builder(name = "StarRings", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _starRings = Builder(
+            name = "StarRings", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.6982f, 3.7536f)
                 curveTo(16.6292f, 3.2989f, 17.6651f, 3.0442f, 18.5283f, 3.4615f)
                 curveTo(18.9884f, 3.684f, 19.3067f, 4.0566f, 19.4993f, 4.5002f)
@@ -131,9 +133,11 @@ public val AstronomyGroup.StarRings: ImageVector
                 curveTo(8.9545f, 10.288f, 9.1502f, 10.011f, 9.3483f, 9.7398f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.7647f, 14.2813f)
                 curveTo(11.7509f, 13.3709f, 11.7441f, 12.9157f, 12.0311f, 12.75f)
                 curveTo(12.3181f, 12.5843f, 12.7089f, 12.8178f, 13.4905f, 13.2849f)
@@ -168,7 +172,7 @@ public val AstronomyGroup.StarRings: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _starRings!!
     }
 

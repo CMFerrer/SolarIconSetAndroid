@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MapLocationGroup
 
-public val MapLocationGroup.MapPointRotate: ImageVector
+val MapLocationGroup.MapPointRotate: ImageVector
     get() {
         if (_mapPointRotate != null) {
             return _mapPointRotate!!
         }
-        _mapPointRotate = Builder(name = "MapPointRotate", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _mapPointRotate = Builder(
+            name = "MapPointRotate", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.25f, 8.1075f)
                 curveTo(5.25f, 4.3328f, 8.2596f, 1.25f, 12.0f, 1.25f)
                 curveTo(15.7404f, 1.25f, 18.75f, 4.3328f, 18.75f, 8.1075f)
@@ -87,7 +91,7 @@ public val MapLocationGroup.MapPointRotate: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _mapPointRotate!!
     }
 

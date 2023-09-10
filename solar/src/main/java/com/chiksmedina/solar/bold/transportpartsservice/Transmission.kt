@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TransportPartsServiceGroup
 
-public val TransportPartsServiceGroup.Transmission: ImageVector
+val TransportPartsServiceGroup.Transmission: ImageVector
     get() {
         if (_transmission != null) {
             return _transmission!!
         }
-        _transmission = Builder(name = "Transmission", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _transmission = Builder(
+            name = "Transmission", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 4.0f)
                 curveTo(2.0f, 2.8954f, 2.8954f, 2.0f, 4.0f, 2.0f)
                 curveTo(5.1046f, 2.0f, 6.0f, 2.8954f, 6.0f, 4.0f)
@@ -68,9 +70,11 @@ public val TransportPartsServiceGroup.Transmission: ImageVector
                 curveTo(2.517f, 5.5579f, 2.0f, 4.8393f, 2.0f, 4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.25f, 15.0f)
                 curveTo(17.25f, 14.5858f, 17.5858f, 14.25f, 18.0f, 14.25f)
                 horizontalLineTo(20.2857f)
@@ -95,7 +99,7 @@ public val TransportPartsServiceGroup.Transmission: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _transmission!!
     }
 

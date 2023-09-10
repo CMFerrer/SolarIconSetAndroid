@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.bold
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldGroup
+import com.chiksmedina.solar.BoldSolar
 import com.chiksmedina.solar.bold.astronomy.Asteroid
 import com.chiksmedina.solar.bold.astronomy.Atom
 import com.chiksmedina.solar.bold.astronomy.BlackHole
@@ -34,23 +34,25 @@ import com.chiksmedina.solar.bold.astronomy.Ufo
 import com.chiksmedina.solar.bold.astronomy.Ufo2
 import com.chiksmedina.solar.bold.astronomy.Ufo3
 import com.chiksmedina.solar.bold.astronomy.Women
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object AstronomyGroup
+object AstronomyGroup
 
-public val BoldGroup.Astronomy: AstronomyGroup
-  get() = AstronomyGroup
+val BoldSolar.Astronomy: AstronomyGroup
+    get() = AstronomyGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val AstronomyGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val AstronomyGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Asteroid, Atom, BlackHole, BlackHole2, BlackHole3, Earth, Infinity, Men,
+            Planet, Planet2, Planet3, Planet4, Rocket, Rocket2, Satellite, Star, Stars, StarsLine,
+            StarsMinimalistic, StarAngle, StarCircle, StarFall, StarFall2, StarFallMinimalistic,
+            StarFallMinimalistic2, StarRainbow, StarRing, StarRings, Ufo, Ufo2, Ufo3, Women
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Asteroid, Atom, BlackHole, BlackHole2, BlackHole3, Earth, Infinity, Men,
-        Planet, Planet2, Planet3, Planet4, Rocket, Rocket2, Satellite, Star, Stars, StarsLine,
-        StarsMinimalistic, StarAngle, StarCircle, StarFall, StarFall2, StarFallMinimalistic,
-        StarFallMinimalistic2, StarRainbow, StarRing, StarRings, Ufo, Ufo2, Ufo3, Women)
-    return __AllIcons!!
-  }

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SchoolGroup
 
-public val SchoolGroup.Document: ImageVector
+val SchoolGroup.Document: ImageVector
     get() {
         if (_document != null) {
             return _document!!
         }
-        _document = Builder(name = "Document", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _document = Builder(
+            name = "Document", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.6111f, 1.5838f)
                 curveTo(17.2678f, 1.3471f, 18.75f, 2.6327f, 18.75f, 4.3062f)
                 verticalLineTo(5.6827f)
@@ -70,7 +74,7 @@ public val SchoolGroup.Document: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _document!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.messagesconversation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MessagesConversationGroup
 
-public val MessagesConversationGroup.InboxIn: ImageVector
+val MessagesConversationGroup.InboxIn: ImageVector
     get() {
         if (_inboxIn != null) {
             return _inboxIn!!
         }
-        _inboxIn = Builder(name = "InboxIn", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _inboxIn = Builder(
+            name = "InboxIn", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 12.0f)
                 curveTo(2.0f, 7.286f, 2.0f, 4.9289f, 3.4645f, 3.4645f)
                 curveTo(4.9289f, 2.0f, 7.286f, 2.0f, 12.0f, 2.0f)
@@ -35,9 +36,11 @@ public val MessagesConversationGroup.InboxIn: ImageVector
                 curveTo(2.0f, 19.0711f, 2.0f, 16.714f, 2.0f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.4645f, 20.5355f)
                 curveTo(4.929f, 22.0f, 7.2861f, 22.0f, 12.0003f, 22.0f)
                 curveTo(16.7145f, 22.0f, 19.0716f, 22.0f, 20.5361f, 20.5355f)
@@ -58,9 +61,11 @@ public val MessagesConversationGroup.InboxIn: ImageVector
                 curveTo(2.0073f, 17.0551f, 2.1074f, 19.1785f, 3.4645f, 20.5355f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.5305f, 11.3301f)
                 curveTo(12.3899f, 11.4708f, 12.1991f, 11.5498f, 12.0002f, 11.5498f)
                 curveTo(11.8013f, 11.5498f, 11.6105f, 11.4708f, 11.4699f, 11.3301f)
@@ -79,7 +84,7 @@ public val MessagesConversationGroup.InboxIn: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _inboxIn!!
     }
 

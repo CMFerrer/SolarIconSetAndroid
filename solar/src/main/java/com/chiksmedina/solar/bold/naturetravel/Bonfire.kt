@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.naturetravel
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.NatureTravelGroup
 
-public val NatureTravelGroup.Bonfire: ImageVector
+val NatureTravelGroup.Bonfire: ImageVector
     get() {
         if (_bonfire != null) {
             return _bonfire!!
         }
-        _bonfire = Builder(name = "Bonfire", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bonfire = Builder(
+            name = "Bonfire", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.3131f, 14.6996f)
                 curveTo(3.4791f, 14.3201f, 3.9213f, 14.147f, 4.3008f, 14.3131f)
                 lineTo(9.3008f, 16.5006f)
@@ -49,9 +50,11 @@ public val NatureTravelGroup.Bonfire: ImageVector
                 curveTo(13.8201f, 20.115f, 13.647f, 19.6728f, 13.8131f, 19.2933f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.6f, 15.0f)
                 curveTo(13.7333f, 15.0f, 18.0f, 13.7615f, 18.0f, 8.8075f)
                 curveTo(18.0f, 5.776f, 16.1512f, 3.5774f, 14.4009f, 2.2646f)
@@ -72,7 +75,7 @@ public val NatureTravelGroup.Bonfire: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bonfire!!
     }
 

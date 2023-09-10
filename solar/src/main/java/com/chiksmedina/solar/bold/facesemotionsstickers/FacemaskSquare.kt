@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.facesemotionsstickers
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.FacesEmotionsStickersGroup
 
-public val FacesEmotionsStickersGroup.FacemaskSquare: ImageVector
+val FacesEmotionsStickersGroup.FacemaskSquare: ImageVector
     get() {
         if (_facemaskSquare != null) {
             return _facemaskSquare!!
         }
-        _facemaskSquare = Builder(name = "FacemaskSquare", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _facemaskSquare = Builder(
+            name = "FacemaskSquare", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.9962f, 13.8093f)
                 lineTo(17.7146f, 15.5216f)
                 lineTo(17.5089f, 18.4021f)
@@ -33,18 +34,22 @@ public val FacesEmotionsStickersGroup.FacemaskSquare: ImageVector
                 curveTo(21.8456f, 18.6894f, 21.9759f, 16.8396f, 21.9962f, 13.8093f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.8878f, 21.0536f)
                 lineTo(17.3958f, 19.9856f)
                 lineTo(17.263f, 21.8449f)
                 curveTo(18.3637f, 21.7166f, 19.2093f, 21.4821f, 19.8878f, 21.0536f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.7513f, 21.9562f)
                 curveTo(15.7515f, 21.953f, 15.7517f, 21.9498f, 15.7519f, 21.9466f)
                 lineTo(16.2129f, 15.4925f)
@@ -57,18 +62,22 @@ public val FacesEmotionsStickersGroup.FacemaskSquare: ImageVector
                 curveTo(13.4628f, 22.0f, 14.6986f, 22.0f, 15.7513f, 21.9562f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.737f, 21.8449f)
                 lineTo(6.6042f, 19.9856f)
                 lineTo(4.1122f, 21.0536f)
                 curveTo(4.7907f, 21.4821f, 5.6363f, 21.7166f, 6.737f, 21.8449f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.9878f, 19.9519f)
                 curveTo(3.0496f, 19.8941f, 3.1223f, 19.8459f, 3.2046f, 19.8106f)
                 lineTo(6.4911f, 18.4021f)
@@ -77,9 +86,11 @@ public val FacesEmotionsStickersGroup.FacemaskSquare: ImageVector
                 curveTo(2.0241f, 16.8396f, 2.1544f, 18.6894f, 2.9878f, 19.9519f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.4645f, 3.4645f)
                 curveTo(2.0f, 4.9289f, 2.0f, 7.286f, 2.0f, 12.0f)
                 lineTo(2.0f, 12.2498f)
@@ -109,7 +120,7 @@ public val FacesEmotionsStickersGroup.FacemaskSquare: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _facemaskSquare!!
     }
 

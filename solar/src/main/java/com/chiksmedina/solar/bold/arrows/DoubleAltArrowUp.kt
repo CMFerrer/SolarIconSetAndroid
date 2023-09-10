@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsGroup
 
-public val ArrowsGroup.DoubleAltArrowUp: ImageVector
+val ArrowsGroup.DoubleAltArrowUp: ImageVector
     get() {
         if (_doubleAltArrowUp != null) {
             return _doubleAltArrowUp!!
         }
-        _doubleAltArrowUp = Builder(name = "DoubleAltArrowUp", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _doubleAltArrowUp = Builder(
+            name = "DoubleAltArrowUp", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.4306f, 13.4881f)
                 curveTo(4.7001f, 13.8026f, 5.1736f, 13.839f, 5.4881f, 13.5694f)
                 lineTo(12.0f, 7.9878f)
@@ -36,9 +38,11 @@ public val ArrowsGroup.DoubleAltArrowUp: ImageVector
                 curveTo(4.1974f, 12.7001f, 4.161f, 13.1736f, 4.4306f, 13.4881f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.0001f, 17.75f)
                 curveTo(4.6862f, 17.75f, 4.4055f, 17.5546f, 4.2966f, 17.2602f)
                 curveTo(4.1877f, 16.9658f, 4.2737f, 16.6348f, 4.512f, 16.4306f)
@@ -51,7 +55,7 @@ public val ArrowsGroup.DoubleAltArrowUp: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _doubleAltArrowUp!!
     }
 

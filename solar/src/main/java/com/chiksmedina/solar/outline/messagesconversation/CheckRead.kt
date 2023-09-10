@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.messagesconversation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MessagesConversationGroup
 
-public val MessagesConversationGroup.CheckRead: ImageVector
+val MessagesConversationGroup.CheckRead: ImageVector
     get() {
         if (_checkRead != null) {
             return _checkRead!!
         }
-        _checkRead = Builder(name = "CheckRead", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _checkRead = Builder(
+            name = "CheckRead", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.4933f, 6.935f)
                 curveTo(15.8053f, 7.2074f, 15.8374f, 7.6812f, 15.565f, 7.9932f)
                 lineTo(7.7079f, 16.9933f)
@@ -37,9 +38,11 @@ public val MessagesConversationGroup.CheckRead: ImageVector
                 curveTo(14.7074f, 6.6947f, 15.1812f, 6.6626f, 15.4933f, 6.935f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(20.5175f, 7.0195f)
                 curveTo(20.8174f, 7.3051f, 20.829f, 7.7799f, 20.5433f, 8.0798f)
                 lineTo(11.9716f, 17.0798f)
@@ -53,7 +56,7 @@ public val MessagesConversationGroup.CheckRead: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _checkRead!!
     }
 

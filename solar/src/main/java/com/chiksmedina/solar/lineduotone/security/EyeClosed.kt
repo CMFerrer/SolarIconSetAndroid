@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.lineduotone.security
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.SecurityGroup
 
-public val SecurityGroup.EyeClosed: ImageVector
+val SecurityGroup.EyeClosed: ImageVector
     get() {
         if (_eyeClosed != null) {
             return _eyeClosed!!
         }
-        _eyeClosed = Builder(name = "EyeClosed", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _eyeClosed = Builder(
+            name = "EyeClosed", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.6894f, 6.7046f)
                 curveTo(2.5262f, 6.3238f, 2.0853f, 6.1475f, 1.7046f, 6.3106f)
                 curveTo(1.3238f, 6.4738f, 1.1475f, 6.9147f, 1.3106f, 7.2954f)
@@ -103,9 +104,11 @@ public val SecurityGroup.EyeClosed: ImageVector
                 lineTo(18.4867f, 10.582f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.75f, 14.0001f)
                 curveTo(12.75f, 13.5859f, 12.4142f, 13.2501f, 12.0f, 13.2501f)
                 curveTo(11.5858f, 13.2501f, 11.25f, 13.5859f, 11.25f, 14.0001f)
@@ -188,7 +191,7 @@ public val SecurityGroup.EyeClosed: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _eyeClosed!!
     }
 

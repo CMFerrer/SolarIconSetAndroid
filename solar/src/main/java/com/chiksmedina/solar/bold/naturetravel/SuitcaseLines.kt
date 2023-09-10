@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.naturetravel
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.NatureTravelGroup
 
-public val NatureTravelGroup.SuitcaseLines: ImageVector
+val NatureTravelGroup.SuitcaseLines: ImageVector
     get() {
         if (_suitcaseLines != null) {
             return _suitcaseLines!!
         }
-        _suitcaseLines = Builder(name = "SuitcaseLines", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _suitcaseLines = Builder(
+            name = "SuitcaseLines", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.052f, 1.25f)
                 horizontalLineTo(11.948f)
                 curveTo(11.0495f, 1.25f, 10.3003f, 1.25f, 9.7055f, 1.3299f)
@@ -59,9 +60,11 @@ public val NatureTravelGroup.SuitcaseLines: ImageVector
                 curveTo(14.4419f, 6.0f, 14.858f, 6.0f, 15.25f, 6.0019f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 14.0f)
                 curveTo(2.0f, 13.161f, 2.0f, 12.4153f, 2.0129f, 11.75f)
                 horizontalLineTo(21.9871f)
@@ -71,9 +74,11 @@ public val NatureTravelGroup.SuitcaseLines: ImageVector
                 curveTo(2.0f, 15.5847f, 2.0f, 14.839f, 2.0f, 14.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.0793f, 17.75f)
                 curveTo(2.1945f, 19.1893f, 2.4774f, 20.1342f, 3.1716f, 20.8284f)
                 curveTo(4.3432f, 22.0f, 6.2288f, 22.0f, 10.0f, 22.0f)
@@ -84,7 +89,7 @@ public val NatureTravelGroup.SuitcaseLines: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _suitcaseLines!!
     }
 

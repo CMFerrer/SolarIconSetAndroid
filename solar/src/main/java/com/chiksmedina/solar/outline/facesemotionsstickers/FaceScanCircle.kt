@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.facesemotionsstickers
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FacesEmotionsStickersGroup
 
-public val FacesEmotionsStickersGroup.FaceScanCircle: ImageVector
+val FacesEmotionsStickersGroup.FaceScanCircle: ImageVector
     get() {
         if (_faceScanCircle != null) {
             return _faceScanCircle!!
         }
-        _faceScanCircle = Builder(name = "FaceScanCircle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _faceScanCircle = Builder(
+            name = "FaceScanCircle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.0f, 10.4999f)
                 curveTo(16.0f, 11.3283f, 15.5523f, 11.9999f, 15.0f, 11.9999f)
                 curveTo(14.4477f, 11.9999f, 14.0f, 11.3283f, 14.0f, 10.4999f)
@@ -32,9 +33,11 @@ public val FacesEmotionsStickersGroup.FaceScanCircle: ImageVector
                 curveTo(15.5523f, 8.9999f, 16.0f, 9.6715f, 16.0f, 10.4999f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 10.4999f)
                 curveTo(10.0f, 11.3283f, 9.5523f, 11.9999f, 9.0f, 11.9999f)
                 curveTo(8.4477f, 11.9999f, 8.0f, 11.3283f, 8.0f, 10.4999f)
@@ -42,9 +45,11 @@ public val FacesEmotionsStickersGroup.FaceScanCircle: ImageVector
                 curveTo(9.5523f, 8.9999f, 10.0f, 9.6715f, 10.0f, 10.4999f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.265f, 2.0507f)
                 curveTo(13.3474f, 1.6447f, 13.7433f, 1.3824f, 14.1492f, 1.4648f)
                 curveTo(18.3627f, 2.3201f, 21.6798f, 5.6371f, 22.5351f, 9.8506f)
@@ -89,7 +94,7 @@ public val FacesEmotionsStickersGroup.FaceScanCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _faceScanCircle!!
     }
 

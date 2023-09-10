@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TimeGroup
 
-public val TimeGroup.History: ImageVector
+val TimeGroup.History: ImageVector
     get() {
         if (_history != null) {
             return _history!!
         }
-        _history = Builder(name = "History", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _history = Builder(
+            name = "History", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.0788f, 5.0689f)
                 curveTo(8.8741f, 1.2789f, 15.0438f, 1.3192f, 18.8623f, 5.1378f)
                 curveTo(22.6825f, 8.958f, 22.7212f, 15.1313f, 18.9263f, 18.9262f)
@@ -54,7 +58,7 @@ public val TimeGroup.History: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _history!!
     }
 

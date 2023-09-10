@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.files
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.FilesGroup
 
-public val FilesGroup.CodeFile: ImageVector
+val FilesGroup.CodeFile: ImageVector
     get() {
         if (_codeFile != null) {
             return _codeFile!!
         }
-        _codeFile = Builder(name = "CodeFile", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _codeFile = Builder(
+            name = "CodeFile", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(10.0f, 22.0f)
                 horizontalLineTo(14.0f)
                 curveTo(17.7712f, 22.0f, 19.6569f, 22.0f, 20.8284f, 20.8284f)
@@ -47,9 +48,11 @@ public val FilesGroup.CodeFile: ImageVector
                 curveTo(4.3432f, 22.0f, 6.2288f, 22.0f, 10.0f, 22.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.7022f, 14.2635f)
                 curveTo(10.8477f, 13.8757f, 10.6512f, 13.4434f, 10.2633f, 13.298f)
                 curveTo(9.8755f, 13.1525f, 9.4432f, 13.349f, 9.2978f, 13.7369f)
@@ -59,9 +62,11 @@ public val FilesGroup.CodeFile: ImageVector
                 lineTo(10.7022f, 14.2635f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.5303f, 14.5305f)
                 curveTo(7.8232f, 14.2376f, 7.8232f, 13.7628f, 7.5303f, 13.4699f)
                 curveTo(7.2374f, 13.177f, 6.7626f, 13.177f, 6.4697f, 13.4699f)
@@ -74,9 +79,11 @@ public val FilesGroup.CodeFile: ImageVector
                 lineTo(7.5303f, 14.5305f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0303f, 15.4699f)
                 curveTo(11.7374f, 15.177f, 11.2626f, 15.177f, 10.9697f, 15.4699f)
                 curveTo(10.6768f, 15.7628f, 10.6768f, 16.2376f, 10.9697f, 16.5305f)
@@ -89,9 +96,11 @@ public val FilesGroup.CodeFile: ImageVector
                 lineTo(12.0303f, 15.4699f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.5092f, 2.2601f)
                 lineTo(11.5f, 5.0945f)
                 curveTo(11.4999f, 6.1916f, 11.4998f, 7.1612f, 11.6049f, 7.9427f)
@@ -113,7 +122,7 @@ public val FilesGroup.CodeFile: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _codeFile!!
     }
 

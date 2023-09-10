@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
+val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
     get() {
         if (_smartphoneVibration != null) {
             return _smartphoneVibration!!
         }
-        _smartphoneVibration = Builder(name = "SmartphoneVibration", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _smartphoneVibration = Builder(
+            name = "SmartphoneVibration", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.8789f, 2.8787f)
                 curveTo(5.0002f, 3.7574f, 5.0002f, 5.1716f, 5.0002f, 8.0f)
                 verticalLineTo(16.0f)
@@ -40,9 +41,11 @@ public val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
                 curveTo(8.1718f, 2.0f, 6.7576f, 2.0f, 5.8789f, 2.8787f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.5f, 18.25f)
                 curveTo(9.0858f, 18.25f, 8.75f, 18.5858f, 8.75f, 19.0f)
                 curveTo(8.75f, 19.4142f, 9.0858f, 19.75f, 9.5f, 19.75f)
@@ -52,9 +55,11 @@ public val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
                 horizontalLineTo(9.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(1.6647f, 5.3293f)
                 curveTo(2.0352f, 5.1441f, 2.4857f, 5.2943f, 2.671f, 5.6648f)
                 lineTo(3.4474f, 7.2175f)
@@ -113,7 +118,7 @@ public val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _smartphoneVibration!!
     }
 

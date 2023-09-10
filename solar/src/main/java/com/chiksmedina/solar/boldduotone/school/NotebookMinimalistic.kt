@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SchoolGroup
 
-public val SchoolGroup.NotebookMinimalistic: ImageVector
+val SchoolGroup.NotebookMinimalistic: ImageVector
     get() {
         if (_notebookMinimalistic != null) {
             return _notebookMinimalistic!!
         }
-        _notebookMinimalistic = Builder(name = "NotebookMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _notebookMinimalistic = Builder(
+            name = "NotebookMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 16.1436f)
                 verticalLineTo(4.9978f)
                 curveTo(2.0f, 3.8996f, 2.8863f, 3.0075f, 3.9824f, 3.0749f)
@@ -37,9 +39,11 @@ public val SchoolGroup.NotebookMinimalistic: ImageVector
                 curveTo(2.906f, 18.1534f, 2.0f, 17.2545f, 2.0f, 16.1436f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 16.1436f)
                 verticalLineTo(4.9332f)
                 curveTo(22.0f, 3.8607f, 21.1538f, 2.9804f, 20.082f, 3.0178f)
@@ -54,7 +58,7 @@ public val SchoolGroup.NotebookMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _notebookMinimalistic!!
     }
 

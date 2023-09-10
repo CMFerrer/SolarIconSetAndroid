@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Sofa2: ImageVector
+val HomeFurnitureGroup.Sofa2: ImageVector
     get() {
         if (_sofa2 != null) {
             return _sofa2!!
         }
-        _sofa2 = Builder(name = "Sofa2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sofa2 = Builder(
+            name = "Sofa2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.9047f, 4.25f)
                 curveTo(8.9361f, 4.25f, 8.9678f, 4.25f, 9.0f, 4.25f)
                 horizontalLineTo(15.0f)
@@ -91,7 +95,7 @@ public val HomeFurnitureGroup.Sofa2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sofa2!!
     }
 

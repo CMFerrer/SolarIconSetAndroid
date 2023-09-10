@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.CupFirst: ImageVector
+val EssentionalUiGroup.CupFirst: ImageVector
     get() {
         if (_cupFirst != null) {
             return _cupFirst!!
         }
-        _cupFirst = Builder(name = "CupFirst", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _cupFirst = Builder(
+            name = "CupFirst", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.787f, 5.8071f)
                 curveTo(13.0673f, 5.9232f, 13.25f, 6.1967f, 13.25f, 6.5f)
                 verticalLineTo(10.5f)
@@ -37,9 +39,11 @@ public val EssentionalUiGroup.CupFirst: ImageVector
                 curveTo(12.1842f, 5.7552f, 12.5068f, 5.691f, 12.787f, 5.8071f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.4984f, 1.6072f)
                 curveTo(8.6613f, 1.411f, 10.1724f, 1.25f, 12.0002f, 1.25f)
                 curveTo(13.8279f, 1.25f, 15.339f, 1.411f, 16.5019f, 1.6072f)
@@ -143,7 +147,7 @@ public val EssentionalUiGroup.CupFirst: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cupFirst!!
     }
 

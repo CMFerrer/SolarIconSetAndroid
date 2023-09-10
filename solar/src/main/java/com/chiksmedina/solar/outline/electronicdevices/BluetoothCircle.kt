@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.BluetoothCircle: ImageVector
+val ElectronicDevicesGroup.BluetoothCircle: ImageVector
     get() {
         if (_bluetoothCircle != null) {
             return _bluetoothCircle!!
         }
-        _bluetoothCircle = Builder(name = "BluetoothCircle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bluetoothCircle = Builder(
+            name = "BluetoothCircle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.75f)
                 curveTo(6.8914f, 2.75f, 2.75f, 6.8914f, 2.75f, 12.0f)
                 curveTo(2.75f, 17.1086f, 6.8914f, 21.25f, 12.0f, 21.25f)
@@ -113,7 +117,7 @@ public val ElectronicDevicesGroup.BluetoothCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bluetoothCircle!!
     }
 

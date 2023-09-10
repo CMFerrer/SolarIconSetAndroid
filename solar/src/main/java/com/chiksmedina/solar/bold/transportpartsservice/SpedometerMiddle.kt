@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TransportPartsServiceGroup
 
-public val TransportPartsServiceGroup.SpedometerMiddle: ImageVector
+val TransportPartsServiceGroup.SpedometerMiddle: ImageVector
     get() {
         if (_spedometerMiddle != null) {
             return _spedometerMiddle!!
         }
-        _spedometerMiddle = Builder(name = "SpedometerMiddle", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _spedometerMiddle = Builder(
+            name = "SpedometerMiddle", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.7521f, 3.9753f)
                 curveTo(12.7521f, 4.39f, 12.4154f, 4.7263f, 12.0f, 4.7263f)
                 curveTo(11.5846f, 4.7263f, 11.2479f, 4.39f, 11.2479f, 3.9753f)
@@ -69,7 +73,7 @@ public val TransportPartsServiceGroup.SpedometerMiddle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _spedometerMiddle!!
     }
 

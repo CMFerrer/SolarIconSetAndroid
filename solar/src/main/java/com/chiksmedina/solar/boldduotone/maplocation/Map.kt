@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.maplocation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MapLocationGroup
 
-public val MapLocationGroup.Map: ImageVector
+val MapLocationGroup.Map: ImageVector
     get() {
         if (_map != null) {
             return _map!!
         }
-        _map = Builder(name = "Map", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _map = Builder(
+            name = "Map", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
+            = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.0f, 8.7094f)
                 verticalLineTo(16.8377f)
                 curveTo(3.0f, 17.8813f, 3.0f, 18.4031f, 3.2831f, 18.7959f)
@@ -39,9 +40,11 @@ public val MapLocationGroup.Map: ImageVector
                 curveTo(3.0f, 6.4991f, 3.0f, 7.2358f, 3.0f, 8.7094f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.0f, 15.2907f)
                 verticalLineTo(7.1623f)
                 curveTo(21.0f, 6.1187f, 21.0f, 5.5969f, 20.7169f, 5.2041f)
@@ -57,9 +60,11 @@ public val MapLocationGroup.Map: ImageVector
                 curveTo(21.0f, 17.501f, 21.0f, 16.7642f, 21.0f, 15.2907f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.2469f, 6.6092f)
                 curveTo(9.1652f, 6.6285f, 9.0829f, 6.6444f, 9.0f, 6.6567f)
                 verticalLineTo(20.6566f)
@@ -73,15 +78,17 @@ public val MapLocationGroup.Map: ImageVector
                 curveTo(10.2399f, 6.1731f, 9.7719f, 6.4851f, 9.2469f, 6.6092f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.481f, 17.8267f)
                 curveTo(17.5684f, 17.8558f, 17.653f, 17.884f, 17.735f, 17.9113f)
                 close()
             }
         }
-        .build()
+            .build()
         return _map!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MedicineGroup
 
-public val MedicineGroup.Syringe: ImageVector
+val MedicineGroup.Syringe: ImageVector
     get() {
         if (_syringe != null) {
             return _syringe!!
         }
-        _syringe = Builder(name = "Syringe", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _syringe = Builder(
+            name = "Syringe", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.5606f, 3.4697f)
                 curveTo(16.8535f, 3.1768f, 17.3283f, 3.1768f, 17.6212f, 3.4697f)
                 lineTo(20.5303f, 6.3788f)
@@ -95,7 +99,7 @@ public val MedicineGroup.Syringe: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _syringe!!
     }
 

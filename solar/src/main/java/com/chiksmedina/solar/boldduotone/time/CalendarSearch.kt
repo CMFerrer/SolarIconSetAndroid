@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.time
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.TimeGroup
 
-public val TimeGroup.CalendarSearch: ImageVector
+val TimeGroup.CalendarSearch: ImageVector
     get() {
         if (_calendarSearch != null) {
             return _calendarSearch!!
         }
-        _calendarSearch = Builder(name = "CalendarSearch", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _calendarSearch = Builder(
+            name = "CalendarSearch", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.9601f, 2.0f)
                 curveTo(7.3776f, 2.0f, 7.7161f, 2.31f, 7.7161f, 2.6923f)
                 verticalLineTo(4.0888f)
@@ -46,9 +47,11 @@ public val TimeGroup.CalendarSearch: ImageVector
                 curveTo(6.2041f, 2.31f, 6.5425f, 2.0f, 6.9601f, 2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 14.0f)
                 verticalLineTo(12.0f)
                 curveTo(22.0f, 11.161f, 21.9873f, 9.6653f, 21.9744f, 9.0f)
@@ -62,9 +65,11 @@ public val TimeGroup.CalendarSearch: ImageVector
                 curveTo(22.0f, 19.6569f, 22.0f, 17.7712f, 22.0f, 14.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.75f, 16.5f)
                 curveTo(17.5074f, 16.5f, 16.5f, 17.5074f, 16.5f, 18.75f)
                 curveTo(16.5f, 19.9926f, 17.5074f, 21.0f, 18.75f, 21.0f)
@@ -84,7 +89,7 @@ public val TimeGroup.CalendarSearch: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _calendarSearch!!
     }
 

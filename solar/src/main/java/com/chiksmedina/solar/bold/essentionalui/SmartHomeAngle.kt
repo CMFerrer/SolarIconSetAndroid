@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.SmartHomeAngle: ImageVector
+val EssentionalUiGroup.SmartHomeAngle: ImageVector
     get() {
         if (_smartHomeAngle != null) {
             return _smartHomeAngle!!
         }
-        _smartHomeAngle = Builder(name = "SmartHomeAngle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _smartHomeAngle = Builder(
+            name = "SmartHomeAngle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.25f, 12.25f)
                 curveTo(2.25f, 11.8358f, 2.5858f, 11.5f, 3.0f, 11.5f)
                 curveTo(8.3848f, 11.5f, 12.75f, 15.8652f, 12.75f, 21.25f)
@@ -33,9 +34,11 @@ public val EssentionalUiGroup.SmartHomeAngle: ImageVector
                 curveTo(2.5858f, 13.0f, 2.25f, 12.6642f, 2.25f, 12.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.25f, 15.25f)
                 curveTo(2.25f, 14.8358f, 2.5858f, 14.5f, 3.0f, 14.5f)
                 curveTo(6.7279f, 14.5f, 9.75f, 17.5221f, 9.75f, 21.25f)
@@ -45,9 +48,11 @@ public val EssentionalUiGroup.SmartHomeAngle: ImageVector
                 curveTo(2.5858f, 16.0f, 2.25f, 15.6642f, 2.25f, 15.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.0f, 17.5f)
                 curveTo(2.5858f, 17.5f, 2.25f, 17.8358f, 2.25f, 18.25f)
                 curveTo(2.25f, 18.6642f, 2.5858f, 19.0f, 3.0f, 19.0f)
@@ -57,9 +62,11 @@ public val EssentionalUiGroup.SmartHomeAngle: ImageVector
                 curveTo(6.75f, 19.1789f, 5.0711f, 17.5f, 3.0f, 17.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.0245f, 10.2219f)
                 curveTo(2.3196f, 10.0797f, 2.6505f, 10.0f, 3.0f, 10.0f)
                 curveTo(9.2132f, 10.0f, 14.25f, 15.0368f, 14.25f, 21.25f)
@@ -78,7 +85,7 @@ public val EssentionalUiGroup.SmartHomeAngle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _smartHomeAngle!!
     }
 

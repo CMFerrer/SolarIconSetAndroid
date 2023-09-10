@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -16,17 +13,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartphoneUpdate: ImageVector
+val ElectronicDevicesGroup.SmartphoneUpdate: ImageVector
     get() {
         if (_smartphoneUpdate != null) {
             return _smartphoneUpdate!!
         }
-        _smartphoneUpdate = Builder(name = "SmartphoneUpdate", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+        _smartphoneUpdate = Builder(
+            name = "SmartphoneUpdate", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
             group {
-                path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = EvenOdd) {
+                path(
+                    fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = EvenOdd
+                ) {
                     moveTo(11.14f, 4.2354f)
                     curveTo(11.3536f, 4.2354f, 11.5574f, 4.325f, 11.7014f, 4.4824f)
                     lineTo(12.4413f, 5.2912f)
@@ -44,9 +45,11 @@ public val ElectronicDevicesGroup.SmartphoneUpdate: ImageVector
                     curveTo(10.7227f, 4.325f, 10.9264f, 4.2354f, 11.14f, 4.2354f)
                     close()
                 }
-                path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f,
-                        strokeAlpha = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt,
-                        strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+                path(
+                    fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f,
+                    strokeAlpha = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt,
+                    strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+                ) {
                     moveTo(7.1994f, 1.0f)
                     curveTo(4.9235f, 1.0f, 3.1295f, 2.7984f, 2.7957f, 5.0448f)
                     curveTo(2.6011f, 5.0356f, 2.403f, 5.1007f, 2.2477f, 5.2421f)
@@ -64,9 +67,11 @@ public val ElectronicDevicesGroup.SmartphoneUpdate: ImageVector
                     curveTo(9.7661f, 1.6563f, 8.5618f, 1.0f, 7.1994f, 1.0f)
                     close()
                 }
-                path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f,
-                        strokeAlpha = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt,
-                        strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+                path(
+                    fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f,
+                    strokeAlpha = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt,
+                    strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+                ) {
                     moveTo(21.0004f, 11.8686f)
                     verticalLineTo(15.9126f)
                     curveTo(21.0004f, 19.7252f, 21.0004f, 21.6316f, 19.8132f, 22.816f)
@@ -87,9 +92,11 @@ public val ElectronicDevicesGroup.SmartphoneUpdate: ImageVector
                     curveTo(21.0004f, 6.1496f, 21.0004f, 8.0559f, 21.0004f, 11.8686f)
                     close()
                 }
-                path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = NonZero) {
+                path(
+                    fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = NonZero
+                ) {
                     moveTo(9.0938f, 20.9672f)
                     curveTo(9.0938f, 20.5485f, 9.434f, 20.209f, 9.8538f, 20.209f)
                     horizontalLineTo(15.9337f)
@@ -101,7 +108,7 @@ public val ElectronicDevicesGroup.SmartphoneUpdate: ImageVector
                 }
             }
         }
-        .build()
+            .build()
         return _smartphoneUpdate!!
     }
 

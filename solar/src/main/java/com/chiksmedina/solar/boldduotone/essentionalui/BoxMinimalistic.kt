@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.EssentionalUiGroup
 
-public val EssentionalUiGroup.BoxMinimalistic: ImageVector
+val EssentionalUiGroup.BoxMinimalistic: ImageVector
     get() {
         if (_boxMinimalistic != null) {
             return _boxMinimalistic!!
         }
-        _boxMinimalistic = Builder(name = "BoxMinimalistic", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _boxMinimalistic = Builder(
+            name = "BoxMinimalistic", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.4223f, 20.618f)
                 curveTo(10.1779f, 21.5393f, 11.0557f, 22.0f, 12.0f, 22.0f)
                 verticalLineTo(12.0f)
@@ -36,9 +37,11 @@ public val EssentionalUiGroup.BoxMinimalistic: ImageVector
                 lineTo(8.4223f, 20.618f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.7f, strokeAlpha
-                    = 0.7f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.7f, strokeAlpha
+                = 0.7f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.5774f, 4.4315f)
                 lineTo(15.5774f, 3.382f)
                 curveTo(13.8218f, 2.4607f, 12.944f, 2.0f, 11.9997f, 2.0f)
@@ -50,9 +53,11 @@ public val EssentionalUiGroup.BoxMinimalistic: ImageVector
                 curveTo(20.7564f, 6.0998f, 19.6811f, 5.5355f, 17.5774f, 4.4315f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.4026f, 7.1399f)
                 curveTo(21.3893f, 7.1173f, 21.3758f, 7.0949f, 21.362f, 7.0728f)
                 lineTo(12.0f, 12.0001f)
@@ -66,7 +71,7 @@ public val EssentionalUiGroup.BoxMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _boxMinimalistic!!
     }
 

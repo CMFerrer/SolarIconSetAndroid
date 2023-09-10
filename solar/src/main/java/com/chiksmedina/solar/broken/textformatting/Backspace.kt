@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.broken.textformatting
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.TextFormattingGroup
 
-public val TextFormattingGroup.Backspace: ImageVector
+val TextFormattingGroup.Backspace: ImageVector
     get() {
         if (_backspace != null) {
             return _backspace!!
         }
-        _backspace = Builder(name = "Backspace", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _backspace = Builder(
+            name = "Backspace", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 12.0f)
                 curveTo(22.0f, 15.7712f, 22.0f, 17.6569f, 20.7961f, 18.8284f)
                 curveTo(19.5921f, 20.0f, 17.6544f, 20.0f, 13.779f, 20.0f)
@@ -40,16 +41,18 @@ public val TextFormattingGroup.Backspace: ImageVector
                 curveTo(17.6544f, 4.0f, 19.5921f, 4.0f, 20.7961f, 5.1716f)
                 curveTo(21.4673f, 5.8247f, 21.7643f, 6.6999f, 21.8957f, 8.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.5f, 9.5f)
                 lineTo(10.5f, 14.5f)
                 moveTo(10.5f, 9.5f)
                 lineTo(15.5f, 14.5f)
             }
         }
-        .build()
+            .build()
         return _backspace!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Lightbulb: ImageVector
+val ElectronicDevicesGroup.Lightbulb: ImageVector
     get() {
         if (_lightbulb != null) {
             return _lightbulb!!
         }
-        _lightbulb = Builder(name = "Lightbulb", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _lightbulb = Builder(
+            name = "Lightbulb", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.75f)
                 curveTo(8.2721f, 2.75f, 5.25f, 5.7721f, 5.25f, 9.5f)
                 curveTo(5.25f, 11.4985f, 6.1176f, 13.2934f, 7.4991f, 14.5304f)
@@ -108,7 +112,7 @@ public val ElectronicDevicesGroup.Lightbulb: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _lightbulb!!
     }
 

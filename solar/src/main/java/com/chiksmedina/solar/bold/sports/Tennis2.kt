@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SportsGroup
 
-public val SportsGroup.Tennis2: ImageVector
+val SportsGroup.Tennis2: ImageVector
     get() {
         if (_tennis2 != null) {
             return _tennis2!!
         }
-        _tennis2 = Builder(name = "Tennis2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _tennis2 = Builder(
+            name = "Tennis2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.78f, 3.0821f)
                 curveTo(13.8125f, 2.8115f, 13.8493f, 2.6006f, 13.8771f, 2.4607f)
                 lineTo(13.9316f, 2.1899f)
@@ -110,7 +114,7 @@ public val SportsGroup.Tennis2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _tennis2!!
     }
 

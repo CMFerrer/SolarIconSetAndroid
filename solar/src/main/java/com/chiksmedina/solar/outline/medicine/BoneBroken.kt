@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.medicine
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MedicineGroup
 
-public val MedicineGroup.BoneBroken: ImageVector
+val MedicineGroup.BoneBroken: ImageVector
     get() {
         if (_boneBroken != null) {
             return _boneBroken!!
         }
-        _boneBroken = Builder(name = "BoneBroken", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _boneBroken = Builder(
+            name = "BoneBroken", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.1732f, 4.8268f)
                 curveTo(19.2612f, 3.8908f, 18.9468f, 2.9242f, 18.2302f, 2.2075f)
                 curveTo(16.9535f, 0.9308f, 14.8837f, 0.9308f, 13.6071f, 2.2075f)
@@ -60,9 +61,11 @@ public val MedicineGroup.BoneBroken: ImageVector
                 curveTo(17.8603f, 5.079f, 17.8603f, 3.959f, 17.1695f, 3.2681f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.1269f, 17.1264f)
                 curveTo(17.4198f, 16.8335f, 17.8947f, 16.8335f, 18.1876f, 17.1264f)
                 lineTo(19.6018f, 18.5406f)
@@ -72,9 +75,11 @@ public val MedicineGroup.BoneBroken: ImageVector
                 curveTo(16.834f, 17.8942f, 16.834f, 17.4193f, 17.1269f, 17.1264f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.8736f, 5.8129f)
                 curveTo(7.1665f, 6.1058f, 7.1665f, 6.5807f, 6.8736f, 6.8736f)
                 curveTo(6.5807f, 7.1665f, 6.1058f, 7.1665f, 5.8129f, 6.8736f)
@@ -84,9 +89,11 @@ public val MedicineGroup.BoneBroken: ImageVector
                 lineTo(6.8736f, 5.8129f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.0f, 18.25f)
                 curveTo(15.4142f, 18.25f, 15.75f, 18.5858f, 15.75f, 19.0f)
                 verticalLineTo(20.0f)
@@ -96,9 +103,11 @@ public val MedicineGroup.BoneBroken: ImageVector
                 curveTo(14.25f, 18.5858f, 14.5858f, 18.25f, 15.0f, 18.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 9.75f)
                 curveTo(5.4142f, 9.75f, 5.75f, 9.4142f, 5.75f, 9.0f)
                 curveTo(5.75f, 8.5858f, 5.4142f, 8.25f, 5.0f, 8.25f)
@@ -108,9 +117,11 @@ public val MedicineGroup.BoneBroken: ImageVector
                 horizontalLineTo(5.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.25f, 15.0f)
                 curveTo(18.25f, 14.5858f, 18.5858f, 14.25f, 19.0f, 14.25f)
                 horizontalLineTo(20.0f)
@@ -120,9 +131,11 @@ public val MedicineGroup.BoneBroken: ImageVector
                 curveTo(18.5858f, 15.75f, 18.25f, 15.4142f, 18.25f, 15.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.25f, 5.0f)
                 curveTo(8.25f, 5.4142f, 8.5858f, 5.75f, 9.0f, 5.75f)
                 curveTo(9.4142f, 5.75f, 9.75f, 5.4142f, 9.75f, 5.0f)
@@ -132,9 +145,11 @@ public val MedicineGroup.BoneBroken: ImageVector
                 lineTo(8.25f, 5.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.4626f, 14.4357f)
                 curveTo(11.1602f, 13.8776f, 10.1224f, 12.8398f, 9.5643f, 11.5374f)
                 curveTo(9.3164f, 10.9592f, 8.5629f, 10.814f, 8.118f, 11.2589f)
@@ -175,7 +190,7 @@ public val MedicineGroup.BoneBroken: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _boneBroken!!
     }
 

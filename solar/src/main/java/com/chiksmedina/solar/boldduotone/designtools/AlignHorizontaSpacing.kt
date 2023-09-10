@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.DesignToolsGroup
 
-public val DesignToolsGroup.AlignHorizontaSpacing: ImageVector
+val DesignToolsGroup.AlignHorizontaSpacing: ImageVector
     get() {
         if (_alignHorizontaSpacing != null) {
             return _alignHorizontaSpacing!!
         }
-        _alignHorizontaSpacing = Builder(name = "AlignHorizontaSpacing", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _alignHorizontaSpacing = Builder(
+            name = "AlignHorizontaSpacing", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(20.9998f, 22.75f)
                 curveTo(20.5855f, 22.75f, 20.2498f, 22.4142f, 20.2498f, 22.0f)
                 lineTo(20.2498f, 2.0f)
@@ -41,9 +43,11 @@ public val DesignToolsGroup.AlignHorizontaSpacing: ImageVector
                 curveTo(3.7498f, 22.4142f, 3.414f, 22.75f, 2.9998f, 22.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0002f, 20.0f)
                 curveTo(13.8859f, 20.0f, 14.8287f, 20.0f, 15.4145f, 19.4142f)
                 curveTo(16.0002f, 18.8284f, 16.0002f, 17.8856f, 16.0002f, 16.0f)
@@ -58,7 +62,7 @@ public val DesignToolsGroup.AlignHorizontaSpacing: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _alignHorizontaSpacing!!
     }
 

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.NotesGroup
 
-public val NotesGroup.ArchiveMinimalistic: ImageVector
+val NotesGroup.ArchiveMinimalistic: ImageVector
     get() {
         if (_archiveMinimalistic != null) {
             return _archiveMinimalistic!!
         }
-        _archiveMinimalistic = Builder(name = "ArchiveMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _archiveMinimalistic = Builder(
+            name = "ArchiveMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.545f, 8.7301f)
                 curveTo(2.0f, 9.7996f, 2.0f, 11.1997f, 2.0f, 14.0f)
                 curveTo(2.0f, 16.8003f, 2.0f, 18.2004f, 2.545f, 19.27f)
@@ -53,9 +55,11 @@ public val NotesGroup.ArchiveMinimalistic: ImageVector
                 lineTo(15.0595f, 12.4995f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.5348f, 3.4645f)
                 curveTo(19.0704f, 2.0f, 16.7133f, 2.0f, 11.9993f, 2.0f)
                 curveTo(7.2853f, 2.0f, 4.9282f, 2.0f, 3.4638f, 3.4645f)
@@ -71,7 +75,7 @@ public val NotesGroup.ArchiveMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _archiveMinimalistic!!
     }
 

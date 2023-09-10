@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.broken.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.SportsGroup
 
-public val SportsGroup.Dumbbells: ImageVector
+val SportsGroup.Dumbbells: ImageVector
     get() {
         if (_dumbbells != null) {
             return _dumbbells!!
         }
-        _dumbbells = Builder(name = "Dumbbells", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _dumbbells = Builder(
+            name = "Dumbbells", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.9407f, 10.5127f)
                 lineTo(12.5574f, 11.1516f)
                 lineTo(12.9407f, 10.5127f)
@@ -317,9 +318,11 @@ public val SportsGroup.Dumbbells: ImageVector
                 lineTo(12.5009f, 7.2772f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.3307f, 21.0114f)
                 lineTo(11.7874f, 21.5942f)
                 lineTo(11.7874f, 21.5942f)
@@ -610,7 +613,7 @@ public val SportsGroup.Dumbbells: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _dumbbells!!
     }
 

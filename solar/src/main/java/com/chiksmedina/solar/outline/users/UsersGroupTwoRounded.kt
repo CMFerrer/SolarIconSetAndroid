@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.users
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.UsersGroup
 
-public val UsersGroup.UsersGroupTwoRounded: ImageVector
+val UsersGroup.UsersGroupTwoRounded: ImageVector
     get() {
         if (_usersGroupTwoRounded != null) {
             return _usersGroupTwoRounded!!
         }
-        _usersGroupTwoRounded = Builder(name = "UsersGroupTwoRounded", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _usersGroupTwoRounded = Builder(
+            name = "UsersGroupTwoRounded", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 1.25f)
                 curveTo(9.3766f, 1.25f, 7.25f, 3.3767f, 7.25f, 6.0f)
                 curveTo(7.25f, 8.6234f, 9.3766f, 10.75f, 12.0f, 10.75f)
@@ -38,9 +39,11 @@ public val UsersGroup.UsersGroupTwoRounded: ImageVector
                 curveTo(10.2051f, 9.25f, 8.75f, 7.7949f, 8.75f, 6.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.0f, 3.25f)
                 curveTo(17.5858f, 3.25f, 17.25f, 3.5858f, 17.25f, 4.0f)
                 curveTo(17.25f, 4.4142f, 17.5858f, 4.75f, 18.0f, 4.75f)
@@ -52,9 +55,11 @@ public val UsersGroup.UsersGroupTwoRounded: ImageVector
                 curveTo(21.75f, 4.5828f, 19.9372f, 3.25f, 18.0f, 3.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.75f, 4.0f)
                 curveTo(6.75f, 3.5858f, 6.4142f, 3.25f, 6.0f, 3.25f)
                 curveTo(4.0628f, 3.25f, 2.25f, 4.5828f, 2.25f, 6.5f)
@@ -66,9 +71,11 @@ public val UsersGroup.UsersGroupTwoRounded: ImageVector
                 curveTo(6.4142f, 4.75f, 6.75f, 4.4142f, 6.75f, 4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 12.25f)
                 curveTo(10.2157f, 12.25f, 8.5665f, 12.7308f, 7.3413f, 13.5475f)
                 curveTo(6.1215f, 14.3608f, 5.25f, 15.5666f, 5.25f, 17.0f)
@@ -90,9 +97,11 @@ public val UsersGroup.UsersGroupTwoRounded: ImageVector
                 curveTo(7.2217f, 18.5699f, 6.75f, 17.7758f, 6.75f, 17.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.2674f, 13.8393f)
                 curveTo(19.3561f, 13.4347f, 19.7561f, 13.1787f, 20.1607f, 13.2674f)
                 curveTo(21.1225f, 13.4783f, 21.9893f, 13.8593f, 22.6328f, 14.3859f)
@@ -108,9 +117,11 @@ public val UsersGroup.UsersGroupTwoRounded: ImageVector
                 curveTo(19.4347f, 14.6439f, 19.1787f, 14.2439f, 19.2674f, 13.8393f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.8393f, 13.2674f)
                 curveTo(4.2439f, 13.1787f, 4.6439f, 13.4347f, 4.7326f, 13.8393f)
                 curveTo(4.8213f, 14.2439f, 4.5652f, 14.6439f, 4.1606f, 14.7326f)
@@ -127,7 +138,7 @@ public val UsersGroup.UsersGroupTwoRounded: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _usersGroupTwoRounded!!
     }
 

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MessagesConversationGroup
 
-public val MessagesConversationGroup.Dialog2: ImageVector
+val MessagesConversationGroup.Dialog2: ImageVector
     get() {
         if (_dialog2 != null) {
             return _dialog2!!
         }
-        _dialog2 = Builder(name = "Dialog2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _dialog2 = Builder(
+            name = "Dialog2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.4036f, 22.4807f)
                 lineTo(10.6787f, 22.016f)
                 curveTo(11.1195f, 21.2712f, 11.3399f, 20.8988f, 11.691f, 20.6911f)
@@ -67,9 +69,11 @@ public val MessagesConversationGroup.Dialog2: ImageVector
                 curveTo(4.7108f, 14.0434f, 5.1855f, 14.5181f, 5.7711f, 14.5181f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.486f, 1.0f)
                 curveTo(16.7529f, 1.0f, 17.7603f, 1.0f, 18.5683f, 1.0768f)
                 curveTo(19.3967f, 1.1556f, 20.0972f, 1.3207f, 20.7212f, 1.7031f)
@@ -100,7 +104,7 @@ public val MessagesConversationGroup.Dialog2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _dialog2!!
     }
 

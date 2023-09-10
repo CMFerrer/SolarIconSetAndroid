@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.AstronomyGroup
 
-public val AstronomyGroup.Women: ImageVector
+val AstronomyGroup.Women: ImageVector
     get() {
         if (_women != null) {
             return _women!!
         }
-        _women = Builder(name = "Women", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _women = Builder(
+            name = "Women", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.7497f, 15.9603f)
                 curveTo(16.2632f, 15.5862f, 19.0f, 12.6127f, 19.0f, 9.0f)
                 curveTo(19.0f, 5.134f, 15.866f, 2.0f, 12.0f, 2.0f)
@@ -43,7 +47,7 @@ public val AstronomyGroup.Women: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _women!!
     }
 

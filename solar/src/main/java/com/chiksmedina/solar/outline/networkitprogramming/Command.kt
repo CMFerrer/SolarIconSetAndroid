@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.Command: ImageVector
+val NetworkItProgrammingGroup.Command: ImageVector
     get() {
         if (_command != null) {
             return _command!!
         }
-        _command = Builder(name = "Command", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _command = Builder(
+            name = "Command", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.2505f, 4.9999f)
                 curveTo(15.2508f, 2.9288f, 16.93f, 1.2502f, 19.0011f, 1.2505f)
                 curveTo(21.0721f, 1.2508f, 22.7508f, 2.93f, 22.7505f, 5.0011f)
@@ -83,7 +87,7 @@ public val NetworkItProgrammingGroup.Command: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _command!!
     }
 

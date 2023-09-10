@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MessagesConversationGroup
 
-public val MessagesConversationGroup.SquareShareLine: ImageVector
+val MessagesConversationGroup.SquareShareLine: ImageVector
     get() {
         if (_squareShareLine != null) {
             return _squareShareLine!!
         }
-        _squareShareLine = Builder(name = "SquareShareLine", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _squareShareLine = Builder(
+            name = "SquareShareLine", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.7521f, 1.9936f)
                 curveTo(10.7556f, 2.4078f, 10.4226f, 2.7465f, 10.0084f, 2.75f)
                 curveTo(8.2988f, 2.7645f, 7.0389f, 2.8201f, 6.0628f, 3.0113f)
@@ -81,7 +85,7 @@ public val MessagesConversationGroup.SquareShareLine: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _squareShareLine!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.FoodKitchenGroup
 
-public val FoodKitchenGroup.WineglassTriangle: ImageVector
+val FoodKitchenGroup.WineglassTriangle: ImageVector
     get() {
         if (_wineglassTriangle != null) {
             return _wineglassTriangle!!
         }
-        _wineglassTriangle = Builder(name = "WineglassTriangle", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _wineglassTriangle = Builder(
+            name = "WineglassTriangle", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 14.5714f)
                 lineTo(20.5162f, 5.8638f)
                 curveTo(21.5624f, 4.7941f, 20.7999f, 3.0f, 19.2991f, 3.0f)
@@ -39,7 +43,7 @@ public val FoodKitchenGroup.WineglassTriangle: ImageVector
                 horizontalLineTo(16.5268f)
             }
         }
-        .build()
+            .build()
         return _wineglassTriangle!!
     }
 

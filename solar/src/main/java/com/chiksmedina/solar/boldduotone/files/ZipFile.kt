@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.files
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.FilesGroup
 
-public val FilesGroup.ZipFile: ImageVector
+val FilesGroup.ZipFile: ImageVector
     get() {
         if (_zipFile != null) {
             return _zipFile!!
         }
-        _zipFile = Builder(name = "ZipFile", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _zipFile = Builder(
+            name = "ZipFile", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.1716f, 3.1716f)
                 curveTo(3.0f, 4.3432f, 3.0f, 6.2288f, 3.0f, 10.0f)
                 verticalLineTo(14.0f)
@@ -40,9 +41,11 @@ public val FilesGroup.ZipFile: ImageVector
                 curveTo(6.7061f, 2.0238f, 5.1763f, 2.1669f, 4.1716f, 3.1716f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.5f, 8.0f)
                 horizontalLineTo(12.0f)
                 verticalLineTo(9.0f)
@@ -55,9 +58,11 @@ public val FilesGroup.ZipFile: ImageVector
                 curveTo(14.2071f, 8.0f, 13.9714f, 8.0f, 13.5f, 8.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.6465f, 6.1465f)
                 curveTo(9.5f, 6.2929f, 9.5f, 6.5286f, 9.5f, 7.0f)
                 curveTo(9.5f, 7.4714f, 9.5f, 7.7071f, 9.6465f, 7.8535f)
@@ -68,9 +73,11 @@ public val FilesGroup.ZipFile: ImageVector
                 curveTo(10.0286f, 6.0f, 9.7929f, 6.0f, 9.6465f, 6.1465f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.5f, 4.0f)
                 horizontalLineTo(12.0f)
                 verticalLineTo(6.0f)
@@ -81,9 +88,11 @@ public val FilesGroup.ZipFile: ImageVector
                 curveTo(14.2071f, 4.0f, 13.9714f, 4.0f, 13.5f, 4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 4.0f)
                 verticalLineTo(3.0f)
                 verticalLineTo(2.0f)
@@ -94,9 +103,11 @@ public val FilesGroup.ZipFile: ImageVector
                 horizontalLineTo(12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.5f, 13.0f)
                 verticalLineTo(12.875f)
                 curveTo(9.5f, 12.3918f, 9.8918f, 12.0f, 10.375f, 12.0f)
@@ -108,7 +119,7 @@ public val FilesGroup.ZipFile: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _zipFile!!
     }
 

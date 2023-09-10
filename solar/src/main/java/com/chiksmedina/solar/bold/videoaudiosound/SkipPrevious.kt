@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.SkipPrevious: ImageVector
+val VideoAudioSoundGroup.SkipPrevious: ImageVector
     get() {
         if (_skipPrevious != null) {
             return _skipPrevious!!
         }
-        _skipPrevious = Builder(name = "SkipPrevious", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _skipPrevious = Builder(
+            name = "SkipPrevious", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.0901f, 14.6474f)
                 curveTo(6.3033f, 13.4935f, 6.3033f, 10.5065f, 8.0901f, 9.3526f)
                 lineTo(18.8792f, 2.3855f)
@@ -33,9 +34,11 @@ public val VideoAudioSoundGroup.SkipPrevious: ImageVector
                 lineTo(8.0901f, 14.6474f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 5.0f)
                 curveTo(2.0f, 4.5858f, 2.3358f, 4.25f, 2.75f, 4.25f)
                 curveTo(3.1642f, 4.25f, 3.5f, 4.5858f, 3.5f, 5.0f)
@@ -46,7 +49,7 @@ public val VideoAudioSoundGroup.SkipPrevious: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _skipPrevious!!
     }
 

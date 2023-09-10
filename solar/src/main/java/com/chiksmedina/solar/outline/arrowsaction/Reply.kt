@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsActionGroup
 
-public val ArrowsActionGroup.Reply: ImageVector
+val ArrowsActionGroup.Reply: ImageVector
     get() {
         if (_reply != null) {
             return _reply!!
         }
-        _reply = Builder(name = "Reply", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _reply = Builder(
+            name = "Reply", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.0303f, 6.4697f)
                 curveTo(10.3232f, 6.7626f, 10.3232f, 7.2374f, 10.0303f, 7.5303f)
                 lineTo(6.3107f, 11.25f)
@@ -42,7 +46,7 @@ public val ArrowsActionGroup.Reply: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _reply!!
     }
 

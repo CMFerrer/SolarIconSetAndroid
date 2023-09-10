@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.AstronomyGroup
 
-public val AstronomyGroup.Satellite: ImageVector
+val AstronomyGroup.Satellite: ImageVector
     get() {
         if (_satellite != null) {
             return _satellite!!
         }
-        _satellite = Builder(name = "Satellite", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _satellite = Builder(
+            name = "Satellite", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.4699f, 10.918f)
                 curveTo(18.4298f, 12.9581f, 15.1221f, 12.9581f, 13.082f, 10.918f)
                 curveTo(11.0418f, 8.8778f, 11.0418f, 5.5702f, 13.082f, 3.5301f)
@@ -39,7 +43,7 @@ public val AstronomyGroup.Satellite: ImageVector
                 lineTo(5.0f, 19.0f)
             }
         }
-        .build()
+            .build()
         return _satellite!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.WeatherGroup
 
-public val WeatherGroup.CloudyMoon: ImageVector
+val WeatherGroup.CloudyMoon: ImageVector
     get() {
         if (_cloudyMoon != null) {
             return _cloudyMoon!!
         }
-        _cloudyMoon = Builder(name = "CloudyMoon", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cloudyMoon = Builder(
+            name = "CloudyMoon", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.0174f, 2.8016f)
                 curveTo(6.3707f, 3.2922f, 2.75f, 7.2233f, 2.75f, 12.0f)
                 curveTo(2.75f, 12.9681f, 2.8985f, 13.9001f, 3.1733f, 14.7753f)
@@ -80,7 +84,7 @@ public val WeatherGroup.CloudyMoon: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cloudyMoon!!
     }
 

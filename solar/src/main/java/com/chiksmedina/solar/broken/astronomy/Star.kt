@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.AstronomyGroup
 
-public val AstronomyGroup.Star: ImageVector
+val AstronomyGroup.Star: ImageVector
     get() {
         if (_star != null) {
             return _star!!
         }
-        _star = Builder(name = "Star", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _star = Builder(
+            name = "Star", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 20.0f)
                 verticalLineTo(17.6f)
                 moveTo(12.0f, 6.4f)
@@ -39,7 +43,7 @@ public val AstronomyGroup.Star: ImageVector
                 lineTo(17.6566f, 17.657f)
             }
         }
-        .build()
+            .build()
         return _star!!
     }
 

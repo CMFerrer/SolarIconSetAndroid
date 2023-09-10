@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.medicine
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MedicineGroup
 
-public val MedicineGroup.Syringe: ImageVector
+val MedicineGroup.Syringe: ImageVector
     get() {
         if (_syringe != null) {
             return _syringe!!
         }
-        _syringe = Builder(name = "Syringe", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _syringe = Builder(
+            name = "Syringe", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.8044f, 9.11f)
                 lineTo(14.8901f, 6.1956f)
                 curveTo(14.0906f, 5.3961f, 13.6908f, 4.9964f, 13.2363f, 4.831f)
@@ -39,9 +40,11 @@ public val MedicineGroup.Syringe: ImageVector
                 curveTo(19.0036f, 10.3092f, 18.6039f, 9.9095f, 17.8044f, 9.11f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(16.5561f, 3.233f)
                 curveTo(16.8667f, 2.9223f, 17.3705f, 2.9223f, 17.6811f, 3.233f)
                 lineTo(20.7669f, 6.3188f)
@@ -51,9 +54,11 @@ public val MedicineGroup.Syringe: ImageVector
                 curveTo(16.2454f, 4.0474f, 16.2454f, 3.5437f, 16.5561f, 3.233f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.7292f, 13.9852f)
                 lineTo(10.0147f, 6.2708f)
                 lineTo(8.8897f, 7.3958f)
@@ -61,9 +66,11 @@ public val MedicineGroup.Syringe: ImageVector
                 lineTo(17.7292f, 13.9852f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.0257f, 17.8496f)
                 curveTo(5.1825f, 18.0601f, 5.3565f, 18.2619f, 5.5476f, 18.453f)
                 curveTo(5.7387f, 18.644f, 5.9404f, 18.8179f, 6.1508f, 18.9747f)
@@ -73,9 +80,11 @@ public val MedicineGroup.Syringe: ImageVector
                 lineTo(5.0257f, 17.8496f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.9093f, 8.2149f)
                 lineTo(15.7842f, 7.0898f)
                 lineTo(17.5359f, 5.3381f)
@@ -83,9 +92,11 @@ public val MedicineGroup.Syringe: ImageVector
                 lineTo(16.9093f, 8.2149f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.3671f, 16.3478f)
                 curveTo(15.3671f, 16.3478f, 15.3671f, 16.3479f, 15.3671f, 16.3478f)
                 lineTo(12.3065f, 13.2872f)
@@ -96,9 +107,11 @@ public val MedicineGroup.Syringe: ImageVector
                 lineTo(15.3671f, 16.3478f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.6314f, 18.0836f)
                 curveTo(13.6314f, 18.0836f, 13.6314f, 18.0836f, 13.6314f, 18.0836f)
                 lineTo(11.8854f, 16.3377f)
@@ -110,7 +123,7 @@ public val MedicineGroup.Syringe: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _syringe!!
     }
 

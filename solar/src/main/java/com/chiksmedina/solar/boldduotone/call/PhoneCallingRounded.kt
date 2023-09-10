@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.call
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.CallGroup
 
-public val CallGroup.PhoneCallingRounded: ImageVector
+val CallGroup.PhoneCallingRounded: ImageVector
     get() {
         if (_phoneCallingRounded != null) {
             return _phoneCallingRounded!!
         }
-        _phoneCallingRounded = Builder(name = "PhoneCallingRounded", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _phoneCallingRounded = Builder(
+            name = "PhoneCallingRounded", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.0376f, 5.3162f)
                 lineTo(10.6866f, 6.4791f)
                 curveTo(11.2723f, 7.5286f, 11.0372f, 8.9053f, 10.1147f, 9.8278f)
@@ -42,9 +43,11 @@ public val CallGroup.PhoneCallingRounded: ImageVector
                 curveTo(6.9308f, 3.5443f, 9.1532f, 3.7314f, 10.0376f, 5.3162f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.2595f, 1.8801f)
                 curveTo(13.3257f, 1.4712f, 13.7122f, 1.1938f, 14.1211f, 1.26f)
                 curveTo(14.1464f, 1.2649f, 14.2279f, 1.2801f, 14.2705f, 1.2896f)
@@ -68,9 +71,11 @@ public val CallGroup.PhoneCallingRounded: ImageVector
                 curveTo(13.4793f, 2.6737f, 13.1935f, 2.2878f, 13.2595f, 1.8801f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.4857f, 5.3295f)
                 curveTo(13.5995f, 4.9313f, 14.0146f, 4.7007f, 14.4129f, 4.8144f)
                 lineTo(14.2069f, 5.5356f)
@@ -108,7 +113,7 @@ public val CallGroup.PhoneCallingRounded: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _phoneCallingRounded!!
     }
 

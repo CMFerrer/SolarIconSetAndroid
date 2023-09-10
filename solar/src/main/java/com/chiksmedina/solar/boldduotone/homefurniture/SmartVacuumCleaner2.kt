@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.homefurniture
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.SmartVacuumCleaner2: ImageVector
+val HomeFurnitureGroup.SmartVacuumCleaner2: ImageVector
     get() {
         if (_smartVacuumCleaner2 != null) {
             return _smartVacuumCleaner2!!
         }
-        _smartVacuumCleaner2 = Builder(name = "SmartVacuumCleaner2", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _smartVacuumCleaner2 = Builder(
+            name = "SmartVacuumCleaner2", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(6.0607f, 19.0f)
                 lineTo(2.5303f, 22.5303f)
                 curveTo(2.2374f, 22.8232f, 1.7626f, 22.8232f, 1.4697f, 22.5303f)
@@ -33,9 +34,11 @@ public val HomeFurnitureGroup.SmartVacuumCleaner2: ImageVector
                 lineTo(6.0607f, 19.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(17.9393f, 19.0f)
                 lineTo(21.4697f, 22.5303f)
                 curveTo(21.7626f, 22.8232f, 22.2374f, 22.8232f, 22.5303f, 22.5303f)
@@ -44,9 +47,11 @@ public val HomeFurnitureGroup.SmartVacuumCleaner2: ImageVector
                 lineTo(17.9393f, 19.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.75f, 8.75f)
                 curveTo(9.75f, 7.5074f, 10.7574f, 6.5f, 12.0f, 6.5f)
                 curveTo(13.2426f, 6.5f, 14.25f, 7.5074f, 14.25f, 8.75f)
@@ -54,9 +59,11 @@ public val HomeFurnitureGroup.SmartVacuumCleaner2: ImageVector
                 curveTo(10.7574f, 11.0f, 9.75f, 9.9926f, 9.75f, 8.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 21.5f)
                 curveTo(17.5228f, 21.5f, 22.0f, 17.0228f, 22.0f, 11.5f)
                 curveTo(22.0f, 5.9771f, 17.5228f, 1.5f, 12.0f, 1.5f)
@@ -79,7 +86,7 @@ public val HomeFurnitureGroup.SmartVacuumCleaner2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _smartVacuumCleaner2!!
     }
 

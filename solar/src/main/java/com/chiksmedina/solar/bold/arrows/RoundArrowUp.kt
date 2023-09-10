@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsGroup
 
-public val ArrowsGroup.RoundArrowUp: ImageVector
+val ArrowsGroup.RoundArrowUp: ImageVector
     get() {
         if (_roundArrowUp != null) {
             return _roundArrowUp!!
         }
-        _roundArrowUp = Builder(name = "RoundArrowUp", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _roundArrowUp = Builder(
+            name = "RoundArrowUp", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.9999f, 12.0f)
                 curveTo(21.9999f, 6.4771f, 17.5227f, 2.0f, 11.9999f, 2.0f)
                 curveTo(6.477f, 2.0f, 1.9999f, 6.4771f, 1.9999f, 12.0f)
@@ -44,7 +48,7 @@ public val ArrowsGroup.RoundArrowUp: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _roundArrowUp!!
     }
 

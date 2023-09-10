@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.EssentionalUiGroup
 
-public val EssentionalUiGroup.Perfume: ImageVector
+val EssentionalUiGroup.Perfume: ImageVector
     get() {
         if (_perfume != null) {
             return _perfume!!
         }
-        _perfume = Builder(name = "Perfume", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
-                    = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _perfume = Builder(
+            name = "Perfume", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
+                = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(7.0f, 5.7502f)
                 curveTo(7.0317f, 5.7502f, 7.068f, 5.7505f, 7.1068f, 5.7508f)
                 curveTo(7.2039f, 5.7515f, 7.3167f, 5.7523f, 7.4127f, 5.7493f)
@@ -39,9 +40,11 @@ public val EssentionalUiGroup.Perfume: ImageVector
                 verticalLineTo(5.7502f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.1468f, 13.0586f)
                 curveTo(2.0505f, 13.5235f, 2.0f, 14.0037f, 2.0f, 14.495f)
                 curveTo(2.0f, 16.4098f, 2.7664f, 18.1569f, 4.0275f, 19.4817f)
@@ -57,9 +60,11 @@ public val EssentionalUiGroup.Perfume: ImageVector
                 curveTo(5.3194f, 14.7286f, 3.5976f, 13.6511f, 2.1468f, 13.0586f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.5336f, 14.9687f)
                 curveTo(10.6256f, 15.304f, 12.2445f, 12.8247f, 15.314f, 13.3157f)
                 curveTo(16.3893f, 13.4877f, 17.3923f, 13.7837f, 17.9891f, 14.0995f)
@@ -68,9 +73,11 @@ public val EssentionalUiGroup.Perfume: ImageVector
                 curveTo(3.5976f, 13.6511f, 5.3194f, 14.7286f, 7.5336f, 14.9687f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.0f, 7.5448f)
                 verticalLineTo(5.0f)
                 curveTo(13.0f, 3.5858f, 13.0f, 2.8787f, 12.5607f, 2.4393f)
@@ -92,9 +99,11 @@ public val EssentionalUiGroup.Perfume: ImageVector
                 curveTo(11.0609f, 7.0f, 12.0736f, 7.1935f, 13.0f, 7.5448f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.1468f, 13.0586f)
                 curveTo(2.0505f, 13.5235f, 2.0f, 14.0037f, 2.0f, 14.495f)
                 curveTo(2.0f, 16.4098f, 2.7664f, 18.1569f, 4.0275f, 19.4817f)
@@ -110,9 +119,11 @@ public val EssentionalUiGroup.Perfume: ImageVector
                 curveTo(5.3194f, 14.7286f, 3.5976f, 13.6511f, 2.1468f, 13.0586f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.548f, 5.3783f)
                 curveTo(21.8012f, 6.0247f, 22.3479f, 7.2747f, 21.7691f, 8.1703f)
                 curveTo(21.1902f, 9.0659f, 19.7051f, 9.268f, 18.452f, 8.6216f)
@@ -120,9 +131,11 @@ public val EssentionalUiGroup.Perfume: ImageVector
                 curveTo(17.8098f, 4.9341f, 19.2949f, 4.732f, 20.548f, 5.3783f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.0f, 5.75f)
                 horizontalLineTo(14.3197f)
                 curveTo(14.9795f, 5.75f, 15.6302f, 5.9036f, 16.2203f, 6.1987f)
@@ -136,7 +149,7 @@ public val EssentionalUiGroup.Perfume: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _perfume!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.DesignToolsGroup
 
-public val DesignToolsGroup.AlignLeft: ImageVector
+val DesignToolsGroup.AlignLeft: ImageVector
     get() {
         if (_alignLeft != null) {
             return _alignLeft!!
         }
-        _alignLeft = Builder(name = "AlignLeft", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _alignLeft = Builder(
+            name = "AlignLeft", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.375f, 7.875f)
                 curveTo(7.375f, 6.9404f, 7.375f, 6.4731f, 7.576f, 6.125f)
                 curveTo(7.7076f, 5.897f, 7.897f, 5.7076f, 8.125f, 5.576f)
@@ -42,9 +43,11 @@ public val DesignToolsGroup.AlignLeft: ImageVector
                 curveTo(7.375f, 9.2769f, 7.375f, 8.8096f, 7.375f, 7.875f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.375f, 16.875f)
                 curveTo(7.375f, 15.9404f, 7.375f, 15.4731f, 7.576f, 15.125f)
                 curveTo(7.7076f, 14.897f, 7.897f, 14.7076f, 8.125f, 14.576f)
@@ -62,9 +65,11 @@ public val DesignToolsGroup.AlignLeft: ImageVector
                 curveTo(7.375f, 18.2769f, 7.375f, 17.8096f, 7.375f, 16.875f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(3.375f, 23.125f)
                 curveTo(3.7892f, 23.125f, 4.125f, 22.7892f, 4.125f, 22.375f)
                 lineTo(4.125f, 2.375f)
@@ -75,7 +80,7 @@ public val DesignToolsGroup.AlignLeft: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _alignLeft!!
     }
 

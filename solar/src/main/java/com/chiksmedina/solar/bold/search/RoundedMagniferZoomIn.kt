@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.search
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SearchGroup
 
-public val SearchGroup.RoundedMagniferZoomIn: ImageVector
+val SearchGroup.RoundedMagniferZoomIn: ImageVector
     get() {
         if (_roundedMagniferZoomIn != null) {
             return _roundedMagniferZoomIn!!
         }
-        _roundedMagniferZoomIn = Builder(name = "RoundedMagniferZoomIn", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _roundedMagniferZoomIn = Builder(
+            name = "RoundedMagniferZoomIn", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.1278f, 11.1429f)
                 curveTo(20.1278f, 16.1924f, 16.0697f, 20.2858f, 11.0639f, 20.2858f)
                 curveTo(6.058f, 20.2858f, 2.0f, 16.1924f, 2.0f, 11.1429f)
@@ -32,9 +33,11 @@ public val SearchGroup.RoundedMagniferZoomIn: ImageVector
                 curveTo(16.0697f, 2.0f, 20.1278f, 6.0934f, 20.1278f, 11.1429f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFFffffff)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFFffffff)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.0639f, 8.3492f)
                 curveTo(11.481f, 8.3492f, 11.8192f, 8.6904f, 11.8192f, 9.1111f)
                 verticalLineTo(10.381f)
@@ -54,9 +57,11 @@ public val SearchGroup.RoundedMagniferZoomIn: ImageVector
                 curveTo(10.3086f, 8.6904f, 10.6467f, 8.3492f, 11.0639f, 8.3492f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.8194f, 19.7006f)
                 curveTo(17.7302f, 18.6064f, 18.6357f, 17.6929f, 19.7205f, 17.783f)
                 curveTo(19.9086f, 17.7986f, 20.1337f, 17.8671f, 20.363f, 17.9368f)
@@ -76,7 +81,7 @@ public val SearchGroup.RoundedMagniferZoomIn: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _roundedMagniferZoomIn!!
     }
 

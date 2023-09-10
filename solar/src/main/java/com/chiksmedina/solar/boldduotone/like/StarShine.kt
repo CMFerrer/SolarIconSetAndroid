@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.like
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.LikeGroup
 
-public val LikeGroup.StarShine: ImageVector
+val LikeGroup.StarShine: ImageVector
     get() {
         if (_starShine != null) {
             return _starShine!!
         }
-        _starShine = Builder(name = "StarShine", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _starShine = Builder(
+            name = "StarShine", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.5766f, 8.7042f)
                 curveTo(11.2099f, 7.5681f, 11.5266f, 7.0f, 12.0f, 7.0f)
                 curveTo(12.4734f, 7.0f, 12.7901f, 7.5681f, 13.4234f, 8.7042f)
@@ -58,9 +59,11 @@ public val LikeGroup.StarShine: ImageVector
                 lineTo(10.5766f, 8.7042f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.8f, strokeAlpha
-                    = 0.8f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.8f, strokeAlpha
+                = 0.8f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 1.25f)
                 curveTo(12.4142f, 1.25f, 12.75f, 1.5858f, 12.75f, 2.0f)
                 verticalLineTo(4.0f)
@@ -94,9 +97,11 @@ public val LikeGroup.StarShine: ImageVector
                 curveTo(11.25f, 19.5858f, 11.5858f, 19.25f, 12.0f, 19.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.5304f, 5.4697f)
                 curveTo(18.8233f, 5.7626f, 18.8233f, 6.2374f, 18.5304f, 6.5303f)
                 lineTo(18.1872f, 6.8736f)
@@ -106,9 +111,11 @@ public val LikeGroup.StarShine: ImageVector
                 curveTo(17.7627f, 5.1768f, 18.2376f, 5.1768f, 18.5304f, 5.4697f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.4697f, 5.4698f)
                 curveTo(5.7626f, 5.1769f, 6.2374f, 5.1769f, 6.5303f, 5.4698f)
                 lineTo(6.8736f, 5.813f)
@@ -118,9 +125,11 @@ public val LikeGroup.StarShine: ImageVector
                 curveTo(5.1768f, 6.2375f, 5.1768f, 5.7627f, 5.4697f, 5.4698f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.8735f, 17.1266f)
                 curveTo(7.1664f, 17.4195f, 7.1664f, 17.8944f, 6.8735f, 18.1873f)
                 lineTo(6.5304f, 18.5303f)
@@ -130,9 +139,11 @@ public val LikeGroup.StarShine: ImageVector
                 curveTo(6.1057f, 16.8337f, 6.5806f, 16.8337f, 6.8735f, 17.1266f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.1265f, 17.1269f)
                 curveTo(17.4194f, 16.834f, 17.8943f, 16.834f, 18.1872f, 17.1269f)
                 lineTo(18.5302f, 17.4699f)
@@ -143,7 +154,7 @@ public val LikeGroup.StarShine: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _starShine!!
     }
 

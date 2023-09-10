@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SportsGroup
 
-public val SportsGroup.HikingMinimalistic: ImageVector
+val SportsGroup.HikingMinimalistic: ImageVector
     get() {
         if (_hikingMinimalistic != null) {
             return _hikingMinimalistic!!
         }
-        _hikingMinimalistic = Builder(name = "HikingMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _hikingMinimalistic = Builder(
+            name = "HikingMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.5f, 3.75f)
                 curveTo(10.5335f, 3.75f, 9.75f, 4.5335f, 9.75f, 5.5f)
                 curveTo(9.75f, 6.4665f, 10.5335f, 7.25f, 11.5f, 7.25f)
@@ -100,7 +104,7 @@ public val SportsGroup.HikingMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hikingMinimalistic!!
     }
 

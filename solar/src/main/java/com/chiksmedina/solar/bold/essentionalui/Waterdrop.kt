@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.Waterdrop: ImageVector
+val EssentionalUiGroup.Waterdrop: ImageVector
     get() {
         if (_waterdrop != null) {
             return _waterdrop!!
         }
-        _waterdrop = Builder(name = "Waterdrop", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _waterdrop = Builder(
+            name = "Waterdrop", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.6115f, 22.0f)
                 curveTo(6.8555f, 22.0f, 3.0f, 18.0569f, 3.0f, 13.1928f)
                 verticalLineTo(12.9281f)
@@ -41,7 +45,7 @@ public val EssentionalUiGroup.Waterdrop: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _waterdrop!!
     }
 

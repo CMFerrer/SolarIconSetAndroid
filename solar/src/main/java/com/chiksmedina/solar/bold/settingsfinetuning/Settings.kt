@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SettingsFineTuningGroup
 
-public val SettingsFineTuningGroup.Settings: ImageVector
+val SettingsFineTuningGroup.Settings: ImageVector
     get() {
         if (_settings != null) {
             return _settings!!
         }
-        _settings = Builder(name = "Settings", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _settings = Builder(
+            name = "Settings", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.2788f, 2.1522f)
                 curveTo(13.9085f, 2.0f, 13.439f, 2.0f, 12.5f, 2.0f)
                 curveTo(11.561f, 2.0f, 11.0915f, 2.0f, 10.7212f, 2.1522f)
@@ -79,7 +83,7 @@ public val SettingsFineTuningGroup.Settings: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _settings!!
     }
 

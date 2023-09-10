@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,17 +12,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SportsGroup
 
-public val SportsGroup.DumbbellLargeMinimalistic: ImageVector
+val SportsGroup.DumbbellLargeMinimalistic: ImageVector
     get() {
         if (_dumbbellLargeMinimalistic != null) {
             return _dumbbellLargeMinimalistic!!
         }
-        _dumbbellLargeMinimalistic = Builder(name = "DumbbellLargeMinimalistic", defaultWidth =
-                24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _dumbbellLargeMinimalistic = Builder(
+            name = "DumbbellLargeMinimalistic", defaultWidth =
+            24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.4316f, 15.6193f)
                 lineTo(8.3807f, 20.5684f)
                 curveTo(9.2849f, 21.4726f, 9.737f, 21.9247f, 10.2891f, 21.9892f)
@@ -63,9 +64,11 @@ public val SportsGroup.DumbbellLargeMinimalistic: ImageVector
                 lineTo(12.1648f, 8.3525f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.4566f, 15.2688f)
                 lineTo(15.2688f, 11.4565f)
                 lineTo(12.1648f, 8.3525f)
@@ -73,9 +76,11 @@ public val SportsGroup.DumbbellLargeMinimalistic: ImageVector
                 lineTo(11.4566f, 15.2688f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(17.4885f, 1.9677f)
                 curveTo(17.7814f, 1.6748f, 18.2562f, 1.6748f, 18.5491f, 1.9677f)
                 lineTo(21.6531f, 5.0717f)
@@ -94,7 +99,7 @@ public val SportsGroup.DumbbellLargeMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _dumbbellLargeMinimalistic!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.time
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.TimeGroup
 
-public val TimeGroup.CalendarMinimalistic: ImageVector
+val TimeGroup.CalendarMinimalistic: ImageVector
     get() {
         if (_calendarMinimalistic != null) {
             return _calendarMinimalistic!!
         }
-        _calendarMinimalistic = Builder(name = "CalendarMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _calendarMinimalistic = Builder(
+            name = "CalendarMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.9403f, 2.0f)
                 curveTo(7.3561f, 2.0f, 7.6933f, 2.3242f, 7.6933f, 2.7241f)
                 verticalLineTo(4.1849f)
@@ -46,9 +47,11 @@ public val TimeGroup.CalendarMinimalistic: ImageVector
                 curveTo(6.1873f, 2.3242f, 6.5244f, 2.0f, 6.9403f, 2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 14.0001f)
                 verticalLineTo(12.0001f)
                 curveTo(22.0f, 11.161f, 21.9968f, 9.6653f, 21.9839f, 9.0f)
@@ -63,7 +66,7 @@ public val TimeGroup.CalendarMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _calendarMinimalistic!!
     }
 

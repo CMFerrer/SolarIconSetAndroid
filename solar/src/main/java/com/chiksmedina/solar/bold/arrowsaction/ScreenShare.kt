@@ -12,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsActionGroup
 
-public val ArrowsActionGroup.ScreenShare: ImageVector
+val ArrowsActionGroup.ScreenShare: ImageVector
     get() {
         if (_screenShare != null) {
             return _screenShare!!
         }
-        _screenShare = Builder(name = "ScreenShare", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _screenShare = Builder(
+            name = "ScreenShare", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.6233f, 4.5079f)
                 curveTo(5.152f, 4.5349f, 4.3054f, 4.6594f, 3.7322f, 5.2326f)
                 curveTo(3.0f, 5.9648f, 3.0f, 7.1434f, 3.0f, 9.5004f)
@@ -35,9 +39,11 @@ public val ArrowsActionGroup.ScreenShare: ImageVector
                 curveTo(6.6233f, 4.5082f, 6.6234f, 4.5076f, 6.6233f, 4.5079f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.8787f, 2.8787f)
                 curveTo(8.0f, 3.7574f, 8.0f, 5.1716f, 8.0f, 8.0f)
                 verticalLineTo(16.0f)
@@ -69,7 +75,7 @@ public val ArrowsActionGroup.ScreenShare: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _screenShare!!
     }
 

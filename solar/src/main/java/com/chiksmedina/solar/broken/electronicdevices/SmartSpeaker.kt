@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,40 +12,50 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartSpeaker: ImageVector
+val ElectronicDevicesGroup.SmartSpeaker: ImageVector
     get() {
         if (_smartSpeaker != null) {
             return _smartSpeaker!!
         }
-        _smartSpeaker = Builder(name = "SmartSpeaker", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _smartSpeaker = Builder(
+            name = "SmartSpeaker", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.0f, 14.0497f)
                 curveTo(3.6535f, 14.6194f, 5.487f, 16.0839f, 10.0f, 16.4272f)
                 moveTo(21.0f, 14.0f)
                 curveTo(20.3975f, 14.5537f, 18.6386f, 16.0763f, 14.0106f, 16.4272f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.5f, 16.0f)
                 curveTo(14.9178f, 14.2522f, 13.8467f, 13.5f, 12.0f, 13.5f)
                 curveTo(10.1533f, 13.5f, 9.0822f, 14.2522f, 8.5f, 16.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(8.0f, 4.4115f)
                 curveTo(7.6797f, 4.6869f, 7.5f, 5.0847f, 7.5f, 5.4115f)
                 curveTo(7.5f, 6.5649f, 9.2386f, 7.4115f, 12.0f, 7.4115f)
                 curveTo(14.7614f, 7.4115f, 16.5f, 6.5649f, 16.5f, 5.4115f)
                 curveTo(16.5f, 5.0847f, 16.3203f, 4.7754f, 16.0f, 4.5f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.0f, 12.0f)
                 curveTo(21.0013f, 13.7425f, 20.9053f, 15.4852f, 20.712f, 17.2199f)
                 lineTo(20.6948f, 17.3739f)
@@ -69,7 +76,7 @@ public val ElectronicDevicesGroup.SmartSpeaker: ImageVector
                 curveTo(20.7345f, 7.0314f, 20.7839f, 7.5155f, 20.8258f, 8.0f)
             }
         }
-        .build()
+            .build()
         return _smartSpeaker!!
     }
 

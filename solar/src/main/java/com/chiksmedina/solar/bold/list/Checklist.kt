@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ListGroup
 
-public val ListGroup.Checklist: ImageVector
+val ListGroup.Checklist: ImageVector
     get() {
         if (_checklist != null) {
             return _checklist!!
         }
-        _checklist = Builder(name = "Checklist", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _checklist = Builder(
+            name = "Checklist", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.0483f, 2.4883f)
                 curveTo(8.3309f, 2.7911f, 8.3146f, 3.2657f, 8.0118f, 3.5483f)
                 lineTo(3.726f, 7.5483f)
@@ -83,7 +87,7 @@ public val ListGroup.Checklist: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _checklist!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.VideoFrameReplace: ImageVector
+val VideoAudioSoundGroup.VideoFrameReplace: ImageVector
     get() {
         if (_videoFrameReplace != null) {
             return _videoFrameReplace!!
         }
-        _videoFrameReplace = Builder(name = "VideoFrameReplace", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _videoFrameReplace = Builder(
+            name = "VideoFrameReplace", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.25f, 2.0017f)
                 curveTo(3.8531f, 2.0119f, 3.0881f, 2.0834f, 2.5858f, 2.5858f)
                 curveTo(2.0834f, 3.0881f, 2.0119f, 3.8531f, 2.0017f, 5.25f)
@@ -32,9 +33,11 @@ public val VideoAudioSoundGroup.VideoFrameReplace: ImageVector
                 verticalLineTo(2.0017f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.0017f, 6.75f)
                 curveTo(2.0119f, 8.1469f, 2.0834f, 8.9119f, 2.5858f, 9.4142f)
                 curveTo(3.0881f, 9.9166f, 3.8531f, 9.9881f, 5.25f, 9.9983f)
@@ -42,9 +45,11 @@ public val VideoAudioSoundGroup.VideoFrameReplace: ImageVector
                 horizontalLineTo(2.0017f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.75f, 10.0f)
                 horizontalLineTo(10.25f)
                 verticalLineTo(2.0f)
@@ -52,9 +57,11 @@ public val VideoAudioSoundGroup.VideoFrameReplace: ImageVector
                 verticalLineTo(10.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.75f, 2.0017f)
                 verticalLineTo(5.25f)
                 horizontalLineTo(14.9983f)
@@ -62,9 +69,11 @@ public val VideoAudioSoundGroup.VideoFrameReplace: ImageVector
                 curveTo(13.9119f, 2.0834f, 13.1469f, 2.0119f, 11.75f, 2.0017f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.9983f, 6.75f)
                 horizontalLineTo(11.75f)
                 verticalLineTo(9.9983f)
@@ -72,9 +81,11 @@ public val VideoAudioSoundGroup.VideoFrameReplace: ImageVector
                 curveTo(14.9166f, 8.9119f, 14.9881f, 8.1469f, 14.9983f, 6.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.75f, 14.0092f)
                 curveTo(11.664f, 14.0368f, 11.0247f, 14.1469f, 10.5858f, 14.5858f)
                 curveTo(10.0834f, 15.0881f, 10.0119f, 15.8531f, 10.0017f, 17.25f)
@@ -82,9 +93,11 @@ public val VideoAudioSoundGroup.VideoFrameReplace: ImageVector
                 verticalLineTo(14.0092f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0017f, 18.75f)
                 curveTo(10.0119f, 20.1469f, 10.0834f, 20.9119f, 10.5858f, 21.4142f)
                 curveTo(11.0247f, 21.8531f, 11.664f, 21.9632f, 12.75f, 21.9908f)
@@ -92,9 +105,11 @@ public val VideoAudioSoundGroup.VideoFrameReplace: ImageVector
                 horizontalLineTo(10.0017f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.25f, 22.0f)
                 horizontalLineTo(16.75f)
                 verticalLineTo(14.0f)
@@ -102,9 +117,11 @@ public val VideoAudioSoundGroup.VideoFrameReplace: ImageVector
                 verticalLineTo(22.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.25f, 14.0092f)
                 verticalLineTo(17.25f)
                 horizontalLineTo(20.9983f)
@@ -112,9 +129,11 @@ public val VideoAudioSoundGroup.VideoFrameReplace: ImageVector
                 curveTo(19.9753f, 14.1469f, 19.336f, 14.0368f, 18.25f, 14.0092f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.9983f, 18.75f)
                 horizontalLineTo(18.25f)
                 verticalLineTo(21.9908f)
@@ -122,9 +141,11 @@ public val VideoAudioSoundGroup.VideoFrameReplace: ImageVector
                 curveTo(20.9166f, 20.9119f, 20.9881f, 20.1469f, 20.9983f, 18.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.0433f, 6.7673f)
                 curveTo(18.7958f, 6.7504f, 18.4762f, 6.75f, 18.0f, 6.75f)
                 curveTo(17.5858f, 6.75f, 17.25f, 6.4142f, 17.25f, 6.0f)
@@ -177,7 +198,7 @@ public val VideoAudioSoundGroup.VideoFrameReplace: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _videoFrameReplace!!
     }
 

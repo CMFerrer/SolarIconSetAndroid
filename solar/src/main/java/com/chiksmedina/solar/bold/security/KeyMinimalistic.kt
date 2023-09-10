@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SecurityGroup
 
-public val SecurityGroup.KeyMinimalistic: ImageVector
+val SecurityGroup.KeyMinimalistic: ImageVector
     get() {
         if (_keyMinimalistic != null) {
             return _keyMinimalistic!!
         }
-        _keyMinimalistic = Builder(name = "KeyMinimalistic", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _keyMinimalistic = Builder(
+            name = "KeyMinimalistic", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.9771f, 14.7904f)
                 curveTo(21.6743f, 12.0932f, 21.6743f, 7.7201f, 18.9771f, 5.0229f)
                 curveTo(16.2799f, 2.3257f, 11.9068f, 2.3257f, 9.2096f, 5.0229f)
@@ -51,7 +55,7 @@ public val SecurityGroup.KeyMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _keyMinimalistic!!
     }
 

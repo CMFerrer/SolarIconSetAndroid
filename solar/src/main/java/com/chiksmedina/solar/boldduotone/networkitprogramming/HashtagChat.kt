@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.networkitprogramming
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.HashtagChat: ImageVector
+val NetworkItProgrammingGroup.HashtagChat: ImageVector
     get() {
         if (_hashtagChat != null) {
             return _hashtagChat!!
         }
-        _hashtagChat = Builder(name = "HashtagChat", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _hashtagChat = Builder(
+            name = "HashtagChat", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.8144f, 21.236f)
                 lineTo(17.5433f, 21.6939f)
                 curveTo(17.3017f, 22.102f, 16.6982f, 22.102f, 16.4567f, 21.6939f)
@@ -49,9 +50,11 @@ public val NetworkItProgrammingGroup.HashtagChat: ImageVector
                 curveTo(18.1297f, 20.7032f, 18.0246f, 20.8808f, 17.8144f, 21.236f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.2007f, 2.2773f)
                 curveTo(10.5998f, 2.3882f, 10.8335f, 2.8016f, 10.7226f, 3.2007f)
                 lineTo(9.3201f, 8.25f)
@@ -91,9 +94,11 @@ public val NetworkItProgrammingGroup.HashtagChat: ImageVector
                 curveTo(9.3882f, 2.4001f, 9.8016f, 2.1665f, 10.2007f, 2.2773f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.4276f, 20.2583f)
                 lineTo(13.2774f, 20.7992f)
                 curveTo(13.1665f, 21.1983f, 13.4002f, 21.6117f, 13.7993f, 21.7226f)
@@ -105,7 +110,7 @@ public val NetworkItProgrammingGroup.HashtagChat: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hashtagChat!!
     }
 

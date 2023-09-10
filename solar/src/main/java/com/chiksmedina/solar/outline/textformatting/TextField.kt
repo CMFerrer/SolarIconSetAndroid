@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.TextFormattingGroup
 
-public val TextFormattingGroup.TextField: ImageVector
+val TextFormattingGroup.TextField: ImageVector
     get() {
         if (_textField != null) {
             return _textField!!
         }
-        _textField = Builder(name = "TextField", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _textField = Builder(
+            name = "TextField", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.8838f, 7.75f)
                 curveTo(7.4843f, 7.75f, 7.1178f, 7.7499f, 6.8178f, 7.7873f)
                 curveTo(6.4892f, 7.8283f, 6.1388f, 7.9242f, 5.8376f, 8.1919f)
@@ -61,9 +63,11 @@ public val TextFormattingGroup.TextField: ImageVector
                 horizontalLineTo(7.8838f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.0564f, 3.25f)
                 horizontalLineTo(9.9436f)
                 curveTo(8.1058f, 3.25f, 6.6502f, 3.25f, 5.511f, 3.4031f)
@@ -108,7 +112,7 @@ public val TextFormattingGroup.TextField: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _textField!!
     }
 

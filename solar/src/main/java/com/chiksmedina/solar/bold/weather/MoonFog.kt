@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.weather
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.WeatherGroup
 
-public val WeatherGroup.MoonFog: ImageVector
+val WeatherGroup.MoonFog: ImageVector
     get() {
         if (_moonFog != null) {
             return _moonFog!!
         }
-        _moonFog = Builder(name = "MoonFog", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _moonFog = Builder(
+            name = "MoonFog", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 12.0f)
                 curveTo(2.0f, 6.4771f, 6.4771f, 2.0f, 12.0f, 2.0f)
                 curveTo(12.4627f, 2.0f, 12.5392f, 2.6935f, 12.1432f, 2.9328f)
@@ -42,9 +43,11 @@ public val WeatherGroup.MoonFog: ImageVector
                 curveTo(2.19f, 14.231f, 2.0f, 13.1377f, 2.0f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 18.25f)
                 curveTo(4.5858f, 18.25f, 4.25f, 18.5858f, 4.25f, 19.0f)
                 curveTo(4.25f, 19.4142f, 4.5858f, 19.75f, 5.0f, 19.75f)
@@ -54,9 +57,11 @@ public val WeatherGroup.MoonFog: ImageVector
                 horizontalLineTo(5.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.0f, 21.25f)
                 curveTo(7.5858f, 21.25f, 7.25f, 21.5858f, 7.25f, 22.0f)
                 curveTo(7.25f, 22.4142f, 7.5858f, 22.75f, 8.0f, 22.75f)
@@ -66,9 +71,11 @@ public val WeatherGroup.MoonFog: ImageVector
                 horizontalLineTo(8.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.9001f, 2.3072f)
                 curveTo(19.7392f, 1.8976f, 19.1616f, 1.8976f, 19.0007f, 2.3072f)
                 lineTo(18.5703f, 3.4025f)
@@ -88,9 +95,11 @@ public val WeatherGroup.MoonFog: ImageVector
                 lineTo(19.9001f, 2.3072f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.0328f, 8.1297f)
                 curveTo(15.8718f, 7.7201f, 15.2943f, 7.7201f, 15.1333f, 8.1297f)
                 lineTo(14.9764f, 8.529f)
@@ -111,7 +120,7 @@ public val WeatherGroup.MoonFog: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _moonFog!!
     }
 

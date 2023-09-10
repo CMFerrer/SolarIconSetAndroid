@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.FoodKitchenGroup
 
-public val FoodKitchenGroup.Whisk: ImageVector
+val FoodKitchenGroup.Whisk: ImageVector
     get() {
         if (_whisk != null) {
             return _whisk!!
         }
-        _whisk = Builder(name = "Whisk", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _whisk = Builder(
+            name = "Whisk", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.8991f, 15.1272f)
                 lineTo(6.8599f, 21.1662f)
                 curveTo(5.7481f, 22.2779f, 3.9456f, 22.2779f, 2.8338f, 21.1662f)
@@ -40,7 +44,7 @@ public val FoodKitchenGroup.Whisk: ImageVector
                 curveTo(9.2062f, 6.7414f, 7.857f, 11.6956f, 10.0806f, 13.9191f)
             }
         }
-        .build()
+            .build()
         return _whisk!!
     }
 

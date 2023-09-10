@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MoneyGroup
 
-public val MoneyGroup.CashOut: ImageVector
+val MoneyGroup.CashOut: ImageVector
     get() {
         if (_cashOut != null) {
             return _cashOut!!
         }
-        _cashOut = Builder(name = "CashOut", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cashOut = Builder(
+            name = "CashOut", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(1.25f, 7.0204f)
                 curveTo(1.25f, 4.4095f, 3.3036f, 2.25f, 5.8889f, 2.25f)
                 horizontalLineTo(18.1111f)
@@ -104,7 +108,7 @@ public val MoneyGroup.CashOut: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cashOut!!
     }
 

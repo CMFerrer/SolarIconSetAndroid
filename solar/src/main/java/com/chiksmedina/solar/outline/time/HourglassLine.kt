@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.TimeGroup
 
-public val TimeGroup.HourglassLine: ImageVector
+val TimeGroup.HourglassLine: ImageVector
     get() {
         if (_hourglassLine != null) {
             return _hourglassLine!!
         }
-        _hourglassLine = Builder(name = "HourglassLine", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _hourglassLine = Builder(
+            name = "HourglassLine", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9376f, 1.25f)
                 horizontalLineTo(12.0624f)
                 curveTo(14.0761f, 1.25f, 15.6654f, 1.25f, 16.8229f, 1.4026f)
@@ -95,7 +99,7 @@ public val TimeGroup.HourglassLine: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hourglassLine!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.HomeSmileAngle: ImageVector
+val EssentionalUiGroup.HomeSmileAngle: ImageVector
     get() {
         if (_homeSmileAngle != null) {
             return _homeSmileAngle!!
         }
-        _homeSmileAngle = Builder(name = "HomeSmileAngle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _homeSmileAngle = Builder(
+            name = "HomeSmileAngle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.1061f, 22.0f)
                 horizontalLineTo(10.8939f)
                 curveTo(7.4474f, 22.0f, 5.7241f, 22.0f, 4.549f, 20.9882f)
@@ -50,7 +54,7 @@ public val EssentionalUiGroup.HomeSmileAngle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _homeSmileAngle!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.DesignToolsGroup
 
-public val DesignToolsGroup.AlignHorizontalCenter: ImageVector
+val DesignToolsGroup.AlignHorizontalCenter: ImageVector
     get() {
         if (_alignHorizontalCenter != null) {
             return _alignHorizontalCenter!!
         }
-        _alignHorizontalCenter = Builder(name = "AlignHorizontalCenter", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _alignHorizontalCenter = Builder(
+            name = "AlignHorizontalCenter", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.0f, 7.5f)
                 curveTo(19.0f, 6.5654f, 19.0f, 6.0981f, 18.799f, 5.75f)
                 curveTo(18.6674f, 5.522f, 18.478f, 5.3326f, 18.25f, 5.201f)
@@ -67,7 +71,7 @@ public val DesignToolsGroup.AlignHorizontalCenter: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _alignHorizontalCenter!!
     }
 

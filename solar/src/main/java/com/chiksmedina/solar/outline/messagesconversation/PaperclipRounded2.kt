@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MessagesConversationGroup
 
-public val MessagesConversationGroup.PaperclipRounded2: ImageVector
+val MessagesConversationGroup.PaperclipRounded2: ImageVector
     get() {
         if (_paperclipRounded2 != null) {
             return _paperclipRounded2!!
         }
-        _paperclipRounded2 = Builder(name = "PaperclipRounded2", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _paperclipRounded2 = Builder(
+            name = "PaperclipRounded2", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.2765f, 3.8928f)
                 curveTo(10.8163f, 0.3691f, 16.554f, 0.3691f, 20.0938f, 3.8928f)
                 curveTo(23.6354f, 7.4183f, 23.6354f, 13.1358f, 20.0938f, 16.6614f)
@@ -45,7 +49,7 @@ public val MessagesConversationGroup.PaperclipRounded2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _paperclipRounded2!!
     }
 

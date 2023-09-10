@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Skirt: ImageVector
+val EssentionalUiGroup.Skirt: ImageVector
     get() {
         if (_skirt != null) {
             return _skirt!!
         }
-        _skirt = Builder(name = "Skirt", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _skirt = Builder(
+            name = "Skirt", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.8475f, 1.25f)
                 curveTo(7.8622f, 1.25f, 7.8769f, 1.25f, 7.8917f, 1.25f)
                 lineTo(16.1526f, 1.25f)
@@ -89,7 +93,7 @@ public val EssentionalUiGroup.Skirt: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _skirt!!
     }
 

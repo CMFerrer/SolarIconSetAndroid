@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.boldduotone
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldduotoneGroup
+import com.chiksmedina.solar.BoldDuotoneSolar
 import com.chiksmedina.solar.boldduotone.networkitprogramming.Bug
 import com.chiksmedina.solar.boldduotone.networkitprogramming.BugMinimalistic
 import com.chiksmedina.solar.boldduotone.networkitprogramming.Code
@@ -29,28 +29,30 @@ import com.chiksmedina.solar.boldduotone.networkitprogramming.Translation2
 import com.chiksmedina.solar.boldduotone.networkitprogramming.Usb
 import com.chiksmedina.solar.boldduotone.networkitprogramming.UsbCircle
 import com.chiksmedina.solar.boldduotone.networkitprogramming.UsbSquare
+import com.chiksmedina.solar.boldduotone.networkitprogramming.WifiRouter
+import com.chiksmedina.solar.boldduotone.networkitprogramming.WifiRouterMinimalistic
+import com.chiksmedina.solar.boldduotone.networkitprogramming.WifiRouterRound
 import com.chiksmedina.solar.boldduotone.networkitprogramming.WindowFrame
-import com.chiksmedina.solar.boldduotone.networkitprogramming.`Wi-fiRouterMinimalistic`
-import com.chiksmedina.solar.boldduotone.networkitprogramming.`Wi-fiRouterRound`
-import com.chiksmedina.solar.boldduotone.networkitprogramming.`Wi-fiRouter`
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object NetworkItProgrammingGroup
+object NetworkItProgrammingGroup
 
-public val BoldduotoneGroup.NetworkItProgramming: NetworkItProgrammingGroup
-  get() = NetworkItProgrammingGroup
+val BoldDuotoneSolar.NetworkItProgramming: NetworkItProgrammingGroup
+    get() = NetworkItProgrammingGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val NetworkItProgrammingGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val NetworkItProgrammingGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Bug, BugMinimalistic, Code, Code2, CodeCircle, CodeSquare, Command, Hashtag,
+            HashtagChat, HashtagCircle, HashtagSquare, Programming, Screencast, Screencast2,
+            SidebarCode, SidebarMinimalistic, Siderbar, SlashCircle, SlashSquare, Station,
+            StationMinimalistic, Structure, Translation, Translation2, Usb, UsbCircle, UsbSquare,
+            WifiRouter, WifiRouterMinimalistic, WifiRouterRound, WindowFrame
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Bug, BugMinimalistic, Code, Code2, CodeCircle, CodeSquare, Command, Hashtag,
-        HashtagChat, HashtagCircle, HashtagSquare, Programming, Screencast, Screencast2,
-        SidebarCode, SidebarMinimalistic, Siderbar, SlashCircle, SlashSquare, Station,
-        StationMinimalistic, Structure, Translation, Translation2, Usb, UsbCircle, UsbSquare,
-        `Wi-fiRouter`, `Wi-fiRouterMinimalistic`, `Wi-fiRouterRound`, WindowFrame)
-    return __AllIcons!!
-  }

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Lightning: ImageVector
+val ElectronicDevicesGroup.Lightning: ImageVector
     get() {
         if (_lightning != null) {
             return _lightning!!
         }
-        _lightning = Builder(name = "Lightning", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _lightning = Builder(
+            name = "Lightning", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(12.5f, 19.25f)
                 curveTo(12.9142f, 19.25f, 13.25f, 19.5858f, 13.25f, 20.0f)
                 verticalLineTo(22.0f)
@@ -34,9 +35,11 @@ public val ElectronicDevicesGroup.Lightning: ImageVector
                 curveTo(11.75f, 19.5858f, 12.0858f, 19.25f, 12.5f, 19.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.8f, 8.0f)
                 horizontalLineTo(13.2f)
                 curveTo(15.4627f, 8.0f, 16.5941f, 8.0f, 17.2971f, 8.6923f)
@@ -68,9 +71,11 @@ public val ElectronicDevicesGroup.Lightning: ImageVector
                 lineTo(12.6f, 12.45f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.25f, 4.75f)
                 curveTo(10.25f, 4.3358f, 10.5858f, 4.0f, 11.0f, 4.0f)
                 horizontalLineTo(13.0f)
@@ -80,9 +85,11 @@ public val ElectronicDevicesGroup.Lightning: ImageVector
                 curveTo(10.5858f, 5.5f, 10.25f, 5.1642f, 10.25f, 4.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.8f, 8.0f)
                 horizontalLineTo(13.2f)
                 curveTo(15.4627f, 8.0f, 16.5941f, 8.0f, 17.2971f, 8.6923f)
@@ -114,9 +121,11 @@ public val ElectronicDevicesGroup.Lightning: ImageVector
                 lineTo(12.6f, 12.45f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(8.5f, 5.5f)
                 curveTo(8.5f, 4.0955f, 8.5f, 3.3933f, 8.8371f, 2.8889f)
                 curveTo(8.983f, 2.6705f, 9.1705f, 2.483f, 9.3889f, 2.3371f)
@@ -132,7 +141,7 @@ public val ElectronicDevicesGroup.Lightning: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _lightning!!
     }
 

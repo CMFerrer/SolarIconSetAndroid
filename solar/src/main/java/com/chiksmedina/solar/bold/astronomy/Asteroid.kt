@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.AstronomyGroup
 
-public val AstronomyGroup.Asteroid: ImageVector
+val AstronomyGroup.Asteroid: ImageVector
     get() {
         if (_asteroid != null) {
             return _asteroid!!
         }
-        _asteroid = Builder(name = "Asteroid", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _asteroid = Builder(
+            name = "Asteroid", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 12.0f)
                 curveTo(2.0f, 6.4771f, 6.4771f, 2.0f, 12.0f, 2.0f)
                 curveTo(14.1266f, 2.0f, 16.0982f, 2.6638f, 17.7188f, 3.7956f)
@@ -50,9 +51,11 @@ public val AstronomyGroup.Asteroid: ImageVector
                 curveTo(8.0f, 9.8807f, 9.1193f, 11.0f, 10.5f, 11.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.75f, 7.9997f)
                 curveTo(17.75f, 6.769f, 18.1726f, 5.639f, 18.8812f, 4.744f)
                 curveTo(20.8021f, 6.5662f, 22.0f, 9.1432f, 22.0f, 12.0f)
@@ -60,9 +63,11 @@ public val AstronomyGroup.Asteroid: ImageVector
                 curveTo(19.5463f, 12.6503f, 17.75f, 10.534f, 17.75f, 7.9997f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.6578f, 21.4278f)
                 curveTo(5.4082f, 20.2758f, 2.9312f, 17.4914f, 2.2125f, 14.0605f)
                 lineTo(2.3245f, 14.0228f)
@@ -73,7 +78,7 @@ public val AstronomyGroup.Asteroid: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _asteroid!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.arrows
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsGroup
 
-public val ArrowsGroup.TransferHorizontal: ImageVector
+val ArrowsGroup.TransferHorizontal: ImageVector
     get() {
         if (_transferHorizontal != null) {
             return _transferHorizontal!!
         }
-        _transferHorizontal = Builder(name = "TransferHorizontal", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _transferHorizontal = Builder(
+            name = "TransferHorizontal", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.25f, 4.0f)
                 curveTo(10.25f, 3.6907f, 10.0602f, 3.4132f, 9.7719f, 3.301f)
                 curveTo(9.4837f, 3.1889f, 9.1561f, 3.2652f, 8.9472f, 3.4932f)
@@ -37,9 +38,11 @@ public val ArrowsGroup.TransferHorizontal: ImageVector
                 verticalLineTo(4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.75f, 20.0f)
                 lineTo(13.75f, 14.75f)
                 horizontalLineTo(4.0f)
@@ -54,7 +57,7 @@ public val ArrowsGroup.TransferHorizontal: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _transferHorizontal!!
     }
 

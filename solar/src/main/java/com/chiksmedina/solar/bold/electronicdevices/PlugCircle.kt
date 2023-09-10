@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.PlugCircle: ImageVector
+val ElectronicDevicesGroup.PlugCircle: ImageVector
     get() {
         if (_plugCircle != null) {
             return _plugCircle!!
         }
-        _plugCircle = Builder(name = "PlugCircle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _plugCircle = Builder(
+            name = "PlugCircle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 2.0f)
                 curveTo(6.4771f, 2.0f, 2.0f, 6.4834f, 2.0f, 12.0139f)
                 curveTo(2.0f, 17.2918f, 6.0776f, 21.6161f, 11.2503f, 22.0f)
@@ -48,7 +52,7 @@ public val ElectronicDevicesGroup.PlugCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _plugCircle!!
     }
 

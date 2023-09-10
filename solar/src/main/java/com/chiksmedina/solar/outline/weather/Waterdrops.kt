@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.WeatherGroup
 
-public val WeatherGroup.Waterdrops: ImageVector
+val WeatherGroup.Waterdrops: ImageVector
     get() {
         if (_waterdrops != null) {
             return _waterdrops!!
         }
-        _waterdrops = Builder(name = "Waterdrops", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _waterdrops = Builder(
+            name = "Waterdrops", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.7174f, 3.7506f)
                 curveTo(12.3192f, 3.3305f, 11.6808f, 3.3305f, 11.2826f, 3.7506f)
                 curveTo(10.7109f, 4.3538f, 10.0594f, 5.1076f, 9.5554f, 5.8711f)
@@ -77,7 +81,7 @@ public val WeatherGroup.Waterdrops: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _waterdrops!!
     }
 

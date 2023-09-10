@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.GalleryCircle: ImageVector
+val VideoAudioSoundGroup.GalleryCircle: ImageVector
     get() {
         if (_galleryCircle != null) {
             return _galleryCircle!!
         }
-        _galleryCircle = Builder(name = "GalleryCircle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _galleryCircle = Builder(
+            name = "GalleryCircle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.1822f, 15.3618f)
                 lineTo(6.8925f, 11.0721f)
                 curveTo(6.0363f, 10.2159f, 4.6629f, 10.1702f, 3.7516f, 10.9675f)
@@ -39,9 +40,11 @@ public val VideoAudioSoundGroup.GalleryCircle: ImageVector
                 curveTo(12.9512f, 16.1428f, 11.8694f, 16.0491f, 11.1822f, 15.3618f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.0f, 11.0f)
                 curveTo(16.1046f, 11.0f, 17.0f, 10.1046f, 17.0f, 9.0f)
                 curveTo(17.0f, 7.8954f, 16.1046f, 7.0f, 15.0f, 7.0f)
@@ -49,9 +52,11 @@ public val VideoAudioSoundGroup.GalleryCircle: ImageVector
                 curveTo(13.0f, 10.1046f, 13.8954f, 11.0f, 15.0f, 11.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(1.25f, 12.0f)
                 curveTo(1.25f, 6.0629f, 6.0629f, 1.25f, 12.0f, 1.25f)
                 curveTo(17.9371f, 1.25f, 22.75f, 6.0629f, 22.75f, 12.0f)
@@ -68,7 +73,7 @@ public val VideoAudioSoundGroup.GalleryCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _galleryCircle!!
     }
 

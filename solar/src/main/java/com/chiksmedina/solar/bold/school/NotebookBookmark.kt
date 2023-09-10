@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.school
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SchoolGroup
 
-public val SchoolGroup.NotebookBookmark: ImageVector
+val SchoolGroup.NotebookBookmark: ImageVector
     get() {
         if (_notebookBookmark != null) {
             return _notebookBookmark!!
         }
-        _notebookBookmark = Builder(name = "NotebookBookmark", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _notebookBookmark = Builder(
+            name = "NotebookBookmark", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.2502f, 4.4795f)
                 lineTo(14.2502f, 7.5372f)
                 curveTo(14.25f, 7.6484f, 14.2498f, 7.807f, 14.271f, 7.9431f)
@@ -58,9 +59,11 @@ public val SchoolGroup.NotebookBookmark: ImageVector
                 curveTo(19.2201f, 12.1719f, 19.6273f, 12.4163f, 19.7278f, 12.8181f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.2502f, 5.214f)
                 curveTo(10.9159f, 5.1505f, 10.5894f, 5.0378f, 10.2823f, 4.8755f)
                 curveTo(9.2961f, 4.354f, 8.0492f, 3.7643f, 7.0f, 3.4874f)
@@ -90,9 +93,11 @@ public val SchoolGroup.NotebookBookmark: ImageVector
                 lineTo(5.1821f, 12.2724f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.2502f, 3.151f)
                 curveTo(17.6301f, 3.2243f, 17.0206f, 3.3316f, 16.5f, 3.4874f)
                 curveTo(16.2585f, 3.5598f, 16.0064f, 3.6514f, 15.7502f, 3.7564f)
@@ -110,7 +115,7 @@ public val SchoolGroup.NotebookBookmark: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _notebookBookmark!!
     }
 

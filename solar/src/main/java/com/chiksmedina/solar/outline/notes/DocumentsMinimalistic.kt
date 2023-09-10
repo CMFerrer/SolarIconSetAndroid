@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NotesGroup
 
-public val NotesGroup.DocumentsMinimalistic: ImageVector
+val NotesGroup.DocumentsMinimalistic: ImageVector
     get() {
         if (_documentsMinimalistic != null) {
             return _documentsMinimalistic!!
         }
-        _documentsMinimalistic = Builder(name = "DocumentsMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _documentsMinimalistic = Builder(
+            name = "DocumentsMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.9451f, 1.25f)
                 horizontalLineTo(13.0549f)
                 curveTo(14.4225f, 1.25f, 15.5248f, 1.25f, 16.3918f, 1.3665f)
@@ -107,7 +111,7 @@ public val NotesGroup.DocumentsMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _documentsMinimalistic!!
     }
 

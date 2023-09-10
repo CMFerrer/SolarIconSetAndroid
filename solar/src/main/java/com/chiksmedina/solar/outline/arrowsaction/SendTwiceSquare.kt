@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.arrowsaction
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsActionGroup
 
-public val ArrowsActionGroup.SendTwiceSquare: ImageVector
+val ArrowsActionGroup.SendTwiceSquare: ImageVector
     get() {
         if (_sendTwiceSquare != null) {
             return _sendTwiceSquare!!
         }
-        _sendTwiceSquare = Builder(name = "SendTwiceSquare", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _sendTwiceSquare = Builder(
+            name = "SendTwiceSquare", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 7.75f)
                 curveTo(17.4142f, 7.75f, 17.75f, 8.0858f, 17.75f, 8.5f)
                 curveTo(17.75f, 8.9142f, 17.4142f, 9.25f, 17.0f, 9.25f)
@@ -42,9 +43,11 @@ public val ArrowsActionGroup.SendTwiceSquare: ImageVector
                 horizontalLineTo(17.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 14.75f)
                 curveTo(17.4142f, 14.75f, 17.75f, 15.0858f, 17.75f, 15.5f)
                 curveTo(17.75f, 15.9142f, 17.4142f, 16.25f, 17.0f, 16.25f)
@@ -62,9 +65,11 @@ public val ArrowsActionGroup.SendTwiceSquare: ImageVector
                 horizontalLineTo(17.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.0f, 18.75f)
                 curveTo(7.4142f, 18.75f, 7.75f, 18.4142f, 7.75f, 18.0f)
                 verticalLineTo(6.0f)
@@ -74,9 +79,11 @@ public val ArrowsActionGroup.SendTwiceSquare: ImageVector
                 curveTo(6.25f, 18.4142f, 6.5858f, 18.75f, 7.0f, 18.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9426f, 1.25f)
                 curveTo(9.6342f, 1.25f, 7.8252f, 1.25f, 6.4137f, 1.4397f)
                 curveTo(4.969f, 1.634f, 3.8289f, 2.0393f, 2.9341f, 2.9341f)
@@ -119,7 +126,7 @@ public val ArrowsActionGroup.SendTwiceSquare: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sendTwiceSquare!!
     }
 

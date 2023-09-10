@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.MicrophoneLarge: ImageVector
+val VideoAudioSoundGroup.MicrophoneLarge: ImageVector
     get() {
         if (_microphoneLarge != null) {
             return _microphoneLarge!!
         }
-        _microphoneLarge = Builder(name = "MicrophoneLarge", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _microphoneLarge = Builder(
+            name = "MicrophoneLarge", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(12.0001f, 2.0f)
                 curveTo(8.5589f, 2.0f, 5.7693f, 4.8112f, 5.7693f, 8.2791f)
                 verticalLineTo(12.9302f)
@@ -102,9 +103,11 @@ public val VideoAudioSoundGroup.MicrophoneLarge: ImageVector
                 curveTo(10.3642f, 10.4342f, 9.9465f, 10.4369f, 9.6783f, 10.1814f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.6512f, 9.1949f)
                 curveTo(9.3885f, 9.4749f, 9.4008f, 9.9164f, 9.6786f, 10.1812f)
                 curveTo(9.9468f, 10.4367f, 10.3645f, 10.434f, 10.6294f, 10.1816f)
@@ -140,9 +143,11 @@ public val VideoAudioSoundGroup.MicrophoneLarge: ImageVector
                 lineTo(9.6512f, 9.1949f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.6512f, 6.4042f)
                 curveTo(9.3885f, 6.6842f, 9.4008f, 7.1257f, 9.6786f, 7.3905f)
                 curveTo(9.9468f, 7.646f, 10.3645f, 7.6433f, 10.6294f, 7.3909f)
@@ -178,9 +183,11 @@ public val VideoAudioSoundGroup.MicrophoneLarge: ImageVector
                 lineTo(9.6512f, 6.4042f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.6923f, 10.3721f)
                 curveTo(4.0747f, 10.3721f, 4.3846f, 10.6844f, 4.3846f, 11.0697f)
                 verticalLineTo(12.9302f)
@@ -197,7 +204,7 @@ public val VideoAudioSoundGroup.MicrophoneLarge: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _microphoneLarge!!
     }
 

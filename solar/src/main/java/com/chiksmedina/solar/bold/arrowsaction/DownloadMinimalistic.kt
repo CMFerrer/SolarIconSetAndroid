@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsActionGroup
 
-public val ArrowsActionGroup.DownloadMinimalistic: ImageVector
+val ArrowsActionGroup.DownloadMinimalistic: ImageVector
     get() {
         if (_downloadMinimalistic != null) {
             return _downloadMinimalistic!!
         }
-        _downloadMinimalistic = Builder(name = "DownloadMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _downloadMinimalistic = Builder(
+            name = "DownloadMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.5535f, 16.5061f)
                 curveTo(12.4114f, 16.6615f, 12.2106f, 16.75f, 12.0f, 16.75f)
                 curveTo(11.7894f, 16.75f, 11.5886f, 16.6615f, 11.4465f, 16.5061f)
@@ -38,9 +42,11 @@ public val ArrowsActionGroup.DownloadMinimalistic: ImageVector
                 lineTo(12.5535f, 16.5061f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.75f, 15.0f)
                 curveTo(3.75f, 14.5858f, 3.4142f, 14.25f, 3.0f, 14.25f)
                 curveTo(2.5858f, 14.25f, 2.25f, 14.5858f, 2.25f, 15.0f)
@@ -69,7 +75,7 @@ public val ArrowsActionGroup.DownloadMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _downloadMinimalistic!!
     }
 

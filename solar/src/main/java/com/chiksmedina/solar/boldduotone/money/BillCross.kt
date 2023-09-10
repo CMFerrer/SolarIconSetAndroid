@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.money
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MoneyGroup
 
-public val MoneyGroup.BillCross: ImageVector
+val MoneyGroup.BillCross: ImageVector
     get() {
         if (_billCross != null) {
             return _billCross!!
         }
-        _billCross = Builder(name = "BillCross", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _billCross = Builder(
+            name = "BillCross", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.3333f, 2.0f)
                 horizontalLineTo(17.6667f)
                 curveTo(17.9762f, 2.0f, 18.131f, 2.0f, 18.2615f, 2.012f)
@@ -47,9 +48,11 @@ public val MoneyGroup.BillCross: ImageVector
                 curveTo(5.869f, 2.0f, 6.0238f, 2.0f, 6.3333f, 2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.5303f, 7.4697f)
                 curveTo(10.2375f, 7.1768f, 9.7626f, 7.1768f, 9.4697f, 7.4697f)
                 curveTo(9.1768f, 7.7626f, 9.1768f, 8.2374f, 9.4697f, 8.5303f)
@@ -69,9 +72,11 @@ public val MoneyGroup.BillCross: ImageVector
                 lineTo(10.5303f, 7.4697f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.5f, 14.75f)
                 curveTo(7.0858f, 14.75f, 6.75f, 15.0858f, 6.75f, 15.5f)
                 curveTo(6.75f, 15.9142f, 7.0858f, 16.25f, 7.5f, 16.25f)
@@ -82,7 +87,7 @@ public val MoneyGroup.BillCross: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _billCross!!
     }
 

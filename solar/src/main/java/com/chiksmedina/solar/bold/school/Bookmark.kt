@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SchoolGroup
 
-public val SchoolGroup.Bookmark: ImageVector
+val SchoolGroup.Bookmark: ImageVector
     get() {
         if (_bookmark != null) {
             return _bookmark!!
         }
-        _bookmark = Builder(name = "Bookmark", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bookmark = Builder(
+            name = "Bookmark", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.0f, 11.0975f)
                 verticalLineTo(16.0909f)
                 curveTo(21.0f, 19.1875f, 21.0f, 20.7358f, 20.2659f, 21.4123f)
@@ -48,7 +52,7 @@ public val SchoolGroup.Bookmark: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bookmark!!
     }
 

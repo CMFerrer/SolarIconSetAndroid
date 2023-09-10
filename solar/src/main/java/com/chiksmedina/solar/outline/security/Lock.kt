@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SecurityGroup
 
-public val SecurityGroup.Lock: ImageVector
+val SecurityGroup.Lock: ImageVector
     get() {
         if (_lock != null) {
             return _lock!!
         }
-        _lock = Builder(name = "Lock", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _lock = Builder(
+            name = "Lock", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.25f, 9.3028f)
                 verticalLineTo(8.0f)
                 curveTo(5.25f, 4.2721f, 8.2721f, 1.25f, 12.0f, 1.25f)
@@ -77,7 +81,7 @@ public val SecurityGroup.Lock: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _lock!!
     }
 

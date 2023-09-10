@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.FoodKitchenGroup
 
-public val FoodKitchenGroup.RollingPin: ImageVector
+val FoodKitchenGroup.RollingPin: ImageVector
     get() {
         if (_rollingPin != null) {
             return _rollingPin!!
         }
-        _rollingPin = Builder(name = "RollingPin", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _rollingPin = Builder(
+            name = "RollingPin", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.0125f, 13.1567f)
                 curveTo(18.4666f, 11.7026f, 19.1937f, 10.9756f, 19.1937f, 10.0721f)
                 curveTo(19.1937f, 9.4668f, 18.8673f, 8.9407f, 18.2146f, 8.222f)
@@ -60,7 +64,7 @@ public val FoodKitchenGroup.RollingPin: ImageVector
                 curveTo(16.5327f, 6.5076f, 16.1319f, 6.1069f, 15.778f, 5.7854f)
             }
         }
-        .build()
+            .build()
         return _rollingPin!!
     }
 

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ArrowsGroup
 
-public val ArrowsGroup.ArrowLeftDown: ImageVector
+val ArrowsGroup.ArrowLeftDown: ImageVector
     get() {
         if (_arrowLeftDown != null) {
             return _arrowLeftDown!!
         }
-        _arrowLeftDown = Builder(name = "ArrowLeftDown", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _arrowLeftDown = Builder(
+            name = "ArrowLeftDown", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.5607f, 13.5f)
                 lineTo(10.5f, 12.4394f)
                 lineTo(6.5303f, 8.4697f)
@@ -37,9 +39,11 @@ public val ArrowsGroup.ArrowLeftDown: ImageVector
                 lineTo(11.5607f, 13.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.5303f, 6.5303f)
                 curveTo(18.8232f, 6.2374f, 18.8232f, 5.7626f, 18.5303f, 5.4697f)
                 curveTo(18.2374f, 5.1768f, 17.7626f, 5.1768f, 17.4697f, 5.4697f)
@@ -49,7 +53,7 @@ public val ArrowsGroup.ArrowLeftDown: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _arrowLeftDown!!
     }
 

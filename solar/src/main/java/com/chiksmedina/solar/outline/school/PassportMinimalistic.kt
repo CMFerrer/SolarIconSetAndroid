@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.school
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SchoolGroup
 
-public val SchoolGroup.PassportMinimalistic: ImageVector
+val SchoolGroup.PassportMinimalistic: ImageVector
     get() {
         if (_passportMinimalistic != null) {
             return _passportMinimalistic!!
         }
-        _passportMinimalistic = Builder(name = "PassportMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _passportMinimalistic = Builder(
+            name = "PassportMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.25f, 14.0001f)
                 curveTo(8.25f, 11.9291f, 9.9289f, 10.2501f, 12.0f, 10.2501f)
                 curveTo(14.0711f, 10.2501f, 15.75f, 11.9291f, 15.75f, 14.0001f)
@@ -37,9 +38,11 @@ public val SchoolGroup.PassportMinimalistic: ImageVector
                 curveTo(14.25f, 12.7575f, 13.2426f, 11.7501f, 12.0f, 11.7501f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.75f, 4.3062f)
                 curveTo(18.75f, 2.6327f, 17.2678f, 1.3471f, 15.6111f, 1.5838f)
                 lineTo(4.8135f, 3.1263f)
@@ -77,7 +80,7 @@ public val SchoolGroup.PassportMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _passportMinimalistic!!
     }
 

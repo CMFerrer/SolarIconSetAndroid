@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Share: ImageVector
+val EssentionalUiGroup.Share: ImageVector
     get() {
         if (_share != null) {
             return _share!!
         }
-        _share = Builder(name = "Share", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _share = Builder(
+            name = "Share", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.5f, 2.25f)
                 curveTo(14.7051f, 2.25f, 13.25f, 3.7051f, 13.25f, 5.5f)
                 curveTo(13.25f, 5.6959f, 13.2673f, 5.8878f, 13.3006f, 6.0741f)
@@ -65,7 +69,7 @@ public val EssentionalUiGroup.Share: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _share!!
     }
 

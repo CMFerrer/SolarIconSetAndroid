@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.textformatting
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.TextFormattingGroup
 
-public val TextFormattingGroup.LinkMinimalistic2: ImageVector
+val TextFormattingGroup.LinkMinimalistic2: ImageVector
     get() {
         if (_linkMinimalistic2 != null) {
             return _linkMinimalistic2!!
         }
-        _linkMinimalistic2 = Builder(name = "LinkMinimalistic2", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _linkMinimalistic2 = Builder(
+            name = "LinkMinimalistic2", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(19.7388f, 4.2612f)
                 curveTo(17.0572f, 1.5796f, 12.7095f, 1.5796f, 10.0279f, 4.2612f)
                 lineTo(9.3071f, 4.982f)
@@ -39,9 +40,11 @@ public val TextFormattingGroup.LinkMinimalistic2: ImageVector
                 curveTo(22.4203f, 11.2905f, 22.4203f, 6.9428f, 19.7388f, 4.2612f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.0427f, 9.3071f)
                 curveTo(6.3356f, 9.6f, 6.3356f, 10.0748f, 6.0427f, 10.3677f)
                 lineTo(5.3218f, 11.0886f)
@@ -57,9 +60,11 @@ public val TextFormattingGroup.LinkMinimalistic2: ImageVector
                 curveTo(5.2749f, 9.0142f, 5.7498f, 9.0142f, 6.0427f, 9.3071f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.6933f, 9.3071f)
                 curveTo(14.9862f, 9.6f, 14.9862f, 10.0748f, 14.6933f, 10.3677f)
                 lineTo(10.3682f, 14.6928f)
@@ -70,7 +75,7 @@ public val TextFormattingGroup.LinkMinimalistic2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _linkMinimalistic2!!
     }
 

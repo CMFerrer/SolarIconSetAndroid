@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.facesemotionsstickers
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FacesEmotionsStickersGroup
 
-public val FacesEmotionsStickersGroup.EmojiFunnySquare: ImageVector
+val FacesEmotionsStickersGroup.EmojiFunnySquare: ImageVector
     get() {
         if (_emojiFunnySquare != null) {
             return _emojiFunnySquare!!
         }
-        _emojiFunnySquare = Builder(name = "EmojiFunnySquare", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _emojiFunnySquare = Builder(
+            name = "EmojiFunnySquare", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.4754f, 9.5157f)
                 curveTo(15.6898f, 10.3159f, 15.4311f, 11.0804f, 14.8977f, 11.2234f)
                 curveTo(14.3642f, 11.3663f, 13.7579f, 10.8335f, 13.5435f, 10.0333f)
@@ -32,9 +33,11 @@ public val FacesEmotionsStickersGroup.EmojiFunnySquare: ImageVector
                 curveTo(14.6547f, 8.1827f, 15.2609f, 8.7155f, 15.4754f, 9.5157f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.6799f, 11.0689f)
                 curveTo(9.8944f, 11.8691f, 9.6357f, 12.6337f, 9.1023f, 12.7766f)
                 curveTo(8.5688f, 12.9195f, 7.9625f, 12.3867f, 7.7481f, 11.5865f)
@@ -42,9 +45,11 @@ public val FacesEmotionsStickersGroup.EmojiFunnySquare: ImageVector
                 curveTo(8.8593f, 9.7359f, 9.4655f, 10.2687f, 9.6799f, 11.0689f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.6081f, 2.8152f)
                 curveTo(13.4288f, 2.9672f, 11.9309f, 3.3669f, 9.8371f, 3.9279f)
                 curveTo(7.7433f, 4.489f, 6.2462f, 4.8918f, 5.149f, 5.3498f)
@@ -108,7 +113,7 @@ public val FacesEmotionsStickersGroup.EmojiFunnySquare: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _emojiFunnySquare!!
     }
 

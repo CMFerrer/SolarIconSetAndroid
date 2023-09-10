@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.files
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FilesGroup
 
-public val FilesGroup.FileText: ImageVector
+val FilesGroup.FileText: ImageVector
     get() {
         if (_fileText != null) {
             return _fileText!!
         }
-        _fileText = Builder(name = "FileText", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _fileText = Builder(
+            name = "FileText", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.25f, 14.5001f)
                 curveTo(5.25f, 14.0858f, 5.5858f, 13.7501f, 6.0f, 13.7501f)
                 horizontalLineTo(14.0f)
@@ -33,9 +34,11 @@ public val FilesGroup.FileText: ImageVector
                 curveTo(5.5858f, 15.2501f, 5.25f, 14.9143f, 5.25f, 14.5001f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.25f, 18.0f)
                 curveTo(5.25f, 17.5858f, 5.5858f, 17.25f, 6.0f, 17.25f)
                 horizontalLineTo(11.5f)
@@ -45,9 +48,11 @@ public val FilesGroup.FileText: ImageVector
                 curveTo(5.5858f, 18.75f, 5.25f, 18.4143f, 5.25f, 18.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.25f, 2.8342f)
                 curveTo(11.7896f, 2.756f, 11.162f, 2.7501f, 10.0298f, 2.7501f)
                 curveTo(8.1131f, 2.7501f, 6.7508f, 2.7516f, 5.7179f, 2.8899f)
@@ -113,7 +118,7 @@ public val FilesGroup.FileText: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _fileText!!
     }
 

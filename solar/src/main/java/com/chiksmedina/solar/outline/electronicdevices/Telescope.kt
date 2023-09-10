@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Telescope: ImageVector
+val ElectronicDevicesGroup.Telescope: ImageVector
     get() {
         if (_telescope != null) {
             return _telescope!!
         }
-        _telescope = Builder(name = "Telescope", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _telescope = Builder(
+            name = "Telescope", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.8005f, 3.2971f)
                 curveTo(18.2468f, 3.0438f, 18.5175f, 2.892f, 18.727f, 2.8074f)
                 curveTo(18.8236f, 2.7683f, 18.8796f, 2.7556f, 18.9095f, 2.7517f)
@@ -158,7 +162,7 @@ public val ElectronicDevicesGroup.Telescope: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _telescope!!
     }
 

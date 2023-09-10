@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.BusinessStatisticGroup
 
-public val BusinessStatisticGroup.PresentationGraph: ImageVector
+val BusinessStatisticGroup.PresentationGraph: ImageVector
     get() {
         if (_presentationGraph != null) {
             return _presentationGraph!!
         }
-        _presentationGraph = Builder(name = "PresentationGraph", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _presentationGraph = Builder(
+            name = "PresentationGraph", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 1.25f)
                 curveTo(1.5858f, 1.25f, 1.25f, 1.5858f, 1.25f, 2.0f)
                 curveTo(1.25f, 2.4142f, 1.5858f, 2.75f, 2.0f, 2.75f)
@@ -74,7 +78,7 @@ public val BusinessStatisticGroup.PresentationGraph: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _presentationGraph!!
     }
 

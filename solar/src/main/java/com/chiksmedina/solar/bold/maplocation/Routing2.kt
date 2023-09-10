@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.maplocation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MapLocationGroup
 
-public val MapLocationGroup.Routing2: ImageVector
+val MapLocationGroup.Routing2: ImageVector
     get() {
         if (_routing2 != null) {
             return _routing2!!
         }
-        _routing2 = Builder(name = "Routing2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _routing2 = Builder(
+            name = "Routing2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.5f, 14.0f)
                 curveTo(16.567f, 14.0f, 15.0f, 15.4584f, 15.0f, 17.2573f)
                 curveTo(15.0f, 19.0422f, 16.1171f, 21.125f, 17.86f, 21.8698f)
@@ -38,9 +39,11 @@ public val MapLocationGroup.Routing2: ImageVector
                 curveTo(17.5f, 18.0523f, 17.9477f, 18.5f, 18.5f, 18.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.5f, 2.0f)
                 curveTo(3.567f, 2.0f, 2.0f, 3.4583f, 2.0f, 5.2573f)
                 curveTo(2.0f, 7.0422f, 3.1171f, 9.125f, 4.86f, 9.8698f)
@@ -55,9 +58,11 @@ public val MapLocationGroup.Routing2: ImageVector
                 curveTo(4.5f, 6.0523f, 4.9477f, 6.5f, 5.5f, 6.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.25f, 5.0f)
                 curveTo(11.25f, 4.5858f, 11.5858f, 4.25f, 12.0f, 4.25f)
                 horizontalLineTo(16.1319f)
@@ -83,7 +88,7 @@ public val MapLocationGroup.Routing2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _routing2!!
     }
 

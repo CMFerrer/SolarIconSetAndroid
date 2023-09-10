@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.homefurniture
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Sofa2: ImageVector
+val HomeFurnitureGroup.Sofa2: ImageVector
     get() {
         if (_sofa2 != null) {
             return _sofa2!!
         }
-        _sofa2 = Builder(name = "Sofa2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _sofa2 = Builder(
+            name = "Sofa2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(8.0f, 18.0f)
                 horizontalLineTo(5.5556f)
                 curveTo(3.5919f, 18.0f, 2.0f, 16.4081f, 2.0f, 14.4444f)
@@ -42,9 +43,11 @@ public val HomeFurnitureGroup.Sofa2: ImageVector
                 curveTo(22.0f, 16.4081f, 20.4081f, 18.0f, 18.4444f, 18.0f)
                 horizontalLineTo(12.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.0f, 10.0f)
                 curveTo(20.0f, 9.0707f, 20.0f, 8.606f, 19.9231f, 8.2196f)
                 curveTo(19.6075f, 6.6329f, 18.3671f, 5.3925f, 16.7804f, 5.0769f)
@@ -54,9 +57,11 @@ public val HomeFurnitureGroup.Sofa2: ImageVector
                 curveTo(5.6329f, 5.3925f, 4.3925f, 6.6329f, 4.0769f, 8.2196f)
                 curveTo(4.0f, 8.606f, 4.0f, 9.0707f, 4.0f, 10.0f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.75f, 11.0f)
                 curveTo(12.75f, 10.5858f, 12.4142f, 10.25f, 12.0f, 10.25f)
                 curveTo(11.5858f, 10.25f, 11.25f, 10.5858f, 11.25f, 11.0f)
@@ -80,16 +85,18 @@ public val HomeFurnitureGroup.Sofa2: ImageVector
                 horizontalLineTo(11.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.0f, 19.0f)
                 verticalLineTo(18.0f)
                 moveTo(4.0f, 19.0f)
                 verticalLineTo(18.0f)
             }
         }
-        .build()
+            .build()
         return _sofa2!!
     }
 

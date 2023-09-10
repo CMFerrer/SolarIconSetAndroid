@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Microphone: ImageVector
+val VideoAudioSoundGroup.Microphone: ImageVector
     get() {
         if (_microphone != null) {
             return _microphone!!
         }
-        _microphone = Builder(name = "Microphone", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _microphone = Builder(
+            name = "Microphone", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.25f, 8.0f)
                 curveTo(6.25f, 4.8244f, 8.8244f, 2.25f, 12.0f, 2.25f)
                 curveTo(15.1756f, 2.25f, 17.75f, 4.8244f, 17.75f, 8.0f)
@@ -65,7 +69,7 @@ public val VideoAudioSoundGroup.Microphone: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _microphone!!
     }
 

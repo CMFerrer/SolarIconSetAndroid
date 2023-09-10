@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.ArrowsActionGroup
 
-public val ArrowsActionGroup.UndoLeft: ImageVector
+val ArrowsActionGroup.UndoLeft: ImageVector
     get() {
         if (_undoLeft != null) {
             return _undoLeft!!
         }
-        _undoLeft = Builder(name = "UndoLeft", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _undoLeft = Builder(
+            name = "UndoLeft", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.0f, 7.0f)
                 horizontalLineTo(15.0f)
                 curveTo(16.8692f, 7.0f, 17.8039f, 7.0f, 18.5f, 7.4019f)
@@ -36,7 +40,7 @@ public val ArrowsActionGroup.UndoLeft: ImageVector
                 lineTo(7.0f, 10.0f)
             }
         }
-        .build()
+            .build()
         return _undoLeft!!
     }
 

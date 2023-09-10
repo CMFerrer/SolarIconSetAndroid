@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.FacesEmotionsStickersGroup
 
-public val FacesEmotionsStickersGroup.EmojiFunnySquare: ImageVector
+val FacesEmotionsStickersGroup.EmojiFunnySquare: ImageVector
     get() {
         if (_emojiFunnySquare != null) {
             return _emojiFunnySquare!!
         }
-        _emojiFunnySquare = Builder(name = "EmojiFunnySquare", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _emojiFunnySquare = Builder(
+            name = "EmojiFunnySquare", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.4799f, 6.5036f)
                 curveTo(1.5369f, 8.137f, 2.0925f, 10.2103f, 3.2036f, 14.357f)
                 curveTo(4.3147f, 18.5037f, 4.8702f, 20.577f, 6.5036f, 21.5201f)
@@ -60,7 +64,7 @@ public val FacesEmotionsStickersGroup.EmojiFunnySquare: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _emojiFunnySquare!!
     }
 

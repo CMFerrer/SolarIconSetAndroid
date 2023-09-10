@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.BusinessStatisticGroup
 
-public val BusinessStatisticGroup.CourseUp: ImageVector
+val BusinessStatisticGroup.CourseUp: ImageVector
     get() {
         if (_courseUp != null) {
             return _courseUp!!
         }
-        _courseUp = Builder(name = "CourseUp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _courseUp = Builder(
+            name = "CourseUp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.6679f, 7.0f)
                 curveTo(15.6679f, 6.5858f, 16.0037f, 6.25f, 16.4179f, 6.25f)
                 horizontalLineTo(22.0f)
@@ -58,7 +62,7 @@ public val BusinessStatisticGroup.CourseUp: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _courseUp!!
     }
 

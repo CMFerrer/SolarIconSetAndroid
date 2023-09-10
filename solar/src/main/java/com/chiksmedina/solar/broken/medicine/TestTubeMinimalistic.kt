@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.MedicineGroup
 
-public val MedicineGroup.TestTubeMinimalistic: ImageVector
+val MedicineGroup.TestTubeMinimalistic: ImageVector
     get() {
         if (_testTubeMinimalistic != null) {
             return _testTubeMinimalistic!!
         }
-        _testTubeMinimalistic = Builder(name = "TestTubeMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _testTubeMinimalistic = Builder(
+            name = "TestTubeMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.8008f, 11.7834f)
                 lineTo(8.075f, 11.9256f)
                 curveTo(9.0977f, 12.0398f, 9.9051f, 12.8507f, 10.0187f, 13.8779f)
@@ -39,7 +43,7 @@ public val MedicineGroup.TestTubeMinimalistic: ImageVector
                 lineTo(14.1815f, 3.0f)
             }
         }
-        .build()
+            .build()
         return _testTubeMinimalistic!!
     }
 

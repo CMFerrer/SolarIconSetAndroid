@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.lineduotone
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.LineduotoneGroup
+import com.chiksmedina.solar.LineDuotoneSolar
 import com.chiksmedina.solar.lineduotone.users.User
 import com.chiksmedina.solar.lineduotone.users.UserBlock
 import com.chiksmedina.solar.lineduotone.users.UserBlockRounded
@@ -24,23 +24,43 @@ import com.chiksmedina.solar.lineduotone.users.UserSpeak
 import com.chiksmedina.solar.lineduotone.users.UserSpeakRounded
 import com.chiksmedina.solar.lineduotone.users.UsersGroupRounded
 import com.chiksmedina.solar.lineduotone.users.UsersGroupTwoRounded
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object UsersGroup
+object UsersGroup
 
-public val LineduotoneGroup.Users: UsersGroup
-  get() = UsersGroup
+val LineDuotoneSolar.Users: UsersGroup
+    get() = UsersGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val UsersGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val UsersGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            User,
+            UsersGroupRounded,
+            UsersGroupTwoRounded,
+            UserBlock,
+            UserBlockRounded,
+            UserCheck,
+            UserCheckRounded,
+            UserCircle,
+            UserCross,
+            UserCrossRounded,
+            UserHands,
+            UserHandUp,
+            UserHeart,
+            UserHeartRounded,
+            UserId,
+            UserMinus,
+            UserMinusRounded,
+            UserPlus,
+            UserPlusRounded,
+            UserRounded,
+            UserSpeak,
+            UserSpeakRounded
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(User, UsersGroupRounded, UsersGroupTwoRounded, UserBlock, UserBlockRounded,
-        UserCheck, UserCheckRounded, UserCircle, UserCross, UserCrossRounded, UserHands, UserHandUp,
-        UserHeart, UserHeartRounded, UserId, UserMinus, UserMinusRounded, UserPlus, UserPlusRounded,
-        UserRounded, UserSpeak, UserSpeakRounded)
-    return __AllIcons!!
-  }

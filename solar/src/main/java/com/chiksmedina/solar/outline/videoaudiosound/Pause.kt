@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Pause: ImageVector
+val VideoAudioSoundGroup.Pause: ImageVector
     get() {
         if (_pause != null) {
             return _pause!!
         }
-        _pause = Builder(name = "Pause", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _pause = Builder(
+            name = "Pause", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.948f, 1.25f)
                 horizontalLineTo(6.052f)
                 curveTo(6.9505f, 1.25f, 7.6997f, 1.25f, 8.2945f, 1.3299f)
@@ -107,7 +111,7 @@ public val VideoAudioSoundGroup.Pause: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _pause!!
     }
 

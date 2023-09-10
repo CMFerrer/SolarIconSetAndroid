@@ -1,12 +1,10 @@
 package com.chiksmedina.solar.lineduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,17 +12,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartSpeakerMinimalistic: ImageVector
+val ElectronicDevicesGroup.SmartSpeakerMinimalistic: ImageVector
     get() {
         if (_smartSpeakerMinimalistic != null) {
             return _smartSpeakerMinimalistic!!
         }
-        _smartSpeakerMinimalistic = Builder(name = "SmartSpeakerMinimalistic", defaultWidth =
-                24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _smartSpeakerMinimalistic = Builder(
+            name = "SmartSpeakerMinimalistic", defaultWidth =
+            24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.321f, 6.6582f)
                 curveTo(3.5622f, 4.5537f, 5.1512f, 2.8518f, 7.2393f, 2.4614f)
                 lineTo(7.4544f, 2.4212f)
@@ -44,15 +46,17 @@ public val ElectronicDevicesGroup.SmartSpeakerMinimalistic: ImageVector
                 lineTo(3.321f, 6.6582f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 6.0f)
                 curveTo(16.2804f, 6.6026f, 14.49f, 7.5f, 12.0f, 7.5f)
                 curveTo(9.51f, 7.5f, 7.7196f, 6.6026f, 7.0f, 6.0f)
             }
         }
-        .build()
+            .build()
         return _smartSpeakerMinimalistic!!
     }
 

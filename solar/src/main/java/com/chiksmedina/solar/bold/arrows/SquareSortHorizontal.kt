@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsGroup
 
-public val ArrowsGroup.SquareSortHorizontal: ImageVector
+val ArrowsGroup.SquareSortHorizontal: ImageVector
     get() {
         if (_squareSortHorizontal != null) {
             return _squareSortHorizontal!!
         }
-        _squareSortHorizontal = Builder(name = "SquareSortHorizontal", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _squareSortHorizontal = Builder(
+            name = "SquareSortHorizontal", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 12.0f)
                 curveTo(2.0f, 7.286f, 2.0f, 4.9289f, 3.4645f, 3.4645f)
                 curveTo(4.9289f, 2.0f, 7.286f, 2.0f, 12.0f, 2.0f)
@@ -65,7 +69,7 @@ public val ArrowsGroup.SquareSortHorizontal: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _squareSortHorizontal!!
     }
 

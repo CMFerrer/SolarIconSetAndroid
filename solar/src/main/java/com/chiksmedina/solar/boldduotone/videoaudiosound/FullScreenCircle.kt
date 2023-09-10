@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.FullScreenCircle: ImageVector
+val VideoAudioSoundGroup.FullScreenCircle: ImageVector
     get() {
         if (_fullScreenCircle != null) {
             return _fullScreenCircle!!
         }
-        _fullScreenCircle = Builder(name = "FullScreenCircle", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _fullScreenCircle = Builder(
+            name = "FullScreenCircle", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 22.0f)
                 curveTo(17.5228f, 22.0f, 22.0f, 17.5228f, 22.0f, 12.0f)
                 curveTo(22.0f, 6.4771f, 17.5228f, 2.0f, 12.0f, 2.0f)
@@ -31,9 +32,11 @@ public val VideoAudioSoundGroup.FullScreenCircle: ImageVector
                 curveTo(2.0f, 17.5228f, 6.4771f, 22.0f, 12.0f, 22.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0038f, 6.75f)
                 curveTo(10.4179f, 6.7465f, 10.7509f, 6.4078f, 10.7474f, 5.9936f)
                 curveTo(10.7439f, 5.5794f, 10.4052f, 5.2465f, 9.991f, 5.25f)
@@ -49,9 +52,11 @@ public val VideoAudioSoundGroup.FullScreenCircle: ImageVector
                 curveTo(8.5501f, 6.7855f, 9.1479f, 6.7572f, 10.0038f, 6.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.0065f, 5.25f)
                 curveTo(13.5923f, 5.2465f, 13.2537f, 5.5794f, 13.2502f, 5.9936f)
                 curveTo(13.2467f, 6.4078f, 13.5796f, 6.7465f, 13.9938f, 6.75f)
@@ -67,9 +72,11 @@ public val VideoAudioSoundGroup.FullScreenCircle: ImageVector
                 curveTo(15.5831f, 5.2836f, 14.8572f, 5.2572f, 14.0065f, 5.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.75f, 13.9943f)
                 curveTo(6.7465f, 13.5801f, 6.4078f, 13.2472f, 5.9936f, 13.2507f)
                 curveTo(5.5794f, 13.2542f, 5.2465f, 13.5928f, 5.25f, 14.007f)
@@ -85,9 +92,11 @@ public val VideoAudioSoundGroup.FullScreenCircle: ImageVector
                 curveTo(6.7855f, 15.4479f, 6.7572f, 14.8502f, 6.75f, 13.9943f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.7475f, 14.007f)
                 curveTo(18.751f, 13.5928f, 18.4181f, 13.2542f, 18.0039f, 13.2507f)
                 curveTo(17.5897f, 13.2472f, 17.2511f, 13.5801f, 17.2476f, 13.9943f)
@@ -104,7 +113,7 @@ public val VideoAudioSoundGroup.FullScreenCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _fullScreenCircle!!
     }
 

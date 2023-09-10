@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.TextFormattingGroup
 
-public val TextFormattingGroup.Text: ImageVector
+val TextFormattingGroup.Text: ImageVector
     get() {
         if (_text != null) {
             return _text!!
         }
-        _text = Builder(name = "Text", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _text = Builder(
+            name = "Text", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.948f, 2.25f)
                 curveTo(7.0495f, 2.25f, 6.3003f, 2.2499f, 5.7055f, 2.3299f)
                 curveTo(5.0777f, 2.4143f, 4.5109f, 2.6f, 4.0555f, 3.0555f)
@@ -61,7 +65,7 @@ public val TextFormattingGroup.Text: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _text!!
     }
 

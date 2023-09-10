@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Bath: ImageVector
+val HomeFurnitureGroup.Bath: ImageVector
     get() {
         if (_bath != null) {
             return _bath!!
         }
-        _bath = Builder(name = "Bath", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bath = Builder(
+            name = "Bath", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.5f, 4.1352f)
                 curveTo(3.5f, 3.2321f, 4.2321f, 2.5f, 5.1352f, 2.5f)
                 curveTo(5.8038f, 2.5f, 6.405f, 2.9071f, 6.6534f, 3.5279f)
@@ -78,7 +82,7 @@ public val HomeFurnitureGroup.Bath: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bath!!
     }
 

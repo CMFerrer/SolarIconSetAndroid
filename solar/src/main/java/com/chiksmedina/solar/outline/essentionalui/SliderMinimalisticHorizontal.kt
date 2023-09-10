@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,17 +12,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.SliderMinimalisticHorizontal: ImageVector
+val EssentionalUiGroup.SliderMinimalisticHorizontal: ImageVector
     get() {
         if (_sliderMinimalisticHorizontal != null) {
             return _sliderMinimalisticHorizontal!!
         }
-        _sliderMinimalisticHorizontal = Builder(name = "SliderMinimalisticHorizontal", defaultWidth
-                = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _sliderMinimalisticHorizontal = Builder(
+            name = "SliderMinimalisticHorizontal", defaultWidth
+            = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.75f, 3.0f)
                 curveTo(3.75f, 2.5858f, 4.0858f, 2.25f, 4.5f, 2.25f)
                 horizontalLineTo(19.5f)
@@ -35,9 +36,11 @@ public val EssentionalUiGroup.SliderMinimalisticHorizontal: ImageVector
                 curveTo(4.0858f, 3.75f, 3.75f, 3.4142f, 3.75f, 3.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.3918f, 5.3665f)
                 curveTo(20.2919f, 5.4875f, 21.0497f, 5.7464f, 21.6517f, 6.3484f)
                 curveTo(22.2536f, 6.9503f, 22.5125f, 7.7081f, 22.6335f, 8.6082f)
@@ -81,9 +84,11 @@ public val EssentionalUiGroup.SliderMinimalisticHorizontal: ImageVector
                 curveTo(20.3142f, 7.1322f, 19.9257f, 6.9518f, 19.1919f, 6.8531f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(4.5f, 21.75f)
                 curveTo(4.0858f, 21.75f, 3.75f, 21.4142f, 3.75f, 21.0f)
                 curveTo(3.75f, 20.5858f, 4.0858f, 20.25f, 4.5f, 20.25f)
@@ -94,7 +99,7 @@ public val EssentionalUiGroup.SliderMinimalisticHorizontal: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sliderMinimalisticHorizontal!!
     }
 

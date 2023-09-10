@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Bed: ImageVector
+val HomeFurnitureGroup.Bed: ImageVector
     get() {
         if (_bed != null) {
             return _bed!!
         }
-        _bed = Builder(name = "Bed", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bed = Builder(
+            name = "Bed", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
+            = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.9436f, 3.25f)
                 horizontalLineTo(13.0564f)
                 curveTo(14.8942f, 3.25f, 16.3498f, 3.25f, 17.489f, 3.4031f)
@@ -131,7 +135,7 @@ public val HomeFurnitureGroup.Bed: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bed!!
     }
 

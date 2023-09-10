@@ -1,10 +1,8 @@
 package com.chiksmedina.solar.broken.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
 import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.AstronomyGroup
 
-public val AstronomyGroup.StarFall2: ImageVector
+val AstronomyGroup.StarFall2: ImageVector
     get() {
         if (_starFall2 != null) {
             return _starFall2!!
         }
-        _starFall2 = Builder(name = "StarFall2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _starFall2 = Builder(
+            name = "StarFall2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.4796f, 6.8252f)
                 curveTo(7.6604f, 7.5067f, 6.7508f, 7.8475f, 6.641f, 8.5541f)
                 curveTo(6.5312f, 9.2606f, 7.294f, 9.8651f, 8.8196f, 11.0739f)
@@ -49,15 +51,17 @@ public val AstronomyGroup.StarFall2: ImageVector
                 curveTo(14.6997f, 2.6408f, 14.0753f, 1.9014f, 13.3488f, 2.0106f)
                 curveTo(12.6224f, 2.1197f, 12.275f, 3.0052f, 11.5803f, 4.776f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.5953f, 8.5508f)
                 curveTo(3.4819f, 10.6857f, 1.0983f, 14.7691f, 2.3312f, 21.9998f)
                 curveTo(3.4227f, 18.9857f, 6.7126f, 16.5716f, 10.3877f, 15.4097f)
             }
         }
-        .build()
+            .build()
         return _starFall2!!
     }
 

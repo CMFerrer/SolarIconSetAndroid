@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.VideoFrameCut2: ImageVector
+val VideoAudioSoundGroup.VideoFrameCut2: ImageVector
     get() {
         if (_videoFrameCut2 != null) {
             return _videoFrameCut2!!
         }
-        _videoFrameCut2 = Builder(name = "VideoFrameCut2", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _videoFrameCut2 = Builder(
+            name = "VideoFrameCut2", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.1384f, 2.0f)
                 horizontalLineTo(10.8616f)
                 curveTo(10.4776f, 2.0f, 10.237f, 2.4147f, 10.4274f, 2.7481f)
@@ -113,7 +117,7 @@ public val VideoAudioSoundGroup.VideoFrameCut2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _videoFrameCut2!!
     }
 

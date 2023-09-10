@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.medicine
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MedicineGroup
 
-public val MedicineGroup.DropperMinimalistic2: ImageVector
+val MedicineGroup.DropperMinimalistic2: ImageVector
     get() {
         if (_dropperMinimalistic2 != null) {
             return _dropperMinimalistic2!!
         }
-        _dropperMinimalistic2 = Builder(name = "DropperMinimalistic2", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _dropperMinimalistic2 = Builder(
+            name = "DropperMinimalistic2", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.25f, 16.0f)
                 curveTo(9.25f, 15.5858f, 9.5858f, 15.25f, 10.0f, 15.25f)
                 horizontalLineTo(14.0f)
@@ -34,9 +35,11 @@ public val MedicineGroup.DropperMinimalistic2: ImageVector
                 curveTo(9.5858f, 16.75f, 9.25f, 16.4142f, 9.25f, 16.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.1752f, 8.1014f)
                 curveTo(12.5324f, 7.4232f, 11.4676f, 7.4232f, 10.8248f, 8.1014f)
                 curveTo(10.5172f, 8.426f, 10.1419f, 8.8566f, 9.8388f, 9.3158f)
@@ -57,9 +60,11 @@ public val MedicineGroup.DropperMinimalistic2: ImageVector
                 curveTo(11.3256f, 9.7862f, 11.6349f, 9.4272f, 11.9135f, 9.1333f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.3535f, 3.25f)
                 curveTo(9.68f, 2.0958f, 10.7412f, 1.25f, 12.0f, 1.25f)
                 curveTo(13.2588f, 1.25f, 14.32f, 2.0958f, 14.6465f, 3.25f)
@@ -109,7 +114,7 @@ public val MedicineGroup.DropperMinimalistic2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _dropperMinimalistic2!!
     }
 

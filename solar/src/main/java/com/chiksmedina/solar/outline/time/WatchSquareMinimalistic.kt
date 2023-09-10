@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.TimeGroup
 
-public val TimeGroup.WatchSquareMinimalistic: ImageVector
+val TimeGroup.WatchSquareMinimalistic: ImageVector
     get() {
         if (_watchSquareMinimalistic != null) {
             return _watchSquareMinimalistic!!
         }
-        _watchSquareMinimalistic = Builder(name = "WatchSquareMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _watchSquareMinimalistic = Builder(
+            name = "WatchSquareMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.25f, 2.0f)
                 curveTo(6.25f, 1.5858f, 6.5858f, 1.25f, 7.0f, 1.25f)
                 horizontalLineTo(17.0f)
@@ -99,7 +103,7 @@ public val TimeGroup.WatchSquareMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _watchSquareMinimalistic!!
     }
 

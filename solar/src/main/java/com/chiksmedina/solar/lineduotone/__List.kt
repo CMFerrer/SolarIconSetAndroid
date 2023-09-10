@@ -1,11 +1,12 @@
 package com.chiksmedina.solar.lineduotone
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.LineduotoneGroup
+import com.chiksmedina.solar.LineDuotoneSolar
 import com.chiksmedina.solar.lineduotone.list.Bill
 import com.chiksmedina.solar.lineduotone.list.Checklist
 import com.chiksmedina.solar.lineduotone.list.ChecklistMinimalistic
 import com.chiksmedina.solar.lineduotone.list.List
+import com.chiksmedina.solar.lineduotone.list.List1
 import com.chiksmedina.solar.lineduotone.list.ListArrowDown
 import com.chiksmedina.solar.lineduotone.list.ListArrowDownMinimalistic
 import com.chiksmedina.solar.lineduotone.list.ListArrowUp
@@ -29,26 +30,27 @@ import com.chiksmedina.solar.lineduotone.list.SortByAlphabet
 import com.chiksmedina.solar.lineduotone.list.SortByTime
 import com.chiksmedina.solar.lineduotone.list.SortFromBottomToTop
 import com.chiksmedina.solar.lineduotone.list.SortFromTopToBottom
-import com.chiksmedina.solar.lineduotone.list.`List-1`
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object ListGroup
+object ListGroup
 
-public val LineduotoneGroup.List: ListGroup
-  get() = ListGroup
+val LineDuotoneSolar.List: ListGroup
+    get() = ListGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val ListGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val ListGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Bill, Checklist, ChecklistMinimalistic, List1, List, ListArrowDown,
+            ListArrowDownMinimalistic, ListArrowUp, ListArrowUpMinimalistic, ListCheck,
+            ListCheckMinimalistic, ListCross, ListCrossMinimalistic, ListDown, ListDownMinimalistic,
+            ListHeart, ListHeartMinimalistic, ListUp, ListUpMinimalistic, PlaaylistMinimalistic,
+            Playlist, Playlist2, PlaylistMinimalistic2, PlaylistMinimalistic3, SortByAlphabet,
+            SortByTime, SortFromBottomToTop, SortFromTopToBottom
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Bill, Checklist, ChecklistMinimalistic, `List-1`, List, ListArrowDown,
-        ListArrowDownMinimalistic, ListArrowUp, ListArrowUpMinimalistic, ListCheck,
-        ListCheckMinimalistic, ListCross, ListCrossMinimalistic, ListDown, ListDownMinimalistic,
-        ListHeart, ListHeartMinimalistic, ListUp, ListUpMinimalistic, PlaaylistMinimalistic,
-        Playlist, Playlist2, PlaylistMinimalistic2, PlaylistMinimalistic3, SortByAlphabet,
-        SortByTime, SortFromBottomToTop, SortFromTopToBottom)
-    return __AllIcons!!
-  }

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.WeatherGroup
 
-public val WeatherGroup.CloudSun2: ImageVector
+val WeatherGroup.CloudSun2: ImageVector
     get() {
         if (_cloudSun2 != null) {
             return _cloudSun2!!
         }
-        _cloudSun2 = Builder(name = "CloudSun2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cloudSun2 = Builder(
+            name = "CloudSun2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.5f, 1.25f)
                 curveTo(7.9142f, 1.25f, 8.25f, 1.5858f, 8.25f, 2.0f)
                 verticalLineTo(2.5f)
@@ -110,7 +114,7 @@ public val WeatherGroup.CloudSun2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cloudSun2!!
     }
 

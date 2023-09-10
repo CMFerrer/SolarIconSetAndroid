@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsGroup
 
-public val ArrowsGroup.DoubleAltArrowDown: ImageVector
+val ArrowsGroup.DoubleAltArrowDown: ImageVector
     get() {
         if (_doubleAltArrowDown != null) {
             return _doubleAltArrowDown!!
         }
-        _doubleAltArrowDown = Builder(name = "DoubleAltArrowDown", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _doubleAltArrowDown = Builder(
+            name = "DoubleAltArrowDown", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.4306f, 6.5119f)
                 curveTo(4.7001f, 6.1974f, 5.1736f, 6.161f, 5.4881f, 6.4306f)
                 lineTo(12.0f, 12.0122f)
@@ -45,7 +49,7 @@ public val ArrowsGroup.DoubleAltArrowDown: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _doubleAltArrowDown!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.broken.files
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,25 +11,31 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.FilesGroup
 
-public val FilesGroup.FileCorrupted: ImageVector
+val FilesGroup.FileCorrupted: ImageVector
     get() {
         if (_fileCorrupted != null) {
             return _fileCorrupted!!
         }
-        _fileCorrupted = Builder(name = "FileCorrupted", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _fileCorrupted = Builder(
+            name = "FileCorrupted", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.0f, 2.5f)
                 verticalLineTo(5.0f)
                 curveTo(13.0f, 7.357f, 13.0f, 8.5355f, 13.7322f, 9.2678f)
                 curveTo(14.4645f, 10.0f, 15.643f, 10.0f, 18.0f, 10.0f)
                 horizontalLineTo(22.0f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.0039f, 21.25f)
                 curveTo(13.5897f, 21.25f, 13.2539f, 21.5858f, 13.2539f, 22.0f)
                 curveTo(13.2539f, 22.4142f, 13.5897f, 22.75f, 14.0039f, 22.75f)
@@ -393,7 +396,7 @@ public val FilesGroup.FileCorrupted: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _fileCorrupted!!
     }
 

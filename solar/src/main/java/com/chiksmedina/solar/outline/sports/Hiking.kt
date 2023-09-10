@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SportsGroup
 
-public val SportsGroup.Hiking: ImageVector
+val SportsGroup.Hiking: ImageVector
     get() {
         if (_hiking != null) {
             return _hiking!!
         }
-        _hiking = Builder(name = "Hiking", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _hiking = Builder(
+            name = "Hiking", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.5f, 2.75f)
                 curveTo(10.5335f, 2.75f, 9.75f, 3.5335f, 9.75f, 4.5f)
                 curveTo(9.75f, 5.4665f, 10.5335f, 6.25f, 11.5f, 6.25f)
@@ -137,7 +141,7 @@ public val SportsGroup.Hiking: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hiking!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.HeadphonesSquare: ImageVector
+val ElectronicDevicesGroup.HeadphonesSquare: ImageVector
     get() {
         if (_headphonesSquare != null) {
             return _headphonesSquare!!
         }
-        _headphonesSquare = Builder(name = "HeadphonesSquare", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _headphonesSquare = Builder(
+            name = "HeadphonesSquare", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9548f, 2.25f)
                 horizontalLineTo(12.0452f)
                 curveTo(13.8818f, 2.25f, 15.3214f, 2.25f, 16.4635f, 2.3737f)
@@ -146,7 +150,7 @@ public val ElectronicDevicesGroup.HeadphonesSquare: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _headphonesSquare!!
     }
 

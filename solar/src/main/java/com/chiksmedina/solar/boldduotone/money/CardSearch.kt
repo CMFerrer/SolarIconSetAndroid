@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.money
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MoneyGroup
 
-public val MoneyGroup.CardSearch: ImageVector
+val MoneyGroup.CardSearch: ImageVector
     get() {
         if (_cardSearch != null) {
             return _cardSearch!!
         }
-        _cardSearch = Builder(name = "CardSearch", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _cardSearch = Builder(
+            name = "CardSearch", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 20.0f)
                 horizontalLineTo(13.6266f)
                 curveTo(12.9211f, 19.1061f, 12.5f, 17.9772f, 12.5f, 16.75f)
@@ -38,9 +39,11 @@ public val MoneyGroup.CardSearch: ImageVector
                 curveTo(4.3432f, 20.0f, 6.2288f, 20.0f, 10.0f, 20.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.25f, 16.0f)
                 curveTo(5.25f, 15.5858f, 5.5858f, 15.25f, 6.0f, 15.25f)
                 horizontalLineTo(10.0f)
@@ -50,9 +53,11 @@ public val MoneyGroup.CardSearch: ImageVector
                 curveTo(5.5858f, 16.75f, 5.25f, 16.4142f, 5.25f, 16.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.75f, 14.5f)
                 curveTo(16.5074f, 14.5f, 15.5f, 15.5074f, 15.5f, 16.75f)
                 curveTo(15.5f, 17.9926f, 16.5074f, 19.0f, 17.75f, 19.0f)
@@ -71,9 +76,11 @@ public val MoneyGroup.CardSearch: ImageVector
                 curveTo(15.6789f, 20.5f, 14.0f, 18.8211f, 14.0f, 16.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.9948f, 4.0f)
                 horizontalLineTo(14.0052f)
                 curveTo(17.7861f, 4.0f, 19.6766f, 4.0f, 20.8512f, 5.1158f)
@@ -86,7 +93,7 @@ public val MoneyGroup.CardSearch: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cardSearch!!
     }
 

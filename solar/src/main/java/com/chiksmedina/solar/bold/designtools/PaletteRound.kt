@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.DesignToolsGroup
 
-public val DesignToolsGroup.PaletteRound: ImageVector
+val DesignToolsGroup.PaletteRound: ImageVector
     get() {
         if (_paletteRound != null) {
             return _paletteRound!!
         }
-        _paletteRound = Builder(name = "PaletteRound", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _paletteRound = Builder(
+            name = "PaletteRound", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.8994f, 22.0f)
                 curveTo(20.1086f, 22.0f, 21.8994f, 20.2091f, 21.8994f, 18.0f)
                 curveTo(21.8994f, 15.7909f, 20.1086f, 14.0f, 17.8994f, 14.0f)
@@ -35,9 +36,11 @@ public val DesignToolsGroup.PaletteRound: ImageVector
                 horizontalLineTo(17.8994f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.2839f, 4.9588f)
                 lineTo(12.2291f, 6.0136f)
                 curveTo(11.7633f, 6.4811f, 11.5012f, 7.1138f, 11.5f, 7.7738f)
@@ -49,9 +52,11 @@ public val DesignToolsGroup.PaletteRound: ImageVector
                 curveTo(17.4218f, 3.3803f, 14.8624f, 3.3803f, 13.2839f, 4.9588f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.0f, 6.0f)
                 verticalLineTo(18.0f)
                 curveTo(10.0f, 20.2091f, 8.2091f, 22.0f, 6.0f, 22.0f)
@@ -68,7 +73,7 @@ public val DesignToolsGroup.PaletteRound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _paletteRound!!
     }
 

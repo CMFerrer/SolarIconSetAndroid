@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.networkitprogramming
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
+val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
     get() {
         if (_bugMinimalistic != null) {
             return _bugMinimalistic!!
         }
-        _bugMinimalistic = Builder(name = "BugMinimalistic", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bugMinimalistic = Builder(
+            name = "BugMinimalistic", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.75f, 10.5001f)
                 curveTo(9.75f, 10.0859f, 10.0858f, 9.7501f, 10.5f, 9.7501f)
                 horizontalLineTo(13.5f)
@@ -34,9 +35,11 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 curveTo(10.0858f, 11.2501f, 9.75f, 10.9143f, 9.75f, 10.5001f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.5f, 14.7501f)
                 curveTo(10.0858f, 14.7501f, 9.75f, 15.0859f, 9.75f, 15.5001f)
                 curveTo(9.75f, 15.9143f, 10.0858f, 16.2501f, 10.5f, 16.2501f)
@@ -46,9 +49,11 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 horizontalLineTo(10.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.6431f, 1.6142f)
                 curveTo(17.8562f, 1.9694f, 17.7411f, 2.4301f, 17.3859f, 2.6432f)
                 lineTo(16.0939f, 3.4184f)
@@ -111,7 +116,7 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bugMinimalistic!!
     }
 

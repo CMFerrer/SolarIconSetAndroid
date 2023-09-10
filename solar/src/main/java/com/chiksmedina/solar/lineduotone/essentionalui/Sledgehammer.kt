@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.lineduotone.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.EssentionalUiGroup
 
-public val EssentionalUiGroup.Sledgehammer: ImageVector
+val EssentionalUiGroup.Sledgehammer: ImageVector
     get() {
         if (_sledgehammer != null) {
             return _sledgehammer!!
         }
-        _sledgehammer = Builder(name = "Sledgehammer", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _sledgehammer = Builder(
+            name = "Sledgehammer", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.6128f, 4.6038f)
                 curveTo(9.3487f, 2.8679f, 10.2166f, 2.0f, 11.2951f, 2.0f)
                 curveTo(12.3737f, 2.0f, 13.2416f, 2.8679f, 14.9774f, 4.6038f)
@@ -37,9 +38,11 @@ public val EssentionalUiGroup.Sledgehammer: ImageVector
                 curveTo(5.009f, 7.2076f, 5.877f, 6.3397f, 7.6128f, 4.6038f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.2951f, 15.6509f)
                 lineTo(5.7717f, 21.1744f)
                 curveTo(5.4292f, 21.5168f, 5.258f, 21.6881f, 5.0799f, 21.7909f)
@@ -50,9 +53,11 @@ public val EssentionalUiGroup.Sledgehammer: ImageVector
                 curveTo(2.3121f, 18.7422f, 2.4834f, 18.571f, 2.8258f, 18.2285f)
                 lineTo(8.3493f, 12.7051f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.6597f, 8.2859f)
                 lineTo(19.0279f, 7.9177f)
                 curveTo(19.3704f, 7.5752f, 19.5416f, 7.404f, 19.6445f, 7.2259f)
@@ -64,7 +69,7 @@ public val EssentionalUiGroup.Sledgehammer: ImageVector
                 lineTo(15.7139f, 5.34f)
             }
         }
-        .build()
+            .build()
         return _sledgehammer!!
     }
 

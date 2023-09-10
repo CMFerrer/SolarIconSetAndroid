@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Chair: ImageVector
+val HomeFurnitureGroup.Chair: ImageVector
     get() {
         if (_chair != null) {
             return _chair!!
         }
-        _chair = Builder(name = "Chair", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _chair = Builder(
+            name = "Chair", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9642f, 2.25f)
                 horizontalLineTo(12.0358f)
                 curveTo(12.94f, 2.25f, 13.6693f, 2.25f, 14.2576f, 2.3033f)
@@ -108,7 +112,7 @@ public val HomeFurnitureGroup.Chair: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chair!!
     }
 

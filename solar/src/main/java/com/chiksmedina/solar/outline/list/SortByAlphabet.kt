@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ListGroup
 
-public val ListGroup.SortByAlphabet: ImageVector
+val ListGroup.SortByAlphabet: ImageVector
     get() {
         if (_sortByAlphabet != null) {
             return _sortByAlphabet!!
         }
-        _sortByAlphabet = Builder(name = "SortByAlphabet", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sortByAlphabet = Builder(
+            name = "SortByAlphabet", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.25f, 7.0f)
                 curveTo(2.25f, 6.5858f, 2.5858f, 6.25f, 3.0f, 6.25f)
                 horizontalLineTo(13.0f)
@@ -65,7 +69,7 @@ public val ListGroup.SortByAlphabet: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sortByAlphabet!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.medicine
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MedicineGroup
 
-public val MedicineGroup.TestTube: ImageVector
+val MedicineGroup.TestTube: ImageVector
     get() {
         if (_testTube != null) {
             return _testTube!!
         }
-        _testTube = Builder(name = "TestTube", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _testTube = Builder(
+            name = "TestTube", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.0f, 16.9999f)
                 curveTo(21.1046f, 16.9999f, 22.0f, 16.0672f, 22.0f, 14.9166f)
                 curveTo(22.0f, 14.1967f, 21.217f, 13.2358f, 20.6309f, 12.6174f)
@@ -32,9 +33,11 @@ public val MedicineGroup.TestTube: ImageVector
                 curveTo(18.0f, 16.0672f, 18.8954f, 16.9999f, 20.0f, 16.9999f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(16.278f, 10.5675f)
                 lineTo(17.7828f, 7.9701f)
                 lineTo(9.3727f, 3.1433f)
@@ -45,9 +48,11 @@ public val MedicineGroup.TestTube: ImageVector
                 lineTo(16.278f, 10.5675f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.2939f, 1.3545f)
                 curveTo(8.9373f, 1.1437f, 8.4774f, 1.2619f, 8.2666f, 1.6185f)
                 curveTo(8.0558f, 1.975f, 8.174f, 2.435f, 8.5306f, 2.6457f)
@@ -61,9 +66,11 @@ public val MedicineGroup.TestTube: ImageVector
                 lineTo(9.2939f, 1.3545f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.9271f, 16.3515f)
                 lineTo(12.9253f, 16.3505f)
                 lineTo(10.3126f, 14.8472f)
@@ -73,9 +80,11 @@ public val MedicineGroup.TestTube: ImageVector
                 lineTo(12.9271f, 16.3515f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.5647f, 13.525f)
                 lineTo(14.5629f, 13.5239f)
                 lineTo(10.3599f, 11.1057f)
@@ -85,9 +94,11 @@ public val MedicineGroup.TestTube: ImageVector
                 lineTo(14.5647f, 13.525f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.2763f, 10.5665f)
                 lineTo(13.7183f, 9.0947f)
                 curveTo(13.3592f, 8.8881f, 12.9007f, 9.0117f, 12.6941f, 9.3707f)
@@ -97,7 +108,7 @@ public val MedicineGroup.TestTube: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _testTube!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.WeatherGroup
 
-public val WeatherGroup.Stars: ImageVector
+val WeatherGroup.Stars: ImageVector
     get() {
         if (_stars != null) {
             return _stars!!
         }
-        _stars = Builder(name = "Stars", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _stars = Builder(
+            name = "Stars", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.3357f, 3.3827f)
                 curveTo(7.9313f, 1.8724f, 10.0687f, 1.8724f, 10.6643f, 3.3827f)
                 lineTo(11.7363f, 6.1008f)
@@ -87,7 +91,7 @@ public val WeatherGroup.Stars: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _stars!!
     }
 

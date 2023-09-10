@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.messagesconversation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MessagesConversationGroup
 
-public val MessagesConversationGroup.ChatRoundDots: ImageVector
+val MessagesConversationGroup.ChatRoundDots: ImageVector
     get() {
         if (_chatRoundDots != null) {
             return _chatRoundDots!!
         }
-        _chatRoundDots = Builder(name = "ChatRoundDots", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _chatRoundDots = Builder(
+            name = "ChatRoundDots", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 23.0f)
                 curveTo(18.0751f, 23.0f, 23.0f, 18.0751f, 23.0f, 12.0f)
                 curveTo(23.0f, 5.9249f, 18.0751f, 1.0f, 12.0f, 1.0f)
@@ -37,9 +38,11 @@ public val MessagesConversationGroup.ChatRoundDots: ImageVector
                 curveTo(8.5772f, 22.5868f, 10.2404f, 23.0f, 12.0f, 23.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.9f, 12.0004f)
                 curveTo(10.9f, 12.6079f, 11.3925f, 13.1004f, 12.0f, 13.1004f)
                 curveTo(12.6075f, 13.1004f, 13.1f, 12.6079f, 13.1f, 12.0004f)
@@ -47,9 +50,11 @@ public val MessagesConversationGroup.ChatRoundDots: ImageVector
                 curveTo(11.3925f, 10.9004f, 10.9f, 11.3929f, 10.9f, 12.0004f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.5f, 12.0004f)
                 curveTo(6.5f, 12.6079f, 6.9925f, 13.1004f, 7.6f, 13.1004f)
                 curveTo(8.2075f, 13.1004f, 8.7f, 12.6079f, 8.7f, 12.0004f)
@@ -57,9 +62,11 @@ public val MessagesConversationGroup.ChatRoundDots: ImageVector
                 curveTo(6.9925f, 10.9004f, 6.5f, 11.3929f, 6.5f, 12.0004f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.3f, 12.0004f)
                 curveTo(15.3f, 12.6079f, 15.7925f, 13.1004f, 16.4f, 13.1004f)
                 curveTo(17.0075f, 13.1004f, 17.5f, 12.6079f, 17.5f, 12.0004f)
@@ -68,7 +75,7 @@ public val MessagesConversationGroup.ChatRoundDots: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chatRoundDots!!
     }
 

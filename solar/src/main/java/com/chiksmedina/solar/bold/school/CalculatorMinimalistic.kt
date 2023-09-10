@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SchoolGroup
 
-public val SchoolGroup.CalculatorMinimalistic: ImageVector
+val SchoolGroup.CalculatorMinimalistic: ImageVector
     get() {
         if (_calculatorMinimalistic != null) {
             return _calculatorMinimalistic!!
         }
-        _calculatorMinimalistic = Builder(name = "CalculatorMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _calculatorMinimalistic = Builder(
+            name = "CalculatorMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 22.0f)
                 curveTo(7.286f, 22.0f, 4.9289f, 22.0f, 3.4645f, 20.5355f)
                 curveTo(2.0f, 19.0711f, 2.0f, 16.714f, 2.0f, 12.0f)
@@ -93,7 +97,7 @@ public val SchoolGroup.CalculatorMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _calculatorMinimalistic!!
     }
 

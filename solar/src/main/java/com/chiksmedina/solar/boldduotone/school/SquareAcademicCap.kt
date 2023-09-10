@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.school
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SchoolGroup
 
-public val SchoolGroup.SquareAcademicCap: ImageVector
+val SchoolGroup.SquareAcademicCap: ImageVector
     get() {
         if (_squareAcademicCap != null) {
             return _squareAcademicCap!!
         }
-        _squareAcademicCap = Builder(name = "SquareAcademicCap", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _squareAcademicCap = Builder(
+            name = "SquareAcademicCap", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.2172f, 3.4997f)
                 curveTo(12.7962f, 2.8335f, 11.2037f, 2.8335f, 9.7827f, 3.4997f)
                 lineTo(3.0916f, 6.6366f)
@@ -39,9 +40,11 @@ public val SchoolGroup.SquareAcademicCap: ImageVector
                 lineTo(14.2172f, 3.4997f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 11.2583f)
                 lineTo(9.7828f, 13.5006f)
                 curveTo(11.2038f, 14.1668f, 12.7963f, 14.1668f, 14.2173f, 13.5006f)
@@ -55,7 +58,7 @@ public val SchoolGroup.SquareAcademicCap: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _squareAcademicCap!!
     }
 

@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.outline
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.OutlineGroup
+import com.chiksmedina.solar.OutlineSolar
 import com.chiksmedina.solar.outline.maplocation.BranchingPathsDown
 import com.chiksmedina.solar.outline.maplocation.BranchingPathsUp
 import com.chiksmedina.solar.outline.maplocation.Compass
@@ -39,25 +39,27 @@ import com.chiksmedina.solar.outline.maplocation.Signpost2
 import com.chiksmedina.solar.outline.maplocation.Streets
 import com.chiksmedina.solar.outline.maplocation.StreetsMapPoint
 import com.chiksmedina.solar.outline.maplocation.StreetsNavigation
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object MapLocationGroup
+object MapLocationGroup
 
-public val OutlineGroup.MapLocation: MapLocationGroup
-  get() = MapLocationGroup
+val OutlineSolar.MapLocation: MapLocationGroup
+    get() = MapLocationGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val MapLocationGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val MapLocationGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            BranchingPathsDown, BranchingPathsUp, Compass, CompassBig, CompassSquare,
+            Global, Globus, Gps, Map, MapArrowDown, MapArrowLeft, MapArrowRight, MapArrowSquare,
+            MapArrowUp, MapPoint, MapPointAdd, MapPointFavourite, MapPointHospital, MapPointRemove,
+            MapPointRotate, MapPointSchool, MapPointSearch, MapPointWave, PeopleNearby, PointOnMap,
+            PointOnMapPerspective, Radar, Radar2, Route, Routing, Routing2, Routing3, Signpost,
+            Signpost2, Streets, StreetsMapPoint, StreetsNavigation
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(BranchingPathsDown, BranchingPathsUp, Compass, CompassBig, CompassSquare,
-        Global, Globus, Gps, Map, MapArrowDown, MapArrowLeft, MapArrowRight, MapArrowSquare,
-        MapArrowUp, MapPoint, MapPointAdd, MapPointFavourite, MapPointHospital, MapPointRemove,
-        MapPointRotate, MapPointSchool, MapPointSearch, MapPointWave, PeopleNearby, PointOnMap,
-        PointOnMapPerspective, Radar, Radar2, Route, Routing, Routing2, Routing3, Signpost,
-        Signpost2, Streets, StreetsMapPoint, StreetsNavigation)
-    return __AllIcons!!
-  }

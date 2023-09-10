@@ -12,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsActionGroup
 
-public val ArrowsActionGroup.SquareBottomDown: ImageVector
+val ArrowsActionGroup.SquareBottomDown: ImageVector
     get() {
         if (_squareBottomDown != null) {
             return _squareBottomDown!!
         }
-        _squareBottomDown = Builder(name = "SquareBottomDown", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _squareBottomDown = Builder(
+            name = "SquareBottomDown", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.75f, 21.0f)
                 curveTo(9.75f, 21.4142f, 9.4142f, 21.75f, 9.0f, 21.75f)
                 horizontalLineTo(3.0f)
@@ -38,9 +42,11 @@ public val ArrowsActionGroup.SquareBottomDown: ImageVector
                 curveTo(9.4142f, 20.25f, 9.75f, 20.5858f, 9.75f, 21.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.0006f, 12.9836f)
                 curveTo(2.3017f, 12.8341f, 2.641f, 12.75f, 3.0f, 12.75f)
                 curveTo(4.2426f, 12.75f, 5.25f, 13.7574f, 5.25f, 15.0f)
@@ -63,7 +69,7 @@ public val ArrowsActionGroup.SquareBottomDown: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _squareBottomDown!!
     }
 

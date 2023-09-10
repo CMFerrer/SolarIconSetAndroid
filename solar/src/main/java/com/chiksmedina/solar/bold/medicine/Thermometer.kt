@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MedicineGroup
 
-public val MedicineGroup.Thermometer: ImageVector
+val MedicineGroup.Thermometer: ImageVector
     get() {
         if (_thermometer != null) {
             return _thermometer!!
         }
-        _thermometer = Builder(name = "Thermometer", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _thermometer = Builder(
+            name = "Thermometer", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.9623f, 20.1739f)
                 lineTo(5.5787f, 20.5576f)
                 curveTo(4.9887f, 21.1475f, 4.0323f, 21.1475f, 3.4424f, 20.5576f)
@@ -62,7 +66,7 @@ public val MedicineGroup.Thermometer: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _thermometer!!
     }
 

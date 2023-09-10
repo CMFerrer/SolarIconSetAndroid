@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Camera: ImageVector
+val VideoAudioSoundGroup.Camera: ImageVector
     get() {
         if (_camera != null) {
             return _camera!!
         }
-        _camera = Builder(name = "Camera", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _camera = Builder(
+            name = "Camera", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.5984f, 4.4867f)
                 curveTo(7.8653f, 3.1768f, 9.0309f, 2.25f, 10.3663f, 2.25f)
                 horizontalLineTo(13.6337f)
@@ -101,7 +105,7 @@ public val VideoAudioSoundGroup.Camera: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _camera!!
     }
 

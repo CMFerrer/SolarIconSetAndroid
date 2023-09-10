@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.PrinterMinimalistic: ImageVector
+val ElectronicDevicesGroup.PrinterMinimalistic: ImageVector
     get() {
         if (_printerMinimalistic != null) {
             return _printerMinimalistic!!
         }
-        _printerMinimalistic = Builder(name = "PrinterMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _printerMinimalistic = Builder(
+            name = "PrinterMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9451f, 1.25f)
                 horizontalLineTo(12.0549f)
                 curveTo(13.4225f, 1.25f, 14.5248f, 1.25f, 15.3918f, 1.3665f)
@@ -111,7 +115,7 @@ public val ElectronicDevicesGroup.PrinterMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _printerMinimalistic!!
     }
 

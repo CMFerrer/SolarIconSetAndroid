@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.lineduotone.search
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,31 +12,39 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.SearchGroup
 
-public val SearchGroup.RoundedMagniferZoomOut: ImageVector
+val SearchGroup.RoundedMagniferZoomOut: ImageVector
     get() {
         if (_roundedMagniferZoomOut != null) {
             return _roundedMagniferZoomOut!!
         }
-        _roundedMagniferZoomOut = Builder(name = "RoundedMagniferZoomOut", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF8E93A6)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _roundedMagniferZoomOut = Builder(
+            name = "RoundedMagniferZoomOut", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF8E93A6)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.0f, 11.0f)
                 moveToRelative(-9.0f, 0.0f)
                 arcToRelative(9.0f, 9.0f, 0.0f, true, true, 18.0f, 0.0f)
                 arcToRelative(9.0f, 9.0f, 0.0f, true, true, -18.0f, 0.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.0f, 11.0f)
                 horizontalLineTo(11.0f)
                 horizontalLineTo(13.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.812f, 20.9748f)
                 curveTo(21.7493f, 21.0695f, 21.636f, 21.1828f, 21.4094f, 21.4094f)
                 curveTo(21.1828f, 21.636f, 21.0695f, 21.7493f, 20.9748f, 21.812f)
@@ -53,7 +58,7 @@ public val SearchGroup.RoundedMagniferZoomOut: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _roundedMagniferZoomOut!!
     }
 

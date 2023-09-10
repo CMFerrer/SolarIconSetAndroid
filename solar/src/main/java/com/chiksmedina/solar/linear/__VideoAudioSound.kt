@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.linear
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.LinearGroup
+import com.chiksmedina.solar.LinearSolar
 import com.chiksmedina.solar.linear.videoaudiosound.Album
 import com.chiksmedina.solar.linear.videoaudiosound.Camera
 import com.chiksmedina.solar.linear.videoaudiosound.CameraAdd
@@ -105,36 +105,124 @@ import com.chiksmedina.solar.linear.videoaudiosound.VolumeCross
 import com.chiksmedina.solar.linear.videoaudiosound.VolumeLoud
 import com.chiksmedina.solar.linear.videoaudiosound.VolumeSmall
 import com.chiksmedina.solar.linear.videoaudiosound.Wallpaper
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object VideoAudioSoundGroup
+object VideoAudioSoundGroup
 
-public val LinearGroup.VideoAudioSound: VideoAudioSoundGroup
-  get() = VideoAudioSoundGroup
+val LinearSolar.VideoAudioSound: VideoAudioSoundGroup
+    get() = VideoAudioSoundGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val VideoAudioSoundGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val VideoAudioSoundGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Album,
+            Camera,
+            CameraAdd,
+            CameraMinimalistic,
+            CameraRotate,
+            CameraSquare,
+            Clapperboard,
+            ClapperboardEdit,
+            ClapperboardOpen,
+            ClapperboardOpenPlay,
+            ClapperboardPlay,
+            ClapperboardText,
+            FullScreen,
+            FullScreenCircle,
+            FullScreenSquare,
+            Gallery,
+            GalleryAdd,
+            GalleryCheck,
+            GalleryCircle,
+            GalleryDownload,
+            GalleryEdit,
+            GalleryFavourite,
+            GalleryMinimalistic,
+            GalleryRemove,
+            GalleryRound,
+            GallerySend,
+            GalleryWide,
+            Library,
+            Microphone,
+            Microphone2,
+            Microphone3,
+            MicrophoneLarge,
+            MusicLibrary,
+            MusicLibrary2,
+            MusicNote,
+            MusicNotes,
+            MusicNote2,
+            MusicNote3,
+            MusicNote4,
+            MusicNoteSlider,
+            MusicNoteSlider2,
+            Muted,
+            Panorama,
+            Pause,
+            PauseCircle,
+            Pip,
+            Pip2,
+            Play,
+            PlaybackSpeed,
+            PlayCircle,
+            PlayStream,
+            Podcast,
+            QuitFullScreen,
+            QuitFullScreenCircle,
+            QuitFullScreenSquare,
+            QuitPip,
+            Record,
+            RecordCircle,
+            Reel,
+            Reel2,
+            Repeat,
+            RepeatOne,
+            RepeatOneMinimalistic,
+            Rewind10SecondsBack,
+            Rewind10SecondsForward,
+            Rewind15SecondsBack,
+            Rewind15SecondsForward,
+            Rewind5SecondsBack,
+            Rewind5SecondsForward,
+            RewindBack,
+            RewindBackCircle,
+            RewindForward,
+            RewindForwardCircle,
+            Shuffle,
+            SkipNext,
+            SkipPrevious,
+            Soundwave,
+            SoundwaveCircle,
+            SoundwaveSquare,
+            Stop,
+            StopCircle,
+            Stream,
+            ToPip,
+            UploadTrack,
+            UploadTrack2,
+            Videocamera,
+            VideocameraAdd,
+            VideocameraRecord,
+            VideoFrame,
+            VideoFrame2,
+            VideoFrameCut,
+            VideoFrameCut2,
+            VideoFramePlayHorizontal,
+            VideoFramePlayVertical,
+            VideoFrameReplace,
+            VideoLibrary,
+            Vinyl,
+            VinylRecord,
+            Volume,
+            VolumeCross,
+            VolumeLoud,
+            VolumeSmall,
+            Wallpaper
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Album, Camera, CameraAdd, CameraMinimalistic, CameraRotate, CameraSquare,
-        Clapperboard, ClapperboardEdit, ClapperboardOpen, ClapperboardOpenPlay, ClapperboardPlay,
-        ClapperboardText, FullScreen, FullScreenCircle, FullScreenSquare, Gallery, GalleryAdd,
-        GalleryCheck, GalleryCircle, GalleryDownload, GalleryEdit, GalleryFavourite,
-        GalleryMinimalistic, GalleryRemove, GalleryRound, GallerySend, GalleryWide, Library,
-        Microphone, Microphone2, Microphone3, MicrophoneLarge, MusicLibrary, MusicLibrary2,
-        MusicNote, MusicNotes, MusicNote2, MusicNote3, MusicNote4, MusicNoteSlider,
-        MusicNoteSlider2, Muted, Panorama, Pause, PauseCircle, Pip, Pip2, Play, PlaybackSpeed,
-        PlayCircle, PlayStream, Podcast, QuitFullScreen, QuitFullScreenCircle, QuitFullScreenSquare,
-        QuitPip, Record, RecordCircle, Reel, Reel2, Repeat, RepeatOne, RepeatOneMinimalistic,
-        Rewind10SecondsBack, Rewind10SecondsForward, Rewind15SecondsBack, Rewind15SecondsForward,
-        Rewind5SecondsBack, Rewind5SecondsForward, RewindBack, RewindBackCircle, RewindForward,
-        RewindForwardCircle, Shuffle, SkipNext, SkipPrevious, Soundwave, SoundwaveCircle,
-        SoundwaveSquare, Stop, StopCircle, Stream, ToPip, UploadTrack, UploadTrack2, Videocamera,
-        VideocameraAdd, VideocameraRecord, VideoFrame, VideoFrame2, VideoFrameCut, VideoFrameCut2,
-        VideoFramePlayHorizontal, VideoFramePlayVertical, VideoFrameReplace, VideoLibrary, Vinyl,
-        VinylRecord, Volume, VolumeCross, VolumeLoud, VolumeSmall, Wallpaper)
-    return __AllIcons!!
-  }

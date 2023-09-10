@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.VinylRecord: ImageVector
+val VideoAudioSoundGroup.VinylRecord: ImageVector
     get() {
         if (_vinylRecord != null) {
             return _vinylRecord!!
         }
-        _vinylRecord = Builder(name = "VinylRecord", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _vinylRecord = Builder(
+            name = "VinylRecord", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.9289f, 19.0711f)
                 curveTo(8.8342f, 22.9763f, 15.1658f, 22.9763f, 19.0711f, 19.0711f)
                 curveTo(22.9763f, 15.1658f, 22.9763f, 8.8342f, 19.0711f, 4.9289f)
@@ -32,9 +33,11 @@ public val VideoAudioSoundGroup.VinylRecord: ImageVector
                 curveTo(1.0237f, 8.8342f, 1.0237f, 15.1658f, 4.9289f, 19.0711f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.1265f, 6.873f)
                 curveTo(16.8336f, 6.5801f, 16.3588f, 6.5801f, 16.0659f, 6.873f)
                 curveTo(15.773f, 7.1659f, 15.773f, 7.6408f, 16.0659f, 7.9337f)
@@ -44,9 +47,11 @@ public val VideoAudioSoundGroup.VinylRecord: ImageVector
                 curveTo(19.9578f, 14.2947f, 19.9578f, 9.7043f, 17.1265f, 6.873f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.9341f, 7.9337f)
                 curveTo(8.227f, 7.6408f, 8.227f, 7.1659f, 7.9341f, 6.873f)
                 curveTo(7.6412f, 6.5801f, 7.1664f, 6.5801f, 6.8735f, 6.873f)
@@ -56,9 +61,11 @@ public val VideoAudioSoundGroup.VinylRecord: ImageVector
                 curveTo(5.6886f, 13.8199f, 5.6886f, 10.1792f, 7.9341f, 7.9337f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.3483f, 9.3479f)
                 curveTo(10.8128f, 7.8834f, 13.1872f, 7.8834f, 14.6517f, 9.3479f)
                 curveTo(16.1161f, 10.8123f, 16.1161f, 13.1867f, 14.6517f, 14.6512f)
@@ -73,7 +80,7 @@ public val VideoAudioSoundGroup.VinylRecord: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _vinylRecord!!
     }
 

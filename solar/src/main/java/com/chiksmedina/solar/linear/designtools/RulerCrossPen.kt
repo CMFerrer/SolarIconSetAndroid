@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.linear.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.DesignToolsGroup
 
-public val DesignToolsGroup.RulerCrossPen: ImageVector
+val DesignToolsGroup.RulerCrossPen: ImageVector
     get() {
         if (_rulerCrossPen != null) {
             return _rulerCrossPen!!
         }
-        _rulerCrossPen = Builder(name = "RulerCrossPen", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _rulerCrossPen = Builder(
+            name = "RulerCrossPen", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.2535f, 19.4243f)
                 curveTo(12.9606f, 19.1314f, 12.4857f, 19.1314f, 12.1928f, 19.4243f)
                 curveTo(11.8999f, 19.7172f, 11.8999f, 20.1921f, 12.1928f, 20.485f)
@@ -165,9 +166,11 @@ public val DesignToolsGroup.RulerCrossPen: ImageVector
                 lineTo(19.4243f, 12.1928f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.3601f, 4.0787f)
                 lineTo(15.2869f, 3.1518f)
                 curveTo(16.8226f, 1.6161f, 19.3125f, 1.6161f, 20.8482f, 3.1518f)
@@ -199,7 +202,7 @@ public val DesignToolsGroup.RulerCrossPen: ImageVector
                 lineTo(2.3218f, 19.8021f)
             }
         }
-        .build()
+            .build()
         return _rulerCrossPen!!
     }
 

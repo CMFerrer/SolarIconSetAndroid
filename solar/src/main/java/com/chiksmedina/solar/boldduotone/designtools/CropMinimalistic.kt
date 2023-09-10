@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.DesignToolsGroup
 
-public val DesignToolsGroup.CropMinimalistic: ImageVector
+val DesignToolsGroup.CropMinimalistic: ImageVector
     get() {
         if (_cropMinimalistic != null) {
             return _cropMinimalistic!!
         }
-        _cropMinimalistic = Builder(name = "CropMinimalistic", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _cropMinimalistic = Builder(
+            name = "CropMinimalistic", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.1716f, 3.1716f)
                 curveTo(2.0f, 4.3432f, 2.0f, 6.2288f, 2.0f, 10.0f)
                 verticalLineTo(14.0f)
@@ -39,9 +40,11 @@ public val DesignToolsGroup.CropMinimalistic: ImageVector
                 curveTo(6.2288f, 2.0f, 4.3432f, 2.0f, 3.1716f, 3.1716f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.75f, 6.0f)
                 curveTo(8.75f, 5.5858f, 8.4142f, 5.25f, 8.0f, 5.25f)
                 curveTo(7.5858f, 5.25f, 7.25f, 5.5858f, 7.25f, 6.0f)
@@ -71,9 +74,11 @@ public val DesignToolsGroup.CropMinimalistic: ImageVector
                 verticalLineTo(6.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 8.75f)
                 curveTo(12.964f, 8.75f, 13.6116f, 8.7516f, 14.0946f, 8.8165f)
                 curveTo(14.5561f, 8.8786f, 14.7536f, 8.9858f, 14.8839f, 9.1161f)
@@ -94,7 +99,7 @@ public val DesignToolsGroup.CropMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cropMinimalistic!!
     }
 

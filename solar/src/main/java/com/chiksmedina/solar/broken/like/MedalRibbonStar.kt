@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.like
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.LikeGroup
 
-public val LikeGroup.MedalRibbonStar: ImageVector
+val LikeGroup.MedalRibbonStar: ImageVector
     get() {
         if (_medalRibbonStar != null) {
             return _medalRibbonStar!!
         }
-        _medalRibbonStar = Builder(name = "MedalRibbonStar", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _medalRibbonStar = Builder(
+            name = "MedalRibbonStar", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.1459f, 7.0225f)
                 curveTo(11.5259f, 6.3408f, 11.7159f, 6.0f, 12.0f, 6.0f)
                 curveTo(12.2841f, 6.0f, 12.4741f, 6.3408f, 12.8541f, 7.0225f)
@@ -58,9 +59,11 @@ public val LikeGroup.MedalRibbonStar: ImageVector
                 lineTo(11.1459f, 7.0225f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.3511f, 15.0f)
                 lineTo(6.7142f, 17.323f)
                 curveTo(6.0859f, 19.6148f, 5.7717f, 20.7607f, 6.191f, 21.3881f)
@@ -74,9 +77,11 @@ public val LikeGroup.MedalRibbonStar: ImageVector
                 curveTo(18.2283f, 20.7607f, 17.9141f, 19.6148f, 17.2858f, 17.323f)
                 lineTo(16.6489f, 15.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.5f, 6.3969f)
                 curveTo(5.1775f, 7.2016f, 5.0f, 8.0801f, 5.0f, 9.0f)
                 curveTo(5.0f, 12.866f, 8.134f, 16.0f, 12.0f, 16.0f)
@@ -85,7 +90,7 @@ public val LikeGroup.MedalRibbonStar: ImageVector
                 curveTo(11.0801f, 2.0f, 10.2016f, 2.1774f, 9.3969f, 2.5f)
             }
         }
-        .build()
+            .build()
         return _medalRibbonStar!!
     }
 

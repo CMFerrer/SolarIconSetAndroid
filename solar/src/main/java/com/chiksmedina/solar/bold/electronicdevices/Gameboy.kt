@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Gameboy: ImageVector
+val ElectronicDevicesGroup.Gameboy: ImageVector
     get() {
         if (_gameboy != null) {
             return _gameboy!!
         }
-        _gameboy = Builder(name = "Gameboy", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _gameboy = Builder(
+            name = "Gameboy", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 22.0f)
                 curveTo(7.7574f, 22.0f, 5.636f, 22.0f, 4.318f, 20.5355f)
                 curveTo(3.0f, 19.0711f, 3.0f, 16.714f, 3.0f, 12.0f)
@@ -91,7 +95,7 @@ public val ElectronicDevicesGroup.Gameboy: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _gameboy!!
     }
 

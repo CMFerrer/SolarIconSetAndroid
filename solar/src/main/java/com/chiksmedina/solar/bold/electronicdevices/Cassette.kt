@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Cassette: ImageVector
+val ElectronicDevicesGroup.Cassette: ImageVector
     get() {
         if (_cassette != null) {
             return _cassette!!
         }
-        _cassette = Builder(name = "Cassette", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _cassette = Builder(
+            name = "Cassette", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 4.0f)
                 horizontalLineTo(11.2498f)
                 verticalLineTo(7.75f)
@@ -37,9 +38,11 @@ public val ElectronicDevicesGroup.Cassette: ImageVector
                 curveTo(7.939f, 4.0f, 8.8874f, 4.0f, 10.0f, 4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.75f, 12.25f)
                 curveTo(14.9216f, 12.25f, 14.25f, 12.9216f, 14.25f, 13.75f)
                 curveTo(14.25f, 14.5784f, 14.9216f, 15.25f, 15.75f, 15.25f)
@@ -47,9 +50,11 @@ public val ElectronicDevicesGroup.Cassette: ImageVector
                 curveTo(17.25f, 12.9216f, 16.5784f, 12.25f, 15.75f, 12.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.75f, 13.75f)
                 curveTo(6.75f, 12.9216f, 7.4216f, 12.25f, 8.25f, 12.25f)
                 curveTo(9.0784f, 12.25f, 9.75f, 12.9216f, 9.75f, 13.75f)
@@ -57,9 +62,11 @@ public val ElectronicDevicesGroup.Cassette: ImageVector
                 curveTo(7.4216f, 15.25f, 6.75f, 14.5784f, 6.75f, 13.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.1716f, 5.1716f)
                 curveTo(3.7497f, 4.5934f, 4.5017f, 4.3006f, 5.5684f, 4.1523f)
                 lineTo(6.3384f, 6.2057f)
@@ -95,9 +102,11 @@ public val ElectronicDevicesGroup.Cassette: ImageVector
                 curveTo(11.25f, 12.0931f, 9.9068f, 10.75f, 8.25f, 10.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.875f, 4.0301f)
                 curveTo(16.0607f, 4.0f, 15.1124f, 4.0f, 14.0f, 4.0f)
                 horizontalLineTo(12.7498f)
@@ -111,7 +120,7 @@ public val ElectronicDevicesGroup.Cassette: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cassette!!
     }
 

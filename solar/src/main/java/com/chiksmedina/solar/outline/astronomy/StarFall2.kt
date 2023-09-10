@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.AstronomyGroup
 
-public val AstronomyGroup.StarFall2: ImageVector
+val AstronomyGroup.StarFall2: ImageVector
     get() {
         if (_starFall2 != null) {
             return _starFall2!!
         }
-        _starFall2 = Builder(name = "StarFall2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _starFall2 = Builder(
+            name = "StarFall2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.4827f, 3.5897f)
                 lineTo(16.8446f, 4.0182f)
                 curveTo(17.2403f, 4.4867f, 17.309f, 4.546f, 17.3792f, 4.5809f)
@@ -139,7 +143,7 @@ public val AstronomyGroup.StarFall2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _starFall2!!
     }
 

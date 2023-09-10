@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Podcast: ImageVector
+val VideoAudioSoundGroup.Podcast: ImageVector
     get() {
         if (_podcast != null) {
             return _podcast!!
         }
-        _podcast = Builder(name = "Podcast", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _podcast = Builder(
+            name = "Podcast", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.8373f, 10.5455f)
                 curveTo(10.8373f, 10.1439f, 10.5249f, 9.8183f, 10.1396f, 9.8183f)
                 horizontalLineTo(8.5815f)
@@ -53,9 +54,11 @@ public val VideoAudioSoundGroup.Podcast: ImageVector
                 curveTo(10.5249f, 11.2728f, 10.8373f, 10.9472f, 10.8373f, 10.5455f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 4.0f)
                 curveTo(8.6705f, 4.0f, 5.9463f, 6.7013f, 5.7342f, 10.1161f)
                 curveTo(5.3821f, 9.9257f, 4.9822f, 9.8182f, 4.5581f, 9.8182f)
@@ -80,7 +83,7 @@ public val VideoAudioSoundGroup.Podcast: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _podcast!!
     }
 

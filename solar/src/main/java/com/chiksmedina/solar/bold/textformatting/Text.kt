@@ -14,16 +14,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TextFormattingGroup
 
-public val TextFormattingGroup.Text: ImageVector
+val TextFormattingGroup.Text: ImageVector
     get() {
         if (_text != null) {
             return _text!!
         }
-        _text = Builder(name = "Text", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _text = Builder(
+            name = "Text", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.9342f, 2.0f)
                 curveTo(7.956f, 2.0f, 7.978f, 2.0f, 8.0f, 2.0f)
                 lineTo(16.0658f, 2.0f)
@@ -60,14 +64,16 @@ public val TextFormattingGroup.Text: ImageVector
                 curveTo(6.2839f, 1.9999f, 7.0477f, 2.0f, 7.9342f, 2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 2.0f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 2.0f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.0f, 21.0f)
                 horizontalLineTo(17.0f)
             }
         }
-        .build()
+            .build()
         return _text!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.MusicNoteSlider2: ImageVector
+val VideoAudioSoundGroup.MusicNoteSlider2: ImageVector
     get() {
         if (_musicNoteSlider2 != null) {
             return _musicNoteSlider2!!
         }
-        _musicNoteSlider2 = Builder(name = "MusicNoteSlider2", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _musicNoteSlider2 = Builder(
+            name = "MusicNoteSlider2", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.4186f, 8.0f)
                 curveTo(6.4186f, 5.1716f, 6.4186f, 3.7574f, 7.236f, 2.8787f)
                 curveTo(8.0534f, 2.0f, 9.3689f, 2.0f, 12.0f, 2.0f)
@@ -143,7 +147,7 @@ public val VideoAudioSoundGroup.MusicNoteSlider2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _musicNoteSlider2!!
     }
 

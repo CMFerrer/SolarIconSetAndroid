@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Waterdrop: ImageVector
+val EssentionalUiGroup.Waterdrop: ImageVector
     get() {
         if (_waterdrop != null) {
             return _waterdrop!!
         }
-        _waterdrop = Builder(name = "Waterdrop", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _waterdrop = Builder(
+            name = "Waterdrop", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.7006f, 6.9571f)
                 curveTo(12.0766f, 6.7832f, 12.2404f, 6.3375f, 12.0665f, 5.9616f)
                 curveTo(11.8927f, 5.5856f, 11.447f, 5.4218f, 11.071f, 5.5956f)
@@ -33,9 +35,11 @@ public val EssentionalUiGroup.Waterdrop: ImageVector
                 curveTo(8.9073f, 9.1255f, 10.1551f, 7.6718f, 11.7006f, 6.9571f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.3856f, 1.7286f)
                 curveTo(12.8568f, 1.0905f, 11.1432f, 1.0905f, 9.6144f, 1.7286f)
                 curveTo(5.1533f, 3.5909f, 2.25f, 8.0216f, 2.25f, 12.9281f)
@@ -58,7 +62,7 @@ public val EssentionalUiGroup.Waterdrop: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _waterdrop!!
     }
 

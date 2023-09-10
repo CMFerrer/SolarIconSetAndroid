@@ -11,17 +11,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsGroup
 
-public val ArrowsGroup.SquareDoubleAltArrowRight: ImageVector
+val ArrowsGroup.SquareDoubleAltArrowRight: ImageVector
     get() {
         if (_squareDoubleAltArrowRight != null) {
             return _squareDoubleAltArrowRight!!
         }
-        _squareDoubleAltArrowRight = Builder(name = "SquareDoubleAltArrowRight", defaultWidth =
-                24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _squareDoubleAltArrowRight = Builder(
+            name = "SquareDoubleAltArrowRight", defaultWidth =
+            24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(22.0f, 12.0f)
                 curveTo(22.0f, 7.286f, 22.0f, 4.9289f, 20.5355f, 3.4645f)
                 curveTo(19.0711f, 2.0f, 16.714f, 2.0f, 12.0f, 2.0f)
@@ -56,7 +60,7 @@ public val ArrowsGroup.SquareDoubleAltArrowRight: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _squareDoubleAltArrowRight!!
     }
 

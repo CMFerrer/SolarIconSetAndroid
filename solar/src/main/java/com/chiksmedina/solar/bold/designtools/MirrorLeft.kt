@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.DesignToolsGroup
 
-public val DesignToolsGroup.MirrorLeft: ImageVector
+val DesignToolsGroup.MirrorLeft: ImageVector
     get() {
         if (_mirrorLeft != null) {
             return _mirrorLeft!!
         }
-        _mirrorLeft = Builder(name = "MirrorLeft", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _mirrorLeft = Builder(
+            name = "MirrorLeft", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.3408f, 20.75f)
                 curveTo(13.3408f, 20.3358f, 13.6766f, 20.0f, 14.0908f, 20.0f)
                 horizontalLineTo(14.9999f)
@@ -85,9 +87,11 @@ public val DesignToolsGroup.MirrorLeft: ImageVector
                 curveTo(20.2432f, 7.1334f, 20.576f, 6.7947f, 20.9902f, 6.7911f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.0f, 10.75f)
                 lineTo(3.0f, 12.75f)
                 curveTo(3.0f, 16.5212f, 3.0f, 18.4069f, 4.1716f, 19.5784f)
@@ -102,7 +106,7 @@ public val DesignToolsGroup.MirrorLeft: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _mirrorLeft!!
     }
 

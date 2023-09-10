@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.messagesconversation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MessagesConversationGroup
 
-public val MessagesConversationGroup.ChatSquareCode: ImageVector
+val MessagesConversationGroup.ChatSquareCode: ImageVector
     get() {
         if (_chatSquareCode != null) {
             return _chatSquareCode!!
         }
-        _chatSquareCode = Builder(name = "ChatSquareCode", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _chatSquareCode = Builder(
+            name = "ChatSquareCode", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.7916f, 21.319f)
                 lineTo(13.1953f, 22.3265f)
                 curveTo(12.6638f, 23.2244f, 11.3361f, 23.2244f, 10.8046f, 22.3265f)
@@ -50,9 +51,11 @@ public val MessagesConversationGroup.ChatSquareCode: ImageVector
                 curveTo(14.4854f, 20.1469f, 14.2542f, 20.5376f, 13.7916f, 21.319f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.2665f, 6.8295f)
                 curveTo(15.5887f, 6.5073f, 16.1111f, 6.5073f, 16.4333f, 6.8295f)
                 lineTo(16.622f, 7.0183f)
@@ -73,9 +76,11 @@ public val MessagesConversationGroup.ChatSquareCode: ImageVector
                 curveTo(14.9444f, 7.6741f, 14.9444f, 7.1517f, 15.2665f, 6.8295f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.637f, 4.6032f)
                 curveTo(14.0771f, 4.7211f, 14.3383f, 5.1735f, 14.2203f, 5.6136f)
                 lineTo(11.3733f, 16.2388f)
@@ -85,9 +90,11 @@ public val MessagesConversationGroup.ChatSquareCode: ImageVector
                 curveTo(12.7445f, 4.7464f, 13.1969f, 4.4852f, 13.637f, 4.6032f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.7335f, 6.8295f)
                 curveTo(8.4113f, 6.5073f, 7.8889f, 6.5073f, 7.5667f, 6.8295f)
                 lineTo(7.378f, 7.0183f)
@@ -109,7 +116,7 @@ public val MessagesConversationGroup.ChatSquareCode: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chatSquareCode!!
     }
 

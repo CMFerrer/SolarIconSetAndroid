@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.TimeGroup
 
-public val TimeGroup.CalendarSearch: ImageVector
+val TimeGroup.CalendarSearch: ImageVector
     get() {
         if (_calendarSearch != null) {
             return _calendarSearch!!
         }
-        _calendarSearch = Builder(name = "CalendarSearch", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _calendarSearch = Builder(
+            name = "CalendarSearch", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.0f, 1.75f)
                 curveTo(7.4142f, 1.75f, 7.75f, 2.0858f, 7.75f, 2.5f)
                 verticalLineTo(3.2627f)
@@ -100,7 +104,7 @@ public val TimeGroup.CalendarSearch: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _calendarSearch!!
     }
 

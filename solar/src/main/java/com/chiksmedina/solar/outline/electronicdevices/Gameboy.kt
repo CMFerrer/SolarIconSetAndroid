@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Gameboy: ImageVector
+val ElectronicDevicesGroup.Gameboy: ImageVector
     get() {
         if (_gameboy != null) {
             return _gameboy!!
         }
-        _gameboy = Builder(name = "Gameboy", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _gameboy = Builder(
+            name = "Gameboy", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9375f, 1.25f)
                 horizontalLineTo(12.0625f)
                 curveTo(14.1308f, 1.25f, 15.7678f, 1.25f, 17.0485f, 1.4413f)
@@ -124,9 +125,11 @@ public val ElectronicDevicesGroup.Gameboy: ImageVector
                 curveTo(7.75f, 13.5858f, 8.0858f, 13.25f, 8.5f, 13.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.3333f, 13.8333f)
                 curveTo(16.3333f, 14.2936f, 15.9602f, 14.6667f, 15.5f, 14.6667f)
                 curveTo(15.0398f, 14.6667f, 14.6667f, 14.2936f, 14.6667f, 13.8333f)
@@ -134,9 +137,11 @@ public val ElectronicDevicesGroup.Gameboy: ImageVector
                 curveTo(15.9602f, 13.0f, 16.3333f, 13.3731f, 16.3333f, 13.8333f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.3333f, 17.1667f)
                 curveTo(16.3333f, 17.6269f, 15.9602f, 18.0f, 15.5f, 18.0f)
                 curveTo(15.0398f, 18.0f, 14.6667f, 17.6269f, 14.6667f, 17.1667f)
@@ -144,9 +149,11 @@ public val ElectronicDevicesGroup.Gameboy: ImageVector
                 curveTo(15.9602f, 16.3333f, 16.3333f, 16.7064f, 16.3333f, 17.1667f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.6667f, 15.5f)
                 curveTo(14.6667f, 15.9602f, 14.2936f, 16.3333f, 13.8333f, 16.3333f)
                 curveTo(13.3731f, 16.3333f, 13.0f, 15.9602f, 13.0f, 15.5f)
@@ -154,9 +161,11 @@ public val ElectronicDevicesGroup.Gameboy: ImageVector
                 curveTo(14.2936f, 14.6667f, 14.6667f, 15.0398f, 14.6667f, 15.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.0f, 15.5f)
                 curveTo(18.0f, 15.9602f, 17.6269f, 16.3333f, 17.1667f, 16.3333f)
                 curveTo(16.7064f, 16.3333f, 16.3333f, 15.9602f, 16.3333f, 15.5f)
@@ -165,7 +174,7 @@ public val ElectronicDevicesGroup.Gameboy: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _gameboy!!
     }
 

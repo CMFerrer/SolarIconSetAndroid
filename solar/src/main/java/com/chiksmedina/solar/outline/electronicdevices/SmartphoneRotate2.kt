@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartphoneRotate2: ImageVector
+val ElectronicDevicesGroup.SmartphoneRotate2: ImageVector
     get() {
         if (_smartphoneRotate2 != null) {
             return _smartphoneRotate2!!
         }
-        _smartphoneRotate2 = Builder(name = "SmartphoneRotate2", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _smartphoneRotate2 = Builder(
+            name = "SmartphoneRotate2", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.2606f, 1.8743f)
                 curveTo(16.3301f, 1.466f, 16.7174f, 1.1913f, 17.1258f, 1.2607f)
                 curveTo(20.3254f, 1.8051f, 22.75f, 4.6212f, 22.75f, 8.0001f)
@@ -111,7 +115,7 @@ public val ElectronicDevicesGroup.SmartphoneRotate2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _smartphoneRotate2!!
     }
 

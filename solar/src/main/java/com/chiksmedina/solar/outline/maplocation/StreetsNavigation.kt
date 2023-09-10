@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MapLocationGroup
 
-public val MapLocationGroup.StreetsNavigation: ImageVector
+val MapLocationGroup.StreetsNavigation: ImageVector
     get() {
         if (_streetsNavigation != null) {
             return _streetsNavigation!!
         }
-        _streetsNavigation = Builder(name = "StreetsNavigation", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _streetsNavigation = Builder(
+            name = "StreetsNavigation", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.4511f, 1.25f)
                 horizontalLineTo(14.5489f)
                 curveTo(16.1512f, 1.25f, 17.4205f, 1.25f, 18.4248f, 1.3687f)
@@ -130,7 +134,7 @@ public val MapLocationGroup.StreetsNavigation: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _streetsNavigation!!
     }
 

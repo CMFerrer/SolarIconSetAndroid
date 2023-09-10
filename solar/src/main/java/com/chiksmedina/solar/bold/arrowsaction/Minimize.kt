@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsActionGroup
 
-public val ArrowsActionGroup.Minimize: ImageVector
+val ArrowsActionGroup.Minimize: ImageVector
     get() {
         if (_minimize != null) {
             return _minimize!!
         }
-        _minimize = Builder(name = "Minimize", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _minimize = Builder(
+            name = "Minimize", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.8571f, 9.75f)
                 curveTo(21.2714f, 9.75f, 21.6071f, 9.4142f, 21.6071f, 9.0f)
                 curveTo(21.6071f, 8.5858f, 21.2714f, 8.25f, 20.8571f, 8.25f)
@@ -37,9 +41,11 @@ public val ArrowsActionGroup.Minimize: ImageVector
                 horizontalLineTo(20.8571f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.1429f, 14.25f)
                 curveTo(2.7286f, 14.25f, 2.3929f, 14.5858f, 2.3929f, 15.0f)
                 curveTo(2.3929f, 15.4142f, 2.7286f, 15.75f, 3.1429f, 15.75f)
@@ -57,7 +63,7 @@ public val ArrowsActionGroup.Minimize: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _minimize!!
     }
 

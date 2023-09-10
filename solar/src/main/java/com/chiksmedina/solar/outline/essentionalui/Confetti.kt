@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Confetti: ImageVector
+val EssentionalUiGroup.Confetti: ImageVector
     get() {
         if (_confetti != null) {
             return _confetti!!
         }
-        _confetti = Builder(name = "Confetti", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _confetti = Builder(
+            name = "Confetti", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.6014f, 2.4004f)
                 curveTo(15.3816f, 2.1807f, 15.1051f, 2.1903f, 14.9534f, 2.2104f)
                 curveTo(14.8101f, 2.2295f, 14.6383f, 2.2783f, 14.4747f, 2.3249f)
@@ -92,9 +93,11 @@ public val EssentionalUiGroup.Confetti: ImageVector
                 lineTo(14.7018f, 3.2999f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.435f, 3.1704f)
                 curveTo(10.6511f, 2.817f, 10.5397f, 2.3554f, 10.1863f, 2.1393f)
                 curveTo(9.8329f, 1.9233f, 9.3713f, 2.0346f, 9.1552f, 2.388f)
@@ -108,9 +111,11 @@ public val EssentionalUiGroup.Confetti: ImageVector
                 curveTo(10.3175f, 3.7573f, 10.2782f, 3.4269f, 10.435f, 3.1704f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.6862f, 3.9408f)
                 curveTo(7.4767f, 3.7313f, 7.1371f, 3.7313f, 6.9276f, 3.9408f)
                 curveTo(6.7181f, 4.1503f, 6.7181f, 4.4899f, 6.9276f, 4.6994f)
@@ -118,9 +123,11 @@ public val EssentionalUiGroup.Confetti: ImageVector
                 curveTo(7.8956f, 4.4899f, 7.8956f, 4.1503f, 7.6862f, 3.9408f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.2774f, 5.6041f)
                 curveTo(18.3587f, 5.198f, 18.0953f, 4.8029f, 17.6891f, 4.7216f)
                 curveTo(17.2829f, 4.6404f, 16.8878f, 4.9038f, 16.8066f, 5.31f)
@@ -136,9 +143,11 @@ public val EssentionalUiGroup.Confetti: ImageVector
                 lineTo(18.2774f, 5.6041f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(22.5235f, 8.8423f)
                 curveTo(22.7793f, 9.3962f, 22.6067f, 10.025f, 22.1395f, 10.4922f)
                 curveTo(21.8687f, 10.7631f, 21.5056f, 10.8858f, 21.1824f, 10.9432f)
@@ -180,9 +189,11 @@ public val EssentionalUiGroup.Confetti: ImageVector
                 curveTo(19.5306f, 9.4908f, 19.5646f, 9.7262f, 19.596f, 9.9042f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.3308f, 13.7297f)
                 curveTo(20.6262f, 13.4678f, 21.0468f, 13.4014f, 21.4085f, 13.5595f)
                 lineTo(21.7f, 13.687f)
@@ -198,9 +209,11 @@ public val EssentionalUiGroup.Confetti: ImageVector
                 curveTo(18.3439f, 14.5666f, 19.5215f, 14.4473f, 20.3308f, 13.7297f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.0582f, 15.3134f)
                 curveTo(19.2677f, 15.1039f, 19.6073f, 15.1039f, 19.8168f, 15.3134f)
                 curveTo(20.0263f, 15.5229f, 20.0263f, 15.8625f, 19.8168f, 16.0719f)
@@ -208,9 +221,11 @@ public val EssentionalUiGroup.Confetti: ImageVector
                 curveTo(18.8488f, 15.8625f, 18.8488f, 15.5229f, 19.0582f, 15.3134f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.9157f, 7.1571f)
                 curveTo(12.7062f, 6.9477f, 12.3666f, 6.9477f, 12.1571f, 7.1571f)
                 curveTo(11.9476f, 7.3666f, 11.9476f, 7.7062f, 12.1571f, 7.9157f)
@@ -218,9 +233,11 @@ public val EssentionalUiGroup.Confetti: ImageVector
                 curveTo(13.1251f, 7.7062f, 13.1251f, 7.3666f, 12.9157f, 7.1571f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.1571f, 10.1571f)
                 curveTo(17.3666f, 9.9477f, 17.7062f, 9.9477f, 17.9157f, 10.1571f)
                 curveTo(18.1251f, 10.3666f, 18.1251f, 10.7062f, 17.9157f, 10.9157f)
@@ -228,9 +245,11 @@ public val EssentionalUiGroup.Confetti: ImageVector
                 curveTo(16.9476f, 10.7062f, 16.9476f, 10.3666f, 17.1571f, 10.1571f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.6388f, 6.885f)
                 curveTo(10.2252f, 7.3197f, 10.8997f, 7.9943f, 11.7184f, 8.813f)
                 lineTo(15.1861f, 12.2807f)
@@ -293,7 +312,7 @@ public val EssentionalUiGroup.Confetti: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _confetti!!
     }
 

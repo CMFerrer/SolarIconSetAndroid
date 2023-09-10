@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsActionGroup
 
-public val ArrowsActionGroup.Login3: ImageVector
+val ArrowsActionGroup.Login3: ImageVector
     get() {
         if (_login3 != null) {
             return _login3!!
         }
-        _login3 = Builder(name = "Login3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _login3 = Builder(
+            name = "Login3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.5f, 9.5676f)
                 verticalLineTo(14.4324f)
                 curveTo(3.5f, 16.7258f, 3.5f, 17.8724f, 4.2216f, 18.5849f)
@@ -74,7 +78,7 @@ public val ArrowsActionGroup.Login3: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _login3!!
     }
 

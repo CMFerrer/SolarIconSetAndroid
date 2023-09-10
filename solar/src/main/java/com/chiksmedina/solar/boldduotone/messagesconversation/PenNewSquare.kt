@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.messagesconversation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MessagesConversationGroup
 
-public val MessagesConversationGroup.PenNewSquare: ImageVector
+val MessagesConversationGroup.PenNewSquare: ImageVector
     get() {
         if (_penNewSquare != null) {
             return _penNewSquare!!
         }
-        _penNewSquare = Builder(name = "PenNewSquare", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _penNewSquare = Builder(
+            name = "PenNewSquare", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(1.0f, 12.0f)
                 curveTo(1.0f, 6.8145f, 1.0f, 4.2218f, 2.6109f, 2.6109f)
                 curveTo(4.2218f, 1.0f, 6.8145f, 1.0f, 12.0f, 1.0f)
@@ -35,9 +36,11 @@ public val MessagesConversationGroup.PenNewSquare: ImageVector
                 curveTo(1.0f, 19.7782f, 1.0f, 17.1854f, 1.0f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.9265f, 14.3018f)
                 curveTo(14.1716f, 14.1107f, 14.3938f, 13.8885f, 14.8382f, 13.4441f)
                 lineTo(20.3785f, 7.9037f)
@@ -62,9 +65,11 @@ public val MessagesConversationGroup.PenNewSquare: ImageVector
                 curveTo(13.3248f, 14.7205f, 13.6375f, 14.5273f, 13.9265f, 14.3018f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.1132f, 6.1691f)
                 curveTo(23.2957f, 4.9866f, 23.2957f, 3.0694f, 22.1132f, 1.8869f)
                 curveTo(20.9307f, 0.7044f, 19.0135f, 0.7044f, 17.831f, 1.8869f)
@@ -79,7 +84,7 @@ public val MessagesConversationGroup.PenNewSquare: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _penNewSquare!!
     }
 

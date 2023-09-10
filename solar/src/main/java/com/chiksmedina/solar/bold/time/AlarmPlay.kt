@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.time
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TimeGroup
 
-public val TimeGroup.AlarmPlay: ImageVector
+val TimeGroup.AlarmPlay: ImageVector
     get() {
         if (_alarmPlay != null) {
             return _alarmPlay!!
         }
-        _alarmPlay = Builder(name = "AlarmPlay", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _alarmPlay = Builder(
+            name = "AlarmPlay", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 22.0001f)
                 curveTo(16.9705f, 22.0001f, 21.0f, 17.9707f, 21.0f, 13.0001f)
                 curveTo(21.0f, 8.0295f, 16.9705f, 4.0001f, 12.0f, 4.0001f)
@@ -45,9 +46,11 @@ public val TimeGroup.AlarmPlay: ImageVector
                 curveTo(13.5909f, 10.6928f, 13.2965f, 10.4649f, 13.0261f, 10.275f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.136f, 1.6026f)
                 curveTo(8.3555f, 1.9539f, 8.2487f, 2.4166f, 7.8975f, 2.6361f)
                 lineTo(3.8975f, 5.1361f)
@@ -66,7 +69,7 @@ public val TimeGroup.AlarmPlay: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _alarmPlay!!
     }
 

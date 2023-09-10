@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Volume: ImageVector
+val VideoAudioSoundGroup.Volume: ImageVector
     get() {
         if (_volume != null) {
             return _volume!!
         }
-        _volume = Builder(name = "Volume", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _volume = Builder(
+            name = "Volume", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.003f, 11.7155f)
                 curveTo(5.0409f, 9.8733f, 5.0599f, 8.9522f, 5.681f, 8.1636f)
                 curveTo(5.7944f, 8.0197f, 5.9607f, 7.8487f, 6.1001f, 7.7327f)
@@ -47,7 +51,7 @@ public val VideoAudioSoundGroup.Volume: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _volume!!
     }
 

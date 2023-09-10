@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.FloorLampMinimalistic: ImageVector
+val HomeFurnitureGroup.FloorLampMinimalistic: ImageVector
     get() {
         if (_floorLampMinimalistic != null) {
             return _floorLampMinimalistic!!
         }
-        _floorLampMinimalistic = Builder(name = "FloorLampMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _floorLampMinimalistic = Builder(
+            name = "FloorLampMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.4627f, 1.9618f)
                 curveTo(10.1449f, 1.5069f, 11.0442f, 1.25f, 12.0f, 1.25f)
                 curveTo(12.9558f, 1.25f, 13.8551f, 1.5069f, 14.5373f, 1.9618f)
@@ -91,7 +95,7 @@ public val HomeFurnitureGroup.FloorLampMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _floorLampMinimalistic!!
     }
 

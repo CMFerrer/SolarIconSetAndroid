@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsGroup
 
-public val ArrowsGroup.Refresh: ImageVector
+val ArrowsGroup.Refresh: ImageVector
     get() {
         if (_refresh != null) {
             return _refresh!!
         }
-        _refresh = Builder(name = "Refresh", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _refresh = Builder(
+            name = "Refresh", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.9308f, 11.2003f)
                 curveTo(3.0024f, 6.2397f, 7.0762f, 2.25f, 12.0789f, 2.25f)
                 curveTo(15.3873f, 2.25f, 18.287f, 3.9943f, 19.8934f, 6.6072f)
@@ -57,7 +61,7 @@ public val ArrowsGroup.Refresh: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _refresh!!
     }
 

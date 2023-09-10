@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Radio: ImageVector
+val ElectronicDevicesGroup.Radio: ImageVector
     get() {
         if (_radio != null) {
             return _radio!!
         }
-        _radio = Builder(name = "Radio", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _radio = Builder(
+            name = "Radio", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.6786f, 1.6808f)
                 curveTo(15.855f, 2.0556f, 15.6941f, 2.5024f, 15.3193f, 2.6788f)
                 lineTo(9.8552f, 5.2502f)
@@ -112,7 +116,7 @@ public val ElectronicDevicesGroup.Radio: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _radio!!
     }
 

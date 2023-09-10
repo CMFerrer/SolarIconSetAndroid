@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Podcast: ImageVector
+val VideoAudioSoundGroup.Podcast: ImageVector
     get() {
         if (_podcast != null) {
             return _podcast!!
         }
-        _podcast = Builder(name = "Podcast", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _podcast = Builder(
+            name = "Podcast", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.2643f, 9.5572f)
                 curveTo(5.4923f, 6.0357f, 8.4208f, 3.25f, 12.0f, 3.25f)
                 curveTo(15.5791f, 3.25f, 18.5077f, 6.0357f, 18.7357f, 9.5572f)
@@ -99,7 +103,7 @@ public val VideoAudioSoundGroup.Podcast: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _podcast!!
     }
 

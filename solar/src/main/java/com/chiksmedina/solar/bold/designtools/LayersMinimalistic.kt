@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.DesignToolsGroup
 
-public val DesignToolsGroup.LayersMinimalistic: ImageVector
+val DesignToolsGroup.LayersMinimalistic: ImageVector
     get() {
         if (_layersMinimalistic != null) {
             return _layersMinimalistic!!
         }
-        _layersMinimalistic = Builder(name = "LayersMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _layersMinimalistic = Builder(
+            name = "LayersMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.6244f, 4.4489f)
                 curveTo(9.5012f, 3.698f, 10.6208f, 3.25f, 12.0f, 3.25f)
                 curveTo(13.3792f, 3.25f, 14.4988f, 3.698f, 16.3756f, 4.4489f)
@@ -47,9 +49,11 @@ public val DesignToolsGroup.LayersMinimalistic: ImageVector
                 lineTo(7.6244f, 4.4489f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.5005f, 11.4415f)
                 curveTo(2.5005f, 11.4415f, 2.5005f, 11.4415f, 2.5005f, 11.4415f)
                 lineTo(2.4991f, 11.4402f)
@@ -152,7 +156,7 @@ public val DesignToolsGroup.LayersMinimalistic: ImageVector
                 curveTo(1.1912f, 16.282f, 1.1651f, 15.8075f, 1.4417f, 15.4992f)
             }
         }
-        .build()
+            .build()
         return _layersMinimalistic!!
     }
 

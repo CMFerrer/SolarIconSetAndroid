@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.maplocation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,24 +12,30 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MapLocationGroup
 
-public val MapLocationGroup.Globus: ImageVector
+val MapLocationGroup.Globus: ImageVector
     get() {
         if (_globus != null) {
             return _globus!!
         }
-        _globus = Builder(name = "Globus", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _globus = Builder(
+            name = "Globus", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 10.0f)
                 moveToRelative(-7.0f, 0.0f)
                 arcToRelative(7.0f, 7.0f, 0.0f, true, true, 14.0f, 0.0f)
                 arcToRelative(7.0f, 7.0f, 0.0f, true, true, -14.0f, 0.0f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.6021f, 8.2132f)
                 curveTo(9.471f, 6.7542f, 8.3459f, 5.3947f, 7.7998f, 4.8974f)
                 lineTo(7.4981f, 4.6393f)
@@ -47,9 +50,11 @@ public val MapLocationGroup.Globus: ImageVector
                 curveTo(10.6248f, 10.685f, 9.7247f, 9.5769f, 9.6021f, 8.2132f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.0057f, 14.3935f)
                 curveTo(13.6974f, 13.0901f, 16.003f, 13.0901f, 16.003f, 13.0901f)
                 curveTo(18.4053f, 13.065f, 18.7299f, 11.6064f, 18.9468f, 10.8691f)
@@ -57,9 +62,11 @@ public val MapLocationGroup.Globus: ImageVector
                 curveTo(12.7463f, 16.4582f, 12.4788f, 15.3865f, 13.0057f, 14.3935f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.0035f, 1.4998f)
                 curveTo(18.2797f, 1.1912f, 18.7539f, 1.1649f, 19.0625f, 1.4412f)
                 curveTo(21.3246f, 3.4658f, 22.75f, 6.4104f, 22.75f, 9.687f)
@@ -83,7 +90,7 @@ public val MapLocationGroup.Globus: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _globus!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SecurityGroup
 
-public val SecurityGroup.LockPassword: ImageVector
+val SecurityGroup.LockPassword: ImageVector
     get() {
         if (_lockPassword != null) {
             return _lockPassword!!
         }
-        _lockPassword = Builder(name = "LockPassword", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _lockPassword = Builder(
+            name = "LockPassword", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.25f, 10.0546f)
                 verticalLineTo(8.0f)
                 curveTo(5.25f, 4.2721f, 8.2721f, 1.25f, 12.0f, 1.25f)
@@ -65,7 +69,7 @@ public val SecurityGroup.LockPassword: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _lockPassword!!
     }
 

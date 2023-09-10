@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.BluetoothWave: ImageVector
+val ElectronicDevicesGroup.BluetoothWave: ImageVector
     get() {
         if (_bluetoothWave != null) {
             return _bluetoothWave!!
         }
-        _bluetoothWave = Builder(name = "BluetoothWave", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bluetoothWave = Builder(
+            name = "BluetoothWave", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.5095f, 12.0043f)
                 lineTo(13.6086f, 14.9376f)
                 curveTo(14.1072f, 15.2944f, 14.5428f, 15.6061f, 14.847f, 15.8992f)
@@ -59,9 +60,11 @@ public val ElectronicDevicesGroup.BluetoothWave: ImageVector
                 lineTo(9.5095f, 12.0043f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
-                    = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
+                = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.9839f, 4.9835f)
                 curveTo(18.2608f, 4.7178f, 18.699f, 4.7285f, 18.9627f, 5.0075f)
                 lineTo(18.9638f, 5.0088f)
@@ -98,9 +101,11 @@ public val ElectronicDevicesGroup.BluetoothWave: ImageVector
                 curveTo(17.6964f, 5.6871f, 17.7082f, 5.2481f, 17.9839f, 4.9835f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.7f, strokeAlpha
-                    = 0.7f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.7f, strokeAlpha
+                = 0.7f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(16.3057f, 7.6558f)
                 curveTo(16.6477f, 7.4835f, 17.0635f, 7.6232f, 17.2345f, 7.9678f)
                 lineTo(17.2352f, 7.9692f)
@@ -137,7 +142,7 @@ public val ElectronicDevicesGroup.BluetoothWave: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bluetoothWave!!
     }
 

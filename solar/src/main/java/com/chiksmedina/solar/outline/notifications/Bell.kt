@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NotificationsGroup
 
-public val NotificationsGroup.Bell: ImageVector
+val NotificationsGroup.Bell: ImageVector
     get() {
         if (_bell != null) {
             return _bell!!
         }
-        _bell = Builder(name = "Bell", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bell = Builder(
+            name = "Bell", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0001f, 1.25f)
                 curveTo(7.7199f, 1.25f, 4.2501f, 4.7198f, 4.2501f, 9.0f)
                 verticalLineTo(9.7041f)
@@ -59,7 +63,7 @@ public val NotificationsGroup.Bell: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bell!!
     }
 

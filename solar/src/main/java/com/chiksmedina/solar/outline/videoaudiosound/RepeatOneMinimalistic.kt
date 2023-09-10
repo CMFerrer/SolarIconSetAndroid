@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.RepeatOneMinimalistic: ImageVector
+val VideoAudioSoundGroup.RepeatOneMinimalistic: ImageVector
     get() {
         if (_repeatOneMinimalistic != null) {
             return _repeatOneMinimalistic!!
         }
-        _repeatOneMinimalistic = Builder(name = "RepeatOneMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _repeatOneMinimalistic = Builder(
+            name = "RepeatOneMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.4697f, 2.4697f)
                 curveTo(8.7626f, 2.1768f, 9.2374f, 2.1768f, 9.5303f, 2.4697f)
                 lineTo(11.5303f, 4.4697f)
@@ -67,7 +71,7 @@ public val VideoAudioSoundGroup.RepeatOneMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _repeatOneMinimalistic!!
     }
 

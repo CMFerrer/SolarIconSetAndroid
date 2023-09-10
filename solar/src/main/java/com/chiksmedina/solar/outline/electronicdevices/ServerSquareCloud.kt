@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.ServerSquareCloud: ImageVector
+val ElectronicDevicesGroup.ServerSquareCloud: ImageVector
     get() {
         if (_serverSquareCloud != null) {
             return _serverSquareCloud!!
         }
-        _serverSquareCloud = Builder(name = "ServerSquareCloud", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _serverSquareCloud = Builder(
+            name = "ServerSquareCloud", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9436f, 2.25f)
                 horizontalLineTo(14.0564f)
                 curveTo(15.8942f, 2.25f, 17.3498f, 2.25f, 18.489f, 2.4031f)
@@ -137,7 +141,7 @@ public val ElectronicDevicesGroup.ServerSquareCloud: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _serverSquareCloud!!
     }
 

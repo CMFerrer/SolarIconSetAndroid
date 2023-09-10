@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.MenuDots: ImageVector
+val EssentionalUiGroup.MenuDots: ImageVector
     get() {
         if (_menuDots != null) {
             return _menuDots!!
         }
-        _menuDots = Builder(name = "MenuDots", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _menuDots = Builder(
+            name = "MenuDots", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.25f, 12.0f)
                 curveTo(2.25f, 10.4812f, 3.4812f, 9.25f, 5.0f, 9.25f)
                 curveTo(6.5188f, 9.25f, 7.75f, 10.4812f, 7.75f, 12.0f)
@@ -37,9 +38,11 @@ public val EssentionalUiGroup.MenuDots: ImageVector
                 curveTo(6.25f, 11.3096f, 5.6904f, 10.75f, 5.0f, 10.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.25f, 12.0f)
                 curveTo(9.25f, 10.4812f, 10.4812f, 9.25f, 12.0f, 9.25f)
                 curveTo(13.5188f, 9.25f, 14.75f, 10.4812f, 14.75f, 12.0f)
@@ -53,9 +56,11 @@ public val EssentionalUiGroup.MenuDots: ImageVector
                 curveTo(13.25f, 11.3096f, 12.6904f, 10.75f, 12.0f, 10.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.0f, 9.25f)
                 curveTo(17.4812f, 9.25f, 16.25f, 10.4812f, 16.25f, 12.0f)
                 curveTo(16.25f, 13.5188f, 17.4812f, 14.75f, 19.0f, 14.75f)
@@ -70,7 +75,7 @@ public val EssentionalUiGroup.MenuDots: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _menuDots!!
     }
 

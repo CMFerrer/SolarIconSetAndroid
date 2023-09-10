@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.settingsfinetuning
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.SettingsFineTuningGroup
 
-public val SettingsFineTuningGroup.Widget4: ImageVector
+val SettingsFineTuningGroup.Widget4: ImageVector
     get() {
         if (_widget4 != null) {
             return _widget4!!
         }
-        _widget4 = Builder(name = "Widget4", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _widget4 = Builder(
+            name = "Widget4", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.5f, 13.0f)
                 verticalLineTo(17.5f)
                 curveTo(2.5f, 19.3856f, 2.5f, 20.3284f, 3.0858f, 20.9142f)
@@ -38,9 +39,11 @@ public val SettingsFineTuningGroup.Widget4: ImageVector
                 curveTo(2.5f, 3.6716f, 2.5f, 4.6144f, 2.5f, 6.5f)
                 verticalLineTo(9.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.4995f, 18.0f)
                 curveTo(21.495f, 19.5572f, 21.4458f, 20.3827f, 20.9142f, 20.9142f)
                 curveTo(20.3284f, 21.5f, 19.3856f, 21.5f, 17.5f, 21.5f)
@@ -52,9 +55,11 @@ public val SettingsFineTuningGroup.Widget4: ImageVector
                 curveTo(19.3856f, 11.5f, 20.3284f, 11.5f, 20.9142f, 12.0858f)
                 curveTo(21.3183f, 12.4899f, 21.4436f, 13.0638f, 21.4825f, 14.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.5f, 5.5f)
                 curveTo(13.5f, 4.5681f, 13.5f, 4.1022f, 13.6522f, 3.7346f)
                 curveTo(13.8552f, 3.2446f, 14.2446f, 2.8552f, 14.7346f, 2.6522f)
@@ -73,7 +78,7 @@ public val SettingsFineTuningGroup.Widget4: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _widget4!!
     }
 

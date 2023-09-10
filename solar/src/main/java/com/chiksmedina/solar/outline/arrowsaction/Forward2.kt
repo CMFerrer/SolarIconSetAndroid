@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsActionGroup
 
-public val ArrowsActionGroup.Forward2: ImageVector
+val ArrowsActionGroup.Forward2: ImageVector
     get() {
         if (_forward2 != null) {
             return _forward2!!
         }
-        _forward2 = Builder(name = "Forward2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _forward2 = Builder(
+            name = "Forward2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.5f, 6.25f)
                 curveTo(4.9142f, 6.25f, 5.25f, 6.5858f, 5.25f, 7.0f)
                 curveTo(5.25f, 8.7556f, 5.9647f, 9.7804f, 6.8132f, 10.3913f)
@@ -42,7 +46,7 @@ public val ArrowsActionGroup.Forward2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _forward2!!
     }
 

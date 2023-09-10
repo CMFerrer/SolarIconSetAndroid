@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.EssentionalUiGroup
 
-public val EssentionalUiGroup.Accessibility: ImageVector
+val EssentionalUiGroup.Accessibility: ImageVector
     get() {
         if (_accessibility != null) {
             return _accessibility!!
         }
-        _accessibility = Builder(name = "Accessibility", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _accessibility = Builder(
+            name = "Accessibility", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 12.0f)
                 curveTo(22.0f, 17.5228f, 17.5228f, 22.0f, 12.0f, 22.0f)
                 curveTo(6.4771f, 22.0f, 2.0f, 17.5228f, 2.0f, 12.0f)
@@ -31,9 +32,11 @@ public val EssentionalUiGroup.Accessibility: ImageVector
                 curveTo(17.5228f, 2.0f, 22.0f, 6.4771f, 22.0f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0002f, 9.0f)
                 curveTo(13.1048f, 9.0f, 14.0002f, 8.1046f, 14.0002f, 7.0f)
                 curveTo(14.0002f, 5.8954f, 13.1048f, 5.0f, 12.0002f, 5.0f)
@@ -41,9 +44,11 @@ public val EssentionalUiGroup.Accessibility: ImageVector
                 curveTo(10.0002f, 8.1046f, 10.8956f, 9.0f, 12.0002f, 9.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.2928f, 9.3095f)
                 curveTo(5.9115f, 9.1479f, 5.4714f, 9.3259f, 5.3097f, 9.7072f)
                 curveTo(5.148f, 10.0885f, 5.326f, 10.5288f, 5.7074f, 10.6905f)
@@ -93,7 +98,7 @@ public val EssentionalUiGroup.Accessibility: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _accessibility!!
     }
 

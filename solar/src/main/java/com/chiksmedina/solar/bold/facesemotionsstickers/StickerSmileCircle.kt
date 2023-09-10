@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.FacesEmotionsStickersGroup
 
-public val FacesEmotionsStickersGroup.StickerSmileCircle: ImageVector
+val FacesEmotionsStickersGroup.StickerSmileCircle: ImageVector
     get() {
         if (_stickerSmileCircle != null) {
             return _stickerSmileCircle!!
         }
-        _stickerSmileCircle = Builder(name = "StickerSmileCircle", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _stickerSmileCircle = Builder(
+            name = "StickerSmileCircle", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.9358f, 13.1007f)
                 curveTo(17.804f, 12.7969f, 18.8834f, 12.756f, 21.1392f, 12.7508f)
                 horizontalLineTo(22.7242f)
@@ -37,9 +39,11 @@ public val FacesEmotionsStickersGroup.StickerSmileCircle: ImageVector
                 curveTo(13.7289f, 15.1405f, 15.1405f, 13.7289f, 16.9358f, 13.1007f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.5515f, 16.8809f)
                 curveTo(11.2763f, 17.9436f, 11.2521f, 19.2445f, 11.2501f, 21.22f)
                 verticalLineTo(22.7243f)
@@ -69,7 +73,7 @@ public val FacesEmotionsStickersGroup.StickerSmileCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _stickerSmileCircle!!
     }
 

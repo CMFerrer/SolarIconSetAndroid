@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TransportPartsServiceGroup
 
-public val TransportPartsServiceGroup.ElectricRefueling: ImageVector
+val TransportPartsServiceGroup.ElectricRefueling: ImageVector
     get() {
         if (_electricRefueling != null) {
             return _electricRefueling!!
         }
-        _electricRefueling = Builder(name = "ElectricRefueling", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _electricRefueling = Builder(
+            name = "ElectricRefueling", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.0f, 2.0f)
                 horizontalLineTo(9.0f)
                 curveTo(6.1716f, 2.0f, 4.7574f, 2.0f, 3.8787f, 2.8787f)
@@ -84,7 +88,7 @@ public val TransportPartsServiceGroup.ElectricRefueling: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _electricRefueling!!
     }
 

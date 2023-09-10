@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,24 +11,30 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.AstronomyGroup
 
-public val AstronomyGroup.Earth: ImageVector
+val AstronomyGroup.Earth: ImageVector
     get() {
         if (_earth != null) {
             return _earth!!
         }
-        _earth = Builder(name = "Earth", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _earth = Builder(
+            name = "Earth", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 12.0f)
                 moveToRelative(-10.0f, 0.0f)
                 arcToRelative(10.0f, 10.0f, 0.0f, true, true, 20.0f, 0.0f)
                 arcToRelative(10.0f, 10.0f, 0.0f, true, true, -20.0f, 0.0f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.5752f, 9.4474f)
                 curveTo(8.3879f, 7.3632f, 6.7806f, 5.4211f, 6.0003f, 4.7105f)
                 lineTo(5.5693f, 4.3419f)
@@ -46,9 +49,11 @@ public val AstronomyGroup.Earth: ImageVector
                 curveTo(10.0361f, 12.9786f, 8.7502f, 11.3955f, 8.5752f, 9.4474f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.4365f, 18.2761f)
                 curveTo(14.4246f, 16.414f, 17.7182f, 16.414f, 17.7182f, 16.414f)
                 curveTo(21.1502f, 16.3782f, 21.6138f, 14.2944f, 21.9237f, 13.2412f)
@@ -57,7 +62,7 @@ public val AstronomyGroup.Earth: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _earth!!
     }
 

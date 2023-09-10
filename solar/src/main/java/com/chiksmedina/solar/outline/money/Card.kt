@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MoneyGroup
 
-public val MoneyGroup.Card: ImageVector
+val MoneyGroup.Card: ImageVector
     get() {
         if (_card != null) {
             return _card!!
         }
-        _card = Builder(name = "Card", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _card = Builder(
+            name = "Card", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9436f, 3.25f)
                 horizontalLineTo(14.0564f)
                 curveTo(15.8942f, 3.25f, 17.3498f, 3.25f, 18.489f, 3.4031f)
@@ -93,7 +97,7 @@ public val MoneyGroup.Card: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _card!!
     }
 

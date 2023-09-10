@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.maplocation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.MapLocationGroup
 
-public val MapLocationGroup.PointOnMap: ImageVector
+val MapLocationGroup.PointOnMap: ImageVector
     get() {
         if (_pointOnMap != null) {
             return _pointOnMap!!
         }
-        _pointOnMap = Builder(name = "PointOnMap", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _pointOnMap = Builder(
+            name = "PointOnMap", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.0f, 13.1623f)
                 curveTo(21.0f, 12.1187f, 21.0f, 9.5969f, 20.7169f, 9.2041f)
                 curveTo(20.4337f, 8.8112f, 19.9387f, 8.6462f, 18.9487f, 8.3162f)
@@ -48,9 +49,11 @@ public val MapLocationGroup.PointOnMap: ImageVector
                 curveTo(3.5739f, 9.8955f, 3.6681f, 9.8276f, 3.7692f, 9.7712f)
                 curveTo(4.2843f, 9.4838f, 4.9657f, 9.6613f, 6.2231f, 10.075f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.25f, 11.2513f)
                 curveTo(17.7356f, 10.0935f, 18.0f, 8.8609f, 18.0f, 7.7003f)
                 curveTo(18.0f, 4.5521f, 15.3137f, 2.0f, 12.0f, 2.0f)
@@ -59,16 +62,18 @@ public val MapLocationGroup.PointOnMap: ImageVector
                 curveTo(11.5993f, 16.076f, 12.4007f, 16.076f, 13.0972f, 15.7721f)
                 curveTo(14.0514f, 15.3558f, 14.8963f, 14.7007f, 15.6042f, 13.9f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 8.0f)
                 moveToRelative(-2.0f, 0.0f)
                 arcToRelative(2.0f, 2.0f, 0.0f, true, true, 4.0f, 0.0f)
                 arcToRelative(2.0f, 2.0f, 0.0f, true, true, -4.0f, 0.0f)
             }
         }
-        .build()
+            .build()
         return _pointOnMap!!
     }
 

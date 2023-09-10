@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.foodkitchen
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.FoodKitchenGroup
 
-public val FoodKitchenGroup.DonutBitten: ImageVector
+val FoodKitchenGroup.DonutBitten: ImageVector
     get() {
         if (_donutBitten != null) {
             return _donutBitten!!
         }
-        _donutBitten = Builder(name = "DonutBitten", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _donutBitten = Builder(
+            name = "DonutBitten", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.2803f, 21.5538f)
                 curveTo(12.0886f, 20.9089f, 12.303f, 20.102f, 12.9444f, 19.6276f)
                 curveTo(13.4368f, 19.2635f, 14.0224f, 19.1452f, 14.5152f, 19.2623f)
@@ -44,9 +45,11 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 curveTo(12.2138f, 22.0f, 12.3411f, 21.7583f, 12.2803f, 21.5538f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.7505f, 12.0f)
                 curveTo(9.7505f, 10.7574f, 10.7578f, 9.75f, 12.0005f, 9.75f)
                 curveTo(13.2431f, 9.75f, 14.2505f, 10.7574f, 14.2505f, 12.0f)
@@ -57,9 +60,11 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 curveTo(10.7578f, 14.25f, 9.7505f, 13.2426f, 9.7505f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.4792f, 14.7949f)
                 curveTo(20.1866f, 14.2718f, 21.0865f, 14.2561f, 21.627f, 14.7168f)
                 curveTo(21.8703f, 13.8529f, 22.0005f, 12.9417f, 22.0005f, 12.0f)
@@ -162,7 +167,7 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _donutBitten!!
     }
 

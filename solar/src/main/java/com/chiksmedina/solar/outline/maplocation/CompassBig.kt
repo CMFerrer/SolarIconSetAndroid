@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MapLocationGroup
 
-public val MapLocationGroup.CompassBig: ImageVector
+val MapLocationGroup.CompassBig: ImageVector
     get() {
         if (_compassBig != null) {
             return _compassBig!!
         }
-        _compassBig = Builder(name = "CompassBig", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _compassBig = Builder(
+            name = "CompassBig", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.7059f, 3.0714f)
                 curveTo(14.9631f, 3.5335f, 12.6544f, 4.4555f, 9.4887f, 5.7218f)
                 curveTo(8.0978f, 6.2781f, 7.5723f, 6.4991f, 7.165f, 6.8563f)
@@ -85,7 +89,7 @@ public val MapLocationGroup.CompassBig: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _compassBig!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.files
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FilesGroup
 
-public val FilesGroup.CloudFile: ImageVector
+val FilesGroup.CloudFile: ImageVector
     get() {
         if (_cloudFile != null) {
             return _cloudFile!!
         }
-        _cloudFile = Builder(name = "CloudFile", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cloudFile = Builder(
+            name = "CloudFile", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.25f, 2.8342f)
                 curveTo(11.7896f, 2.756f, 11.162f, 2.7501f, 10.0298f, 2.7501f)
                 curveTo(8.1131f, 2.7501f, 6.7508f, 2.7516f, 5.7179f, 2.8899f)
@@ -88,9 +89,11 @@ public val FilesGroup.CloudFile: ImageVector
                 curveTo(10.0789f, 1.25f, 10.1275f, 1.25f, 10.1755f, 1.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.6667f, 13.7501f)
                 curveTo(8.8853f, 13.7501f, 8.4167f, 14.2898f, 8.4167f, 14.7648f)
                 curveTo(8.4167f, 14.7705f, 8.4167f, 14.7763f, 8.4169f, 14.7821f)
@@ -122,7 +125,7 @@ public val FilesGroup.CloudFile: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cloudFile!!
     }
 

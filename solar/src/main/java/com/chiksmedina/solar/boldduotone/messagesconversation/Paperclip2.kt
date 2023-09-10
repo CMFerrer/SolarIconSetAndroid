@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MessagesConversationGroup
 
-public val MessagesConversationGroup.Paperclip2: ImageVector
+val MessagesConversationGroup.Paperclip2: ImageVector
     get() {
         if (_paperclip2 != null) {
             return _paperclip2!!
         }
-        _paperclip2 = Builder(name = "Paperclip2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _paperclip2 = Builder(
+            name = "Paperclip2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.2442f, 1.9548f)
                 curveTo(12.9441f, 1.0151f, 15.0345f, 1.0151f, 16.7345f, 1.9548f)
                 curveTo(17.3641f, 2.3029f, 17.9518f, 2.8658f, 18.9065f, 3.7801f)
@@ -57,9 +59,11 @@ public val MessagesConversationGroup.Paperclip2: ImageVector
                 curveTo(14.6688f, 7.5342f, 14.6585f, 7.0594f, 14.945f, 6.7602f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.9628f, 4.9536f)
                 curveTo(19.0429f, 5.9878f, 19.4703f, 6.4062f, 19.7194f, 6.8193f)
                 curveTo(20.4269f, 7.9926f, 20.4269f, 9.4335f, 19.7194f, 10.6068f)
@@ -108,7 +112,7 @@ public val MessagesConversationGroup.Paperclip2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _paperclip2!!
     }
 

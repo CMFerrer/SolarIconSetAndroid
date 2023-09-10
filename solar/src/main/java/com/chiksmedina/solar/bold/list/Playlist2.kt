@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ListGroup
 
-public val ListGroup.Playlist2: ImageVector
+val ListGroup.Playlist2: ImageVector
     get() {
         if (_playlist2 != null) {
             return _playlist2!!
         }
-        _playlist2 = Builder(name = "Playlist2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _playlist2 = Builder(
+            name = "Playlist2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.3446f, 5.9929f)
                 curveTo(19.6232f, 5.8902f, 19.9559f, 5.8021f, 20.3149f, 5.8678f)
                 curveTo(20.7572f, 5.9487f, 21.1513f, 6.1967f, 21.4156f, 6.5604f)
@@ -56,9 +58,11 @@ public val ListGroup.Playlist2: ImageVector
                 curveTo(18.75f, 6.2481f, 19.0734f, 6.0928f, 19.3446f, 5.9929f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.25f, 5.0f)
                 curveTo(2.25f, 4.5858f, 2.5858f, 4.25f, 3.0f, 4.25f)
                 horizontalLineTo(15.0f)
@@ -93,7 +97,7 @@ public val ListGroup.Playlist2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _playlist2!!
     }
 

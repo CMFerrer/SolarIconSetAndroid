@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.AstronomyGroup
 
-public val AstronomyGroup.Planet4: ImageVector
+val AstronomyGroup.Planet4: ImageVector
     get() {
         if (_planet4 != null) {
             return _planet4!!
         }
-        _planet4 = Builder(name = "Planet4", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _planet4 = Builder(
+            name = "Planet4", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.0f, 5.2499f)
                 curveTo(5.1675f, 5.2499f, 1.25f, 9.1674f, 1.25f, 13.9999f)
                 curveTo(1.25f, 18.8324f, 5.1675f, 22.7499f, 10.0f, 22.7499f)
@@ -85,9 +86,11 @@ public val AstronomyGroup.Planet4: ImageVector
                 curveTo(7.247f, 6.7499f, 4.8524f, 8.2844f, 3.6247f, 10.5447f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(20.5301f, 4.0447f)
                 curveTo(20.4935f, 3.9506f, 20.4492f, 3.8581f, 20.3972f, 3.7679f)
                 curveTo(20.3451f, 3.6778f, 20.2871f, 3.5932f, 20.2239f, 3.5144f)
@@ -114,7 +117,7 @@ public val AstronomyGroup.Planet4: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _planet4!!
     }
 

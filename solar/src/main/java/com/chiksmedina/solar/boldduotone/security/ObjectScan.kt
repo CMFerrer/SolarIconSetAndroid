@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.security
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SecurityGroup
 
-public val SecurityGroup.ObjectScan: ImageVector
+val SecurityGroup.ObjectScan: ImageVector
     get() {
         if (_objectScan != null) {
             return _objectScan!!
         }
-        _objectScan = Builder(name = "ObjectScan", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _objectScan = Builder(
+            name = "ObjectScan", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9436f, 1.25f)
                 lineTo(10.0f, 1.25f)
                 curveTo(10.4142f, 1.25f, 10.75f, 1.5858f, 10.75f, 2.0f)
@@ -90,9 +91,11 @@ public val SecurityGroup.ObjectScan: ImageVector
                 curveTo(21.25f, 13.5858f, 21.5858f, 13.25f, 22.0f, 13.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 5.5f)
                 horizontalLineTo(14.0f)
                 curveTo(15.8856f, 5.5f, 16.8284f, 5.5f, 17.4142f, 6.0858f)
@@ -110,9 +113,11 @@ public val SecurityGroup.ObjectScan: ImageVector
                 curveTo(7.1716f, 5.5f, 8.1144f, 5.5f, 10.0f, 5.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.3693f, 9.2999f)
                 curveTo(18.2513f, 9.2545f, 18.1281f, 9.2093f, 17.9999f, 9.1644f)
                 curveTo(16.1667f, 8.386f, 11.2002f, 7.2961f, 6.0001f, 9.1645f)
@@ -151,7 +156,7 @@ public val SecurityGroup.ObjectScan: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _objectScan!!
     }
 

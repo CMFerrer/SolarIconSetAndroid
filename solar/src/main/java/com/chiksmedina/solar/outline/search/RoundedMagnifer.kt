@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SearchGroup
 
-public val SearchGroup.RoundedMagnifer: ImageVector
+val SearchGroup.RoundedMagnifer: ImageVector
     get() {
         if (_roundedMagnifer != null) {
             return _roundedMagnifer!!
         }
-        _roundedMagnifer = Builder(name = "RoundedMagnifer", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _roundedMagnifer = Builder(
+            name = "RoundedMagnifer", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.0f, 2.75f)
                 curveTo(6.4436f, 2.75f, 2.75f, 6.4436f, 2.75f, 11.0f)
                 curveTo(2.75f, 15.5563f, 6.4436f, 19.25f, 11.0f, 19.25f)
@@ -69,7 +73,7 @@ public val SearchGroup.RoundedMagnifer: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _roundedMagnifer!!
     }
 

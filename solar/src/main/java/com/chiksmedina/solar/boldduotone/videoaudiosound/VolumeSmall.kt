@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.VolumeSmall: ImageVector
+val VideoAudioSoundGroup.VolumeSmall: ImageVector
     get() {
         if (_volumeSmall != null) {
             return _volumeSmall!!
         }
-        _volumeSmall = Builder(name = "VolumeSmall", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _volumeSmall = Builder(
+            name = "VolumeSmall", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.0031f, 11.7155f)
                 curveTo(3.0421f, 9.8733f, 3.0616f, 8.9522f, 3.7004f, 8.1636f)
                 curveTo(3.817f, 8.0197f, 3.9881f, 7.8487f, 4.1315f, 7.7327f)
@@ -49,9 +51,11 @@ public val VideoAudioSoundGroup.VolumeSmall: ImageVector
                 curveTo(3.0f, 11.9072f, 3.0011f, 11.8122f, 3.0031f, 11.7155f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(19.4505f, 8.4159f)
                 curveTo(19.7981f, 8.2187f, 20.2365f, 8.3466f, 20.4296f, 8.7016f)
                 lineTo(19.8002f, 9.0588f)
@@ -89,7 +93,7 @@ public val VideoAudioSoundGroup.VolumeSmall: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _volumeSmall!!
     }
 

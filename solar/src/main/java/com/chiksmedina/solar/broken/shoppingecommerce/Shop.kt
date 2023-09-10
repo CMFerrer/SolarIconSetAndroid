@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.broken.shoppingecommerce
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.ShoppingEcommerceGroup
 
-public val ShoppingEcommerceGroup.Shop: ImageVector
+val ShoppingEcommerceGroup.Shop: ImageVector
     get() {
         if (_shop != null) {
             return _shop!!
         }
-        _shop = Builder(name = "Shop", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _shop = Builder(
+            name = "Shop", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.5f, 11.0f)
                 verticalLineTo(14.0f)
                 curveTo(3.5f, 17.7712f, 3.5f, 19.6569f, 4.6716f, 20.8284f)
@@ -34,9 +35,11 @@ public val ShoppingEcommerceGroup.Shop: ImageVector
                 verticalLineTo(14.0f)
                 curveTo(20.5f, 15.1698f, 20.5f, 16.1581f, 20.465f, 17.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.5f, 2.0f)
                 horizontalLineTo(14.5f)
                 moveTo(9.5f, 2.0f)
@@ -64,9 +67,11 @@ public val ShoppingEcommerceGroup.Shop: ImageVector
                 lineTo(14.5f, 2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.5f, 21.5f)
                 verticalLineTo(18.5f)
                 curveTo(9.5f, 17.5654f, 9.5f, 17.0981f, 9.701f, 16.75f)
@@ -78,7 +83,7 @@ public val ShoppingEcommerceGroup.Shop: ImageVector
                 verticalLineTo(21.5f)
             }
         }
-        .build()
+            .build()
         return _shop!!
     }
 

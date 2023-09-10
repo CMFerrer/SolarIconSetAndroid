@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Cup: ImageVector
+val EssentionalUiGroup.Cup: ImageVector
     get() {
         if (_cup != null) {
             return _cup!!
         }
-        _cup = Builder(name = "Cup", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cup = Builder(
+            name = "Cup", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
+            = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0002f, 1.25f)
                 curveTo(10.1724f, 1.25f, 8.6613f, 1.411f, 7.4984f, 1.6072f)
                 lineTo(7.3636f, 1.6298f)
@@ -126,7 +130,7 @@ public val EssentionalUiGroup.Cup: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cup!!
     }
 

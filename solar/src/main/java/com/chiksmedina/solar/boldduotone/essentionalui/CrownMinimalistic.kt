@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.EssentionalUiGroup
 
-public val EssentionalUiGroup.CrownMinimalistic: ImageVector
+val EssentionalUiGroup.CrownMinimalistic: ImageVector
     get() {
         if (_crownMinimalistic != null) {
             return _crownMinimalistic!!
         }
-        _crownMinimalistic = Builder(name = "CrownMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _crownMinimalistic = Builder(
+            name = "CrownMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(2.633f, 16.0f)
                 horizontalLineTo(21.367f)
                 curveTo(21.4471f, 15.2813f, 21.5232f, 14.4732f, 21.609f, 13.5616f)
@@ -48,9 +50,11 @@ public val EssentionalUiGroup.CrownMinimalistic: ImageVector
                 curveTo(2.4768f, 14.4732f, 2.5529f, 15.2813f, 2.633f, 16.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.3597f, 22.0f)
                 curveTo(16.9046f, 22.0f, 18.6771f, 22.0f, 19.8597f, 20.7902f)
                 curveTo(20.7736f, 19.8553f, 21.094f, 18.4447f, 21.3667f, 16.0f)
@@ -61,7 +65,7 @@ public val EssentionalUiGroup.CrownMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _crownMinimalistic!!
     }
 

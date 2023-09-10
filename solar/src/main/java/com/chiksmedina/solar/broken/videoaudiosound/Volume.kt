@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Volume: ImageVector
+val VideoAudioSoundGroup.Volume: ImageVector
     get() {
         if (_volume != null) {
             return _volume!!
         }
-        _volume = Builder(name = "Volume", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _volume = Builder(
+            name = "Volume", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.9586f, 8.5768f)
                 curveTo(6.2448f, 8.0456f, 6.7924f, 7.5304f, 7.34f, 7.2771f)
                 curveTo(7.9393f, 6.9998f, 8.6263f, 6.9998f, 10.0002f, 6.9998f)
@@ -46,7 +50,7 @@ public val VideoAudioSoundGroup.Volume: ImageVector
                 curveTo(5.524f, 12.849f, 5.5153f, 12.6722f, 5.5093f, 12.4998f)
             }
         }
-        .build()
+            .build()
         return _volume!!
     }
 

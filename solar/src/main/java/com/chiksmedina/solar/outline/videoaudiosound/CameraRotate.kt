@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.CameraRotate: ImageVector
+val VideoAudioSoundGroup.CameraRotate: ImageVector
     get() {
         if (_cameraRotate != null) {
             return _cameraRotate!!
         }
-        _cameraRotate = Builder(name = "CameraRotate", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cameraRotate = Builder(
+            name = "CameraRotate", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.5984f, 4.4867f)
                 curveTo(7.8653f, 3.1768f, 9.0309f, 2.25f, 10.3663f, 2.25f)
                 horizontalLineTo(13.6337f)
@@ -99,7 +103,7 @@ public val VideoAudioSoundGroup.CameraRotate: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cameraRotate!!
     }
 

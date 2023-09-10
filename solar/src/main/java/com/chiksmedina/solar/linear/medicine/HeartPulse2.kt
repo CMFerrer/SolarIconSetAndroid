@@ -1,12 +1,10 @@
 package com.chiksmedina.solar.linear.medicine
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.MedicineGroup
 
-public val MedicineGroup.HeartPulse2: ImageVector
+val MedicineGroup.HeartPulse2: ImageVector
     get() {
         if (_heartPulse2 != null) {
             return _heartPulse2!!
         }
-        _heartPulse2 = Builder(name = "HeartPulse2", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _heartPulse2 = Builder(
+            name = "HeartPulse2", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.0f, 12.0f)
                 horizontalLineTo(18.6361f)
                 curveTo(17.9781f, 12.0f, 17.6491f, 12.0f, 17.3578f, 12.1297f)
@@ -39,9 +41,11 @@ public val MedicineGroup.HeartPulse2: ImageVector
                 curveTo(6.1889f, 12.0f, 5.8926f, 12.0f, 5.3f, 12.0f)
                 horizontalLineTo(3.0f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.9617f, 19.3707f)
                 lineTo(9.4357f, 18.7895f)
                 lineTo(9.4357f, 18.7895f)
@@ -104,7 +108,7 @@ public val MedicineGroup.HeartPulse2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _heartPulse2!!
     }
 

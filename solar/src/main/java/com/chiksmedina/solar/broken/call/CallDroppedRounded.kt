@@ -1,10 +1,8 @@
 package com.chiksmedina.solar.broken.call
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
 import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.CallGroup
 
-public val CallGroup.CallDroppedRounded: ImageVector
+val CallGroup.CallDroppedRounded: ImageVector
     get() {
         if (_callDroppedRounded != null) {
             return _callDroppedRounded!!
         }
-        _callDroppedRounded = Builder(name = "CallDroppedRounded", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _callDroppedRounded = Builder(
+            name = "CallDroppedRounded", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.0002f, 4.0001f)
                 verticalLineTo(5.0001f)
                 curveTo(15.0002f, 6.8857f, 15.0002f, 7.8285f, 15.586f, 8.4143f)
@@ -34,9 +36,11 @@ public val CallGroup.CallDroppedRounded: ImageVector
                 moveTo(20.5002f, 9.0001f)
                 lineTo(18.0002f, 11.0001f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.0065f, 7.9331f)
                 curveTo(3.9342f, 9.8412f, 4.4171f, 13.0817f, 7.6677f, 16.3323f)
                 curveTo(8.4519f, 17.1165f, 9.2355f, 17.7396f, 10.0f, 18.2327f)
@@ -55,7 +59,7 @@ public val CallGroup.CallDroppedRounded: ImageVector
                 curveTo(15.2529f, 20.0243f, 14.1963f, 19.9541f, 13.0f, 19.6111f)
             }
         }
-        .build()
+            .build()
         return _callDroppedRounded!!
     }
 

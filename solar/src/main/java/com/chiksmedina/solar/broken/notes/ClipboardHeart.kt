@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.notes
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.NotesGroup
 
-public val NotesGroup.ClipboardHeart: ImageVector
+val NotesGroup.ClipboardHeart: ImageVector
     get() {
         if (_clipboardHeart != null) {
             return _clipboardHeart!!
         }
-        _clipboardHeart = Builder(name = "ClipboardHeart", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _clipboardHeart = Builder(
+            name = "ClipboardHeart", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 11.6913f)
                 lineTo(11.4813f, 12.2331f)
                 curveTo(11.7713f, 12.5108f, 12.2287f, 12.5108f, 12.5187f, 12.2331f)
@@ -81,9 +82,11 @@ public val NotesGroup.ClipboardHeart: ImageVector
                 lineTo(12.5135f, 14.7609f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(8.0f, 3.5f)
                 curveTo(8.0f, 2.6716f, 8.6716f, 2.0f, 9.5f, 2.0f)
                 horizontalLineTo(14.5f)
@@ -95,9 +98,11 @@ public val NotesGroup.ClipboardHeart: ImageVector
                 verticalLineTo(3.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.0f, 16.0002f)
                 curveTo(21.0f, 18.8286f, 21.0f, 20.2429f, 20.1213f, 21.1215f)
                 curveTo(19.2426f, 22.0002f, 17.8284f, 22.0002f, 15.0f, 22.0002f)
@@ -114,7 +119,7 @@ public val NotesGroup.ClipboardHeart: ImageVector
                 curveTo(3.1103f, 5.6473f, 3.0138f, 6.8251f, 3.0017f, 9.0f)
             }
         }
-        .build()
+            .build()
         return _clipboardHeart!!
     }
 

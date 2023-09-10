@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.SkipPrevious: ImageVector
+val VideoAudioSoundGroup.SkipPrevious: ImageVector
     get() {
         if (_skipPrevious != null) {
             return _skipPrevious!!
         }
-        _skipPrevious = Builder(name = "SkipPrevious", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _skipPrevious = Builder(
+            name = "SkipPrevious", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.1392f, 1.8037f)
                 curveTo(22.1058f, 2.4648f, 22.75f, 3.6451f, 22.75f, 5.033f)
                 verticalLineTo(18.9672f)
@@ -53,7 +57,7 @@ public val VideoAudioSoundGroup.SkipPrevious: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _skipPrevious!!
     }
 

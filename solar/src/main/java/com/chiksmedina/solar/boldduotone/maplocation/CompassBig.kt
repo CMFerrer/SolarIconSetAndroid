@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MapLocationGroup
 
-public val MapLocationGroup.CompassBig: ImageVector
+val MapLocationGroup.CompassBig: ImageVector
     get() {
         if (_compassBig != null) {
             return _compassBig!!
         }
-        _compassBig = Builder(name = "CompassBig", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _compassBig = Builder(
+            name = "CompassBig", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(14.7898f, 18.9746f)
                 curveTo(8.4975f, 21.4915f, 5.3513f, 22.75f, 3.5543f, 21.5288f)
                 curveTo(3.1282f, 21.2393f, 2.7607f, 20.8718f, 2.4712f, 20.4457f)
@@ -39,9 +41,11 @@ public val MapLocationGroup.CompassBig: ImageVector
                 curveTo(16.8031f, 18.1693f, 16.132f, 18.4377f, 14.7898f, 18.9746f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 8.25f)
                 curveTo(9.9289f, 8.25f, 8.25f, 9.9289f, 8.25f, 12.0f)
                 curveTo(8.25f, 14.0711f, 9.9289f, 15.75f, 12.0f, 15.75f)
@@ -50,7 +54,7 @@ public val MapLocationGroup.CompassBig: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _compassBig!!
     }
 

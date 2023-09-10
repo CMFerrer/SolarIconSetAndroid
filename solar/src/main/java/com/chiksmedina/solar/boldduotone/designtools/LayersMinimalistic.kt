@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.DesignToolsGroup
 
-public val DesignToolsGroup.LayersMinimalistic: ImageVector
+val DesignToolsGroup.LayersMinimalistic: ImageVector
     get() {
         if (_layersMinimalistic != null) {
             return _layersMinimalistic!!
         }
-        _layersMinimalistic = Builder(name = "LayersMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _layersMinimalistic = Builder(
+            name = "LayersMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.6244f, 4.4489f)
                 curveTo(9.5012f, 3.698f, 10.6208f, 3.25f, 12.0f, 3.25f)
                 curveTo(13.3792f, 3.25f, 14.4988f, 3.698f, 16.3756f, 4.4489f)
@@ -47,9 +48,11 @@ public val DesignToolsGroup.LayersMinimalistic: ImageVector
                 lineTo(7.6244f, 4.4489f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.7f, strokeAlpha
-                    = 0.7f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.7f, strokeAlpha
+                = 0.7f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.5025f, 11.4432f)
                 lineTo(2.499f, 11.4402f)
                 curveTo(2.1906f, 11.1654f, 1.7176f, 11.1915f, 1.4416f, 11.4992f)
@@ -96,9 +99,11 @@ public val DesignToolsGroup.LayersMinimalistic: ImageVector
                 curveTo(2.5151f, 11.4541f, 2.5069f, 11.4471f, 2.5025f, 11.4432f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
-                    = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
+                = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.4988f, 15.4991f)
                 curveTo(2.1904f, 15.2243f, 1.7176f, 15.2506f, 1.4416f, 15.5583f)
                 curveTo(1.165f, 15.8666f, 1.191f, 16.3411f, 1.4994f, 16.6177f)
@@ -144,7 +149,7 @@ public val DesignToolsGroup.LayersMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _layersMinimalistic!!
     }
 

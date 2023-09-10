@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Mirror: ImageVector
+val EssentionalUiGroup.Mirror: ImageVector
     get() {
         if (_mirror != null) {
             return _mirror!!
         }
-        _mirror = Builder(name = "Mirror", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _mirror = Builder(
+            name = "Mirror", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.25f)
                 curveTo(6.6022f, 2.25f, 2.25f, 6.7036f, 2.25f, 12.168f)
                 curveTo(2.25f, 13.6274f, 2.5603f, 15.0147f, 3.1179f, 16.2641f)
@@ -65,7 +69,7 @@ public val EssentionalUiGroup.Mirror: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _mirror!!
     }
 

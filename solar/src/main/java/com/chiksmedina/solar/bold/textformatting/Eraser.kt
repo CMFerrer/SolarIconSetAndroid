@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.textformatting
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TextFormattingGroup
 
-public val TextFormattingGroup.Eraser: ImageVector
+val TextFormattingGroup.Eraser: ImageVector
     get() {
         if (_eraser != null) {
             return _eraser!!
         }
-        _eraser = Builder(name = "Eraser", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _eraser = Builder(
+            name = "Eraser", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.4096f, 5.5051f)
                 curveTo(13.0796f, 3.835f, 13.9146f, 3.0f, 14.9522f, 3.0f)
                 curveTo(15.9899f, 3.0f, 16.8249f, 3.835f, 18.4949f, 5.5051f)
@@ -34,9 +35,11 @@ public val TextFormattingGroup.Eraser: ImageVector
                 lineTo(11.4096f, 5.5051f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.1557f, 10.759f)
                 lineTo(13.2411f, 17.8443f)
                 lineTo(12.5904f, 18.4949f)
@@ -52,7 +55,7 @@ public val TextFormattingGroup.Eraser: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _eraser!!
     }
 

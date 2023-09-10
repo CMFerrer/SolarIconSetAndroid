@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.list
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ListGroup
 
-public val ListGroup.ChecklistMinimalistic: ImageVector
+val ListGroup.ChecklistMinimalistic: ImageVector
     get() {
         if (_checklistMinimalistic != null) {
             return _checklistMinimalistic!!
         }
-        _checklistMinimalistic = Builder(name = "ChecklistMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _checklistMinimalistic = Builder(
+            name = "ChecklistMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 12.0f)
                 curveTo(2.0f, 7.286f, 2.0f, 4.9289f, 3.4645f, 3.4645f)
                 curveTo(4.9289f, 2.0f, 7.286f, 2.0f, 12.0f, 2.0f)
@@ -35,9 +36,11 @@ public val ListGroup.ChecklistMinimalistic: ImageVector
                 curveTo(2.0f, 19.0711f, 2.0f, 16.714f, 2.0f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.5431f, 7.5172f)
                 curveTo(10.8288f, 7.2173f, 10.8172f, 6.7426f, 10.5172f, 6.4569f)
                 curveTo(10.2173f, 6.1712f, 9.7426f, 6.1828f, 9.4569f, 6.4828f)
@@ -51,9 +54,11 @@ public val ListGroup.ChecklistMinimalistic: ImageVector
                 lineTo(10.5431f, 7.5172f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.0f, 8.25f)
                 curveTo(12.5858f, 8.25f, 12.25f, 8.5858f, 12.25f, 9.0f)
                 curveTo(12.25f, 9.4142f, 12.5858f, 9.75f, 13.0f, 9.75f)
@@ -63,9 +68,11 @@ public val ListGroup.ChecklistMinimalistic: ImageVector
                 horizontalLineTo(13.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.5431f, 14.5172f)
                 curveTo(10.8288f, 14.2173f, 10.8172f, 13.7426f, 10.5172f, 13.4569f)
                 curveTo(10.2173f, 13.1712f, 9.7426f, 13.1828f, 9.4569f, 13.4828f)
@@ -79,9 +86,11 @@ public val ListGroup.ChecklistMinimalistic: ImageVector
                 lineTo(10.5431f, 14.5172f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.0f, 15.25f)
                 curveTo(12.5858f, 15.25f, 12.25f, 15.5858f, 12.25f, 16.0f)
                 curveTo(12.25f, 16.4142f, 12.5858f, 16.75f, 13.0f, 16.75f)
@@ -92,7 +101,7 @@ public val ListGroup.ChecklistMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _checklistMinimalistic!!
     }
 

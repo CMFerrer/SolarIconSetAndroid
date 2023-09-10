@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Printer2: ImageVector
+val ElectronicDevicesGroup.Printer2: ImageVector
     get() {
         if (_printer2 != null) {
             return _printer2!!
         }
-        _printer2 = Builder(name = "Printer2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _printer2 = Builder(
+            name = "Printer2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.1211f, 2.8787f)
                 curveTo(16.2424f, 2.0f, 14.8282f, 2.0f, 11.9998f, 2.0f)
                 curveTo(9.1713f, 2.0f, 7.7571f, 2.0f, 6.8784f, 2.8787f)
@@ -34,9 +35,11 @@ public val ElectronicDevicesGroup.Printer2: ImageVector
                 curveTo(17.8299f, 4.0316f, 17.6135f, 3.371f, 17.1211f, 2.8787f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.0f, 15.5f)
                 curveTo(18.0f, 18.3284f, 18.0f, 20.2426f, 17.1213f, 21.1213f)
                 curveTo(16.2426f, 22.0f, 14.8284f, 22.0f, 12.0f, 22.0f)
@@ -45,9 +48,11 @@ public val ElectronicDevicesGroup.Printer2: ImageVector
                 horizontalLineTo(18.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(16.0f, 6.0f)
                 horizontalLineTo(8.0f)
                 curveTo(5.1716f, 6.0f, 3.7574f, 6.0f, 2.8787f, 6.8787f)
@@ -67,9 +72,11 @@ public val ElectronicDevicesGroup.Printer2: ImageVector
                 curveTo(20.2426f, 6.0f, 18.8284f, 6.0f, 16.0f, 6.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.0f, 10.75f)
                 curveTo(9.4142f, 10.75f, 9.75f, 10.4142f, 9.75f, 10.0f)
                 curveTo(9.75f, 9.5858f, 9.4142f, 9.25f, 9.0f, 9.25f)
@@ -79,9 +86,11 @@ public val ElectronicDevicesGroup.Printer2: ImageVector
                 horizontalLineTo(9.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.0f, 10.0f)
                 curveTo(18.0f, 10.5523f, 17.5523f, 11.0f, 17.0f, 11.0f)
                 curveTo(16.4477f, 11.0f, 16.0f, 10.5523f, 16.0f, 10.0f)
@@ -90,7 +99,7 @@ public val ElectronicDevicesGroup.Printer2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _printer2!!
     }
 

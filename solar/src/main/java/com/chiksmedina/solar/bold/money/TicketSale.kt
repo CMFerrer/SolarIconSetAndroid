@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MoneyGroup
 
-public val MoneyGroup.TicketSale: ImageVector
+val MoneyGroup.TicketSale: ImageVector
     get() {
         if (_ticketSale != null) {
             return _ticketSale!!
         }
-        _ticketSale = Builder(name = "TicketSale", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _ticketSale = Builder(
+            name = "TicketSale", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.995f, 4.0f)
                 horizontalLineTo(14.005f)
                 curveTo(17.7856f, 4.0f, 19.6759f, 4.0f, 20.8504f, 5.1716f)
@@ -67,7 +71,7 @@ public val MoneyGroup.TicketSale: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ticketSale!!
     }
 

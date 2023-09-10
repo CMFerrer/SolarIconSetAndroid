@@ -1,12 +1,10 @@
 package com.chiksmedina.solar.broken.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.AstronomyGroup
 
-public val AstronomyGroup.Men: ImageVector
+val AstronomyGroup.Men: ImageVector
     get() {
         if (_men != null) {
             return _men!!
         }
-        _men = Builder(name = "Men", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _men = Builder(
+            name = "Men", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
+            = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.0f, 7.0703f)
                 curveTo(7.1767f, 6.3896f, 8.5428f, 6.0f, 10.0f, 6.0f)
                 curveTo(14.4183f, 6.0f, 18.0f, 9.5817f, 18.0f, 14.0f)
@@ -31,9 +33,11 @@ public val AstronomyGroup.Men: ImageVector
                 curveTo(5.5817f, 22.0f, 2.0f, 18.4183f, 2.0f, 14.0f)
                 curveTo(2.0f, 12.5429f, 2.3896f, 11.1767f, 3.0703f, 10.0f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 2.0f)
                 horizontalLineTo(22.75f)
                 curveTo(22.75f, 1.5858f, 22.4142f, 1.25f, 22.0f, 1.25f)
@@ -69,7 +73,7 @@ public val AstronomyGroup.Men: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _men!!
     }
 

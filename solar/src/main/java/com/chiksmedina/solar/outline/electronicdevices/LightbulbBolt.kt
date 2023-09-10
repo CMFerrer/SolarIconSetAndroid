@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.LightbulbBolt: ImageVector
+val ElectronicDevicesGroup.LightbulbBolt: ImageVector
     get() {
         if (_lightbulbBolt != null) {
             return _lightbulbBolt!!
         }
-        _lightbulbBolt = Builder(name = "LightbulbBolt", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _lightbulbBolt = Builder(
+            name = "LightbulbBolt", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.75f)
                 curveTo(8.2721f, 2.75f, 5.25f, 5.7721f, 5.25f, 9.5f)
                 curveTo(5.25f, 11.4985f, 6.1176f, 13.2934f, 7.4991f, 14.5304f)
@@ -96,9 +97,11 @@ public val ElectronicDevicesGroup.LightbulbBolt: ImageVector
                 curveTo(4.8126f, 14.1384f, 3.75f, 11.9428f, 3.75f, 9.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.2215f, 7.8897f)
                 curveTo(13.5586f, 8.1305f, 13.6366f, 8.5989f, 13.3959f, 8.9359f)
                 lineTo(12.1001f, 10.75f)
@@ -117,7 +120,7 @@ public val ElectronicDevicesGroup.LightbulbBolt: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _lightbulbBolt!!
     }
 

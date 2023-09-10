@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.bold
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldGroup
+import com.chiksmedina.solar.BoldSolar
 import com.chiksmedina.solar.bold.naturetravel.Bonfire
 import com.chiksmedina.solar.bold.naturetravel.Fire
 import com.chiksmedina.solar.bold.naturetravel.FireMinimalistic
@@ -11,21 +11,23 @@ import com.chiksmedina.solar.bold.naturetravel.Leaf
 import com.chiksmedina.solar.bold.naturetravel.Suitcase
 import com.chiksmedina.solar.bold.naturetravel.SuitcaseLines
 import com.chiksmedina.solar.bold.naturetravel.SuitcaseTag
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object NatureTravelGroup
+object NatureTravelGroup
 
-public val BoldGroup.NatureTravel: NatureTravelGroup
-  get() = NatureTravelGroup
+val BoldSolar.NatureTravel: NatureTravelGroup
+    get() = NatureTravelGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val NatureTravelGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val NatureTravelGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Bonfire, Fire, FireMinimalistic, FireSquare, Flame, Leaf, Suitcase,
+            SuitcaseLines, SuitcaseTag
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Bonfire, Fire, FireMinimalistic, FireSquare, Flame, Leaf, Suitcase,
-        SuitcaseLines, SuitcaseTag)
-    return __AllIcons!!
-  }

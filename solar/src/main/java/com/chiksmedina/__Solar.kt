@@ -3,25 +3,23 @@ package com.chiksmedina
 import androidx.compose.ui.graphics.vector.ImageVector
 import com.chiksmedina.solar.AllIcons
 import com.chiksmedina.solar.Bold
-import com.chiksmedina.solar.Boldduotone
+import com.chiksmedina.solar.BoldDuotone
 import com.chiksmedina.solar.Broken
 import com.chiksmedina.solar.Linear
-import com.chiksmedina.solar.Lineduotone
+import com.chiksmedina.solar.LineDuotone
 import com.chiksmedina.solar.Outline
-import com.chiksmedina.solar.outline.ArrowsAction
-import com.chiksmedina.solar.outline.arrowsaction.ArrowToDownLeft
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object Solar
+object Solar
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val Solar.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val Solar.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = Bold.AllIcons + BoldDuotone.AllIcons + Broken.AllIcons + Linear.AllIcons +
+                LineDuotone.AllIcons + Outline.AllIcons + listOf()
+        return _AllIcons!!
     }
-    __AllIcons= Bold.AllIcons + Boldduotone.AllIcons + Broken.AllIcons + Linear.AllIcons +
-        Lineduotone.AllIcons + Outline.AllIcons + listOf()
-    return __AllIcons!!
-  }

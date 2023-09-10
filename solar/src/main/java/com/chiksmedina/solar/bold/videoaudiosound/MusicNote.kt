@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.MusicNote: ImageVector
+val VideoAudioSoundGroup.MusicNote: ImageVector
     get() {
         if (_musicNote != null) {
             return _musicNote!!
         }
-        _musicNote = Builder(name = "MusicNote", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _musicNote = Builder(
+            name = "MusicNote", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0909f, 11.9629f)
                 lineTo(19.3636f, 8.6309f)
                 verticalLineTo(14.1707f)
@@ -53,7 +57,7 @@ public val VideoAudioSoundGroup.MusicNote: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _musicNote!!
     }
 

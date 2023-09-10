@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MapLocationGroup
 
-public val MapLocationGroup.MapPointRemove: ImageVector
+val MapLocationGroup.MapPointRemove: ImageVector
     get() {
         if (_mapPointRemove != null) {
             return _mapPointRemove!!
         }
-        _mapPointRemove = Builder(name = "MapPointRemove", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _mapPointRemove = Builder(
+            name = "MapPointRemove", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.25f, 10.1433f)
                 curveTo(3.25f, 5.2443f, 7.155f, 1.25f, 12.0f, 1.25f)
                 curveTo(16.845f, 1.25f, 20.75f, 5.2443f, 20.75f, 10.1433f)
@@ -49,7 +53,7 @@ public val MapLocationGroup.MapPointRemove: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _mapPointRemove!!
     }
 

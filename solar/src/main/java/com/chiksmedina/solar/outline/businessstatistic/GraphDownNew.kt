@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.businessstatistic
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.BusinessStatisticGroup
 
-public val BusinessStatisticGroup.GraphDownNew: ImageVector
+val BusinessStatisticGroup.GraphDownNew: ImageVector
     get() {
         if (_graphDownNew != null) {
             return _graphDownNew!!
         }
-        _graphDownNew = Builder(name = "GraphDownNew", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _graphDownNew = Builder(
+            name = "GraphDownNew", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.9426f, 1.25f)
                 horizontalLineTo(13.5f)
                 curveTo(13.9142f, 1.25f, 14.25f, 1.5858f, 14.25f, 2.0f)
@@ -62,9 +63,11 @@ public val BusinessStatisticGroup.GraphDownNew: ImageVector
                 curveTo(7.8252f, 1.25f, 9.6342f, 1.25f, 11.9426f, 1.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.4697f, 9.4697f)
                 curveTo(6.7626f, 9.1768f, 7.2374f, 9.1768f, 7.5303f, 9.4697f)
                 lineTo(9.8232f, 11.7626f)
@@ -89,9 +92,11 @@ public val BusinessStatisticGroup.GraphDownNew: ImageVector
                 curveTo(6.1768f, 10.2374f, 6.1768f, 9.7626f, 6.4697f, 9.4697f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.0f, 1.25f)
                 curveTo(16.9289f, 1.25f, 15.25f, 2.9289f, 15.25f, 5.0f)
                 curveTo(15.25f, 7.0711f, 16.9289f, 8.75f, 19.0f, 8.75f)
@@ -106,7 +111,7 @@ public val BusinessStatisticGroup.GraphDownNew: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _graphDownNew!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Revote: ImageVector
+val EssentionalUiGroup.Revote: ImageVector
     get() {
         if (_revote != null) {
             return _revote!!
         }
-        _revote = Builder(name = "Revote", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _revote = Builder(
+            name = "Revote", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.6847f, 1.5264f)
                 curveTo(10.9754f, 1.2313f, 10.9718f, 0.7565f, 10.6767f, 0.4658f)
                 curveTo(10.3816f, 0.1751f, 9.9067f, 0.1787f, 9.6161f, 0.4738f)
@@ -72,9 +73,11 @@ public val EssentionalUiGroup.Revote: ImageVector
                 lineTo(10.6847f, 1.5264f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.0303f, 10.0303f)
                 curveTo(16.3232f, 9.7374f, 16.3232f, 9.2625f, 16.0303f, 8.9696f)
                 curveTo(15.7374f, 8.6768f, 15.2626f, 8.6768f, 14.9697f, 8.9696f)
@@ -88,7 +91,7 @@ public val EssentionalUiGroup.Revote: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _revote!!
     }
 

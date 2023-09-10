@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.linear
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.LinearGroup
+import com.chiksmedina.solar.LinearSolar
 import com.chiksmedina.solar.linear.call.CallCancel
 import com.chiksmedina.solar.linear.call.CallCancelRounded
 import com.chiksmedina.solar.linear.call.CallChat
@@ -23,23 +23,42 @@ import com.chiksmedina.solar.linear.call.PhoneRounded
 import com.chiksmedina.solar.linear.call.RecordCircle
 import com.chiksmedina.solar.linear.call.RecordMinimalistic
 import com.chiksmedina.solar.linear.call.RecordSquare
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object CallGroup
+object CallGroup
 
-public val LinearGroup.Call: CallGroup
-  get() = CallGroup
+val LinearSolar.Call: CallGroup
+    get() = CallGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val CallGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val CallGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            CallCancel,
+            CallCancelRounded,
+            CallChat,
+            CallChatRounded,
+            CallDropped,
+            CallDroppedRounded,
+            CallMedicine,
+            CallMedicineRounded,
+            EndCall,
+            EndCallRounded,
+            IncomingCall,
+            IncomingCallRounded,
+            OutgoingCall,
+            OutgoingCallRounded,
+            Phone,
+            PhoneCalling,
+            PhoneCallingRounded,
+            PhoneRounded,
+            RecordCircle,
+            RecordMinimalistic,
+            RecordSquare
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(CallCancel, CallCancelRounded, CallChat, CallChatRounded, CallDropped,
-        CallDroppedRounded, CallMedicine, CallMedicineRounded, EndCall, EndCallRounded,
-        IncomingCall, IncomingCallRounded, OutgoingCall, OutgoingCallRounded, Phone, PhoneCalling,
-        PhoneCallingRounded, PhoneRounded, RecordCircle, RecordMinimalistic, RecordSquare)
-    return __AllIcons!!
-  }

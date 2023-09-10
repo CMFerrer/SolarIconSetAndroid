@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.outline
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.OutlineGroup
+import com.chiksmedina.solar.OutlineSolar
 import com.chiksmedina.solar.outline.essentionalui.Accessibility
 import com.chiksmedina.solar.outline.essentionalui.AddCircle
 import com.chiksmedina.solar.outline.essentionalui.AddSquare
@@ -128,6 +128,7 @@ import com.chiksmedina.solar.outline.essentionalui.SmartHomeAngle
 import com.chiksmedina.solar.outline.essentionalui.Sort
 import com.chiksmedina.solar.outline.essentionalui.SpecialEffects
 import com.chiksmedina.solar.outline.essentionalui.Subtitles
+import com.chiksmedina.solar.outline.essentionalui.TShirt
 import com.chiksmedina.solar.outline.essentionalui.Target
 import com.chiksmedina.solar.outline.essentionalui.Traffic
 import com.chiksmedina.solar.outline.essentionalui.TrafficEconomy
@@ -140,40 +141,160 @@ import com.chiksmedina.solar.outline.essentionalui.Waterdrop
 import com.chiksmedina.solar.outline.essentionalui.Winrar
 import com.chiksmedina.solar.outline.essentionalui.Xxx
 import com.chiksmedina.solar.outline.essentionalui._4k
-import com.chiksmedina.solar.outline.essentionalui.`T-shirt`
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object EssentionalUiGroup
+object EssentionalUiGroup
 
-public val OutlineGroup.EssentionalUi: EssentionalUiGroup
-  get() = EssentionalUiGroup
+val OutlineSolar.EssentionalUi: EssentionalUiGroup
+    get() = EssentionalUiGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val EssentionalUiGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val EssentionalUiGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            _4k,
+            Accessibility,
+            AddCircle,
+            AddSquare,
+            AugmentedReality,
+            Balloon,
+            BatteryCharge,
+            BatteryChargeMinimalistic,
+            BatteryFull,
+            BatteryFullMinimalistic,
+            BatteryHalf,
+            BatteryHalfMinimalistic,
+            BatteryLow,
+            BatteryLowMinimalistic,
+            Body,
+            Bolt,
+            BoltCircle,
+            Box,
+            BoxMinimalistic,
+            Broom,
+            Cat,
+            CheckCircle,
+            CheckSquare,
+            CloseCircle,
+            CloseSquare,
+            Confetti,
+            ConfettiMinimalistic,
+            Copy,
+            Copyright,
+            Cosmetic,
+            CreativeCommons,
+            Crown,
+            CrownLine,
+            CrownMinimalistic,
+            CrownStar,
+            Cup,
+            CupFirst,
+            CupMusic,
+            CupStar,
+            Cursor,
+            CursorSquare,
+            Danger,
+            DangerCircle,
+            DangerSquare,
+            DangerTriangle,
+            Database,
+            Delivery,
+            Explicit,
+            Feed,
+            FerrisWheel,
+            Figma,
+            Filter,
+            Flag,
+            Flag2,
+            Flashlight,
+            FlashlightOn,
+            Forbidden,
+            ForbiddenCircle,
+            Fuel,
+            Ghost,
+            GhostSmile,
+            Gift,
+            Glasses,
+            HamburgerMenu,
+            Hanger,
+            Hanger2,
+            Help,
+            HighDefinition,
+            HighQuality,
+            Home,
+            Home2,
+            HomeAdd,
+            HomeAddAngle,
+            HomeAngle,
+            HomeAngle2,
+            HomeSmile,
+            HomeSmileAngle,
+            HomeWifi,
+            HomeWifiAngle,
+            InfoCircle,
+            InfoSquare,
+            MagicStick,
+            MagicStick2,
+            MagicStick3,
+            Magnet,
+            MagnetWave,
+            Masks,
+            MaskHapply,
+            MaskSad,
+            MentionCircle,
+            MentionSquare,
+            MenuDots,
+            MenuDotsCircle,
+            MenuDotsSquare,
+            MinusCircle,
+            MinusSquare,
+            Mirror,
+            PaperBin,
+            Paw,
+            Perfume,
+            Pin,
+            PinCircle,
+            PinList,
+            Plate,
+            PostsCarouselHorizontal,
+            PostsCarouselVertical,
+            Power,
+            QuestionCircle,
+            QuestionSquare,
+            Reorder,
+            Revote,
+            Scissors,
+            ScissorsSquare,
+            Share,
+            ShareCircle,
+            Skirt,
+            Sledgehammer,
+            Sleeping,
+            SliderHorizontal,
+            SliderMinimalisticHorizontal,
+            SliderVertical,
+            SliderVerticalMinimalistic,
+            SmartHome,
+            SmartHomeAngle,
+            Sort,
+            SpecialEffects,
+            Subtitles,
+            TShirt,
+            Target,
+            Traffic,
+            TrafficEconomy,
+            TrashBin2,
+            TrashBinMinimalistic,
+            TrashBinMinimalistic2,
+            TrashBinTrash,
+            Umbrella,
+            Waterdrop,
+            Winrar,
+            Xxx
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(_4k, Accessibility, AddCircle, AddSquare, AugmentedReality, Balloon,
-        BatteryCharge, BatteryChargeMinimalistic, BatteryFull, BatteryFullMinimalistic, BatteryHalf,
-        BatteryHalfMinimalistic, BatteryLow, BatteryLowMinimalistic, Body, Bolt, BoltCircle, Box,
-        BoxMinimalistic, Broom, Cat, CheckCircle, CheckSquare, CloseCircle, CloseSquare, Confetti,
-        ConfettiMinimalistic, Copy, Copyright, Cosmetic, CreativeCommons, Crown, CrownLine,
-        CrownMinimalistic, CrownStar, Cup, CupFirst, CupMusic, CupStar, Cursor, CursorSquare,
-        Danger, DangerCircle, DangerSquare, DangerTriangle, Database, Delivery, Explicit, Feed,
-        FerrisWheel, Figma, Filter, Flag, Flag2, Flashlight, FlashlightOn, Forbidden,
-        ForbiddenCircle, Fuel, Ghost, GhostSmile, Gift, Glasses, HamburgerMenu, Hanger, Hanger2,
-        Help, HighDefinition, HighQuality, Home, Home2, HomeAdd, HomeAddAngle, HomeAngle,
-        HomeAngle2, HomeSmile, HomeSmileAngle, HomeWifi, HomeWifiAngle, InfoCircle, InfoSquare,
-        MagicStick, MagicStick2, MagicStick3, Magnet, MagnetWave, Masks, MaskHapply, MaskSad,
-        MentionCircle, MentionSquare, MenuDots, MenuDotsCircle, MenuDotsSquare, MinusCircle,
-        MinusSquare, Mirror, PaperBin, Paw, Perfume, Pin, PinCircle, PinList, Plate,
-        PostsCarouselHorizontal, PostsCarouselVertical, Power, QuestionCircle, QuestionSquare,
-        Reorder, Revote, Scissors, ScissorsSquare, Share, ShareCircle, Skirt, Sledgehammer,
-        Sleeping, SliderHorizontal, SliderMinimalisticHorizontal, SliderVertical,
-        SliderVerticalMinimalistic, SmartHome, SmartHomeAngle, Sort, SpecialEffects, Subtitles,
-        `T-shirt`, Target, Traffic, TrafficEconomy, TrashBin2, TrashBinMinimalistic,
-        TrashBinMinimalistic2, TrashBinTrash, Umbrella, Waterdrop, Winrar, Xxx)
-    return __AllIcons!!
-  }

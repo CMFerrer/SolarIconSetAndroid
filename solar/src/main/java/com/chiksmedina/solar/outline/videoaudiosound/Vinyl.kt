@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Vinyl: ImageVector
+val VideoAudioSoundGroup.Vinyl: ImageVector
     get() {
         if (_vinyl != null) {
             return _vinyl!!
         }
-        _vinyl = Builder(name = "Vinyl", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _vinyl = Builder(
+            name = "Vinyl", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.7463f, 1.9758f)
                 curveTo(11.7873f, 2.3879f, 11.4863f, 2.7553f, 11.0741f, 2.7962f)
                 curveTo(6.4006f, 3.2602f, 2.75f, 7.2045f, 2.75f, 12.0005f)
@@ -55,7 +59,7 @@ public val VideoAudioSoundGroup.Vinyl: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _vinyl!!
     }
 

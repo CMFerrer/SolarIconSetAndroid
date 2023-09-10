@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.Broom: ImageVector
+val EssentionalUiGroup.Broom: ImageVector
     get() {
         if (_broom != null) {
             return _broom!!
         }
-        _broom = Builder(name = "Broom", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _broom = Builder(
+            name = "Broom", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.2211f, 19.6431f)
                 curveTo(18.6981f, 18.7396f, 19.1627f, 17.7065f, 19.4613f, 16.6623f)
                 curveTo(19.8722f, 15.2247f, 20.0207f, 13.8751f, 20.0629f, 12.8451f)
@@ -41,9 +42,11 @@ public val EssentionalUiGroup.Broom: ImageVector
                 curveTo(14.2892f, 22.5728f, 17.0299f, 21.899f, 18.2211f, 19.6431f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.7747f, 3.3134f)
                 curveTo(22.0751f, 3.013f, 22.0751f, 2.5258f, 21.7747f, 2.2253f)
                 curveTo(21.4742f, 1.9249f, 20.987f, 1.9249f, 20.6866f, 2.2253f)
@@ -57,7 +60,7 @@ public val EssentionalUiGroup.Broom: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _broom!!
     }
 

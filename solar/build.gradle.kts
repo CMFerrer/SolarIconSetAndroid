@@ -1,7 +1,7 @@
 plugins {
     id("com.android.library")
     id("org.jetbrains.kotlin.android")
-    id("com.vanniktech.maven.publish") version "0.25.3"
+    id("com.vanniktech.maven.publish")
 }
 
 android {
@@ -37,8 +37,9 @@ android {
 
 dependencies {
 
-    val composeVersion = "1.6.0-alpha04"
+    val composeVersion = "1.6.0-alpha05"
 
+    implementation("androidx.core:core-ktx:1.12.0")
     implementation("androidx.compose.ui:ui:$composeVersion")
     implementation("androidx.compose.ui:ui-graphics:$composeVersion")
 }

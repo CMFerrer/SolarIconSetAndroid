@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.MapLocationGroup
 
-public val MapLocationGroup.MapArrowLeft: ImageVector
+val MapLocationGroup.MapArrowLeft: ImageVector
     get() {
         if (_mapArrowLeft != null) {
             return _mapArrowLeft!!
         }
-        _mapArrowLeft = Builder(name = "MapArrowLeft", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _mapArrowLeft = Builder(
+            name = "MapArrowLeft", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 7.4026f)
                 lineTo(2.9928f, 10.5275f)
                 curveTo(1.6691f, 11.1178f, 1.6691f, 12.8822f, 2.9928f, 13.4725f)
@@ -33,7 +37,7 @@ public val MapLocationGroup.MapArrowLeft: ImageVector
                 lineTo(14.7513f, 5.2838f)
             }
         }
-        .build()
+            .build()
         return _mapArrowLeft!!
     }
 

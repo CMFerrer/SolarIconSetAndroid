@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.LikeGroup
 
-public val LikeGroup.HeartUnlock: ImageVector
+val LikeGroup.HeartUnlock: ImageVector
     get() {
         if (_heartUnlock != null) {
             return _heartUnlock!!
         }
-        _heartUnlock = Builder(name = "HeartUnlock", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _heartUnlock = Builder(
+            name = "HeartUnlock", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.75f, 7.0f)
                 curveTo(7.75f, 5.4897f, 8.1881f, 4.453f, 8.8607f, 3.7925f)
                 curveTo(9.5362f, 3.1291f, 10.545f, 2.75f, 11.8718f, 2.75f)
@@ -52,7 +56,7 @@ public val LikeGroup.HeartUnlock: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _heartUnlock!!
     }
 

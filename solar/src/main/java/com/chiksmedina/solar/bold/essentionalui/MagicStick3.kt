@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.MagicStick3: ImageVector
+val EssentionalUiGroup.MagicStick3: ImageVector
     get() {
         if (_magicStick3 != null) {
             return _magicStick3!!
         }
-        _magicStick3 = Builder(name = "MagicStick3", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _magicStick3 = Builder(
+            name = "MagicStick3", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.8445f, 3.8445f)
                 curveTo(2.7185f, 4.9706f, 2.7185f, 6.7962f, 3.8445f, 7.9223f)
                 lineTo(5.4323f, 9.51f)
@@ -34,9 +35,11 @@ public val EssentionalUiGroup.MagicStick3: ImageVector
                 curveTo(6.7962f, 2.7185f, 4.9706f, 2.7185f, 3.8445f, 3.8445f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.5679f, 6.4901f)
                 curveTo(10.556f, 6.5039f, 10.5435f, 6.5173f, 10.5304f, 6.5303f)
                 lineTo(6.5304f, 10.5303f)
@@ -47,9 +50,11 @@ public val EssentionalUiGroup.MagicStick3: ImageVector
                 lineTo(10.5679f, 6.4901f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.1f, 2.3072f)
                 curveTo(16.261f, 1.8976f, 16.8385f, 1.8976f, 16.9994f, 2.3072f)
                 lineTo(17.4298f, 3.4025f)
@@ -69,9 +74,11 @@ public val EssentionalUiGroup.MagicStick3: ImageVector
                 lineTo(16.1f, 2.3072f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.9672f, 9.1294f)
                 curveTo(20.1281f, 8.7199f, 20.7057f, 8.7199f, 20.8666f, 9.1294f)
                 lineTo(21.0235f, 9.5288f)
@@ -91,9 +98,11 @@ public val EssentionalUiGroup.MagicStick3: ImageVector
                 lineTo(19.9672f, 9.1294f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.1332f, 15.3072f)
                 curveTo(5.2941f, 14.8976f, 5.8717f, 14.8976f, 6.0326f, 15.3072f)
                 lineTo(6.1895f, 15.7065f)
@@ -114,7 +123,7 @@ public val EssentionalUiGroup.MagicStick3: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _magicStick3!!
     }
 

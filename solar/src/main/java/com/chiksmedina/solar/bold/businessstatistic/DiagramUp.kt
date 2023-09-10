@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.businessstatistic
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.BusinessStatisticGroup
 
-public val BusinessStatisticGroup.DiagramUp: ImageVector
+val BusinessStatisticGroup.DiagramUp: ImageVector
     get() {
         if (_diagramUp != null) {
             return _diagramUp!!
         }
-        _diagramUp = Builder(name = "DiagramUp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _diagramUp = Builder(
+            name = "DiagramUp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.75f, 2.0f)
                 curveTo(2.75f, 1.5858f, 2.4142f, 1.25f, 2.0f, 1.25f)
                 curveTo(1.5858f, 1.25f, 1.25f, 1.5858f, 1.25f, 2.0f)
@@ -43,9 +44,11 @@ public val BusinessStatisticGroup.DiagramUp: ImageVector
                 verticalLineTo(2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.5875f, 7.4664f)
                 curveTo(19.8451f, 7.142f, 19.791f, 6.6703f, 19.4666f, 6.4127f)
                 curveTo(19.1422f, 6.1551f, 18.6704f, 6.2092f, 18.4128f, 6.5336f)
@@ -80,7 +83,7 @@ public val BusinessStatisticGroup.DiagramUp: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _diagramUp!!
     }
 

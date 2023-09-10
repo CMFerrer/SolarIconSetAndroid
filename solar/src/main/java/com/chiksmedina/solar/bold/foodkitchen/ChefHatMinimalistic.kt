@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.FoodKitchenGroup
 
-public val FoodKitchenGroup.ChefHatMinimalistic: ImageVector
+val FoodKitchenGroup.ChefHatMinimalistic: ImageVector
     get() {
         if (_chefHatMinimalistic != null) {
             return _chefHatMinimalistic!!
         }
-        _chefHatMinimalistic = Builder(name = "ChefHatMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _chefHatMinimalistic = Builder(
+            name = "ChefHatMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 10.0f)
                 curveTo(2.0f, 7.2386f, 4.2386f, 5.0f, 7.0f, 5.0f)
                 curveTo(7.2505f, 5.0f, 7.4967f, 5.0184f, 7.7374f, 5.054f)
@@ -48,7 +52,7 @@ public val FoodKitchenGroup.ChefHatMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chefHatMinimalistic!!
     }
 

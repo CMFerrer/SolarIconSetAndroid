@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.arrows
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ArrowsGroup
 
-public val ArrowsGroup.SquareTransferVertical: ImageVector
+val ArrowsGroup.SquareTransferVertical: ImageVector
     get() {
         if (_squareTransferVertical != null) {
             return _squareTransferVertical!!
         }
-        _squareTransferVertical = Builder(name = "SquareTransferVertical", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _squareTransferVertical = Builder(
+            name = "SquareTransferVertical", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.4645f, 20.5355f)
                 curveTo(4.9289f, 22.0f, 7.286f, 22.0f, 12.0f, 22.0f)
                 curveTo(16.714f, 22.0f, 19.0711f, 22.0f, 20.5355f, 20.5355f)
@@ -35,9 +36,11 @@ public val ArrowsGroup.SquareTransferVertical: ImageVector
                 curveTo(2.0f, 16.714f, 2.0f, 19.0711f, 3.4645f, 20.5355f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.25f, 7.0f)
                 curveTo(13.25f, 6.6874f, 13.4439f, 6.4076f, 13.7367f, 6.2978f)
                 curveTo(14.0294f, 6.188f, 14.3595f, 6.2713f, 14.5651f, 6.5069f)
@@ -51,9 +54,11 @@ public val ArrowsGroup.SquareTransferVertical: ImageVector
                 lineTo(13.25f, 7.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.5651f, 13.0694f)
                 curveTo(7.2927f, 12.7573f, 6.8189f, 12.7251f, 6.5069f, 12.9975f)
                 curveTo(6.1948f, 13.2698f, 6.1626f, 13.7436f, 6.4349f, 14.0557f)
@@ -68,7 +73,7 @@ public val ArrowsGroup.SquareTransferVertical: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _squareTransferVertical!!
     }
 

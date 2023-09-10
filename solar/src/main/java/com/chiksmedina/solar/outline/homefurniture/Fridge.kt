@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.homefurniture
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Fridge: ImageVector
+val HomeFurnitureGroup.Fridge: ImageVector
     get() {
         if (_fridge != null) {
             return _fridge!!
         }
-        _fridge = Builder(name = "Fridge", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _fridge = Builder(
+            name = "Fridge", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.75f, 7.0f)
                 curveTo(17.75f, 6.5858f, 17.4142f, 6.25f, 17.0f, 6.25f)
                 curveTo(16.5858f, 6.25f, 16.25f, 6.5858f, 16.25f, 7.0f)
@@ -34,9 +35,11 @@ public val HomeFurnitureGroup.Fridge: ImageVector
                 verticalLineTo(7.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.75f, 14.0f)
                 curveTo(17.75f, 13.5858f, 17.4142f, 13.25f, 17.0f, 13.25f)
                 curveTo(16.5858f, 13.25f, 16.25f, 13.5858f, 16.25f, 14.0f)
@@ -46,9 +49,11 @@ public val HomeFurnitureGroup.Fridge: ImageVector
                 verticalLineTo(14.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0564f, 1.25f)
                 horizontalLineTo(11.9436f)
                 curveTo(10.1058f, 1.25f, 8.6502f, 1.25f, 7.511f, 1.4031f)
@@ -109,7 +114,7 @@ public val HomeFurnitureGroup.Fridge: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _fridge!!
     }
 

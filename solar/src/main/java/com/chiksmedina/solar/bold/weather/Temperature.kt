@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.WeatherGroup
 
-public val WeatherGroup.Temperature: ImageVector
+val WeatherGroup.Temperature: ImageVector
     get() {
         if (_temperature != null) {
             return _temperature!!
         }
-        _temperature = Builder(name = "Temperature", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _temperature = Builder(
+            name = "Temperature", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.5f, 16.5f)
                 curveTo(17.5f, 19.5376f, 15.0376f, 22.0f, 12.0f, 22.0f)
                 curveTo(8.9624f, 22.0f, 6.5f, 19.5376f, 6.5f, 16.5f)
@@ -47,7 +51,7 @@ public val WeatherGroup.Temperature: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _temperature!!
     }
 

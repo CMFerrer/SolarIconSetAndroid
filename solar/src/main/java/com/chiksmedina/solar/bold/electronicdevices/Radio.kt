@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Radio: ImageVector
+val ElectronicDevicesGroup.Radio: ImageVector
     get() {
         if (_radio != null) {
             return _radio!!
         }
-        _radio = Builder(name = "Radio", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _radio = Builder(
+            name = "Radio", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.75f, 12.25f)
                 verticalLineTo(11.5f)
                 curveTo(15.75f, 11.0858f, 15.4142f, 10.75f, 15.0f, 10.75f)
@@ -39,9 +40,11 @@ public val ElectronicDevicesGroup.Radio: ImageVector
                 horizontalLineTo(15.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.75f, 17.0f)
                 curveTo(6.75f, 16.5858f, 7.0858f, 16.25f, 7.5f, 16.25f)
                 curveTo(7.9142f, 16.25f, 8.25f, 16.5858f, 8.25f, 17.0f)
@@ -49,9 +52,11 @@ public val ElectronicDevicesGroup.Radio: ImageVector
                 curveTo(7.0858f, 17.75f, 6.75f, 17.4142f, 6.75f, 17.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.3195f, 3.6788f)
                 curveTo(15.6943f, 3.5024f, 15.8552f, 3.0556f, 15.6788f, 2.6808f)
                 curveTo(15.5024f, 2.306f, 15.0556f, 2.1452f, 14.6808f, 2.3216f)
@@ -92,7 +97,7 @@ public val ElectronicDevicesGroup.Radio: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _radio!!
     }
 

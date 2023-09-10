@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.search
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SearchGroup
 
-public val SearchGroup.RoundedMagniferBug: ImageVector
+val SearchGroup.RoundedMagniferBug: ImageVector
     get() {
         if (_roundedMagniferBug != null) {
             return _roundedMagniferBug!!
         }
-        _roundedMagniferBug = Builder(name = "RoundedMagniferBug", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _roundedMagniferBug = Builder(
+            name = "RoundedMagniferBug", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.8194f, 19.7006f)
                 curveTo(17.7302f, 18.6064f, 18.6357f, 17.6929f, 19.7205f, 17.783f)
                 curveTo(19.9086f, 17.7986f, 20.1337f, 17.8671f, 20.363f, 17.9368f)
@@ -43,9 +44,11 @@ public val SearchGroup.RoundedMagniferBug: ImageVector
                 curveTo(17.9028f, 20.1175f, 17.8349f, 19.8903f, 17.8194f, 19.7006f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(20.1278f, 11.1429f)
                 curveTo(20.1278f, 16.1924f, 16.0697f, 20.2858f, 11.0639f, 20.2858f)
                 curveTo(6.058f, 20.2858f, 2.0f, 16.1924f, 2.0f, 11.1429f)
@@ -91,9 +94,11 @@ public val SearchGroup.RoundedMagniferBug: ImageVector
                 lineTo(8.1895f, 7.8604f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.7144f, 13.9577f)
                 verticalLineTo(10.7632f)
                 horizontalLineTo(13.1429f)
@@ -101,9 +106,11 @@ public val SearchGroup.RoundedMagniferBug: ImageVector
                 curveTo(13.1429f, 12.8755f, 12.5466f, 13.665f, 11.7144f, 13.9577f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.8572f, 11.9474f)
                 verticalLineTo(10.7632f)
                 horizontalLineTo(10.2858f)
@@ -111,9 +118,11 @@ public val SearchGroup.RoundedMagniferBug: ImageVector
                 curveTo(9.4535f, 13.665f, 8.8572f, 12.8755f, 8.8572f, 11.9474f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.9791f, 9.3421f)
                 curveTo(9.2733f, 8.5142f, 10.0671f, 7.9211f, 11.0001f, 7.9211f)
                 curveTo(11.9331f, 7.9211f, 12.7268f, 8.5142f, 13.021f, 9.3421f)
@@ -121,7 +130,7 @@ public val SearchGroup.RoundedMagniferBug: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _roundedMagniferBug!!
     }
 

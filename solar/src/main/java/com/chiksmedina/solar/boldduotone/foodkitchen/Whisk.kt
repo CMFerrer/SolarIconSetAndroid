@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.FoodKitchenGroup
 
-public val FoodKitchenGroup.Whisk: ImageVector
+val FoodKitchenGroup.Whisk: ImageVector
     get() {
         if (_whisk != null) {
             return _whisk!!
         }
-        _whisk = Builder(name = "Whisk", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _whisk = Builder(
+            name = "Whisk", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.952f, 2.8737f)
                 curveTo(16.1404f, 2.4673f, 13.9349f, 3.0734f, 12.2941f, 4.7142f)
                 curveTo(10.7139f, 6.2944f, 9.6359f, 8.8882f, 9.7112f, 10.9856f)
@@ -69,9 +71,11 @@ public val FoodKitchenGroup.Whisk: ImageVector
                 curveTo(12.956f, 14.2862f, 12.8975f, 14.2832f, 12.8397f, 14.2793f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(8.269f, 11.7051f)
                 curveTo(8.41f, 12.7336f, 8.8039f, 13.7028f, 9.5504f, 14.4492f)
                 curveTo(10.297f, 15.1958f, 11.2666f, 15.5897f, 12.2954f, 15.7307f)
@@ -82,7 +86,7 @@ public val FoodKitchenGroup.Whisk: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _whisk!!
     }
 

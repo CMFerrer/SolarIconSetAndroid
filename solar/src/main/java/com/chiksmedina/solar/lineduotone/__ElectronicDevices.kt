@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.lineduotone
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.LineduotoneGroup
+import com.chiksmedina.solar.LineDuotoneSolar
 import com.chiksmedina.solar.lineduotone.electronicdevices.Airbuds
 import com.chiksmedina.solar.lineduotone.electronicdevices.AirbudsCase
 import com.chiksmedina.solar.lineduotone.electronicdevices.AirbudsCaseCharge
@@ -91,34 +91,110 @@ import com.chiksmedina.solar.lineduotone.electronicdevices.TurntableMusicNote
 import com.chiksmedina.solar.lineduotone.electronicdevices.Tv
 import com.chiksmedina.solar.lineduotone.electronicdevices.Weigher
 import com.chiksmedina.solar.lineduotone.electronicdevices.WirelessCharge
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object ElectronicDevicesGroup
+object ElectronicDevicesGroup
 
-public val LineduotoneGroup.ElectronicDevices: ElectronicDevicesGroup
-  get() = ElectronicDevicesGroup
+val LineDuotoneSolar.ElectronicDevices: ElectronicDevicesGroup
+    get() = ElectronicDevicesGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val ElectronicDevicesGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val ElectronicDevicesGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Airbuds,
+            AirbudsCase,
+            AirbudsCaseCharge,
+            AirbudsCaseMinimalistic,
+            AirbudsCaseOpen,
+            AirbudsCharge,
+            AirbudsCheck,
+            AirbudsLeft,
+            AirbudsRemove,
+            AirbudsRight,
+            Bluetooth,
+            BluetoothCircle,
+            BluetoothSquare,
+            BluetoothWave,
+            Boombox,
+            Cassette,
+            Cassette2,
+            CloudStorage,
+            Cpu,
+            CpuBolt,
+            Devices,
+            Diskette,
+            Display,
+            FlashDrive,
+            Gameboy,
+            Gamepad,
+            GamepadCharge,
+            GamepadMinimalistic,
+            GamepadNoCharge,
+            GamepadOld,
+            HeadphonesRound,
+            HeadphonesRoundSound,
+            HeadphonesSquare,
+            HeadphonesSquareSound,
+            Iphone,
+            Keyboard,
+            Laptop,
+            Laptop2,
+            Laptop3,
+            LaptopMinimalistic,
+            Lightbulb,
+            LightbulbBolt,
+            LightbulbMinimalistic,
+            Lightning,
+            Monitor,
+            MonitorCamera,
+            MonitorSmartphone,
+            Mouse,
+            MouseCircle,
+            MouseMinimalistic,
+            PlugCircle,
+            Printer,
+            Printer2,
+            PrinterMinimalistic,
+            Projector,
+            Radio,
+            RadioMinimalistic,
+            SdCard,
+            Server,
+            Server2,
+            ServerMinimalistic,
+            ServerPath,
+            ServerSquare,
+            ServerSquareCloud,
+            ServerSquareUpdate,
+            SimCard,
+            SimCards,
+            SimCardMinimalistic,
+            Smartphone,
+            Smartphone2,
+            SmartphoneRotate2,
+            SmartphoneRotateAngle,
+            SmartphoneRotateOrientation,
+            SmartphoneUpdate,
+            SmartphoneVibration,
+            SmartSpeaker,
+            SmartSpeaker2,
+            SmartSpeakerMinimalistic,
+            Socket,
+            SsdRound,
+            SsdSquare,
+            Tablet,
+            Telescope,
+            Turntable,
+            TurntableMinimalistic,
+            TurntableMusicNote,
+            Tv,
+            Weigher,
+            WirelessCharge
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Airbuds, AirbudsCase, AirbudsCaseCharge, AirbudsCaseMinimalistic,
-        AirbudsCaseOpen, AirbudsCharge, AirbudsCheck, AirbudsLeft, AirbudsRemove, AirbudsRight,
-        Bluetooth, BluetoothCircle, BluetoothSquare, BluetoothWave, Boombox, Cassette, Cassette2,
-        CloudStorage, Cpu, CpuBolt, Devices, Diskette, Display, FlashDrive, Gameboy, Gamepad,
-        GamepadCharge, GamepadMinimalistic, GamepadNoCharge, GamepadOld, HeadphonesRound,
-        HeadphonesRoundSound, HeadphonesSquare, HeadphonesSquareSound, Iphone, Keyboard, Laptop,
-        Laptop2, Laptop3, LaptopMinimalistic, Lightbulb, LightbulbBolt, LightbulbMinimalistic,
-        Lightning, Monitor, MonitorCamera, MonitorSmartphone, Mouse, MouseCircle, MouseMinimalistic,
-        PlugCircle, Printer, Printer2, PrinterMinimalistic, Projector, Radio, RadioMinimalistic,
-        SdCard, Server, Server2, ServerMinimalistic, ServerPath, ServerSquare, ServerSquareCloud,
-        ServerSquareUpdate, SimCard, SimCards, SimCardMinimalistic, Smartphone, Smartphone2,
-        SmartphoneRotate2, SmartphoneRotateAngle, SmartphoneRotateOrientation, SmartphoneUpdate,
-        SmartphoneVibration, SmartSpeaker, SmartSpeaker2, SmartSpeakerMinimalistic, Socket,
-        SsdRound, SsdSquare, Tablet, Telescope, Turntable, TurntableMinimalistic,
-        TurntableMusicNote, Tv, Weigher, WirelessCharge)
-    return __AllIcons!!
-  }

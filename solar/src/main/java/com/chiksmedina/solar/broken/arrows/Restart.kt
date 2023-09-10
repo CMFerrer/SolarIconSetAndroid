@@ -12,18 +12,22 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.ArrowsGroup
 
-public val ArrowsGroup.Restart: ImageVector
+val ArrowsGroup.Restart: ImageVector
     get() {
         if (_restart != null) {
             return _restart!!
         }
-        _restart = Builder(name = "Restart", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+        _restart = Builder(
+            name = "Restart", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
             group {
-                path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                        strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                        StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType =
-                        NonZero) {
+                path(
+                    fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType =
+                    NonZero
+                ) {
                     moveTo(19.7285f, 10.9288f)
                     curveTo(20.4413f, 13.5978f, 19.7507f, 16.5635f, 17.6569f, 18.6573f)
                     curveTo(15.1798f, 21.1344f, 11.4826f, 21.6475f, 8.5f, 20.1966f)
@@ -38,7 +42,7 @@ public val ArrowsGroup.Restart: ImageVector
                 }
             }
         }
-        .build()
+            .build()
         return _restart!!
     }
 

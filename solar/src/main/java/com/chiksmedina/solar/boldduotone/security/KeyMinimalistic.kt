@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.security
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SecurityGroup
 
-public val SecurityGroup.KeyMinimalistic: ImageVector
+val SecurityGroup.KeyMinimalistic: ImageVector
     get() {
         if (_keyMinimalistic != null) {
             return _keyMinimalistic!!
         }
-        _keyMinimalistic = Builder(name = "KeyMinimalistic", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _keyMinimalistic = Builder(
+            name = "KeyMinimalistic", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.9771f, 14.7904f)
                 curveTo(21.6743f, 12.0932f, 21.6743f, 7.7201f, 18.9771f, 5.0229f)
                 curveTo(16.2799f, 2.3257f, 11.9068f, 2.3257f, 9.2096f, 5.0229f)
@@ -44,9 +45,11 @@ public val SecurityGroup.KeyMinimalistic: ImageVector
                 curveTo(14.6563f, 17.1831f, 17.1861f, 16.5813f, 18.9771f, 14.7904f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.4142f, 8.5858f)
                 curveTo(14.6332f, 7.8047f, 13.3668f, 7.8047f, 12.5858f, 8.5858f)
                 curveTo(11.8047f, 9.3668f, 11.8047f, 10.6332f, 12.5858f, 11.4142f)
@@ -54,9 +57,11 @@ public val SecurityGroup.KeyMinimalistic: ImageVector
                 curveTo(16.1953f, 10.6332f, 16.1953f, 9.3668f, 15.4142f, 8.5858f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.583f, 18.1294f)
                 lineTo(8.3291f, 19.8565f)
                 lineTo(9.3898f, 18.7958f)
@@ -66,7 +71,7 @@ public val SecurityGroup.KeyMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _keyMinimalistic!!
     }
 

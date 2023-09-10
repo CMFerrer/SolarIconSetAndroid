@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,25 +12,31 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.NotificationsGroup
 
-public val NotificationsGroup.BellBing: ImageVector
+val NotificationsGroup.BellBing: ImageVector
     get() {
         if (_bellBing != null) {
             return _bellBing!!
         }
-        _bellBing = Builder(name = "BellBing", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bellBing = Builder(
+            name = "BellBing", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.3518f, 20.2418f)
                 curveTo(9.1929f, 21.311f, 10.5142f, 22.0f, 12.0f, 22.0f)
                 curveTo(13.4858f, 22.0f, 14.8071f, 21.311f, 15.6482f, 20.2418f)
                 curveTo(13.2264f, 20.57f, 10.7736f, 20.57f, 8.3518f, 20.2418f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.7491f, 9.7041f)
                 verticalLineTo(9.0f)
                 curveTo(18.7491f, 5.134f, 15.7274f, 2.0f, 12.0f, 2.0f)
@@ -56,7 +60,7 @@ public val NotificationsGroup.BellBing: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bellBing!!
     }
 

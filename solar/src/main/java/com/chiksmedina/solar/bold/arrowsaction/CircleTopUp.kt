@@ -12,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsActionGroup
 
-public val ArrowsActionGroup.CircleTopUp: ImageVector
+val ArrowsActionGroup.CircleTopUp: ImageVector
     get() {
         if (_circleTopUp != null) {
             return _circleTopUp!!
         }
-        _circleTopUp = Builder(name = "CircleTopUp", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _circleTopUp = Builder(
+            name = "CircleTopUp", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.5f, 2.75f)
                 curveTo(14.5f, 2.3358f, 14.8358f, 2.0f, 15.25f, 2.0f)
                 horizontalLineTo(21.25f)
@@ -38,9 +42,11 @@ public val ArrowsActionGroup.CircleTopUp: ImageVector
                 curveTo(14.8358f, 3.5f, 14.5f, 3.1642f, 14.5f, 2.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.25f, 2.75f)
                 curveTo(5.7271f, 2.75f, 1.25f, 7.2271f, 1.25f, 12.75f)
                 curveTo(1.25f, 18.2728f, 5.7271f, 22.75f, 11.25f, 22.75f)
@@ -58,7 +64,7 @@ public val ArrowsActionGroup.CircleTopUp: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _circleTopUp!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.HeadphonesSquareSound: ImageVector
+val ElectronicDevicesGroup.HeadphonesSquareSound: ImageVector
     get() {
         if (_headphonesSquareSound != null) {
             return _headphonesSquareSound!!
         }
-        _headphonesSquareSound = Builder(name = "HeadphonesSquareSound", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _headphonesSquareSound = Builder(
+            name = "HeadphonesSquareSound", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0534f, 2.0f)
                 curveTo(14.2007f, 2.0f, 15.8835f, 2.0f, 17.1965f, 2.1787f)
                 curveTo(18.5405f, 2.3616f, 19.6009f, 2.7434f, 20.4333f, 3.5861f)
@@ -83,9 +84,11 @@ public val ElectronicDevicesGroup.HeadphonesSquareSound: ImageVector
                 horizontalLineTo(12.0534f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 5.75f)
                 curveTo(12.4142f, 5.75f, 12.75f, 6.0858f, 12.75f, 6.5f)
                 verticalLineTo(11.5f)
@@ -95,9 +98,11 @@ public val ElectronicDevicesGroup.HeadphonesSquareSound: ImageVector
                 curveTo(11.25f, 6.0858f, 11.5858f, 5.75f, 12.0f, 5.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(15.0f, 7.25f)
                 curveTo(15.4142f, 7.25f, 15.75f, 7.5858f, 15.75f, 8.0f)
                 lineTo(15.75f, 10.0f)
@@ -107,9 +112,11 @@ public val ElectronicDevicesGroup.HeadphonesSquareSound: ImageVector
                 curveTo(14.25f, 7.5858f, 14.5858f, 7.25f, 15.0f, 7.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(9.0f, 7.25f)
                 curveTo(9.4142f, 7.25f, 9.75f, 7.5858f, 9.75f, 8.0f)
                 verticalLineTo(10.0f)
@@ -120,7 +127,7 @@ public val ElectronicDevicesGroup.HeadphonesSquareSound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _headphonesSquareSound!!
     }
 

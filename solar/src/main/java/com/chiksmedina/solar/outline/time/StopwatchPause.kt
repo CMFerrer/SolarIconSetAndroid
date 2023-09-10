@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.time
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.TimeGroup
 
-public val TimeGroup.StopwatchPause: ImageVector
+val TimeGroup.StopwatchPause: ImageVector
     get() {
         if (_stopwatchPause != null) {
             return _stopwatchPause!!
         }
-        _stopwatchPause = Builder(name = "StopwatchPause", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _stopwatchPause = Builder(
+            name = "StopwatchPause", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.25f, 2.0f)
                 curveTo(9.25f, 1.5858f, 9.5858f, 1.25f, 10.0f, 1.25f)
                 horizontalLineTo(14.0f)
@@ -45,9 +46,11 @@ public val TimeGroup.StopwatchPause: ImageVector
                 curveTo(6.6152f, 22.75f, 2.25f, 18.3848f, 2.25f, 13.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.5587f, 8.2388f)
                 horizontalLineTo(14.5152f)
                 curveTo(14.3009f, 8.2388f, 14.1041f, 8.2388f, 13.9387f, 8.25f)
@@ -99,9 +102,11 @@ public val TimeGroup.StopwatchPause: ImageVector
                 curveTo(13.974f, 9.7511f, 13.9456f, 9.7572f, 13.9383f, 9.7591f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.0982f, 8.2611f)
                 curveTo(9.9329f, 8.2498f, 9.736f, 8.2499f, 9.5218f, 8.2499f)
                 horizontalLineTo(9.4782f)
@@ -154,7 +159,7 @@ public val TimeGroup.StopwatchPause: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _stopwatchPause!!
     }
 

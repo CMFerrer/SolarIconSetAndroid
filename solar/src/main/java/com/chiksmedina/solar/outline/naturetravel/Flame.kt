@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NatureTravelGroup
 
-public val NatureTravelGroup.Flame: ImageVector
+val NatureTravelGroup.Flame: ImageVector
     get() {
         if (_flame != null) {
             return _flame!!
         }
-        _flame = Builder(name = "Flame", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _flame = Builder(
+            name = "Flame", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.2596f, 3.0985f)
                 curveTo(9.6636f, 2.0877f, 10.9948f, 1.4627f, 12.0272f, 2.2491f)
                 curveTo(13.7471f, 3.5593f, 15.9044f, 5.4854f, 17.6398f, 7.6886f)
@@ -76,7 +80,7 @@ public val NatureTravelGroup.Flame: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _flame!!
     }
 

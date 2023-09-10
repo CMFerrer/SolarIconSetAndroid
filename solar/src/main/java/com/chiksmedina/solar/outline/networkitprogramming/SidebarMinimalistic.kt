@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.SidebarMinimalistic: ImageVector
+val NetworkItProgrammingGroup.SidebarMinimalistic: ImageVector
     get() {
         if (_sidebarMinimalistic != null) {
             return _sidebarMinimalistic!!
         }
-        _sidebarMinimalistic = Builder(name = "SidebarMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sidebarMinimalistic = Builder(
+            name = "SidebarMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9436f, 2.25f)
                 curveTo(8.1058f, 2.25f, 6.6502f, 2.25f, 5.511f, 2.4031f)
                 curveTo(4.3386f, 2.5608f, 3.3896f, 2.8929f, 2.6412f, 3.6412f)
@@ -79,7 +83,7 @@ public val NetworkItProgrammingGroup.SidebarMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sidebarMinimalistic!!
     }
 

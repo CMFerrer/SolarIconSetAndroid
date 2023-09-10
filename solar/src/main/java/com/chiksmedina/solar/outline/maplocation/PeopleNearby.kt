@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MapLocationGroup
 
-public val MapLocationGroup.PeopleNearby: ImageVector
+val MapLocationGroup.PeopleNearby: ImageVector
     get() {
         if (_peopleNearby != null) {
             return _peopleNearby!!
         }
-        _peopleNearby = Builder(name = "PeopleNearby", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _peopleNearby = Builder(
+            name = "PeopleNearby", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.75f)
                 curveTo(11.3096f, 2.75f, 10.75f, 3.3096f, 10.75f, 4.0f)
                 curveTo(10.75f, 4.6904f, 11.3096f, 5.25f, 12.0f, 5.25f)
@@ -117,7 +121,7 @@ public val MapLocationGroup.PeopleNearby: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _peopleNearby!!
     }
 

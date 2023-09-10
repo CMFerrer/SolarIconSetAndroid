@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.arrows
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ArrowsGroup
 
-public val ArrowsGroup.SortHorizontal: ImageVector
+val ArrowsGroup.SortHorizontal: ImageVector
     get() {
         if (_sortHorizontal != null) {
             return _sortHorizontal!!
         }
-        _sortHorizontal = Builder(name = "SortHorizontal", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _sortHorizontal = Builder(
+            name = "SortHorizontal", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.875f, 4.0f)
                 curveTo(10.875f, 3.6988f, 10.6948f, 3.4268f, 10.4173f, 3.3093f)
                 curveTo(10.1399f, 3.1919f, 9.8192f, 3.2519f, 9.6029f, 3.4616f)
@@ -41,9 +42,11 @@ public val ArrowsGroup.SortHorizontal: ImageVector
                 verticalLineTo(4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.125f, 12.0f)
                 curveTo(13.125f, 11.6988f, 13.3052f, 11.4268f, 13.5827f, 11.3093f)
                 curveTo(13.8601f, 11.1919f, 14.1808f, 11.2519f, 14.3971f, 11.4616f)
@@ -62,7 +65,7 @@ public val ArrowsGroup.SortHorizontal: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sortHorizontal!!
     }
 

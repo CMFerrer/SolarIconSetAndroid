@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.time
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.TimeGroup
 
-public val TimeGroup.CalendarDate: ImageVector
+val TimeGroup.CalendarDate: ImageVector
     get() {
         if (_calendarDate != null) {
             return _calendarDate!!
         }
-        _calendarDate = Builder(name = "CalendarDate", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _calendarDate = Builder(
+            name = "CalendarDate", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.9601f, 2.0f)
                 curveTo(7.3776f, 2.0f, 7.7161f, 2.31f, 7.7161f, 2.6923f)
                 verticalLineTo(4.0888f)
@@ -46,9 +47,11 @@ public val TimeGroup.CalendarDate: ImageVector
                 curveTo(6.2041f, 2.31f, 6.5425f, 2.0f, 6.9601f, 2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 14.0f)
                 verticalLineTo(12.0f)
                 curveTo(22.0f, 11.161f, 21.9873f, 9.6653f, 21.9744f, 9.0f)
@@ -62,9 +65,11 @@ public val TimeGroup.CalendarDate: ImageVector
                 curveTo(22.0f, 19.6569f, 22.0f, 17.7712f, 22.0f, 14.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.0f, 12.25f)
                 curveTo(13.0335f, 12.25f, 12.25f, 13.0335f, 12.25f, 14.0f)
                 verticalLineTo(16.0f)
@@ -82,9 +87,11 @@ public val TimeGroup.CalendarDate: ImageVector
                 curveTo(14.25f, 13.862f, 14.1381f, 13.75f, 14.0f, 13.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.25f, 13.0f)
                 curveTo(11.25f, 12.6967f, 11.0673f, 12.4232f, 10.787f, 12.3071f)
                 curveTo(10.5068f, 12.191f, 10.1842f, 12.2552f, 9.9697f, 12.4697f)
@@ -99,7 +106,7 @@ public val TimeGroup.CalendarDate: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _calendarDate!!
     }
 

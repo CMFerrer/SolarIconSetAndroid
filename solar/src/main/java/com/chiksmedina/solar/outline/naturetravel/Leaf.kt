@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NatureTravelGroup
 
-public val NatureTravelGroup.Leaf: ImageVector
+val NatureTravelGroup.Leaf: ImageVector
     get() {
         if (_leaf != null) {
             return _leaf!!
         }
-        _leaf = Builder(name = "Leaf", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _leaf = Builder(
+            name = "Leaf", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.2195f, 1.6461f)
                 curveTo(10.7841f, 1.3822f, 11.3919f, 1.25f, 12.0f, 1.25f)
                 curveTo(12.6081f, 1.25f, 13.2159f, 1.3822f, 13.7805f, 1.6461f)
@@ -66,7 +70,7 @@ public val NatureTravelGroup.Leaf: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _leaf!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MessagesConversationGroup
 
-public val MessagesConversationGroup.ChatUnread: ImageVector
+val MessagesConversationGroup.ChatUnread: ImageVector
     get() {
         if (_chatUnread != null) {
             return _chatUnread!!
         }
-        _chatUnread = Builder(name = "ChatUnread", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _chatUnread = Builder(
+            name = "ChatUnread", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.4606f, 1.25f)
                 lineTo(13.5f, 1.25f)
                 curveTo(13.9142f, 1.25f, 14.25f, 1.5858f, 14.25f, 2.0f)
@@ -97,7 +101,7 @@ public val MessagesConversationGroup.ChatUnread: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chatUnread!!
     }
 

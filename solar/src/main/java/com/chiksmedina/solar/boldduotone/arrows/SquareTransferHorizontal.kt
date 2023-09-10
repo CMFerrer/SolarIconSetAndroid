@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.arrows
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,17 +11,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ArrowsGroup
 
-public val ArrowsGroup.SquareTransferHorizontal: ImageVector
+val ArrowsGroup.SquareTransferHorizontal: ImageVector
     get() {
         if (_squareTransferHorizontal != null) {
             return _squareTransferHorizontal!!
         }
-        _squareTransferHorizontal = Builder(name = "SquareTransferHorizontal", defaultWidth =
-                24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _squareTransferHorizontal = Builder(
+            name = "SquareTransferHorizontal", defaultWidth =
+            24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.5355f, 20.5355f)
                 curveTo(22.0f, 19.0711f, 22.0f, 16.714f, 22.0f, 12.0f)
                 curveTo(22.0f, 7.286f, 22.0f, 4.9289f, 20.5355f, 3.4645f)
@@ -36,9 +37,11 @@ public val ArrowsGroup.SquareTransferHorizontal: ImageVector
                 curveTo(16.714f, 22.0f, 19.0711f, 22.0f, 20.5355f, 20.5355f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.0f, 10.75f)
                 curveTo(6.6874f, 10.75f, 6.4076f, 10.5561f, 6.2978f, 10.2634f)
                 curveTo(6.188f, 9.9706f, 6.2713f, 9.6405f, 6.5069f, 9.4349f)
@@ -52,9 +55,11 @@ public val ArrowsGroup.SquareTransferHorizontal: ImageVector
                 lineTo(7.0f, 10.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.0694f, 16.4349f)
                 curveTo(12.7573f, 16.7073f, 12.7251f, 17.1811f, 12.9975f, 17.4932f)
                 curveTo(13.2698f, 17.8052f, 13.7436f, 17.8374f, 14.0557f, 17.5651f)
@@ -69,7 +74,7 @@ public val ArrowsGroup.SquareTransferHorizontal: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _squareTransferHorizontal!!
     }
 

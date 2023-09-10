@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.facesemotionsstickers
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.FacesEmotionsStickersGroup
 
-public val FacesEmotionsStickersGroup.SleepingSquare: ImageVector
+val FacesEmotionsStickersGroup.SleepingSquare: ImageVector
     get() {
         if (_sleepingSquare != null) {
             return _sleepingSquare!!
         }
-        _sleepingSquare = Builder(name = "SleepingSquare", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sleepingSquare = Builder(
+            name = "SleepingSquare", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.375f, 4.6495f)
                 curveTo(16.0163f, 4.8566f, 15.5576f, 4.7337f, 15.3505f, 4.375f)
                 curveTo(15.1434f, 4.0163f, 15.2663f, 3.5576f, 15.625f, 3.3505f)
@@ -41,9 +42,11 @@ public val FacesEmotionsStickersGroup.SleepingSquare: ImageVector
                 lineTo(16.375f, 4.6495f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.6729f, 6.1495f)
                 curveTo(12.3142f, 5.9424f, 12.1912f, 5.4837f, 12.3984f, 5.125f)
                 curveTo(12.6055f, 4.7663f, 13.0642f, 4.6434f, 13.4229f, 4.8505f)
@@ -61,9 +64,11 @@ public val FacesEmotionsStickersGroup.SleepingSquare: ImageVector
                 lineTo(12.6729f, 6.1495f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.9747f, 3.0195f)
                 curveTo(13.9168f, 3.1393f, 13.8698f, 3.2638f, 13.8339f, 3.3915f)
                 curveTo(12.8228f, 3.0132f, 11.657f, 3.4091f, 11.0994f, 4.3751f)
@@ -113,7 +118,7 @@ public val FacesEmotionsStickersGroup.SleepingSquare: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sleepingSquare!!
     }
 

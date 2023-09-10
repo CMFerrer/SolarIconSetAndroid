@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.CupMusic: ImageVector
+val EssentionalUiGroup.CupMusic: ImageVector
     get() {
         if (_cupMusic != null) {
             return _cupMusic!!
         }
-        _cupMusic = Builder(name = "CupMusic", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _cupMusic = Builder(
+            name = "CupMusic", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.3164f, 11.2666f)
                 curveTo(11.8687f, 11.2666f, 12.3164f, 10.8189f, 12.3164f, 10.2666f)
                 curveTo(12.3164f, 9.7143f, 11.8687f, 9.2666f, 11.3164f, 9.2666f)
@@ -32,9 +33,11 @@ public val EssentionalUiGroup.CupMusic: ImageVector
                 curveTo(10.3164f, 10.8189f, 10.7641f, 11.2666f, 11.3164f, 11.2666f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0002f, 2.0f)
                 curveTo(13.7837f, 2.0f, 15.2531f, 2.1571f, 16.3771f, 2.3467f)
                 curveTo(17.5159f, 2.5389f, 18.0852f, 2.6349f, 18.5609f, 3.2208f)
@@ -75,9 +78,11 @@ public val EssentionalUiGroup.CupMusic: ImageVector
                 curveTo(14.0596f, 6.0f, 13.5f, 5.4404f, 13.5f, 4.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 8.1623f)
                 lineTo(2.0f, 8.2349f)
                 curveTo(2.0f, 9.0956f, 2.0f, 9.526f, 2.2072f, 9.8781f)
@@ -90,9 +95,11 @@ public val EssentionalUiGroup.CupMusic: ImageVector
                 curveTo(2.0f, 6.5969f, 2.0f, 7.1187f, 2.0f, 8.1623f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.9999f, 8.1623f)
                 lineTo(21.9999f, 8.2349f)
                 curveTo(21.9999f, 9.0956f, 21.9999f, 9.526f, 21.7927f, 9.8781f)
@@ -106,7 +113,7 @@ public val EssentionalUiGroup.CupMusic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cupMusic!!
     }
 

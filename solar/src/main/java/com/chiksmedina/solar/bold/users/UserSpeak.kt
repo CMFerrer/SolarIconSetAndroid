@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.users
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.UsersGroup
 
-public val UsersGroup.UserSpeak: ImageVector
+val UsersGroup.UserSpeak: ImageVector
     get() {
         if (_userSpeak != null) {
             return _userSpeak!!
         }
-        _userSpeak = Builder(name = "UserSpeak", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _userSpeak = Builder(
+            name = "UserSpeak", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.3569f, 1.6142f)
                 curveTo(18.57f, 1.2591f, 19.0307f, 1.1439f, 19.3859f, 1.357f)
                 lineTo(19.0f, 2.0001f)
@@ -63,9 +64,11 @@ public val UsersGroup.UserSpeak: ImageVector
                 curveTo(18.258f, 2.4262f, 18.1447f, 1.9679f, 18.3569f, 1.6142f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 10.0001f)
                 curveTo(12.2091f, 10.0001f, 14.0f, 8.2093f, 14.0f, 6.0001f)
                 curveTo(14.0f, 3.791f, 12.2091f, 2.0001f, 10.0f, 2.0001f)
@@ -73,9 +76,11 @@ public val UsersGroup.UserSpeak: ImageVector
                 curveTo(6.0f, 8.2093f, 7.7909f, 10.0001f, 10.0f, 10.0001f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 17.5001f)
                 curveTo(2.0f, 19.9854f, 2.0f, 22.0001f, 10.0f, 22.0001f)
                 curveTo(18.0f, 22.0001f, 18.0f, 19.9854f, 18.0f, 17.5001f)
@@ -83,9 +88,11 @@ public val UsersGroup.UserSpeak: ImageVector
                 curveTo(5.5817f, 13.0001f, 2.0f, 15.0148f, 2.0f, 17.5001f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.3859f, 3.357f)
                 curveTo(17.0307f, 3.1439f, 16.57f, 3.2591f, 16.3569f, 3.6142f)
                 lineTo(16.6051f, 4.6377f)
@@ -123,7 +130,7 @@ public val UsersGroup.UserSpeak: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _userSpeak!!
     }
 

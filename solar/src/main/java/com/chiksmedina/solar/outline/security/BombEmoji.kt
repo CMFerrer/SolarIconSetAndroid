@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.security
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SecurityGroup
 
-public val SecurityGroup.BombEmoji: ImageVector
+val SecurityGroup.BombEmoji: ImageVector
     get() {
         if (_bombEmoji != null) {
             return _bombEmoji!!
         }
-        _bombEmoji = Builder(name = "BombEmoji", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bombEmoji = Builder(
+            name = "BombEmoji", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 16.75f)
                 curveTo(12.4142f, 16.75f, 12.75f, 16.4142f, 12.75f, 16.0f)
                 curveTo(12.75f, 15.5858f, 12.4142f, 15.25f, 12.0f, 15.25f)
@@ -34,9 +35,11 @@ public val SecurityGroup.BombEmoji: ImageVector
                 horizontalLineTo(12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.0f, 12.5f)
                 curveTo(14.0f, 13.3284f, 13.5523f, 14.0f, 13.0f, 14.0f)
                 curveTo(12.4477f, 14.0f, 12.0f, 13.3284f, 12.0f, 12.5f)
@@ -44,9 +47,11 @@ public val SecurityGroup.BombEmoji: ImageVector
                 curveTo(13.5523f, 11.0f, 14.0f, 11.6716f, 14.0f, 12.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.0f, 14.0f)
                 curveTo(9.5523f, 14.0f, 10.0f, 13.3284f, 10.0f, 12.5f)
                 curveTo(10.0f, 11.6716f, 9.5523f, 11.0f, 9.0f, 11.0f)
@@ -54,9 +59,11 @@ public val SecurityGroup.BombEmoji: ImageVector
                 curveTo(8.0f, 13.3284f, 8.4477f, 14.0f, 9.0f, 14.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.7166f, 2.078f)
                 curveTo(19.2812f, 0.974f, 17.7188f, 0.974f, 17.2834f, 2.078f)
                 lineTo(16.6596f, 3.6596f)
@@ -100,7 +107,7 @@ public val SecurityGroup.BombEmoji: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bombEmoji!!
     }
 

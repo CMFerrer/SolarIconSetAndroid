@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.school
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SchoolGroup
 
-public val SchoolGroup.CaseRound: ImageVector
+val SchoolGroup.CaseRound: ImageVector
     get() {
         if (_caseRound != null) {
             return _caseRound!!
         }
-        _caseRound = Builder(name = "CaseRound", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _caseRound = Builder(
+            name = "CaseRound", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.7754f, 5.25f)
                 horizontalLineTo(17.2246f)
                 curveTo(18.0409f, 5.25f, 18.6994f, 5.25f, 19.2325f, 5.2937f)
@@ -130,9 +131,11 @@ public val SchoolGroup.CaseRound: ImageVector
                 horizontalLineTo(10.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0002f, 2.75f)
                 curveTo(11.0217f, 2.75f, 10.1873f, 3.375f, 9.878f, 4.2499f)
                 curveTo(9.74f, 4.6405f, 9.3115f, 4.8452f, 8.921f, 4.7071f)
@@ -145,7 +148,7 @@ public val SchoolGroup.CaseRound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _caseRound!!
     }
 

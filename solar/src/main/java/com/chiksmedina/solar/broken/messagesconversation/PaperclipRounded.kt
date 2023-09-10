@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.MessagesConversationGroup
 
-public val MessagesConversationGroup.PaperclipRounded: ImageVector
+val MessagesConversationGroup.PaperclipRounded: ImageVector
     get() {
         if (_paperclipRounded != null) {
             return _paperclipRounded!!
         }
-        _paperclipRounded = Builder(name = "PaperclipRounded", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _paperclipRounded = Builder(
+            name = "PaperclipRounded", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.8854f, 15.9496f)
                 curveTo(20.3094f, 14.5128f, 21.0214f, 13.7944f, 21.4104f, 13.0241f)
                 curveTo(22.1965f, 11.4673f, 22.1965f, 9.6248f, 21.4104f, 8.068f)
@@ -42,7 +46,7 @@ public val MessagesConversationGroup.PaperclipRounded: ImageVector
                 curveTo(3.2456f, 17.1515f, 3.6455f, 17.5549f, 4.4451f, 18.3618f)
             }
         }
-        .build()
+            .build()
         return _paperclipRounded!!
     }
 

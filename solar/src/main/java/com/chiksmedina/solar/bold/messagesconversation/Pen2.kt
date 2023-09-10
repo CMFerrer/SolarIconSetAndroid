@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.messagesconversation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MessagesConversationGroup
 
-public val MessagesConversationGroup.Pen2: ImageVector
+val MessagesConversationGroup.Pen2: ImageVector
     get() {
         if (_pen2 != null) {
             return _pen2!!
         }
-        _pen2 = Builder(name = "Pen2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _pen2 = Builder(
+            name = "Pen2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.25f, 22.0f)
                 curveTo(3.25f, 21.5858f, 3.5858f, 21.25f, 4.0f, 21.25f)
                 horizontalLineTo(20.0f)
@@ -34,9 +35,11 @@ public val MessagesConversationGroup.Pen2: ImageVector
                 curveTo(3.5858f, 22.75f, 3.25f, 22.4142f, 3.25f, 22.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.5201f, 14.929f)
                 lineTo(11.5201f, 14.9289f)
                 lineTo(17.4368f, 9.0122f)
@@ -56,9 +59,11 @@ public val MessagesConversationGroup.Pen2: ImageVector
                 curveTo(10.8275f, 15.6215f, 11.0584f, 15.3907f, 11.5201f, 14.929f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.0786f, 7.3704f)
                 curveTo(20.3071f, 6.1419f, 20.3071f, 4.15f, 19.0786f, 2.9214f)
                 curveTo(17.85f, 1.6929f, 15.8581f, 1.6929f, 14.6296f, 2.9214f)
@@ -71,7 +76,7 @@ public val MessagesConversationGroup.Pen2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _pen2!!
     }
 

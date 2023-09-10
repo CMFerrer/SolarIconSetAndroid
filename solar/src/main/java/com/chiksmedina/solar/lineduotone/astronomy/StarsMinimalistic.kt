@@ -1,12 +1,10 @@
 package com.chiksmedina.solar.lineduotone.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Round
 import androidx.compose.ui.graphics.vector.ImageVector
@@ -15,16 +13,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.AstronomyGroup
 
-public val AstronomyGroup.StarsMinimalistic: ImageVector
+val AstronomyGroup.StarsMinimalistic: ImageVector
     get() {
         if (_starsMinimalistic != null) {
             return _starsMinimalistic!!
         }
-        _starsMinimalistic = Builder(name = "StarsMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _starsMinimalistic = Builder(
+            name = "StarsMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.0802f, 7.8971f)
                 curveTo(11.1568f, 5.9657f, 11.6952f, 5.0f, 12.5f, 5.0f)
                 curveTo(13.3048f, 5.0f, 13.8432f, 5.9657f, 14.9198f, 7.8971f)
@@ -58,9 +60,11 @@ public val AstronomyGroup.StarsMinimalistic: ImageVector
                 lineTo(10.0802f, 7.8971f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.55f, strokeAlpha = 0.55f, strokeLineWidth = 1.0f, strokeLineCap =
-                    Butt, strokeLineJoin = Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.55f, strokeAlpha = 0.55f, strokeLineWidth = 1.0f, strokeLineCap =
+                Butt, strokeLineJoin = Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.9899f, 2.0f)
                 curveTo(4.9899f, 2.0f, 5.2778f, 3.4577f, 5.9091f, 4.0848f)
                 curveTo(6.5404f, 4.7118f, 8.0f, 4.9899f, 8.0f, 4.9899f)
@@ -72,17 +76,19 @@ public val AstronomyGroup.StarsMinimalistic: ImageVector
                 curveTo(4.7118f, 3.4596f, 4.9899f, 2.0f, 4.9899f, 2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.55f, strokeAlpha = 0.55f, strokeLineWidth = 1.5f, strokeLineCap =
-                    StrokeCap.Companion.Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.55f, strokeAlpha = 0.55f, strokeLineWidth = 1.5f, strokeLineCap =
+                StrokeCap.Companion.Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.0f, 5.0f)
                 horizontalLineTo(20.0f)
                 moveTo(19.0f, 6.0f)
                 lineTo(19.0f, 4.0f)
             }
         }
-        .build()
+            .build()
         return _starsMinimalistic!!
     }
 

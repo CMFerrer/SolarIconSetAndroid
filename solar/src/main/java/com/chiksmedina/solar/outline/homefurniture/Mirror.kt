@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Mirror: ImageVector
+val HomeFurnitureGroup.Mirror: ImageVector
     get() {
         if (_mirror != null) {
             return _mirror!!
         }
-        _mirror = Builder(name = "Mirror", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _mirror = Builder(
+            name = "Mirror", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.75f)
                 curveTo(9.248f, 2.75f, 6.75f, 5.6073f, 6.75f, 9.5f)
                 curveTo(6.75f, 13.3927f, 9.248f, 16.25f, 12.0f, 16.25f)
@@ -69,7 +73,7 @@ public val HomeFurnitureGroup.Mirror: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _mirror!!
     }
 

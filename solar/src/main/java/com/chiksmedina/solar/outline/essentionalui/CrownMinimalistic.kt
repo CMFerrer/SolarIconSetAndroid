@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.CrownMinimalistic: ImageVector
+val EssentionalUiGroup.CrownMinimalistic: ImageVector
     get() {
         if (_crownMinimalistic != null) {
             return _crownMinimalistic!!
         }
-        _crownMinimalistic = Builder(name = "CrownMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _crownMinimalistic = Builder(
+            name = "CrownMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.7874f, 3.0352f)
                 curveTo(11.547f, 3.3921f, 11.2726f, 3.9501f, 10.8609f, 4.7938f)
                 lineTo(8.6083f, 9.4098f)
@@ -119,7 +123,7 @@ public val EssentionalUiGroup.CrownMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _crownMinimalistic!!
     }
 

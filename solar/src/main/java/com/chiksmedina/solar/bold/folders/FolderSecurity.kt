@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.folders
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.FoldersGroup
 
-public val FoldersGroup.FolderSecurity: ImageVector
+val FoldersGroup.FolderSecurity: ImageVector
     get() {
         if (_folderSecurity != null) {
             return _folderSecurity!!
         }
-        _folderSecurity = Builder(name = "FolderSecurity", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _folderSecurity = Builder(
+            name = "FolderSecurity", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 11.75f)
                 curveTo(11.3096f, 11.75f, 10.75f, 12.3096f, 10.75f, 13.0f)
                 curveTo(10.75f, 13.6904f, 11.3096f, 14.25f, 12.0f, 14.25f)
@@ -31,9 +32,11 @@ public val FoldersGroup.FolderSecurity: ImageVector
                 curveTo(13.25f, 12.3096f, 12.6904f, 11.75f, 12.0f, 11.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(22.0f, 11.7979f)
                 verticalLineTo(14.0f)
                 curveTo(22.0f, 17.7712f, 22.0f, 19.6569f, 20.8284f, 20.8284f)
@@ -69,7 +72,7 @@ public val FoldersGroup.FolderSecurity: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _folderSecurity!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MoneyGroup
 
-public val MoneyGroup.WadOfMoney: ImageVector
+val MoneyGroup.WadOfMoney: ImageVector
     get() {
         if (_wadOfMoney != null) {
             return _wadOfMoney!!
         }
-        _wadOfMoney = Builder(name = "WadOfMoney", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _wadOfMoney = Builder(
+            name = "WadOfMoney", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.75f, 5.7506f)
                 verticalLineTo(8.325f)
                 curveTo(17.4617f, 8.6725f, 18.75f, 10.1858f, 18.75f, 12.0f)
@@ -97,7 +101,7 @@ public val MoneyGroup.WadOfMoney: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _wadOfMoney!!
     }
 

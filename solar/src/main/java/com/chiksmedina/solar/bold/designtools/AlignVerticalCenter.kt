@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.DesignToolsGroup
 
-public val DesignToolsGroup.AlignVerticalCenter: ImageVector
+val DesignToolsGroup.AlignVerticalCenter: ImageVector
     get() {
         if (_alignVerticalCenter != null) {
             return _alignVerticalCenter!!
         }
-        _alignVerticalCenter = Builder(name = "AlignVerticalCenter", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _alignVerticalCenter = Builder(
+            name = "AlignVerticalCenter", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.5f, 5.0f)
                 curveTo(6.5654f, 5.0f, 6.0981f, 5.0f, 5.75f, 5.201f)
                 curveTo(5.522f, 5.3326f, 5.3326f, 5.522f, 5.201f, 5.75f)
@@ -67,7 +71,7 @@ public val DesignToolsGroup.AlignVerticalCenter: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _alignVerticalCenter!!
     }
 

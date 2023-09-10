@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.DesignToolsGroup
 
-public val DesignToolsGroup.CropMinimalistic: ImageVector
+val DesignToolsGroup.CropMinimalistic: ImageVector
     get() {
         if (_cropMinimalistic != null) {
             return _cropMinimalistic!!
         }
-        _cropMinimalistic = Builder(name = "CropMinimalistic", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cropMinimalistic = Builder(
+            name = "CropMinimalistic", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.1716f, 3.1716f)
                 curveTo(2.0f, 4.3432f, 2.0f, 6.2288f, 2.0f, 10.0f)
                 verticalLineTo(14.0f)
@@ -83,7 +87,7 @@ public val DesignToolsGroup.CropMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cropMinimalistic!!
     }
 

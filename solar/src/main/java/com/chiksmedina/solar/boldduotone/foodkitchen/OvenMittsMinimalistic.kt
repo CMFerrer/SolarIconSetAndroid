@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.FoodKitchenGroup
 
-public val FoodKitchenGroup.OvenMittsMinimalistic: ImageVector
+val FoodKitchenGroup.OvenMittsMinimalistic: ImageVector
     get() {
         if (_ovenMittsMinimalistic != null) {
             return _ovenMittsMinimalistic!!
         }
-        _ovenMittsMinimalistic = Builder(name = "OvenMittsMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _ovenMittsMinimalistic = Builder(
+            name = "OvenMittsMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(7.5876f, 20.0262f)
                 lineTo(4.0188f, 16.5368f)
                 curveTo(2.6729f, 15.221f, 2.0f, 14.563f, 2.0f, 13.7454f)
@@ -41,9 +43,11 @@ public val FoodKitchenGroup.OvenMittsMinimalistic: ImageVector
                 curveTo(9.6064f, 22.0f, 8.9334f, 21.3421f, 7.5876f, 20.0262f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.0409f, 12.8602f)
                 curveTo(6.7448f, 12.5706f, 6.2699f, 12.576f, 5.9803f, 12.8722f)
                 curveTo(5.6908f, 13.1683f, 5.6961f, 13.6432f, 5.9923f, 13.9328f)
@@ -54,7 +58,7 @@ public val FoodKitchenGroup.OvenMittsMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ovenMittsMinimalistic!!
     }
 

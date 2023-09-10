@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.FlashDrive: ImageVector
+val ElectronicDevicesGroup.FlashDrive: ImageVector
     get() {
         if (_flashDrive != null) {
             return _flashDrive!!
         }
-        _flashDrive = Builder(name = "FlashDrive", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _flashDrive = Builder(
+            name = "FlashDrive", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.8923f, 3.1439f)
                 curveTo(15.4676f, 3.4732f, 14.9659f, 3.9808f, 14.2276f, 4.7309f)
                 lineTo(13.1673f, 5.8084f)
@@ -115,7 +119,7 @@ public val ElectronicDevicesGroup.FlashDrive: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _flashDrive!!
     }
 

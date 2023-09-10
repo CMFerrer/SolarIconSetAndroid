@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.MessagesConversationGroup
 
-public val MessagesConversationGroup.Paperclip2: ImageVector
+val MessagesConversationGroup.Paperclip2: ImageVector
     get() {
         if (_paperclip2 != null) {
             return _paperclip2!!
         }
-        _paperclip2 = Builder(name = "Paperclip2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _paperclip2 = Builder(
+            name = "Paperclip2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(8.1069f, 17.4174f)
                 lineTo(15.4868f, 10.3512f)
                 curveTo(15.9348f, 9.9221f, 16.1589f, 9.7076f, 16.2759f, 9.4748f)
@@ -46,7 +50,7 @@ public val MessagesConversationGroup.Paperclip2: ImageVector
                 lineTo(3.5079f, 10.1464f)
             }
         }
-        .build()
+            .build()
         return _paperclip2!!
     }
 

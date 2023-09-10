@@ -1,7 +1,6 @@
 package com.chiksmedina.solar.linear.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
@@ -14,16 +13,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.LightbulbBolt: ImageVector
+val ElectronicDevicesGroup.LightbulbBolt: ImageVector
     get() {
         if (_lightbulbBolt != null) {
             return _lightbulbBolt!!
         }
-        _lightbulbBolt = Builder(name = "LightbulbBolt", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _lightbulbBolt = Builder(
+            name = "LightbulbBolt", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.5f, 19.5f)
                 horizontalLineTo(9.5f)
                 moveTo(14.5f, 19.5f)
@@ -45,16 +48,18 @@ public val ElectronicDevicesGroup.LightbulbBolt: ImageVector
                 curveTo(10.022f, 21.6674f, 9.8326f, 21.478f, 9.701f, 21.25f)
                 curveTo(9.5f, 20.9019f, 9.5f, 20.4346f, 9.5f, 19.5f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.7856f, 8.5f)
                 lineTo(10.6427f, 11.5f)
                 horizontalLineTo(13.6427f)
                 lineTo(11.4999f, 14.5f)
             }
         }
-        .build()
+            .build()
         return _lightbulbBolt!!
     }
 

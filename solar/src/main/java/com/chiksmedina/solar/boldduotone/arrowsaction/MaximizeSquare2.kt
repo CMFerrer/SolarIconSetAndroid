@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.arrowsaction
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ArrowsActionGroup
 
-public val ArrowsActionGroup.MaximizeSquare2: ImageVector
+val ArrowsActionGroup.MaximizeSquare2: ImageVector
     get() {
         if (_maximizeSquare2 != null) {
             return _maximizeSquare2!!
         }
-        _maximizeSquare2 = Builder(name = "MaximizeSquare2", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _maximizeSquare2 = Builder(
+            name = "MaximizeSquare2", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 12.0f)
                 curveTo(2.0f, 7.286f, 2.0f, 4.9289f, 3.4645f, 3.4645f)
                 curveTo(4.9289f, 2.0f, 7.286f, 2.0f, 12.0f, 2.0f)
@@ -35,9 +36,11 @@ public val ArrowsActionGroup.MaximizeSquare2: ImageVector
                 curveTo(2.0f, 19.0711f, 2.0f, 16.714f, 2.0f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.25f, 7.0f)
                 curveTo(13.25f, 7.4142f, 13.5858f, 7.75f, 14.0f, 7.75f)
                 horizontalLineTo(15.1893f)
@@ -54,9 +57,11 @@ public val ArrowsActionGroup.MaximizeSquare2: ImageVector
                 curveTo(13.5858f, 6.25f, 13.25f, 6.5858f, 13.25f, 7.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.0303f, 14.0303f)
                 curveTo(11.3232f, 13.7374f, 11.3232f, 13.2626f, 11.0303f, 12.9697f)
                 curveTo(10.7374f, 12.6768f, 10.2626f, 12.6768f, 9.9697f, 12.9697f)
@@ -73,9 +78,11 @@ public val ArrowsActionGroup.MaximizeSquare2: ImageVector
                 lineTo(11.0303f, 14.0303f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.75f, 7.0f)
                 curveTo(10.75f, 7.4142f, 10.4142f, 7.75f, 10.0f, 7.75f)
                 horizontalLineTo(8.8107f)
@@ -92,9 +99,11 @@ public val ArrowsActionGroup.MaximizeSquare2: ImageVector
                 curveTo(10.4142f, 6.25f, 10.75f, 6.5858f, 10.75f, 7.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.9697f, 14.0303f)
                 curveTo(12.6768f, 13.7374f, 12.6768f, 13.2626f, 12.9697f, 12.9697f)
                 curveTo(13.2626f, 12.6768f, 13.7374f, 12.6768f, 14.0303f, 12.9697f)
@@ -112,7 +121,7 @@ public val ArrowsActionGroup.MaximizeSquare2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _maximizeSquare2!!
     }
 

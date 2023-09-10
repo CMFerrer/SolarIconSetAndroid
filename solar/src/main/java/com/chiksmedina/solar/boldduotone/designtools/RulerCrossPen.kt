@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.DesignToolsGroup
 
-public val DesignToolsGroup.RulerCrossPen: ImageVector
+val DesignToolsGroup.RulerCrossPen: ImageVector
     get() {
         if (_rulerCrossPen != null) {
             return _rulerCrossPen!!
         }
-        _rulerCrossPen = Builder(name = "RulerCrossPen", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _rulerCrossPen = Builder(
+            name = "RulerCrossPen", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.8487f, 8.7131f)
                 curveTo(22.3844f, 7.1774f, 22.3844f, 4.6875f, 20.8487f, 3.1518f)
                 curveTo(19.313f, 1.6161f, 16.8231f, 1.6161f, 15.2874f, 3.1518f)
@@ -35,9 +36,11 @@ public val DesignToolsGroup.RulerCrossPen: ImageVector
                 lineTo(20.8487f, 8.7131f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.4386f, 4.0f)
                 lineTo(14.4004f, 4.0382f)
                 curveTo(14.4125f, 4.0749f, 14.4251f, 4.1121f, 14.4382f, 4.1497f)
@@ -58,9 +61,11 @@ public val DesignToolsGroup.RulerCrossPen: ImageVector
                 lineTo(14.4386f, 4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.4917f, 4.0454f)
                 lineTo(4.0454f, 5.4917f)
                 curveTo(2.6818f, 6.8552f, 2.0f, 7.537f, 2.0f, 8.3843f)
@@ -73,9 +78,11 @@ public val DesignToolsGroup.RulerCrossPen: ImageVector
                 curveTo(7.537f, 2.0f, 6.8552f, 2.6818f, 5.4917f, 4.0454f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.3957f, 11.1642f)
                 lineTo(11.4001f, 18.1598f)
                 curveTo(11.3156f, 18.2443f, 11.2372f, 18.3226f, 11.1641f, 18.3956f)
@@ -88,9 +95,11 @@ public val DesignToolsGroup.RulerCrossPen: ImageVector
                 lineTo(18.3957f, 11.1642f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.1085f, 12.877f)
                 lineTo(18.9394f, 14.0461f)
                 curveTo(18.6465f, 14.339f, 18.6465f, 14.8138f, 18.9394f, 15.1067f)
@@ -99,9 +108,11 @@ public val DesignToolsGroup.RulerCrossPen: ImageVector
                 curveTo(20.8715f, 13.644f, 20.5243f, 13.2931f, 20.1085f, 12.877f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.7659f, 2.6128f)
                 lineTo(8.4394f, 3.9393f)
                 curveTo(8.1465f, 4.2322f, 8.1465f, 4.707f, 8.4394f, 4.9999f)
@@ -111,7 +122,7 @@ public val DesignToolsGroup.RulerCrossPen: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _rulerCrossPen!!
     }
 

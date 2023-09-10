@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FoodKitchenGroup
 
-public val FoodKitchenGroup.CupPaper: ImageVector
+val FoodKitchenGroup.CupPaper: ImageVector
     get() {
         if (_cupPaper != null) {
             return _cupPaper!!
         }
-        _cupPaper = Builder(name = "CupPaper", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cupPaper = Builder(
+            name = "CupPaper", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.1465f, 1.25f)
                 horizontalLineTo(14.8535f)
                 curveTo(15.7395f, 1.25f, 16.4604f, 1.25f, 17.048f, 1.3093f)
@@ -113,7 +117,7 @@ public val FoodKitchenGroup.CupPaper: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cupPaper!!
     }
 

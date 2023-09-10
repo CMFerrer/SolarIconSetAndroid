@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.boldduotone
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldduotoneGroup
+import com.chiksmedina.solar.BoldDuotoneSolar
 import com.chiksmedina.solar.boldduotone.school.Backpack
 import com.chiksmedina.solar.boldduotone.school.Book
 import com.chiksmedina.solar.boldduotone.school.Book2
@@ -31,25 +31,50 @@ import com.chiksmedina.solar.boldduotone.school.PassportMinimalistic
 import com.chiksmedina.solar.boldduotone.school.PlusMinus
 import com.chiksmedina.solar.boldduotone.school.SquareAcademicCap
 import com.chiksmedina.solar.boldduotone.school.SquareAcademicCap2
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object SchoolGroup
+object SchoolGroup
 
-public val BoldduotoneGroup.School: SchoolGroup
-  get() = SchoolGroup
+val BoldDuotoneSolar.School: SchoolGroup
+    get() = SchoolGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val SchoolGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val SchoolGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Backpack,
+            Book,
+            Bookmark,
+            BookmarkCircle,
+            BookmarkOpened,
+            BookmarkSquare,
+            BookmarkSquareMinimalistic,
+            Book2,
+            BookBookmark,
+            BookBookmarkMinimalistic,
+            BookMinimalistic,
+            Calculator,
+            CalculatorMinimalistic,
+            Case,
+            CaseMinimalistic,
+            CaseRound,
+            CaseRoundMinimalistic,
+            Diploma,
+            DiplomaVerified,
+            Document,
+            Notebook,
+            NotebookBookmark,
+            NotebookMinimalistic,
+            NotebookSquare,
+            Passport,
+            PassportMinimalistic,
+            PlusMinus,
+            SquareAcademicCap,
+            SquareAcademicCap2
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Backpack, Book, Bookmark, BookmarkCircle, BookmarkOpened, BookmarkSquare,
-        BookmarkSquareMinimalistic, Book2, BookBookmark, BookBookmarkMinimalistic, BookMinimalistic,
-        Calculator, CalculatorMinimalistic, Case, CaseMinimalistic, CaseRound,
-        CaseRoundMinimalistic, Diploma, DiplomaVerified, Document, Notebook, NotebookBookmark,
-        NotebookMinimalistic, NotebookSquare, Passport, PassportMinimalistic, PlusMinus,
-        SquareAcademicCap, SquareAcademicCap2)
-    return __AllIcons!!
-  }

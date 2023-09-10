@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.CallGroup
 
-public val CallGroup.CallChat: ImageVector
+val CallGroup.CallChat: ImageVector
     get() {
         if (_callChat != null) {
             return _callChat!!
         }
-        _callChat = Builder(name = "CallChat", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _callChat = Builder(
+            name = "CallChat", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.0f, 2.75f)
                 curveTo(14.6528f, 2.75f, 12.75f, 4.6528f, 12.75f, 7.0f)
                 curveTo(12.75f, 7.6812f, 12.9097f, 8.323f, 13.1931f, 8.8919f)
@@ -109,7 +113,7 @@ public val CallGroup.CallChat: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _callChat!!
     }
 

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MessagesConversationGroup
 
-public val MessagesConversationGroup.MultipleForwardRight: ImageVector
+val MessagesConversationGroup.MultipleForwardRight: ImageVector
     get() {
         if (_multipleForwardRight != null) {
             return _multipleForwardRight!!
         }
-        _multipleForwardRight = Builder(name = "MultipleForwardRight", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _multipleForwardRight = Builder(
+            name = "MultipleForwardRight", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.3315f, 5.1835f)
                 lineTo(17.3094f, 9.6083f)
                 curveTo(18.2399f, 10.4355f, 18.7052f, 10.8491f, 18.8767f, 11.3374f)
@@ -45,9 +47,11 @@ public val MessagesConversationGroup.MultipleForwardRight: ImageVector
                 curveTo(11.6981f, 4.6205f, 11.9092f, 4.8082f, 12.3315f, 5.1835f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.9889f, 3.9897f)
                 curveTo(15.2708f, 3.6861f, 15.7453f, 3.6686f, 16.0488f, 3.9504f)
                 lineTo(21.2651f, 8.794f)
@@ -64,7 +68,7 @@ public val MessagesConversationGroup.MultipleForwardRight: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _multipleForwardRight!!
     }
 

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Panorama: ImageVector
+val VideoAudioSoundGroup.Panorama: ImageVector
     get() {
         if (_panorama != null) {
             return _panorama!!
         }
-        _panorama = Builder(name = "Panorama", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _panorama = Builder(
+            name = "Panorama", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.2093f, 12.8396f)
                 curveTo(19.2093f, 13.618f, 18.5846f, 14.2489f, 17.814f, 14.2489f)
                 curveTo(17.0433f, 14.2489f, 16.4186f, 13.618f, 16.4186f, 12.8396f)
@@ -31,9 +33,11 @@ public val VideoAudioSoundGroup.Panorama: ImageVector
                 curveTo(18.5846f, 11.4304f, 19.2093f, 12.0613f, 19.2093f, 12.8396f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.4475f, 3.0731f)
                 curveTo(17.3881f, 2.7415f, 16.4186f, 3.587f, 16.4186f, 4.62f)
                 verticalLineTo(8.2457f)
@@ -78,7 +82,7 @@ public val VideoAudioSoundGroup.Panorama: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _panorama!!
     }
 

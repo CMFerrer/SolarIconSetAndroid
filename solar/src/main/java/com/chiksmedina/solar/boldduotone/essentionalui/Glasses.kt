@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.EssentionalUiGroup
 
-public val EssentionalUiGroup.Glasses: ImageVector
+val EssentionalUiGroup.Glasses: ImageVector
     get() {
         if (_glasses != null) {
             return _glasses!!
         }
-        _glasses = Builder(name = "Glasses", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _glasses = Builder(
+            name = "Glasses", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.7115f, 3.763f)
                 curveTo(6.8425f, 4.156f, 6.6301f, 4.5807f, 6.2372f, 4.7117f)
                 lineTo(5.719f, 4.8844f)
@@ -51,9 +53,11 @@ public val EssentionalUiGroup.Glasses: ImageVector
                 curveTo(6.1558f, 3.1577f, 6.5805f, 3.3701f, 6.7115f, 3.763f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.9052f, 12.242f)
                 curveTo(20.1021f, 11.6202f, 19.0943f, 11.2502f, 18.0f, 11.2502f)
                 curveTo(15.6549f, 11.2502f, 13.7067f, 12.9497f, 13.3198f, 15.1842f)
@@ -81,7 +85,7 @@ public val EssentionalUiGroup.Glasses: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _glasses!!
     }
 

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.NotesGroup
 
-public val NotesGroup.Notes: ImageVector
+val NotesGroup.Notes: ImageVector
     get() {
         if (_notes != null) {
             return _notes!!
         }
-        _notes = Builder(name = "Notes", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _notes = Builder(
+            name = "Notes", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.7546f, 14.716f)
                 lineTo(3.2722f, 16.6479f)
                 curveTo(3.8765f, 18.9029f, 4.1786f, 20.0305f, 4.8635f, 20.7618f)
@@ -48,9 +50,11 @@ public val NotesGroup.Notes: ImageVector
                 curveTo(1.8482f, 11.3334f, 2.1503f, 12.4609f, 2.7546f, 14.716f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(20.8293f, 10.7154f)
                 lineTo(20.3116f, 12.6473f)
                 curveTo(19.7074f, 14.9024f, 19.4052f, 16.0299f, 18.7203f, 16.7612f)
@@ -87,7 +91,7 @@ public val NotesGroup.Notes: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _notes!!
     }
 

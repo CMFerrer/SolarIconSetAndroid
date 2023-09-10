@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.BuildingInfrastructureGroup
 
-public val BuildingInfrastructureGroup.Garage: ImageVector
+val BuildingInfrastructureGroup.Garage: ImageVector
     get() {
         if (_garage != null) {
             return _garage!!
         }
-        _garage = Builder(name = "Garage", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _garage = Builder(
+            name = "Garage", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.0069f, 9.105f)
                 lineTo(10.0069f, 3.7717f)
                 curveTo(11.1436f, 2.7613f, 12.8564f, 2.7613f, 13.9931f, 3.7717f)
@@ -89,7 +93,7 @@ public val BuildingInfrastructureGroup.Garage: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _garage!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.PlugCircle: ImageVector
+val ElectronicDevicesGroup.PlugCircle: ImageVector
     get() {
         if (_plugCircle != null) {
             return _plugCircle!!
         }
-        _plugCircle = Builder(name = "PlugCircle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _plugCircle = Builder(
+            name = "PlugCircle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(12.7497f, 22.0f)
                 curveTo(17.9224f, 21.6161f, 22.0f, 17.2918f, 22.0f, 12.0139f)
                 lineTo(22.0f, 12.0069f)
@@ -42,9 +43,11 @@ public val ElectronicDevicesGroup.PlugCircle: ImageVector
                 lineTo(12.7497f, 22.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.2503f, 21.9723f)
                 curveTo(11.4978f, 21.9907f, 11.7478f, 22.0f, 12.0f, 22.0f)
                 curveTo(12.2522f, 22.0f, 12.5022f, 21.9907f, 12.7497f, 21.9723f)
@@ -54,9 +57,11 @@ public val ElectronicDevicesGroup.PlugCircle: ImageVector
                 curveTo(2.0036f, 17.2744f, 6.0799f, 21.5891f, 11.2503f, 21.9723f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.5f, 12.5147f)
                 curveTo(8.5f, 14.1925f, 9.6774f, 15.595f, 11.2499f, 15.9389f)
                 lineTo(11.2503f, 21.9724f)
@@ -82,7 +87,7 @@ public val ElectronicDevicesGroup.PlugCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _plugCircle!!
     }
 

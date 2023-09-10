@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.GalleryWide: ImageVector
+val VideoAudioSoundGroup.GalleryWide: ImageVector
     get() {
         if (_galleryWide != null) {
             return _galleryWide!!
         }
-        _galleryWide = Builder(name = "GalleryWide", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _galleryWide = Builder(
+            name = "GalleryWide", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.5116f, 10.0767f)
                 curveTo(18.5116f, 10.8153f, 17.8869f, 11.4142f, 17.1163f, 11.4142f)
                 curveTo(16.3457f, 11.4142f, 15.7209f, 10.8153f, 15.7209f, 10.0767f)
@@ -32,9 +33,11 @@ public val VideoAudioSoundGroup.GalleryWide: ImageVector
                 curveTo(17.8869f, 8.7392f, 18.5116f, 9.338f, 18.5116f, 10.0767f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.0363f, 5.5321f)
                 curveTo(16.9766f, 5.3955f, 15.6225f, 5.3955f, 13.9129f, 5.3955f)
                 horizontalLineTo(10.0871f)
@@ -78,9 +81,11 @@ public val VideoAudioSoundGroup.GalleryWide: ImageVector
                 curveTo(8.3658f, 6.733f, 7.1056f, 6.7344f, 6.1496f, 6.8576f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.0866f, 2.6104f)
                 curveTo(16.2268f, 2.5f, 15.1321f, 2.5f, 13.7675f, 2.5f)
                 horizontalLineTo(10.6778f)
@@ -97,7 +102,7 @@ public val VideoAudioSoundGroup.GalleryWide: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _galleryWide!!
     }
 

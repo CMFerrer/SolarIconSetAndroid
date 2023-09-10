@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.WeatherGroup
 
-public val WeatherGroup.CloudStorm: ImageVector
+val WeatherGroup.CloudStorm: ImageVector
     get() {
         if (_cloudStorm != null) {
             return _cloudStorm!!
         }
-        _cloudStorm = Builder(name = "CloudStorm", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cloudStorm = Builder(
+            name = "CloudStorm", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.8539f, 14.5104f)
                 curveTo(11.1243f, 14.8242f, 11.0891f, 15.2978f, 10.7753f, 15.5682f)
                 lineTo(8.0195f, 17.9426f)
@@ -65,9 +67,11 @@ public val WeatherGroup.CloudStorm: ImageVector
                 curveTo(12.7626f, 19.1768f, 13.2374f, 19.1768f, 13.5303f, 19.4697f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.1238f, 18.2553f)
                 curveTo(19.0157f, 17.9463f, 18.8381f, 17.6561f, 18.5911f, 17.409f)
                 curveTo(18.1184f, 16.9363f, 17.4876f, 16.7179f, 16.8689f, 16.7538f)
@@ -89,7 +93,7 @@ public val WeatherGroup.CloudStorm: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cloudStorm!!
     }
 

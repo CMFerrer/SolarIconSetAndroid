@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.maplocation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MapLocationGroup
 
-public val MapLocationGroup.PeopleNearby: ImageVector
+val MapLocationGroup.PeopleNearby: ImageVector
     get() {
         if (_peopleNearby != null) {
             return _peopleNearby!!
         }
-        _peopleNearby = Builder(name = "PeopleNearby", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.6f, strokeAlpha
-                    = 0.6f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _peopleNearby = Builder(
+            name = "PeopleNearby", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.6f, strokeAlpha
+                = 0.6f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(19.7165f, 20.3624f)
                 curveTo(21.143f, 19.5846f, 22.0f, 18.5873f, 22.0f, 17.5f)
                 curveTo(22.0f, 16.3475f, 21.0372f, 15.2961f, 19.4537f, 14.5f)
@@ -36,9 +37,11 @@ public val MapLocationGroup.PeopleNearby: ImageVector
                 curveTo(15.1066f, 22.0f, 17.8823f, 21.3625f, 19.7165f, 20.3624f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.25f, 4.0f)
                 curveTo(9.25f, 2.4812f, 10.4812f, 1.25f, 12.0f, 1.25f)
                 curveTo(13.5188f, 1.25f, 14.75f, 2.4812f, 14.75f, 4.0f)
@@ -46,9 +49,11 @@ public val MapLocationGroup.PeopleNearby: ImageVector
                 curveTo(10.4812f, 6.75f, 9.25f, 5.5188f, 9.25f, 4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.2231f, 11.5741f)
                 lineTo(6.0478f, 10.849f)
                 curveTo(5.4221f, 10.6404f, 5.0f, 10.0548f, 5.0f, 9.3953f)
@@ -78,7 +83,7 @@ public val MapLocationGroup.PeopleNearby: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _peopleNearby!!
     }
 

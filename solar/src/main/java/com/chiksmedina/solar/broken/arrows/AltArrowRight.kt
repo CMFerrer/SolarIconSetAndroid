@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.ArrowsGroup
 
-public val ArrowsGroup.AltArrowRight: ImageVector
+val ArrowsGroup.AltArrowRight: ImageVector
     get() {
         if (_altArrowRight != null) {
             return _altArrowRight!!
         }
-        _altArrowRight = Builder(name = "AltArrowRight", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _altArrowRight = Builder(
+            name = "AltArrowRight", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.0f, 5.0f)
                 lineTo(11.0f, 7.3333f)
                 moveTo(9.0f, 19.0f)
@@ -28,7 +32,7 @@ public val ArrowsGroup.AltArrowRight: ImageVector
                 lineTo(13.5f, 10.25f)
             }
         }
-        .build()
+            .build()
         return _altArrowRight!!
     }
 

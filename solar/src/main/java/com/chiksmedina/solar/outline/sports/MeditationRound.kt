@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SportsGroup
 
-public val SportsGroup.MeditationRound: ImageVector
+val SportsGroup.MeditationRound: ImageVector
     get() {
         if (_meditationRound != null) {
             return _meditationRound!!
         }
-        _meditationRound = Builder(name = "MeditationRound", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _meditationRound = Builder(
+            name = "MeditationRound", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.75f)
                 curveTo(11.0335f, 2.75f, 10.25f, 3.5335f, 10.25f, 4.5f)
                 curveTo(10.25f, 5.4665f, 11.0335f, 6.25f, 12.0f, 6.25f)
@@ -127,7 +131,7 @@ public val SportsGroup.MeditationRound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _meditationRound!!
     }
 

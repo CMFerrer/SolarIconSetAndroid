@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.WirelessCharge: ImageVector
+val ElectronicDevicesGroup.WirelessCharge: ImageVector
     get() {
         if (_wirelessCharge != null) {
             return _wirelessCharge!!
         }
-        _wirelessCharge = Builder(name = "WirelessCharge", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _wirelessCharge = Builder(
+            name = "WirelessCharge", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0646f, 17.9997f)
                 curveTo(16.4827f, 18.0354f, 20.0354f, 14.4827f, 19.9997f, 10.0646f)
                 curveTo(19.9641f, 5.6464f, 16.3536f, 2.0359f, 11.9354f, 2.0003f)
@@ -47,9 +49,11 @@ public val ElectronicDevicesGroup.WirelessCharge: ImageVector
                 curveTo(12.5992f, 6.1828f, 13.074f, 6.1712f, 13.3739f, 6.4569f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.1173f, 20.9242f)
                 curveTo(11.1584f, 20.9412f, 11.2019f, 20.9544f, 11.25f, 20.9647f)
                 verticalLineTo(22.0f)
@@ -68,7 +72,7 @@ public val ElectronicDevicesGroup.WirelessCharge: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _wirelessCharge!!
     }
 

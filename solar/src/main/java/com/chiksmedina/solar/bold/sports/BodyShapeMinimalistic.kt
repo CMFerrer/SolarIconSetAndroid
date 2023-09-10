@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SportsGroup
 
-public val SportsGroup.BodyShapeMinimalistic: ImageVector
+val SportsGroup.BodyShapeMinimalistic: ImageVector
     get() {
         if (_bodyShapeMinimalistic != null) {
             return _bodyShapeMinimalistic!!
         }
-        _bodyShapeMinimalistic = Builder(name = "BodyShapeMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bodyShapeMinimalistic = Builder(
+            name = "BodyShapeMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.7057f, 1.3103f)
                 curveTo(4.0867f, 1.1478f, 4.5273f, 1.3249f, 4.6898f, 1.7059f)
                 lineTo(4.6906f, 1.7076f)
@@ -81,7 +85,7 @@ public val SportsGroup.BodyShapeMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bodyShapeMinimalistic!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.DesignToolsGroup
 
-public val DesignToolsGroup.ColourTuneing: ImageVector
+val DesignToolsGroup.ColourTuneing: ImageVector
     get() {
         if (_colourTuneing != null) {
             return _colourTuneing!!
         }
-        _colourTuneing = Builder(name = "ColourTuneing", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _colourTuneing = Builder(
+            name = "ColourTuneing", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.116f, 4.333f)
                 curveTo(5.4077f, 5.3862f, 4.8941f, 6.8213f, 4.8941f, 8.3158f)
                 curveTo(4.8941f, 8.73f, 4.5583f, 9.0658f, 4.1441f, 9.0658f)
@@ -65,7 +69,7 @@ public val DesignToolsGroup.ColourTuneing: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _colourTuneing!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.arrows
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsGroup
 
-public val ArrowsGroup.RoundSortHorizontal: ImageVector
+val ArrowsGroup.RoundSortHorizontal: ImageVector
     get() {
         if (_roundSortHorizontal != null) {
             return _roundSortHorizontal!!
         }
-        _roundSortHorizontal = Builder(name = "RoundSortHorizontal", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _roundSortHorizontal = Builder(
+            name = "RoundSortHorizontal", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.75f)
                 curveTo(6.8914f, 2.75f, 2.75f, 6.8914f, 2.75f, 12.0f)
                 curveTo(2.75f, 17.1086f, 6.8914f, 21.25f, 12.0f, 21.25f)
@@ -37,9 +38,11 @@ public val ArrowsGroup.RoundSortHorizontal: ImageVector
                 curveTo(6.0629f, 22.75f, 1.25f, 17.9371f, 1.25f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.305f, 6.4955f)
                 curveTo(11.5836f, 6.802f, 11.561f, 7.2763f, 11.2545f, 7.555f)
                 lineTo(9.9399f, 8.75f)
@@ -57,9 +60,11 @@ public val ArrowsGroup.RoundSortHorizontal: ImageVector
                 curveTo(10.552f, 6.1664f, 11.0263f, 6.189f, 11.305f, 6.4955f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.695f, 11.4955f)
                 curveTo(12.4164f, 11.802f, 12.439f, 12.2763f, 12.7455f, 12.555f)
                 lineTo(14.06f, 13.75f)
@@ -78,7 +83,7 @@ public val ArrowsGroup.RoundSortHorizontal: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _roundSortHorizontal!!
     }
 

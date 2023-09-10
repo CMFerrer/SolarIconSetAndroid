@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.MapLocationGroup
 
-public val MapLocationGroup.MapArrowUp: ImageVector
+val MapLocationGroup.MapArrowUp: ImageVector
     get() {
         if (_mapArrowUp != null) {
             return _mapArrowUp!!
         }
-        _mapArrowUp = Builder(name = "MapArrowUp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _mapArrowUp = Builder(
+            name = "MapArrowUp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.165f, 19.5025f)
                 lineTo(10.5275f, 2.9928f)
                 curveTo(11.1178f, 1.6691f, 12.8822f, 1.6691f, 13.4725f, 2.9928f)
@@ -33,7 +37,7 @@ public val MapLocationGroup.MapArrowUp: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _mapArrowUp!!
     }
 

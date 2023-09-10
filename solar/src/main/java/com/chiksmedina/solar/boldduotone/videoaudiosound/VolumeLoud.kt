@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.VolumeLoud: ImageVector
+val VideoAudioSoundGroup.VolumeLoud: ImageVector
     get() {
         if (_volumeLoud != null) {
             return _volumeLoud!!
         }
-        _volumeLoud = Builder(name = "VolumeLoud", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _volumeLoud = Builder(
+            name = "VolumeLoud", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.003f, 11.7155f)
                 curveTo(2.0403f, 9.8733f, 2.059f, 8.9522f, 2.6709f, 8.1636f)
                 curveTo(2.7826f, 8.0197f, 2.9465f, 7.8487f, 3.0838f, 7.7327f)
@@ -50,9 +51,11 @@ public val VideoAudioSoundGroup.VolumeLoud: ImageVector
                 curveTo(2.0f, 11.9072f, 2.001f, 11.8122f, 2.003f, 11.7155f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
-                    = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
+                = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(19.4896f, 5.5523f)
                 curveTo(19.7822f, 5.2923f, 20.2171f, 5.3344f, 20.4609f, 5.6465f)
                 lineTo(19.9311f, 6.1172f)
@@ -89,9 +92,11 @@ public val VideoAudioSoundGroup.VolumeLoud: ImageVector
                 curveTo(19.4155f, 6.6081f, 19.4059f, 6.5946f, 19.401f, 6.5879f)
                 curveTo(19.3995f, 6.5857f, 19.3978f, 6.5835f, 19.3978f, 6.5835f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.7f, strokeAlpha
-                    = 0.7f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.7f, strokeAlpha
+                = 0.7f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(17.7572f, 8.4159f)
                 curveTo(18.0902f, 8.2187f, 18.51f, 8.3466f, 18.695f, 8.7016f)
                 lineTo(18.0921f, 9.0588f)
@@ -129,7 +134,7 @@ public val VideoAudioSoundGroup.VolumeLoud: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _volumeLoud!!
     }
 

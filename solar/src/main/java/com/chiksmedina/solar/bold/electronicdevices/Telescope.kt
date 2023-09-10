@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Telescope: ImageVector
+val ElectronicDevicesGroup.Telescope: ImageVector
     get() {
         if (_telescope != null) {
             return _telescope!!
         }
-        _telescope = Builder(name = "Telescope", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _telescope = Builder(
+            name = "Telescope", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.976f, 2.6021f)
                 curveTo(18.4394f, 2.3426f, 18.742f, 2.1743f, 18.9825f, 2.0784f)
                 curveTo(19.209f, 1.988f, 19.3082f, 1.9927f, 19.3758f, 2.0102f)
@@ -47,9 +48,11 @@ public val ElectronicDevicesGroup.Telescope: ImageVector
                 lineTo(17.976f, 2.6021f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.6378f, 8.4508f)
                 lineTo(12.0871f, 6.5187f)
                 curveTo(12.2139f, 6.7818f, 12.3907f, 7.0789f, 12.5908f, 7.4151f)
@@ -75,9 +78,11 @@ public val ElectronicDevicesGroup.Telescope: ImageVector
                 curveTo(7.8964f, 8.8674f, 8.1873f, 8.7031f, 8.6378f, 8.4508f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.6268f, 10.196f)
                 lineTo(3.2319f, 12.0976f)
                 curveTo(2.7684f, 12.3573f, 2.4671f, 12.5273f, 2.2615f, 12.6813f)
@@ -95,7 +100,7 @@ public val ElectronicDevicesGroup.Telescope: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _telescope!!
     }
 

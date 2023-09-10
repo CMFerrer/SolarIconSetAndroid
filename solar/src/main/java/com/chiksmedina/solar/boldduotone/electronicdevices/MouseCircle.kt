@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.MouseCircle: ImageVector
+val ElectronicDevicesGroup.MouseCircle: ImageVector
     get() {
         if (_mouseCircle != null) {
             return _mouseCircle!!
         }
-        _mouseCircle = Builder(name = "MouseCircle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _mouseCircle = Builder(
+            name = "MouseCircle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.5349f, 11.9161f)
                 curveTo(2.5349f, 17.1834f, 6.7726f, 21.4534f, 12.0f, 21.4534f)
                 curveTo(17.2274f, 21.4534f, 21.4651f, 17.1834f, 21.4651f, 11.9161f)
@@ -47,9 +48,11 @@ public val ElectronicDevicesGroup.MouseCircle: ImageVector
                 curveTo(5.7922f, 3.4459f, 2.5349f, 7.2986f, 2.5349f, 11.9161f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.9072f, 13.9537f)
                 curveTo(7.9072f, 16.2449f, 9.7397f, 18.1023f, 12.0002f, 18.1023f)
                 curveTo(14.2608f, 18.1023f, 16.0933f, 16.2449f, 16.0933f, 13.9537f)
@@ -58,18 +61,22 @@ public val ElectronicDevicesGroup.MouseCircle: ImageVector
                 verticalLineTo(13.9537f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.7677f, 9.3382f)
                 horizontalLineTo(16.0214f)
                 curveTo(15.7094f, 7.6708f, 14.4128f, 6.0458f, 12.7677f, 5.7295f)
                 verticalLineTo(9.3382f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.2328f, 9.3382f)
                 verticalLineTo(5.7295f)
                 curveTo(9.5877f, 6.0458f, 8.2911f, 7.6708f, 7.9791f, 9.3382f)
@@ -77,7 +84,7 @@ public val ElectronicDevicesGroup.MouseCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _mouseCircle!!
     }
 

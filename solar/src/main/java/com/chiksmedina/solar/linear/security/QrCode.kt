@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.linear.security
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.SecurityGroup
 
-public val SecurityGroup.QrCode: ImageVector
+val SecurityGroup.QrCode: ImageVector
     get() {
         if (_qrCode != null) {
             return _qrCode!!
         }
-        _qrCode = Builder(name = "QrCode", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _qrCode = Builder(
+            name = "QrCode", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 16.9f)
                 curveTo(2.0f, 15.5906f, 2.0f, 14.9359f, 2.2947f, 14.455f)
                 curveTo(2.4596f, 14.1859f, 2.6859f, 13.9596f, 2.955f, 13.7947f)
@@ -40,9 +41,11 @@ public val SecurityGroup.QrCode: ImageVector
                 curveTo(2.0f, 19.8461f, 2.0f, 18.8641f, 2.0f, 16.9f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.5f, 5.4f)
                 curveTo(13.5f, 4.0906f, 13.5f, 3.4359f, 13.7947f, 2.955f)
                 curveTo(13.9596f, 2.6859f, 14.1859f, 2.4596f, 14.455f, 2.2947f)
@@ -59,9 +62,11 @@ public val SecurityGroup.QrCode: ImageVector
                 verticalLineTo(5.4f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.5f, 6.25f)
                 curveTo(16.5f, 5.7346f, 16.5f, 5.4769f, 16.6291f, 5.2949f)
                 curveTo(16.6747f, 5.2307f, 16.7307f, 5.1747f, 16.7949f, 5.1291f)
@@ -77,9 +82,11 @@ public val SecurityGroup.QrCode: ImageVector
                 curveTo(16.5f, 7.0231f, 16.5f, 6.7654f, 16.5f, 6.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.75f, 22.0f)
                 curveTo(12.75f, 22.4142f, 13.0858f, 22.75f, 13.5f, 22.75f)
                 curveTo(13.9142f, 22.75f, 14.25f, 22.4142f, 14.25f, 22.0f)
@@ -130,9 +137,11 @@ public val SecurityGroup.QrCode: ImageVector
                 lineTo(13.9722f, 13.2135f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.75f, 13.5f)
                 curveTo(22.75f, 13.0858f, 22.4142f, 12.75f, 22.0f, 12.75f)
                 curveTo(21.5858f, 12.75f, 21.25f, 13.0858f, 21.25f, 13.5f)
@@ -183,9 +192,11 @@ public val SecurityGroup.QrCode: ImageVector
                 lineTo(21.0524f, 22.5407f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 7.1f)
                 curveTo(2.0f, 5.1359f, 2.0f, 4.1539f, 2.4421f, 3.4325f)
                 curveTo(2.6895f, 3.0288f, 3.0288f, 2.6895f, 3.4325f, 2.4421f)
@@ -202,9 +213,11 @@ public val SecurityGroup.QrCode: ImageVector
                 curveTo(2.0f, 9.0641f, 2.0f, 8.4094f, 2.0f, 7.1f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 6.25f)
                 curveTo(5.0f, 5.7346f, 5.0f, 5.4769f, 5.1291f, 5.2949f)
                 curveTo(5.1747f, 5.2307f, 5.2307f, 5.1747f, 5.2949f, 5.1291f)
@@ -220,9 +233,11 @@ public val SecurityGroup.QrCode: ImageVector
                 curveTo(5.0f, 7.0231f, 5.0f, 6.7654f, 5.0f, 6.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 17.75f)
                 curveTo(5.0f, 17.2346f, 5.0f, 16.9769f, 5.1291f, 16.7949f)
                 curveTo(5.1747f, 16.7307f, 5.2307f, 16.6747f, 5.2949f, 16.6291f)
@@ -238,9 +253,11 @@ public val SecurityGroup.QrCode: ImageVector
                 curveTo(5.0f, 18.5231f, 5.0f, 18.2654f, 5.0f, 17.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.0f, 17.75f)
                 curveTo(16.0f, 17.0478f, 16.0f, 16.6967f, 16.1685f, 16.4444f)
                 curveTo(16.2415f, 16.3352f, 16.3352f, 16.2415f, 16.4444f, 16.1685f)
@@ -257,7 +274,7 @@ public val SecurityGroup.QrCode: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _qrCode!!
     }
 

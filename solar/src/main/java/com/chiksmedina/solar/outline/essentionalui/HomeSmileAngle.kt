@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.HomeSmileAngle: ImageVector
+val EssentionalUiGroup.HomeSmileAngle: ImageVector
     get() {
         if (_homeSmileAngle != null) {
             return _homeSmileAngle!!
         }
-        _homeSmileAngle = Builder(name = "HomeSmileAngle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _homeSmileAngle = Builder(
+            name = "HomeSmileAngle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.4466f, 15.3975f)
                 curveTo(9.1138f, 15.1508f, 8.6441f, 15.2207f, 8.3975f, 15.5534f)
                 curveTo(8.1508f, 15.8862f, 8.2206f, 16.3559f, 8.5534f, 16.6026f)
@@ -35,9 +37,11 @@ public val EssentionalUiGroup.HomeSmileAngle: ImageVector
                 curveTo(11.0541f, 16.25f, 10.1749f, 15.9374f, 9.4466f, 15.3975f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9999f, 1.2502f)
                 curveTo(11.2749f, 1.2502f, 10.6133f, 1.4494f, 9.8892f, 1.7874f)
                 curveTo(9.1882f, 2.1145f, 8.3776f, 2.5974f, 7.3617f, 3.2026f)
@@ -94,7 +98,7 @@ public val EssentionalUiGroup.HomeSmileAngle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _homeSmileAngle!!
     }
 

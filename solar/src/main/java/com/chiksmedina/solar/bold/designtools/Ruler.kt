@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.DesignToolsGroup
 
-public val DesignToolsGroup.Ruler: ImageVector
+val DesignToolsGroup.Ruler: ImageVector
     get() {
         if (_ruler != null) {
             return _ruler!!
         }
-        _ruler = Builder(name = "Ruler", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _ruler = Builder(
+            name = "Ruler", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 15.6157f)
                 curveTo(2.0f, 16.463f, 2.6818f, 17.1448f, 4.0454f, 18.5083f)
                 lineTo(5.4917f, 19.9546f)
@@ -70,7 +74,7 @@ public val DesignToolsGroup.Ruler: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ruler!!
     }
 

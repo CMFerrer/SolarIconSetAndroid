@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.ServerSquareUpdate: ImageVector
+val ElectronicDevicesGroup.ServerSquareUpdate: ImageVector
     get() {
         if (_serverSquareUpdate != null) {
             return _serverSquareUpdate!!
         }
-        _serverSquareUpdate = Builder(name = "ServerSquareUpdate", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _serverSquareUpdate = Builder(
+            name = "ServerSquareUpdate", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.1716f, 19.8284f)
                 curveTo(4.3432f, 21.0f, 6.2288f, 21.0f, 10.0f, 21.0f)
                 horizontalLineTo(13.8895f)
@@ -53,9 +54,11 @@ public val ElectronicDevicesGroup.ServerSquareUpdate: ImageVector
                 curveTo(9.75f, 17.9142f, 9.4142f, 18.25f, 9.0f, 18.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.1716f, 4.1716f)
                 curveTo(2.0f, 5.3432f, 2.0f, 7.2288f, 2.0f, 11.0f)
                 verticalLineTo(11.25f)
@@ -91,9 +94,11 @@ public val ElectronicDevicesGroup.ServerSquareUpdate: ImageVector
                 curveTo(13.0858f, 8.25f, 12.75f, 7.9142f, 12.75f, 7.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.9286f, 16.7534f)
                 curveTo(15.3176f, 15.2559f, 16.8529f, 14.25f, 18.5048f, 14.25f)
                 curveTo(19.782f, 14.25f, 20.945f, 14.8304f, 21.6108f, 15.7648f)
@@ -126,7 +131,7 @@ public val ElectronicDevicesGroup.ServerSquareUpdate: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _serverSquareUpdate!!
     }
 

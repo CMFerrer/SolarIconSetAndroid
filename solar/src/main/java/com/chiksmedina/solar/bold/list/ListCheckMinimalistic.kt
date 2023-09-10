@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ListGroup
 
-public val ListGroup.ListCheckMinimalistic: ImageVector
+val ListGroup.ListCheckMinimalistic: ImageVector
     get() {
         if (_listCheckMinimalistic != null) {
             return _listCheckMinimalistic!!
         }
-        _listCheckMinimalistic = Builder(name = "ListCheckMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _listCheckMinimalistic = Builder(
+            name = "ListCheckMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.0f, 6.75f)
                 curveTo(3.0f, 6.3358f, 3.3358f, 6.0f, 3.75f, 6.0f)
                 horizontalLineTo(20.75f)
@@ -59,7 +63,7 @@ public val ListGroup.ListCheckMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _listCheckMinimalistic!!
     }
 

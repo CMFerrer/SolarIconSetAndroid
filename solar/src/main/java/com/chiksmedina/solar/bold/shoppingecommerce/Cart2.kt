@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.shoppingecommerce
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ShoppingEcommerceGroup
 
-public val ShoppingEcommerceGroup.Cart2: ImageVector
+val ShoppingEcommerceGroup.Cart2: ImageVector
     get() {
         if (_cart2 != null) {
             return _cart2!!
         }
-        _cart2 = Builder(name = "Cart2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _cart2 = Builder(
+            name = "Cart2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.418f, 3.2509f)
                 curveTo(8.6987f, 2.6592f, 9.3015f, 2.25f, 10.0f, 2.25f)
                 horizontalLineTo(14.0f)
@@ -75,9 +76,11 @@ public val ShoppingEcommerceGroup.Cart2: ImageVector
                 curveTo(7.2017f, 3.2872f, 7.7345f, 3.2559f, 8.418f, 3.2509f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(4.6021f, 19.0491f)
                 curveTo(4.8349f, 19.6426f, 5.102f, 20.0571f, 5.496f, 20.3647f)
                 curveTo(6.3098f, 21.0001f, 7.4348f, 21.0001f, 9.6846f, 21.0001f)
@@ -86,9 +89,11 @@ public val ShoppingEcommerceGroup.Cart2: ImageVector
                 lineTo(4.6021f, 19.0491f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.9077f, 21.0001f)
                 horizontalLineTo(14.3153f)
                 curveTo(16.5652f, 21.0001f, 17.6901f, 21.0001f, 18.5039f, 20.3647f)
@@ -97,9 +102,11 @@ public val ShoppingEcommerceGroup.Cart2: ImageVector
                 lineTo(12.9077f, 21.0001f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 19.6688f)
                 lineTo(8.4386f, 14.4454f)
                 lineTo(12.0f, 10.1717f)
@@ -108,7 +115,7 @@ public val ShoppingEcommerceGroup.Cart2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cart2!!
     }
 

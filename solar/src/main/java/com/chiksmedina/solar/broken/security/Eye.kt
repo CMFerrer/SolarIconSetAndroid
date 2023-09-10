@@ -1,12 +1,10 @@
 package com.chiksmedina.solar.broken.security
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.SecurityGroup
 
-public val SecurityGroup.Eye: ImageVector
+val SecurityGroup.Eye: ImageVector
     get() {
         if (_eye != null) {
             return _eye!!
         }
-        _eye = Builder(name = "Eye", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _eye = Builder(
+            name = "Eye", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
+            = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.0f, 4.4596f)
                 curveTo(9.9115f, 4.1697f, 10.9104f, 4.0f, 12.0f, 4.0f)
                 curveTo(16.1819f, 4.0f, 19.028f, 6.4996f, 20.7251f, 8.7043f)
@@ -35,9 +37,11 @@ public val SecurityGroup.Eye: ImageVector
                 curveTo(2.0f, 10.3606f, 2.425f, 9.8085f, 3.2749f, 8.7043f)
                 curveTo(3.7561f, 8.0791f, 4.3297f, 7.4303f, 5.0f, 6.8214f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.0f, 12.0f)
                 curveTo(15.0f, 13.6569f, 13.6569f, 15.0f, 12.0f, 15.0f)
                 curveTo(10.3431f, 15.0f, 9.0f, 13.6569f, 9.0f, 12.0f)
@@ -46,7 +50,7 @@ public val SecurityGroup.Eye: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _eye!!
     }
 

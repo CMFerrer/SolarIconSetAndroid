@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MedicineGroup
 
-public val MedicineGroup.Bone: ImageVector
+val MedicineGroup.Bone: ImageVector
     get() {
         if (_bone != null) {
             return _bone!!
         }
-        _bone = Builder(name = "Bone", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bone = Builder(
+            name = "Bone", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.1695f, 3.2681f)
                 curveTo(16.4787f, 2.5773f, 15.3586f, 2.5773f, 14.6678f, 3.2681f)
                 curveTo(14.1001f, 3.8358f, 13.8097f, 4.8572f, 14.0124f, 5.5897f)
@@ -75,7 +79,7 @@ public val MedicineGroup.Bone: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bone!!
     }
 

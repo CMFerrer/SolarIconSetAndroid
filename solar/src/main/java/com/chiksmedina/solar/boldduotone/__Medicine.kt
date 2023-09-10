@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.boldduotone
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldduotoneGroup
+import com.chiksmedina.solar.BoldDuotoneSolar
 import com.chiksmedina.solar.boldduotone.medicine.AdhesivePlaster
 import com.chiksmedina.solar.boldduotone.medicine.AdhesivePlaster2
 import com.chiksmedina.solar.boldduotone.medicine.Bacteria
@@ -34,24 +34,53 @@ import com.chiksmedina.solar.boldduotone.medicine.TestTube
 import com.chiksmedina.solar.boldduotone.medicine.TestTubeMinimalistic
 import com.chiksmedina.solar.boldduotone.medicine.Thermometer
 import com.chiksmedina.solar.boldduotone.medicine.Virus
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object MedicineGroup
+object MedicineGroup
 
-public val BoldduotoneGroup.Medicine: MedicineGroup
-  get() = MedicineGroup
+val BoldDuotoneSolar.Medicine: MedicineGroup
+    get() = MedicineGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val MedicineGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val MedicineGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            AdhesivePlaster,
+            AdhesivePlaster2,
+            Bacteria,
+            BenzeneRing,
+            Bone,
+            Bones,
+            BoneBroken,
+            BoneCrack,
+            Dna,
+            Dropper,
+            Dropper2,
+            Dropper3,
+            DropperMinimalistic,
+            DropperMinimalistic2,
+            Health,
+            HeartPulse,
+            HeartPulse2,
+            JarOfPills,
+            JarOfPills2,
+            MedicalKit,
+            Pill,
+            Pills,
+            Pills2,
+            Pills3,
+            Pulse,
+            Pulse2,
+            Stethoscope,
+            Syringe,
+            TestTube,
+            TestTubeMinimalistic,
+            Thermometer,
+            Virus
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(AdhesivePlaster, AdhesivePlaster2, Bacteria, BenzeneRing, Bone, Bones,
-        BoneBroken, BoneCrack, Dna, Dropper, Dropper2, Dropper3, DropperMinimalistic,
-        DropperMinimalistic2, Health, HeartPulse, HeartPulse2, JarOfPills, JarOfPills2, MedicalKit,
-        Pill, Pills, Pills2, Pills3, Pulse, Pulse2, Stethoscope, Syringe, TestTube,
-        TestTubeMinimalistic, Thermometer, Virus)
-    return __AllIcons!!
-  }

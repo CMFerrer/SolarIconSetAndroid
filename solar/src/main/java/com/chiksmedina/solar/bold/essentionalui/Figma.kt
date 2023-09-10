@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.Figma: ImageVector
+val EssentionalUiGroup.Figma: ImageVector
     get() {
         if (_figma != null) {
             return _figma!!
         }
-        _figma = Builder(name = "Figma", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _figma = Builder(
+            name = "Figma", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.667f, 9.4167f)
                 curveTo(7.2402f, 9.4167f, 6.0837f, 10.5731f, 6.0837f, 11.9998f)
                 curveTo(6.0837f, 13.4266f, 7.2403f, 14.5832f, 8.667f, 14.5832f)
@@ -61,7 +65,7 @@ public val EssentionalUiGroup.Figma: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _figma!!
     }
 

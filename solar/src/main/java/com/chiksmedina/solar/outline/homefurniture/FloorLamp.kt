@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.FloorLamp: ImageVector
+val HomeFurnitureGroup.FloorLamp: ImageVector
     get() {
         if (_floorLamp != null) {
             return _floorLamp!!
         }
-        _floorLamp = Builder(name = "FloorLamp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _floorLamp = Builder(
+            name = "FloorLamp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.318f, 3.3896f)
                 curveTo(9.5956f, 2.1646f, 10.691f, 1.25f, 12.0f, 1.25f)
                 curveTo(13.309f, 1.25f, 14.4044f, 2.1646f, 14.682f, 3.3896f)
@@ -114,7 +118,7 @@ public val HomeFurnitureGroup.FloorLamp: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _floorLamp!!
     }
 

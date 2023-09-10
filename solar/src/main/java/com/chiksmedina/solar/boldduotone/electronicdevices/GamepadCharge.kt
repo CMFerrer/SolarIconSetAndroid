@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.GamepadCharge: ImageVector
+val ElectronicDevicesGroup.GamepadCharge: ImageVector
     get() {
         if (_gamepadCharge != null) {
             return _gamepadCharge!!
         }
-        _gamepadCharge = Builder(name = "GamepadCharge", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _gamepadCharge = Builder(
+            name = "GamepadCharge", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.7498f, 18.968f)
                 curveTo(13.1811f, 18.857f, 13.4998f, 18.4655f, 13.4998f, 17.9996f)
                 verticalLineTo(17.2733f)
@@ -38,9 +39,11 @@ public val ElectronicDevicesGroup.GamepadCharge: ImageVector
                 verticalLineTo(18.968f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.165f, 4.7792f)
                 lineTo(10.6669f, 5.1344f)
                 curveTo(11.0567f, 5.4103f, 11.5225f, 5.5584f, 12.0f, 5.5584f)
@@ -69,9 +72,11 @@ public val ElectronicDevicesGroup.GamepadCharge: ImageVector
                 curveTo(8.5926f, 4.0f, 9.4486f, 4.2723f, 10.165f, 4.7792f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.75f, 8.0f)
                 curveTo(17.1642f, 8.0f, 17.5f, 8.3358f, 17.5f, 8.75f)
                 curveTo(17.5f, 9.1642f, 17.1642f, 9.5f, 16.75f, 9.5f)
@@ -79,9 +84,11 @@ public val ElectronicDevicesGroup.GamepadCharge: ImageVector
                 curveTo(16.0f, 8.3358f, 16.3358f, 8.0f, 16.75f, 8.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.5f, 8.25f)
                 curveTo(7.9142f, 8.25f, 8.25f, 8.5858f, 8.25f, 9.0f)
                 verticalLineTo(9.75f)
@@ -101,9 +108,11 @@ public val ElectronicDevicesGroup.GamepadCharge: ImageVector
                 curveTo(6.75f, 8.5858f, 7.0858f, 8.25f, 7.5f, 8.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.0f, 10.25f)
                 curveTo(19.0f, 10.6642f, 18.6642f, 11.0f, 18.25f, 11.0f)
                 curveTo(17.8358f, 11.0f, 17.5f, 10.6642f, 17.5f, 10.25f)
@@ -111,9 +120,11 @@ public val ElectronicDevicesGroup.GamepadCharge: ImageVector
                 curveTo(18.6642f, 9.5f, 19.0f, 9.8358f, 19.0f, 10.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.25f, 11.0f)
                 curveTo(15.6642f, 11.0f, 16.0f, 10.6642f, 16.0f, 10.25f)
                 curveTo(16.0f, 9.8358f, 15.6642f, 9.5f, 15.25f, 9.5f)
@@ -121,9 +132,11 @@ public val ElectronicDevicesGroup.GamepadCharge: ImageVector
                 curveTo(14.5f, 10.6642f, 14.8358f, 11.0f, 15.25f, 11.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.5f, 11.75f)
                 curveTo(17.5f, 11.3358f, 17.1642f, 11.0f, 16.75f, 11.0f)
                 curveTo(16.3358f, 11.0f, 16.0f, 11.3358f, 16.0f, 11.75f)
@@ -132,7 +145,7 @@ public val ElectronicDevicesGroup.GamepadCharge: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _gamepadCharge!!
     }
 

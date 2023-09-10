@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MessagesConversationGroup
 
-public val MessagesConversationGroup.ChatSquareCode: ImageVector
+val MessagesConversationGroup.ChatSquareCode: ImageVector
     get() {
         if (_chatSquareCode != null) {
             return _chatSquareCode!!
         }
-        _chatSquareCode = Builder(name = "ChatSquareCode", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _chatSquareCode = Builder(
+            name = "ChatSquareCode", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.0867f, 21.3877f)
                 lineTo(13.6288f, 20.4718f)
                 curveTo(14.0492f, 19.7614f, 14.2595f, 19.4062f, 14.5972f, 19.2098f)
@@ -93,7 +97,7 @@ public val MessagesConversationGroup.ChatSquareCode: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chatSquareCode!!
     }
 

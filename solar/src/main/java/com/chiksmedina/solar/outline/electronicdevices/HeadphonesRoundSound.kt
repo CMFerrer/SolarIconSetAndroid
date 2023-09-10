@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.HeadphonesRoundSound: ImageVector
+val ElectronicDevicesGroup.HeadphonesRoundSound: ImageVector
     get() {
         if (_headphonesRoundSound != null) {
             return _headphonesRoundSound!!
         }
-        _headphonesRoundSound = Builder(name = "HeadphonesRoundSound", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _headphonesRoundSound = Builder(
+            name = "HeadphonesRoundSound", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(1.25f, 12.0f)
                 curveTo(1.25f, 6.0629f, 6.0629f, 1.25f, 12.0f, 1.25f)
                 curveTo(17.9371f, 1.25f, 22.75f, 6.0629f, 22.75f, 12.0f)
@@ -141,7 +145,7 @@ public val ElectronicDevicesGroup.HeadphonesRoundSound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _headphonesRoundSound!!
     }
 

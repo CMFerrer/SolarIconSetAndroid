@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SecurityGroup
 
-public val SecurityGroup.LockKeyholeMinimalistic: ImageVector
+val SecurityGroup.LockKeyholeMinimalistic: ImageVector
     get() {
         if (_lockKeyholeMinimalistic != null) {
             return _lockKeyholeMinimalistic!!
         }
-        _lockKeyholeMinimalistic = Builder(name = "LockKeyholeMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _lockKeyholeMinimalistic = Builder(
+            name = "LockKeyholeMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 13.25f)
                 curveTo(12.4142f, 13.25f, 12.75f, 13.5858f, 12.75f, 14.0f)
                 verticalLineTo(18.0f)
@@ -33,9 +35,11 @@ public val SecurityGroup.LockKeyholeMinimalistic: ImageVector
                 curveTo(11.25f, 13.5858f, 11.5858f, 13.25f, 12.0f, 13.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.25f, 9.3028f)
                 verticalLineTo(8.0f)
                 curveTo(5.25f, 4.2721f, 8.2721f, 1.25f, 12.0f, 1.25f)
@@ -92,7 +96,7 @@ public val SecurityGroup.LockKeyholeMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _lockKeyholeMinimalistic!!
     }
 

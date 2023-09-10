@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.broken.money
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.MoneyGroup
 
-public val MoneyGroup.MoneyBag: ImageVector
+val MoneyGroup.MoneyBag: ImageVector
     get() {
         if (_moneyBag != null) {
             return _moneyBag!!
         }
-        _moneyBag = Builder(name = "MoneyBag", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _moneyBag = Builder(
+            name = "MoneyBag", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.1716f, 20.8284f)
                 curveTo(4.3432f, 22.0f, 6.2288f, 22.0f, 10.0f, 22.0f)
                 horizontalLineTo(14.0f)
@@ -37,18 +38,22 @@ public val MoneyGroup.MoneyBag: ImageVector
                 curveTo(2.0f, 8.3432f, 2.0f, 10.2288f, 2.0f, 14.0f)
                 curveTo(2.0f, 15.1698f, 2.0f, 16.1581f, 2.035f, 17.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 2.0f)
                 curveTo(13.8856f, 2.0f, 14.8284f, 2.0f, 15.4142f, 2.5858f)
                 curveTo(16.0f, 3.1716f, 16.0f, 4.1144f, 16.0f, 6.0f)
                 moveTo(8.5858f, 2.5858f)
                 curveTo(8.0f, 3.1716f, 8.0f, 4.1144f, 8.0f, 6.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 17.3333f)
                 curveTo(13.1046f, 17.3333f, 14.0f, 16.5871f, 14.0f, 15.6667f)
                 curveTo(14.0f, 14.7462f, 13.1046f, 14.0f, 12.0f, 14.0f)
@@ -64,7 +69,7 @@ public val MoneyGroup.MoneyBag: ImageVector
                 curveTo(13.1046f, 10.6667f, 14.0f, 11.4129f, 14.0f, 12.3333f)
             }
         }
-        .build()
+            .build()
         return _moneyBag!!
     }
 

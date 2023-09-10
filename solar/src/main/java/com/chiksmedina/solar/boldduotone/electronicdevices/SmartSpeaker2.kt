@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartSpeaker2: ImageVector
+val ElectronicDevicesGroup.SmartSpeaker2: ImageVector
     get() {
         if (_smartSpeaker2 != null) {
             return _smartSpeaker2!!
         }
-        _smartSpeaker2 = Builder(name = "SmartSpeaker2", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _smartSpeaker2 = Builder(
+            name = "SmartSpeaker2", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.0476f, 3.4354f)
                 curveTo(18.0691f, 3.5186f, 18.0814f, 3.6035f, 18.0849f, 3.6896f)
                 curveTo(18.1421f, 5.1057f, 15.8124f, 6.8747f, 12.648f, 7.7548f)
@@ -34,9 +35,11 @@ public val ElectronicDevicesGroup.SmartSpeaker2: ImageVector
                 curveTo(14.6477f, 1.5634f, 17.6729f, 1.9835f, 18.0476f, 3.4354f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.648f, 7.7547f)
                 curveTo(9.2911f, 8.6884f, 6.2659f, 8.2683f, 5.8911f, 6.8164f)
                 curveTo(5.8589f, 6.6918f, 5.8474f, 6.5636f, 5.8552f, 6.4328f)
@@ -47,9 +50,11 @@ public val ElectronicDevicesGroup.SmartSpeaker2: ImageVector
                 curveTo(18.1421f, 5.1056f, 15.8124f, 6.8745f, 12.648f, 7.7547f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.0299f, 21.4129f)
                 curveTo(8.0056f, 21.9999f, 9.3423f, 21.9999f, 12.0156f, 21.9999f)
                 curveTo(14.6588f, 21.9999f, 15.9804f, 21.9999f, 16.9506f, 21.4216f)
@@ -64,7 +69,7 @@ public val ElectronicDevicesGroup.SmartSpeaker2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _smartSpeaker2!!
     }
 

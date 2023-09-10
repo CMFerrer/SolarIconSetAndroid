@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.lineduotone
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.LineduotoneGroup
+import com.chiksmedina.solar.LineDuotoneSolar
 import com.chiksmedina.solar.lineduotone.files.CloudFile
 import com.chiksmedina.solar.lineduotone.files.CodeFile
 import com.chiksmedina.solar.lineduotone.files.FigmaFile
@@ -14,24 +14,39 @@ import com.chiksmedina.solar.lineduotone.files.FileLeft
 import com.chiksmedina.solar.lineduotone.files.FileRemove
 import com.chiksmedina.solar.lineduotone.files.FileRight
 import com.chiksmedina.solar.lineduotone.files.FileSend
+import com.chiksmedina.solar.lineduotone.files.FileSmile
 import com.chiksmedina.solar.lineduotone.files.FileText
 import com.chiksmedina.solar.lineduotone.files.ZipFile
-import com.chiksmedina.solar.lineduotone.files.`FileSmile)`
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object FilesGroup
+object FilesGroup
 
-public val LineduotoneGroup.Files: FilesGroup
-  get() = FilesGroup
+val LineDuotoneSolar.Files: FilesGroup
+    get() = FilesGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val FilesGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val FilesGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            CloudFile,
+            CodeFile,
+            FigmaFile,
+            File,
+            FileCheck,
+            FileCorrupted,
+            FileDownload,
+            FileFavourite,
+            FileLeft,
+            FileRemove,
+            FileRight,
+            FileSend,
+            FileSmile,
+            FileText,
+            ZipFile
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(CloudFile, CodeFile, FigmaFile, File, FileCheck, FileCorrupted, FileDownload,
-        FileFavourite, FileLeft, FileRemove, FileRight, FileSend, `FileSmile)`, FileText, ZipFile)
-    return __AllIcons!!
-  }

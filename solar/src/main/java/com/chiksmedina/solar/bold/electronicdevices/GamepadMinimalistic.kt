@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.GamepadMinimalistic: ImageVector
+val ElectronicDevicesGroup.GamepadMinimalistic: ImageVector
     get() {
         if (_gamepadMinimalistic != null) {
             return _gamepadMinimalistic!!
         }
-        _gamepadMinimalistic = Builder(name = "GamepadMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _gamepadMinimalistic = Builder(
+            name = "GamepadMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.0005f, 3.25f)
                 curveTo(15.4147f, 3.25f, 15.7505f, 3.5858f, 15.7505f, 4.0f)
                 verticalLineTo(5.0f)
@@ -86,7 +90,7 @@ public val ElectronicDevicesGroup.GamepadMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _gamepadMinimalistic!!
     }
 

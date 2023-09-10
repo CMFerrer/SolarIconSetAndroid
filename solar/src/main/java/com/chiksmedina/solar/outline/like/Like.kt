@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.LikeGroup
 
-public val LikeGroup.Like: ImageVector
+val LikeGroup.Like: ImageVector
     get() {
         if (_like != null) {
             return _like!!
         }
-        _like = Builder(name = "Like", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _like = Builder(
+            name = "Like", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.4382f, 2.7784f)
                 curveTo(12.2931f, 2.7318f, 12.1345f, 2.7431f, 11.9998f, 2.808f)
                 curveTo(11.8523f, 2.8791f, 11.7548f, 3.0032f, 11.7197f, 3.1382f)
@@ -77,7 +81,7 @@ public val LikeGroup.Like: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _like!!
     }
 

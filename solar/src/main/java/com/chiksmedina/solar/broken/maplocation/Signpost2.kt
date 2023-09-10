@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.maplocation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.MapLocationGroup
 
-public val MapLocationGroup.Signpost2: ImageVector
+val MapLocationGroup.Signpost2: ImageVector
     get() {
         if (_signpost2 != null) {
             return _signpost2!!
         }
-        _signpost2 = Builder(name = "Signpost2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _signpost2 = Builder(
+            name = "Signpost2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.75f, 2.0f)
                 curveTo(12.75f, 1.5858f, 12.4142f, 1.25f, 12.0f, 1.25f)
                 curveTo(11.5858f, 1.25f, 11.25f, 1.5858f, 11.25f, 2.0f)
@@ -37,9 +38,11 @@ public val MapLocationGroup.Signpost2: ImageVector
                 horizontalLineTo(11.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.75f, 11.0f)
                 curveTo(12.75f, 10.5858f, 12.4142f, 10.25f, 12.0f, 10.25f)
                 curveTo(11.5858f, 10.25f, 11.25f, 10.5858f, 11.25f, 11.0f)
@@ -52,9 +55,11 @@ public val MapLocationGroup.Signpost2: ImageVector
                 horizontalLineTo(11.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.75f, 20.0f)
                 curveTo(12.75f, 19.5858f, 12.4142f, 19.25f, 12.0f, 19.25f)
                 curveTo(11.5858f, 19.25f, 11.25f, 19.5858f, 11.25f, 20.0f)
@@ -67,9 +72,11 @@ public val MapLocationGroup.Signpost2: ImageVector
                 horizontalLineTo(11.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.3371f, 18.6111f)
                 curveTo(3.483f, 18.8295f, 3.6705f, 19.017f, 3.8889f, 19.1629f)
                 curveTo(4.3934f, 19.5f, 5.0956f, 19.5f, 6.5001f, 19.5f)
@@ -88,9 +95,11 @@ public val MapLocationGroup.Signpost2: ImageVector
                 curveTo(3.6705f, 12.983f, 3.483f, 13.1705f, 3.3371f, 13.3889f)
                 curveTo(3.0917f, 13.7561f, 3.025f, 14.2283f, 3.0068f, 15.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.6648f, 9.6111f)
                 curveTo(20.5189f, 9.8295f, 20.3314f, 10.017f, 20.113f, 10.1629f)
                 curveTo(19.6086f, 10.5f, 18.9064f, 10.5f, 17.5019f, 10.5f)
@@ -109,26 +118,32 @@ public val MapLocationGroup.Signpost2: ImageVector
                 curveTo(20.3314f, 3.983f, 20.5189f, 4.1705f, 20.6648f, 4.3889f)
                 curveTo(20.9102f, 4.7561f, 20.977f, 5.2283f, 20.9951f, 6.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.0f, 22.0f)
                 horizontalLineTo(10.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.0f, 7.0f)
                 horizontalLineTo(15.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.0f, 16.0f)
                 lineTo(15.0f, 16.0f)
             }
         }
-        .build()
+            .build()
         return _signpost2!!
     }
 

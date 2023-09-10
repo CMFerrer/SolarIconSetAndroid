@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.outline
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.OutlineGroup
+import com.chiksmedina.solar.OutlineSolar
 import com.chiksmedina.solar.outline.arrows.AltArrowDown
 import com.chiksmedina.solar.outline.arrows.AltArrowLeft
 import com.chiksmedina.solar.outline.arrows.AltArrowRight
@@ -69,34 +69,88 @@ import com.chiksmedina.solar.outline.arrows.SquareTransferHorizontal
 import com.chiksmedina.solar.outline.arrows.SquareTransferVertical
 import com.chiksmedina.solar.outline.arrows.TransferHorizontal
 import com.chiksmedina.solar.outline.arrows.TransferVertical
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object ArrowsGroup
+object ArrowsGroup
 
-public val OutlineGroup.Arrows: ArrowsGroup
-  get() = ArrowsGroup
+val OutlineSolar.Arrows: ArrowsGroup
+    get() = ArrowsGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val ArrowsGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val ArrowsGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            AltArrowDown,
+            AltArrowLeft,
+            AltArrowRight,
+            AltArrowUp,
+            ArrowDown,
+            ArrowLeft,
+            ArrowLeftDown,
+            ArrowLeftUp,
+            ArrowRight,
+            ArrowRightDown,
+            ArrowRightUp,
+            ArrowUp,
+            DoubleAltArrowDown,
+            DoubleAltArrowLeft,
+            DoubleAltArrowRight,
+            DoubleAltArrowUp,
+            Refresh,
+            RefreshCircle,
+            RefreshSquare,
+            Restart,
+            RestartCircle,
+            RestartSquare,
+            RoundAltArrowDown,
+            RoundAltArrowLeft,
+            RoundAltArrowRight,
+            RoundAltArrowUp,
+            RoundArrowDown,
+            RoundArrowLeft,
+            RoundArrowLeftDown,
+            RoundArrowLeftUp,
+            RoundArrowRight,
+            RoundArrowRightDown,
+            RoundArrowRightUp,
+            RoundArrowUp,
+            RoundDoubleAltArrowDown,
+            RoundDoubleAltArrowLeft,
+            RoundDoubleAltArrowRight,
+            RoundDoubleAltArrowUp,
+            RoundSortHorizontal,
+            RoundSortVertical,
+            RoundTransferDiagonal,
+            RoundTransferHorizontal,
+            RoundTransferVertical,
+            SortHorizontal,
+            SortVertical,
+            SquareAltArrowLeft,
+            SquareAltArrowRight,
+            SquareAltArrowUp,
+            SquareAltArrowDown,
+            SquareArrowDown,
+            SquareArrowLeft,
+            SquareArrowLeftDown,
+            SquareArrowLeftUp,
+            SquareArrowRight,
+            SquareArrowRightDown,
+            SquareArrowRightUp,
+            SquareArrowUp,
+            SquareDoubleAltArrowDown,
+            SquareDoubleAltArrowLeft,
+            SquareDoubleAltArrowUp,
+            SquareDoubleAltArrowRight,
+            SquareSortHorizontal,
+            SquareSortVertical,
+            SquareTransferHorizontal,
+            SquareTransferVertical,
+            TransferHorizontal,
+            TransferVertical
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(AltArrowDown, AltArrowLeft, AltArrowRight, AltArrowUp, ArrowDown, ArrowLeft,
-        ArrowLeftDown, ArrowLeftUp, ArrowRight, ArrowRightDown, ArrowRightUp, ArrowUp,
-        DoubleAltArrowDown, DoubleAltArrowLeft, DoubleAltArrowRight, DoubleAltArrowUp, Refresh,
-        RefreshCircle, RefreshSquare, Restart, RestartCircle, RestartSquare, RoundAltArrowDown,
-        RoundAltArrowLeft, RoundAltArrowRight, RoundAltArrowUp, RoundArrowDown, RoundArrowLeft,
-        RoundArrowLeftDown, RoundArrowLeftUp, RoundArrowRight, RoundArrowRightDown,
-        RoundArrowRightUp, RoundArrowUp, RoundDoubleAltArrowDown, RoundDoubleAltArrowLeft,
-        RoundDoubleAltArrowRight, RoundDoubleAltArrowUp, RoundSortHorizontal, RoundSortVertical,
-        RoundTransferDiagonal, RoundTransferHorizontal, RoundTransferVertical, SortHorizontal,
-        SortVertical, SquareAltArrowLeft, SquareAltArrowRight, SquareAltArrowUp, SquareAltArrowDown,
-        SquareArrowDown, SquareArrowLeft, SquareArrowLeftDown, SquareArrowLeftUp, SquareArrowRight,
-        SquareArrowRightDown, SquareArrowRightUp, SquareArrowUp, SquareDoubleAltArrowDown,
-        SquareDoubleAltArrowLeft, SquareDoubleAltArrowUp, SquareDoubleAltArrowRight,
-        SquareSortHorizontal, SquareSortVertical, SquareTransferHorizontal, SquareTransferVertical,
-        TransferHorizontal, TransferVertical)
-    return __AllIcons!!
-  }

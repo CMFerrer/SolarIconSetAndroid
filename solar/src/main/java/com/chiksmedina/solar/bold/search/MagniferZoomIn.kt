@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SearchGroup
 
-public val SearchGroup.MagniferZoomIn: ImageVector
+val SearchGroup.MagniferZoomIn: ImageVector
     get() {
         if (_magniferZoomIn != null) {
             return _magniferZoomIn!!
         }
-        _magniferZoomIn = Builder(name = "MagniferZoomIn", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _magniferZoomIn = Builder(
+            name = "MagniferZoomIn", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.7883f, 21.7883f)
                 curveTo(22.0706f, 21.506f, 22.0706f, 21.0483f, 21.7883f, 20.7659f)
                 lineTo(18.1224f, 17.1001f)
@@ -52,7 +56,7 @@ public val SearchGroup.MagniferZoomIn: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _magniferZoomIn!!
     }
 

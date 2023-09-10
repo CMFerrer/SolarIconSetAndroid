@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.facesemotionsstickers
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.FacesEmotionsStickersGroup
 
-public val FacesEmotionsStickersGroup.SleepingCircle: ImageVector
+val FacesEmotionsStickersGroup.SleepingCircle: ImageVector
     get() {
         if (_sleepingCircle != null) {
             return _sleepingCircle!!
         }
-        _sleepingCircle = Builder(name = "SleepingCircle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _sleepingCircle = Builder(
+            name = "SleepingCircle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.0f, 23.0f)
                 curveTo(16.5228f, 23.0f, 21.0f, 18.5228f, 21.0f, 13.0f)
                 curveTo(21.0f, 7.4771f, 16.5228f, 3.0f, 11.0f, 3.0f)
@@ -32,9 +33,11 @@ public val FacesEmotionsStickersGroup.SleepingCircle: ImageVector
                 curveTo(1.0f, 18.5228f, 5.4771f, 23.0f, 11.0f, 23.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.375f, 4.6495f)
                 curveTo(16.0163f, 4.8566f, 15.5576f, 4.7337f, 15.3505f, 4.375f)
                 curveTo(15.1434f, 4.0163f, 15.2663f, 3.5576f, 15.625f, 3.3505f)
@@ -52,9 +55,11 @@ public val FacesEmotionsStickersGroup.SleepingCircle: ImageVector
                 lineTo(16.375f, 4.6495f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.6729f, 6.1495f)
                 curveTo(12.3142f, 5.9424f, 12.1912f, 5.4837f, 12.3984f, 5.125f)
                 curveTo(12.6055f, 4.7663f, 13.0642f, 4.6434f, 13.4229f, 4.8505f)
@@ -72,9 +77,11 @@ public val FacesEmotionsStickersGroup.SleepingCircle: ImageVector
                 lineTo(12.6729f, 6.1495f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.0f, 18.0f)
                 curveTo(11.5523f, 18.0f, 12.0f, 17.5523f, 12.0f, 17.0f)
                 curveTo(12.0f, 16.4477f, 11.5523f, 16.0f, 11.0f, 16.0f)
@@ -82,9 +89,11 @@ public val FacesEmotionsStickersGroup.SleepingCircle: ImageVector
                 curveTo(10.0f, 17.5523f, 10.4477f, 18.0f, 11.0f, 18.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.9985f, 11.4424f)
                 curveTo(12.3064f, 11.1654f, 12.7807f, 11.1905f, 13.0576f, 11.4985f)
                 curveTo(13.5225f, 12.0153f, 14.0226f, 12.25f, 14.5f, 12.25f)
@@ -96,9 +105,11 @@ public val FacesEmotionsStickersGroup.SleepingCircle: ImageVector
                 curveTo(11.6654f, 12.1936f, 11.6905f, 11.7194f, 11.9985f, 11.4424f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.0576f, 11.4985f)
                 curveTo(5.7807f, 11.1905f, 5.3064f, 11.1654f, 4.9985f, 11.4424f)
                 curveTo(4.6905f, 11.7194f, 4.6654f, 12.1936f, 4.9424f, 12.5015f)
@@ -111,7 +122,7 @@ public val FacesEmotionsStickersGroup.SleepingCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sleepingCircle!!
     }
 

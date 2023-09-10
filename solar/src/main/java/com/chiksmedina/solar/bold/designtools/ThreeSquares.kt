@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.DesignToolsGroup
 
-public val DesignToolsGroup.ThreeSquares: ImageVector
+val DesignToolsGroup.ThreeSquares: ImageVector
     get() {
         if (_threeSquares != null) {
             return _threeSquares!!
         }
-        _threeSquares = Builder(name = "ThreeSquares", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _threeSquares = Builder(
+            name = "ThreeSquares", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 6.0f)
                 curveTo(12.0f, 4.1144f, 12.0f, 3.1716f, 12.5858f, 2.5858f)
                 curveTo(13.1716f, 2.0f, 14.1144f, 2.0f, 16.0f, 2.0f)
@@ -39,9 +40,11 @@ public val DesignToolsGroup.ThreeSquares: ImageVector
                 verticalLineTo(6.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.5f, 7.0005f)
                 curveTo(8.9429f, 7.005f, 8.1173f, 7.0542f, 7.5858f, 7.5858f)
                 curveTo(7.0f, 8.1716f, 7.0f, 9.1144f, 7.0f, 11.0f)
@@ -61,9 +64,11 @@ public val DesignToolsGroup.ThreeSquares: ImageVector
                 lineTo(10.5f, 7.0005f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.5f, 12.0005f)
                 curveTo(3.9429f, 12.005f, 3.1173f, 12.0542f, 2.5858f, 12.5858f)
                 curveTo(2.0f, 13.1716f, 2.0f, 14.1144f, 2.0f, 16.0f)
@@ -82,7 +87,7 @@ public val DesignToolsGroup.ThreeSquares: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _threeSquares!!
     }
 

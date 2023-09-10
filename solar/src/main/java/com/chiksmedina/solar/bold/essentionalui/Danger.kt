@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.Danger: ImageVector
+val EssentionalUiGroup.Danger: ImageVector
     get() {
         if (_danger != null) {
             return _danger!!
         }
-        _danger = Builder(name = "Danger", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _danger = Builder(
+            name = "Danger", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.8431f, 3.8021f)
                 curveTo(9.8718f, 2.6007f, 10.8862f, 2.0f, 12.0f, 2.0f)
                 curveTo(13.1138f, 2.0f, 14.1282f, 2.6007f, 16.1569f, 3.8021f)
@@ -57,7 +61,7 @@ public val EssentionalUiGroup.Danger: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _danger!!
     }
 

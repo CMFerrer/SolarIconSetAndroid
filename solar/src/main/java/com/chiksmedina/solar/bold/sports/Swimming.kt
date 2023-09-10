@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SportsGroup
 
-public val SportsGroup.Swimming: ImageVector
+val SportsGroup.Swimming: ImageVector
     get() {
         if (_swimming != null) {
             return _swimming!!
         }
-        _swimming = Builder(name = "Swimming", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _swimming = Builder(
+            name = "Swimming", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.5699f, 17.8657f)
                 curveTo(5.2568f, 16.7919f, 6.7274f, 16.8271f, 7.4576f, 17.7618f)
                 curveTo(8.4476f, 19.0291f, 9.8295f, 20.25f, 12.0f, 20.25f)
@@ -46,9 +47,11 @@ public val SportsGroup.Swimming: ImageVector
                 curveTo(3.229f, 19.7123f, 3.9076f, 18.9011f, 4.5699f, 17.8657f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.1721f, 15.0424f)
                 curveTo(20.8487f, 14.7306f, 20.1707f, 13.9891f, 19.5456f, 13.0435f)
                 curveTo(18.8452f, 11.9837f, 17.4468f, 12.0426f, 16.6735f, 12.8253f)
@@ -75,9 +78,11 @@ public val SportsGroup.Swimming: ImageVector
                 curveTo(22.8251f, 15.5412f, 22.5752f, 15.1374f, 22.1721f, 15.0424f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 8.0f)
                 curveTo(18.3808f, 8.0f, 19.5f, 6.8807f, 19.5f, 5.5f)
                 curveTo(19.5f, 4.1193f, 18.3808f, 3.0f, 17.0f, 3.0f)
@@ -86,7 +91,7 @@ public val SportsGroup.Swimming: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _swimming!!
     }
 

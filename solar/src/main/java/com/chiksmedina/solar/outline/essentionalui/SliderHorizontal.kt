@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.SliderHorizontal: ImageVector
+val EssentionalUiGroup.SliderHorizontal: ImageVector
     get() {
         if (_sliderHorizontal != null) {
             return _sliderHorizontal!!
         }
-        _sliderHorizontal = Builder(name = "SliderHorizontal", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sliderHorizontal = Builder(
+            name = "SliderHorizontal", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.7866f, 4.2969f)
                 curveTo(3.758f, 4.6463f, 3.7517f, 5.0585f, 3.7504f, 5.5428f)
                 curveTo(3.2169f, 5.7f, 2.7482f, 5.9485f, 2.3484f, 6.3484f)
@@ -113,7 +117,7 @@ public val EssentionalUiGroup.SliderHorizontal: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sliderHorizontal!!
     }
 

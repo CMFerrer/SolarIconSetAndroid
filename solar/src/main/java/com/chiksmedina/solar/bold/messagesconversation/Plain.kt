@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MessagesConversationGroup
 
-public val MessagesConversationGroup.Plain: ImageVector
+val MessagesConversationGroup.Plain: ImageVector
     get() {
         if (_plain != null) {
             return _plain!!
         }
-        _plain = Builder(name = "Plain", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _plain = Builder(
+            name = "Plain", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.6357f, 15.6701f)
                 lineTo(20.3521f, 10.5208f)
                 curveTo(21.8516f, 6.0224f, 22.6013f, 3.7732f, 21.414f, 2.5859f)
@@ -41,7 +45,7 @@ public val MessagesConversationGroup.Plain: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _plain!!
     }
 

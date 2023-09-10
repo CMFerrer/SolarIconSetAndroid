@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.search
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SearchGroup
 
-public val SearchGroup.RoundedMagniferZoomIn: ImageVector
+val SearchGroup.RoundedMagniferZoomIn: ImageVector
     get() {
         if (_roundedMagniferZoomIn != null) {
             return _roundedMagniferZoomIn!!
         }
-        _roundedMagniferZoomIn = Builder(name = "RoundedMagniferZoomIn", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _roundedMagniferZoomIn = Builder(
+            name = "RoundedMagniferZoomIn", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.8196f, 19.7001f)
                 curveTo(17.7303f, 18.6059f, 18.6359f, 17.6924f, 19.7206f, 17.7825f)
                 curveTo(19.9087f, 17.7981f, 20.1339f, 17.8666f, 20.3632f, 17.9363f)
@@ -43,9 +44,11 @@ public val SearchGroup.RoundedMagniferZoomIn: ImageVector
                 curveTo(17.9029f, 20.117f, 17.835f, 19.8898f, 17.8196f, 19.7001f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.1566f, 20.3133f)
                 curveTo(16.2137f, 20.3133f, 20.3133f, 16.2137f, 20.3133f, 11.1566f)
                 curveTo(20.3133f, 6.0996f, 16.2137f, 2.0f, 11.1566f, 2.0f)
@@ -53,9 +56,11 @@ public val SearchGroup.RoundedMagniferZoomIn: ImageVector
                 curveTo(2.0f, 16.2137f, 6.0996f, 20.3133f, 11.1566f, 20.3133f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.156f, 8.0244f)
                 curveTo(11.5552f, 8.0244f, 11.8789f, 8.3481f, 11.8789f, 8.7473f)
                 verticalLineTo(10.4341f)
@@ -76,7 +81,7 @@ public val SearchGroup.RoundedMagniferZoomIn: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _roundedMagniferZoomIn!!
     }
 

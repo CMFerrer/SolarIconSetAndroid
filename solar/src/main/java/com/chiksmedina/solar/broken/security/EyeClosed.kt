@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.SecurityGroup
 
-public val SecurityGroup.EyeClosed: ImageVector
+val SecurityGroup.EyeClosed: ImageVector
     get() {
         if (_eyeClosed != null) {
             return _eyeClosed!!
         }
-        _eyeClosed = Builder(name = "EyeClosed", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _eyeClosed = Builder(
+            name = "EyeClosed", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.6894f, 6.7046f)
                 curveTo(2.5262f, 6.3238f, 2.0853f, 6.1475f, 1.7046f, 6.3106f)
                 curveTo(1.3238f, 6.4738f, 1.1475f, 6.9147f, 1.3106f, 7.2954f)
@@ -166,7 +170,7 @@ public val SecurityGroup.EyeClosed: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _eyeClosed!!
     }
 

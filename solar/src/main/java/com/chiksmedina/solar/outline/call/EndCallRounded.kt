@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.CallGroup
 
-public val CallGroup.EndCallRounded: ImageVector
+val CallGroup.EndCallRounded: ImageVector
     get() {
         if (_endCallRounded != null) {
             return _endCallRounded!!
         }
-        _endCallRounded = Builder(name = "EndCallRounded", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _endCallRounded = Builder(
+            name = "EndCallRounded", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 7.75f)
                 curveTo(7.4353f, 7.75f, 4.8727f, 9.6756f, 3.6329f, 11.0131f)
                 curveTo(3.0108f, 11.6842f, 2.75f, 12.6999f, 2.75f, 13.8504f)
@@ -56,7 +60,7 @@ public val CallGroup.EndCallRounded: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _endCallRounded!!
     }
 

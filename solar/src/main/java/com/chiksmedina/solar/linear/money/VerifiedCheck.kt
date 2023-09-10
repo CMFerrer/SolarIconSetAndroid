@@ -1,7 +1,6 @@
 package com.chiksmedina.solar.linear.money
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
@@ -14,16 +13,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.MoneyGroup
 
-public val MoneyGroup.VerifiedCheck: ImageVector
+val MoneyGroup.VerifiedCheck: ImageVector
     get() {
         if (_verifiedCheck != null) {
             return _verifiedCheck!!
         }
-        _verifiedCheck = Builder(name = "VerifiedCheck", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _verifiedCheck = Builder(
+            name = "VerifiedCheck", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.7813f, 3.8903f)
                 curveTo(10.3452f, 3.4097f, 10.6271f, 3.1695f, 10.9219f, 3.0286f)
                 curveTo(11.6037f, 2.7027f, 12.3963f, 2.7027f, 13.0781f, 3.0286f)
@@ -75,15 +78,17 @@ public val MoneyGroup.VerifiedCheck: ImageVector
                 curveTo(9.4447f, 4.1771f, 9.5569f, 4.0815f, 9.7813f, 3.8903f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(8.5f, 12.5f)
                 lineTo(10.5f, 14.5f)
                 lineTo(15.5f, 9.5f)
             }
         }
-        .build()
+            .build()
         return _verifiedCheck!!
     }
 

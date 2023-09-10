@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.VideoFrame2: ImageVector
+val VideoAudioSoundGroup.VideoFrame2: ImageVector
     get() {
         if (_videoFrame2 != null) {
             return _videoFrame2!!
         }
-        _videoFrame2 = Builder(name = "VideoFrame2", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _videoFrame2 = Builder(
+            name = "VideoFrame2", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.8902f, 1.258f)
                 curveTo(5.8987f, 1.2728f, 5.0628f, 1.3155f, 4.3649f, 1.4512f)
                 curveTo(3.6284f, 1.5944f, 2.9989f, 1.8494f, 2.4746f, 2.3212f)
@@ -149,7 +153,7 @@ public val VideoAudioSoundGroup.VideoFrame2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _videoFrame2!!
     }
 

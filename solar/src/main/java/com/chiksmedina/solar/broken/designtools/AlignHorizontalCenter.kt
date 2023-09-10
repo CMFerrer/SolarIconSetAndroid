@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.DesignToolsGroup
 
-public val DesignToolsGroup.AlignHorizontalCenter: ImageVector
+val DesignToolsGroup.AlignHorizontalCenter: ImageVector
     get() {
         if (_alignHorizontalCenter != null) {
             return _alignHorizontalCenter!!
         }
-        _alignHorizontalCenter = Builder(name = "AlignHorizontalCenter", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _alignHorizontalCenter = Builder(
+            name = "AlignHorizontalCenter", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 2.0f)
                 lineTo(12.0f, 5.0f)
                 moveTo(12.0f, 22.0f)
@@ -32,9 +33,11 @@ public val DesignToolsGroup.AlignHorizontalCenter: ImageVector
                 moveTo(12.0f, 14.0f)
                 lineTo(12.0f, 10.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.0f, 5.0f)
                 lineTo(7.5f, 5.0f)
                 curveTo(6.5654f, 5.0f, 6.0981f, 5.0f, 5.75f, 5.201f)
@@ -51,9 +54,11 @@ public val DesignToolsGroup.AlignHorizontalCenter: ImageVector
                 curveTo(18.6674f, 5.522f, 18.478f, 5.3326f, 18.25f, 5.201f)
                 curveTo(17.9704f, 5.0395f, 17.6139f, 5.0078f, 17.0f, 5.0015f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.0f, 16.5f)
                 curveTo(7.0f, 15.5654f, 7.0f, 15.0981f, 7.201f, 14.75f)
                 curveTo(7.3326f, 14.522f, 7.522f, 14.3326f, 7.75f, 14.201f)
@@ -72,7 +77,7 @@ public val DesignToolsGroup.AlignHorizontalCenter: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _alignHorizontalCenter!!
     }
 

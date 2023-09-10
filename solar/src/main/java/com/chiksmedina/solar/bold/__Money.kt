@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.bold
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldGroup
+import com.chiksmedina.solar.BoldSolar
 import com.chiksmedina.solar.bold.money.Banknote
 import com.chiksmedina.solar.bold.money.Banknote2
 import com.chiksmedina.solar.bold.money.Bill
@@ -37,24 +37,56 @@ import com.chiksmedina.solar.bold.money.WadOfMoney
 import com.chiksmedina.solar.bold.money.Wallet
 import com.chiksmedina.solar.bold.money.Wallet2
 import com.chiksmedina.solar.bold.money.WalletMoney
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object MoneyGroup
+object MoneyGroup
 
-public val BoldGroup.Money: MoneyGroup
-  get() = MoneyGroup
+val BoldSolar.Money: MoneyGroup
+    get() = MoneyGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val MoneyGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val MoneyGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Banknote,
+            Banknote2,
+            Bill,
+            BillCheck,
+            BillCross,
+            BillList,
+            Card,
+            Cardholder,
+            Card2,
+            CardRecive,
+            CardSearch,
+            CardSend,
+            CardTransfer,
+            CashOut,
+            Dollar,
+            DollarMinimalistic,
+            Euro,
+            MoneyBag,
+            Ruble,
+            Safe2,
+            SafeCircle,
+            SafeSquare,
+            Sale,
+            SaleSquare,
+            Tag,
+            TagHorizontal,
+            TagPrice,
+            TickerStar,
+            Ticket,
+            TicketSale,
+            VerifiedCheck,
+            WadOfMoney,
+            Wallet,
+            Wallet2,
+            WalletMoney
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Banknote, Banknote2, Bill, BillCheck, BillCross, BillList, Card, Cardholder,
-        Card2, CardRecive, CardSearch, CardSend, CardTransfer, CashOut, Dollar, DollarMinimalistic,
-        Euro, MoneyBag, Ruble, Safe2, SafeCircle, SafeSquare, Sale, SaleSquare, Tag, TagHorizontal,
-        TagPrice, TickerStar, Ticket, TicketSale, VerifiedCheck, WadOfMoney, Wallet, Wallet2,
-        WalletMoney)
-    return __AllIcons!!
-  }

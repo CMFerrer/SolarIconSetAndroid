@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.CallGroup
 
-public val CallGroup.PhoneRounded: ImageVector
+val CallGroup.PhoneRounded: ImageVector
     get() {
         if (_phoneRounded != null) {
             return _phoneRounded!!
         }
-        _phoneRounded = Builder(name = "PhoneRounded", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _phoneRounded = Builder(
+            name = "PhoneRounded", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.0376f, 5.3162f)
                 lineTo(10.6866f, 6.4791f)
                 curveTo(11.2723f, 7.5286f, 11.0372f, 8.9053f, 10.1147f, 9.8278f)
@@ -39,7 +43,7 @@ public val CallGroup.PhoneRounded: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _phoneRounded!!
     }
 

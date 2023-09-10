@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.networkitprogramming
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.Code2: ImageVector
+val NetworkItProgrammingGroup.Code2: ImageVector
     get() {
         if (_code2 != null) {
             return _code2!!
         }
-        _code2 = Builder(name = "Code2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _code2 = Builder(
+            name = "Code2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.5018f, 5.3871f)
                 curveTo(8.8097f, 5.11f, 8.8346f, 4.6358f, 8.5575f, 4.3279f)
                 curveTo(8.2804f, 4.02f, 7.8062f, 3.995f, 7.4983f, 4.2721f)
@@ -43,9 +44,11 @@ public val NetworkItProgrammingGroup.Code2: ImageVector
                 lineTo(8.5018f, 5.3871f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.1795f, 4.2752f)
                 curveTo(14.5798f, 4.3816f, 14.818f, 4.7923f, 14.7117f, 5.1927f)
                 lineTo(10.7248f, 20.1927f)
@@ -55,9 +58,11 @@ public val NetworkItProgrammingGroup.Code2: ImageVector
                 curveTo(13.3684f, 4.407f, 13.7792f, 4.1688f, 14.1795f, 4.2752f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.4425f, 10.4983f)
                 curveTo(15.7196f, 10.1904f, 16.1938f, 10.1654f, 16.5017f, 10.4425f)
                 lineTo(18.2392f, 12.0063f)
@@ -78,7 +83,7 @@ public val NetworkItProgrammingGroup.Code2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _code2!!
     }
 

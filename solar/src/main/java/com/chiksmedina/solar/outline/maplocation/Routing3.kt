@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MapLocationGroup
 
-public val MapLocationGroup.Routing3: ImageVector
+val MapLocationGroup.Routing3: ImageVector
     get() {
         if (_routing3 != null) {
             return _routing3!!
         }
-        _routing3 = Builder(name = "Routing3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _routing3 = Builder(
+            name = "Routing3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.0f, 2.75f)
                 curveTo(3.7574f, 2.75f, 2.75f, 3.7574f, 2.75f, 5.0f)
                 curveTo(2.75f, 6.2426f, 3.7574f, 7.25f, 5.0f, 7.25f)
@@ -70,7 +74,7 @@ public val MapLocationGroup.Routing3: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _routing3!!
     }
 

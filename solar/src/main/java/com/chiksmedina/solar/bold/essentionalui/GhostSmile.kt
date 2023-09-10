@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.GhostSmile: ImageVector
+val EssentionalUiGroup.GhostSmile: ImageVector
     get() {
         if (_ghostSmile != null) {
             return _ghostSmile!!
         }
-        _ghostSmile = Builder(name = "GhostSmile", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _ghostSmile = Builder(
+            name = "GhostSmile", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(22.0f, 12.0f)
                 verticalLineTo(19.2058f)
                 curveTo(22.0f, 20.4896f, 20.649f, 21.3245f, 19.5008f, 20.7504f)
@@ -60,7 +64,7 @@ public val EssentionalUiGroup.GhostSmile: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ghostSmile!!
     }
 

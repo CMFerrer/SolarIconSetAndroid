@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SecurityGroup
 
-public val SecurityGroup.Key: ImageVector
+val SecurityGroup.Key: ImageVector
     get() {
         if (_key != null) {
             return _key!!
         }
-        _key = Builder(name = "Key", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _key = Builder(
+            name = "Key", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
+            = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(22.0f, 8.2934f)
                 curveTo(22.0f, 11.7692f, 19.1708f, 14.5869f, 15.6807f, 14.5869f)
                 curveTo(15.0439f, 14.5869f, 13.5939f, 14.4405f, 12.8885f, 13.8551f)
@@ -49,7 +53,7 @@ public val SecurityGroup.Key: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _key!!
     }
 

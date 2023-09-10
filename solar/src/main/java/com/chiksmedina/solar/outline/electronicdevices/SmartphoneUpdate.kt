@@ -12,17 +12,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartphoneUpdate: ImageVector
+val ElectronicDevicesGroup.SmartphoneUpdate: ImageVector
     get() {
         if (_smartphoneUpdate != null) {
             return _smartphoneUpdate!!
         }
-        _smartphoneUpdate = Builder(name = "SmartphoneUpdate", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
+        _smartphoneUpdate = Builder(
+            name = "SmartphoneUpdate", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
             group {
-                path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                        strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                        pathFillType = EvenOdd) {
+                path(
+                    fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                    pathFillType = EvenOdd
+                ) {
                     moveTo(2.0353f, 3.2508f)
                     curveTo(2.3647f, 1.0288f, 4.135f, -0.75f, 6.381f, -0.75f)
                     curveTo(7.7255f, -0.75f, 8.9139f, -0.1008f, 9.71f, 0.8922f)
@@ -101,7 +105,7 @@ public val ElectronicDevicesGroup.SmartphoneUpdate: ImageVector
                 }
             }
         }
-        .build()
+            .build()
         return _smartphoneUpdate!!
     }
 

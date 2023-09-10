@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.broken
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BrokenGroup
+import com.chiksmedina.solar.BrokenSolar
 import com.chiksmedina.solar.broken.shoppingecommerce.Bag
 import com.chiksmedina.solar.broken.shoppingecommerce.Bag2
 import com.chiksmedina.solar.broken.shoppingecommerce.Bag3
@@ -29,23 +29,25 @@ import com.chiksmedina.solar.broken.shoppingecommerce.CartPlus
 import com.chiksmedina.solar.broken.shoppingecommerce.Shop
 import com.chiksmedina.solar.broken.shoppingecommerce.Shop2
 import com.chiksmedina.solar.broken.shoppingecommerce.ShopMinimalistic
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object ShoppingEcommerceGroup
+object ShoppingEcommerceGroup
 
-public val BrokenGroup.ShoppingEcommerce: ShoppingEcommerceGroup
-  get() = ShoppingEcommerceGroup
+val BrokenSolar.ShoppingEcommerce: ShoppingEcommerceGroup
+    get() = ShoppingEcommerceGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val ShoppingEcommerceGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val ShoppingEcommerceGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Bag, Bag2, Bag3, Bag4, Bag5, BagCheck, BagCross, BagHeart, BagMusic,
+            BagMusic2, BagSmile, Cart, Cart2, Cart3, Cart4, Cart5, CartCheck, CartCross, CartLarge,
+            CartLarge2, CartLarge3, CartLarge4, CartLargeMinimalistic, CartPlus, Shop, Shop2,
+            ShopMinimalistic
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Bag, Bag2, Bag3, Bag4, Bag5, BagCheck, BagCross, BagHeart, BagMusic,
-        BagMusic2, BagSmile, Cart, Cart2, Cart3, Cart4, Cart5, CartCheck, CartCross, CartLarge,
-        CartLarge2, CartLarge3, CartLarge4, CartLargeMinimalistic, CartPlus, Shop, Shop2,
-        ShopMinimalistic)
-    return __AllIcons!!
-  }

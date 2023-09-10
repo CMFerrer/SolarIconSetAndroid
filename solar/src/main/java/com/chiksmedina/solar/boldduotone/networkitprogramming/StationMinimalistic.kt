@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.networkitprogramming
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.StationMinimalistic: ImageVector
+val NetworkItProgrammingGroup.StationMinimalistic: ImageVector
     get() {
         if (_stationMinimalistic != null) {
             return _stationMinimalistic!!
         }
-        _stationMinimalistic = Builder(name = "StationMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _stationMinimalistic = Builder(
+            name = "StationMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.2844f, 9.775f)
                 curveTo(10.9613f, 9.5491f, 10.75f, 9.1742f, 10.75f, 8.75f)
                 curveTo(10.75f, 8.0596f, 11.3096f, 7.5f, 12.0f, 7.5f)
@@ -50,9 +51,11 @@ public val NetworkItProgrammingGroup.StationMinimalistic: ImageVector
                 lineTo(12.0f, 12.3717f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
-                    = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
+                = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 2.75f)
                 curveTo(8.5537f, 2.75f, 5.75f, 5.5672f, 5.75f, 9.0547f)
                 curveTo(5.75f, 10.7783f, 6.4346f, 12.3382f, 7.5447f, 13.4763f)
@@ -68,9 +71,11 @@ public val NetworkItProgrammingGroup.StationMinimalistic: ImageVector
                 curveTo(18.25f, 5.5672f, 15.4463f, 2.75f, 12.0f, 2.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.7f, strokeAlpha
-                    = 0.7f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.7f, strokeAlpha
+                = 0.7f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.9998f, 5.5718f)
                 curveTo(10.0999f, 5.5718f, 8.5498f, 7.1256f, 8.5498f, 9.0546f)
                 curveTo(8.5498f, 10.0005f, 8.9223f, 10.8562f, 9.5275f, 11.4838f)
@@ -87,7 +92,7 @@ public val NetworkItProgrammingGroup.StationMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _stationMinimalistic!!
     }
 

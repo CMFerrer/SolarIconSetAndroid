@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Bluetooth: ImageVector
+val ElectronicDevicesGroup.Bluetooth: ImageVector
     get() {
         if (_bluetooth != null) {
             return _bluetooth!!
         }
-        _bluetooth = Builder(name = "Bluetooth", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bluetooth = Builder(
+            name = "Bluetooth", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.7426f, 15.1577f)
                 lineTo(12.3019f, 12.0043f)
                 lineTo(12.3079f, 12.0001f)
@@ -57,7 +61,7 @@ public val ElectronicDevicesGroup.Bluetooth: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bluetooth!!
     }
 

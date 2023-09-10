@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.boldduotone
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldduotoneGroup
+import com.chiksmedina.solar.BoldDuotoneSolar
 import com.chiksmedina.solar.boldduotone.security.Bomb
 import com.chiksmedina.solar.boldduotone.security.BombEmoji
 import com.chiksmedina.solar.boldduotone.security.BombMinimalistic
@@ -48,27 +48,67 @@ import com.chiksmedina.solar.boldduotone.security.ShieldUser
 import com.chiksmedina.solar.boldduotone.security.ShieldWarning
 import com.chiksmedina.solar.boldduotone.security.Siren
 import com.chiksmedina.solar.boldduotone.security.SirenRounded
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object SecurityGroup
+object SecurityGroup
 
-public val BoldduotoneGroup.Security: SecurityGroup
-  get() = SecurityGroup
+val BoldDuotoneSolar.Security: SecurityGroup
+    get() = SecurityGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val SecurityGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val SecurityGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Bomb,
+            BombEmoji,
+            BombMinimalistic,
+            CodeScan,
+            Eye,
+            EyeClosed,
+            EyeScan,
+            Incognito,
+            Key,
+            KeyMinimalistic,
+            KeyMinimalistic2,
+            KeyMinimalisticSquare,
+            KeyMinimalisticSquare2,
+            KeyMinimalisticSquare3,
+            KeySquare,
+            KeySquare2,
+            Lock,
+            LockKeyhole,
+            LockKeyholeMinimalistic,
+            LockKeyholeMinimalisticUnlocked,
+            LockKeyholeUnlocked,
+            LockPassword,
+            LockPasswordUnlocked,
+            LockUnlocked,
+            ObjectScan,
+            Password,
+            PasswordMinimalistic,
+            PasswordMinimalisticInput,
+            QrCode,
+            Scanner,
+            Scanner2,
+            Shield,
+            ShieldCheck,
+            ShieldCross,
+            ShieldKeyhole,
+            ShieldKeyholeMinimalistic,
+            ShieldMinimalistic,
+            ShieldMinus,
+            ShieldNetwork,
+            ShieldPlus,
+            ShieldStar,
+            ShieldUp,
+            ShieldUser,
+            ShieldWarning,
+            Siren,
+            SirenRounded
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Bomb, BombEmoji, BombMinimalistic, CodeScan, Eye, EyeClosed, EyeScan,
-        Incognito, Key, KeyMinimalistic, KeyMinimalistic2, KeyMinimalisticSquare,
-        KeyMinimalisticSquare2, KeyMinimalisticSquare3, KeySquare, KeySquare2, Lock, LockKeyhole,
-        LockKeyholeMinimalistic, LockKeyholeMinimalisticUnlocked, LockKeyholeUnlocked, LockPassword,
-        LockPasswordUnlocked, LockUnlocked, ObjectScan, Password, PasswordMinimalistic,
-        PasswordMinimalisticInput, QrCode, Scanner, Scanner2, Shield, ShieldCheck, ShieldCross,
-        ShieldKeyhole, ShieldKeyholeMinimalistic, ShieldMinimalistic, ShieldMinus, ShieldNetwork,
-        ShieldPlus, ShieldStar, ShieldUp, ShieldUser, ShieldWarning, Siren, SirenRounded)
-    return __AllIcons!!
-  }

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SportsGroup
 
-public val SportsGroup.MeditationRound: ImageVector
+val SportsGroup.MeditationRound: ImageVector
     get() {
         if (_meditationRound != null) {
             return _meditationRound!!
         }
-        _meditationRound = Builder(name = "MeditationRound", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _meditationRound = Builder(
+            name = "MeditationRound", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.5f, 4.5f)
                 curveTo(14.5f, 5.8807f, 13.3807f, 7.0f, 12.0f, 7.0f)
                 curveTo(10.6192f, 7.0f, 9.5f, 5.8807f, 9.5f, 4.5f)
@@ -31,9 +33,11 @@ public val SportsGroup.MeditationRound: ImageVector
                 curveTo(13.3807f, 2.0f, 14.5f, 3.1193f, 14.5f, 4.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 9.7706f)
                 curveTo(11.6438f, 9.7706f, 11.3209f, 9.7911f, 11.1389f, 9.8219f)
                 lineTo(10.2473f, 9.9721f)
@@ -128,7 +132,7 @@ public val SportsGroup.MeditationRound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _meditationRound!!
     }
 

@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.bold
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldGroup
+import com.chiksmedina.solar.BoldSolar
 import com.chiksmedina.solar.bold.transportpartsservice.Accumulator
 import com.chiksmedina.solar.bold.transportpartsservice.Bus
 import com.chiksmedina.solar.bold.transportpartsservice.ElectricRefueling
@@ -21,23 +21,40 @@ import com.chiksmedina.solar.bold.transportpartsservice.TransmissionCircle
 import com.chiksmedina.solar.bold.transportpartsservice.TransmissionSquare
 import com.chiksmedina.solar.bold.transportpartsservice.Wheel
 import com.chiksmedina.solar.bold.transportpartsservice.WheelAngle
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object TransportPartsServiceGroup
+object TransportPartsServiceGroup
 
-public val BoldGroup.TransportPartsService: TransportPartsServiceGroup
-  get() = TransportPartsServiceGroup
+val BoldSolar.TransportPartsService: TransportPartsServiceGroup
+    get() = TransportPartsServiceGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val TransportPartsServiceGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val TransportPartsServiceGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Accumulator,
+            Bus,
+            ElectricRefueling,
+            GasStation,
+            KickScooter,
+            Scooter,
+            ShockAbsorber,
+            SpedometerLow,
+            SpedometerMax,
+            SpedometerMiddle,
+            Suspension,
+            SuspensionBolt,
+            SuspensionCross,
+            Tram,
+            Transmission,
+            TransmissionCircle,
+            TransmissionSquare,
+            Wheel,
+            WheelAngle
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Accumulator, Bus, ElectricRefueling, GasStation, KickScooter, Scooter,
-        ShockAbsorber, SpedometerLow, SpedometerMax, SpedometerMiddle, Suspension, SuspensionBolt,
-        SuspensionCross, Tram, Transmission, TransmissionCircle, TransmissionSquare, Wheel,
-        WheelAngle)
-    return __AllIcons!!
-  }

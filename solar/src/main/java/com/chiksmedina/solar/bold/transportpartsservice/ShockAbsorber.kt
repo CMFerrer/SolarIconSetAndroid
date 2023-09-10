@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.transportpartsservice
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TransportPartsServiceGroup
 
-public val TransportPartsServiceGroup.ShockAbsorber: ImageVector
+val TransportPartsServiceGroup.ShockAbsorber: ImageVector
     get() {
         if (_shockAbsorber != null) {
             return _shockAbsorber!!
         }
-        _shockAbsorber = Builder(name = "ShockAbsorber", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _shockAbsorber = Builder(
+            name = "ShockAbsorber", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.0f, 20.0f)
                 curveTo(14.0f, 21.1046f, 13.1046f, 22.0f, 12.0f, 22.0f)
                 curveTo(10.8954f, 22.0f, 10.0f, 21.1046f, 10.0f, 20.0f)
@@ -56,9 +57,11 @@ public val TransportPartsServiceGroup.ShockAbsorber: ImageVector
                 verticalLineTo(6.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.2726f, 7.8183f)
                 curveTo(7.373f, 7.4164f, 7.7802f, 7.1721f, 8.1821f, 7.2726f)
                 lineTo(16.1821f, 9.2726f)
@@ -76,9 +79,11 @@ public val TransportPartsServiceGroup.ShockAbsorber: ImageVector
                 curveTo(7.4164f, 12.1273f, 7.1721f, 11.7201f, 7.2726f, 11.3183f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(20.3114f, 7.4724f)
                 curveTo(20.6028f, 7.7667f, 20.6004f, 8.2416f, 20.306f, 8.533f)
                 lineTo(19.5989f, 9.233f)
@@ -129,7 +134,7 @@ public val TransportPartsServiceGroup.ShockAbsorber: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _shockAbsorber!!
     }
 

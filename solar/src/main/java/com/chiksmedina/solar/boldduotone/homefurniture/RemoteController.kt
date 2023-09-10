@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.homefurniture
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.RemoteController: ImageVector
+val HomeFurnitureGroup.RemoteController: ImageVector
     get() {
         if (_remoteController != null) {
             return _remoteController!!
         }
-        _remoteController = Builder(name = "RemoteController", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _remoteController = Builder(
+            name = "RemoteController", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.6741f, 3.7777f)
                 curveTo(5.0f, 4.7866f, 5.0f, 6.1911f, 5.0f, 9.0f)
                 verticalLineTo(15.0f)
@@ -42,9 +43,11 @@ public val HomeFurnitureGroup.RemoteController: ImageVector
                 curveTo(6.341f, 2.966f, 5.966f, 3.341f, 5.6741f, 3.7777f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.25f, 15.5f)
                 curveTo(8.25f, 13.4289f, 9.9289f, 11.75f, 12.0f, 11.75f)
                 curveTo(14.0711f, 11.75f, 15.75f, 13.4289f, 15.75f, 15.5f)
@@ -58,9 +61,11 @@ public val HomeFurnitureGroup.RemoteController: ImageVector
                 curveTo(10.7574f, 17.75f, 9.75f, 16.7426f, 9.75f, 15.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.0f, 9.0f)
                 curveTo(16.0f, 9.5523f, 15.5523f, 10.0f, 15.0f, 10.0f)
                 curveTo(14.4477f, 10.0f, 14.0f, 9.5523f, 14.0f, 9.0f)
@@ -68,9 +73,11 @@ public val HomeFurnitureGroup.RemoteController: ImageVector
                 curveTo(15.5523f, 8.0f, 16.0f, 8.4477f, 16.0f, 9.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 10.0f)
                 curveTo(12.5523f, 10.0f, 13.0f, 9.5523f, 13.0f, 9.0f)
                 curveTo(13.0f, 8.4477f, 12.5523f, 8.0f, 12.0f, 8.0f)
@@ -78,9 +85,11 @@ public val HomeFurnitureGroup.RemoteController: ImageVector
                 curveTo(11.0f, 9.5523f, 11.4477f, 10.0f, 12.0f, 10.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 9.0f)
                 curveTo(10.0f, 9.5523f, 9.5523f, 10.0f, 9.0f, 10.0f)
                 curveTo(8.4477f, 10.0f, 8.0f, 9.5523f, 8.0f, 9.0f)
@@ -88,9 +97,11 @@ public val HomeFurnitureGroup.RemoteController: ImageVector
                 curveTo(9.5523f, 8.0f, 10.0f, 8.4477f, 10.0f, 9.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.0f, 4.75f)
                 curveTo(8.5858f, 4.75f, 8.25f, 5.0858f, 8.25f, 5.5f)
                 curveTo(8.25f, 5.9142f, 8.5858f, 6.25f, 9.0f, 6.25f)
@@ -101,7 +112,7 @@ public val HomeFurnitureGroup.RemoteController: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _remoteController!!
     }
 

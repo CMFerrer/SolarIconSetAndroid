@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.networkitprogramming
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.SidebarCode: ImageVector
+val NetworkItProgrammingGroup.SidebarCode: ImageVector
     get() {
         if (_sidebarCode != null) {
             return _sidebarCode!!
         }
-        _sidebarCode = Builder(name = "SidebarCode", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _sidebarCode = Builder(
+            name = "SidebarCode", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.7022f, 14.2633f)
                 curveTo(9.8477f, 13.8755f, 9.6512f, 13.4432f, 9.2633f, 13.2978f)
                 curveTo(8.8755f, 13.1523f, 8.4432f, 13.3488f, 8.2978f, 13.7367f)
@@ -34,9 +35,11 @@ public val NetworkItProgrammingGroup.SidebarCode: ImageVector
                 lineTo(9.7022f, 14.2633f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.5303f, 14.5303f)
                 curveTo(6.8232f, 14.2374f, 6.8232f, 13.7626f, 6.5303f, 13.4697f)
                 curveTo(6.2374f, 13.1768f, 5.7626f, 13.1768f, 5.4697f, 13.4697f)
@@ -49,9 +52,11 @@ public val NetworkItProgrammingGroup.SidebarCode: ImageVector
                 lineTo(6.5303f, 14.5303f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.0303f, 15.4697f)
                 curveTo(10.7374f, 15.1768f, 10.2626f, 15.1768f, 9.9697f, 15.4697f)
                 curveTo(9.6768f, 15.7626f, 9.6768f, 16.2374f, 9.9697f, 16.5303f)
@@ -64,9 +69,11 @@ public val NetworkItProgrammingGroup.SidebarCode: ImageVector
                 lineTo(11.0303f, 15.4697f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9436f, 2.25f)
                 horizontalLineTo(14.0564f)
                 curveTo(14.3707f, 2.25f, 14.6737f, 2.25f, 14.966f, 2.2508f)
@@ -123,7 +130,7 @@ public val NetworkItProgrammingGroup.SidebarCode: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sidebarCode!!
     }
 

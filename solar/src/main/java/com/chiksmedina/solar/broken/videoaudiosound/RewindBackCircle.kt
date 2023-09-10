@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.broken.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.RewindBackCircle: ImageVector
+val VideoAudioSoundGroup.RewindBackCircle: ImageVector
     get() {
         if (_rewindBackCircle != null) {
             return _rewindBackCircle!!
         }
-        _rewindBackCircle = Builder(name = "RewindBackCircle", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _rewindBackCircle = Builder(
+            name = "RewindBackCircle", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.0f, 8.0714f)
                 lineTo(7.7784f, 10.3725f)
                 curveTo(6.6617f, 11.1702f, 6.6617f, 12.8298f, 7.7784f, 13.6274f)
@@ -37,9 +38,11 @@ public val VideoAudioSoundGroup.RewindBackCircle: ImageVector
                 curveTo(15.5806f, 16.3433f, 16.5f, 15.8702f, 16.5f, 15.0568f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.0f, 3.3378f)
                 curveTo(8.4709f, 2.487f, 10.1786f, 2.0f, 12.0f, 2.0f)
                 curveTo(17.5228f, 2.0f, 22.0f, 6.4771f, 22.0f, 12.0f)
@@ -48,7 +51,7 @@ public val VideoAudioSoundGroup.RewindBackCircle: ImageVector
                 curveTo(2.0f, 10.1786f, 2.487f, 8.4709f, 3.3378f, 7.0f)
             }
         }
-        .build()
+            .build()
         return _rewindBackCircle!!
     }
 

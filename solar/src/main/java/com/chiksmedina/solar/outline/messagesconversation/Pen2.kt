@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MessagesConversationGroup
 
-public val MessagesConversationGroup.Pen2: ImageVector
+val MessagesConversationGroup.Pen2: ImageVector
     get() {
         if (_pen2 != null) {
             return _pen2!!
         }
-        _pen2 = Builder(name = "Pen2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _pen2 = Builder(
+            name = "Pen2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.0992f, 2.3911f)
                 curveTo(15.6207f, 0.8696f, 18.0874f, 0.8696f, 19.6089f, 2.3911f)
                 curveTo(21.1304f, 3.9125f, 21.1304f, 6.3793f, 19.6089f, 7.9008f)
@@ -72,7 +76,7 @@ public val MessagesConversationGroup.Pen2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _pen2!!
     }
 

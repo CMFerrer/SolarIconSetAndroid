@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.weather
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.WeatherGroup
 
-public val WeatherGroup.Sun: ImageVector
+val WeatherGroup.Sun: ImageVector
     get() {
         if (_sun != null) {
             return _sun!!
         }
-        _sun = Builder(name = "Sun", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _sun = Builder(
+            name = "Sun", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
+            = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.0f, 12.0f)
                 curveTo(18.0f, 15.3137f, 15.3137f, 18.0f, 12.0f, 18.0f)
                 curveTo(8.6863f, 18.0f, 6.0f, 15.3137f, 6.0f, 12.0f)
@@ -32,9 +33,11 @@ public val WeatherGroup.Sun: ImageVector
                 curveTo(15.3137f, 6.0f, 18.0f, 8.6863f, 18.0f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 1.25f)
                 curveTo(12.4142f, 1.25f, 12.75f, 1.5858f, 12.75f, 2.0f)
                 verticalLineTo(3.0f)
@@ -68,9 +71,11 @@ public val WeatherGroup.Sun: ImageVector
                 curveTo(11.25f, 20.5858f, 11.5858f, 20.25f, 12.0f, 20.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.3984f, 4.3984f)
                 curveTo(4.6913f, 4.1055f, 5.1662f, 4.1055f, 5.459f, 4.3984f)
                 lineTo(5.8519f, 4.7912f)
@@ -80,9 +85,11 @@ public val WeatherGroup.Sun: ImageVector
                 curveTo(4.1055f, 5.1662f, 4.1055f, 4.6913f, 4.3984f, 4.3984f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(19.6009f, 4.3986f)
                 curveTo(19.8938f, 4.6915f, 19.8938f, 5.1664f, 19.6009f, 5.4593f)
                 lineTo(19.2081f, 5.8521f)
@@ -92,9 +99,11 @@ public val WeatherGroup.Sun: ImageVector
                 curveTo(18.8331f, 4.1058f, 19.308f, 4.1058f, 19.6009f, 4.3986f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.1474f, 18.1474f)
                 curveTo(18.4403f, 17.8545f, 18.9152f, 17.8545f, 19.2081f, 18.1474f)
                 lineTo(19.6009f, 18.5402f)
@@ -104,9 +113,11 @@ public val WeatherGroup.Sun: ImageVector
                 curveTo(17.8545f, 18.9152f, 17.8545f, 18.4403f, 18.1474f, 18.1474f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.8519f, 18.1477f)
                 curveTo(6.1448f, 18.4406f, 6.1448f, 18.9154f, 5.8519f, 19.2083f)
                 lineTo(5.459f, 19.6012f)
@@ -117,7 +128,7 @@ public val WeatherGroup.Sun: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sun!!
     }
 

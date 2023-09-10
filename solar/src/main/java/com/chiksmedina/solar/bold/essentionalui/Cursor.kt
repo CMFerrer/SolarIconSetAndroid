@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.Cursor: ImageVector
+val EssentionalUiGroup.Cursor: ImageVector
     get() {
         if (_cursor != null) {
             return _cursor!!
         }
-        _cursor = Builder(name = "Cursor", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _cursor = Builder(
+            name = "Cursor", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.5744f, 19.1999f)
                 lineTo(12.6361f, 15.2616f)
                 lineTo(11.4334f, 16.4643f)
@@ -43,7 +47,7 @@ public val EssentionalUiGroup.Cursor: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cursor!!
     }
 

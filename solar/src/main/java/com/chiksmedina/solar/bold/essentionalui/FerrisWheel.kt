@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.FerrisWheel: ImageVector
+val EssentionalUiGroup.FerrisWheel: ImageVector
     get() {
         if (_ferrisWheel != null) {
             return _ferrisWheel!!
         }
-        _ferrisWheel = Builder(name = "FerrisWheel", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _ferrisWheel = Builder(
+            name = "FerrisWheel", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.6976f, 3.0734f)
                 curveTo(13.5072f, 2.3131f, 12.8193f, 1.75f, 12.0f, 1.75f)
                 curveTo(11.1808f, 1.75f, 10.493f, 2.3129f, 10.3024f, 3.0731f)
@@ -103,7 +107,7 @@ public val EssentionalUiGroup.FerrisWheel: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ferrisWheel!!
     }
 

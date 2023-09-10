@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.Home2: ImageVector
+val EssentionalUiGroup.Home2: ImageVector
     get() {
         if (_home2 != null) {
             return _home2!!
         }
-        _home2 = Builder(name = "Home2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _home2 = Builder(
+            name = "Home2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.5192f, 7.8227f)
                 curveTo(2.0f, 8.7713f, 2.0f, 9.9155f, 2.0f, 12.2039f)
                 verticalLineTo(13.725f)
@@ -48,7 +52,7 @@ public val EssentionalUiGroup.Home2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _home2!!
     }
 

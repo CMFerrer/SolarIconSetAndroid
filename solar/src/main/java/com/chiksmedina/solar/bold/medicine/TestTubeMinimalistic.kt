@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.medicine
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MedicineGroup
 
-public val MedicineGroup.TestTubeMinimalistic: ImageVector
+val MedicineGroup.TestTubeMinimalistic: ImageVector
     get() {
         if (_testTubeMinimalistic != null) {
             return _testTubeMinimalistic!!
         }
-        _testTubeMinimalistic = Builder(name = "TestTubeMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _testTubeMinimalistic = Builder(
+            name = "TestTubeMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.8692f, 2.2238f)
                 curveTo(14.5731f, 1.9263f, 14.0919f, 1.9253f, 13.7944f, 2.2214f)
                 curveTo(13.497f, 2.5176f, 13.4959f, 2.9988f, 13.7921f, 3.2962f)
@@ -40,9 +41,11 @@ public val MedicineGroup.TestTubeMinimalistic: ImageVector
                 lineTo(14.8692f, 2.2238f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(4.1281f, 14.396f)
                 lineTo(6.1663f, 12.3488f)
                 lineTo(8.0583f, 12.56f)
@@ -55,7 +58,7 @@ public val MedicineGroup.TestTubeMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _testTubeMinimalistic!!
     }
 

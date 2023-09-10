@@ -12,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsActionGroup
 
-public val ArrowsActionGroup.CircleTopDown: ImageVector
+val ArrowsActionGroup.CircleTopDown: ImageVector
     get() {
         if (_circleTopDown != null) {
             return _circleTopDown!!
         }
-        _circleTopDown = Builder(name = "CircleTopDown", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _circleTopDown = Builder(
+            name = "CircleTopDown", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.5303f, 2.4697f)
                 curveTo(21.8232f, 2.7626f, 21.8232f, 3.2374f, 21.5303f, 3.5303f)
                 lineTo(13.8107f, 11.25f)
@@ -38,9 +42,11 @@ public val ArrowsActionGroup.CircleTopDown: ImageVector
                 curveTo(20.7626f, 2.1768f, 21.2374f, 2.1768f, 21.5303f, 2.4697f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.4817f, 6.7003f)
                 lineTo(17.4303f, 9.7516f)
                 curveTo(18.6329f, 9.7971f, 19.5938f, 10.7864f, 19.5938f, 12.0f)
@@ -59,7 +65,7 @@ public val ArrowsActionGroup.CircleTopDown: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _circleTopDown!!
     }
 

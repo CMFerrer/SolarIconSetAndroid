@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.DesignToolsGroup
 
-public val DesignToolsGroup.RadialBlur: ImageVector
+val DesignToolsGroup.RadialBlur: ImageVector
     get() {
         if (_radialBlur != null) {
             return _radialBlur!!
         }
-        _radialBlur = Builder(name = "RadialBlur", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _radialBlur = Builder(
+            name = "RadialBlur", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.9997f, 20.66f)
                 curveTo(12.2168f, 23.4214f, 6.1009f, 21.7826f, 3.3395f, 16.9997f)
                 curveTo(0.578f, 12.2168f, 2.2168f, 6.1009f, 6.9997f, 3.3395f)
@@ -103,7 +107,7 @@ public val DesignToolsGroup.RadialBlur: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _radialBlur!!
     }
 

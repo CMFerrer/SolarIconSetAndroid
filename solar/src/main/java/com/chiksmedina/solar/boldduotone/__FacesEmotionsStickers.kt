@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.boldduotone
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldduotoneGroup
+import com.chiksmedina.solar.BoldDuotoneSolar
 import com.chiksmedina.solar.boldduotone.facesemotionsstickers.ConfoundedCircle
 import com.chiksmedina.solar.boldduotone.facesemotionsstickers.ConfoundedSquare
 import com.chiksmedina.solar.boldduotone.facesemotionsstickers.EmojiFunnyCircle
@@ -23,24 +23,42 @@ import com.chiksmedina.solar.boldduotone.facesemotionsstickers.StickerSmileCircl
 import com.chiksmedina.solar.boldduotone.facesemotionsstickers.StickerSmileCircle2
 import com.chiksmedina.solar.boldduotone.facesemotionsstickers.StickerSmileSquare
 import com.chiksmedina.solar.boldduotone.facesemotionsstickers.StickerSquare
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object FacesEmotionsStickersGroup
+object FacesEmotionsStickersGroup
 
-public val BoldduotoneGroup.FacesEmotionsStickers: FacesEmotionsStickersGroup
-  get() = FacesEmotionsStickersGroup
+val BoldDuotoneSolar.FacesEmotionsStickers: FacesEmotionsStickersGroup
+    get() = FacesEmotionsStickersGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val FacesEmotionsStickersGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val FacesEmotionsStickersGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            ConfoundedCircle,
+            ConfoundedSquare,
+            EmojiFunnyCircle,
+            EmojiFunnySquare,
+            ExpressionlessCircle,
+            ExpressionlessSquare,
+            FacemaskCircle,
+            FacemaskSquare,
+            FaceScanCircle,
+            FaceScanSquare,
+            SadCircle,
+            SadSquare,
+            SleepingCircle,
+            SleepingSquare,
+            SmileCircle,
+            SmileSquare,
+            StickerCircle,
+            StickerSmileCircle,
+            StickerSmileCircle2,
+            StickerSmileSquare,
+            StickerSquare
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(ConfoundedCircle, ConfoundedSquare, EmojiFunnyCircle, EmojiFunnySquare,
-        ExpressionlessCircle, ExpressionlessSquare, FacemaskCircle, FacemaskSquare, FaceScanCircle,
-        FaceScanSquare, SadCircle, SadSquare, SleepingCircle, SleepingSquare, SmileCircle,
-        SmileSquare, StickerCircle, StickerSmileCircle, StickerSmileCircle2, StickerSmileSquare,
-        StickerSquare)
-    return __AllIcons!!
-  }

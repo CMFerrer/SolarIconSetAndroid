@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NotesGroup
 
-public val NotesGroup.Document: ImageVector
+val NotesGroup.Document: ImageVector
     get() {
         if (_document != null) {
             return _document!!
         }
-        _document = Builder(name = "Document", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _document = Builder(
+            name = "Document", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.9436f, 1.25f)
                 horizontalLineTo(13.0564f)
                 curveTo(14.8942f, 1.25f, 16.3498f, 1.25f, 17.489f, 1.4031f)
@@ -83,7 +87,7 @@ public val NotesGroup.Document: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _document!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.users
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.UsersGroup
 
-public val UsersGroup.UserCrossRounded: ImageVector
+val UsersGroup.UserCrossRounded: ImageVector
     get() {
         if (_userCrossRounded != null) {
             return _userCrossRounded!!
         }
-        _userCrossRounded = Builder(name = "UserCrossRounded", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _userCrossRounded = Builder(
+            name = "UserCrossRounded", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 1.25f)
                 curveTo(9.3766f, 1.25f, 7.25f, 3.3767f, 7.25f, 6.0f)
                 curveTo(7.25f, 8.6234f, 9.3766f, 10.75f, 12.0f, 10.75f)
@@ -38,9 +39,11 @@ public val UsersGroup.UserCrossRounded: ImageVector
                 curveTo(10.2051f, 9.25f, 8.75f, 7.7949f, 8.75f, 6.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.1968f, 16.1363f)
                 curveTo(15.9039f, 15.8434f, 15.4291f, 15.8434f, 15.1362f, 16.1363f)
                 curveTo(14.8433f, 16.4292f, 14.8433f, 16.9041f, 15.1362f, 17.197f)
@@ -60,9 +63,11 @@ public val UsersGroup.UserCrossRounded: ImageVector
                 lineTo(16.1968f, 16.1363f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 12.25f)
                 curveTo(13.8045f, 12.25f, 15.4825f, 12.6184f, 16.8118f, 13.2537f)
                 curveTo(16.8742f, 13.2512f, 16.937f, 13.25f, 17.0f, 13.25f)
@@ -93,7 +98,7 @@ public val UsersGroup.UserCrossRounded: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _userCrossRounded!!
     }
 

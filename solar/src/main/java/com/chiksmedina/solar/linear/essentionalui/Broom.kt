@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.EssentionalUiGroup
 
-public val EssentionalUiGroup.Broom: ImageVector
+val EssentionalUiGroup.Broom: ImageVector
     get() {
         if (_broom != null) {
             return _broom!!
         }
-        _broom = Builder(name = "Broom", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _broom = Builder(
+            name = "Broom", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.5303f, 2.5303f)
                 curveTo(22.8232f, 2.2374f, 22.8232f, 1.7626f, 22.5303f, 1.4697f)
                 curveTo(22.2374f, 1.1768f, 21.7626f, 1.1768f, 21.4697f, 1.4697f)
@@ -193,7 +197,7 @@ public val EssentionalUiGroup.Broom: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _broom!!
     }
 

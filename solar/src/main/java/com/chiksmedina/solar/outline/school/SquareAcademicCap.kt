@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SchoolGroup
 
-public val SchoolGroup.SquareAcademicCap: ImageVector
+val SchoolGroup.SquareAcademicCap: ImageVector
     get() {
         if (_squareAcademicCap != null) {
             return _squareAcademicCap!!
         }
-        _squareAcademicCap = Builder(name = "SquareAcademicCap", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _squareAcademicCap = Builder(
+            name = "SquareAcademicCap", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.4643f, 2.8206f)
                 curveTo(11.0871f, 2.0598f, 12.9128f, 2.0598f, 14.5356f, 2.8206f)
                 lineTo(21.2268f, 5.9576f)
@@ -71,7 +75,7 @@ public val SchoolGroup.SquareAcademicCap: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _squareAcademicCap!!
     }
 

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.LightbulbMinimalistic: ImageVector
+val ElectronicDevicesGroup.LightbulbMinimalistic: ImageVector
     get() {
         if (_lightbulbMinimalistic != null) {
             return _lightbulbMinimalistic!!
         }
-        _lightbulbMinimalistic = Builder(name = "LightbulbMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _lightbulbMinimalistic = Builder(
+            name = "LightbulbMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.25f, 18.7089f)
                 curveTo(9.25f, 18.2894f, 9.5858f, 17.9494f, 10.0f, 17.9494f)
                 horizontalLineTo(14.0f)
@@ -41,9 +43,11 @@ public val ElectronicDevicesGroup.LightbulbMinimalistic: ImageVector
                 curveTo(10.2525f, 22.0f, 9.9167f, 21.66f, 9.9167f, 21.2405f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.4106f, 13.8283f)
                 lineTo(8.5146f, 14.8807f)
                 curveTo(8.8244f, 15.1759f, 9.0f, 15.5875f, 9.0f, 16.0182f)
@@ -61,7 +65,7 @@ public val ElectronicDevicesGroup.LightbulbMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _lightbulbMinimalistic!!
     }
 

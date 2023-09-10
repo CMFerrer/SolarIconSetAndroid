@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TransportPartsServiceGroup
 
-public val TransportPartsServiceGroup.WheelAngle: ImageVector
+val TransportPartsServiceGroup.WheelAngle: ImageVector
     get() {
         if (_wheelAngle != null) {
             return _wheelAngle!!
         }
-        _wheelAngle = Builder(name = "WheelAngle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _wheelAngle = Builder(
+            name = "WheelAngle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.0f, 12.0f)
                 curveTo(21.0f, 17.5228f, 18.9277f, 22.0f, 16.3714f, 22.0f)
                 horizontalLineTo(8.6571f)
@@ -35,9 +37,11 @@ public val TransportPartsServiceGroup.WheelAngle: ImageVector
                 curveTo(18.9277f, 2.0f, 21.0f, 6.4771f, 21.0f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.3104f, 5.1341f)
                 curveTo(3.509f, 6.8655f, 3.0f, 9.2925f, 3.0f, 12.0f)
                 curveTo(3.0f, 14.7075f, 3.509f, 17.1345f, 4.3104f, 18.8659f)
@@ -60,7 +64,7 @@ public val TransportPartsServiceGroup.WheelAngle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _wheelAngle!!
     }
 

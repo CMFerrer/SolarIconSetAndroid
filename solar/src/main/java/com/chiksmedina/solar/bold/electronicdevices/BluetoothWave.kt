@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.BluetoothWave: ImageVector
+val ElectronicDevicesGroup.BluetoothWave: ImageVector
     get() {
         if (_bluetoothWave != null) {
             return _bluetoothWave!!
         }
-        _bluetoothWave = Builder(name = "BluetoothWave", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bluetoothWave = Builder(
+            name = "BluetoothWave", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.5095f, 12.0043f)
                 lineTo(13.6086f, 14.9376f)
                 curveTo(14.1072f, 15.2944f, 14.5428f, 15.6061f, 14.847f, 15.8992f)
@@ -59,9 +60,11 @@ public val ElectronicDevicesGroup.BluetoothWave: ImageVector
                 lineTo(9.5095f, 12.0043f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.9841f, 4.9839f)
                 curveTo(18.261f, 4.7182f, 18.6992f, 4.729f, 18.9629f, 5.008f)
                 lineTo(18.964f, 5.0092f)
@@ -98,9 +101,11 @@ public val ElectronicDevicesGroup.BluetoothWave: ImageVector
                 curveTo(17.6966f, 5.6875f, 17.7084f, 5.2485f, 17.9841f, 4.9839f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.3059f, 7.6558f)
                 curveTo(16.6479f, 7.4835f, 17.0638f, 7.6232f, 17.2348f, 7.9678f)
                 lineTo(17.2354f, 7.9691f)
@@ -137,7 +142,7 @@ public val ElectronicDevicesGroup.BluetoothWave: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bluetoothWave!!
     }
 

@@ -1,12 +1,10 @@
 package com.chiksmedina.solar.broken.foodkitchen
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Square
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.FoodKitchenGroup
 
-public val FoodKitchenGroup.Bottle: ImageVector
+val FoodKitchenGroup.Bottle: ImageVector
     get() {
         if (_bottle != null) {
             return _bottle!!
         }
-        _bottle = Builder(name = "Bottle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bottle = Builder(
+            name = "Bottle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.4508f, 8.2783f)
                 lineTo(19.1984f, 8.2184f)
                 lineTo(19.1984f, 8.2184f)
@@ -413,9 +415,11 @@ public val FoodKitchenGroup.Bottle: ImageVector
                 lineTo(15.5512f, 15.3674f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Square, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Square, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.6978f, 9.2674f)
                 lineTo(16.8956f, 9.5347f)
                 curveTo(16.0254f, 9.8248f, 15.0674f, 9.654f, 14.3511f, 9.0809f)
@@ -423,7 +427,7 @@ public val FoodKitchenGroup.Bottle: ImageVector
                 lineTo(10.7261f, 9.1369f)
             }
         }
-        .build()
+            .build()
         return _bottle!!
     }
 

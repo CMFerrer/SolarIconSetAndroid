@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ListGroup
 
-public val ListGroup.ListCheck: ImageVector
+val ListGroup.ListCheck: ImageVector
     get() {
         if (_listCheck != null) {
             return _listCheck!!
         }
-        _listCheck = Builder(name = "ListCheck", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _listCheck = Builder(
+            name = "ListCheck", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 5.75f)
                 curveTo(2.0f, 5.3358f, 2.3358f, 5.0f, 2.75f, 5.0f)
                 horizontalLineTo(20.75f)
@@ -67,7 +71,7 @@ public val ListGroup.ListCheck: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _listCheck!!
     }
 

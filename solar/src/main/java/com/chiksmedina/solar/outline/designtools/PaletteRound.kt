@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.DesignToolsGroup
 
-public val DesignToolsGroup.PaletteRound: ImageVector
+val DesignToolsGroup.PaletteRound: ImageVector
     get() {
         if (_paletteRound != null) {
             return _paletteRound!!
         }
-        _paletteRound = Builder(name = "PaletteRound", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _paletteRound = Builder(
+            name = "PaletteRound", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(1.25f, 6.0f)
                 curveTo(1.25f, 3.3767f, 3.3767f, 1.25f, 6.0f, 1.25f)
                 curveTo(8.6234f, 1.25f, 10.75f, 3.3767f, 10.75f, 6.0f)
@@ -73,7 +77,7 @@ public val DesignToolsGroup.PaletteRound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _paletteRound!!
     }
 

@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.outline
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.OutlineGroup
+import com.chiksmedina.solar.OutlineSolar
 import com.chiksmedina.solar.outline.like.Dislike
 import com.chiksmedina.solar.outline.like.Heart
 import com.chiksmedina.solar.outline.like.HeartAngle
@@ -19,22 +19,24 @@ import com.chiksmedina.solar.outline.like.MedalStarCircle
 import com.chiksmedina.solar.outline.like.MedalStarSquare
 import com.chiksmedina.solar.outline.like.Star
 import com.chiksmedina.solar.outline.like.StarShine
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object LikeGroup
+object LikeGroup
 
-public val OutlineGroup.Like: LikeGroup
-  get() = LikeGroup
+val OutlineSolar.Like: LikeGroup
+    get() = LikeGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val LikeGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val LikeGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Dislike, Heart, Hearts, HeartAngle, HeartBroken, HeartLock, HeartShine,
+            HeartUnlock, Like, MedalRibbon, MedalRibbonsStar, MedalRibbonStar, MedalStar,
+            MedalStarCircle, MedalStarSquare, Star, StarShine
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Dislike, Heart, Hearts, HeartAngle, HeartBroken, HeartLock, HeartShine,
-        HeartUnlock, Like, MedalRibbon, MedalRibbonsStar, MedalRibbonStar, MedalStar,
-        MedalStarCircle, MedalStarSquare, Star, StarShine)
-    return __AllIcons!!
-  }

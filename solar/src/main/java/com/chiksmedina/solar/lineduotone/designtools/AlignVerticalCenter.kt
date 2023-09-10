@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.lineduotone.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.DesignToolsGroup
 
-public val DesignToolsGroup.AlignVerticalCenter: ImageVector
+val DesignToolsGroup.AlignVerticalCenter: ImageVector
     get() {
         if (_alignVerticalCenter != null) {
             return _alignVerticalCenter!!
         }
-        _alignVerticalCenter = Builder(name = "AlignVerticalCenter", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _alignVerticalCenter = Builder(
+            name = "AlignVerticalCenter", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Round, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 12.0f)
                 lineTo(5.0f, 12.0f)
                 moveTo(22.0f, 12.0f)
@@ -32,9 +33,11 @@ public val DesignToolsGroup.AlignVerticalCenter: ImageVector
                 moveTo(14.0f, 12.0f)
                 lineTo(10.0f, 12.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.5f, 5.0f)
                 curveTo(6.5654f, 5.0f, 6.0981f, 5.0f, 5.75f, 5.201f)
                 curveTo(5.522f, 5.3326f, 5.3326f, 5.522f, 5.201f, 5.75f)
@@ -52,9 +55,11 @@ public val DesignToolsGroup.AlignVerticalCenter: ImageVector
                 curveTo(8.9019f, 5.0f, 8.4346f, 5.0f, 7.5f, 5.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(16.5f, 7.0f)
                 curveTo(15.5654f, 7.0f, 15.0981f, 7.0f, 14.75f, 7.201f)
                 curveTo(14.522f, 7.3326f, 14.3326f, 7.522f, 14.201f, 7.75f)
@@ -73,7 +78,7 @@ public val DesignToolsGroup.AlignVerticalCenter: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _alignVerticalCenter!!
     }
 

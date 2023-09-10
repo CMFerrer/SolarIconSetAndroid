@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Delivery: ImageVector
+val EssentionalUiGroup.Delivery: ImageVector
     get() {
         if (_delivery != null) {
             return _delivery!!
         }
-        _delivery = Builder(name = "Delivery", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _delivery = Builder(
+            name = "Delivery", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.0907f, 2.5488f)
                 curveTo(17.5383f, 2.2395f, 16.9502f, 2.2083f, 16.3286f, 2.286f)
                 curveTo(15.7381f, 2.3598f, 15.0198f, 2.5465f, 14.1565f, 2.7709f)
@@ -69,9 +70,11 @@ public val EssentionalUiGroup.Delivery: ImageVector
                 lineTo(14.4848f, 4.2354f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.2005f, 4.7247f)
                 curveTo(2.8014f, 4.614f, 2.3881f, 4.8478f, 2.2773f, 5.2469f)
                 curveTo(2.1666f, 5.646f, 2.4004f, 6.0594f, 2.7995f, 6.1701f)
@@ -99,7 +102,7 @@ public val EssentionalUiGroup.Delivery: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _delivery!!
     }
 

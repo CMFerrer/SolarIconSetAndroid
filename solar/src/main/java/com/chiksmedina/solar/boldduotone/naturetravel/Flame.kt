@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.naturetravel
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.NatureTravelGroup
 
-public val NatureTravelGroup.Flame: ImageVector
+val NatureTravelGroup.Flame: ImageVector
     get() {
         if (_flame != null) {
             return _flame!!
         }
-        _flame = Builder(name = "Flame", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _flame = Builder(
+            name = "Flame", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.0f, 15.0002f)
                 curveTo(20.0f, 19.2547f, 17.3819f, 21.1216f, 15.3588f, 21.7512f)
                 curveTo(15.2746f, 21.7774f, 15.196f, 21.7793f, 15.126f, 21.7627f)
@@ -45,9 +46,11 @@ public val NatureTravelGroup.Flame: ImageVector
                 curveTo(14.9439f, 5.4141f, 20.0f, 10.3783f, 20.0f, 15.0002f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.7334f, 17.5004f)
                 curveTo(7.7334f, 18.4303f, 8.0937f, 19.4052f, 8.5001f, 20.1896f)
                 curveTo(8.7023f, 20.5797f, 8.3966f, 21.0417f, 8.0181f, 20.9597f)
@@ -64,7 +67,7 @@ public val NatureTravelGroup.Flame: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _flame!!
     }
 

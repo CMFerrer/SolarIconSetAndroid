@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Forbidden: ImageVector
+val EssentionalUiGroup.Forbidden: ImageVector
     get() {
         if (_forbidden != null) {
             return _forbidden!!
         }
-        _forbidden = Builder(name = "Forbidden", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _forbidden = Builder(
+            name = "Forbidden", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.7063f, 1.25f)
                 curveTo(9.6185f, 1.2494f, 8.8626f, 1.2491f, 8.1712f, 1.5354f)
                 curveTo(7.4798f, 1.8218f, 6.9455f, 2.3566f, 6.1767f, 3.1262f)
@@ -81,7 +85,7 @@ public val EssentionalUiGroup.Forbidden: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _forbidden!!
     }
 

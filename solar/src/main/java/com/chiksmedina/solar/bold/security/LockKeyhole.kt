@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SecurityGroup
 
-public val SecurityGroup.LockKeyhole: ImageVector
+val SecurityGroup.LockKeyhole: ImageVector
     get() {
         if (_lockKeyhole != null) {
             return _lockKeyhole!!
         }
-        _lockKeyhole = Builder(name = "LockKeyhole", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _lockKeyhole = Builder(
+            name = "LockKeyhole", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.25f, 10.0546f)
                 verticalLineTo(8.0f)
                 curveTo(5.25f, 4.2721f, 8.2721f, 1.25f, 12.0f, 1.25f)
@@ -53,7 +57,7 @@ public val SecurityGroup.LockKeyhole: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _lockKeyhole!!
     }
 

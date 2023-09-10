@@ -12,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsActionGroup
 
-public val ArrowsActionGroup.Import: ImageVector
+val ArrowsActionGroup.Import: ImageVector
     get() {
         if (_import != null) {
             return _import!!
         }
-        _import = Builder(name = "Import", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _import = Builder(
+            name = "Import", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.5303f, 10.4697f)
                 curveTo(15.2374f, 10.1768f, 14.7626f, 10.1768f, 14.4697f, 10.4697f)
                 lineTo(12.75f, 12.1893f)
@@ -38,9 +42,11 @@ public val ArrowsActionGroup.Import: ImageVector
                 curveTo(15.8232f, 11.2374f, 15.8232f, 10.7626f, 15.5303f, 10.4697f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.7476f, 12.0f)
                 curveTo(17.2996f, 12.0f, 16.9077f, 12.2742f, 16.591f, 12.591f)
                 lineTo(13.591f, 15.591f)
@@ -54,7 +60,7 @@ public val ArrowsActionGroup.Import: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _import!!
     }
 

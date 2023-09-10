@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.broken.textformatting
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.TextFormattingGroup
 
-public val TextFormattingGroup.LinkRoundAngle: ImageVector
+val TextFormattingGroup.LinkRoundAngle: ImageVector
     get() {
         if (_linkRoundAngle != null) {
             return _linkRoundAngle!!
         }
-        _linkRoundAngle = Builder(name = "LinkRoundAngle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _linkRoundAngle = Builder(
+            name = "LinkRoundAngle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.7917f, 15.7991f)
                 lineTo(14.2223f, 14.3676f)
                 curveTo(16.5926f, 11.9959f, 16.5926f, 8.1505f, 14.2223f, 5.7788f)
@@ -32,9 +33,11 @@ public val TextFormattingGroup.LinkRoundAngle: ImageVector
                 curveTo(0.4074f, 11.0135f, 0.4074f, 14.8588f, 2.7777f, 17.2306f)
                 curveTo(3.8769f, 18.3304f, 5.2928f, 18.9202f, 6.7316f, 19.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.2223f, 15.3583f)
                 curveTo(23.5926f, 12.9865f, 23.5926f, 9.1412f, 21.2223f, 6.7695f)
                 curveTo(20.1231f, 5.6696f, 18.7072f, 5.0798f, 17.2683f, 5.0f)
@@ -44,7 +47,7 @@ public val TextFormattingGroup.LinkRoundAngle: ImageVector
                 lineTo(11.2083f, 8.2009f)
             }
         }
-        .build()
+            .build()
         return _linkRoundAngle!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.FlashlightOn: ImageVector
+val EssentionalUiGroup.FlashlightOn: ImageVector
     get() {
         if (_flashlightOn != null) {
             return _flashlightOn!!
         }
-        _flashlightOn = Builder(name = "FlashlightOn", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _flashlightOn = Builder(
+            name = "FlashlightOn", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.75f, 2.0f)
                 curveTo(12.75f, 1.5858f, 12.4142f, 1.25f, 12.0f, 1.25f)
                 curveTo(11.5858f, 1.25f, 11.25f, 1.5858f, 11.25f, 2.0f)
@@ -34,9 +35,11 @@ public val EssentionalUiGroup.FlashlightOn: ImageVector
                 verticalLineTo(2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.5303f, 2.4697f)
                 curveTo(6.2374f, 2.1768f, 5.7626f, 2.1768f, 5.4697f, 2.4697f)
                 curveTo(5.1768f, 2.7626f, 5.1768f, 3.2374f, 5.4697f, 3.5303f)
@@ -46,9 +49,11 @@ public val EssentionalUiGroup.FlashlightOn: ImageVector
                 lineTo(6.5303f, 2.4697f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.5303f, 2.4697f)
                 curveTo(18.2374f, 2.1768f, 17.7626f, 2.1768f, 17.4697f, 2.4697f)
                 lineTo(15.4697f, 4.4697f)
@@ -58,9 +63,11 @@ public val EssentionalUiGroup.FlashlightOn: ImageVector
                 curveTo(18.8232f, 3.2374f, 18.8232f, 2.7626f, 18.5303f, 2.4697f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.0f, 10.0f)
                 lineTo(20.0f, 10.25f)
                 horizontalLineTo(4.0f)
@@ -72,9 +79,11 @@ public val EssentionalUiGroup.FlashlightOn: ImageVector
                 curveTo(20.0f, 8.5858f, 20.0f, 9.0572f, 20.0f, 10.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.1716f, 14.8284f)
                 curveTo(16.0094f, 14.9906f, 15.87f, 15.13f, 15.75f, 15.2548f)
                 verticalLineTo(15.25f)
@@ -86,9 +95,11 @@ public val EssentionalUiGroup.FlashlightOn: ImageVector
                 lineTo(16.1716f, 14.8284f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.0f, 20.0f)
                 verticalLineTo(17.6569f)
                 curveTo(9.0f, 17.2795f, 9.0f, 16.9893f, 8.985f, 16.75f)
@@ -111,7 +122,7 @@ public val EssentionalUiGroup.FlashlightOn: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _flashlightOn!!
     }
 

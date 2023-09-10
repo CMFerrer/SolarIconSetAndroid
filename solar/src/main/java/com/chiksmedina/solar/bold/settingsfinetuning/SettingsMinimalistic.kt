@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SettingsFineTuningGroup
 
-public val SettingsFineTuningGroup.SettingsMinimalistic: ImageVector
+val SettingsFineTuningGroup.SettingsMinimalistic: ImageVector
     get() {
         if (_settingsMinimalistic != null) {
             return _settingsMinimalistic!!
         }
-        _settingsMinimalistic = Builder(name = "SettingsMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _settingsMinimalistic = Builder(
+            name = "SettingsMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.4277f, 2.0f)
                 curveTo(11.3139f, 2.0f, 10.2995f, 2.6007f, 8.2708f, 3.8021f)
                 lineTo(7.5847f, 4.2085f)
@@ -49,7 +53,7 @@ public val SettingsFineTuningGroup.SettingsMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _settingsMinimalistic!!
     }
 

@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.linear
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.LinearGroup
+import com.chiksmedina.solar.LinearSolar
 import com.chiksmedina.solar.linear.designtools.AlignBottom
 import com.chiksmedina.solar.linear.designtools.AlignHorizontaSpacing
 import com.chiksmedina.solar.linear.designtools.AlignHorizontalCenter
@@ -31,24 +31,50 @@ import com.chiksmedina.solar.linear.designtools.RulerAngular
 import com.chiksmedina.solar.linear.designtools.RulerCrossPen
 import com.chiksmedina.solar.linear.designtools.RulerPen
 import com.chiksmedina.solar.linear.designtools.ThreeSquares
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object DesignToolsGroup
+object DesignToolsGroup
 
-public val LinearGroup.DesignTools: DesignToolsGroup
-  get() = DesignToolsGroup
+val LinearSolar.DesignTools: DesignToolsGroup
+    get() = DesignToolsGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val DesignToolsGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val DesignToolsGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            AlignBottom,
+            AlignHorizontalCenter,
+            AlignHorizontaSpacing,
+            AlignLeft,
+            AlignRight,
+            AlignTop,
+            AlignVerticalCenter,
+            AlignVerticalSpacing,
+            ColourTuneing,
+            Crop,
+            CropMinimalistic,
+            Filters,
+            FlipHorizontal,
+            FlipVertical,
+            Layers,
+            LayersMinimalistic,
+            MirrorLeft,
+            MirrorRight,
+            PaintRoller,
+            Palette,
+            PaletteRound,
+            Pallete2,
+            Pipette,
+            RadialBlur,
+            Ruler,
+            RulerAngular,
+            RulerCrossPen,
+            RulerPen,
+            ThreeSquares
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(AlignBottom, AlignHorizontalCenter, AlignHorizontaSpacing, AlignLeft,
-        AlignRight, AlignTop, AlignVerticalCenter, AlignVerticalSpacing, ColourTuneing, Crop,
-        CropMinimalistic, Filters, FlipHorizontal, FlipVertical, Layers, LayersMinimalistic,
-        MirrorLeft, MirrorRight, PaintRoller, Palette, PaletteRound, Pallete2, Pipette, RadialBlur,
-        Ruler, RulerAngular, RulerCrossPen, RulerPen, ThreeSquares)
-    return __AllIcons!!
-  }

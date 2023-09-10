@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.LikeGroup
 
-public val LikeGroup.HeartAngle: ImageVector
+val LikeGroup.HeartAngle: ImageVector
     get() {
         if (_heartAngle != null) {
             return _heartAngle!!
         }
-        _heartAngle = Builder(name = "HeartAngle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _heartAngle = Builder(
+            name = "HeartAngle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 5.5009f)
                 lineTo(11.4596f, 6.021f)
                 curveTo(11.463f, 6.0244f, 11.4664f, 6.0279f, 11.4698f, 6.0313f)
@@ -111,7 +115,7 @@ public val LikeGroup.HeartAngle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _heartAngle!!
     }
 

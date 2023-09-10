@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SsdRound: ImageVector
+val ElectronicDevicesGroup.SsdRound: ImageVector
     get() {
         if (_ssdRound != null) {
             return _ssdRound!!
         }
-        _ssdRound = Builder(name = "SsdRound", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _ssdRound = Builder(
+            name = "SsdRound", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.5622f, 2.8717f)
                 curveTo(6.1486f, 2.4146f, 6.8236f, 2.25f, 7.5f, 2.25f)
                 horizontalLineTo(16.5f)
@@ -93,7 +97,7 @@ public val ElectronicDevicesGroup.SsdRound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ssdRound!!
     }
 

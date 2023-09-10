@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.CameraMinimalistic: ImageVector
+val VideoAudioSoundGroup.CameraMinimalistic: ImageVector
     get() {
         if (_cameraMinimalistic != null) {
             return _cameraMinimalistic!!
         }
-        _cameraMinimalistic = Builder(name = "CameraMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _cameraMinimalistic = Builder(
+            name = "CameraMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.7778f, 21.0f)
                 horizontalLineTo(14.2222f)
                 curveTo(17.3433f, 21.0f, 18.9038f, 21.0f, 20.0248f, 20.2777f)
@@ -43,9 +44,11 @@ public val VideoAudioSoundGroup.CameraMinimalistic: ImageVector
                 curveTo(5.0962f, 21.0f, 6.6568f, 21.0f, 9.7778f, 21.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.0f, 4.0f)
                 curveTo(8.0f, 3.4477f, 8.4133f, 3.0f, 8.9231f, 3.0f)
                 horizontalLineTo(15.0769f)
@@ -55,9 +58,11 @@ public val VideoAudioSoundGroup.CameraMinimalistic: ImageVector
                 curveTo(8.4133f, 5.0f, 8.0f, 4.5523f, 8.0f, 4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFFffffff)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFFffffff)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.2779f, 10.286f)
                 curveTo(17.2779f, 9.8422f, 17.651f, 9.4824f, 18.1113f, 9.4824f)
                 horizontalLineTo(18.6668f)
@@ -67,9 +72,11 @@ public val VideoAudioSoundGroup.CameraMinimalistic: ImageVector
                 curveTo(17.651f, 11.0896f, 17.2779f, 10.7298f, 17.2779f, 10.286f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.8335f, 13.5003f)
                 curveTo(7.8335f, 11.2813f, 9.699f, 9.4824f, 12.0002f, 9.4824f)
                 curveTo(14.3014f, 9.4824f, 16.1668f, 11.2813f, 16.1668f, 13.5003f)
@@ -83,9 +90,11 @@ public val VideoAudioSoundGroup.CameraMinimalistic: ImageVector
                 curveTo(10.6195f, 15.9111f, 9.5002f, 14.8318f, 9.5002f, 13.5003f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.1113f, 9.4824f)
                 curveTo(17.651f, 9.4824f, 17.2779f, 9.8422f, 17.2779f, 10.286f)
                 curveTo(17.2779f, 10.7298f, 17.651f, 11.0896f, 18.1113f, 11.0896f)
@@ -96,7 +105,7 @@ public val VideoAudioSoundGroup.CameraMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cameraMinimalistic!!
     }
 

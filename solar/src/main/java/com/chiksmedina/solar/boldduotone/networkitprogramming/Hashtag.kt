@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.networkitprogramming
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.Hashtag: ImageVector
+val NetworkItProgrammingGroup.Hashtag: ImageVector
     get() {
         if (_hashtag != null) {
             return _hashtag!!
         }
-        _hashtag = Builder(name = "Hashtag", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _hashtag = Builder(
+            name = "Hashtag", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.2007f, 2.2773f)
                 curveTo(10.5998f, 2.3882f, 10.8334f, 2.8016f, 10.7226f, 3.2007f)
                 lineTo(5.7226f, 21.2007f)
@@ -33,9 +34,11 @@ public val NetworkItProgrammingGroup.Hashtag: ImageVector
                 curveTo(9.3882f, 2.4001f, 9.8016f, 2.1665f, 10.2007f, 2.2773f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.2007f, 2.2773f)
                 curveTo(19.5998f, 2.3882f, 19.8334f, 2.8016f, 19.7226f, 3.2007f)
                 lineTo(14.7226f, 21.2007f)
@@ -45,9 +48,11 @@ public val NetworkItProgrammingGroup.Hashtag: ImageVector
                 curveTo(18.3882f, 2.4001f, 18.8016f, 2.1665f, 19.2007f, 2.2773f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(3.25f, 9.0f)
                 curveTo(3.25f, 8.5858f, 3.5858f, 8.25f, 4.0f, 8.25f)
                 horizontalLineTo(22.0f)
@@ -57,9 +62,11 @@ public val NetworkItProgrammingGroup.Hashtag: ImageVector
                 curveTo(3.5858f, 9.75f, 3.25f, 9.4142f, 3.25f, 9.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(1.25f, 16.0f)
                 curveTo(1.25f, 15.5858f, 1.5858f, 15.25f, 2.0f, 15.25f)
                 horizontalLineTo(20.0f)
@@ -70,7 +77,7 @@ public val NetworkItProgrammingGroup.Hashtag: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hashtag!!
     }
 

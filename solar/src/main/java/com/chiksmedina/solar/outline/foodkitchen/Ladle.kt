@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FoodKitchenGroup
 
-public val FoodKitchenGroup.Ladle: ImageVector
+val FoodKitchenGroup.Ladle: ImageVector
     get() {
         if (_ladle != null) {
             return _ladle!!
         }
-        _ladle = Builder(name = "Ladle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _ladle = Builder(
+            name = "Ladle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.4342f, 2.5f)
                 curveTo(3.8137f, 2.5f, 2.5f, 3.8137f, 2.5f, 5.4342f)
                 curveTo(2.5f, 5.8484f, 2.1642f, 6.1842f, 1.75f, 6.1842f)
@@ -63,7 +67,7 @@ public val FoodKitchenGroup.Ladle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ladle!!
     }
 

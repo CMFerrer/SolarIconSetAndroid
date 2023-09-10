@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.Glasses: ImageVector
+val EssentionalUiGroup.Glasses: ImageVector
     get() {
         if (_glasses != null) {
             return _glasses!!
         }
-        _glasses = Builder(name = "Glasses", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _glasses = Builder(
+            name = "Glasses", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.2372f, 4.7117f)
                 curveTo(6.6301f, 4.5807f, 6.8425f, 4.156f, 6.7115f, 3.763f)
                 curveTo(6.5805f, 3.3701f, 6.1558f, 3.1577f, 5.7628f, 3.2887f)
@@ -68,7 +72,7 @@ public val EssentionalUiGroup.Glasses: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _glasses!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.time
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TimeGroup
 
-public val TimeGroup.WatchRound: ImageVector
+val TimeGroup.WatchRound: ImageVector
     get() {
         if (_watchRound != null) {
             return _watchRound!!
         }
-        _watchRound = Builder(name = "WatchRound", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _watchRound = Builder(
+            name = "WatchRound", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 18.9767f)
                 curveTo(15.866f, 18.9767f, 19.0f, 15.8531f, 19.0f, 12.0f)
                 curveTo(19.0f, 8.1468f, 15.866f, 5.0233f, 12.0f, 5.0233f)
@@ -43,9 +44,11 @@ public val TimeGroup.WatchRound: ImageVector
                 curveTo(11.3f, 8.7524f, 11.6134f, 8.4401f, 12.0f, 8.4401f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.8585f, 2.0743f)
                 curveTo(10.4136f, 2.0f, 11.1129f, 2.0f, 11.9515f, 2.0f)
                 horizontalLineTo(12.0485f)
@@ -60,9 +63,11 @@ public val TimeGroup.WatchRound: ImageVector
                 curveTo(8.7435f, 2.3256f, 9.2725f, 2.1528f, 9.8585f, 2.0743f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.6816f, 21.2507f)
                 curveTo(16.1067f, 20.827f, 16.28f, 20.2998f, 16.3587f, 19.7158f)
                 curveTo(16.3832f, 19.5347f, 16.3996f, 19.3382f, 16.4107f, 19.1265f)
@@ -78,7 +83,7 @@ public val TimeGroup.WatchRound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _watchRound!!
     }
 

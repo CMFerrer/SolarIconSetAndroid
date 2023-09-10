@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SchoolGroup
 
-public val SchoolGroup.Diploma: ImageVector
+val SchoolGroup.Diploma: ImageVector
     get() {
         if (_diploma != null) {
             return _diploma!!
         }
-        _diploma = Builder(name = "Diploma", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _diploma = Builder(
+            name = "Diploma", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.9451f, 1.25f)
                 horizontalLineTo(16.0549f)
                 curveTo(17.4225f, 1.25f, 18.5248f, 1.25f, 19.3918f, 1.3665f)
@@ -160,7 +164,7 @@ public val SchoolGroup.Diploma: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _diploma!!
     }
 

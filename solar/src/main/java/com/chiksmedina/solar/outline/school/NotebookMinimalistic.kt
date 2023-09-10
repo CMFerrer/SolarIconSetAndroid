@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SchoolGroup
 
-public val SchoolGroup.NotebookMinimalistic: ImageVector
+val SchoolGroup.NotebookMinimalistic: ImageVector
     get() {
         if (_notebookMinimalistic != null) {
             return _notebookMinimalistic!!
         }
-        _notebookMinimalistic = Builder(name = "NotebookMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _notebookMinimalistic = Builder(
+            name = "NotebookMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(22.75f, 4.9332f)
                 curveTo(22.75f, 3.4699f, 21.5847f, 2.215f, 20.0559f, 2.2682f)
                 curveTo(18.9175f, 2.3079f, 17.4296f, 2.4263f, 16.2849f, 2.769f)
@@ -65,7 +69,7 @@ public val SchoolGroup.NotebookMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _notebookMinimalistic!!
     }
 

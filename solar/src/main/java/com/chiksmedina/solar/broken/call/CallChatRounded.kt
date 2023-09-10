@@ -1,12 +1,10 @@
 package com.chiksmedina.solar.broken.call
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.CallGroup
 
-public val CallGroup.CallChatRounded: ImageVector
+val CallGroup.CallChatRounded: ImageVector
     get() {
         if (_callChatRounded != null) {
             return _callChatRounded!!
         }
-        _callChatRounded = Builder(name = "CallChatRounded", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _callChatRounded = Builder(
+            name = "CallChatRounded", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 12.0f)
                 curveTo(19.7614f, 12.0f, 22.0f, 9.7614f, 22.0f, 7.0f)
                 curveTo(22.0f, 4.2386f, 19.7614f, 2.0f, 17.0f, 2.0f)
@@ -37,9 +39,11 @@ public val CallGroup.CallChatRounded: ImageVector
                 curveTo(15.4442f, 11.8122f, 16.2002f, 12.0f, 17.0f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0066f, 9.9331f)
                 curveTo(1.9342f, 11.8412f, 2.4171f, 15.0817f, 5.6677f, 18.3323f)
                 curveTo(6.4519f, 19.1165f, 7.2355f, 19.7396f, 8.0f, 20.2327f)
@@ -58,7 +62,7 @@ public val CallGroup.CallChatRounded: ImageVector
                 curveTo(13.2529f, 22.0243f, 12.1963f, 21.9541f, 11.0f, 21.6111f)
             }
         }
-        .build()
+            .build()
         return _callChatRounded!!
     }
 

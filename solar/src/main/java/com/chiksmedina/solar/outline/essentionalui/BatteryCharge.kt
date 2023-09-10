@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.BatteryCharge: ImageVector
+val EssentionalUiGroup.BatteryCharge: ImageVector
     get() {
         if (_batteryCharge != null) {
             return _batteryCharge!!
         }
-        _batteryCharge = Builder(name = "BatteryCharge", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _batteryCharge = Builder(
+            name = "BatteryCharge", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0762f, 9.4801f)
                 curveTo(12.3413f, 9.1619f, 12.2984f, 8.689f, 11.9801f, 8.4238f)
                 curveTo(11.6619f, 8.1587f, 11.189f, 8.2017f, 10.9238f, 8.5199f)
@@ -41,9 +43,11 @@ public val EssentionalUiGroup.BatteryCharge: ImageVector
                 lineTo(12.0762f, 9.4801f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9436f, 3.25f)
                 horizontalLineTo(11.5564f)
                 curveTo(13.3942f, 3.25f, 14.8498f, 3.25f, 15.989f, 3.4031f)
@@ -115,7 +119,7 @@ public val EssentionalUiGroup.BatteryCharge: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _batteryCharge!!
     }
 

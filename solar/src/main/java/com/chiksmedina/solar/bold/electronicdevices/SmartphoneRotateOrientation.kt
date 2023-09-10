@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,17 +11,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartphoneRotateOrientation: ImageVector
+val ElectronicDevicesGroup.SmartphoneRotateOrientation: ImageVector
     get() {
         if (_smartphoneRotateOrientation != null) {
             return _smartphoneRotateOrientation!!
         }
-        _smartphoneRotateOrientation = Builder(name = "SmartphoneRotateOrientation", defaultWidth =
-                24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _smartphoneRotateOrientation = Builder(
+            name = "SmartphoneRotateOrientation", defaultWidth =
+            24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.8469f, 3.5699f)
                 curveTo(2.0f, 4.4168f, 2.0f, 5.7799f, 2.0f, 8.5061f)
                 verticalLineTo(16.2169f)
@@ -54,9 +55,11 @@ public val ElectronicDevicesGroup.SmartphoneRotateOrientation: ImageVector
                 curveTo(6.8193f, 18.4612f, 7.4666f, 19.1085f, 8.2651f, 19.1085f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.2771f, 16.2165f)
                 curveTo(21.2771f, 18.9427f, 21.2771f, 20.3058f, 20.4302f, 21.1527f)
                 curveTo(19.979f, 21.6038f, 18.7482f, 21.8174f, 17.4478f, 21.9177f)
@@ -77,9 +80,11 @@ public val ElectronicDevicesGroup.SmartphoneRotateOrientation: ImageVector
                 verticalLineTo(14.2892f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.7452f, 2.6018f)
                 curveTo(15.8121f, 2.2082f, 16.1855f, 1.9434f, 16.5791f, 2.0103f)
                 curveTo(19.663f, 2.535f, 22.0f, 5.2493f, 22.0f, 8.5061f)
@@ -94,7 +99,7 @@ public val ElectronicDevicesGroup.SmartphoneRotateOrientation: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _smartphoneRotateOrientation!!
     }
 

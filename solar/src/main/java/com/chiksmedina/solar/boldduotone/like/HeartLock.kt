@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.like
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.LikeGroup
 
-public val LikeGroup.HeartLock: ImageVector
+val LikeGroup.HeartLock: ImageVector
     get() {
         if (_heartLock != null) {
             return _heartLock!!
         }
-        _heartLock = Builder(name = "HeartLock", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _heartLock = Builder(
+            name = "HeartLock", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(8.4957f, 20.0367f)
                 curveTo(5.9684f, 18.1516f, 3.0f, 15.9375f, 3.0f, 12.0992f)
                 curveTo(3.0f, 7.862f, 7.9501f, 4.857f, 12.0f, 8.9306f)
@@ -36,9 +37,11 @@ public val LikeGroup.HeartLock: ImageVector
                 curveTo(9.0162f, 20.4251f, 8.7583f, 20.2327f, 8.4957f, 20.0367f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 11.25f)
                 curveTo(12.4142f, 11.25f, 12.75f, 11.5858f, 12.75f, 12.0f)
                 verticalLineTo(14.5f)
@@ -48,9 +51,11 @@ public val LikeGroup.HeartLock: ImageVector
                 curveTo(11.25f, 11.5858f, 11.5858f, 11.25f, 12.0f, 11.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.75f, 7.0f)
                 curveTo(7.75f, 5.4953f, 8.1973f, 4.4609f, 8.8889f, 3.7992f)
                 curveTo(9.586f, 3.1321f, 10.6294f, 2.75f, 12.0f, 2.75f)
@@ -69,7 +74,7 @@ public val LikeGroup.HeartLock: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _heartLock!!
     }
 

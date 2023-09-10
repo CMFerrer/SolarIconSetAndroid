@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsGroup
 
-public val ArrowsGroup.AltArrowLeft: ImageVector
+val ArrowsGroup.AltArrowLeft: ImageVector
     get() {
         if (_altArrowLeft != null) {
             return _altArrowLeft!!
         }
-        _altArrowLeft = Builder(name = "AltArrowLeft", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _altArrowLeft = Builder(
+            name = "AltArrowLeft", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.1649f, 11.6296f)
                 lineTo(14.7953f, 5.1999f)
                 curveTo(15.2091f, 4.7987f, 16.0f, 5.0419f, 16.0f, 5.5703f)
@@ -31,7 +35,7 @@ public val ArrowsGroup.AltArrowLeft: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _altArrowLeft!!
     }
 

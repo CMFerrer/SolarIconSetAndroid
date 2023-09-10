@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.DesignToolsGroup
 
-public val DesignToolsGroup.ThreeSquares: ImageVector
+val DesignToolsGroup.ThreeSquares: ImageVector
     get() {
         if (_threeSquares != null) {
             return _threeSquares!!
         }
-        _threeSquares = Builder(name = "ThreeSquares", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _threeSquares = Builder(
+            name = "ThreeSquares", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.948f, 1.25f)
                 horizontalLineTo(18.052f)
                 curveTo(18.9505f, 1.25f, 19.6997f, 1.25f, 20.2945f, 1.3299f)
@@ -139,7 +143,7 @@ public val DesignToolsGroup.ThreeSquares: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _threeSquares!!
     }
 

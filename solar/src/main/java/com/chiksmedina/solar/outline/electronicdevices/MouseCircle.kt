@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.MouseCircle: ImageVector
+val ElectronicDevicesGroup.MouseCircle: ImageVector
     get() {
         if (_mouseCircle != null) {
             return _mouseCircle!!
         }
-        _mouseCircle = Builder(name = "MouseCircle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _mouseCircle = Builder(
+            name = "MouseCircle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.25f, 3.8502f)
                 curveTo(11.25f, 3.0909f, 10.6697f, 2.6644f, 10.1622f, 2.7676f)
                 curveTo(5.9381f, 3.6263f, 2.75f, 7.3934f, 2.75f, 11.9167f)
@@ -62,7 +66,7 @@ public val ElectronicDevicesGroup.MouseCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _mouseCircle!!
     }
 

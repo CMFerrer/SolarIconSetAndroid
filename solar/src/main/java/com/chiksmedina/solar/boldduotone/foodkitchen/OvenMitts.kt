@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.foodkitchen
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.FoodKitchenGroup
 
-public val FoodKitchenGroup.OvenMitts: ImageVector
+val FoodKitchenGroup.OvenMitts: ImageVector
     get() {
         if (_ovenMitts != null) {
             return _ovenMitts!!
         }
-        _ovenMitts = Builder(name = "OvenMitts", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _ovenMitts = Builder(
+            name = "OvenMitts", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.2978f, 20.0262f)
                 lineTo(20.0785f, 13.3965f)
                 curveTo(22.6407f, 10.8913f, 22.6407f, 6.8295f, 20.0785f, 4.3243f)
@@ -38,9 +39,11 @@ public val FoodKitchenGroup.OvenMitts: ImageVector
                 lineTo(13.2978f, 20.0262f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.0188f, 16.537f)
                 lineTo(7.5876f, 20.0263f)
                 curveTo(8.9334f, 21.3422f, 9.6064f, 22.0002f, 10.4426f, 22.0002f)
@@ -52,7 +55,7 @@ public val FoodKitchenGroup.OvenMitts: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ovenMitts!!
     }
 

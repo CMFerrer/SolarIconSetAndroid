@@ -1,12 +1,10 @@
 package com.chiksmedina.solar.lineduotone.weather
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.WeatherGroup
 
-public val WeatherGroup.Temperature: ImageVector
+val WeatherGroup.Temperature: ImageVector
     get() {
         if (_temperature != null) {
             return _temperature!!
         }
-        _temperature = Builder(name = "Temperature", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _temperature = Builder(
+            name = "Temperature", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 22.0f)
                 curveTo(15.0376f, 22.0f, 17.5f, 19.5376f, 17.5f, 16.5f)
                 curveTo(17.5f, 14.7636f, 16.6954f, 13.2152f, 15.4386f, 12.2072f)
@@ -37,9 +39,11 @@ public val WeatherGroup.Temperature: ImageVector
                 curveTo(6.5f, 19.5376f, 8.9624f, 22.0f, 12.0f, 22.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.9998f, 13.9999f)
                 curveTo(10.619f, 13.9999f, 9.4998f, 15.1192f, 9.4998f, 16.4999f)
                 curveTo(9.4998f, 17.8806f, 10.619f, 18.9999f, 11.9998f, 18.9999f)
@@ -50,7 +54,7 @@ public val WeatherGroup.Temperature: ImageVector
                 lineTo(12.0f, 5.0f)
             }
         }
-        .build()
+            .build()
         return _temperature!!
     }
 

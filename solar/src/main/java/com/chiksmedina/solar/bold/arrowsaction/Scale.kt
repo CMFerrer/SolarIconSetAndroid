@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsActionGroup
 
-public val ArrowsActionGroup.Scale: ImageVector
+val ArrowsActionGroup.Scale: ImageVector
     get() {
         if (_scale != null) {
             return _scale!!
         }
-        _scale = Builder(name = "Scale", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _scale = Builder(
+            name = "Scale", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.9062f, 2.0f)
                 curveTo(15.9062f, 2.4142f, 16.242f, 2.75f, 16.6562f, 2.75f)
                 horizontalLineTo(20.1893f)
@@ -44,9 +48,11 @@ public val ArrowsActionGroup.Scale: ImageVector
                 curveTo(16.242f, 1.25f, 15.9062f, 1.5858f, 15.9062f, 2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.7516f, 7.4303f)
                 curveTo(19.797f, 8.6297f, 20.7812f, 9.5887f, 21.9904f, 9.5937f)
                 curveTo(22.0f, 10.3198f, 22.0f, 11.1187f, 22.0f, 12.0f)
@@ -70,7 +76,7 @@ public val ArrowsActionGroup.Scale: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _scale!!
     }
 

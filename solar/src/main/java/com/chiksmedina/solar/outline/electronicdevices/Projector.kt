@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Projector: ImageVector
+val ElectronicDevicesGroup.Projector: ImageVector
     get() {
         if (_projector != null) {
             return _projector!!
         }
-        _projector = Builder(name = "Projector", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _projector = Builder(
+            name = "Projector", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.5882f, 6.4654f)
                 curveTo(10.0616f, 7.173f, 9.75f, 8.0501f, 9.75f, 9.0f)
                 curveTo(9.75f, 11.3472f, 11.6528f, 13.25f, 14.0f, 13.25f)
@@ -109,7 +113,7 @@ public val ElectronicDevicesGroup.Projector: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _projector!!
     }
 

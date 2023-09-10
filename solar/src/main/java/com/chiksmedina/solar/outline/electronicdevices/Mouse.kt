@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Mouse: ImageVector
+val ElectronicDevicesGroup.Mouse: ImageVector
     get() {
         if (_mouse != null) {
             return _mouse!!
         }
-        _mouse = Builder(name = "Mouse", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _mouse = Builder(
+            name = "Mouse", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.25f, 9.0f)
                 curveTo(4.25f, 4.7198f, 7.7198f, 1.25f, 12.0f, 1.25f)
                 curveTo(16.2802f, 1.25f, 19.75f, 4.7198f, 19.75f, 9.0f)
@@ -55,7 +59,7 @@ public val ElectronicDevicesGroup.Mouse: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _mouse!!
     }
 

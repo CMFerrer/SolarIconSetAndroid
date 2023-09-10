@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Wallpaper: ImageVector
+val VideoAudioSoundGroup.Wallpaper: ImageVector
     get() {
         if (_wallpaper != null) {
             return _wallpaper!!
         }
-        _wallpaper = Builder(name = "Wallpaper", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _wallpaper = Builder(
+            name = "Wallpaper", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.7209f, 7.3488f)
                 curveTo(15.7209f, 8.3763f, 14.888f, 9.2093f, 13.8605f, 9.2093f)
                 curveTo(12.833f, 9.2093f, 12.0f, 8.3763f, 12.0f, 7.3488f)
@@ -32,9 +33,11 @@ public val VideoAudioSoundGroup.Wallpaper: ImageVector
                 curveTo(14.888f, 5.4884f, 15.7209f, 6.3213f, 15.7209f, 7.3488f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 7.7537f)
                 curveTo(22.0001f, 7.3801f, 22.0002f, 7.1121f, 21.9628f, 6.8759f)
                 curveTo(21.8273f, 6.0206f, 21.3378f, 5.2872f, 20.6478f, 4.8293f)
@@ -58,9 +61,11 @@ public val VideoAudioSoundGroup.Wallpaper: ImageVector
                 lineTo(22.0f, 7.7537f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.3954f, 7.814f)
                 curveTo(3.3954f, 7.7018f, 3.3955f, 7.6083f, 3.396f, 7.5292f)
                 curveTo(3.3961f, 7.4688f, 3.3964f, 7.4086f, 3.3967f, 7.3488f)
@@ -87,9 +92,11 @@ public val VideoAudioSoundGroup.Wallpaper: ImageVector
                 verticalLineTo(7.814f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.0853f, 2.1084f)
                 curveTo(15.2789f, 2.0f, 14.2535f, 2.0f, 12.9813f, 2.0f)
                 horizontalLineTo(11.0187f)
@@ -135,7 +142,7 @@ public val VideoAudioSoundGroup.Wallpaper: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _wallpaper!!
     }
 

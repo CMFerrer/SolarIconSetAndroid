@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.AirbudsLeft: ImageVector
+val ElectronicDevicesGroup.AirbudsLeft: ImageVector
     get() {
         if (_airbudsLeft != null) {
             return _airbudsLeft!!
         }
-        _airbudsLeft = Builder(name = "AirbudsLeft", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _airbudsLeft = Builder(
+            name = "AirbudsLeft", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.6259f, 1.25f)
                 lineTo(7.6683f, 1.25f)
                 curveTo(9.9177f, 1.2617f, 11.7383f, 3.0823f, 11.7499f, 5.3317f)
@@ -104,7 +108,7 @@ public val ElectronicDevicesGroup.AirbudsLeft: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _airbudsLeft!!
     }
 

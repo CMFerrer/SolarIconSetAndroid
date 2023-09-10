@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.QuitFullScreen: ImageVector
+val VideoAudioSoundGroup.QuitFullScreen: ImageVector
     get() {
         if (_quitFullScreen != null) {
             return _quitFullScreen!!
         }
-        _quitFullScreen = Builder(name = "QuitFullScreen", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _quitFullScreen = Builder(
+            name = "QuitFullScreen", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.0f, 1.25f)
                 curveTo(14.4142f, 1.25f, 14.75f, 1.5858f, 14.75f, 2.0f)
                 curveTo(14.75f, 3.9068f, 14.7516f, 5.2615f, 14.8898f, 6.2892f)
@@ -87,7 +91,7 @@ public val VideoAudioSoundGroup.QuitFullScreen: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _quitFullScreen!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.linear.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.VideocameraRecord: ImageVector
+val VideoAudioSoundGroup.VideocameraRecord: ImageVector
     get() {
         if (_videocameraRecord != null) {
             return _videocameraRecord!!
         }
-        _videocameraRecord = Builder(name = "VideocameraRecord", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _videocameraRecord = Builder(
+            name = "VideocameraRecord", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 9.5002f)
                 lineTo(17.6584f, 9.171f)
                 curveTo(19.6042f, 8.1981f, 20.5772f, 7.7116f, 21.2886f, 8.1513f)
@@ -35,9 +36,11 @@ public val VideoAudioSoundGroup.VideocameraRecord: ImageVector
                 verticalLineTo(9.5002f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.5607f, 7.4393f)
                 curveTo(14.1464f, 8.0251f, 14.1464f, 8.9749f, 13.5607f, 9.5607f)
                 curveTo(12.9749f, 10.1464f, 12.0251f, 10.1464f, 11.4393f, 9.5607f)
@@ -45,9 +48,11 @@ public val VideoAudioSoundGroup.VideocameraRecord: ImageVector
                 curveTo(12.0251f, 6.8535f, 12.9749f, 6.8535f, 13.5607f, 7.4393f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 11.5f)
                 curveTo(2.0f, 8.2125f, 2.0f, 6.5688f, 2.908f, 5.4624f)
                 curveTo(3.0742f, 5.2599f, 3.2599f, 5.0742f, 3.4624f, 4.908f)
@@ -66,7 +71,7 @@ public val VideoAudioSoundGroup.VideocameraRecord: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _videocameraRecord!!
     }
 

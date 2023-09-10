@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.time
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.TimeGroup
 
-public val TimeGroup.HourglassLine: ImageVector
+val TimeGroup.HourglassLine: ImageVector
     get() {
         if (_hourglassLine != null) {
             return _hourglassLine!!
         }
-        _hourglassLine = Builder(name = "HourglassLine", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _hourglassLine = Builder(
+            name = "HourglassLine", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.0f)
                 curveTo(7.867f, 2.0f, 5.8005f, 2.0f, 5.1982f, 3.2992f)
                 curveTo(5.1465f, 3.4109f, 5.1028f, 3.5269f, 5.0676f, 3.6461f)
@@ -45,9 +46,11 @@ public val TimeGroup.HourglassLine: ImageVector
                 horizontalLineTo(10.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.1982f, 20.7008f)
                 curveTo(5.8005f, 22.0f, 7.867f, 22.0f, 12.0f, 22.0f)
                 curveTo(16.133f, 22.0f, 18.1995f, 22.0f, 18.8017f, 20.7008f)
@@ -60,9 +63,11 @@ public val TimeGroup.HourglassLine: ImageVector
                 curveTo(5.1028f, 20.4731f, 5.1465f, 20.5891f, 5.1982f, 20.7008f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 17.75f)
                 curveTo(9.5858f, 17.75f, 9.25f, 18.0858f, 9.25f, 18.5f)
                 curveTo(9.25f, 18.9142f, 9.5858f, 19.25f, 10.0f, 19.25f)
@@ -73,7 +78,7 @@ public val TimeGroup.HourglassLine: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hourglassLine!!
     }
 

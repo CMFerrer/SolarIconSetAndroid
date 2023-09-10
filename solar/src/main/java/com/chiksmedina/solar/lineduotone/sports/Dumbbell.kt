@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.SportsGroup
 
-public val SportsGroup.Dumbbell: ImageVector
+val SportsGroup.Dumbbell: ImageVector
     get() {
         if (_dumbbell != null) {
             return _dumbbell!!
         }
-        _dumbbell = Builder(name = "Dumbbell", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _dumbbell = Builder(
+            name = "Dumbbell", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.2346f, 16.8478f)
                 lineTo(16.9476f, 17.5407f)
                 lineTo(16.9476f, 17.5407f)
@@ -335,7 +339,7 @@ public val SportsGroup.Dumbbell: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _dumbbell!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.HomeWifi: ImageVector
+val EssentionalUiGroup.HomeWifi: ImageVector
     get() {
         if (_homeWifi != null) {
             return _homeWifi!!
         }
-        _homeWifi = Builder(name = "HomeWifi", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _homeWifi = Builder(
+            name = "HomeWifi", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.0f, 22.0f)
                 horizontalLineTo(10.0f)
                 curveTo(6.2288f, 22.0f, 4.3432f, 22.0f, 3.1716f, 20.7881f)
@@ -64,7 +68,7 @@ public val EssentionalUiGroup.HomeWifi: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _homeWifi!!
     }
 

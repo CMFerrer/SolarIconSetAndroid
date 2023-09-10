@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.Flag2: ImageVector
+val EssentionalUiGroup.Flag2: ImageVector
     get() {
         if (_flag2 != null) {
             return _flag2!!
         }
-        _flag2 = Builder(name = "Flag2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _flag2 = Builder(
+            name = "Flag2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.75f, 1.0f)
                 curveTo(6.1642f, 1.0f, 6.5f, 1.3358f, 6.5f, 1.75f)
                 verticalLineTo(3.6f)
@@ -47,7 +51,7 @@ public val EssentionalUiGroup.Flag2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _flag2!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.transportpartsservice
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TransportPartsServiceGroup
 
-public val TransportPartsServiceGroup.Accumulator: ImageVector
+val TransportPartsServiceGroup.Accumulator: ImageVector
     get() {
         if (_accumulator != null) {
             return _accumulator!!
         }
-        _accumulator = Builder(name = "Accumulator", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _accumulator = Builder(
+            name = "Accumulator", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 14.0f)
                 verticalLineTo(11.9751f)
                 curveTo(22.0f, 10.1294f, 22.0f, 9.2066f, 21.6078f, 8.517f)
@@ -56,9 +57,11 @@ public val TransportPartsServiceGroup.Accumulator: ImageVector
                 curveTo(22.0f, 18.2426f, 22.0f, 16.8284f, 22.0f, 14.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.0448f, 3.25f)
                 curveTo(5.4776f, 3.2499f, 5.8744f, 3.2499f, 6.1972f, 3.2933f)
                 curveTo(6.5527f, 3.3411f, 6.9284f, 3.4536f, 7.2374f, 3.7626f)
@@ -78,9 +81,11 @@ public val TransportPartsServiceGroup.Accumulator: ImageVector
                 horizontalLineTo(5.0448f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.0448f, 3.25f)
                 curveTo(19.4776f, 3.2499f, 19.8744f, 3.2499f, 20.1972f, 3.2933f)
                 curveTo(20.5527f, 3.3411f, 20.9284f, 3.4536f, 21.2374f, 3.7626f)
@@ -100,9 +105,11 @@ public val TransportPartsServiceGroup.Accumulator: ImageVector
                 horizontalLineTo(19.0448f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFFffffff)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFFffffff)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.5f, 11.25f)
                 curveTo(16.9142f, 11.25f, 17.25f, 11.5858f, 17.25f, 12.0f)
                 verticalLineTo(12.75f)
@@ -131,7 +138,7 @@ public val TransportPartsServiceGroup.Accumulator: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _accumulator!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SportsGroup
 
-public val SportsGroup.WalkingRound: ImageVector
+val SportsGroup.WalkingRound: ImageVector
     get() {
         if (_walkingRound != null) {
             return _walkingRound!!
         }
-        _walkingRound = Builder(name = "WalkingRound", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _walkingRound = Builder(
+            name = "WalkingRound", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.9292f, 9.2672f)
                 curveTo(11.129f, 9.2564f, 11.3217f, 9.25f, 11.5f, 9.25f)
                 curveTo(12.0541f, 9.25f, 12.6539f, 9.3116f, 13.1938f, 9.3891f)
@@ -55,9 +56,11 @@ public val SportsGroup.WalkingRound: ImageVector
                 curveTo(6.25f, 11.8593f, 8.1638f, 9.4171f, 10.9292f, 9.2672f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.0f, 4.5f)
                 curveTo(15.0f, 5.8807f, 13.8807f, 7.0f, 12.5f, 7.0f)
                 curveTo(11.1193f, 7.0f, 10.0f, 5.8807f, 10.0f, 4.5f)
@@ -65,9 +68,11 @@ public val SportsGroup.WalkingRound: ImageVector
                 curveTo(13.8807f, 2.0f, 15.0f, 3.1193f, 15.0f, 4.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.1471f, 16.7647f)
                 curveTo(10.5533f, 16.8459f, 10.8167f, 17.2411f, 10.7355f, 17.6472f)
                 curveTo(10.3779f, 19.435f, 9.4014f, 21.0395f, 7.9777f, 22.1785f)
@@ -80,7 +85,7 @@ public val SportsGroup.WalkingRound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _walkingRound!!
     }
 

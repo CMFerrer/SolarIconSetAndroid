@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ShoppingEcommerceGroup
 
-public val ShoppingEcommerceGroup.ShopMinimalistic: ImageVector
+val ShoppingEcommerceGroup.ShopMinimalistic: ImageVector
     get() {
         if (_shopMinimalistic != null) {
             return _shopMinimalistic!!
         }
-        _shopMinimalistic = Builder(name = "ShopMinimalistic", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _shopMinimalistic = Builder(
+            name = "ShopMinimalistic", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.4352f, 1.25f)
                 curveTo(6.8653f, 1.25f, 6.3813f, 1.25f, 5.9814f, 1.2913f)
                 curveTo(5.5556f, 1.3353f, 5.1621f, 1.4309f, 4.7903f, 1.6607f)
@@ -91,9 +93,11 @@ public val ShoppingEcommerceGroup.ShopMinimalistic: ImageVector
                 curveTo(9.2499f, 9.6904f, 8.6903f, 10.25f, 7.9999f, 10.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.75f, 15.0f)
                 curveTo(19.75f, 14.5858f, 19.4142f, 14.25f, 19.0f, 14.25f)
                 curveTo(18.5858f, 14.25f, 18.25f, 14.5858f, 18.25f, 15.0f)
@@ -114,7 +118,7 @@ public val ShoppingEcommerceGroup.ShopMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _shopMinimalistic!!
     }
 

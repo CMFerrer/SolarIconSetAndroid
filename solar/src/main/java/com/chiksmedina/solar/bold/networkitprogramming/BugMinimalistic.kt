@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
+val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
     get() {
         if (_bugMinimalistic != null) {
             return _bugMinimalistic!!
         }
-        _bugMinimalistic = Builder(name = "BugMinimalistic", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bugMinimalistic = Builder(
+            name = "BugMinimalistic", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.422f, 3.1787f)
                 lineTo(7.3859f, 1.357f)
                 curveTo(7.0307f, 1.1439f, 6.57f, 1.2591f, 6.3569f, 1.6142f)
@@ -87,7 +91,7 @@ public val NetworkItProgrammingGroup.BugMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bugMinimalistic!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MoneyGroup
 
-public val MoneyGroup.TagPrice: ImageVector
+val MoneyGroup.TagPrice: ImageVector
     get() {
         if (_tagPrice != null) {
             return _tagPrice!!
         }
-        _tagPrice = Builder(name = "TagPrice", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _tagPrice = Builder(
+            name = "TagPrice", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.1369f, 4.7285f)
                 lineTo(17.9665f, 6.5581f)
                 curveTo(20.6555f, 9.2471f, 22.0f, 10.5916f, 22.0f, 12.2623f)
@@ -67,7 +71,7 @@ public val MoneyGroup.TagPrice: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _tagPrice!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SportsGroup
 
-public val SportsGroup.Balls: ImageVector
+val SportsGroup.Balls: ImageVector
     get() {
         if (_balls != null) {
             return _balls!!
         }
-        _balls = Builder(name = "Balls", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.3f, strokeAlpha
-                    = 0.3f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _balls = Builder(
+            name = "Balls", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.3f, strokeAlpha
+                = 0.3f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.2764f, 2.0459f)
                 curveTo(11.2366f, 2.2835f, 13.0651f, 3.408f, 14.1283f, 5.2497f)
                 curveTo(14.6689f, 6.186f, 14.9501f, 7.201f, 14.9941f, 8.2113f)
@@ -33,9 +34,11 @@ public val SportsGroup.Balls: ImageVector
                 curveTo(9.1258f, 4.3853f, 9.2764f, 2.0459f, 9.2764f, 2.0459f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.3f, strokeAlpha
-                    = 0.3f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.3f, strokeAlpha
+                = 0.3f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.2167f, 12.2881f)
                 lineTo(3.1887f, 12.2486f)
                 curveTo(3.0761f, 12.0887f, 2.9697f, 11.9223f, 2.87f, 11.7497f)
@@ -52,9 +55,11 @@ public val SportsGroup.Balls: ImageVector
                 curveTo(3.4978f, 12.6594f, 3.3528f, 12.4784f, 3.2167f, 12.2881f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(16.0194f, 8.0762f)
                 curveTo(14.001f, 8.2704f, 11.8559f, 8.8756f, 10.3658f, 10.3658f)
                 curveTo(8.8756f, 11.8559f, 8.2704f, 14.001f, 8.0762f, 16.0194f)
@@ -64,9 +69,11 @@ public val SportsGroup.Balls: ImageVector
                 lineTo(16.0194f, 8.0762f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.2489f, 2.87f)
                 curveTo(6.5162f, 2.1383f, 7.9274f, 1.8819f, 9.2762f, 2.0454f)
                 curveTo(9.2762f, 2.0454f, 9.1256f, 4.3848f, 10.7506f, 7.1994f)
@@ -83,9 +90,11 @@ public val SportsGroup.Balls: ImageVector
                 curveTo(3.1459f, 4.589f, 4.0439f, 3.5657f, 5.2489f, 2.87f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.248f, 8.0611f)
                 curveTo(18.3157f, 7.9898f, 17.1891f, 7.9644f, 16.0201f, 8.0768f)
                 lineTo(21.9232f, 13.9799f)
@@ -93,9 +102,11 @@ public val SportsGroup.Balls: ImageVector
                 curveTo(21.8276f, 9.2962f, 20.7038f, 8.1724f, 19.248f, 8.0611f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.752f, 21.9389f)
                 curveTo(11.6843f, 22.0102f, 12.8109f, 22.0356f, 13.9799f, 21.9232f)
                 lineTo(8.0768f, 16.0201f)
@@ -103,9 +114,11 @@ public val SportsGroup.Balls: ImageVector
                 curveTo(8.1724f, 20.7038f, 9.2962f, 21.8276f, 10.752f, 21.9389f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.9597f, 12.312f)
                 curveTo(15.1647f, 12.1069f, 15.4972f, 12.1069f, 15.7022f, 12.312f)
                 lineTo(16.3238f, 12.9336f)
@@ -146,7 +159,7 @@ public val SportsGroup.Balls: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _balls!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.medicine
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.MedicineGroup
 
-public val MedicineGroup.Pills: ImageVector
+val MedicineGroup.Pills: ImageVector
     get() {
         if (_pills != null) {
             return _pills!!
         }
-        _pills = Builder(name = "Pills", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _pills = Builder(
+            name = "Pills", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.8445f, 6.1555f)
                 curveTo(17.8445f, 6.1555f, 17.4119f, 8.4f, 14.9057f, 10.9061f)
                 curveTo(12.3996f, 13.4123f, 10.1555f, 13.8445f, 10.1555f, 13.8445f)
@@ -37,15 +38,19 @@ public val MedicineGroup.Pills: ImageVector
                 curveTo(14.8418f, 18.5308f, 18.2843f, 18.5308f, 20.4075f, 16.4075f)
                 curveTo(20.8312f, 15.9839f, 21.1703f, 15.5077f, 21.4249f, 15.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.5f, 6.5f)
                 lineTo(13.0f, 5.0f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.8882f, 10.8678f)
                 curveTo(7.2931f, 10.7806f, 7.5506f, 10.3816f, 7.4634f, 9.9767f)
                 curveTo(7.3762f, 9.5717f, 6.9772f, 9.3142f, 6.5722f, 9.4015f)
@@ -87,7 +92,7 @@ public val MedicineGroup.Pills: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _pills!!
     }
 

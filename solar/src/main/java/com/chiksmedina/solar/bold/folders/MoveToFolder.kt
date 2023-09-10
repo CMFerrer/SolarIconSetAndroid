@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.FoldersGroup
 
-public val FoldersGroup.MoveToFolder: ImageVector
+val FoldersGroup.MoveToFolder: ImageVector
     get() {
         if (_moveToFolder != null) {
             return _moveToFolder!!
         }
-        _moveToFolder = Builder(name = "MoveToFolder", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _moveToFolder = Builder(
+            name = "MoveToFolder", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 11.7979f)
                 verticalLineTo(14.0f)
                 curveTo(22.0f, 17.7712f, 22.0f, 19.6569f, 20.8284f, 20.8284f)
@@ -59,7 +63,7 @@ public val FoldersGroup.MoveToFolder: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _moveToFolder!!
     }
 

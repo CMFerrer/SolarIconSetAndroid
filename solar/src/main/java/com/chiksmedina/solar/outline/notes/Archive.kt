@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NotesGroup
 
-public val NotesGroup.Archive: ImageVector
+val NotesGroup.Archive: ImageVector
     get() {
         if (_archive != null) {
             return _archive!!
         }
-        _archive = Builder(name = "Archive", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _archive = Builder(
+            name = "Archive", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.9553f, 2.25f)
                 curveTo(3.9701f, 2.25f, 3.985f, 2.25f, 4.0f, 2.25f)
                 lineTo(20.0448f, 2.25f)
@@ -158,7 +162,7 @@ public val NotesGroup.Archive: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _archive!!
     }
 

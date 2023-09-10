@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.ClapperboardOpenPlay: ImageVector
+val VideoAudioSoundGroup.ClapperboardOpenPlay: ImageVector
     get() {
         if (_clapperboardOpenPlay != null) {
             return _clapperboardOpenPlay!!
         }
-        _clapperboardOpenPlay = Builder(name = "ClapperboardOpenPlay", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _clapperboardOpenPlay = Builder(
+            name = "ClapperboardOpenPlay", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.8412f, 8.0951f)
                 lineTo(18.2487f, 7.1821f)
                 curveTo(18.4731f, 7.122f, 18.5853f, 7.0919f, 18.6736f, 7.0483f)
@@ -37,9 +38,11 @@ public val VideoAudioSoundGroup.ClapperboardOpenPlay: ImageVector
                 lineTo(14.8412f, 8.0951f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.1503f, 4.4436f)
                 lineTo(13.9184f, 3.166f)
                 lineTo(13.318f, 8.1999f)
@@ -49,9 +52,11 @@ public val VideoAudioSoundGroup.ClapperboardOpenPlay: ImageVector
                 curveTo(9.1778f, 4.6199f, 9.1714f, 4.5292f, 9.1503f, 4.4436f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.0f, 11.0f)
                 horizontalLineTo(4.0f)
                 verticalLineTo(16.0f)
@@ -73,9 +78,11 @@ public val VideoAudioSoundGroup.ClapperboardOpenPlay: ImageVector
                 curveTo(11.6005f, 14.3575f, 12.0031f, 14.6462f, 12.8084f, 15.2235f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.0395f, 9.8822f)
                 curveTo(7.0273f, 9.9851f, 7.0364f, 10.0855f, 7.0635f, 10.1791f)
                 lineTo(4.0013f, 10.9997f)
@@ -87,7 +94,7 @@ public val VideoAudioSoundGroup.ClapperboardOpenPlay: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _clapperboardOpenPlay!!
     }
 

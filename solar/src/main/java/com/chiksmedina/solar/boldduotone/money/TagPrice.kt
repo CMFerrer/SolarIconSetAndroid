@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.money
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MoneyGroup
 
-public val MoneyGroup.TagPrice: ImageVector
+val MoneyGroup.TagPrice: ImageVector
     get() {
         if (_tagPrice != null) {
             return _tagPrice!!
         }
-        _tagPrice = Builder(name = "TagPrice", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _tagPrice = Builder(
+            name = "TagPrice", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.9665f, 6.5581f)
                 lineTo(16.1369f, 4.7285f)
                 lineTo(16.1369f, 4.7285f)
@@ -47,9 +48,11 @@ public val MoneyGroup.TagPrice: ImageVector
                 lineTo(17.9665f, 6.5581f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.1469f, 14.3284f)
                 curveTo(10.4739f, 13.6555f, 10.4796f, 12.6899f, 10.882f, 11.9247f)
                 curveTo(10.6809f, 11.6325f, 10.7103f, 11.2295f, 10.9701f, 10.9697f)
@@ -73,9 +76,11 @@ public val MoneyGroup.TagPrice: ImageVector
                 curveTo(13.368f, 14.9357f, 12.0143f, 15.1959f, 11.1469f, 14.3284f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0211f, 10.2931f)
                 curveTo(10.8022f, 9.5121f, 10.8022f, 8.2457f, 10.0211f, 7.4647f)
                 curveTo(9.2401f, 6.6836f, 7.9738f, 6.6836f, 7.1927f, 7.4647f)
@@ -84,7 +89,7 @@ public val MoneyGroup.TagPrice: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _tagPrice!!
     }
 

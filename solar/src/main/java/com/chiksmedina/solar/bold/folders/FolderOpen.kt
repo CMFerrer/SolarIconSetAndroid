@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.FoldersGroup
 
-public val FoldersGroup.FolderOpen: ImageVector
+val FoldersGroup.FolderOpen: ImageVector
     get() {
         if (_folderOpen != null) {
             return _folderOpen!!
         }
-        _folderOpen = Builder(name = "FolderOpen", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _folderOpen = Builder(
+            name = "FolderOpen", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.0694f, 9.9518f)
                 curveTo(17.3989f, 9.9518f, 18.5317f, 9.9517f, 19.436f, 10.054f)
                 curveTo(19.5895f, 10.0714f, 19.7425f, 10.0923f, 19.8943f, 10.1178f)
@@ -53,9 +55,11 @@ public val FoldersGroup.FolderOpen: ImageVector
                 horizontalLineTo(16.0694f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.3579f, 12.7788f)
                 curveTo(2.7477f, 13.7202f, 2.9996f, 15.0292f, 3.5032f, 17.6471f)
                 curveTo(3.8658f, 19.5317f, 4.0471f, 20.474f, 4.6752f, 21.0993f)
@@ -82,7 +86,7 @@ public val FoldersGroup.FolderOpen: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _folderOpen!!
     }
 

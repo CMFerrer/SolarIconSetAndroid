@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.settingsfinetuning
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SettingsFineTuningGroup
 
-public val SettingsFineTuningGroup.Widget: ImageVector
+val SettingsFineTuningGroup.Widget: ImageVector
     get() {
         if (_widget != null) {
             return _widget!!
         }
-        _widget = Builder(name = "Widget", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _widget = Builder(
+            name = "Widget", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.448f, 1.75f)
                 curveTo(5.5495f, 1.75f, 4.8003f, 1.75f, 4.2055f, 1.8299f)
                 curveTo(3.5777f, 1.9143f, 3.0109f, 2.1f, 2.5555f, 2.5555f)
@@ -65,9 +66,11 @@ public val SettingsFineTuningGroup.Widget: ImageVector
                 curveTo(3.3786f, 3.9439f, 3.4858f, 3.7464f, 3.6161f, 3.6161f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.448f, 12.75f)
                 curveTo(16.5495f, 12.75f, 15.8003f, 12.7499f, 15.2055f, 12.8299f)
                 curveTo(14.5777f, 12.9143f, 14.0109f, 13.1f, 13.5555f, 13.5555f)
@@ -109,9 +112,11 @@ public val SettingsFineTuningGroup.Widget: ImageVector
                 curveTo(14.3786f, 14.9439f, 14.4858f, 14.7464f, 14.6161f, 14.6161f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.448f, 12.75f)
                 horizontalLineTo(6.552f)
                 curveTo(7.4505f, 12.75f, 8.1997f, 12.7499f, 8.7945f, 12.8299f)
@@ -153,9 +158,11 @@ public val SettingsFineTuningGroup.Widget: ImageVector
                 curveTo(5.536f, 14.25f, 4.8884f, 14.2516f, 4.4054f, 14.3165f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.448f, 1.75f)
                 curveTo(16.5495f, 1.75f, 15.8003f, 1.75f, 15.2055f, 1.8299f)
                 curveTo(14.5777f, 1.9143f, 14.0109f, 2.1f, 13.5555f, 2.5555f)
@@ -198,7 +205,7 @@ public val SettingsFineTuningGroup.Widget: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _widget!!
     }
 

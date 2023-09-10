@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.linear
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.LinearGroup
+import com.chiksmedina.solar.LinearSolar
 import com.chiksmedina.solar.linear.time.Alarm
 import com.chiksmedina.solar.linear.time.AlarmAdd
 import com.chiksmedina.solar.linear.time.AlarmPause
@@ -29,24 +29,26 @@ import com.chiksmedina.solar.linear.time.WatchRound
 import com.chiksmedina.solar.linear.time.WatchSquare
 import com.chiksmedina.solar.linear.time.WatchSquareMinimalistic
 import com.chiksmedina.solar.linear.time.WatchSquareMinimalisticCharge
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object TimeGroup
+object TimeGroup
 
-public val LinearGroup.Time: TimeGroup
-  get() = TimeGroup
+val LinearSolar.Time: TimeGroup
+    get() = TimeGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val TimeGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val TimeGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Alarm, AlarmAdd, AlarmPause, AlarmPlay, AlarmRemove, AlarmSleep,
+            AlarmTurnOff, Calendar, CalendarAdd, CalendarDate, CalendarMark, CalendarMinimalistic,
+            CalendarSearch, ClockCircle, ClockSquare, History, History2, History3, Hourglass,
+            HourglassLine, Stopwatch, StopwatchPause, StopwatchPlay, WatchRound, WatchSquare,
+            WatchSquareMinimalistic, WatchSquareMinimalisticCharge
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Alarm, AlarmAdd, AlarmPause, AlarmPlay, AlarmRemove, AlarmSleep,
-        AlarmTurnOff, Calendar, CalendarAdd, CalendarDate, CalendarMark, CalendarMinimalistic,
-        CalendarSearch, ClockCircle, ClockSquare, History, History2, History3, Hourglass,
-        HourglassLine, Stopwatch, StopwatchPause, StopwatchPlay, WatchRound, WatchSquare,
-        WatchSquareMinimalistic, WatchSquareMinimalisticCharge)
-    return __AllIcons!!
-  }

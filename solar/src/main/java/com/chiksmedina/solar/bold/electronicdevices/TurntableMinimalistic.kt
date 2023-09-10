@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.TurntableMinimalistic: ImageVector
+val ElectronicDevicesGroup.TurntableMinimalistic: ImageVector
     get() {
         if (_turntableMinimalistic != null) {
             return _turntableMinimalistic!!
         }
-        _turntableMinimalistic = Builder(name = "TurntableMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _turntableMinimalistic = Builder(
+            name = "TurntableMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.7501f, 2.2216f)
                 verticalLineTo(7.9648f)
                 curveTo(17.7501f, 8.5499f, 17.4577f, 9.0963f, 16.9708f, 9.4209f)
@@ -64,7 +68,7 @@ public val ElectronicDevicesGroup.TurntableMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _turntableMinimalistic!!
     }
 

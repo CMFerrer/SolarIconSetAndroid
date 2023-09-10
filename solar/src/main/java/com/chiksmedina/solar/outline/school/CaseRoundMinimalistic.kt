@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.school
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SchoolGroup
 
-public val SchoolGroup.CaseRoundMinimalistic: ImageVector
+val SchoolGroup.CaseRoundMinimalistic: ImageVector
     get() {
         if (_caseRoundMinimalistic != null) {
             return _caseRoundMinimalistic!!
         }
-        _caseRoundMinimalistic = Builder(name = "CaseRoundMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _caseRoundMinimalistic = Builder(
+            name = "CaseRoundMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9436f, 5.25f)
                 horizontalLineTo(14.0564f)
                 curveTo(15.8942f, 5.25f, 17.3498f, 5.25f, 18.489f, 5.4031f)
@@ -87,9 +88,11 @@ public val SchoolGroup.CaseRoundMinimalistic: ImageVector
                 curveTo(21.25f, 12.2394f, 21.2486f, 10.9495f, 21.1397f, 9.9531f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9999f, 2.75f)
                 curveTo(11.0215f, 2.75f, 10.187f, 3.375f, 9.8778f, 4.2499f)
                 curveTo(9.7397f, 4.6405f, 9.3113f, 4.8452f, 8.9207f, 4.7071f)
@@ -102,7 +105,7 @@ public val SchoolGroup.CaseRoundMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _caseRoundMinimalistic!!
     }
 

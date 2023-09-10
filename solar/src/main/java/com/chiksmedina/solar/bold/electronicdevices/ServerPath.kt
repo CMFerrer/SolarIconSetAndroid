@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.ServerPath: ImageVector
+val ElectronicDevicesGroup.ServerPath: ImageVector
     get() {
         if (_serverPath != null) {
             return _serverPath!!
         }
-        _serverPath = Builder(name = "ServerPath", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _serverPath = Builder(
+            name = "ServerPath", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(22.0f, 18.2105f)
                 curveTo(22.0f, 17.8399f, 21.6876f, 17.5395f, 21.3023f, 17.5395f)
                 horizontalLineTo(13.7252f)
@@ -78,7 +82,7 @@ public val ElectronicDevicesGroup.ServerPath: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _serverPath!!
     }
 

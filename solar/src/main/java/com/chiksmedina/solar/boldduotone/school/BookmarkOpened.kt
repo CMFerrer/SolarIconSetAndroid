@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.school
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SchoolGroup
 
-public val SchoolGroup.BookmarkOpened: ImageVector
+val SchoolGroup.BookmarkOpened: ImageVector
     get() {
         if (_bookmarkOpened != null) {
             return _bookmarkOpened!!
         }
-        _bookmarkOpened = Builder(name = "BookmarkOpened", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.6f, strokeAlpha
-                    = 0.6f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+        _bookmarkOpened = Builder(
+            name = "BookmarkOpened", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.6f, strokeAlpha
+                = 0.6f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(3.4645f, 20.5356f)
                 curveTo(4.9289f, 22.0001f, 7.286f, 22.0001f, 12.0f, 22.0001f)
                 curveTo(16.714f, 22.0001f, 19.0711f, 22.0001f, 20.5355f, 20.5356f)
@@ -65,9 +66,11 @@ public val SchoolGroup.BookmarkOpened: ImageVector
                 curveTo(2.0f, 16.7142f, 2.0f, 19.0712f, 3.4645f, 20.5356f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.75f, 6.7524f)
                 verticalLineTo(10.8077f)
                 curveTo(7.75f, 11.3044f, 7.7503f, 11.6443f, 7.7649f, 11.8977f)
@@ -89,9 +92,11 @@ public val SchoolGroup.BookmarkOpened: ImageVector
                 horizontalLineTo(7.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
-                    = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
+                = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.5351f, 3.4645f)
                 curveTo(19.0706f, 2.0f, 16.7136f, 2.0f, 11.9996f, 2.0f)
                 curveTo(7.2855f, 2.0f, 4.9285f, 2.0f, 3.464f, 3.4645f)
@@ -117,9 +122,11 @@ public val SchoolGroup.BookmarkOpened: ImageVector
                 curveTo(21.6695f, 5.2492f, 21.3043f, 4.2337f, 20.5351f, 3.4645f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
-                    = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
+                = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0021f, 10.5f)
                 curveTo(2.0022f, 10.4812f, 2.0022f, 10.4625f, 2.0023f, 10.4437f)
                 lineTo(2.0f, 10.5f)
@@ -127,7 +134,7 @@ public val SchoolGroup.BookmarkOpened: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bookmarkOpened!!
     }
 

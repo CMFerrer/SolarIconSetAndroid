@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.businessstatistic
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.BusinessStatisticGroup
 
-public val BusinessStatisticGroup.PresentationGraph: ImageVector
+val BusinessStatisticGroup.PresentationGraph: ImageVector
     get() {
         if (_presentationGraph != null) {
             return _presentationGraph!!
         }
-        _presentationGraph = Builder(name = "PresentationGraph", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _presentationGraph = Builder(
+            name = "PresentationGraph", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.0f, 10.5f)
                 verticalLineTo(2.75f)
                 horizontalLineTo(20.0f)
@@ -37,9 +38,11 @@ public val BusinessStatisticGroup.PresentationGraph: ImageVector
                 curveTo(4.0f, 15.0962f, 4.0f, 13.5641f, 4.0f, 10.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.5303f, 9.0303f)
                 curveTo(15.8232f, 8.7374f, 15.8232f, 8.2626f, 15.5303f, 7.9697f)
                 curveTo(15.2374f, 7.6768f, 14.7626f, 7.6768f, 14.4697f, 7.9697f)
@@ -65,9 +68,11 @@ public val BusinessStatisticGroup.PresentationGraph: ImageVector
                 lineTo(15.5303f, 9.0303f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 1.25f)
                 curveTo(1.5858f, 1.25f, 1.25f, 1.5858f, 1.25f, 2.0f)
                 curveTo(1.25f, 2.4142f, 1.5858f, 2.75f, 2.0f, 2.75f)
@@ -79,9 +84,11 @@ public val BusinessStatisticGroup.PresentationGraph: ImageVector
                 horizontalLineTo(2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.2502f, 17.0f)
                 verticalLineTo(20.5365f)
                 lineTo(9.6648f, 21.3292f)
@@ -97,7 +104,7 @@ public val BusinessStatisticGroup.PresentationGraph: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _presentationGraph!!
     }
 

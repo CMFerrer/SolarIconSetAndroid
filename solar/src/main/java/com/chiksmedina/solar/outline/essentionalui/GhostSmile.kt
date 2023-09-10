@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.GhostSmile: ImageVector
+val EssentionalUiGroup.GhostSmile: ImageVector
     get() {
         if (_ghostSmile != null) {
             return _ghostSmile!!
         }
-        _ghostSmile = Builder(name = "GhostSmile", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _ghostSmile = Builder(
+            name = "GhostSmile", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 9.5f)
                 curveTo(10.0f, 10.3284f, 9.5523f, 11.0f, 9.0f, 11.0f)
                 curveTo(8.4477f, 11.0f, 8.0f, 10.3284f, 8.0f, 9.5f)
@@ -32,9 +33,11 @@ public val EssentionalUiGroup.GhostSmile: ImageVector
                 curveTo(9.5523f, 8.0f, 10.0f, 8.6716f, 10.0f, 9.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.0f, 11.0f)
                 curveTo(15.5523f, 11.0f, 16.0f, 10.3284f, 16.0f, 9.5f)
                 curveTo(16.0f, 8.6716f, 15.5523f, 8.0f, 15.0f, 8.0f)
@@ -42,9 +45,11 @@ public val EssentionalUiGroup.GhostSmile: ImageVector
                 curveTo(14.0f, 10.3284f, 14.4477f, 11.0f, 15.0f, 11.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.4466f, 14.3975f)
                 curveTo(9.1138f, 14.1508f, 8.6441f, 14.2206f, 8.3975f, 14.5534f)
                 curveTo(8.1508f, 14.8862f, 8.2206f, 15.3559f, 8.5534f, 15.6025f)
@@ -56,9 +61,11 @@ public val EssentionalUiGroup.GhostSmile: ImageVector
                 curveTo(11.0541f, 15.25f, 10.1749f, 14.9373f, 9.4466f, 14.3975f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 1.25f)
                 curveTo(6.0422f, 1.25f, 1.25f, 6.2186f, 1.25f, 12.3006f)
                 verticalLineTo(19.723f)
@@ -91,7 +98,7 @@ public val EssentionalUiGroup.GhostSmile: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ghostSmile!!
     }
 

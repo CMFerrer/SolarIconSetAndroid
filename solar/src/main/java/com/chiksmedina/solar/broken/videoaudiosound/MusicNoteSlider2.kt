@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.MusicNoteSlider2: ImageVector
+val VideoAudioSoundGroup.MusicNoteSlider2: ImageVector
     get() {
         if (_musicNoteSlider2 != null) {
             return _musicNoteSlider2!!
         }
-        _musicNoteSlider2 = Builder(name = "MusicNoteSlider2", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _musicNoteSlider2 = Builder(
+            name = "MusicNoteSlider2", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(19.0f, 19.5f)
                 curveTo(19.4645f, 19.5f, 19.6968f, 19.5f, 19.8911f, 19.4692f)
                 curveTo(20.9608f, 19.2998f, 21.7998f, 18.4608f, 21.9692f, 17.3911f)
@@ -34,9 +35,11 @@ public val VideoAudioSoundGroup.MusicNoteSlider2: ImageVector
                 curveTo(21.7998f, 5.5392f, 20.9608f, 4.7002f, 19.8911f, 4.5308f)
                 curveTo(19.6968f, 4.5f, 19.4645f, 4.5f, 19.0f, 4.5f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 19.5f)
                 curveTo(4.5355f, 19.5f, 4.3032f, 19.5f, 4.1089f, 19.4692f)
                 curveTo(3.0392f, 19.2998f, 2.2002f, 18.4608f, 2.0308f, 17.3911f)
@@ -46,9 +49,11 @@ public val VideoAudioSoundGroup.MusicNoteSlider2: ImageVector
                 curveTo(2.2002f, 5.5392f, 3.0392f, 4.7002f, 4.1089f, 4.5308f)
                 curveTo(4.3032f, 4.5f, 4.5355f, 4.5f, 5.0f, 4.5f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 15.0f)
                 curveTo(12.0f, 16.1046f, 11.1046f, 17.0f, 10.0f, 17.0f)
                 curveTo(8.8954f, 17.0f, 8.0f, 16.1046f, 8.0f, 15.0f)
@@ -58,9 +63,11 @@ public val VideoAudioSoundGroup.MusicNoteSlider2: ImageVector
                 moveTo(12.0f, 15.0f)
                 verticalLineTo(10.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.0584f, 7.971f)
                 lineTo(12.7416f, 8.6294f)
                 curveTo(12.5592f, 8.7206f, 12.468f, 8.7662f, 12.3926f, 8.8238f)
@@ -78,9 +85,11 @@ public val VideoAudioSoundGroup.MusicNoteSlider2: ImageVector
                 curveTo(14.7098f, 7.6453f, 14.4926f, 7.7538f, 14.0584f, 7.971f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.9983f, 17.0f)
                 curveTo(18.9862f, 19.175f, 18.8897f, 20.3529f, 18.1213f, 21.1213f)
                 curveTo(17.2426f, 22.0f, 15.8284f, 22.0f, 13.0f, 22.0f)
@@ -96,7 +105,7 @@ public val VideoAudioSoundGroup.MusicNoteSlider2: ImageVector
                 verticalLineTo(13.0f)
             }
         }
-        .build()
+            .build()
         return _musicNoteSlider2!!
     }
 

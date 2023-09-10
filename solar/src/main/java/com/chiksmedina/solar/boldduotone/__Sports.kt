@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.boldduotone
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldduotoneGroup
+import com.chiksmedina.solar.BoldDuotoneSolar
 import com.chiksmedina.solar.boldduotone.sports.Balls
 import com.chiksmedina.solar.boldduotone.sports.Basketball
 import com.chiksmedina.solar.boldduotone.sports.Bicycling
@@ -43,26 +43,62 @@ import com.chiksmedina.solar.boldduotone.sports.Walking
 import com.chiksmedina.solar.boldduotone.sports.WalkingRound
 import com.chiksmedina.solar.boldduotone.sports.Water
 import com.chiksmedina.solar.boldduotone.sports.WaterSun
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object SportsGroup
+object SportsGroup
 
-public val BoldduotoneGroup.Sports: SportsGroup
-  get() = SportsGroup
+val BoldDuotoneSolar.Sports: SportsGroup
+    get() = SportsGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val SportsGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val SportsGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Balls,
+            Basketball,
+            Bicycling,
+            BicyclingRound,
+            BodyShape,
+            BodyShapeMinimalistic,
+            Bowling,
+            Dumbbell,
+            Dumbbells,
+            Dumbbells2,
+            DumbbellLarge,
+            DumbbellLargeMinimalistic,
+            DumbbellSmall,
+            Football,
+            Golf,
+            Hiking,
+            HikingMinimalistic,
+            HikingRound,
+            Meditation,
+            MeditationRound,
+            Ranking,
+            Rugby,
+            Running,
+            Running2,
+            RunningRound,
+            Skateboard,
+            Skateboarding,
+            SkateboardingRound,
+            Stretching,
+            StretchingRound,
+            Swimming,
+            Tennis,
+            Tennis2,
+            Treadmill,
+            TreadmillRound,
+            Volleyball,
+            Volleyball2,
+            Walking,
+            WalkingRound,
+            Water,
+            WaterSun
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Balls, Basketball, Bicycling, BicyclingRound, BodyShape,
-        BodyShapeMinimalistic, Bowling, Dumbbell, Dumbbells, Dumbbells2, DumbbellLarge,
-        DumbbellLargeMinimalistic, DumbbellSmall, Football, Golf, Hiking, HikingMinimalistic,
-        HikingRound, Meditation, MeditationRound, Ranking, Rugby, Running, Running2, RunningRound,
-        Skateboard, Skateboarding, SkateboardingRound, Stretching, StretchingRound, Swimming,
-        Tennis, Tennis2, Treadmill, TreadmillRound, Volleyball, Volleyball2, Walking, WalkingRound,
-        Water, WaterSun)
-    return __AllIcons!!
-  }

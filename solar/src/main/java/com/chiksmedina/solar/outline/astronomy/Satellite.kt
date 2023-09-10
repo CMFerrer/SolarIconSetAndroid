@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.AstronomyGroup
 
-public val AstronomyGroup.Satellite: ImageVector
+val AstronomyGroup.Satellite: ImageVector
     get() {
         if (_satellite != null) {
             return _satellite!!
         }
-        _satellite = Builder(name = "Satellite", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _satellite = Builder(
+            name = "Satellite", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.629f, 2.9238f)
                 lineTo(1.6358f, 9.0313f)
                 curveTo(1.2737f, 9.2324f, 1.1432f, 9.689f, 1.3444f, 10.0511f)
@@ -61,7 +65,7 @@ public val AstronomyGroup.Satellite: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _satellite!!
     }
 

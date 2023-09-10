@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.Sledgehammer: ImageVector
+val EssentionalUiGroup.Sledgehammer: ImageVector
     get() {
         if (_sledgehammer != null) {
             return _sledgehammer!!
         }
-        _sledgehammer = Builder(name = "Sledgehammer", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _sledgehammer = Builder(
+            name = "Sledgehammer", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.6038f, 4.6038f)
                 curveTo(9.3397f, 2.8679f, 10.2076f, 2.0f, 11.2861f, 2.0f)
                 curveTo(12.3646f, 2.0f, 13.2326f, 2.8679f, 14.9684f, 4.6038f)
@@ -37,9 +38,11 @@ public val EssentionalUiGroup.Sledgehammer: ImageVector
                 curveTo(5.0f, 7.2076f, 5.8679f, 6.3397f, 7.6038f, 4.6038f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.284f, 13.7699f)
                 lineTo(2.8258f, 18.2281f)
                 curveTo(2.4834f, 18.5706f, 2.3121f, 18.7418f, 2.2093f, 18.9199f)
@@ -52,9 +55,11 @@ public val EssentionalUiGroup.Sledgehammer: ImageVector
                 lineTo(7.284f, 13.7699f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.3447f, 12.7093f)
                 lineTo(8.349f, 12.7049f)
                 lineTo(11.2949f, 15.6507f)
@@ -62,9 +67,11 @@ public val EssentionalUiGroup.Sledgehammer: ImageVector
                 lineTo(8.3447f, 12.7093f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.6686f, 7.1826f)
                 curveTo(19.9233f, 6.7073f, 19.9153f, 6.1326f, 19.6445f, 5.6636f)
                 curveTo(19.5416f, 5.4855f, 19.3704f, 5.3142f, 19.028f, 4.9718f)
@@ -74,7 +81,7 @@ public val EssentionalUiGroup.Sledgehammer: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sledgehammer!!
     }
 

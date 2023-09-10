@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MessagesConversationGroup
 
-public val MessagesConversationGroup.ChatRoundVideo: ImageVector
+val MessagesConversationGroup.ChatRoundVideo: ImageVector
     get() {
         if (_chatRoundVideo != null) {
             return _chatRoundVideo!!
         }
-        _chatRoundVideo = Builder(name = "ChatRoundVideo", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _chatRoundVideo = Builder(
+            name = "ChatRoundVideo", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(22.0f, 12.0f)
                 curveTo(22.0f, 17.5228f, 17.5228f, 22.0f, 12.0f, 22.0f)
                 curveTo(10.4003f, 22.0f, 8.8884f, 21.6244f, 7.5475f, 20.9565f)
@@ -43,7 +47,7 @@ public val MessagesConversationGroup.ChatRoundVideo: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chatRoundVideo!!
     }
 

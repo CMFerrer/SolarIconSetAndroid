@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SecurityGroup
 
-public val SecurityGroup.KeySquare2: ImageVector
+val SecurityGroup.KeySquare2: ImageVector
     get() {
         if (_keySquare2 != null) {
             return _keySquare2!!
         }
-        _keySquare2 = Builder(name = "KeySquare2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _keySquare2 = Builder(
+            name = "KeySquare2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.7568f, 1.9829f)
                 curveTo(9.7663f, 2.397f, 9.4383f, 2.7403f, 9.0242f, 2.7498f)
                 curveTo(6.2025f, 2.8143f, 4.8735f, 3.0989f, 3.9963f, 3.9762f)
@@ -144,7 +148,7 @@ public val SecurityGroup.KeySquare2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _keySquare2!!
     }
 

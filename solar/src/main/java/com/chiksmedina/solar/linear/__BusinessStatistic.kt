@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.linear
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.LinearGroup
+import com.chiksmedina.solar.LinearSolar
 import com.chiksmedina.solar.linear.businessstatistic.Chart
 import com.chiksmedina.solar.linear.businessstatistic.Chart2
 import com.chiksmedina.solar.linear.businessstatistic.ChartSquare
@@ -21,22 +21,24 @@ import com.chiksmedina.solar.linear.businessstatistic.PieChart2
 import com.chiksmedina.solar.linear.businessstatistic.PieChart3
 import com.chiksmedina.solar.linear.businessstatistic.PresentationGraph
 import com.chiksmedina.solar.linear.businessstatistic.RoundGraph
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object BusinessStatisticGroup
+object BusinessStatisticGroup
 
-public val LinearGroup.BusinessStatistic: BusinessStatisticGroup
-  get() = BusinessStatisticGroup
+val LinearSolar.BusinessStatistic: BusinessStatisticGroup
+    get() = BusinessStatisticGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val BusinessStatisticGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val BusinessStatisticGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Chart, Chart2, ChartSquare, ChatSquare2, CourseDown, CourseUp, DiagramDown,
+            DiagramUp, Graph, GraphDown, GraphDownNew, GraphNew, GraphNewUp, GraphUp, PieChart,
+            PieChart2, PieChart3, PresentationGraph, RoundGraph
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Chart, Chart2, ChartSquare, ChatSquare2, CourseDown, CourseUp, DiagramDown,
-        DiagramUp, Graph, GraphDown, GraphDownNew, GraphNew, GraphNewUp, GraphUp, PieChart,
-        PieChart2, PieChart3, PresentationGraph, RoundGraph)
-    return __AllIcons!!
-  }

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,17 +12,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.SliderVerticalMinimalistic: ImageVector
+val EssentionalUiGroup.SliderVerticalMinimalistic: ImageVector
     get() {
         if (_sliderVerticalMinimalistic != null) {
             return _sliderVerticalMinimalistic!!
         }
-        _sliderVerticalMinimalistic = Builder(name = "SliderVerticalMinimalistic", defaultWidth =
-                24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _sliderVerticalMinimalistic = Builder(
+            name = "SliderVerticalMinimalistic", defaultWidth =
+            24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.8461f, 8.0f)
                 curveTo(5.8461f, 5.1716f, 5.8461f, 3.7574f, 6.7474f, 2.8787f)
                 curveTo(7.6486f, 2.0f, 9.099f, 2.0f, 12.0f, 2.0f)
@@ -38,9 +40,11 @@ public val EssentionalUiGroup.SliderVerticalMinimalistic: ImageVector
                 verticalLineTo(8.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.7692f, 3.75f)
                 curveTo(3.1941f, 3.75f, 3.5385f, 4.0858f, 3.5385f, 4.5f)
                 verticalLineTo(19.5f)
@@ -59,7 +63,7 @@ public val EssentionalUiGroup.SliderVerticalMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sliderVerticalMinimalistic!!
     }
 

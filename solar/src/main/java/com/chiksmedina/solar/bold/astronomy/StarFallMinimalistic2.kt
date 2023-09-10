@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.AstronomyGroup
 
-public val AstronomyGroup.StarFallMinimalistic2: ImageVector
+val AstronomyGroup.StarFallMinimalistic2: ImageVector
     get() {
         if (_starFallMinimalistic2 != null) {
             return _starFallMinimalistic2!!
         }
-        _starFallMinimalistic2 = Builder(name = "StarFallMinimalistic2", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _starFallMinimalistic2 = Builder(
+            name = "StarFallMinimalistic2", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.8114f, 6.7268f)
                 curveTo(12.8247f, 4.909f, 13.3314f, 4.0001f, 14.0889f, 4.0001f)
                 curveTo(14.8464f, 4.0001f, 15.353f, 4.909f, 16.3663f, 6.7268f)
@@ -57,9 +59,11 @@ public val AstronomyGroup.StarFallMinimalistic2: ImageVector
                 lineTo(11.8114f, 6.7268f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.7454f, 5.2024f)
                 curveTo(6.7638f, 4.6314f, 4.6381f, 4.933f, 2.5872f, 6.1341f)
                 lineTo(2.379f, 6.256f)
@@ -94,7 +98,7 @@ public val AstronomyGroup.StarFallMinimalistic2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _starFallMinimalistic2!!
     }
 

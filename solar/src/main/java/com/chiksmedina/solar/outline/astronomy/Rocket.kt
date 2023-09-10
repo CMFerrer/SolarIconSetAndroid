@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.AstronomyGroup
 
-public val AstronomyGroup.Rocket: ImageVector
+val AstronomyGroup.Rocket: ImageVector
     get() {
         if (_rocket != null) {
             return _rocket!!
         }
-        _rocket = Builder(name = "Rocket", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _rocket = Builder(
+            name = "Rocket", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.4058f, 1.25f)
                 curveTo(17.4521f, 1.2501f, 17.4991f, 1.2501f, 17.5467f, 1.2501f)
                 lineTo(18.1672f, 1.2501f)
@@ -156,7 +160,7 @@ public val AstronomyGroup.Rocket: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _rocket!!
     }
 

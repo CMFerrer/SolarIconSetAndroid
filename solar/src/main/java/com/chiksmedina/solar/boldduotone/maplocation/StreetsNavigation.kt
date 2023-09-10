@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.maplocation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MapLocationGroup
 
-public val MapLocationGroup.StreetsNavigation: ImageVector
+val MapLocationGroup.StreetsNavigation: ImageVector
     get() {
         if (_streetsNavigation != null) {
             return _streetsNavigation!!
         }
-        _streetsNavigation = Builder(name = "StreetsNavigation", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _streetsNavigation = Builder(
+            name = "StreetsNavigation", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.3226f, 3.7861f)
                 lineTo(15.1069f, 10.4161f)
                 lineTo(21.2865f, 15.2715f)
@@ -31,9 +32,11 @@ public val MapLocationGroup.StreetsNavigation: ImageVector
                 curveTo(22.0f, 6.5185f, 22.0f, 4.8889f, 21.3226f, 3.7861f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.2673f, 19.2006f)
                 lineTo(13.932f, 16.5295f)
                 curveTo(13.089f, 14.8432f, 12.6675f, 14.0f, 12.0f, 14.0f)
@@ -50,9 +53,11 @@ public val MapLocationGroup.StreetsNavigation: ImageVector
                 curveTo(16.0351f, 20.7365f, 15.7791f, 20.2245f, 15.2673f, 19.2006f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 9.5003f)
                 curveTo(2.0f, 9.5136f, 2.0f, 9.5268f, 2.0f, 9.54f)
                 curveTo(2.0f, 12.8009f, 2.0037f, 14.4361f, 2.908f, 15.5379f)
@@ -70,9 +75,11 @@ public val MapLocationGroup.StreetsNavigation: ImageVector
                 curveTo(2.0f, 4.5691f, 2.0f, 6.2129f, 2.0f, 9.5003f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.5f, 2.0f)
                 horizontalLineTo(9.5f)
                 curveTo(6.8838f, 2.0f, 5.3086f, 2.0f, 4.2168f, 2.4576f)
@@ -82,7 +89,7 @@ public val MapLocationGroup.StreetsNavigation: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _streetsNavigation!!
     }
 

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.BatteryLowMinimalistic: ImageVector
+val EssentionalUiGroup.BatteryLowMinimalistic: ImageVector
     get() {
         if (_batteryLowMinimalistic != null) {
             return _batteryLowMinimalistic!!
         }
-        _batteryLowMinimalistic = Builder(name = "BatteryLowMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _batteryLowMinimalistic = Builder(
+            name = "BatteryLowMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 12.0f)
                 curveTo(2.0f, 8.2288f, 2.0f, 6.3432f, 3.1716f, 5.1716f)
                 curveTo(4.3432f, 4.0f, 6.2288f, 4.0f, 10.0f, 4.0f)
@@ -72,9 +74,11 @@ public val EssentionalUiGroup.BatteryLowMinimalistic: ImageVector
                 curveTo(6.1455f, 8.9944f, 6.2768f, 8.5438f, 6.6358f, 8.3444f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.25f, 14.0f)
                 curveTo(21.25f, 14.4142f, 21.5858f, 14.75f, 22.0f, 14.75f)
                 curveTo(22.4142f, 14.75f, 22.75f, 14.4142f, 22.75f, 14.0f)
@@ -85,7 +89,7 @@ public val EssentionalUiGroup.BatteryLowMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _batteryLowMinimalistic!!
     }
 

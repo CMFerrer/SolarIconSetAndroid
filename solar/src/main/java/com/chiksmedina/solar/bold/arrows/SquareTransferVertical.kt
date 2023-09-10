@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsGroup
 
-public val ArrowsGroup.SquareTransferVertical: ImageVector
+val ArrowsGroup.SquareTransferVertical: ImageVector
     get() {
         if (_squareTransferVertical != null) {
             return _squareTransferVertical!!
         }
-        _squareTransferVertical = Builder(name = "SquareTransferVertical", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _squareTransferVertical = Builder(
+            name = "SquareTransferVertical", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.4645f, 20.5355f)
                 curveTo(4.9289f, 22.0f, 7.286f, 22.0f, 12.0f, 22.0f)
                 curveTo(16.714f, 22.0f, 19.0711f, 22.0f, 20.5355f, 20.5355f)
@@ -57,7 +61,7 @@ public val ArrowsGroup.SquareTransferVertical: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _squareTransferVertical!!
     }
 

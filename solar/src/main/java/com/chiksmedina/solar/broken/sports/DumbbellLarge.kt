@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.SportsGroup
 
-public val SportsGroup.DumbbellLarge: ImageVector
+val SportsGroup.DumbbellLarge: ImageVector
     get() {
         if (_dumbbellLarge != null) {
             return _dumbbellLarge!!
         }
-        _dumbbellLarge = Builder(name = "DumbbellLarge", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _dumbbellLarge = Builder(
+            name = "DumbbellLarge", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.3927f, 20.0756f)
                 curveTo(6.0849f, 20.7677f, 6.431f, 21.1138f, 6.861f, 21.1138f)
                 curveTo(7.291f, 21.1138f, 7.6371f, 20.7677f, 8.3293f, 20.0756f)
@@ -75,7 +79,7 @@ public val SportsGroup.DumbbellLarge: ImageVector
                 lineTo(10.1646f, 13.8354f)
             }
         }
-        .build()
+            .build()
         return _dumbbellLarge!!
     }
 

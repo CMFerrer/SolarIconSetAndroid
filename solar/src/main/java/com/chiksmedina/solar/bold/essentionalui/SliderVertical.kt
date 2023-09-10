@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.SliderVertical: ImageVector
+val EssentionalUiGroup.SliderVertical: ImageVector
     get() {
         if (_sliderVertical != null) {
             return _sliderVertical!!
         }
-        _sliderVertical = Builder(name = "SliderVertical", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _sliderVertical = Builder(
+            name = "SliderVertical", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.4186f, 8.0f)
                 curveTo(6.4186f, 5.1716f, 6.4186f, 3.7574f, 7.236f, 2.8787f)
                 curveTo(8.0534f, 2.0f, 9.3689f, 2.0f, 12.0f, 2.0f)
@@ -37,9 +38,11 @@ public val EssentionalUiGroup.SliderVertical: ImageVector
                 lineTo(6.4186f, 8.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.0233f, 7.9012f)
                 lineTo(5.0233f, 8.0f)
                 lineTo(5.0233f, 16.0987f)
@@ -64,9 +67,11 @@ public val EssentionalUiGroup.SliderVertical: ImageVector
                 curveTo(5.0232f, 6.0362f, 5.0232f, 6.9185f, 5.0233f, 7.9012f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.9767f, 16.0987f)
                 lineTo(18.9767f, 7.9013f)
                 curveTo(18.9768f, 6.9185f, 18.9768f, 6.0362f, 18.9305f, 5.2723f)
@@ -91,7 +96,7 @@ public val EssentionalUiGroup.SliderVertical: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sliderVertical!!
     }
 

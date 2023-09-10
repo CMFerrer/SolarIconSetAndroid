@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SchoolGroup
 
-public val SchoolGroup.Book2: ImageVector
+val SchoolGroup.Book2: ImageVector
     get() {
         if (_book2 != null) {
             return _book2!!
         }
-        _book2 = Builder(name = "Book2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _book2 = Builder(
+            name = "Book2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9451f, 1.25f)
                 horizontalLineTo(14.0549f)
                 curveTo(15.4225f, 1.25f, 16.5248f, 1.25f, 17.3918f, 1.3665f)
@@ -98,7 +102,7 @@ public val SchoolGroup.Book2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _book2!!
     }
 

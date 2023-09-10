@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.MusicNote4: ImageVector
+val VideoAudioSoundGroup.MusicNote4: ImageVector
     get() {
         if (_musicNote4 != null) {
             return _musicNote4!!
         }
-        _musicNote4 = Builder(name = "MusicNote4", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _musicNote4 = Builder(
+            name = "MusicNote4", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.1753f, 4.8107f)
                 curveTo(18.9778f, 4.2655f, 18.4312f, 3.9277f, 17.8552f, 3.9949f)
                 curveTo(17.7921f, 4.0022f, 17.6774f, 4.0312f, 17.4371f, 4.1359f)
@@ -80,7 +84,7 @@ public val VideoAudioSoundGroup.MusicNote4: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _musicNote4!!
     }
 

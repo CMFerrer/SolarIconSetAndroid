@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Rewind15SecondsForward: ImageVector
+val VideoAudioSoundGroup.Rewind15SecondsForward: ImageVector
     get() {
         if (_rewind15SecondsForward != null) {
             return _rewind15SecondsForward!!
         }
-        _rewind15SecondsForward = Builder(name = "Rewind15SecondsForward", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _rewind15SecondsForward = Builder(
+            name = "Rewind15SecondsForward", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.3249f, 7.824f)
                 curveTo(10.5848f, 7.9489f, 10.75f, 8.2117f, 10.75f, 8.5f)
                 verticalLineTo(15.5f)
@@ -38,9 +39,11 @@ public val VideoAudioSoundGroup.Rewind15SecondsForward: ImageVector
                 curveTo(9.7566f, 7.7343f, 10.0651f, 7.6991f, 10.3249f, 7.824f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.6746f, 8.6047f)
                 curveTo(12.8447f, 8.0943f, 13.3224f, 7.75f, 13.8604f, 7.75f)
                 horizontalLineTo(16.5f)
@@ -62,9 +65,11 @@ public val VideoAudioSoundGroup.Rewind15SecondsForward: ImageVector
                 lineTo(12.6746f, 8.6047f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(12.676f, 1.6751f)
                 curveTo(12.5511f, 1.4153f, 12.2883f, 1.25f, 12.0f, 1.25f)
                 curveTo(11.2647f, 1.25f, 10.5459f, 1.3239f, 9.8508f, 1.465f)
@@ -86,7 +91,7 @@ public val VideoAudioSoundGroup.Rewind15SecondsForward: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _rewind15SecondsForward!!
     }
 

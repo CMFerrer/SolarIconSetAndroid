@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.TrashBinTrash: ImageVector
+val EssentionalUiGroup.TrashBinTrash: ImageVector
     get() {
         if (_trashBinTrash != null) {
             return _trashBinTrash!!
         }
-        _trashBinTrash = Builder(name = "TrashBinTrash", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _trashBinTrash = Builder(
+            name = "TrashBinTrash", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.3093f, 2.25f)
                 horizontalLineTo(13.6907f)
                 curveTo(13.9071f, 2.2498f, 14.0956f, 2.2497f, 14.2736f, 2.2781f)
@@ -66,9 +67,11 @@ public val EssentionalUiGroup.TrashBinTrash: ImageVector
                 horizontalLineTo(9.0081f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.915f, 8.4501f)
                 curveTo(5.8874f, 8.0368f, 5.5301f, 7.7241f, 5.1168f, 7.7516f)
                 curveTo(4.7035f, 7.7792f, 4.3908f, 8.1366f, 4.4183f, 8.5499f)
@@ -98,9 +101,11 @@ public val EssentionalUiGroup.TrashBinTrash: ImageVector
                 lineTo(5.915f, 8.4501f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.4254f, 10.2537f)
                 curveTo(9.8375f, 10.2125f, 10.2051f, 10.5132f, 10.2463f, 10.9253f)
                 lineTo(10.7463f, 15.9253f)
@@ -110,9 +115,11 @@ public val EssentionalUiGroup.TrashBinTrash: ImageVector
                 curveTo(8.7125f, 10.6624f, 9.0132f, 10.2949f, 9.4254f, 10.2537f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.5746f, 10.2537f)
                 curveTo(14.9868f, 10.2949f, 15.2875f, 10.6624f, 15.2463f, 11.0746f)
                 lineTo(14.7463f, 16.0746f)
@@ -123,7 +130,7 @@ public val EssentionalUiGroup.TrashBinTrash: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _trashBinTrash!!
     }
 

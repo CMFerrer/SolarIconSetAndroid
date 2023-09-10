@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.LikeGroup
 
-public val LikeGroup.HeartLock: ImageVector
+val LikeGroup.HeartLock: ImageVector
     get() {
         if (_heartLock != null) {
             return _heartLock!!
         }
-        _heartLock = Builder(name = "HeartLock", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _heartLock = Builder(
+            name = "HeartLock", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.25f, 7.2892f)
                 verticalLineTo(7.0f)
                 curveTo(6.25f, 5.191f, 6.7965f, 3.7253f, 7.8518f, 2.7155f)
@@ -57,7 +61,7 @@ public val LikeGroup.HeartLock: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _heartLock!!
     }
 

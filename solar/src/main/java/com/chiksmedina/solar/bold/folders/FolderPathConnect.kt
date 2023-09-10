@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.FoldersGroup
 
-public val FoldersGroup.FolderPathConnect: ImageVector
+val FoldersGroup.FolderPathConnect: ImageVector
     get() {
         if (_folderPathConnect != null) {
             return _folderPathConnect!!
         }
-        _folderPathConnect = Builder(name = "FolderPathConnect", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _folderPathConnect = Builder(
+            name = "FolderPathConnect", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(19.0f, 8.3686f)
                 verticalLineTo(9.8f)
                 curveTo(19.0f, 12.2513f, 19.0f, 13.477f, 18.1799f, 14.2385f)
@@ -75,7 +79,7 @@ public val FoldersGroup.FolderPathConnect: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _folderPathConnect!!
     }
 

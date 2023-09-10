@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MedicineGroup
 
-public val MedicineGroup.BenzeneRing: ImageVector
+val MedicineGroup.BenzeneRing: ImageVector
     get() {
         if (_benzeneRing != null) {
             return _benzeneRing!!
         }
-        _benzeneRing = Builder(name = "BenzeneRing", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _benzeneRing = Builder(
+            name = "BenzeneRing", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9792f, 4.8793f)
                 curveTo(10.9654f, 4.2931f, 11.4585f, 4.0f, 12.0f, 4.0f)
                 curveTo(12.5414f, 4.0f, 13.0345f, 4.2931f, 14.0207f, 4.8793f)
@@ -63,7 +67,7 @@ public val MedicineGroup.BenzeneRing: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _benzeneRing!!
     }
 

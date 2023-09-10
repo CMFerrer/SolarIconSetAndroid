@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.outline
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.OutlineGroup
+import com.chiksmedina.solar.OutlineSolar
 import com.chiksmedina.solar.outline.notes.Archive
 import com.chiksmedina.solar.outline.notes.ArchiveCheck
 import com.chiksmedina.solar.outline.notes.ArchiveDown
@@ -25,24 +25,26 @@ import com.chiksmedina.solar.outline.notes.DocumentsMinimalistic
 import com.chiksmedina.solar.outline.notes.Notebook
 import com.chiksmedina.solar.outline.notes.Notes
 import com.chiksmedina.solar.outline.notes.NotesMinimalistic
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object NotesGroup
+object NotesGroup
 
-public val OutlineGroup.Notes: NotesGroup
-  get() = NotesGroup
+val OutlineSolar.Notes: NotesGroup
+    get() = NotesGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val NotesGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val NotesGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Archive, ArchiveCheck, ArchiveDown, ArchiveDownMinimlistic,
+            ArchiveMinimalistic, ArchiveUp, ArchiveUpMinimlistic, Clipboard, ClipboardAdd,
+            ClipboardCheck, ClipboardHeart, ClipboardList, ClipboardRemove, ClipboardText, Document,
+            Documents, DocumentsMinimalistic, DocumentAdd, DocumentMedicine, DocumentText, Notebook,
+            Notes, NotesMinimalistic
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Archive, ArchiveCheck, ArchiveDown, ArchiveDownMinimlistic,
-        ArchiveMinimalistic, ArchiveUp, ArchiveUpMinimlistic, Clipboard, ClipboardAdd,
-        ClipboardCheck, ClipboardHeart, ClipboardList, ClipboardRemove, ClipboardText, Document,
-        Documents, DocumentsMinimalistic, DocumentAdd, DocumentMedicine, DocumentText, Notebook,
-        Notes, NotesMinimalistic)
-    return __AllIcons!!
-  }

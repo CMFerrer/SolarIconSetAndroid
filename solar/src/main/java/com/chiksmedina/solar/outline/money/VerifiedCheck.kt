@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MoneyGroup
 
-public val MoneyGroup.VerifiedCheck: ImageVector
+val MoneyGroup.VerifiedCheck: ImageVector
     get() {
         if (_verifiedCheck != null) {
             return _verifiedCheck!!
         }
-        _verifiedCheck = Builder(name = "VerifiedCheck", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _verifiedCheck = Builder(
+            name = "VerifiedCheck", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.5936f, 2.3188f)
                 curveTo(11.483f, 1.8937f, 12.517f, 1.8937f, 13.4064f, 2.3188f)
                 curveTo(13.7928f, 2.5035f, 14.1468f, 2.8055f, 14.6371f, 3.2237f)
@@ -166,7 +170,7 @@ public val MoneyGroup.VerifiedCheck: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _verifiedCheck!!
     }
 

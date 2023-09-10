@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.CameraMinimalistic: ImageVector
+val VideoAudioSoundGroup.CameraMinimalistic: ImageVector
     get() {
         if (_cameraMinimalistic != null) {
             return _cameraMinimalistic!!
         }
-        _cameraMinimalistic = Builder(name = "CameraMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cameraMinimalistic = Builder(
+            name = "CameraMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.75f, 3.5f)
                 curveTo(8.75f, 3.0858f, 9.0858f, 2.75f, 9.5f, 2.75f)
                 horizontalLineTo(14.5f)
@@ -102,7 +106,7 @@ public val VideoAudioSoundGroup.CameraMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cameraMinimalistic!!
     }
 

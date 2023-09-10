@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.TimeGroup
 
-public val TimeGroup.AlarmTurnOff: ImageVector
+val TimeGroup.AlarmTurnOff: ImageVector
     get() {
         if (_alarmTurnOff != null) {
             return _alarmTurnOff!!
         }
-        _alarmTurnOff = Builder(name = "AlarmTurnOff", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _alarmTurnOff = Builder(
+            name = "AlarmTurnOff", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.136f, 1.6026f)
                 curveTo(8.3556f, 1.9539f, 8.2488f, 2.4166f, 7.8975f, 2.6361f)
                 lineTo(3.8975f, 5.1361f)
@@ -69,7 +73,7 @@ public val TimeGroup.AlarmTurnOff: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _alarmTurnOff!!
     }
 

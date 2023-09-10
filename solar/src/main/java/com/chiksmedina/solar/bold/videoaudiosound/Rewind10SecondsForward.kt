@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Rewind10SecondsForward: ImageVector
+val VideoAudioSoundGroup.Rewind10SecondsForward: ImageVector
     get() {
         if (_rewind10SecondsForward != null) {
             return _rewind10SecondsForward!!
         }
-        _rewind10SecondsForward = Builder(name = "Rewind10SecondsForward", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _rewind10SecondsForward = Builder(
+            name = "Rewind10SecondsForward", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.3249f, 7.824f)
                 curveTo(10.5848f, 7.9489f, 10.75f, 8.2117f, 10.75f, 8.5f)
                 verticalLineTo(15.5f)
@@ -53,9 +54,11 @@ public val VideoAudioSoundGroup.Rewind10SecondsForward: ImageVector
                 verticalLineTo(10.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.676f, 1.6751f)
                 curveTo(12.5511f, 1.4153f, 12.2883f, 1.25f, 12.0f, 1.25f)
                 curveTo(11.2647f, 1.25f, 10.5459f, 1.3239f, 9.8508f, 1.465f)
@@ -77,7 +80,7 @@ public val VideoAudioSoundGroup.Rewind10SecondsForward: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _rewind10SecondsForward!!
     }
 

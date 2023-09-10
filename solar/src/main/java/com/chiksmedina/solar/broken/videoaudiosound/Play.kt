@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Play: ImageVector
+val VideoAudioSoundGroup.Play: ImageVector
     get() {
         if (_play != null) {
             return _play!!
         }
-        _play = Builder(name = "Play", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _play = Builder(
+            name = "Play", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.0f, 12.0f)
                 lineTo(3.0f, 18.9671f)
                 curveTo(3.0f, 21.2763f, 5.5343f, 22.736f, 7.5966f, 21.6145f)
@@ -33,7 +37,7 @@ public val VideoAudioSoundGroup.Play: ImageVector
                 lineTo(14.0026f, 18.131f)
             }
         }
-        .build()
+            .build()
         return _play!!
     }
 

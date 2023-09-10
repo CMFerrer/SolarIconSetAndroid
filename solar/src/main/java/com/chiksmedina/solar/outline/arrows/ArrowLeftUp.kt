@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsGroup
 
-public val ArrowsGroup.ArrowLeftUp: ImageVector
+val ArrowsGroup.ArrowLeftUp: ImageVector
     get() {
         if (_arrowLeftUp != null) {
             return _arrowLeftUp!!
         }
-        _arrowLeftUp = Builder(name = "ArrowLeftUp", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _arrowLeftUp = Builder(
+            name = "ArrowLeftUp", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.25f, 6.0f)
                 curveTo(5.25f, 5.5858f, 5.5858f, 5.25f, 6.0f, 5.25f)
                 horizontalLineTo(15.0f)
@@ -38,7 +42,7 @@ public val ArrowsGroup.ArrowLeftUp: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _arrowLeftUp!!
     }
 

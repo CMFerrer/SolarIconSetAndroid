@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
+val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
     get() {
         if (_smartphoneVibration != null) {
             return _smartphoneVibration!!
         }
-        _smartphoneVibration = Builder(name = "SmartphoneVibration", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _smartphoneVibration = Builder(
+            name = "SmartphoneVibration", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.9451f, 1.25f)
                 horizontalLineTo(13.0549f)
                 curveTo(14.4224f, 1.25f, 15.5248f, 1.25f, 16.3917f, 1.3665f)
@@ -131,7 +135,7 @@ public val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _smartphoneVibration!!
     }
 

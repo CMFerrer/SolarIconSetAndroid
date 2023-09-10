@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.DesignToolsGroup
 
-public val DesignToolsGroup.Layers: ImageVector
+val DesignToolsGroup.Layers: ImageVector
     get() {
         if (_layers != null) {
             return _layers!!
         }
-        _layers = Builder(name = "Layers", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _layers = Builder(
+            name = "Layers", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 4.75f)
                 curveTo(10.9396f, 4.75f, 10.0907f, 5.078f, 8.0658f, 5.8879f)
                 lineTo(5.2574f, 7.0113f)
@@ -135,7 +139,7 @@ public val DesignToolsGroup.Layers: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _layers!!
     }
 

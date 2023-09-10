@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.MessagesConversationGroup
 
-public val MessagesConversationGroup.ChatRound: ImageVector
+val MessagesConversationGroup.ChatRound: ImageVector
     get() {
         if (_chatRound != null) {
             return _chatRound!!
         }
-        _chatRound = Builder(name = "ChatRound", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _chatRound = Builder(
+            name = "ChatRound", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 3.3378f)
                 curveTo(15.5291f, 2.487f, 13.8214f, 2.0f, 12.0f, 2.0f)
                 curveTo(6.4771f, 2.0f, 2.0f, 6.4771f, 2.0f, 12.0f)
@@ -35,7 +39,7 @@ public val MessagesConversationGroup.ChatRound: ImageVector
                 curveTo(22.0f, 10.1786f, 21.513f, 8.4709f, 20.6622f, 7.0f)
             }
         }
-        .build()
+            .build()
         return _chatRound!!
     }
 

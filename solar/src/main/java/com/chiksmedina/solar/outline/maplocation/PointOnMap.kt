@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MapLocationGroup
 
-public val MapLocationGroup.PointOnMap: ImageVector
+val MapLocationGroup.PointOnMap: ImageVector
     get() {
         if (_pointOnMap != null) {
             return _pointOnMap!!
         }
-        _pointOnMap = Builder(name = "PointOnMap", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _pointOnMap = Builder(
+            name = "PointOnMap", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.25f, 7.7003f)
                 curveTo(5.25f, 4.1021f, 8.3088f, 1.25f, 12.0f, 1.25f)
                 curveTo(15.608f, 1.25f, 18.6116f, 3.9749f, 18.7454f, 7.4579f)
@@ -118,7 +122,7 @@ public val MapLocationGroup.PointOnMap: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _pointOnMap!!
     }
 

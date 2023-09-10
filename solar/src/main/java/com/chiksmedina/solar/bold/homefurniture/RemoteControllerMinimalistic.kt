@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,17 +12,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.RemoteControllerMinimalistic: ImageVector
+val HomeFurnitureGroup.RemoteControllerMinimalistic: ImageVector
     get() {
         if (_remoteControllerMinimalistic != null) {
             return _remoteControllerMinimalistic!!
         }
-        _remoteControllerMinimalistic = Builder(name = "RemoteControllerMinimalistic", defaultWidth
-                = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _remoteControllerMinimalistic = Builder(
+            name = "RemoteControllerMinimalistic", defaultWidth
+            = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.75f, 11.0f)
                 curveTo(9.75f, 9.7574f, 10.7574f, 8.75f, 12.0f, 8.75f)
                 curveTo(13.2426f, 8.75f, 14.25f, 9.7574f, 14.25f, 11.0f)
@@ -32,9 +34,11 @@ public val HomeFurnitureGroup.RemoteControllerMinimalistic: ImageVector
                 curveTo(10.7574f, 13.25f, 9.75f, 12.2426f, 9.75f, 11.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.6741f, 3.7777f)
                 curveTo(5.0f, 4.7866f, 5.0f, 6.1911f, 5.0f, 9.0f)
                 verticalLineTo(15.0f)
@@ -71,7 +75,7 @@ public val HomeFurnitureGroup.RemoteControllerMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _remoteControllerMinimalistic!!
     }
 

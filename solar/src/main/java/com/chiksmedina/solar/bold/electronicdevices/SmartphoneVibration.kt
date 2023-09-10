@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
+val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
     get() {
         if (_smartphoneVibration != null) {
             return _smartphoneVibration!!
         }
-        _smartphoneVibration = Builder(name = "SmartphoneVibration", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _smartphoneVibration = Builder(
+            name = "SmartphoneVibration", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.8788f, 2.8787f)
                 curveTo(5.0002f, 3.7574f, 5.0002f, 5.1716f, 5.0002f, 8.0f)
                 verticalLineTo(16.0f)
@@ -47,9 +48,11 @@ public val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
                 horizontalLineTo(9.5002f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(1.6647f, 5.3292f)
                 curveTo(2.0352f, 5.1439f, 2.4857f, 5.2941f, 2.671f, 5.6646f)
                 lineTo(3.4474f, 7.2174f)
@@ -108,7 +111,7 @@ public val ElectronicDevicesGroup.SmartphoneVibration: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _smartphoneVibration!!
     }
 

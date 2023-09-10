@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Gamepad: ImageVector
+val ElectronicDevicesGroup.Gamepad: ImageVector
     get() {
         if (_gamepad != null) {
             return _gamepad!!
         }
-        _gamepad = Builder(name = "Gamepad", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _gamepad = Builder(
+            name = "Gamepad", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.6669f, 6.1344f)
                 lineTo(10.165f, 5.7792f)
                 curveTo(9.4486f, 5.2723f, 8.5926f, 5.0f, 7.715f, 5.0f)
@@ -92,7 +96,7 @@ public val ElectronicDevicesGroup.Gamepad: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _gamepad!!
     }
 

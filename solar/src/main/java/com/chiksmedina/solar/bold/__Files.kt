@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.bold
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldGroup
+import com.chiksmedina.solar.BoldSolar
 import com.chiksmedina.solar.bold.files.CloudFile
 import com.chiksmedina.solar.bold.files.CodeFile
 import com.chiksmedina.solar.bold.files.FigmaFile
@@ -14,24 +14,39 @@ import com.chiksmedina.solar.bold.files.FileLeft
 import com.chiksmedina.solar.bold.files.FileRemove
 import com.chiksmedina.solar.bold.files.FileRight
 import com.chiksmedina.solar.bold.files.FileSend
+import com.chiksmedina.solar.bold.files.FileSmile
 import com.chiksmedina.solar.bold.files.FileText
 import com.chiksmedina.solar.bold.files.ZipFile
-import com.chiksmedina.solar.bold.files.`FileSmile)`
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object FilesGroup
+object FilesGroup
 
-public val BoldGroup.Files: FilesGroup
-  get() = FilesGroup
+val BoldSolar.Files: FilesGroup
+    get() = FilesGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val FilesGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val FilesGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            CloudFile,
+            CodeFile,
+            FigmaFile,
+            File,
+            FileCheck,
+            FileCorrupted,
+            FileDownload,
+            FileFavourite,
+            FileLeft,
+            FileRemove,
+            FileRight,
+            FileSend,
+            FileSmile,
+            FileText,
+            ZipFile
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(CloudFile, CodeFile, FigmaFile, File, FileCheck, FileCorrupted, FileDownload,
-        FileFavourite, FileLeft, FileRemove, FileRight, FileSend, `FileSmile)`, FileText, ZipFile)
-    return __AllIcons!!
-  }

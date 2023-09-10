@@ -1,10 +1,8 @@
 package com.chiksmedina.solar.broken.messagesconversation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
 import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.MessagesConversationGroup
 
-public val MessagesConversationGroup.SquareShareLine: ImageVector
+val MessagesConversationGroup.SquareShareLine: ImageVector
     get() {
         if (_squareShareLine != null) {
             return _squareShareLine!!
         }
-        _squareShareLine = Builder(name = "SquareShareLine", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _squareShareLine = Builder(
+            name = "SquareShareLine", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 7.0f)
                 horizontalLineTo(14.0f)
                 curveTo(12.1824f, 7.0f, 11.0867f, 7.892f, 10.6804f, 8.3003f)
@@ -36,9 +38,11 @@ public val MessagesConversationGroup.SquareShareLine: ImageVector
                 moveTo(22.0f, 7.0f)
                 lineTo(17.0f, 12.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.4648f, 20.5352f)
                 curveTo(4.9297f, 22.0f, 7.2873f, 22.0f, 12.0026f, 22.0f)
                 curveTo(16.7179f, 22.0f, 19.0755f, 22.0f, 20.5404f, 20.5352f)
@@ -58,7 +62,7 @@ public val MessagesConversationGroup.SquareShareLine: ImageVector
                 curveTo(4.7053f, 2.2236f, 6.5869f, 2.0341f, 10.0f, 2.0052f)
             }
         }
-        .build()
+            .build()
         return _squareShareLine!!
     }
 

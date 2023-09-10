@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.SecurityGroup
 
-public val SecurityGroup.KeySquare2: ImageVector
+val SecurityGroup.KeySquare2: ImageVector
     get() {
         if (_keySquare2 != null) {
             return _keySquare2!!
         }
-        _keySquare2 = Builder(name = "KeySquare2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _keySquare2 = Builder(
+            name = "KeySquare2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(22.0f, 6.7201f)
                 curveTo(22.0f, 9.3269f, 19.8781f, 11.4402f, 17.2606f, 11.4402f)
                 curveTo(16.7829f, 11.4402f, 15.6954f, 11.3304f, 15.1664f, 10.8913f)
@@ -51,9 +53,11 @@ public val SecurityGroup.KeySquare2: ImageVector
                 curveTo(18.1738f, 5.0735f, 18.914f, 5.8107f, 18.914f, 6.72f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.1957f, 2.001f)
                 curveTo(11.865f, 3.1408f, 11.0211f, 4.8306f, 11.0211f, 6.7201f)
                 curveTo(11.0211f, 7.4013f, 11.1482f, 7.997f, 11.2945f, 8.4591f)
@@ -85,7 +89,7 @@ public val SecurityGroup.KeySquare2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _keySquare2!!
     }
 

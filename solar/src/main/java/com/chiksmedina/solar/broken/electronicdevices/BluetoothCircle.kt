@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.BluetoothCircle: ImageVector
+val ElectronicDevicesGroup.BluetoothCircle: ImageVector
     get() {
         if (_bluetoothCircle != null) {
             return _bluetoothCircle!!
         }
-        _bluetoothCircle = Builder(name = "BluetoothCircle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _bluetoothCircle = Builder(
+            name = "BluetoothCircle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.2f, 9.5929f)
                 lineTo(11.0f, 12.0f)
                 verticalLineTo(7.6234f)
@@ -35,9 +36,11 @@ public val ElectronicDevicesGroup.BluetoothCircle: ImageVector
                 curveTo(15.0f, 8.9911f, 14.7333f, 9.1917f, 14.2f, 9.5929f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.2f, 16.1577f)
                 lineTo(12.7455f, 17.2519f)
                 curveTo(11.9838f, 17.8248f, 11.603f, 18.1112f, 11.3015f, 17.96f)
@@ -48,9 +51,11 @@ public val ElectronicDevicesGroup.BluetoothCircle: ImageVector
                 curveTo(15.0f, 15.5559f, 14.7333f, 15.7565f, 14.2f, 16.1577f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.4801f, 8.9238f)
                 curveTo(8.1619f, 8.6587f, 7.689f, 8.7016f, 7.4238f, 9.0199f)
                 curveTo(7.1587f, 9.3381f, 7.2017f, 9.811f, 7.5199f, 10.0762f)
@@ -63,9 +68,11 @@ public val ElectronicDevicesGroup.BluetoothCircle: ImageVector
                 lineTo(11.4801f, 11.4238f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.4801f, 15.0762f)
                 curveTo(8.1619f, 15.3413f, 7.689f, 15.2983f, 7.4238f, 14.9801f)
                 curveTo(7.1587f, 14.6619f, 7.2017f, 14.189f, 7.5199f, 13.9238f)
@@ -78,9 +85,11 @@ public val ElectronicDevicesGroup.BluetoothCircle: ImageVector
                 lineTo(11.4801f, 12.5762f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.0f, 3.3378f)
                 curveTo(8.4709f, 2.487f, 10.1786f, 2.0f, 12.0f, 2.0f)
                 curveTo(17.5228f, 2.0f, 22.0f, 6.4771f, 22.0f, 12.0f)
@@ -89,7 +98,7 @@ public val ElectronicDevicesGroup.BluetoothCircle: ImageVector
                 curveTo(2.0f, 10.1786f, 2.487f, 8.4709f, 3.3378f, 7.0f)
             }
         }
-        .build()
+            .build()
         return _bluetoothCircle!!
     }
 

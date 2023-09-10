@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.bold
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldGroup
+import com.chiksmedina.solar.BoldSolar
 import com.chiksmedina.solar.bold.textformatting.Backspace
 import com.chiksmedina.solar.bold.textformatting.Eraser
 import com.chiksmedina.solar.bold.textformatting.EraserCircle
@@ -35,25 +35,54 @@ import com.chiksmedina.solar.bold.textformatting.TextSquare2
 import com.chiksmedina.solar.bold.textformatting.TextUnderline
 import com.chiksmedina.solar.bold.textformatting.TextUnderlineCircle
 import com.chiksmedina.solar.bold.textformatting.TextUnderlineCross
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object TextFormattingGroup
+object TextFormattingGroup
 
-public val BoldGroup.TextFormatting: TextFormattingGroup
-  get() = TextFormattingGroup
+val BoldSolar.TextFormatting: TextFormattingGroup
+    get() = TextFormattingGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val TextFormattingGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val TextFormattingGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Backspace,
+            Eraser,
+            EraserCircle,
+            EraserSquare,
+            Link,
+            LinkBroken,
+            LinkBrokenMinimalistic,
+            LinkCircle,
+            LinkMinimalistic,
+            LinkMinimalistic2,
+            LinkRound,
+            LinkRoundAngle,
+            LinkSquare,
+            ParagraphSpacing,
+            Text,
+            TextBold,
+            TextBoldCircle,
+            TextBoldSquare,
+            TextCircle,
+            TextCross,
+            TextCrossCircle,
+            TextCrossSquare,
+            TextField,
+            TextFieldFocus,
+            TextItalic,
+            TextItalicCircle,
+            TextItalicSquare,
+            TextSelection,
+            TextSquare,
+            TextSquare2,
+            TextUnderline,
+            TextUnderlineCircle,
+            TextUnderlineCross
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Backspace, Eraser, EraserCircle, EraserSquare, Link, LinkBroken,
-        LinkBrokenMinimalistic, LinkCircle, LinkMinimalistic, LinkMinimalistic2, LinkRound,
-        LinkRoundAngle, LinkSquare, ParagraphSpacing, Text, TextBold, TextBoldCircle,
-        TextBoldSquare, TextCircle, TextCross, TextCrossCircle, TextCrossSquare, TextField,
-        TextFieldFocus, TextItalic, TextItalicCircle, TextItalicSquare, TextSelection, TextSquare,
-        TextSquare2, TextUnderline, TextUnderlineCircle, TextUnderlineCross)
-    return __AllIcons!!
-  }

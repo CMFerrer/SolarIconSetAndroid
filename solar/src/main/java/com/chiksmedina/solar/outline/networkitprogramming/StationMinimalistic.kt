@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.networkitprogramming
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.StationMinimalistic: ImageVector
+val NetworkItProgrammingGroup.StationMinimalistic: ImageVector
     get() {
         if (_stationMinimalistic != null) {
             return _stationMinimalistic!!
         }
-        _stationMinimalistic = Builder(name = "StationMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _stationMinimalistic = Builder(
+            name = "StationMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.75f, 9.0547f)
                 curveTo(5.75f, 5.5672f, 8.5537f, 2.75f, 12.0f, 2.75f)
                 curveTo(15.4463f, 2.75f, 18.25f, 5.5672f, 18.25f, 9.0547f)
@@ -40,9 +41,11 @@ public val NetworkItProgrammingGroup.StationMinimalistic: ImageVector
                 curveTo(6.4346f, 12.3382f, 5.75f, 10.7783f, 5.75f, 9.0547f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.55f, 9.0547f)
                 curveTo(8.55f, 7.1257f, 10.1001f, 5.5719f, 12.0f, 5.5719f)
                 curveTo(13.8999f, 5.5719f, 15.45f, 7.1257f, 15.45f, 9.0547f)
@@ -58,9 +61,11 @@ public val NetworkItProgrammingGroup.StationMinimalistic: ImageVector
                 curveTo(8.9225f, 10.8563f, 8.55f, 10.0006f, 8.55f, 9.0547f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.0f, 8.75f)
                 curveTo(14.0f, 9.5071f, 13.5794f, 10.1659f, 12.9591f, 10.5055f)
                 lineTo(15.206f, 17.2462f)
@@ -93,7 +98,7 @@ public val NetworkItProgrammingGroup.StationMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _stationMinimalistic!!
     }
 

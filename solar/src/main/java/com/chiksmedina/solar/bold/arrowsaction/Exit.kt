@@ -12,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ArrowsActionGroup
 
-public val ArrowsActionGroup.Exit: ImageVector
+val ArrowsActionGroup.Exit: ImageVector
     get() {
         if (_exit != null) {
             return _exit!!
         }
-        _exit = Builder(name = "Exit", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _exit = Builder(
+            name = "Exit", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.7072f, 2.4087f)
                 curveTo(9.0f, 3.0357f, 9.0f, 4.1826f, 9.0f, 6.4764f)
                 verticalLineTo(17.5236f)
@@ -45,9 +49,11 @@ public val ArrowsActionGroup.Exit: ImageVector
                 curveTo(11.25f, 10.52f, 11.5858f, 10.1686f, 12.0f, 10.1686f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.5472f, 4.5f)
                 curveTo(5.4889f, 4.503f, 4.416f, 4.5483f, 3.7322f, 5.232f)
                 curveTo(3.0f, 5.9643f, 3.0f, 7.1428f, 3.0f, 9.4998f)
@@ -60,7 +66,7 @@ public val ArrowsActionGroup.Exit: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _exit!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.security
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SecurityGroup
 
-public val SecurityGroup.ShieldUp: ImageVector
+val SecurityGroup.ShieldUp: ImageVector
     get() {
         if (_shieldUp != null) {
             return _shieldUp!!
         }
-        _shieldUp = Builder(name = "ShieldUp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _shieldUp = Builder(
+            name = "ShieldUp", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.45f, 10.95f)
                 lineTo(13.05f, 8.4f)
                 curveTo(12.4278f, 7.9333f, 11.5722f, 7.9333f, 10.95f, 8.4f)
@@ -38,9 +39,11 @@ public val SecurityGroup.ShieldUp: ImageVector
                 curveTo(16.8485f, 11.6686f, 16.7814f, 11.1985f, 16.45f, 10.95f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.45f, 13.45f)
                 lineTo(12.45f, 11.95f)
                 curveTo(12.1833f, 11.75f, 11.8167f, 11.75f, 11.55f, 11.95f)
@@ -53,9 +56,11 @@ public val SecurityGroup.ShieldUp: ImageVector
                 curveTo(14.8485f, 14.1686f, 14.7814f, 13.6985f, 14.45f, 13.45f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 1.25f)
                 curveTo(11.0625f, 1.25f, 10.1673f, 1.5566f, 8.7234f, 2.0511f)
                 lineTo(7.996f, 2.3001f)
@@ -116,7 +121,7 @@ public val SecurityGroup.ShieldUp: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _shieldUp!!
     }
 

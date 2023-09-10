@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Umbrella: ImageVector
+val EssentionalUiGroup.Umbrella: ImageVector
     get() {
         if (_umbrella != null) {
             return _umbrella!!
         }
-        _umbrella = Builder(name = "Umbrella", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _umbrella = Builder(
+            name = "Umbrella", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.5238f, 1.25f)
                 curveTo(5.8497f, 1.25f, 1.25f, 5.8497f, 1.25f, 11.5238f)
                 curveTo(1.25f, 12.201f, 1.799f, 12.75f, 2.4762f, 12.75f)
@@ -63,7 +67,7 @@ public val EssentionalUiGroup.Umbrella: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _umbrella!!
     }
 

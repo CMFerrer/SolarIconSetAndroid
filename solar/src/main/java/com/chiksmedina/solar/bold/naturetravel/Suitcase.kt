@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.NatureTravelGroup
 
-public val NatureTravelGroup.Suitcase: ImageVector
+val NatureTravelGroup.Suitcase: ImageVector
     get() {
         if (_suitcase != null) {
             return _suitcase!!
         }
-        _suitcase = Builder(name = "Suitcase", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _suitcase = Builder(
+            name = "Suitcase", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.052f, 1.25f)
                 horizontalLineTo(11.948f)
                 curveTo(11.0495f, 1.25f, 10.3003f, 1.25f, 9.7055f, 1.3299f)
@@ -72,7 +76,7 @@ public val NatureTravelGroup.Suitcase: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _suitcase!!
     }
 

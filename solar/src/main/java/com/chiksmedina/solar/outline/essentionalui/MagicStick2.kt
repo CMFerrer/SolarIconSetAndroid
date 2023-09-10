@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.MagicStick2: ImageVector
+val EssentionalUiGroup.MagicStick2: ImageVector
     get() {
         if (_magicStick2 != null) {
             return _magicStick2!!
         }
-        _magicStick2 = Builder(name = "MagicStick2", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _magicStick2 = Builder(
+            name = "MagicStick2", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.544f, 1.4983f)
                 curveTo(16.8278f, 1.0885f, 16.0621f, 1.2448f, 15.3437f, 1.5405f)
                 curveTo(14.6378f, 1.831f, 13.769f, 2.3456f, 12.7076f, 2.9742f)
@@ -115,7 +119,7 @@ public val EssentionalUiGroup.MagicStick2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _magicStick2!!
     }
 

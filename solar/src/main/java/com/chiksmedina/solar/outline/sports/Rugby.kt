@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SportsGroup
 
-public val SportsGroup.Rugby: ImageVector
+val SportsGroup.Rugby: ImageVector
     get() {
         if (_rugby != null) {
             return _rugby!!
         }
-        _rugby = Builder(name = "Rugby", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _rugby = Builder(
+            name = "Rugby", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.1665f, 2.7584f)
                 lineTo(21.2416f, 8.8335f)
                 curveTo(21.2677f, 7.8118f, 21.2303f, 6.8435f, 21.1649f, 5.9886f)
@@ -93,7 +97,7 @@ public val SportsGroup.Rugby: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _rugby!!
     }
 

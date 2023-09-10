@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.RewindBack: ImageVector
+val VideoAudioSoundGroup.RewindBack: ImageVector
     get() {
         if (_rewindBack != null) {
             return _rewindBack!!
         }
-        _rewindBack = Builder(name = "RewindBack", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _rewindBack = Builder(
+            name = "RewindBack", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.9998f, 17.5737f)
                 lineTo(21.9998f, 6.4263f)
                 curveTo(21.9998f, 4.5789f, 20.3991f, 3.4112f, 19.0966f, 4.3084f)
@@ -37,7 +41,7 @@ public val VideoAudioSoundGroup.RewindBack: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _rewindBack!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.facesemotionsstickers
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FacesEmotionsStickersGroup
 
-public val FacesEmotionsStickersGroup.ConfoundedCircle: ImageVector
+val FacesEmotionsStickersGroup.ConfoundedCircle: ImageVector
     get() {
         if (_confoundedCircle != null) {
             return _confoundedCircle!!
         }
-        _confoundedCircle = Builder(name = "ConfoundedCircle", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _confoundedCircle = Builder(
+            name = "ConfoundedCircle", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.75f)
                 curveTo(6.8914f, 2.75f, 2.75f, 6.8914f, 2.75f, 12.0f)
                 curveTo(2.75f, 17.1086f, 6.8914f, 21.25f, 12.0f, 21.25f)
@@ -37,9 +38,11 @@ public val FacesEmotionsStickersGroup.ConfoundedCircle: ImageVector
                 curveTo(6.0629f, 22.75f, 1.25f, 17.9371f, 1.25f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.4f, 8.55f)
                 curveTo(7.6485f, 8.2186f, 8.1186f, 8.1515f, 8.45f, 8.4f)
                 lineTo(10.45f, 9.9f)
@@ -53,9 +56,11 @@ public val FacesEmotionsStickersGroup.ConfoundedCircle: ImageVector
                 curveTo(7.2186f, 9.3515f, 7.1515f, 8.8814f, 7.4f, 8.55f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.6f, 8.55f)
                 curveTo(16.3515f, 8.2186f, 15.8814f, 8.1515f, 15.55f, 8.4f)
                 lineTo(13.55f, 9.9f)
@@ -69,9 +74,11 @@ public val FacesEmotionsStickersGroup.ConfoundedCircle: ImageVector
                 curveTo(16.7814f, 9.3515f, 16.8485f, 8.8814f, 16.6f, 8.55f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.5303f, 16.5303f)
                 curveTo(15.2374f, 16.8232f, 14.7626f, 16.8232f, 14.4697f, 16.5303f)
                 lineTo(14.0f, 16.0607f)
@@ -102,7 +109,7 @@ public val FacesEmotionsStickersGroup.ConfoundedCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _confoundedCircle!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SportsGroup
 
-public val SportsGroup.TreadmillRound: ImageVector
+val SportsGroup.TreadmillRound: ImageVector
     get() {
         if (_treadmillRound != null) {
             return _treadmillRound!!
         }
-        _treadmillRound = Builder(name = "TreadmillRound", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _treadmillRound = Builder(
+            name = "TreadmillRound", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.0f, 4.0f)
                 curveTo(17.0f, 5.1046f, 16.1046f, 6.0f, 15.0f, 6.0f)
                 curveTo(13.8954f, 6.0f, 13.0f, 5.1046f, 13.0f, 4.0f)
@@ -32,9 +33,11 @@ public val SportsGroup.TreadmillRound: ImageVector
                 curveTo(16.1046f, 2.0f, 17.0f, 2.8954f, 17.0f, 4.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.2583f, 5.3916f)
                 curveTo(7.9955f, 4.9309f, 8.9115f, 4.8604f, 9.7105f, 5.2028f)
                 curveTo(11.4363f, 5.9424f, 11.8694f, 8.1913f, 10.5417f, 9.519f)
@@ -67,9 +70,11 @@ public val SportsGroup.TreadmillRound: ImageVector
                 lineTo(7.2583f, 5.3916f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.1471f, 7.7354f)
                 curveTo(22.5533f, 7.6542f, 22.8167f, 7.2591f, 22.7354f, 6.8529f)
                 curveTo(22.6542f, 6.4467f, 22.2591f, 6.1833f, 21.8529f, 6.2646f)
@@ -86,9 +91,11 @@ public val SportsGroup.TreadmillRound: ImageVector
                 curveTo(20.0436f, 8.9322f, 20.9568f, 7.9735f, 22.1471f, 7.7354f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.7885f, 9.763f)
                 curveTo(11.9195f, 9.3701f, 12.3442f, 9.1577f, 12.7372f, 9.2887f)
                 curveTo(13.5569f, 9.5619f, 14.4431f, 9.5619f, 15.2628f, 9.2887f)
@@ -98,9 +105,11 @@ public val SportsGroup.TreadmillRound: ImageVector
                 curveTo(11.8699f, 10.5807f, 11.6575f, 10.156f, 11.7885f, 9.763f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.5303f, 13.4699f)
                 curveTo(7.8232f, 13.7628f, 7.8232f, 14.2376f, 7.5303f, 14.5305f)
                 curveTo(6.4292f, 15.6316f, 4.9359f, 16.2502f, 3.3787f, 16.2502f)
@@ -113,7 +122,7 @@ public val SportsGroup.TreadmillRound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _treadmillRound!!
     }
 

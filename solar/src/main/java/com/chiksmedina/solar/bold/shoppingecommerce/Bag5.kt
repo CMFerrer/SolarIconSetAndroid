@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ShoppingEcommerceGroup
 
-public val ShoppingEcommerceGroup.Bag5: ImageVector
+val ShoppingEcommerceGroup.Bag5: ImageVector
     get() {
         if (_bag5 != null) {
             return _bag5!!
         }
-        _bag5 = Builder(name = "Bag5", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bag5 = Builder(
+            name = "Bag5", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.25f, 7.0015f)
                 lineTo(8.25f, 6.0f)
                 curveTo(8.25f, 3.9289f, 9.9289f, 2.25f, 12.0f, 2.25f)
@@ -60,7 +64,7 @@ public val ShoppingEcommerceGroup.Bag5: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bag5!!
     }
 

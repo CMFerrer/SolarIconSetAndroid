@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FoodKitchenGroup
 
-public val FoodKitchenGroup.Bottle: ImageVector
+val FoodKitchenGroup.Bottle: ImageVector
     get() {
         if (_bottle != null) {
             return _bottle!!
         }
-        _bottle = Builder(name = "Bottle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bottle = Builder(
+            name = "Bottle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.8773f, 2.598f)
                 curveTo(16.8694f, 2.6123f, 16.8611f, 2.6274f, 16.8522f, 2.6434f)
                 lineTo(16.7757f, 2.7817f)
@@ -122,7 +126,7 @@ public val FoodKitchenGroup.Bottle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bottle!!
     }
 

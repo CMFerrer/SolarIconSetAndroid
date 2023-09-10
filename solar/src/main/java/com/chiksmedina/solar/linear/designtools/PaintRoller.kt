@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.DesignToolsGroup
 
-public val DesignToolsGroup.PaintRoller: ImageVector
+val DesignToolsGroup.PaintRoller: ImageVector
     get() {
         if (_paintRoller != null) {
             return _paintRoller!!
         }
-        _paintRoller = Builder(name = "PaintRoller", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _paintRoller = Builder(
+            name = "PaintRoller", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.75f, 6.799f)
                 lineTo(6.375f, 7.4486f)
                 lineTo(6.75f, 6.799f)
@@ -407,7 +411,7 @@ public val DesignToolsGroup.PaintRoller: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _paintRoller!!
     }
 

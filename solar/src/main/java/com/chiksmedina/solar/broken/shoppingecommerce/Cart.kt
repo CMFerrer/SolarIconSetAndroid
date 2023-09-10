@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.shoppingecommerce
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.ShoppingEcommerceGroup
 
-public val ShoppingEcommerceGroup.Cart: ImageVector
+val ShoppingEcommerceGroup.Cart: ImageVector
     get() {
         if (_cart != null) {
             return _cart!!
         }
-        _cart = Builder(name = "Cart", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _cart = Builder(
+            name = "Cart", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.864f, 16.4552f)
                 curveTo(4.4097f, 18.6379f, 4.6825f, 19.7292f, 5.4963f, 20.3646f)
                 curveTo(6.3101f, 21.0f, 7.435f, 21.0f, 9.6849f, 21.0f)
@@ -37,9 +38,11 @@ public val ShoppingEcommerceGroup.Cart: ImageVector
                 curveTo(6.1474f, 9.0f, 4.3787f, 9.0f, 3.4779f, 10.1538f)
                 curveTo(2.9491f, 10.831f, 2.8786f, 11.702f, 3.084f, 13.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(19.5f, 9.5f)
                 lineTo(18.7896f, 6.8946f)
                 curveTo(18.5157f, 5.89f, 18.3787f, 5.3878f, 18.0978f, 5.0095f)
@@ -51,9 +54,11 @@ public val ShoppingEcommerceGroup.Cart: ImageVector
                 curveTo(6.182f, 4.6327f, 6.5622f, 4.3423f, 6.9992f, 4.1715f)
                 curveTo(7.4381f, 4.0f, 7.9587f, 4.0f, 9.0f, 4.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.0f, 4.0f)
                 curveTo(9.0f, 3.4477f, 9.4477f, 3.0f, 10.0f, 3.0f)
                 horizontalLineTo(14.0f)
@@ -64,7 +69,7 @@ public val ShoppingEcommerceGroup.Cart: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cart!!
     }
 

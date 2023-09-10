@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.businessstatistic
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.BusinessStatisticGroup
 
-public val BusinessStatisticGroup.Chart2: ImageVector
+val BusinessStatisticGroup.Chart2: ImageVector
     get() {
         if (_chart2 != null) {
             return _chart2!!
         }
-        _chart2 = Builder(name = "Chart2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _chart2 = Builder(
+            name = "Chart2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.2929f, 2.2929f)
                 curveTo(17.0f, 2.5858f, 17.0f, 3.0572f, 17.0f, 4.0f)
                 verticalLineTo(17.0f)
@@ -37,9 +38,11 @@ public val BusinessStatisticGroup.Chart2: ImageVector
                 curveTo(18.0572f, 2.0f, 17.5858f, 2.0f, 17.2929f, 2.2929f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 7.0f)
                 curveTo(10.0f, 6.0572f, 10.0f, 5.5858f, 10.2929f, 5.2929f)
                 curveTo(10.5858f, 5.0f, 11.0572f, 5.0f, 12.0f, 5.0f)
@@ -53,9 +56,11 @@ public val BusinessStatisticGroup.Chart2: ImageVector
                 verticalLineTo(7.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.2929f, 9.2929f)
                 curveTo(3.0f, 9.5858f, 3.0f, 10.0572f, 3.0f, 11.0f)
                 verticalLineTo(17.0f)
@@ -69,9 +74,11 @@ public val BusinessStatisticGroup.Chart2: ImageVector
                 curveTo(4.0572f, 9.0f, 3.5858f, 9.0f, 3.2929f, 9.2929f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.0f, 21.25f)
                 curveTo(2.5858f, 21.25f, 2.25f, 21.5858f, 2.25f, 22.0f)
                 curveTo(2.25f, 22.4142f, 2.5858f, 22.75f, 3.0f, 22.75f)
@@ -82,7 +89,7 @@ public val BusinessStatisticGroup.Chart2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chart2!!
     }
 

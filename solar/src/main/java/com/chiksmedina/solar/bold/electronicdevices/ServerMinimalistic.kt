@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.ServerMinimalistic: ImageVector
+val ElectronicDevicesGroup.ServerMinimalistic: ImageVector
     get() {
         if (_serverMinimalistic != null) {
             return _serverMinimalistic!!
         }
-        _serverMinimalistic = Builder(name = "ServerMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _serverMinimalistic = Builder(
+            name = "ServerMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.5155f, 15.7248f)
                 curveTo(3.787f, 15.7062f, 4.1339f, 15.7059f, 4.6316f, 15.7059f)
                 horizontalLineTo(19.3684f)
@@ -55,9 +56,11 @@ public val ElectronicDevicesGroup.ServerMinimalistic: ImageVector
                 curveTo(3.5789f, 18.9377f, 4.0502f, 19.4118f, 4.6316f, 19.4118f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.6316f, 8.2941f)
                 curveTo(4.1339f, 8.2941f, 3.787f, 8.2938f, 3.5155f, 8.2752f)
                 curveTo(3.2487f, 8.2569f, 3.0933f, 8.2226f, 2.9747f, 8.1732f)
@@ -120,7 +123,7 @@ public val ElectronicDevicesGroup.ServerMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _serverMinimalistic!!
     }
 

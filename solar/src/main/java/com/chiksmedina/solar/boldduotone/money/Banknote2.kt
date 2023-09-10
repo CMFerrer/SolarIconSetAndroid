@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.money
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MoneyGroup
 
-public val MoneyGroup.Banknote2: ImageVector
+val MoneyGroup.Banknote2: ImageVector
     get() {
         if (_banknote2 != null) {
             return _banknote2!!
         }
-        _banknote2 = Builder(name = "Banknote2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _banknote2 = Builder(
+            name = "Banknote2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.5057f, 10.7144f)
                 curveTo(8.5057f, 9.7939f, 9.2609f, 9.0477f, 10.1924f, 9.0477f)
                 curveTo(11.124f, 9.0477f, 11.8792f, 9.7939f, 11.8792f, 10.7144f)
@@ -32,9 +33,11 @@ public val MoneyGroup.Banknote2: ImageVector
                 curveTo(9.2609f, 12.3811f, 8.5057f, 11.6349f, 8.5057f, 10.7144f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 10.7143f)
                 curveTo(2.0f, 8.0206f, 2.0f, 6.6737f, 2.8469f, 5.8368f)
                 curveTo(3.6938f, 5.0f, 5.0569f, 5.0f, 7.783f, 5.0f)
@@ -70,9 +73,11 @@ public val MoneyGroup.Banknote2: ImageVector
                 curveTo(16.2164f, 13.0137f, 15.8928f, 13.3335f, 15.4936f, 13.3335f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.0652f, 16.225f)
                 curveTo(4.0782f, 16.3759f, 4.0939f, 16.5205f, 4.1127f, 16.6587f)
                 curveTo(4.2293f, 17.516f, 4.4789f, 18.2378f, 5.059f, 18.811f)
@@ -98,7 +103,7 @@ public val MoneyGroup.Banknote2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _banknote2!!
     }
 

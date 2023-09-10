@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.EssentionalUiGroup
 
-public val EssentionalUiGroup.Bolt: ImageVector
+val EssentionalUiGroup.Bolt: ImageVector
     get() {
         if (_bolt != null) {
             return _bolt!!
         }
-        _bolt = Builder(name = "Bolt", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _bolt = Builder(
+            name = "Bolt", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.2683f, 18.2287f)
                 curveTo(13.2889f, 20.9067f, 12.2992f, 22.2458f, 11.3758f, 21.9628f)
                 curveTo(10.4525f, 21.6798f, 10.4525f, 20.0375f, 10.4525f, 16.7528f)
@@ -43,7 +47,7 @@ public val EssentionalUiGroup.Bolt: ImageVector
                 curveTo(20.2576f, 11.4784f, 19.6152f, 12.3475f, 18.3304f, 14.0857f)
             }
         }
-        .build()
+            .build()
         return _bolt!!
     }
 

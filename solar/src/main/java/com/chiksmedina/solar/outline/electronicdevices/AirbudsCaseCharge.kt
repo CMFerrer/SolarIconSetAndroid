@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.AirbudsCaseCharge: ImageVector
+val ElectronicDevicesGroup.AirbudsCaseCharge: ImageVector
     get() {
         if (_airbudsCaseCharge != null) {
             return _airbudsCaseCharge!!
         }
-        _airbudsCaseCharge = Builder(name = "AirbudsCaseCharge", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _airbudsCaseCharge = Builder(
+            name = "AirbudsCaseCharge", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9548f, 1.25f)
                 horizontalLineTo(12.0452f)
                 curveTo(13.8818f, 1.25f, 15.3214f, 1.25f, 16.4635f, 1.3737f)
@@ -97,7 +101,7 @@ public val ElectronicDevicesGroup.AirbudsCaseCharge: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _airbudsCaseCharge!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FilesGroup
 
-public val FilesGroup.ZipFile: ImageVector
+val FilesGroup.ZipFile: ImageVector
     get() {
         if (_zipFile != null) {
             return _zipFile!!
         }
-        _zipFile = Builder(name = "ZipFile", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _zipFile = Builder(
+            name = "ZipFile", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.4656f, 1.25f)
                 curveTo(10.4771f, 1.25f, 10.4886f, 1.25f, 10.5f, 1.25f)
                 horizontalLineTo(10.8307f)
@@ -239,7 +243,7 @@ public val FilesGroup.ZipFile: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _zipFile!!
     }
 

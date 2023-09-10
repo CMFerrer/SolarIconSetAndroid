@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.lineduotone.school
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,25 +12,31 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.SchoolGroup
 
-public val SchoolGroup.Case: ImageVector
+val SchoolGroup.Case: ImageVector
     get() {
         if (_case != null) {
             return _case!!
         }
-        _case = Builder(name = "Case", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _case = Builder(
+            name = "Case", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.0f, 12.0f)
                 curveTo(3.0f, 15.7712f, 3.0f, 19.6569f, 4.318f, 20.8284f)
                 curveTo(5.636f, 22.0f, 7.7574f, 22.0f, 12.0f, 22.0f)
                 curveTo(16.2426f, 22.0f, 18.364f, 22.0f, 19.682f, 20.8284f)
                 curveTo(21.0f, 19.6569f, 21.0f, 15.7712f, 21.0f, 12.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.6603f, 14.2019f)
                 lineTo(20.6676f, 12.3997f)
                 curveTo(21.2631f, 12.2211f, 21.5609f, 12.1317f, 21.7498f, 11.9176f)
@@ -51,9 +54,11 @@ public val SchoolGroup.Case: ImageVector
                 curveTo(2.4392f, 12.1317f, 2.7369f, 12.2211f, 3.3324f, 12.3997f)
                 lineTo(9.3397f, 14.2019f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.5f, 5.0f)
                 curveTo(7.3234f, 4.9791f, 8.1593f, 4.4549f, 8.4394f, 3.6803f)
                 curveTo(8.4481f, 3.6565f, 8.4569f, 3.63f, 8.4746f, 3.577f)
@@ -69,9 +74,11 @@ public val SchoolGroup.Case: ImageVector
                 curveTo(15.5435f, 3.6297f, 15.5524f, 3.6566f, 15.561f, 3.6803f)
                 curveTo(15.8412f, 4.4549f, 16.6766f, 4.9791f, 17.5f, 5.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.0f, 12.5f)
                 horizontalLineTo(10.0f)
                 curveTo(9.7239f, 12.5f, 9.5f, 12.7239f, 9.5f, 13.0f)
@@ -86,7 +93,7 @@ public val SchoolGroup.Case: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _case!!
     }
 

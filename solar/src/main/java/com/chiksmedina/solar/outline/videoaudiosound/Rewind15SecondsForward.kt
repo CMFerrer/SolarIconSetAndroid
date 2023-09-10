@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Rewind15SecondsForward: ImageVector
+val VideoAudioSoundGroup.Rewind15SecondsForward: ImageVector
     get() {
         if (_rewind15SecondsForward != null) {
             return _rewind15SecondsForward!!
         }
-        _rewind15SecondsForward = Builder(name = "Rewind15SecondsForward", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _rewind15SecondsForward = Builder(
+            name = "Rewind15SecondsForward", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(1.25f, 12.0f)
                 curveTo(1.25f, 6.0629f, 6.0629f, 1.25f, 12.0f, 1.25f)
                 curveTo(12.2883f, 1.25f, 12.5511f, 1.4153f, 12.676f, 1.6751f)
@@ -76,7 +80,7 @@ public val VideoAudioSoundGroup.Rewind15SecondsForward: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _rewind15SecondsForward!!
     }
 

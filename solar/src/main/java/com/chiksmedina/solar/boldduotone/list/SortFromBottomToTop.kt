@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.list
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ListGroup
 
-public val ListGroup.SortFromBottomToTop: ImageVector
+val ListGroup.SortFromBottomToTop: ImageVector
     get() {
         if (_sortFromBottomToTop != null) {
             return _sortFromBottomToTop!!
         }
-        _sortFromBottomToTop = Builder(name = "SortFromBottomToTop", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sortFromBottomToTop = Builder(
+            name = "SortFromBottomToTop", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.0f, 20.75f)
                 curveTo(17.4142f, 20.75f, 17.75f, 20.4143f, 17.75f, 20.0f)
                 verticalLineTo(6.2501f)
@@ -38,9 +39,11 @@ public val ListGroup.SortFromBottomToTop: ImageVector
                 curveTo(16.25f, 20.4143f, 16.5858f, 20.75f, 17.0f, 20.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(3.25f, 8.0f)
                 curveTo(3.25f, 8.4142f, 3.5858f, 8.75f, 4.0f, 8.75f)
                 horizontalLineTo(13.0f)
@@ -50,9 +53,11 @@ public val ListGroup.SortFromBottomToTop: ImageVector
                 curveTo(3.5858f, 7.25f, 3.25f, 7.5858f, 3.25f, 8.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.7f, strokeAlpha
-                    = 0.7f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.7f, strokeAlpha
+                = 0.7f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.25f, 13.0f)
                 curveTo(5.25f, 13.4142f, 5.5858f, 13.75f, 6.0f, 13.75f)
                 horizontalLineTo(13.0f)
@@ -62,9 +67,11 @@ public val ListGroup.SortFromBottomToTop: ImageVector
                 curveTo(5.5858f, 12.25f, 5.25f, 12.5858f, 5.25f, 13.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
-                    = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.4f, strokeAlpha
+                = 0.4f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(7.25f, 18.0f)
                 curveTo(7.25f, 18.4142f, 7.5858f, 18.75f, 8.0f, 18.75f)
                 horizontalLineTo(13.0f)
@@ -75,7 +82,7 @@ public val ListGroup.SortFromBottomToTop: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sortFromBottomToTop!!
     }
 

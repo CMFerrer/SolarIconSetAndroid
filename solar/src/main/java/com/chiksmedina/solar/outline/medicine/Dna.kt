@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MedicineGroup
 
-public val MedicineGroup.Dna: ImageVector
+val MedicineGroup.Dna: ImageVector
     get() {
         if (_dna != null) {
             return _dna!!
         }
-        _dna = Builder(name = "Dna", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _dna = Builder(
+            name = "Dna", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
+            = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(15.0303f, 1.4697f)
                 curveTo(15.3232f, 1.7626f, 15.3232f, 2.2374f, 15.0303f, 2.5303f)
                 curveTo(14.6145f, 2.9461f, 14.2408f, 3.3883f, 13.9105f, 3.8498f)
@@ -77,7 +81,7 @@ public val MedicineGroup.Dna: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _dna!!
     }
 

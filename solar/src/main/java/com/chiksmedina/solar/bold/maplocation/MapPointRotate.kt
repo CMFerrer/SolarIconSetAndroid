@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.maplocation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MapLocationGroup
 
-public val MapLocationGroup.MapPointRotate: ImageVector
+val MapLocationGroup.MapPointRotate: ImageVector
     get() {
         if (_mapPointRotate != null) {
             return _mapPointRotate!!
         }
-        _mapPointRotate = Builder(name = "MapPointRotate", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _mapPointRotate = Builder(
+            name = "MapPointRotate", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.0f, 8.1075f)
                 curveTo(6.0f, 4.7344f, 8.6863f, 2.0f, 12.0f, 2.0f)
                 curveTo(15.3137f, 2.0f, 18.0f, 4.7344f, 18.0f, 8.1075f)
@@ -38,9 +39,11 @@ public val MapLocationGroup.MapPointRotate: ImageVector
                 curveTo(10.0f, 9.1046f, 10.8954f, 10.0f, 12.0f, 10.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.6273f, 14.5343f)
                 curveTo(3.8846f, 14.8589f, 3.8299f, 15.3306f, 3.5052f, 15.5879f)
                 curveTo(2.9316f, 16.0424f, 2.75f, 16.443f, 2.75f, 16.75f)
@@ -77,7 +80,7 @@ public val MapLocationGroup.MapPointRotate: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _mapPointRotate!!
     }
 

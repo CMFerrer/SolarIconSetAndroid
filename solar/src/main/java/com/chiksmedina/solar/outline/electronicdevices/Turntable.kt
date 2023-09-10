@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Turntable: ImageVector
+val ElectronicDevicesGroup.Turntable: ImageVector
     get() {
         if (_turntable != null) {
             return _turntable!!
         }
-        _turntable = Builder(name = "Turntable", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _turntable = Builder(
+            name = "Turntable", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9316f, 1.25f)
                 horizontalLineTo(14.0684f)
                 curveTo(15.8959f, 1.25f, 17.3621f, 1.25f, 18.5134f, 1.4434f)
@@ -97,7 +101,7 @@ public val ElectronicDevicesGroup.Turntable: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _turntable!!
     }
 

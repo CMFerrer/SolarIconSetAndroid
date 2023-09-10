@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.bold
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldGroup
+import com.chiksmedina.solar.BoldSolar
 import com.chiksmedina.solar.bold.foodkitchen.Bottle
 import com.chiksmedina.solar.bold.foodkitchen.ChefHat
 import com.chiksmedina.solar.bold.foodkitchen.ChefHatHeart
@@ -20,22 +20,39 @@ import com.chiksmedina.solar.bold.foodkitchen.TeaCup
 import com.chiksmedina.solar.bold.foodkitchen.Whisk
 import com.chiksmedina.solar.bold.foodkitchen.Wineglass
 import com.chiksmedina.solar.bold.foodkitchen.WineglassTriangle
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object FoodKitchenGroup
+object FoodKitchenGroup
 
-public val BoldGroup.FoodKitchen: FoodKitchenGroup
-  get() = FoodKitchenGroup
+val BoldSolar.FoodKitchen: FoodKitchenGroup
+    get() = FoodKitchenGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val FoodKitchenGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val FoodKitchenGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Bottle,
+            ChefHat,
+            ChefHatHeart,
+            ChefHatMinimalistic,
+            Corkscrew,
+            Cup,
+            CupHot,
+            CupPaper,
+            Donut,
+            DonutBitten,
+            Ladle,
+            OvenMitts,
+            OvenMittsMinimalistic,
+            RollingPin,
+            TeaCup,
+            Whisk,
+            Wineglass,
+            WineglassTriangle
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Bottle, ChefHat, ChefHatHeart, ChefHatMinimalistic, Corkscrew, Cup, CupHot,
-        CupPaper, Donut, DonutBitten, Ladle, OvenMitts, OvenMittsMinimalistic, RollingPin, TeaCup,
-        Whisk, Wineglass, WineglassTriangle)
-    return __AllIcons!!
-  }

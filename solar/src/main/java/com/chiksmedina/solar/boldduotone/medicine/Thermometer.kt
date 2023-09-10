@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.medicine
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.MedicineGroup
 
-public val MedicineGroup.Thermometer: ImageVector
+val MedicineGroup.Thermometer: ImageVector
     get() {
         if (_thermometer != null) {
             return _thermometer!!
         }
-        _thermometer = Builder(name = "Thermometer", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _thermometer = Builder(
+            name = "Thermometer", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.9623f, 20.1739f)
                 lineTo(5.5787f, 20.5576f)
                 curveTo(4.9887f, 21.1475f, 4.0323f, 21.1475f, 3.4424f, 20.5576f)
@@ -42,9 +43,11 @@ public val MedicineGroup.Thermometer: ImageVector
                 curveTo(7.0008f, 19.5288f, 6.3949f, 19.7413f, 5.9623f, 20.1739f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.5176f, 17.1791f)
                 lineTo(11.4569f, 18.2397f)
                 curveTo(11.4569f, 18.2398f, 11.4569f, 18.2397f, 11.4569f, 18.2397f)
@@ -55,9 +58,11 @@ public val MedicineGroup.Thermometer: ImageVector
                 curveTo(12.5175f, 17.179f, 12.5176f, 17.1791f, 12.5176f, 17.1791f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.7268f, 13.9698f)
                 lineTo(14.6662f, 15.0305f)
                 curveTo(14.6662f, 15.0305f, 14.6661f, 15.0304f, 14.6662f, 15.0305f)
@@ -68,9 +73,11 @@ public val MedicineGroup.Thermometer: ImageVector
                 curveTo(15.7268f, 13.9698f, 15.7269f, 13.9698f, 15.7268f, 13.9698f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.9262f, 10.7704f)
                 lineTo(17.8656f, 11.831f)
                 curveTo(17.8656f, 11.8311f, 17.8655f, 11.831f, 17.8656f, 11.831f)
@@ -81,9 +88,11 @@ public val MedicineGroup.Thermometer: ImageVector
                 curveTo(18.9262f, 10.7703f, 18.9263f, 10.7704f, 18.9262f, 10.7704f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.0303f, 7.9697f)
                 curveTo(16.3232f, 8.2626f, 16.3232f, 8.7374f, 16.0303f, 9.0303f)
                 lineTo(9.5303f, 15.5303f)
@@ -94,7 +103,7 @@ public val MedicineGroup.Thermometer: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _thermometer!!
     }
 

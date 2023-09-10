@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.SliderVertical: ImageVector
+val EssentionalUiGroup.SliderVertical: ImageVector
     get() {
         if (_sliderVertical != null) {
             return _sliderVertical!!
         }
-        _sliderVertical = Builder(name = "SliderVertical", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sliderVertical = Builder(
+            name = "SliderVertical", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9451f, 1.25f)
                 horizontalLineTo(12.0549f)
                 curveTo(13.4225f, 1.25f, 14.5248f, 1.25f, 15.3918f, 1.3665f)
@@ -113,7 +117,7 @@ public val EssentionalUiGroup.SliderVertical: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sliderVertical!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.school
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,17 +11,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SchoolGroup
 
-public val SchoolGroup.BookBookmarkMinimalistic: ImageVector
+val SchoolGroup.BookBookmarkMinimalistic: ImageVector
     get() {
         if (_bookBookmarkMinimalistic != null) {
             return _bookBookmarkMinimalistic!!
         }
-        _bookBookmarkMinimalistic = Builder(name = "BookBookmarkMinimalistic", defaultWidth =
-                24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bookBookmarkMinimalistic = Builder(
+            name = "BookBookmarkMinimalistic", defaultWidth =
+            24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.3103f, 16.2303f)
                 curveTo(7.3221f, 16.2303f, 7.3338f, 16.2303f, 7.3456f, 16.2303f)
                 lineTo(20.0f, 16.2303f)
@@ -38,9 +39,11 @@ public val SchoolGroup.BookBookmarkMinimalistic: ImageVector
                 verticalLineTo(16.2303f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.6552f, 2.2396f)
                 curveTo(5.2225f, 2.3586f, 4.9438f, 2.5269f, 4.7272f, 2.7504f)
                 curveTo(4.4218f, 3.0655f, 4.2227f, 3.5079f, 4.1138f, 4.3432f)
@@ -51,9 +54,11 @@ public val SchoolGroup.BookBookmarkMinimalistic: ImageVector
                 verticalLineTo(2.2396f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.271f, 2.1148f)
                 curveTo(5.4613f, 2.2246f, 5.0326f, 2.4253f, 4.7272f, 2.7333f)
                 curveTo(4.4218f, 3.0413f, 4.2227f, 3.4737f, 4.1138f, 4.2902f)
@@ -84,9 +89,11 @@ public val SchoolGroup.BookBookmarkMinimalistic: ImageVector
                 curveTo(8.2092f, 2.0f, 7.1045f, 2.0018f, 6.271f, 2.1148f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.0f, 18.0f)
                 horizontalLineTo(7.426f)
                 curveTo(6.3424f, 18.0f, 5.9635f, 18.0057f, 5.6732f, 18.0681f)
@@ -116,7 +123,7 @@ public val SchoolGroup.BookBookmarkMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bookBookmarkMinimalistic!!
     }
 

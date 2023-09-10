@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartSpeaker: ImageVector
+val ElectronicDevicesGroup.SmartSpeaker: ImageVector
     get() {
         if (_smartSpeaker != null) {
             return _smartSpeaker!!
         }
-        _smartSpeaker = Builder(name = "SmartSpeaker", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _smartSpeaker = Builder(
+            name = "SmartSpeaker", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.4073f, 3.1584f)
                 curveTo(13.4943f, 2.6139f, 10.5052f, 2.6139f, 7.5922f, 3.1584f)
                 lineTo(7.3772f, 3.1986f)
@@ -100,7 +104,7 @@ public val ElectronicDevicesGroup.SmartSpeaker: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _smartSpeaker!!
     }
 

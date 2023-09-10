@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.CallGroup
 
-public val CallGroup.EndCall: ImageVector
+val CallGroup.EndCall: ImageVector
     get() {
         if (_endCall != null) {
             return _endCall!!
         }
-        _endCall = Builder(name = "EndCall", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _endCall = Builder(
+            name = "EndCall", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.0f, 12.8618f)
                 lineTo(7.25f, 12.8618f)
                 lineTo(7.25f, 12.8618f)
@@ -224,7 +228,7 @@ public val CallGroup.EndCall: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _endCall!!
     }
 

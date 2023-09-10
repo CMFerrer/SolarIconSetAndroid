@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.AstronomyGroup
 
-public val AstronomyGroup.Ufo3: ImageVector
+val AstronomyGroup.Ufo3: ImageVector
     get() {
         if (_ufo3 != null) {
             return _ufo3!!
         }
-        _ufo3 = Builder(name = "Ufo3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _ufo3 = Builder(
+            name = "Ufo3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.8265f, 4.5033f)
                 curveTo(8.6217f, 3.3784f, 6.7068f, 3.1509f, 5.7587f, 4.099f)
                 curveTo(4.1288f, 5.7289f, 5.9733f, 10.216f, 9.8785f, 14.1213f)
@@ -54,9 +55,11 @@ public val AstronomyGroup.Ufo3: ImageVector
                 curveTo(17.3403f, 14.5117f, 17.3403f, 15.1449f, 16.9498f, 15.5354f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.302f, 4.7896f)
                 curveTo(14.1299f, 3.6326f, 16.5783f, 3.8509f, 18.172f, 5.4446f)
                 lineTo(18.5556f, 5.8282f)
@@ -67,9 +70,11 @@ public val AstronomyGroup.Ufo3: ImageVector
                 curveTo(12.2994f, 4.8659f, 12.2982f, 4.8273f, 12.302f, 4.7896f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(4.8014f, 11.7688f)
                 curveTo(5.0642f, 11.4486f, 5.0177f, 10.976f, 4.6975f, 10.7132f)
                 curveTo(4.3773f, 10.4505f, 3.9047f, 10.497f, 3.6419f, 10.8172f)
@@ -79,9 +84,11 @@ public val AstronomyGroup.Ufo3: ImageVector
                 lineTo(4.8014f, 11.7688f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.2876f, 16.7731f)
                 curveTo(8.5805f, 16.4802f, 8.5805f, 16.0053f, 8.2876f, 15.7124f)
                 curveTo(7.9947f, 15.4195f, 7.5198f, 15.4195f, 7.2269f, 15.7124f)
@@ -91,9 +98,11 @@ public val AstronomyGroup.Ufo3: ImageVector
                 lineTo(8.2876f, 16.7731f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.2868f, 19.3025f)
                 curveTo(13.5495f, 19.6227f, 13.5029f, 20.0953f, 13.1827f, 20.3581f)
                 lineTo(10.4755f, 22.5795f)
@@ -104,7 +113,7 @@ public val AstronomyGroup.Ufo3: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ufo3!!
     }
 

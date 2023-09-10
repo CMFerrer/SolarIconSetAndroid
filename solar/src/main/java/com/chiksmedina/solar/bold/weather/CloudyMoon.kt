@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.weather
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.WeatherGroup
 
-public val WeatherGroup.CloudyMoon: ImageVector
+val WeatherGroup.CloudyMoon: ImageVector
     get() {
         if (_cloudyMoon != null) {
             return _cloudyMoon!!
         }
-        _cloudyMoon = Builder(name = "CloudyMoon", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _cloudyMoon = Builder(
+            name = "CloudyMoon", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.2857f, 22.0f)
                 curveTo(13.3371f, 22.0f, 15.0f, 20.4198f, 15.0f, 18.4706f)
                 curveTo(15.0f, 16.9257f, 13.9554f, 15.6126f, 12.5008f, 15.1344f)
@@ -36,9 +37,11 @@ public val WeatherGroup.CloudyMoon: ImageVector
                 horizontalLineTo(11.2857f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.716f, 15.7231f)
                 curveTo(2.994f, 15.5747f, 3.2896f, 15.4555f, 3.5978f, 15.3691f)
                 curveTo(3.6861f, 12.5991f, 6.0557f, 10.5f, 8.8095f, 10.5f)
@@ -50,9 +53,11 @@ public val WeatherGroup.CloudyMoon: ImageVector
                 curveTo(2.0f, 13.3159f, 2.2541f, 14.5724f, 2.716f, 15.7231f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 12.0f)
                 curveTo(22.0f, 16.2658f, 19.3289f, 19.9078f, 15.5681f, 21.3447f)
                 curveTo(16.1527f, 20.5383f, 16.5f, 19.5527f, 16.5f, 18.4706f)
@@ -63,7 +68,7 @@ public val WeatherGroup.CloudyMoon: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cloudyMoon!!
     }
 

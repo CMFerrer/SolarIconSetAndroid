@@ -1,10 +1,8 @@
 package com.chiksmedina.solar.broken.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
 import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.CameraRotate: ImageVector
+val VideoAudioSoundGroup.CameraRotate: ImageVector
     get() {
         if (_cameraRotate != null) {
             return _cameraRotate!!
         }
-        _cameraRotate = Builder(name = "CameraRotate", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _cameraRotate = Builder(
+            name = "CameraRotate", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.5197f, 10.6799f)
                 lineTo(14.2397f, 10.4f)
                 curveTo(13.0026f, 9.1629f, 10.9969f, 9.1629f, 9.7598f, 10.4f)
@@ -35,9 +37,11 @@ public val VideoAudioSoundGroup.CameraRotate: ImageVector
                 moveTo(14.5197f, 10.6799f)
                 verticalLineTo(9.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 13.3636f)
                 curveTo(2.0f, 10.2994f, 2.0f, 8.7672f, 2.749f, 7.6666f)
                 curveTo(3.0733f, 7.1901f, 3.4899f, 6.781f, 3.9752f, 6.4627f)
@@ -59,7 +63,7 @@ public val VideoAudioSoundGroup.CameraRotate: ImageVector
                 curveTo(2.5375f, 18.7498f, 2.3857f, 18.4045f, 2.2767f, 18.0f)
             }
         }
-        .build()
+            .build()
         return _cameraRotate!!
     }
 

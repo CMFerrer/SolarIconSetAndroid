@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.maplocation
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.MapLocationGroup
 
-public val MapLocationGroup.MapPointSchool: ImageVector
+val MapLocationGroup.MapPointSchool: ImageVector
     get() {
         if (_mapPointSchool != null) {
             return _mapPointSchool!!
         }
-        _mapPointSchool = Builder(name = "MapPointSchool", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _mapPointSchool = Builder(
+            name = "MapPointSchool", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.224f, 6.6363f)
                 curveTo(11.7213f, 6.4546f, 12.2787f, 6.4546f, 12.776f, 6.6363f)
                 lineTo(15.1179f, 7.4918f)
@@ -36,9 +37,11 @@ public val MapLocationGroup.MapPointSchool: ImageVector
                 lineTo(11.224f, 6.6363f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(14.5f, 9.0f)
                 verticalLineTo(11.7002f)
                 curveTo(14.5f, 12.0891f, 14.2746f, 12.4439f, 13.9097f, 12.5785f)
@@ -47,9 +50,11 @@ public val MapLocationGroup.MapPointSchool: ImageVector
                 curveTo(9.7254f, 12.4439f, 9.5f, 12.0891f, 9.5f, 11.7002f)
                 verticalLineTo(9.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 15.2161f)
                 curveTo(4.3525f, 13.5622f, 4.0f, 11.8013f, 4.0f, 10.1433f)
                 curveTo(4.0f, 5.6459f, 7.5817f, 2.0f, 12.0f, 2.0f)
@@ -59,7 +64,7 @@ public val MapLocationGroup.MapPointSchool: ImageVector
                 curveTo(9.2647f, 21.0797f, 8.1383f, 20.1439f, 7.1944f, 19.0f)
             }
         }
-        .build()
+            .build()
         return _mapPointSchool!!
     }
 

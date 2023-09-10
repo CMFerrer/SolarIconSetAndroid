@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SportsGroup
 
-public val SportsGroup.Ranking: ImageVector
+val SportsGroup.Ranking: ImageVector
     get() {
         if (_ranking != null) {
             return _ranking!!
         }
-        _ranking = Builder(name = "Ranking", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _ranking = Builder(
+            name = "Ranking", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 3.0345f)
                 curveTo(11.9419f, 3.1351f, 11.8772f, 3.251f, 11.801f, 3.3877f)
                 lineTo(11.7027f, 3.564f)
@@ -187,7 +191,7 @@ public val SportsGroup.Ranking: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ranking!!
     }
 

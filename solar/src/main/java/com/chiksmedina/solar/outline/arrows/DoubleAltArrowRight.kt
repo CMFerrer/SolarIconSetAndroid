@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsGroup
 
-public val ArrowsGroup.DoubleAltArrowRight: ImageVector
+val ArrowsGroup.DoubleAltArrowRight: ImageVector
     get() {
         if (_doubleAltArrowRight != null) {
             return _doubleAltArrowRight!!
         }
-        _doubleAltArrowRight = Builder(name = "DoubleAltArrowRight", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _doubleAltArrowRight = Builder(
+            name = "DoubleAltArrowRight", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.5117f, 4.4306f)
                 curveTo(6.8262f, 4.161f, 7.2997f, 4.1974f, 7.5693f, 4.5119f)
                 lineTo(13.5693f, 11.5119f)
@@ -45,7 +49,7 @@ public val ArrowsGroup.DoubleAltArrowRight: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _doubleAltArrowRight!!
     }
 

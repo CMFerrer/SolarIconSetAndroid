@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MedicineGroup
 
-public val MedicineGroup.Health: ImageVector
+val MedicineGroup.Health: ImageVector
     get() {
         if (_health != null) {
             return _health!!
         }
-        _health = Builder(name = "Health", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _health = Builder(
+            name = "Health", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.9617f, 18.4687f)
                 curveTo(6.0194f, 16.2137f, 2.0f, 12.4886f, 2.0f, 8.9665f)
                 curveTo(2.0f, 3.0826f, 7.5002f, 0.8859f, 12.0f, 5.4311f)
@@ -49,7 +53,7 @@ public val MedicineGroup.Health: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _health!!
     }
 

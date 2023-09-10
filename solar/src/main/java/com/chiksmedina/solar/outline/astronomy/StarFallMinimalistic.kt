@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.AstronomyGroup
 
-public val AstronomyGroup.StarFallMinimalistic: ImageVector
+val AstronomyGroup.StarFallMinimalistic: ImageVector
     get() {
         if (_starFallMinimalistic != null) {
             return _starFallMinimalistic!!
         }
-        _starFallMinimalistic = Builder(name = "StarFallMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _starFallMinimalistic = Builder(
+            name = "StarFallMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.9697f, 1.9697f)
                 curveTo(9.2626f, 1.6768f, 9.7374f, 1.6768f, 10.0303f, 1.9697f)
                 lineTo(12.0303f, 3.9697f)
@@ -172,7 +176,7 @@ public val AstronomyGroup.StarFallMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _starFallMinimalistic!!
     }
 

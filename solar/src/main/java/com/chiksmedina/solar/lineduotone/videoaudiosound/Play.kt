@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Play: ImageVector
+val VideoAudioSoundGroup.Play: ImageVector
     get() {
         if (_play != null) {
             return _play!!
         }
-        _play = Builder(name = "Play", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _play = Builder(
+            name = "Play", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.4086f, 9.3526f)
                 curveTo(22.5305f, 10.5065f, 22.5305f, 13.4935f, 20.4086f, 14.6474f)
                 lineTo(7.5966f, 21.6145f)
@@ -31,7 +35,7 @@ public val VideoAudioSoundGroup.Play: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _play!!
     }
 

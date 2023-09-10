@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.shoppingecommerce
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ShoppingEcommerceGroup
 
-public val ShoppingEcommerceGroup.BagMusic: ImageVector
+val ShoppingEcommerceGroup.BagMusic: ImageVector
     get() {
         if (_bagMusic != null) {
             return _bagMusic!!
         }
-        _bagMusic = Builder(name = "BagMusic", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bagMusic = Builder(
+            name = "BagMusic", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.8684f, 10.4115f)
                 curveTo(14.9382f, 10.381f, 14.9705f, 10.3713f, 14.9785f, 10.3689f)
                 curveTo(15.0884f, 10.3594f, 15.1917f, 10.4232f, 15.2324f, 10.5258f)
@@ -50,9 +51,11 @@ public val ShoppingEcommerceGroup.BagMusic: ImageVector
                 curveTo(14.6183f, 10.5294f, 14.7604f, 10.4586f, 14.8684f, 10.4115f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 15.75f)
                 curveTo(10.6903f, 15.75f, 11.25f, 16.3096f, 11.25f, 17.0f)
                 curveTo(11.25f, 17.6903f, 10.6903f, 18.25f, 10.0f, 18.25f)
@@ -60,9 +63,11 @@ public val ShoppingEcommerceGroup.BagMusic: ImageVector
                 curveTo(8.75f, 16.3096f, 9.3096f, 15.75f, 10.0f, 15.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.2501f, 6.0149f)
                 curveTo(8.25f, 6.0099f, 8.25f, 6.005f, 8.25f, 6.0f)
                 verticalLineTo(5.0f)
@@ -120,7 +125,7 @@ public val ShoppingEcommerceGroup.BagMusic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bagMusic!!
     }
 

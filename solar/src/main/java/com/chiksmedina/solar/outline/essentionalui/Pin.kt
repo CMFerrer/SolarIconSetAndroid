@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Pin: ImageVector
+val EssentionalUiGroup.Pin: ImageVector
     get() {
         if (_pin != null) {
             return _pin!!
         }
-        _pin = Builder(name = "Pin", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _pin = Builder(
+            name = "Pin", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
+            = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.4746f, 4.3748f)
                 lineTo(19.6474f, 7.5508f)
                 curveTo(20.6549f, 8.5592f, 21.4713f, 9.3765f, 21.9969f, 10.0857f)
@@ -94,7 +98,7 @@ public val EssentionalUiGroup.Pin: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _pin!!
     }
 

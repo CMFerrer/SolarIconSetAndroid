@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Diskette: ImageVector
+val ElectronicDevicesGroup.Diskette: ImageVector
     get() {
         if (_diskette != null) {
             return _diskette!!
         }
-        _diskette = Builder(name = "Diskette", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _diskette = Builder(
+            name = "Diskette", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.5355f, 20.5355f)
                 curveTo(22.0f, 19.0711f, 22.0f, 16.714f, 22.0f, 12.0f)
                 curveTo(22.0f, 11.6585f, 22.0f, 11.4878f, 21.9848f, 11.3142f)
@@ -44,9 +45,11 @@ public val ElectronicDevicesGroup.Diskette: ImageVector
                 curveTo(18.9727f, 21.5841f, 19.8515f, 21.2196f, 20.5355f, 20.5355f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.0f, 7.25f)
                 curveTo(6.5858f, 7.25f, 6.25f, 7.5858f, 6.25f, 8.0f)
                 curveTo(6.25f, 8.4142f, 6.5858f, 8.75f, 7.0f, 8.75f)
@@ -56,9 +59,11 @@ public val ElectronicDevicesGroup.Diskette: ImageVector
                 horizontalLineTo(7.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.052f, 16.25f)
                 curveTo(13.9505f, 16.25f, 14.6997f, 16.2499f, 15.2945f, 16.3299f)
                 curveTo(15.9223f, 16.4143f, 16.4891f, 16.6f, 16.9445f, 17.0555f)
@@ -91,7 +96,7 @@ public val ElectronicDevicesGroup.Diskette: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _diskette!!
     }
 

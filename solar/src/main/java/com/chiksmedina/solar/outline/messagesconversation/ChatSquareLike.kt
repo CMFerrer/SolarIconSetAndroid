@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MessagesConversationGroup
 
-public val MessagesConversationGroup.ChatSquareLike: ImageVector
+val MessagesConversationGroup.ChatSquareLike: ImageVector
     get() {
         if (_chatSquareLike != null) {
             return _chatSquareLike!!
         }
-        _chatSquareLike = Builder(name = "ChatSquareLike", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _chatSquareLike = Builder(
+            name = "ChatSquareLike", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.4606f, 1.25f)
                 horizontalLineTo(13.5394f)
                 curveTo(15.1427f, 1.25f, 16.3997f, 1.25f, 17.4039f, 1.3455f)
@@ -125,7 +129,7 @@ public val MessagesConversationGroup.ChatSquareLike: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chatSquareLike!!
     }
 

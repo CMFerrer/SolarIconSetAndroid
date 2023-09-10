@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.MonitorSmartphone: ImageVector
+val ElectronicDevicesGroup.MonitorSmartphone: ImageVector
     get() {
         if (_monitorSmartphone != null) {
             return _monitorSmartphone!!
         }
-        _monitorSmartphone = Builder(name = "MonitorSmartphone", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _monitorSmartphone = Builder(
+            name = "MonitorSmartphone", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9436f, 1.25f)
                 lineTo(15.5344f, 1.25f)
                 curveTo(16.6726f, 1.25f, 17.5745f, 1.25f, 18.3005f, 1.3117f)
@@ -126,7 +130,7 @@ public val ElectronicDevicesGroup.MonitorSmartphone: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _monitorSmartphone!!
     }
 

@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Condicioner2: ImageVector
+val HomeFurnitureGroup.Condicioner2: ImageVector
     get() {
         if (_condicioner2 != null) {
             return _condicioner2!!
         }
-        _condicioner2 = Builder(name = "Condicioner2", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _condicioner2 = Builder(
+            name = "Condicioner2", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.8787f, 5.8787f)
                 curveTo(2.0f, 6.7574f, 2.0f, 8.1716f, 2.0f, 11.0f)
                 curveTo(2.0f, 14.7712f, 2.0f, 16.6569f, 3.1716f, 17.8284f)
@@ -61,9 +63,11 @@ public val HomeFurnitureGroup.Condicioner2: ImageVector
                 horizontalLineTo(6.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.25f, 18.9534f)
                 curveTo(17.2499f, 18.015f, 17.2474f, 17.3806f, 17.1835f, 16.9054f)
                 curveTo(17.1214f, 16.4439f, 17.0142f, 16.2464f, 16.8839f, 16.1161f)
@@ -80,7 +84,7 @@ public val HomeFurnitureGroup.Condicioner2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _condicioner2!!
     }
 

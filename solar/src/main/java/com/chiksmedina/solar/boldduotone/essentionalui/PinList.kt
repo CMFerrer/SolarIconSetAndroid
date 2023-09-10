@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.EssentionalUiGroup
 
-public val EssentionalUiGroup.PinList: ImageVector
+val EssentionalUiGroup.PinList: ImageVector
     get() {
         if (_pinList != null) {
             return _pinList!!
         }
-        _pinList = Builder(name = "PinList", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _pinList = Builder(
+            name = "PinList", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.9508f, 8.5951f)
                 lineTo(12.5872f, 8.2378f)
                 curveTo(11.0688f, 6.7455f, 10.3096f, 5.9993f, 9.4865f, 6.0f)
@@ -53,9 +54,11 @@ public val EssentionalUiGroup.PinList: ImageVector
                 curveTo(15.2285f, 10.8336f, 14.4693f, 10.0875f, 12.9508f, 8.5951f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.2706f, 18.7857f)
                 lineTo(5.9439f, 16.1586f)
                 lineTo(5.9261f, 16.1411f)
@@ -65,9 +68,11 @@ public val EssentionalUiGroup.PinList: ImageVector
                 curveTo(2.5087f, 19.0714f, 2.9799f, 19.0714f, 3.2706f, 18.7857f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(22.0003f, 8.377f)
                 curveTo(22.0003f, 8.781f, 21.667f, 9.1085f, 21.256f, 9.1085f)
                 horizontalLineTo(16.294f)
@@ -77,9 +82,11 @@ public val EssentionalUiGroup.PinList: ImageVector
                 curveTo(21.667f, 7.6455f, 22.0003f, 7.973f, 22.0003f, 8.377f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(22.0003f, 12.7659f)
                 curveTo(22.0003f, 13.1699f, 21.667f, 13.4974f, 21.256f, 13.4974f)
                 horizontalLineTo(17.2864f)
@@ -89,9 +96,11 @@ public val EssentionalUiGroup.PinList: ImageVector
                 curveTo(21.667f, 12.0344f, 22.0003f, 12.3619f, 22.0003f, 12.7659f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = EvenOdd
+            ) {
                 moveTo(22.0003f, 17.1548f)
                 curveTo(22.0003f, 17.5588f, 21.667f, 17.8863f, 21.256f, 17.8863f)
                 horizontalLineTo(12.3244f)
@@ -102,7 +111,7 @@ public val EssentionalUiGroup.PinList: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _pinList!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.HeadphonesRound: ImageVector
+val ElectronicDevicesGroup.HeadphonesRound: ImageVector
     get() {
         if (_headphonesRound != null) {
             return _headphonesRound!!
         }
-        _headphonesRound = Builder(name = "HeadphonesRound", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _headphonesRound = Builder(
+            name = "HeadphonesRound", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.25f, 12.0f)
                 curveTo(2.25f, 6.6152f, 6.6152f, 2.25f, 12.0f, 2.25f)
                 curveTo(17.3848f, 2.25f, 21.75f, 6.6152f, 21.75f, 12.0f)
@@ -129,7 +133,7 @@ public val ElectronicDevicesGroup.HeadphonesRound: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _headphonesRound!!
     }
 

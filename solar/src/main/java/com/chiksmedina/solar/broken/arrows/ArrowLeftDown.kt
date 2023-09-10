@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.ArrowsGroup
 
-public val ArrowsGroup.ArrowLeftDown: ImageVector
+val ArrowsGroup.ArrowLeftDown: ImageVector
     get() {
         if (_arrowLeftDown != null) {
             return _arrowLeftDown!!
         }
-        _arrowLeftDown = Builder(name = "ArrowLeftDown", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _arrowLeftDown = Builder(
+            name = "ArrowLeftDown", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(6.0f, 18.0f)
                 horizontalLineTo(15.0f)
                 moveTo(6.0f, 18.0f)
@@ -31,7 +35,7 @@ public val ArrowsGroup.ArrowLeftDown: ImageVector
                 lineTo(15.5f, 8.5f)
             }
         }
-        .build()
+            .build()
         return _arrowLeftDown!!
     }
 

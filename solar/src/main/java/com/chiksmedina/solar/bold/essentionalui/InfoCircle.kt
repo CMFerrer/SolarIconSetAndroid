@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.InfoCircle: ImageVector
+val EssentionalUiGroup.InfoCircle: ImageVector
     get() {
         if (_infoCircle != null) {
             return _infoCircle!!
         }
-        _infoCircle = Builder(name = "InfoCircle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _infoCircle = Builder(
+            name = "InfoCircle", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(22.0f, 12.0f)
                 curveTo(22.0f, 17.5228f, 17.5228f, 22.0f, 12.0f, 22.0f)
                 curveTo(6.4771f, 22.0f, 2.0f, 17.5228f, 2.0f, 12.0f)
@@ -43,7 +47,7 @@ public val EssentionalUiGroup.InfoCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _infoCircle!!
     }
 

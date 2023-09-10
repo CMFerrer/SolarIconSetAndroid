@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SportsGroup
 
-public val SportsGroup.Rugby: ImageVector
+val SportsGroup.Rugby: ImageVector
     get() {
         if (_rugby != null) {
             return _rugby!!
         }
-        _rugby = Builder(name = "Rugby", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _rugby = Builder(
+            name = "Rugby", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.4573f, 2.1099f)
                 curveTo(10.5739f, 2.3873f, 7.5095f, 3.252f, 5.3808f, 5.3808f)
                 curveTo(3.252f, 7.5095f, 2.3873f, 10.5739f, 2.1099f, 13.4573f)
@@ -34,9 +35,11 @@ public val SportsGroup.Rugby: ImageVector
                 lineTo(13.4573f, 2.1099f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.0686f, 2.0872f)
                 curveTo(16.7367f, 1.9854f, 15.1273f, 1.9491f, 13.4572f, 2.1098f)
                 lineTo(21.8902f, 10.5428f)
@@ -44,9 +47,11 @@ public val SportsGroup.Rugby: ImageVector
                 curveTo(21.7537f, 3.8517f, 20.1483f, 2.2463f, 18.0686f, 2.0872f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.9314f, 21.9127f)
                 curveTo(7.2633f, 22.0146f, 8.8727f, 22.0509f, 10.5428f, 21.8902f)
                 lineTo(2.1098f, 13.4572f)
@@ -54,9 +59,11 @@ public val SportsGroup.Rugby: ImageVector
                 curveTo(2.2463f, 20.1483f, 3.8517f, 21.7537f, 5.9314f, 21.9127f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9426f, 8.1601f)
                 curveTo(12.2355f, 7.8672f, 12.7104f, 7.8672f, 13.0032f, 8.1601f)
                 lineTo(13.8914f, 9.0482f)
@@ -97,7 +104,7 @@ public val SportsGroup.Rugby: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _rugby!!
     }
 

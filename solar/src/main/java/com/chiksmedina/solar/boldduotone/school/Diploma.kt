@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.school
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SchoolGroup
 
-public val SchoolGroup.Diploma: ImageVector
+val SchoolGroup.Diploma: ImageVector
     get() {
         if (_diploma != null) {
             return _diploma!!
         }
-        _diploma = Builder(name = "Diploma", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _diploma = Builder(
+            name = "Diploma", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 8.0f)
                 verticalLineTo(12.0f)
                 curveTo(2.0f, 14.8284f, 2.0f, 16.2426f, 2.8787f, 17.1213f)
@@ -48,9 +49,11 @@ public val SchoolGroup.Diploma: ImageVector
                 curveTo(2.0f, 3.7574f, 2.0f, 5.1716f, 2.0f, 8.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.0f, 8.75f)
                 curveTo(6.5858f, 8.75f, 6.25f, 9.0858f, 6.25f, 9.5f)
                 curveTo(6.25f, 9.9142f, 6.5858f, 10.25f, 7.0f, 10.25f)
@@ -60,9 +63,11 @@ public val SchoolGroup.Diploma: ImageVector
                 horizontalLineTo(7.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.25f, 6.0f)
                 curveTo(8.25f, 5.5858f, 8.5858f, 5.25f, 9.0f, 5.25f)
                 horizontalLineTo(15.0f)
@@ -72,9 +77,11 @@ public val SchoolGroup.Diploma: ImageVector
                 curveTo(8.5858f, 6.75f, 8.25f, 6.4142f, 8.25f, 6.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.0011f, 15.9174f)
                 curveTo(9.0004f, 15.9449f, 9.0f, 15.9724f, 9.0f, 16.0f)
                 curveTo(9.0f, 17.6569f, 10.3431f, 19.0f, 12.0f, 19.0f)
@@ -85,9 +92,11 @@ public val SchoolGroup.Diploma: ImageVector
                 curveTo(9.008f, 15.7672f, 9.0031f, 15.842f, 9.0011f, 15.9174f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.6757f, 17.2494f)
                 lineTo(6.5952f, 18.3148f)
                 curveTo(6.2712f, 18.6344f, 6.1091f, 18.7942f, 6.0531f, 18.9295f)
@@ -103,9 +112,11 @@ public val SchoolGroup.Diploma: ImageVector
                 curveTo(9.305f, 19.9322f, 8.1092f, 18.7524f, 7.6757f, 17.2494f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.1825f, 20.343f)
                 lineTo(14.2629f, 21.413f)
                 curveTo(14.5869f, 21.7326f, 14.749f, 21.8924f, 14.8862f, 21.9477f)
@@ -122,7 +133,7 @@ public val SchoolGroup.Diploma: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _diploma!!
     }
 

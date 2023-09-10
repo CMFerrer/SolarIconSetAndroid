@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.medicine
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MedicineGroup
 
-public val MedicineGroup.Bacteria: ImageVector
+val MedicineGroup.Bacteria: ImageVector
     get() {
         if (_bacteria != null) {
             return _bacteria!!
         }
-        _bacteria = Builder(name = "Bacteria", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _bacteria = Builder(
+            name = "Bacteria", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.0002f, 4.25f)
                 horizontalLineTo(12.0002f)
                 curveTo(12.4144f, 4.25f, 12.7502f, 4.5858f, 12.7502f, 5.0f)
@@ -34,9 +35,11 @@ public val MedicineGroup.Bacteria: ImageVector
                 curveTo(9.2502f, 4.5858f, 9.586f, 4.25f, 10.0002f, 4.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.7433f, 9.1904f)
                 curveTo(9.7999f, 9.6007f, 9.5131f, 9.9792f, 9.1028f, 10.0358f)
                 lineTo(9.1016f, 10.036f)
@@ -60,9 +63,11 @@ public val MedicineGroup.Bacteria: ImageVector
                 curveTo(9.3116f, 8.4959f, 9.687f, 8.7819f, 9.7433f, 9.1904f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.9699f, 7.9697f)
                 curveTo(11.2628f, 7.6768f, 11.7376f, 7.6768f, 12.0305f, 7.9697f)
                 lineTo(13.0305f, 8.9697f)
@@ -72,9 +77,11 @@ public val MedicineGroup.Bacteria: ImageVector
                 curveTo(10.677f, 8.7374f, 10.677f, 8.2626f, 10.9699f, 7.9697f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.2502f, 12.0f)
                 curveTo(15.2502f, 11.5858f, 14.9144f, 11.25f, 14.5002f, 11.25f)
                 curveTo(14.086f, 11.25f, 13.7502f, 11.5858f, 13.7502f, 12.0f)
@@ -84,9 +91,11 @@ public val MedicineGroup.Bacteria: ImageVector
                 verticalLineTo(12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.4727f, 17.5656f)
                 lineTo(17.4713f, 17.5644f)
                 lineTo(17.4699f, 17.5631f)
@@ -121,9 +130,11 @@ public val MedicineGroup.Bacteria: ImageVector
                 curveTo(18.2589f, 17.8046f, 17.7852f, 17.8375f, 17.4727f, 17.5656f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.6072f, 10.7869f)
                 curveTo(5.7657f, 10.4042f, 5.5839f, 9.9655f, 5.2012f, 9.807f)
                 curveTo(4.8185f, 9.6486f, 4.3798f, 9.8304f, 4.2213f, 10.2131f)
@@ -133,9 +144,11 @@ public val MedicineGroup.Bacteria: ImageVector
                 lineTo(5.6072f, 10.7869f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.5619f, 7.9152f)
                 curveTo(14.1538f, 7.9684f, 13.7784f, 7.6824f, 13.7221f, 7.2739f)
                 curveTo(13.6655f, 6.8636f, 13.9578f, 6.4843f, 14.3681f, 6.4278f)
@@ -152,9 +165,11 @@ public val MedicineGroup.Bacteria: ImageVector
                 curveTo(16.5497f, 8.2254f, 15.2245f, 7.8788f, 14.5619f, 7.9152f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.8816f, 17.18f)
                 curveTo(13.5546f, 16.9257f, 13.0834f, 16.9845f, 12.8291f, 17.3115f)
                 curveTo(12.5748f, 17.6384f, 12.6337f, 18.1096f, 12.9606f, 18.364f)
@@ -164,9 +179,11 @@ public val MedicineGroup.Bacteria: ImageVector
                 lineTo(13.8816f, 17.18f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.0f, 11.25f)
                 curveTo(6.9289f, 11.25f, 5.25f, 12.9289f, 5.25f, 15.0f)
                 curveTo(5.25f, 17.0711f, 6.9289f, 18.75f, 9.0f, 18.75f)
@@ -180,9 +197,11 @@ public val MedicineGroup.Bacteria: ImageVector
                 curveTo(7.7574f, 17.25f, 6.75f, 16.2426f, 6.75f, 15.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(1.25f, 12.0f)
                 curveTo(1.25f, 6.0629f, 6.0629f, 1.25f, 12.0f, 1.25f)
                 curveTo(17.9371f, 1.25f, 22.75f, 6.0629f, 22.75f, 12.0f)
@@ -197,7 +216,7 @@ public val MedicineGroup.Bacteria: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bacteria!!
     }
 

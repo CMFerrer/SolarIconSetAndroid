@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.NetworkItProgrammingGroup
 
-public val NetworkItProgrammingGroup.Hashtag: ImageVector
+val NetworkItProgrammingGroup.Hashtag: ImageVector
     get() {
         if (_hashtag != null) {
             return _hashtag!!
         }
-        _hashtag = Builder(name = "Hashtag", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _hashtag = Builder(
+            name = "Hashtag", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.7226f, 3.2007f)
                 curveTo(10.8335f, 2.8016f, 10.5998f, 2.3882f, 10.2007f, 2.2773f)
                 curveTo(9.8016f, 2.1665f, 9.3882f, 2.4001f, 9.2774f, 2.7992f)
@@ -67,7 +71,7 @@ public val NetworkItProgrammingGroup.Hashtag: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _hashtag!!
     }
 

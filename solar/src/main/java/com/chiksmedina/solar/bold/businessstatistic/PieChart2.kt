@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.businessstatistic
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.BusinessStatisticGroup
 
-public val BusinessStatisticGroup.PieChart2: ImageVector
+val BusinessStatisticGroup.PieChart2: ImageVector
     get() {
         if (_pieChart2 != null) {
             return _pieChart2!!
         }
-        _pieChart2 = Builder(name = "PieChart2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _pieChart2 = Builder(
+            name = "PieChart2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.2221f, 4.601f)
                 curveTo(6.6666f, 4.304f, 7.1334f, 4.0464f, 7.6171f, 3.8298f)
                 curveTo(8.989f, 3.2154f, 9.6749f, 2.9082f, 10.5875f, 3.4994f)
@@ -43,9 +44,11 @@ public val BusinessStatisticGroup.PieChart2: ImageVector
                 curveTo(3.4422f, 7.1286f, 4.6598f, 5.6449f, 6.2221f, 4.601f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.446f, 7.069f)
                 curveTo(20.6342f, 5.0083f, 18.9917f, 3.3658f, 16.931f, 2.554f)
                 curveTo(15.3895f, 1.9467f, 14.0f, 3.3432f, 14.0f, 5.0f)
@@ -56,7 +59,7 @@ public val BusinessStatisticGroup.PieChart2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _pieChart2!!
     }
 

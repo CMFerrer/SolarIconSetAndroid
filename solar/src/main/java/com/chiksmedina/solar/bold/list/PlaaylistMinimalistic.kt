@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ListGroup
 
-public val ListGroup.PlaaylistMinimalistic: ImageVector
+val ListGroup.PlaaylistMinimalistic: ImageVector
     get() {
         if (_plaaylistMinimalistic != null) {
             return _plaaylistMinimalistic!!
         }
-        _plaaylistMinimalistic = Builder(name = "PlaaylistMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _plaaylistMinimalistic = Builder(
+            name = "PlaaylistMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.25f, 6.0f)
                 curveTo(2.25f, 5.5858f, 2.5858f, 5.25f, 3.0f, 5.25f)
                 horizontalLineTo(20.0f)
@@ -49,9 +51,11 @@ public val ListGroup.PlaaylistMinimalistic: ImageVector
                 curveTo(2.5858f, 16.75f, 2.25f, 16.4142f, 2.25f, 16.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.125f, 10.6854f)
                 curveTo(20.767f, 11.6334f, 21.588f, 12.1074f, 21.8478f, 12.7346f)
                 curveTo(22.0507f, 13.2247f, 22.0507f, 13.7753f, 21.8478f, 14.2654f)
@@ -65,7 +69,7 @@ public val ListGroup.PlaaylistMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _plaaylistMinimalistic!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.hands
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.HandsGroup
 
-public val HandsGroup.HandPills: ImageVector
+val HandsGroup.HandPills: ImageVector
     get() {
         if (_handPills != null) {
             return _handPills!!
         }
-        _handPills = Builder(name = "HandPills", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _handPills = Builder(
+            name = "HandPills", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.2599f, 21.3884f)
                 horizontalLineTo(6.0f)
                 curveTo(5.0572f, 21.3884f, 4.5858f, 21.3884f, 4.2929f, 21.0955f)
@@ -47,9 +48,11 @@ public val HandsGroup.HandPills: ImageVector
                 curveTo(8.2925f, 21.4937f, 7.2708f, 21.3884f, 6.2599f, 21.3884f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.3592f, 9.2038f)
                 curveTo(12.4209f, 10.2654f, 14.1421f, 10.2654f, 15.2038f, 9.2038f)
                 curveTo(16.2654f, 8.1421f, 16.2654f, 6.4209f, 15.2038f, 5.3593f)
@@ -59,9 +62,11 @@ public val HandsGroup.HandPills: ImageVector
                 lineTo(11.3592f, 9.2038f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.6408f, 2.7962f)
                 curveTo(11.5791f, 1.7346f, 9.8579f, 1.7346f, 8.7962f, 2.7962f)
                 curveTo(7.7346f, 3.8579f, 7.7346f, 5.5791f, 8.7962f, 6.6407f)
@@ -74,7 +79,7 @@ public val HandsGroup.HandPills: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _handPills!!
     }
 

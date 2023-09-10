@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.RepeatOneMinimalistic: ImageVector
+val VideoAudioSoundGroup.RepeatOneMinimalistic: ImageVector
     get() {
         if (_repeatOneMinimalistic != null) {
             return _repeatOneMinimalistic!!
         }
-        _repeatOneMinimalistic = Builder(name = "RepeatOneMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _repeatOneMinimalistic = Builder(
+            name = "RepeatOneMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.716f, 3.2028f)
                 curveTo(8.9884f, 2.9324f, 9.4302f, 2.9324f, 9.7026f, 3.2028f)
                 lineTo(11.5631f, 5.0489f)
@@ -44,9 +45,11 @@ public val VideoAudioSoundGroup.RepeatOneMinimalistic: ImageVector
                 curveTo(8.4435f, 3.9115f, 8.4435f, 3.4731f, 8.716f, 3.2028f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.6279f, 5.5385f)
                 curveTo(13.6279f, 5.1561f, 13.9403f, 4.8461f, 14.3256f, 4.8461f)
                 horizontalLineTo(14.7907f)
@@ -66,9 +69,11 @@ public val VideoAudioSoundGroup.RepeatOneMinimalistic: ImageVector
                 curveTo(13.9403f, 6.2308f, 13.6279f, 5.9208f, 13.6279f, 5.5385f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.4883f, 11.9999f)
                 curveTo(5.4883f, 9.9607f, 7.1542f, 8.3076f, 9.2092f, 8.3076f)
                 horizontalLineTo(14.7906f)
@@ -79,7 +84,7 @@ public val VideoAudioSoundGroup.RepeatOneMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _repeatOneMinimalistic!!
     }
 

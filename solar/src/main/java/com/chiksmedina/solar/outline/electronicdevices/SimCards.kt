@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SimCards: ImageVector
+val ElectronicDevicesGroup.SimCards: ImageVector
     get() {
         if (_simCards != null) {
             return _simCards!!
         }
-        _simCards = Builder(name = "SimCards", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _simCards = Builder(
+            name = "SimCards", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.9436f, 1.25f)
                 lineTo(14.0f, 1.25f)
                 curveTo(15.2264f, 1.25f, 16.3975f, 1.741f, 17.2617f, 2.6052f)
@@ -159,7 +163,7 @@ public val ElectronicDevicesGroup.SimCards: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _simCards!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.WeatherGroup
 
-public val WeatherGroup.Cloud: ImageVector
+val WeatherGroup.Cloud: ImageVector
     get() {
         if (_cloud != null) {
             return _cloud!!
         }
-        _cloud = Builder(name = "Cloud", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _cloud = Builder(
+            name = "Cloud", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 14.3529f)
                 curveTo(22.0f, 17.4717f, 19.4416f, 20.0f, 16.2857f, 20.0f)
                 horizontalLineTo(11.0f)
@@ -42,7 +46,7 @@ public val WeatherGroup.Cloud: ImageVector
                 curveTo(18.8381f, 9.2485f, 19.4623f, 9.6065f, 20.0f, 10.0614f)
             }
         }
-        .build()
+            .build()
         return _cloud!!
     }
 

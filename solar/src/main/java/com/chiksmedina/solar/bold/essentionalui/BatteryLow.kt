@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.BatteryLow: ImageVector
+val EssentionalUiGroup.BatteryLow: ImageVector
     get() {
         if (_batteryLow != null) {
             return _batteryLow!!
         }
-        _batteryLow = Builder(name = "BatteryLow", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _batteryLow = Builder(
+            name = "BatteryLow", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.1716f, 5.1716f)
                 curveTo(2.0f, 6.3432f, 2.0f, 8.2288f, 2.0f, 12.0f)
                 curveTo(2.0f, 15.7712f, 2.0f, 17.6569f, 3.1716f, 18.8284f)
@@ -74,7 +78,7 @@ public val EssentionalUiGroup.BatteryLow: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _batteryLow!!
     }
 

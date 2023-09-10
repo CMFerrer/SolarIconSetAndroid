@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.call
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.CallGroup
 
-public val CallGroup.PhoneCallingRounded: ImageVector
+val CallGroup.PhoneCallingRounded: ImageVector
     get() {
         if (_phoneCallingRounded != null) {
             return _phoneCallingRounded!!
         }
-        _phoneCallingRounded = Builder(name = "PhoneCallingRounded", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _phoneCallingRounded = Builder(
+            name = "PhoneCallingRounded", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.2596f, 1.8801f)
                 curveTo(13.3258f, 1.4713f, 13.7124f, 1.1939f, 14.1213f, 1.2601f)
                 curveTo(14.1466f, 1.2649f, 14.228f, 1.2801f, 14.2707f, 1.2896f)
@@ -48,9 +49,11 @@ public val CallGroup.PhoneCallingRounded: ImageVector
                 curveTo(13.4795f, 2.6738f, 13.1936f, 2.2879f, 13.2596f, 1.8801f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.4859f, 5.3296f)
                 curveTo(13.5997f, 4.9313f, 14.0148f, 4.7007f, 14.4131f, 4.8145f)
                 lineTo(14.207f, 5.5356f)
@@ -87,9 +90,11 @@ public val CallGroup.PhoneCallingRounded: ImageVector
                 curveTo(13.5988f, 6.1359f, 13.3731f, 5.7245f, 13.4859f, 5.3296f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.0075f, 4.4069f)
                 curveTo(6.6876f, 2.7268f, 9.5227f, 2.8545f, 10.6925f, 4.9507f)
                 lineTo(11.3415f, 6.1136f)
@@ -124,7 +129,7 @@ public val CallGroup.PhoneCallingRounded: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _phoneCallingRounded!!
     }
 

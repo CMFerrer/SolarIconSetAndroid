@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SecurityGroup
 
-public val SecurityGroup.Incognito: ImageVector
+val SecurityGroup.Incognito: ImageVector
     get() {
         if (_incognito != null) {
             return _incognito!!
         }
-        _incognito = Builder(name = "Incognito", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _incognito = Builder(
+            name = "Incognito", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.3879f, 3.25f)
                 horizontalLineTo(13.6121f)
                 curveTo(14.6973f, 3.25f, 15.5784f, 3.25f, 16.2872f, 3.3347f)
@@ -87,7 +91,7 @@ public val SecurityGroup.Incognito: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _incognito!!
     }
 

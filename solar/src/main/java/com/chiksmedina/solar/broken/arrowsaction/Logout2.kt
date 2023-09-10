@@ -1,10 +1,8 @@
 package com.chiksmedina.solar.broken.arrowsaction
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
 import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.ArrowsActionGroup
 
-public val ArrowsActionGroup.Logout2: ImageVector
+val ArrowsActionGroup.Logout2: ImageVector
     get() {
         if (_logout2 != null) {
             return _logout2!!
         }
-        _logout2 = Builder(name = "Logout2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
-                    StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _logout2 = Builder(
+            name = "Logout2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin =
+                StrokeJoin.Companion.Round, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.0f, 12.0f)
                 lineTo(2.0f, 12.0f)
                 moveTo(2.0f, 12.0f)
@@ -31,9 +33,11 @@ public val ArrowsActionGroup.Logout2: ImageVector
                 moveTo(2.0f, 12.0f)
                 lineTo(5.5f, 15.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(9.002f, 7.0f)
                 curveTo(9.0141f, 4.825f, 9.1105f, 3.6471f, 9.8789f, 2.8787f)
                 curveTo(10.7576f, 2.0f, 12.1718f, 2.0f, 15.0002f, 2.0f)
@@ -48,7 +52,7 @@ public val ArrowsActionGroup.Logout2: ImageVector
                 curveTo(10.5202f, 21.7626f, 11.4467f, 21.9359f, 13.0f, 21.9827f)
             }
         }
-        .build()
+            .build()
         return _logout2!!
     }
 

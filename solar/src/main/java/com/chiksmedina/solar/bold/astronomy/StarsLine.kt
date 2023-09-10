@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.AstronomyGroup
 
-public val AstronomyGroup.StarsLine: ImageVector
+val AstronomyGroup.StarsLine: ImageVector
     get() {
         if (_starsLine != null) {
             return _starsLine!!
         }
-        _starsLine = Builder(name = "StarsLine", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _starsLine = Builder(
+            name = "StarsLine", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.5497f, 3.4395f)
                 curveTo(12.118f, 2.509f, 11.9022f, 2.0438f, 11.5213f, 2.0045f)
                 curveTo(11.1405f, 1.9652f, 10.8468f, 2.3779f, 10.2595f, 3.2031f)
@@ -58,9 +59,11 @@ public val AstronomyGroup.StarsLine: ImageVector
                 lineTo(12.5497f, 3.4395f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(22.6479f, 9.1222f)
                 curveTo(22.8566f, 9.48f, 22.7357f, 9.9392f, 22.378f, 10.148f)
                 curveTo(16.6662f, 13.4798f, 15.25f, 18.859f, 15.25f, 22.0001f)
@@ -80,9 +83,11 @@ public val AstronomyGroup.StarsLine: ImageVector
                 curveTo(10.3925f, 11.3958f, 10.8076f, 11.1652f, 11.2059f, 11.279f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.1335f, 13.7654f)
                 curveTo(5.1108f, 13.6578f, 5.2823f, 13.5588f, 5.3641f, 13.6323f)
                 curveTo(5.6018f, 13.8458f, 5.9227f, 14.089f, 6.2226f, 14.1694f)
@@ -99,7 +104,7 @@ public val AstronomyGroup.StarsLine: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _starsLine!!
     }
 

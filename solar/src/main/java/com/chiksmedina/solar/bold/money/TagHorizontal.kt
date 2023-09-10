@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MoneyGroup
 
-public val MoneyGroup.TagHorizontal: ImageVector
+val MoneyGroup.TagHorizontal: ImageVector
     get() {
         if (_tagHorizontal != null) {
             return _tagHorizontal!!
         }
-        _tagHorizontal = Builder(name = "TagHorizontal", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _tagHorizontal = Builder(
+            name = "TagHorizontal", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.858f, 20.0f)
                 horizontalLineTo(10.221f)
                 curveTo(6.3456f, 20.0f, 4.4079f, 20.0f, 3.2039f, 18.8284f)
@@ -47,7 +51,7 @@ public val MoneyGroup.TagHorizontal: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _tagHorizontal!!
     }
 

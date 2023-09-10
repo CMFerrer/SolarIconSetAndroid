@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MedicineGroup
 
-public val MedicineGroup.BoneCrack: ImageVector
+val MedicineGroup.BoneCrack: ImageVector
     get() {
         if (_boneCrack != null) {
             return _boneCrack!!
         }
-        _boneCrack = Builder(name = "BoneCrack", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _boneCrack = Builder(
+            name = "BoneCrack", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(18.2302f, 2.2075f)
                 curveTo(18.9468f, 2.9242f, 19.2612f, 3.8908f, 19.1732f, 4.8268f)
                 curveTo(20.1092f, 4.7388f, 21.0758f, 5.0532f, 21.7925f, 5.7698f)
@@ -93,7 +97,7 @@ public val MedicineGroup.BoneCrack: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _boneCrack!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.AstronomyGroup
 
-public val AstronomyGroup.Infinity: ImageVector
+val AstronomyGroup.Infinity: ImageVector
     get() {
         if (_infinity != null) {
             return _infinity!!
         }
-        _infinity = Builder(name = "Infinity", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _infinity = Builder(
+            name = "Infinity", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.0f, 7.75f)
                 curveTo(4.6528f, 7.75f, 2.75f, 9.6528f, 2.75f, 12.0f)
                 curveTo(2.75f, 14.3472f, 4.6528f, 16.25f, 7.0f, 16.25f)
@@ -57,7 +61,7 @@ public val AstronomyGroup.Infinity: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _infinity!!
     }
 

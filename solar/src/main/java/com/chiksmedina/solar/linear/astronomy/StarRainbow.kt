@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.AstronomyGroup
 
-public val AstronomyGroup.StarRainbow: ImageVector
+val AstronomyGroup.StarRainbow: ImageVector
     get() {
         if (_starRainbow != null) {
             return _starRainbow!!
         }
-        _starRainbow = Builder(name = "StarRainbow", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _starRainbow = Builder(
+            name = "StarRainbow", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.9464f, 3.114f)
                 lineTo(14.6772f, 3.8141f)
                 lineTo(14.6772f, 3.8141f)
@@ -438,7 +442,7 @@ public val AstronomyGroup.StarRainbow: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _starRainbow!!
     }
 

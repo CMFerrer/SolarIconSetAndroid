@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.homefurniture
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Chair2: ImageVector
+val HomeFurnitureGroup.Chair2: ImageVector
     get() {
         if (_chair2 != null) {
             return _chair2!!
         }
-        _chair2 = Builder(name = "Chair2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _chair2 = Builder(
+            name = "Chair2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.25f, 15.5f)
                 curveTo(5.25f, 14.5335f, 6.0335f, 13.75f, 7.0f, 13.75f)
                 horizontalLineTo(17.0f)
@@ -33,9 +34,11 @@ public val HomeFurnitureGroup.Chair2: ImageVector
                 curveTo(6.4812f, 18.25f, 5.25f, 17.0188f, 5.25f, 15.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.628f, 6.7658f)
                 curveTo(6.8694f, 4.7544f, 6.9901f, 3.7487f, 7.5717f, 3.0616f)
                 curveTo(7.7563f, 2.8435f, 7.9711f, 2.653f, 8.2097f, 2.4957f)
@@ -52,9 +55,11 @@ public val HomeFurnitureGroup.Chair2: ImageVector
                 lineTo(6.628f, 6.7658f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(2.0f, 10.75f)
                 curveTo(1.5858f, 10.75f, 1.25f, 11.0858f, 1.25f, 11.5f)
                 curveTo(1.25f, 11.9142f, 1.5858f, 12.25f, 2.0f, 12.25f)
@@ -74,9 +79,11 @@ public val HomeFurnitureGroup.Chair2: ImageVector
                 curveTo(3.6127f, 10.8454f, 2.9051f, 10.75f, 2.0f, 10.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.75f, 13.75f)
                 horizontalLineTo(11.25f)
                 verticalLineTo(12.0f)
@@ -84,9 +91,11 @@ public val HomeFurnitureGroup.Chair2: ImageVector
                 verticalLineTo(13.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.5651f, 16.4934f)
                 curveTo(18.6845f, 16.1853f, 18.75f, 15.8503f, 18.75f, 15.5f)
                 curveTo(18.75f, 14.8545f, 18.4005f, 14.2906f, 17.8804f, 13.9872f)
@@ -106,9 +115,11 @@ public val HomeFurnitureGroup.Chair2: ImageVector
                 curveTo(18.6791f, 16.3345f, 18.6286f, 16.4207f, 18.5651f, 16.4934f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.25f, 18.25f)
                 horizontalLineTo(12.75f)
                 verticalLineTo(19.416f)
@@ -128,7 +139,7 @@ public val HomeFurnitureGroup.Chair2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chair2!!
     }
 

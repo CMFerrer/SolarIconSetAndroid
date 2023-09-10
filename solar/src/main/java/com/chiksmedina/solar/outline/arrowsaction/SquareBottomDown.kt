@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.arrowsaction
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsActionGroup
 
-public val ArrowsActionGroup.SquareBottomDown: ImageVector
+val ArrowsActionGroup.SquareBottomDown: ImageVector
     get() {
         if (_squareBottomDown != null) {
             return _squareBottomDown!!
         }
-        _squareBottomDown = Builder(name = "SquareBottomDown", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _squareBottomDown = Builder(
+            name = "SquareBottomDown", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.9425f, 1.25f)
                 curveTo(9.6341f, 1.25f, 7.8251f, 1.25f, 6.4136f, 1.4397f)
                 curveTo(4.9689f, 1.634f, 3.8289f, 2.0393f, 2.9341f, 2.9341f)
@@ -57,9 +58,11 @@ public val ArrowsActionGroup.SquareBottomDown: ImageVector
                 horizontalLineTo(11.9425f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.0f, 21.75f)
                 curveTo(9.4142f, 21.75f, 9.75f, 21.4142f, 9.75f, 21.0f)
                 curveTo(9.75f, 20.5858f, 9.4142f, 20.25f, 9.0f, 20.25f)
@@ -77,7 +80,7 @@ public val ArrowsActionGroup.SquareBottomDown: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _squareBottomDown!!
     }
 

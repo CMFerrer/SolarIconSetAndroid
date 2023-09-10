@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.linear.videoaudiosound
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Panorama: ImageVector
+val VideoAudioSoundGroup.Panorama: ImageVector
     get() {
         if (_panorama != null) {
             return _panorama!!
         }
-        _panorama = Builder(name = "Panorama", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _panorama = Builder(
+            name = "Panorama", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(22.0f, 5.8596f)
                 curveTo(22.0f, 5.0651f, 21.2094f, 4.3337f, 19.883f, 3.7528f)
                 curveTo(18.7083f, 3.2383f, 17.5f, 4.2196f, 17.5f, 5.502f)
@@ -46,9 +47,11 @@ public val VideoAudioSoundGroup.Panorama: ImageVector
                 curveTo(8.0779f, 9.0759f, 9.9682f, 9.2833f, 12.0f, 9.2833f)
                 curveTo(14.0318f, 9.2833f, 15.9221f, 9.0759f, 17.5f, 8.7195f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(19.5f, 13.0f)
                 curveTo(19.5f, 13.8284f, 18.8284f, 14.5f, 18.0f, 14.5f)
                 curveTo(17.1716f, 14.5f, 16.5f, 13.8284f, 16.5f, 13.0f)
@@ -56,9 +59,11 @@ public val VideoAudioSoundGroup.Panorama: ImageVector
                 curveTo(18.8284f, 11.5f, 19.5f, 12.1716f, 19.5f, 13.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.0f, 20.0f)
                 lineTo(18.5044f, 17.8514f)
                 curveTo(17.6996f, 17.1586f, 16.501f, 17.0896f, 15.6152f, 17.6851f)
@@ -70,7 +75,7 @@ public val VideoAudioSoundGroup.Panorama: ImageVector
                 lineTo(2.5f, 19.1035f)
             }
         }
-        .build()
+            .build()
         return _panorama!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,22 +12,28 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.SmartphoneRotateAngle: ImageVector
+val ElectronicDevicesGroup.SmartphoneRotateAngle: ImageVector
     get() {
         if (_smartphoneRotateAngle != null) {
             return _smartphoneRotateAngle!!
         }
-        _smartphoneRotateAngle = Builder(name = "SmartphoneRotateAngle", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _smartphoneRotateAngle = Builder(
+            name = "SmartphoneRotateAngle", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.0f, 5.0f)
                 horizontalLineTo(9.0f)
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.4263f, 14.4122f)
                 curveTo(21.1016f, 14.1549f, 20.6299f, 14.2096f, 20.3727f, 14.5342f)
                 curveTo(20.1155f, 14.8589f, 20.1701f, 15.3306f, 20.4948f, 15.5878f)
@@ -119,9 +122,11 @@ public val ElectronicDevicesGroup.SmartphoneRotateAngle: ImageVector
                 lineTo(10.5443f, 19.8948f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.5f, 8.0f)
                 curveTo(18.5f, 5.1716f, 18.5f, 3.7574f, 17.6213f, 2.8787f)
                 curveTo(16.7426f, 2.0f, 15.3284f, 2.0f, 12.5f, 2.0f)
@@ -135,7 +140,7 @@ public val ElectronicDevicesGroup.SmartphoneRotateAngle: ImageVector
                 verticalLineTo(12.0f)
             }
         }
-        .build()
+            .build()
         return _smartphoneRotateAngle!!
     }
 

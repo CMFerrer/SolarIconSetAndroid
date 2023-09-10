@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MapLocationGroup
 
-public val MapLocationGroup.MapPointWave: ImageVector
+val MapLocationGroup.MapPointWave: ImageVector
     get() {
         if (_mapPointWave != null) {
             return _mapPointWave!!
         }
-        _mapPointWave = Builder(name = "MapPointWave", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _mapPointWave = Builder(
+            name = "MapPointWave", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.25f, 8.5146f)
                 curveTo(4.25f, 4.4526f, 7.7715f, 1.25f, 12.0f, 1.25f)
                 curveTo(16.2285f, 1.25f, 19.75f, 4.4526f, 19.75f, 8.5146f)
@@ -67,7 +71,7 @@ public val MapLocationGroup.MapPointWave: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _mapPointWave!!
     }
 

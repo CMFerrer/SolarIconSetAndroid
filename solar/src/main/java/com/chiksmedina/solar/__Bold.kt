@@ -40,30 +40,31 @@ import com.chiksmedina.solar.bold.TransportPartsService
 import com.chiksmedina.solar.bold.Users
 import com.chiksmedina.solar.bold.VideoAudioSound
 import com.chiksmedina.solar.bold.Weather
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object BoldGroup
+object BoldSolar
 
-public val Solar.Bold: BoldGroup
-  get() = BoldGroup
+val Solar.Bold: BoldSolar
+    get() = BoldSolar
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val BoldGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val BoldSolar.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons =
+            Arrows.AllIcons + ArrowsAction.AllIcons + Astronomy.AllIcons + BuildingInfrastructure.AllIcons +
+                    BusinessStatistic.AllIcons + Call.AllIcons + DesignTools.AllIcons +
+                    ElectronicDevices.AllIcons + EssentionalUi.AllIcons + FacesEmotionsStickers.AllIcons +
+                    Files.AllIcons + Folders.AllIcons + FoodKitchen.AllIcons + Hands.AllIcons +
+                    HomeFurniture.AllIcons + Like.AllIcons + List.AllIcons + MapLocation.AllIcons +
+                    Medicine.AllIcons + MessagesConversation.AllIcons + Money.AllIcons + NatureTravel.AllIcons +
+                    NetworkItProgramming.AllIcons + Notes.AllIcons + Notifications.AllIcons + School.AllIcons +
+                    Search.AllIcons + Security.AllIcons + SettingsFineTuning.AllIcons +
+                    ShoppingEcommerce.AllIcons + Sports.AllIcons + TextFormatting.AllIcons + Time.AllIcons +
+                    TransportPartsService.AllIcons + Users.AllIcons + VideoAudioSound.AllIcons +
+                    Weather.AllIcons + listOf()
+        return _AllIcons!!
     }
-    __AllIcons= Arrows.AllIcons + ArrowsAction.AllIcons + Astronomy.AllIcons + BuildingInfrastructure.AllIcons +
-        BusinessStatistic.AllIcons + Call.AllIcons + DesignTools.AllIcons +
-        ElectronicDevices.AllIcons + EssentionalUi.AllIcons + FacesEmotionsStickers.AllIcons +
-        Files.AllIcons + Folders.AllIcons + FoodKitchen.AllIcons + Hands.AllIcons +
-        HomeFurniture.AllIcons + Like.AllIcons + List.AllIcons + MapLocation.AllIcons +
-        Medicine.AllIcons + MessagesConversation.AllIcons + Money.AllIcons + NatureTravel.AllIcons +
-        NetworkItProgramming.AllIcons + Notes.AllIcons + Notifications.AllIcons + School.AllIcons +
-        Search.AllIcons + Security.AllIcons + SettingsFineTuning.AllIcons +
-        ShoppingEcommerce.AllIcons + Sports.AllIcons + TextFormatting.AllIcons + Time.AllIcons +
-        TransportPartsService.AllIcons + Users.AllIcons + VideoAudioSound.AllIcons +
-        Weather.AllIcons + listOf()
-    return __AllIcons!!
-  }

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.VideoAudioSoundGroup
 
-public val VideoAudioSoundGroup.Pip2: ImageVector
+val VideoAudioSoundGroup.Pip2: ImageVector
     get() {
         if (_pip2 != null) {
             return _pip2!!
         }
-        _pip2 = Builder(name = "Pip2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _pip2 = Builder(
+            name = "Pip2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.9549f, 5.0611f)
                 curveTo(2.0f, 6.3754f, 2.0f, 8.2503f, 2.0f, 12.0f)
                 curveTo(2.0f, 15.7497f, 2.0f, 17.6246f, 2.9549f, 18.9389f)
@@ -55,7 +59,7 @@ public val VideoAudioSoundGroup.Pip2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _pip2!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SportsGroup
 
-public val SportsGroup.WaterSun: ImageVector
+val SportsGroup.WaterSun: ImageVector
     get() {
         if (_waterSun != null) {
             return _waterSun!!
         }
-        _waterSun = Builder(name = "WaterSun", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _waterSun = Builder(
+            name = "WaterSun", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9999f, 1.25f)
                 curveTo(12.4141f, 1.25f, 12.7499f, 1.5858f, 12.7499f, 2.0f)
                 verticalLineTo(3.0f)
@@ -50,9 +51,11 @@ public val SportsGroup.WaterSun: ImageVector
                 curveTo(20.5857f, 12.75f, 20.2499f, 12.4142f, 20.2499f, 12.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(22.1719f, 16.0424f)
                 curveTo(20.8486f, 15.7306f, 20.1706f, 14.9891f, 19.5455f, 14.0435f)
                 curveTo(19.1368f, 13.425f, 18.4902f, 13.1875f, 17.869f, 13.2526f)
@@ -76,9 +79,11 @@ public val SportsGroup.WaterSun: ImageVector
                 curveTo(22.8249f, 16.5412f, 22.5751f, 16.1374f, 22.1719f, 16.0424f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.3994f, 4.3984f)
                 curveTo(4.6922f, 4.1055f, 5.1671f, 4.1055f, 5.46f, 4.3984f)
                 lineTo(5.8528f, 4.7912f)
@@ -88,9 +93,11 @@ public val SportsGroup.WaterSun: ImageVector
                 curveTo(4.1065f, 5.1662f, 4.1065f, 4.6913f, 4.3994f, 4.3984f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(19.6009f, 4.3986f)
                 curveTo(19.8938f, 4.6915f, 19.8938f, 5.1664f, 19.6009f, 5.4593f)
                 lineTo(19.2081f, 5.8521f)
@@ -100,9 +107,11 @@ public val SportsGroup.WaterSun: ImageVector
                 curveTo(18.8331f, 4.1058f, 19.308f, 4.1058f, 19.6009f, 4.3986f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.57f, 18.8659f)
                 curveTo(5.2569f, 17.7921f, 6.7275f, 17.8273f, 7.4577f, 18.762f)
                 curveTo(8.4477f, 20.0293f, 9.8296f, 21.2502f, 12.0002f, 21.2502f)
@@ -125,7 +134,7 @@ public val SportsGroup.WaterSun: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _waterSun!!
     }
 

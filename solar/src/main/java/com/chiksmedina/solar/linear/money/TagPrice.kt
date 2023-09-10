@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.linear.money
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.MoneyGroup
 
-public val MoneyGroup.TagPrice: ImageVector
+val MoneyGroup.TagPrice: ImageVector
     get() {
         if (_tagPrice != null) {
             return _tagPrice!!
         }
-        _tagPrice = Builder(name = "TagPrice", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _tagPrice = Builder(
+            name = "TagPrice", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.7285f, 16.1369f)
                 curveTo(3.183f, 14.5914f, 2.4102f, 13.8186f, 2.1227f, 12.816f)
                 curveTo(1.8352f, 11.8134f, 2.0809f, 10.7485f, 2.5724f, 8.6187f)
@@ -42,9 +43,11 @@ public val MoneyGroup.TagPrice: ImageVector
                 lineTo(4.7285f, 16.1369f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.3893f, 15.3891f)
                 curveTo(15.9751f, 14.8033f, 16.0542f, 13.9327f, 15.5661f, 13.4445f)
                 curveTo(15.0779f, 12.9564f, 14.2073f, 13.0355f, 13.6215f, 13.6213f)
@@ -59,16 +62,18 @@ public val MoneyGroup.TagPrice: ImageVector
                 moveTo(11.8538f, 11.8536f)
                 curveTo(12.185f, 11.5223f, 12.6073f, 11.3531f, 13.0f, 11.3568f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(8.607f, 8.8789f)
                 moveToRelative(-1.4142f, 1.4142f)
                 arcToRelative(2.0f, 2.0f, 104.4054f, true, true, 2.8284f, -2.8284f)
                 arcToRelative(2.0f, 2.0f, 104.4054f, true, true, -2.8284f, 2.8284f)
             }
         }
-        .build()
+            .build()
         return _tagPrice!!
     }
 

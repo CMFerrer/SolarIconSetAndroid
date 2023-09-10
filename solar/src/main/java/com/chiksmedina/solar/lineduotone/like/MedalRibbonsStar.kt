@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.lineduotone.like
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.LikeGroup
 
-public val LikeGroup.MedalRibbonsStar: ImageVector
+val LikeGroup.MedalRibbonsStar: ImageVector
     get() {
         if (_medalRibbonsStar != null) {
             return _medalRibbonsStar!!
         }
-        _medalRibbonsStar = Builder(name = "MedalRibbonsStar", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _medalRibbonsStar = Builder(
+            name = "MedalRibbonsStar", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.1459f, 7.0225f)
                 curveTo(11.5259f, 6.3408f, 11.7159f, 6.0f, 12.0f, 6.0f)
                 curveTo(12.2841f, 6.0f, 12.4741f, 6.3408f, 12.8541f, 7.0225f)
@@ -57,9 +58,11 @@ public val LikeGroup.MedalRibbonsStar: ImageVector
                 lineTo(11.1459f, 7.0225f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(19.0f, 9.0f)
                 curveTo(19.0f, 12.866f, 15.866f, 16.0f, 12.0f, 16.0f)
                 curveTo(8.134f, 16.0f, 5.0f, 12.866f, 5.0f, 9.0f)
@@ -67,9 +70,11 @@ public val LikeGroup.MedalRibbonsStar: ImageVector
                 curveTo(15.866f, 2.0f, 19.0f, 5.134f, 19.0f, 9.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 16.0678f)
                 lineTo(8.2285f, 19.9728f)
                 curveTo(7.6884f, 20.5321f, 7.4184f, 20.8117f, 7.1897f, 20.9084f)
@@ -83,9 +88,11 @@ public val LikeGroup.MedalRibbonsStar: ImageVector
                 curveTo(2.1819f, 15.3898f, 2.4519f, 15.1102f, 2.9921f, 14.5509f)
                 lineTo(5.4557f, 12.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
-                    Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                fillAlpha = 0.5f, strokeAlpha = 0.5f, strokeLineWidth = 1.5f, strokeLineCap =
+                Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 16.0678f)
                 lineTo(15.7715f, 19.9728f)
                 curveTo(16.3116f, 20.5321f, 16.5816f, 20.8117f, 16.8103f, 20.9084f)
@@ -100,7 +107,7 @@ public val LikeGroup.MedalRibbonsStar: ImageVector
                 lineTo(18.5442f, 12.0f)
             }
         }
-        .build()
+            .build()
         return _medalRibbonsStar!!
     }
 

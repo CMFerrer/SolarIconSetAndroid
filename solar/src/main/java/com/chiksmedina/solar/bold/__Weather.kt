@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.bold
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.BoldGroup
+import com.chiksmedina.solar.BoldSolar
 import com.chiksmedina.solar.bold.weather.Cloud
 import com.chiksmedina.solar.bold.weather.CloudBolt
 import com.chiksmedina.solar.bold.weather.CloudBoltMinimalistic
@@ -38,24 +38,57 @@ import com.chiksmedina.solar.bold.weather.Tornado
 import com.chiksmedina.solar.bold.weather.TornadoSmall
 import com.chiksmedina.solar.bold.weather.Waterdrops
 import com.chiksmedina.solar.bold.weather.Wind
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object WeatherGroup
+object WeatherGroup
 
-public val BoldGroup.Weather: WeatherGroup
-  get() = WeatherGroup
+val BoldSolar.Weather: WeatherGroup
+    get() = WeatherGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val WeatherGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val WeatherGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            Cloud,
+            Clouds,
+            CloudyMoon,
+            CloudBolt,
+            CloudBoltMinimalistic,
+            CloudCheck,
+            CloudDownload,
+            CloudMinus,
+            CloudPlus,
+            CloudRain,
+            CloudSnowfall,
+            CloudSnowfallMinimalistic,
+            CloudStorm,
+            CloudSun,
+            CloudSun2,
+            CloudUpload,
+            CloudWaterdrop,
+            CloudWaterdrops,
+            CloundCross,
+            Fog,
+            Moon,
+            MoonFog,
+            MoonSleep,
+            MoonStars,
+            Snowflake,
+            Stars,
+            Sun,
+            Sunrise,
+            Sunset,
+            Sun2,
+            SunFog,
+            Temperature,
+            Tornado,
+            TornadoSmall,
+            Waterdrops,
+            Wind
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(Cloud, Clouds, CloudyMoon, CloudBolt, CloudBoltMinimalistic, CloudCheck,
-        CloudDownload, CloudMinus, CloudPlus, CloudRain, CloudSnowfall, CloudSnowfallMinimalistic,
-        CloudStorm, CloudSun, CloudSun2, CloudUpload, CloudWaterdrop, CloudWaterdrops, CloundCross,
-        Fog, Moon, MoonFog, MoonSleep, MoonStars, Snowflake, Stars, Sun, Sunrise, Sunset, Sun2,
-        SunFog, Temperature, Tornado, TornadoSmall, Waterdrops, Wind)
-    return __AllIcons!!
-  }

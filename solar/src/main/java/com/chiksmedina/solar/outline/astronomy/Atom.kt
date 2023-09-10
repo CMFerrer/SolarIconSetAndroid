@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.AstronomyGroup
 
-public val AstronomyGroup.Atom: ImageVector
+val AstronomyGroup.Atom: ImageVector
     get() {
         if (_atom != null) {
             return _atom!!
         }
-        _atom = Builder(name = "Atom", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _atom = Builder(
+            name = "Atom", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.4616f, 4.0471f)
                 curveTo(14.665f, 4.8695f, 15.8622f, 5.8597f, 17.0014f, 6.9988f)
                 curveTo(18.1405f, 8.138f, 19.1307f, 9.3352f, 19.9531f, 10.5386f)
@@ -95,7 +99,7 @@ public val AstronomyGroup.Atom: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _atom!!
     }
 

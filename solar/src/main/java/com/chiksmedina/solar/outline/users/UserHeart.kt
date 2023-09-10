@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.users
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.UsersGroup
 
-public val UsersGroup.UserHeart: ImageVector
+val UsersGroup.UserHeart: ImageVector
     get() {
         if (_userHeart != null) {
             return _userHeart!!
         }
-        _userHeart = Builder(name = "UserHeart", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _userHeart = Builder(
+            name = "UserHeart", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.25f, 6.0f)
                 curveTo(5.25f, 3.3767f, 7.3767f, 1.25f, 10.0f, 1.25f)
                 curveTo(12.6234f, 1.25f, 14.75f, 3.3767f, 14.75f, 6.0f)
@@ -37,9 +38,11 @@ public val UsersGroup.UserHeart: ImageVector
                 curveTo(13.25f, 4.2051f, 11.7949f, 2.75f, 10.0f, 2.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.9755f, 13.6643f)
                 curveTo(5.5549f, 12.7759f, 7.6865f, 12.25f, 10.0f, 12.25f)
                 curveTo(12.3136f, 12.25f, 14.4451f, 12.7759f, 16.0246f, 13.6643f)
@@ -67,9 +70,11 @@ public val UsersGroup.UserHeart: ImageVector
                 curveTo(7.8953f, 13.75f, 6.0268f, 14.2315f, 4.7108f, 14.9717f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.6903f, 7.4469f)
                 curveTo(17.4109f, 7.128f, 18.2479f, 7.1885f, 19.0f, 7.6789f)
                 curveTo(19.7522f, 7.1885f, 20.5891f, 7.128f, 21.3098f, 7.4469f)
@@ -108,7 +113,7 @@ public val UsersGroup.UserHeart: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _userHeart!!
     }
 

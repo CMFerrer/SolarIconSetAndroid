@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.school
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SchoolGroup
 
-public val SchoolGroup.Book: ImageVector
+val SchoolGroup.Book: ImageVector
     get() {
         if (_book != null) {
             return _book!!
         }
-        _book = Builder(name = "Book", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _book = Builder(
+            name = "Book", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.426f, 18.0f)
                 horizontalLineTo(20.0f)
                 curveTo(19.9965f, 18.9296f, 19.9784f, 19.6228f, 19.8866f, 20.1706f)
@@ -41,9 +42,11 @@ public val SchoolGroup.Book: ImageVector
                 curveTo(5.9635f, 18.0057f, 6.3424f, 18.0f, 7.426f, 18.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(4.7272f, 2.7333f)
                 curveTo(5.0326f, 2.4253f, 5.4613f, 2.2246f, 6.271f, 2.1148f)
                 curveTo(7.1045f, 2.0018f, 8.2092f, 2.0f, 9.7931f, 2.0f)
@@ -63,9 +66,11 @@ public val SchoolGroup.Book: ImageVector
                 curveTo(4.2227f, 3.4737f, 4.4218f, 3.0413f, 4.7272f, 2.7333f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(7.25f, 7.0f)
                 curveTo(7.25f, 6.5858f, 7.5858f, 6.25f, 8.0f, 6.25f)
                 horizontalLineTo(16.0f)
@@ -75,9 +80,11 @@ public val SchoolGroup.Book: ImageVector
                 curveTo(7.5858f, 7.75f, 7.25f, 7.4142f, 7.25f, 7.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.0f, 9.75f)
                 curveTo(7.5858f, 9.75f, 7.25f, 10.0858f, 7.25f, 10.5f)
                 curveTo(7.25f, 10.9142f, 7.5858f, 11.25f, 8.0f, 11.25f)
@@ -88,7 +95,7 @@ public val SchoolGroup.Book: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _book!!
     }
 

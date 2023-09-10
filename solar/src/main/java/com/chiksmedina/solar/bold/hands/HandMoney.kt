@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.hands
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.HandsGroup
 
-public val HandsGroup.HandMoney: ImageVector
+val HandsGroup.HandMoney: ImageVector
     get() {
         if (_handMoney != null) {
             return _handMoney!!
         }
-        _handMoney = Builder(name = "HandMoney", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _handMoney = Builder(
+            name = "HandMoney", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.2599f, 21.3884f)
                 horizontalLineTo(6.0f)
                 curveTo(5.0572f, 21.3884f, 4.5858f, 21.3884f, 4.2929f, 21.0955f)
@@ -48,45 +49,55 @@ public val HandsGroup.HandMoney: ImageVector
                 curveTo(8.2925f, 21.4937f, 7.2708f, 21.3884f, 6.2599f, 21.3884f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.5858f, 2.5858f)
                 curveTo(6.219f, 2.9526f, 6.0819f, 3.4593f, 6.0306f, 4.2498f)
                 curveTo(7.249f, 4.2336f, 8.2336f, 3.249f, 8.2498f, 2.0306f)
                 curveTo(7.4593f, 2.0819f, 6.9526f, 2.219f, 6.5858f, 2.5858f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.4142f, 2.5858f)
                 curveTo(17.0474f, 2.219f, 16.5407f, 2.0819f, 15.7502f, 2.0306f)
                 curveTo(15.7664f, 3.249f, 16.751f, 4.2336f, 17.9694f, 4.2498f)
                 curveTo(17.9181f, 3.4593f, 17.781f, 2.9526f, 17.4142f, 2.5858f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.4142f, 9.4142f)
                 curveTo(17.0474f, 9.781f, 16.5407f, 9.9181f, 15.7502f, 9.9694f)
                 curveTo(15.7665f, 8.751f, 16.751f, 7.7664f, 17.9694f, 7.7502f)
                 curveTo(17.9181f, 8.5407f, 17.781f, 9.0474f, 17.4142f, 9.4142f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.5858f, 9.4142f)
                 curveTo(6.9526f, 9.781f, 7.4593f, 9.9181f, 8.2498f, 9.9694f)
                 curveTo(8.2336f, 8.751f, 7.249f, 7.7664f, 6.0306f, 7.7502f)
                 curveTo(6.0819f, 8.5407f, 6.219f, 9.0474f, 6.5858f, 9.4142f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(6.0f, 5.75f)
                 curveTo(8.0711f, 5.75f, 9.75f, 4.0711f, 9.75f, 2.0f)
                 horizontalLineTo(14.25f)
@@ -105,7 +116,7 @@ public val HandsGroup.HandMoney: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _handMoney!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.lineduotone.WeatherGroup
 
-public val WeatherGroup.Moon: ImageVector
+val WeatherGroup.Moon: ImageVector
     get() {
         if (_moon != null) {
             return _moon!!
         }
-        _moon = Builder(name = "Moon", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _moon = Builder(
+            name = "Moon", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.0672f, 11.8568f)
                 lineTo(20.4253f, 11.469f)
                 lineTo(20.4253f, 11.469f)
@@ -87,7 +91,7 @@ public val WeatherGroup.Moon: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _moon!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.CrownStar: ImageVector
+val EssentionalUiGroup.CrownStar: ImageVector
     get() {
         if (_crownStar != null) {
             return _crownStar!!
         }
-        _crownStar = Builder(name = "CrownStar", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _crownStar = Builder(
+            name = "CrownStar", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 10.7502f)
                 curveTo(11.4983f, 10.7502f, 11.1857f, 11.075f, 11.0135f, 11.2998f)
                 curveTo(10.8492f, 11.5144f, 10.6837f, 11.8114f, 10.5141f, 12.1159f)
@@ -118,9 +119,11 @@ public val EssentionalUiGroup.CrownStar: ImageVector
                 curveTo(13.261f, 17.0107f, 13.2607f, 17.0117f, 13.2607f, 17.0117f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 1.25f)
                 curveTo(11.2937f, 1.25f, 10.8451f, 1.7494f, 10.5434f, 2.1972f)
                 curveTo(10.2372f, 2.6517f, 9.9177f, 3.3065f, 9.5389f, 4.0828f)
@@ -225,7 +228,7 @@ public val EssentionalUiGroup.CrownStar: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _crownStar!!
     }
 

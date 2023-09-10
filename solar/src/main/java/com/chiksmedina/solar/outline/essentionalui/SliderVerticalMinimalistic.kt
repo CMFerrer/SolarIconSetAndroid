@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,17 +12,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.SliderVerticalMinimalistic: ImageVector
+val EssentionalUiGroup.SliderVerticalMinimalistic: ImageVector
     get() {
         if (_sliderVerticalMinimalistic != null) {
             return _sliderVerticalMinimalistic!!
         }
-        _sliderVerticalMinimalistic = Builder(name = "SliderVerticalMinimalistic", defaultWidth =
-                24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sliderVerticalMinimalistic = Builder(
+            name = "SliderVerticalMinimalistic", defaultWidth =
+            24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9451f, 1.25f)
                 horizontalLineTo(12.0549f)
                 curveTo(13.4225f, 1.25f, 14.5248f, 1.25f, 15.3918f, 1.3665f)
@@ -69,9 +70,11 @@ public val EssentionalUiGroup.SliderVerticalMinimalistic: ImageVector
                 curveTo(10.5646f, 2.75f, 9.5635f, 2.7516f, 8.8081f, 2.8531f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(21.0f, 3.75f)
                 curveTo(21.4142f, 3.75f, 21.75f, 4.0858f, 21.75f, 4.5f)
                 verticalLineTo(19.5f)
@@ -81,9 +84,11 @@ public val EssentionalUiGroup.SliderVerticalMinimalistic: ImageVector
                 curveTo(20.25f, 4.0858f, 20.5858f, 3.75f, 21.0f, 3.75f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.25f, 4.5f)
                 curveTo(2.25f, 4.0858f, 2.5858f, 3.75f, 3.0f, 3.75f)
                 curveTo(3.4142f, 3.75f, 3.75f, 4.0858f, 3.75f, 4.5f)
@@ -94,7 +99,7 @@ public val EssentionalUiGroup.SliderVerticalMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sliderVerticalMinimalistic!!
     }
 

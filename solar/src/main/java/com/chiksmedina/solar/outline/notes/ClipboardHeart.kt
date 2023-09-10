@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NotesGroup
 
-public val NotesGroup.ClipboardHeart: ImageVector
+val NotesGroup.ClipboardHeart: ImageVector
     get() {
         if (_clipboardHeart != null) {
             return _clipboardHeart!!
         }
-        _clipboardHeart = Builder(name = "ClipboardHeart", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _clipboardHeart = Builder(
+            name = "ClipboardHeart", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.2628f, 3.2587f)
                 curveTo(7.3832f, 2.1295f, 8.3389f, 1.25f, 9.5f, 1.25f)
                 horizontalLineTo(14.5f)
@@ -110,7 +114,7 @@ public val NotesGroup.ClipboardHeart: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _clipboardHeart!!
     }
 

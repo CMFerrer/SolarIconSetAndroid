@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.outline.security
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SecurityGroup
 
-public val SecurityGroup.ShieldWarning: ImageVector
+val SecurityGroup.ShieldWarning: ImageVector
     get() {
         if (_shieldWarning != null) {
             return _shieldWarning!!
         }
-        _shieldWarning = Builder(name = "ShieldWarning", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _shieldWarning = Builder(
+            name = "ShieldWarning", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 7.25f)
                 curveTo(12.4142f, 7.25f, 12.75f, 7.5858f, 12.75f, 8.0f)
                 verticalLineTo(12.0f)
@@ -34,9 +35,11 @@ public val SecurityGroup.ShieldWarning: ImageVector
                 curveTo(11.25f, 7.5858f, 11.5858f, 7.25f, 12.0f, 7.25f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 16.0f)
                 curveTo(12.5523f, 16.0f, 13.0f, 15.5523f, 13.0f, 15.0f)
                 curveTo(13.0f, 14.4477f, 12.5523f, 14.0f, 12.0f, 14.0f)
@@ -44,9 +47,11 @@ public val SecurityGroup.ShieldWarning: ImageVector
                 curveTo(11.0f, 15.5523f, 11.4477f, 16.0f, 12.0f, 16.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.7234f, 2.0511f)
                 curveTo(10.1673f, 1.5566f, 11.0625f, 1.25f, 12.0f, 1.25f)
                 curveTo(12.9375f, 1.25f, 13.8327f, 1.5566f, 15.2766f, 2.0511f)
@@ -107,7 +112,7 @@ public val SecurityGroup.ShieldWarning: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _shieldWarning!!
     }
 

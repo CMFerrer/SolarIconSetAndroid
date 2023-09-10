@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsGroup
 
-public val ArrowsGroup.SortHorizontal: ImageVector
+val ArrowsGroup.SortHorizontal: ImageVector
     get() {
         if (_sortHorizontal != null) {
             return _sortHorizontal!!
         }
-        _sortHorizontal = Builder(name = "SortHorizontal", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _sortHorizontal = Builder(
+            name = "SortHorizontal", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.6634f, 3.4779f)
                 curveTo(10.9518f, 3.7753f, 10.9445f, 4.2501f, 10.6471f, 4.5384f)
                 lineTo(7.8508f, 7.25f)
@@ -55,7 +59,7 @@ public val ArrowsGroup.SortHorizontal: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _sortHorizontal!!
     }
 

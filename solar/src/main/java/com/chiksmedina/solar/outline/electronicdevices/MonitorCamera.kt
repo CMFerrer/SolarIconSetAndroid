@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.MonitorCamera: ImageVector
+val ElectronicDevicesGroup.MonitorCamera: ImageVector
     get() {
         if (_monitorCamera != null) {
             return _monitorCamera!!
         }
-        _monitorCamera = Builder(name = "MonitorCamera", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _monitorCamera = Builder(
+            name = "MonitorCamera", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.9506f, 1.25f)
                 horizontalLineTo(16.0494f)
                 curveTo(16.7142f, 1.25f, 17.2871f, 1.2499f, 17.7458f, 1.3116f)
@@ -152,7 +156,7 @@ public val ElectronicDevicesGroup.MonitorCamera: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _monitorCamera!!
     }
 

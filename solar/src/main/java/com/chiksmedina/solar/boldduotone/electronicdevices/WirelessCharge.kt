@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.WirelessCharge: ImageVector
+val ElectronicDevicesGroup.WirelessCharge: ImageVector
     get() {
         if (_wirelessCharge != null) {
             return _wirelessCharge!!
         }
-        _wirelessCharge = Builder(name = "WirelessCharge", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _wirelessCharge = Builder(
+            name = "WirelessCharge", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.1173f, 20.9242f)
                 curveTo(11.1584f, 20.9412f, 11.2019f, 20.9544f, 11.25f, 20.9647f)
                 verticalLineTo(22.0f)
@@ -41,9 +42,11 @@ public val ElectronicDevicesGroup.WirelessCharge: ImageVector
                 curveTo(10.6776f, 20.628f, 10.8723f, 20.8227f, 11.1173f, 20.9242f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.9997f, 10.0726f)
                 curveTo(21.0398f, 15.043f, 17.043f, 19.0398f, 12.0726f, 18.9997f)
                 curveTo(7.1022f, 18.9596f, 3.0404f, 14.8978f, 3.0003f, 9.9274f)
@@ -51,9 +54,11 @@ public val ElectronicDevicesGroup.WirelessCharge: ImageVector
                 curveTo(16.8978f, 1.0404f, 20.9596f, 5.1022f, 20.9997f, 10.0726f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(13.3744f, 6.4569f)
                 curveTo(13.6743f, 6.7426f, 13.6859f, 7.2173f, 13.4003f, 7.5172f)
                 lineTo(11.75f, 9.25f)
@@ -72,7 +77,7 @@ public val ElectronicDevicesGroup.WirelessCharge: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _wirelessCharge!!
     }
 

@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.homefurniture
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Bath: ImageVector
+val HomeFurnitureGroup.Bath: ImageVector
     get() {
         if (_bath != null) {
             return _bath!!
         }
-        _bath = Builder(name = "Bath", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bath = Builder(
+            name = "Bath", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.0f, 11.0f)
                 horizontalLineTo(1.75f)
                 curveTo(1.3358f, 11.0f, 1.0f, 11.3358f, 1.0f, 11.75f)
@@ -58,9 +59,11 @@ public val HomeFurnitureGroup.Bath: ImageVector
                 horizontalLineTo(2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.1176f, 19.3472f)
                 curveTo(5.1038f, 19.3688f, 5.0911f, 19.3913f, 5.0793f, 19.4148f)
                 lineTo(4.0793f, 21.4148f)
@@ -70,9 +73,11 @@ public val HomeFurnitureGroup.Bath: ImageVector
                 curveTo(6.0307f, 19.9348f, 5.2753f, 19.4727f, 5.1176f, 19.3472f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(17.1113f, 20.1499f)
                 lineTo(18.0791f, 22.0855f)
                 curveTo(18.2643f, 22.456f, 18.7149f, 22.6062f, 19.0853f, 22.4209f)
@@ -82,9 +87,11 @@ public val HomeFurnitureGroup.Bath: ImageVector
                 curveTo(18.1778f, 19.5113f, 17.4498f, 19.9508f, 17.1113f, 20.1499f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.5f, 4.1352f)
                 curveTo(3.5f, 3.2321f, 4.2321f, 2.5f, 5.1352f, 2.5f)
                 curveTo(5.8038f, 2.5f, 6.405f, 2.9071f, 6.6534f, 3.5279f)
@@ -98,9 +105,11 @@ public val HomeFurnitureGroup.Bath: ImageVector
                 verticalLineTo(4.1352f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.7965f, 3.886f)
                 curveTo(6.202f, 4.3192f, 5.7163f, 4.9233f, 5.4171f, 5.6601f)
                 curveTo(4.9968f, 6.6951f, 5.0194f, 7.8066f, 5.3976f, 8.7665f)
@@ -114,7 +123,7 @@ public val HomeFurnitureGroup.Bath: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bath!!
     }
 

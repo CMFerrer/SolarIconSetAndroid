@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ShoppingEcommerceGroup
 
-public val ShoppingEcommerceGroup.Cart3: ImageVector
+val ShoppingEcommerceGroup.Cart3: ImageVector
     get() {
         if (_cart3 != null) {
             return _cart3!!
         }
-        _cart3 = Builder(name = "Cart3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _cart3 = Builder(
+            name = "Cart3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9998f, 2.25f)
                 curveTo(9.3014f, 2.25f, 8.6985f, 2.6591f, 8.4178f, 3.2508f)
                 curveTo(7.7343f, 3.2557f, 7.2015f, 3.2871f, 6.726f, 3.473f)
@@ -87,7 +91,7 @@ public val ShoppingEcommerceGroup.Cart3: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _cart3!!
     }
 

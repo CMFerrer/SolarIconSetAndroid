@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.MapLocationGroup
 
-public val MapLocationGroup.Radar: ImageVector
+val MapLocationGroup.Radar: ImageVector
     get() {
         if (_radar != null) {
             return _radar!!
         }
-        _radar = Builder(name = "Radar", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _radar = Builder(
+            name = "Radar", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 11.9996f)
                 lineTo(5.002f, 6.3355f)
                 curveTo(4.5729f, 5.9881f, 3.9387f, 6.0518f, 3.636f, 6.5135f)
@@ -31,7 +35,7 @@ public val MapLocationGroup.Radar: ImageVector
                 curveTo(11.9556f, 1.6349f, 9.2868f, 2.0486f, 7.0869f, 3.2897f)
             }
         }
-        .build()
+            .build()
         return _radar!!
     }
 

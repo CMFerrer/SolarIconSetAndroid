@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.DesignToolsGroup
 
-public val DesignToolsGroup.RulerAngular: ImageVector
+val DesignToolsGroup.RulerAngular: ImageVector
     get() {
         if (_rulerAngular != null) {
             return _rulerAngular!!
         }
-        _rulerAngular = Builder(name = "RulerAngular", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _rulerAngular = Builder(
+            name = "RulerAngular", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.948f, 1.25f)
                 lineTo(8.9992f, 1.25f)
                 curveTo(8.9995f, 1.25f, 8.9989f, 1.25f, 8.9992f, 1.25f)
@@ -146,7 +150,7 @@ public val DesignToolsGroup.RulerAngular: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _rulerAngular!!
     }
 

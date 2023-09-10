@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.LikeGroup
 
-public val LikeGroup.MedalRibbonsStar: ImageVector
+val LikeGroup.MedalRibbonsStar: ImageVector
     get() {
         if (_medalRibbonsStar != null) {
             return _medalRibbonsStar!!
         }
-        _medalRibbonsStar = Builder(name = "MedalRibbonsStar", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _medalRibbonsStar = Builder(
+            name = "MedalRibbonsStar", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0f, 2.75f)
                 curveTo(8.5482f, 2.75f, 5.75f, 5.5482f, 5.75f, 9.0f)
                 curveTo(5.75f, 12.4518f, 8.5482f, 15.25f, 12.0f, 15.25f)
@@ -211,7 +215,7 @@ public val LikeGroup.MedalRibbonsStar: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _medalRibbonsStar!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.FoodKitchenGroup
 
-public val FoodKitchenGroup.OvenMitts: ImageVector
+val FoodKitchenGroup.OvenMitts: ImageVector
     get() {
         if (_ovenMitts != null) {
             return _ovenMitts!!
         }
-        _ovenMitts = Builder(name = "OvenMitts", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _ovenMitts = Builder(
+            name = "OvenMitts", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.481f, 4.5645f)
                 curveTo(9.0446f, 3.4084f, 8.1314f, 2.7366f, 7.2243f, 2.7502f)
                 curveTo(6.005f, 2.7686f, 4.7862f, 4.0664f, 4.8164f, 5.9874f)
@@ -71,7 +75,7 @@ public val FoodKitchenGroup.OvenMitts: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _ovenMitts!!
     }
 

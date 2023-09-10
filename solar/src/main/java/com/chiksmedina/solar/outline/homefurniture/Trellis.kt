@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Trellis: ImageVector
+val HomeFurnitureGroup.Trellis: ImageVector
     get() {
         if (_trellis != null) {
             return _trellis!!
         }
-        _trellis = Builder(name = "Trellis", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _trellis = Builder(
+            name = "Trellis", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.1988f, 2.9199f)
                 curveTo(10.7812f, 3.049f, 10.2417f, 3.245f, 9.4877f, 3.5194f)
                 curveTo(8.4217f, 3.9072f, 7.1677f, 4.2826f, 6.0679f, 4.3826f)
@@ -153,7 +157,7 @@ public val HomeFurnitureGroup.Trellis: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _trellis!!
     }
 

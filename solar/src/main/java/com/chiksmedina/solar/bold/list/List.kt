@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ListGroup
 
-public val ListGroup.List: ImageVector
+val ListGroup.List: ImageVector
     get() {
         if (_list != null) {
             return _list!!
         }
-        _list = Builder(name = "List", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _list = Builder(
+            name = "List", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.0f, 3.25f)
                 curveTo(17.2361f, 3.25f, 17.4584f, 3.3612f, 17.6f, 3.55f)
                 lineTo(20.6f, 7.55f)
@@ -71,7 +75,7 @@ public val ListGroup.List: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _list!!
     }
 

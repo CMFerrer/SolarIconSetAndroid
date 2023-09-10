@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.bold.electronicdevices
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.GamepadNoCharge: ImageVector
+val ElectronicDevicesGroup.GamepadNoCharge: ImageVector
     get() {
         if (_gamepadNoCharge != null) {
             return _gamepadNoCharge!!
         }
-        _gamepadNoCharge = Builder(name = "GamepadNoCharge", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _gamepadNoCharge = Builder(
+            name = "GamepadNoCharge", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.4695f, 17.4697f)
                 curveTo(10.7624f, 17.1768f, 11.2373f, 17.1768f, 11.5302f, 17.4697f)
                 lineTo(11.9999f, 17.9393f)
@@ -43,9 +44,11 @@ public val ElectronicDevicesGroup.GamepadNoCharge: ImageVector
                 curveTo(10.1766f, 18.2374f, 10.1766f, 17.7626f, 10.4695f, 17.4697f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.6669f, 5.1344f)
                 lineTo(10.165f, 4.7792f)
                 curveTo(9.4486f, 4.2723f, 8.5926f, 4.0f, 7.715f, 4.0f)
@@ -117,7 +120,7 @@ public val ElectronicDevicesGroup.GamepadNoCharge: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _gamepadNoCharge!!
     }
 

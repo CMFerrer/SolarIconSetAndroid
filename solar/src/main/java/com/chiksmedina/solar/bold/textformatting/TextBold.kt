@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.TextFormattingGroup
 
-public val TextFormattingGroup.TextBold: ImageVector
+val TextFormattingGroup.TextBold: ImageVector
     get() {
         if (_textBold != null) {
             return _textBold!!
         }
-        _textBold = Builder(name = "TextBold", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _textBold = Builder(
+            name = "TextBold", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(7.6087f, 1.0f)
                 curveTo(5.6157f, 1.0f, 4.0f, 2.6157f, 4.0f, 4.6087f)
                 verticalLineTo(19.9412f)
@@ -50,7 +54,7 @@ public val TextFormattingGroup.TextBold: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _textBold!!
     }
 

@@ -1,7 +1,7 @@
 package com.chiksmedina.solar.lineduotone
 
 import androidx.compose.ui.graphics.vector.ImageVector
-import com.chiksmedina.solar.LineduotoneGroup
+import com.chiksmedina.solar.LineDuotoneSolar
 import com.chiksmedina.solar.lineduotone.messagesconversation.ChatDots
 import com.chiksmedina.solar.lineduotone.messagesconversation.ChatLine
 import com.chiksmedina.solar.lineduotone.messagesconversation.ChatRound
@@ -50,27 +50,69 @@ import com.chiksmedina.solar.lineduotone.messagesconversation.Plain3
 import com.chiksmedina.solar.lineduotone.messagesconversation.SquareForward
 import com.chiksmedina.solar.lineduotone.messagesconversation.SquareShareLine
 import com.chiksmedina.solar.lineduotone.messagesconversation.Unread
-import kotlin.collections.List as ____KtList
+import kotlin.collections.List as KtList
 
-public object MessagesConversationGroup
+object MessagesConversationGroup
 
-public val LineduotoneGroup.MessagesConversation: MessagesConversationGroup
-  get() = MessagesConversationGroup
+val LineDuotoneSolar.MessagesConversation: MessagesConversationGroup
+    get() = MessagesConversationGroup
 
-private var __AllIcons: ____KtList<ImageVector>? = null
+private var _AllIcons: KtList<ImageVector>? = null
 
-public val MessagesConversationGroup.AllIcons: ____KtList<ImageVector>
-  get() {
-    if (__AllIcons != null) {
-      return __AllIcons!!
+val MessagesConversationGroup.AllIcons: KtList<ImageVector>
+    get() {
+        if (_AllIcons != null) {
+            return _AllIcons!!
+        }
+        _AllIcons = listOf(
+            ChatDots,
+            ChatLine,
+            ChatRound,
+            ChatRoundCall,
+            ChatRoundCheck,
+            ChatRoundDots,
+            ChatRoundLike,
+            ChatRoundLine,
+            ChatRoundMoney,
+            ChatRoundUnread,
+            ChatRoundVideo,
+            ChatUnread,
+            ChatSquare,
+            ChatSquareArrow,
+            ChatSquareCall,
+            ChatSquareCheck,
+            ChatSquareCode,
+            ChatSquareLike,
+            CheckRead,
+            Dialog,
+            Dialog2,
+            Forward,
+            Inbox,
+            InboxArchive,
+            InboxIn,
+            InboxLine,
+            InboxOut,
+            InboxUnread,
+            Letter,
+            LetterOpened,
+            LetterUnread,
+            Mailbox,
+            MultipleForwardLeft,
+            MultipleForwardRight,
+            Paperclip,
+            Paperclip2,
+            PaperclipRounded,
+            PaperclipRounded2,
+            Pen,
+            Pen2,
+            PenNewRound,
+            PenNewSquare,
+            Plain,
+            Plain2,
+            Plain3,
+            SquareForward,
+            SquareShareLine,
+            Unread
+        )
+        return _AllIcons!!
     }
-    __AllIcons= listOf(ChatDots, ChatLine, ChatRound, ChatRoundCall, ChatRoundCheck, ChatRoundDots,
-        ChatRoundLike, ChatRoundLine, ChatRoundMoney, ChatRoundUnread, ChatRoundVideo, ChatUnread,
-        ChatSquare, ChatSquareArrow, ChatSquareCall, ChatSquareCheck, ChatSquareCode,
-        ChatSquareLike, CheckRead, Dialog, Dialog2, Forward, Inbox, InboxArchive, InboxIn,
-        InboxLine, InboxOut, InboxUnread, Letter, LetterOpened, LetterUnread, Mailbox,
-        MultipleForwardLeft, MultipleForwardRight, Paperclip, Paperclip2, PaperclipRounded,
-        PaperclipRounded2, Pen, Pen2, PenNewRound, PenNewSquare, Plain, Plain2, Plain3,
-        SquareForward, SquareShareLine, Unread)
-    return __AllIcons!!
-  }

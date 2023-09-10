@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.broken.astronomy
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.AstronomyGroup
 
-public val AstronomyGroup.StarRing: ImageVector
+val AstronomyGroup.StarRing: ImageVector
     get() {
         if (_starRing != null) {
             return _starRing!!
         }
-        _starRing = Builder(name = "StarRing", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _starRing = Builder(
+            name = "StarRing", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(13.6734f, 15.6837f)
                 curveTo(14.3463f, 16.75f, 14.6827f, 17.2832f, 14.4535f, 17.7193f)
                 curveTo(14.2243f, 18.1555f, 13.5812f, 18.2057f, 12.2951f, 18.3061f)
@@ -52,9 +53,11 @@ public val AstronomyGroup.StarRing: ImageVector
                 curveTo(12.6464f, 11.3786f, 13.272f, 11.2008f, 13.6068f, 11.5356f)
                 curveTo(13.9416f, 11.8704f, 13.7638f, 12.496f, 13.4083f, 13.7471f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(21.8291f, 19.9822f)
                 curveTo(21.3391f, 21.0265f, 19.8604f, 21.2409f, 17.8486f, 20.7454f)
                 moveTo(21.8291f, 19.9822f)
@@ -72,9 +75,11 @@ public val AstronomyGroup.StarRing: ImageVector
                 moveTo(2.1709f, 6.0176f)
                 curveTo(3.0793f, 4.0817f, 7.3846f, 4.998f, 12.1861f, 8.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(18.8953f, 3.395f)
                 curveTo(18.9939f, 4.3194f, 19.3815f, 5.1859f, 20.0f, 5.8646f)
                 moveTo(18.8953f, 3.395f)
@@ -87,7 +92,7 @@ public val AstronomyGroup.StarRing: ImageVector
                 lineTo(16.0f, 4.5138f)
             }
         }
-        .build()
+            .build()
         return _starRing!!
     }
 

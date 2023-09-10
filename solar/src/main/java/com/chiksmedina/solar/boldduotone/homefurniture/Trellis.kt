@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.homefurniture
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.HomeFurnitureGroup
 
-public val HomeFurnitureGroup.Trellis: ImageVector
+val HomeFurnitureGroup.Trellis: ImageVector
     get() {
         if (_trellis != null) {
             return _trellis!!
         }
-        _trellis = Builder(name = "Trellis", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _trellis = Builder(
+            name = "Trellis", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(20.5f, 15.0f)
                 verticalLineTo(6.1375f)
                 curveTo(20.5f, 5.7495f, 20.5f, 5.5556f, 20.4822f, 5.4229f)
@@ -45,9 +46,11 @@ public val HomeFurnitureGroup.Trellis: ImageVector
                 horizontalLineTo(20.5f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.0303f, 8.5303f)
                 curveTo(14.3232f, 8.2374f, 14.3232f, 7.7626f, 14.0303f, 7.4697f)
                 curveTo(13.7374f, 7.1768f, 13.2626f, 7.1768f, 12.9697f, 7.4697f)
@@ -57,9 +60,11 @@ public val HomeFurnitureGroup.Trellis: ImageVector
                 lineTo(14.0303f, 8.5303f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.0303f, 7.5303f)
                 curveTo(11.3232f, 7.2374f, 11.3232f, 6.7626f, 11.0303f, 6.4697f)
                 curveTo(10.7374f, 6.1768f, 10.2626f, 6.1768f, 9.9697f, 6.4697f)
@@ -69,9 +74,11 @@ public val HomeFurnitureGroup.Trellis: ImageVector
                 lineTo(11.0303f, 7.5303f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(15.0303f, 11.5303f)
                 curveTo(15.3232f, 11.2374f, 15.3232f, 10.7626f, 15.0303f, 10.4697f)
                 curveTo(14.7374f, 10.1768f, 14.2626f, 10.1768f, 13.9697f, 10.4697f)
@@ -81,9 +88,11 @@ public val HomeFurnitureGroup.Trellis: ImageVector
                 lineTo(15.0303f, 11.5303f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(3.0002f, 15.0f)
                 horizontalLineTo(11.25f)
                 verticalLineTo(21.0f)
@@ -106,9 +115,11 @@ public val HomeFurnitureGroup.Trellis: ImageVector
                 curveTo(6.5858f, 18.75f, 6.25f, 18.4142f, 6.25f, 18.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.0002f, 21.0f)
                 horizontalLineTo(12.75f)
                 verticalLineTo(15.0f)
@@ -132,7 +143,7 @@ public val HomeFurnitureGroup.Trellis: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _trellis!!
     }
 

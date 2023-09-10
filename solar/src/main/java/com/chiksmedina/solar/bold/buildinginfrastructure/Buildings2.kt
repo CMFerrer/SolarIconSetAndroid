@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.BuildingInfrastructureGroup
 
-public val BuildingInfrastructureGroup.Buildings2: ImageVector
+val BuildingInfrastructureGroup.Buildings2: ImageVector
     get() {
         if (_buildings2 != null) {
             return _buildings2!!
         }
-        _buildings2 = Builder(name = "Buildings2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _buildings2 = Builder(
+            name = "Buildings2", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF1C274C)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.25f, 8.5f)
                 curveTo(21.25f, 7.0955f, 21.25f, 6.3933f, 20.9129f, 5.8889f)
                 curveTo(20.767f, 5.6705f, 20.5795f, 5.483f, 20.3611f, 5.3371f)
@@ -124,7 +128,7 @@ public val BuildingInfrastructureGroup.Buildings2: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _buildings2!!
     }
 

@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.notifications
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.NotificationsGroup
 
-public val NotificationsGroup.NotificationRemove: ImageVector
+val NotificationsGroup.NotificationRemove: ImageVector
     get() {
         if (_notificationRemove != null) {
             return _notificationRemove!!
         }
-        _notificationRemove = Builder(name = "NotificationRemove", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _notificationRemove = Builder(
+            name = "NotificationRemove", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.5303f, 1.4697f)
                 curveTo(17.2374f, 1.1768f, 16.7626f, 1.1768f, 16.4697f, 1.4697f)
                 curveTo(16.1768f, 1.7626f, 16.1768f, 2.2374f, 16.4697f, 2.5303f)
@@ -43,9 +44,11 @@ public val NotificationsGroup.NotificationRemove: ImageVector
                 lineTo(17.5303f, 1.4697f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.9426f, 1.25f)
                 curveTo(9.6342f, 1.25f, 7.8252f, 1.25f, 6.4137f, 1.4398f)
                 curveTo(4.969f, 1.634f, 3.8289f, 2.0394f, 2.9341f, 2.9342f)
@@ -84,7 +87,7 @@ public val NotificationsGroup.NotificationRemove: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _notificationRemove!!
     }
 

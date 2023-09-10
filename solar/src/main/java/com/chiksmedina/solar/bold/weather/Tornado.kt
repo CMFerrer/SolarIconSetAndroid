@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.bold.weather
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.WeatherGroup
 
-public val WeatherGroup.Tornado: ImageVector
+val WeatherGroup.Tornado: ImageVector
     get() {
         if (_tornado != null) {
             return _tornado!!
         }
-        _tornado = Builder(name = "Tornado", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _tornado = Builder(
+            name = "Tornado", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.3127f, 4.5f)
                 curveTo(4.68f, 4.3878f, 5.165f, 4.2782f, 5.7593f, 4.1791f)
                 curveTo(7.3361f, 3.9163f, 9.5429f, 3.75f, 12.0f, 3.75f)
@@ -98,9 +99,11 @@ public val WeatherGroup.Tornado: ImageVector
                 curveTo(17.6263f, 10.2593f, 18.0178f, 10.1655f, 18.3435f, 10.3333f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(20.7061f, 7.747f)
                 curveTo(20.8458f, 8.137f, 20.6429f, 8.5663f, 20.253f, 8.706f)
                 lineTo(20.2507f, 8.7069f)
@@ -136,9 +139,11 @@ public val WeatherGroup.Tornado: ImageVector
                 curveTo(20.1369f, 7.1545f, 20.5664f, 7.3572f, 20.7061f, 7.747f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.2731f, 13.3015f)
                 curveTo(7.8891f, 13.1513f, 7.4556f, 13.3393f, 7.3031f, 13.7229f)
                 curveTo(7.15f, 14.1078f, 7.338f, 14.5439f, 7.7229f, 14.6969f)
@@ -206,7 +211,7 @@ public val WeatherGroup.Tornado: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _tornado!!
     }
 

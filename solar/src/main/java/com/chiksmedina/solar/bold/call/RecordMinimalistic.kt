@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.CallGroup
 
-public val CallGroup.RecordMinimalistic: ImageVector
+val CallGroup.RecordMinimalistic: ImageVector
     get() {
         if (_recordMinimalistic != null) {
             return _recordMinimalistic!!
         }
-        _recordMinimalistic = Builder(name = "RecordMinimalistic", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _recordMinimalistic = Builder(
+            name = "RecordMinimalistic", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.8889f, 16.0f)
                 curveTo(3.7411f, 16.0f, 2.0f, 14.2091f, 2.0f, 12.0f)
                 curveTo(2.0f, 9.7909f, 3.7411f, 8.0f, 5.8889f, 8.0f)
@@ -35,7 +39,7 @@ public val CallGroup.RecordMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _recordMinimalistic!!
     }
 

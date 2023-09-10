@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.FacesEmotionsStickersGroup
 
-public val FacesEmotionsStickersGroup.StickerSquare: ImageVector
+val FacesEmotionsStickersGroup.StickerSquare: ImageVector
     get() {
         if (_stickerSquare != null) {
             return _stickerSquare!!
         }
-        _stickerSquare = Builder(name = "StickerSquare", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _stickerSquare = Builder(
+            name = "StickerSquare", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(15.0f, 22.0f)
                 horizontalLineTo(12.0f)
                 curveTo(7.286f, 22.0f, 4.9289f, 22.0f, 3.4645f, 20.5355f)
@@ -39,7 +43,7 @@ public val FacesEmotionsStickersGroup.StickerSquare: ImageVector
                 verticalLineTo(15.0f)
             }
         }
-        .build()
+            .build()
         return _stickerSquare!!
     }
 

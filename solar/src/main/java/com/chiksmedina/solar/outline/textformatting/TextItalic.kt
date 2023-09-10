@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.TextFormattingGroup
 
-public val TextFormattingGroup.TextItalic: ImageVector
+val TextFormattingGroup.TextItalic: ImageVector
     get() {
         if (_textItalic != null) {
             return _textItalic!!
         }
-        _textItalic = Builder(name = "TextItalic", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _textItalic = Builder(
+            name = "TextItalic", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(14.9826f, 1.2502f)
                 horizontalLineTo(9.0f)
                 curveTo(8.5858f, 1.2502f, 8.25f, 1.586f, 8.25f, 2.0002f)
@@ -45,7 +49,7 @@ public val TextFormattingGroup.TextItalic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _textItalic!!
     }
 

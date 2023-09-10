@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.Laptop3: ImageVector
+val ElectronicDevicesGroup.Laptop3: ImageVector
     get() {
         if (_laptop3 != null) {
             return _laptop3!!
         }
-        _laptop3 = Builder(name = "Laptop3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _laptop3 = Builder(
+            name = "Laptop3", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.4451f, 1.25f)
                 horizontalLineTo(14.5549f)
                 curveTo(15.9225f, 1.25f, 17.0248f, 1.25f, 17.8918f, 1.3665f)
@@ -103,7 +107,7 @@ public val ElectronicDevicesGroup.Laptop3: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _laptop3!!
     }
 

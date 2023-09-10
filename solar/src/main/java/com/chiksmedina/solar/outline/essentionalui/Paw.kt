@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.essentionalui
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.EssentionalUiGroup
 
-public val EssentionalUiGroup.Paw: ImageVector
+val EssentionalUiGroup.Paw: ImageVector
     get() {
         if (_paw != null) {
             return _paw!!
         }
-        _paw = Builder(name = "Paw", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
-                = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _paw = Builder(
+            name = "Paw", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp, viewportWidth
+            = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.2961f, 1.9906f)
                 curveTo(9.889f, 2.5435f, 10.3472f, 3.3577f, 10.5824f, 4.2889f)
                 curveTo(10.8177f, 5.2208f, 10.8026f, 6.1621f, 10.5537f, 6.9428f)
@@ -45,9 +46,11 @@ public val EssentionalUiGroup.Paw: ImageVector
                 curveTo(8.9514f, 3.9566f, 8.6215f, 3.4126f, 8.2731f, 3.0877f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.8509f, 9.4386f)
                 curveTo(11.5969f, 9.1872f, 12.4031f, 9.1872f, 13.1491f, 9.4386f)
                 curveTo(13.9775f, 9.7178f, 14.579f, 10.4109f, 15.1373f, 11.2965f)
@@ -97,9 +100,11 @@ public val EssentionalUiGroup.Paw: ImageVector
                 curveTo(13.3484f, 11.2717f, 12.9829f, 10.9655f, 12.6701f, 10.86f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(13.4176f, 4.2889f)
                 curveTo(13.6528f, 3.3577f, 14.111f, 2.5435f, 14.7039f, 1.9906f)
                 curveTo(15.2909f, 1.4433f, 16.0999f, 1.0839f, 16.9508f, 1.3259f)
@@ -121,9 +126,11 @@ public val EssentionalUiGroup.Paw: ImageVector
                 curveTo(16.9677f, 3.021f, 16.7239f, 2.8208f, 16.5406f, 2.7687f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(4.6954f, 9.2035f)
                 curveTo(4.1317f, 8.8136f, 3.4026f, 8.6075f, 2.6853f, 8.861f)
                 curveTo(1.964f, 9.1158f, 1.5327f, 9.737f, 1.3547f, 10.3994f)
@@ -145,9 +152,11 @@ public val EssentionalUiGroup.Paw: ImageVector
                 curveTo(3.3229f, 10.2265f, 3.5504f, 10.2354f, 3.842f, 10.4371f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(21.3147f, 8.861f)
                 curveTo(20.5974f, 8.6075f, 19.8683f, 8.8136f, 19.3046f, 9.2035f)
                 curveTo(18.7377f, 9.5957f, 18.2717f, 10.2103f, 17.9991f, 10.9405f)
@@ -170,7 +179,7 @@ public val EssentionalUiGroup.Paw: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _paw!!
     }
 

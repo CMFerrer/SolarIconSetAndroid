@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.broken.designtools
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,24 +12,30 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.DesignToolsGroup
 
-public val DesignToolsGroup.AlignBottom: ImageVector
+val DesignToolsGroup.AlignBottom: ImageVector
     get() {
         if (_alignBottom != null) {
             return _alignBottom!!
         }
-        _alignBottom = Builder(name = "AlignBottom", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _alignBottom = Builder(
+            name = "AlignBottom", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(10.0f, 21.0f)
                 lineTo(22.0f, 21.0f)
                 moveTo(2.0f, 21.0f)
                 lineTo(6.0f, 21.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 9.0f)
                 lineTo(5.0f, 14.5f)
                 curveTo(5.0f, 15.4346f, 5.0f, 15.9019f, 5.201f, 16.25f)
@@ -49,9 +52,11 @@ public val DesignToolsGroup.AlignBottom: ImageVector
                 curveTo(5.522f, 3.3326f, 5.3326f, 3.522f, 5.201f, 3.75f)
                 curveTo(5.0395f, 4.0296f, 5.0078f, 4.3861f, 5.0015f, 5.0f)
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(16.5f, 17.0f)
                 curveTo(15.5654f, 17.0f, 15.0981f, 17.0f, 14.75f, 16.799f)
                 curveTo(14.522f, 16.6674f, 14.3326f, 16.478f, 14.201f, 16.25f)
@@ -70,7 +75,7 @@ public val DesignToolsGroup.AlignBottom: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _alignBottom!!
     }
 

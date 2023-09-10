@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.foodkitchen
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.FoodKitchenGroup
 
-public val FoodKitchenGroup.DonutBitten: ImageVector
+val FoodKitchenGroup.DonutBitten: ImageVector
     get() {
         if (_donutBitten != null) {
             return _donutBitten!!
         }
-        _donutBitten = Builder(name = "DonutBitten", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _donutBitten = Builder(
+            name = "DonutBitten", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 2.0f)
                 curveTo(6.4771f, 2.0f, 2.0f, 6.4771f, 2.0f, 12.0f)
                 curveTo(2.0f, 12.3539f, 2.0184f, 12.7036f, 2.0543f, 13.048f)
@@ -42,9 +43,11 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 curveTo(22.0f, 6.4771f, 17.5228f, 2.0f, 12.0f, 2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.5276f, 5.4172f)
                 curveTo(19.5076f, 5.4335f, 19.4881f, 5.451f, 19.4694f, 5.4697f)
                 lineTo(18.4694f, 6.4697f)
@@ -54,9 +57,11 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 curveTo(20.1625f, 6.2f, 19.8591f, 5.7959f, 19.5276f, 5.4172f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.4169f, 4.4721f)
                 curveTo(5.4332f, 4.4922f, 5.4507f, 4.5116f, 5.4694f, 4.5303f)
                 lineTo(6.4694f, 5.5303f)
@@ -66,9 +71,11 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 curveTo(6.1997f, 3.8373f, 5.7957f, 4.1406f, 5.4169f, 4.4721f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.4694f, 4.5303f)
                 curveTo(10.1765f, 4.2374f, 10.1765f, 3.7626f, 10.4694f, 3.4697f)
                 curveTo(10.7623f, 3.1768f, 11.2372f, 3.1768f, 11.5301f, 3.4697f)
@@ -78,9 +85,11 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 lineTo(10.4694f, 4.5303f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.5998f, 5.45f)
                 curveTo(16.8483f, 5.1186f, 16.7811f, 4.6485f, 16.4498f, 4.4f)
                 curveTo(16.1184f, 4.1515f, 15.6483f, 4.2186f, 15.3998f, 4.55f)
@@ -90,9 +99,11 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 lineTo(16.5998f, 5.45f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.4093f, 7.5601f)
                 curveTo(8.5165f, 7.9602f, 8.9277f, 8.1977f, 9.3279f, 8.0905f)
                 lineTo(10.6939f, 7.7244f)
@@ -102,9 +113,11 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 curveTo(8.5395f, 6.7488f, 8.3021f, 7.16f, 8.4093f, 7.5601f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(17.4651f, 10.354f)
                 curveTo(17.4845f, 10.7678f, 17.1649f, 11.119f, 16.7511f, 11.1384f)
                 curveTo(16.3373f, 11.1579f, 15.9862f, 10.8382f, 15.9667f, 10.4245f)
@@ -114,9 +127,11 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 lineTo(17.4651f, 10.354f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(18.4366f, 12.0586f)
                 curveTo(18.7103f, 12.3694f, 19.1842f, 12.3995f, 19.4951f, 12.1257f)
                 lineTo(21.1732f, 10.6479f)
@@ -126,9 +141,11 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 curveTo(18.1929f, 11.2738f, 18.1628f, 11.7477f, 18.4366f, 12.0586f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.5242f, 8.1668f)
                 curveTo(5.3528f, 7.7897f, 5.5195f, 7.345f, 5.8966f, 7.1736f)
                 curveTo(6.2737f, 7.0022f, 6.7183f, 7.169f, 6.8898f, 7.5461f)
@@ -138,9 +155,11 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 lineTo(5.5242f, 8.1668f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(6.9427f, 10.895f)
                 curveTo(7.277f, 11.1397f, 7.3496f, 11.6089f, 7.105f, 11.9432f)
                 lineTo(6.2698f, 13.0844f)
@@ -150,9 +169,11 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 curveTo(6.1392f, 10.723f, 6.6084f, 10.6504f, 6.9427f, 10.895f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(2.8552f, 8.9793f)
                 curveTo(2.8321f, 8.5657f, 3.1487f, 8.2118f, 3.5623f, 8.1887f)
                 curveTo(3.9759f, 8.1657f, 4.3298f, 8.4823f, 4.3529f, 8.8959f)
@@ -162,9 +183,11 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 lineTo(2.8552f, 8.9793f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.9999f, 15.0f)
                 curveTo(7.2119f, 15.0f, 8.6062f, 14.0924f, 9.3872f, 13.5f)
                 lineTo(9.3961f, 13.4911f)
@@ -192,7 +215,7 @@ public val FoodKitchenGroup.DonutBitten: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _donutBitten!!
     }
 

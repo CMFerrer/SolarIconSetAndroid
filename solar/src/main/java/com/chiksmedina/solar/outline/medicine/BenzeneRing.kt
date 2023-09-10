@@ -4,9 +4,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MedicineGroup
 
-public val MedicineGroup.BenzeneRing: ImageVector
+val MedicineGroup.BenzeneRing: ImageVector
     get() {
         if (_benzeneRing != null) {
             return _benzeneRing!!
         }
-        _benzeneRing = Builder(name = "BenzeneRing", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _benzeneRing = Builder(
+            name = "BenzeneRing", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(16.384f, 15.1442f)
                 curveTo(16.7398f, 14.9322f, 16.8563f, 14.4718f, 16.6442f, 14.116f)
                 curveTo(16.4322f, 13.7602f, 15.9718f, 13.6437f, 15.616f, 13.8558f)
@@ -33,9 +35,11 @@ public val MedicineGroup.BenzeneRing: ImageVector
                 lineTo(16.384f, 15.1442f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.8394f, 3.5401f)
                 curveTo(11.2105f, 3.367f, 11.581f, 3.25f, 12.0f, 3.25f)
                 curveTo(12.4189f, 3.25f, 12.7894f, 3.367f, 13.1606f, 3.5401f)
@@ -114,7 +118,7 @@ public val MedicineGroup.BenzeneRing: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _benzeneRing!!
     }
 

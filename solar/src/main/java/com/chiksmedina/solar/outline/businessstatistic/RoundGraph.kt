@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.outline.businessstatistic
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.BusinessStatisticGroup
 
-public val BusinessStatisticGroup.RoundGraph: ImageVector
+val BusinessStatisticGroup.RoundGraph: ImageVector
     get() {
         if (_roundGraph != null) {
             return _roundGraph!!
         }
-        _roundGraph = Builder(name = "RoundGraph", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _roundGraph = Builder(
+            name = "RoundGraph", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.25f, 2.0f)
                 curveTo(11.25f, 1.5858f, 11.5858f, 1.25f, 12.0f, 1.25f)
                 curveTo(17.9371f, 1.25f, 22.75f, 6.0629f, 22.75f, 12.0f)
@@ -39,9 +40,11 @@ public val BusinessStatisticGroup.RoundGraph: ImageVector
                 curveTo(11.5858f, 2.75f, 11.25f, 2.4142f, 11.25f, 2.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.25f, 5.0f)
                 curveTo(11.25f, 4.5858f, 11.5858f, 4.25f, 12.0f, 4.25f)
                 curveTo(16.2802f, 4.25f, 19.75f, 7.7198f, 19.75f, 12.0f)
@@ -55,9 +58,11 @@ public val BusinessStatisticGroup.RoundGraph: ImageVector
                 curveTo(11.5858f, 5.75f, 11.25f, 5.4142f, 11.25f, 5.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 7.25f)
                 curveTo(11.5858f, 7.25f, 11.25f, 7.5858f, 11.25f, 8.0f)
                 curveTo(11.25f, 8.4142f, 11.5858f, 8.75f, 12.0f, 8.75f)
@@ -70,7 +75,7 @@ public val BusinessStatisticGroup.RoundGraph: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _roundGraph!!
     }
 

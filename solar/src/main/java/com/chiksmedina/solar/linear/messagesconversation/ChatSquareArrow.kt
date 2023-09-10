@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.linear.MessagesConversationGroup
 
-public val MessagesConversationGroup.ChatSquareArrow: ImageVector
+val MessagesConversationGroup.ChatSquareArrow: ImageVector
     get() {
         if (_chatSquareArrow != null) {
             return _chatSquareArrow!!
         }
-        _chatSquareArrow = Builder(name = "ChatSquareArrow", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _chatSquareArrow = Builder(
+            name = "ChatSquareArrow", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(12.978f, 21.4558f)
                 lineTo(13.6213f, 21.8413f)
                 lineTo(13.6213f, 21.8413f)
@@ -280,7 +284,7 @@ public val MessagesConversationGroup.ChatSquareArrow: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chatSquareArrow!!
     }
 

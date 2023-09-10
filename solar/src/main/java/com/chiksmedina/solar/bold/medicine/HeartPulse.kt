@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.MedicineGroup
 
-public val MedicineGroup.HeartPulse: ImageVector
+val MedicineGroup.HeartPulse: ImageVector
     get() {
         if (_heartPulse != null) {
             return _heartPulse!!
         }
-        _heartPulse = Builder(name = "HeartPulse", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _heartPulse = Builder(
+            name = "HeartPulse", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(8.9617f, 19.3707f)
                 curveTo(6.0194f, 16.9714f, 2.0f, 13.0079f, 2.0f, 9.2604f)
                 curveTo(2.0f, 3.3495f, 7.5002f, 0.6626f, 12.0f, 5.4988f)
@@ -75,7 +79,7 @@ public val MedicineGroup.HeartPulse: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _heartPulse!!
     }
 

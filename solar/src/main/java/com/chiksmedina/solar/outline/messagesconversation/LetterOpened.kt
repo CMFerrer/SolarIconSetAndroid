@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.MessagesConversationGroup
 
-public val MessagesConversationGroup.LetterOpened: ImageVector
+val MessagesConversationGroup.LetterOpened: ImageVector
     get() {
         if (_letterOpened != null) {
             return _letterOpened!!
         }
-        _letterOpened = Builder(name = "LetterOpened", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _letterOpened = Builder(
+            name = "LetterOpened", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(10.9463f, 1.25f)
                 horizontalLineTo(13.0537f)
                 curveTo(14.1865f, 1.25f, 15.1123f, 1.25f, 15.8431f, 1.3482f)
@@ -123,7 +127,7 @@ public val MessagesConversationGroup.LetterOpened: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _letterOpened!!
     }
 

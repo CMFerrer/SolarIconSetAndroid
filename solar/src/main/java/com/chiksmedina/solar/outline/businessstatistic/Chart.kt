@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.BusinessStatisticGroup
 
-public val BusinessStatisticGroup.Chart: ImageVector
+val BusinessStatisticGroup.Chart: ImageVector
     get() {
         if (_chart != null) {
             return _chart!!
         }
-        _chart = Builder(name = "Chart", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _chart = Builder(
+            name = "Chart", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(12.0494f, 1.25f)
                 horizontalLineTo(11.9506f)
                 curveTo(11.2858f, 1.25f, 10.7129f, 1.2499f, 10.2542f, 1.3116f)
@@ -80,7 +84,7 @@ public val BusinessStatisticGroup.Chart: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _chart!!
     }
 

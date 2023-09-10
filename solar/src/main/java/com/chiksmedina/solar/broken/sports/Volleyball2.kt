@@ -1,12 +1,10 @@
 package com.chiksmedina.solar.broken.sports
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
 import androidx.compose.ui.graphics.StrokeCap.Companion.Round
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.broken.SportsGroup
 
-public val SportsGroup.Volleyball2: ImageVector
+val SportsGroup.Volleyball2: ImageVector
     get() {
         if (_volleyball2 != null) {
             return _volleyball2!!
         }
-        _volleyball2 = Builder(name = "Volleyball2", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+        _volleyball2 = Builder(
+            name = "Volleyball2", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(11.5697f, 12.5532f)
                 lineTo(12.1617f, 13.0137f)
                 lineTo(12.1617f, 13.0137f)
@@ -140,9 +142,11 @@ public val SportsGroup.Volleyball2: ImageVector
                 lineTo(13.8447f, 7.5477f)
                 close()
             }
-            path(fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
-                    strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0x00000000)), stroke = SolidColor(Color(0xFF000000)),
+                strokeLineWidth = 1.5f, strokeLineCap = Round, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.3387f, 6.9985f)
                 curveTo(4.1871f, 5.5262f, 5.4226f, 4.2507f, 7.0f, 3.34f)
                 curveTo(11.7829f, 0.5785f, 17.8988f, 2.2173f, 20.6602f, 7.0002f)
@@ -151,7 +155,7 @@ public val SportsGroup.Volleyball2: ImageVector
                 curveTo(2.429f, 15.4228f, 1.9969f, 13.7004f, 1.9983f, 12.0012f)
             }
         }
-        .build()
+            .build()
         return _volleyball2!!
     }
 

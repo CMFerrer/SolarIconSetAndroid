@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.facesemotionsstickers
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.FacesEmotionsStickersGroup
 
-public val FacesEmotionsStickersGroup.EmojiFunnyCircle: ImageVector
+val FacesEmotionsStickersGroup.EmojiFunnyCircle: ImageVector
     get() {
         if (_emojiFunnyCircle != null) {
             return _emojiFunnyCircle!!
         }
-        _emojiFunnyCircle = Builder(name = "EmojiFunnyCircle", defaultWidth = 24.0.dp, defaultHeight
-                = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _emojiFunnyCircle = Builder(
+            name = "EmojiFunnyCircle", defaultWidth = 24.0.dp, defaultHeight
+            = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(12.0f, 22.0f)
                 curveTo(17.5228f, 22.0f, 22.0f, 17.5228f, 22.0f, 12.0f)
                 curveTo(22.0f, 6.4771f, 17.5228f, 2.0f, 12.0f, 2.0f)
@@ -31,9 +32,11 @@ public val FacesEmotionsStickersGroup.EmojiFunnyCircle: ImageVector
                 curveTo(2.0f, 17.5228f, 6.4771f, 22.0f, 12.0f, 22.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.8978f, 11.2237f)
                 curveTo(15.4313f, 11.0808f, 15.6899f, 10.3162f, 15.4755f, 9.516f)
                 curveTo(15.2611f, 8.7158f, 14.6548f, 8.183f, 14.1213f, 8.3259f)
@@ -41,9 +44,11 @@ public val FacesEmotionsStickersGroup.EmojiFunnyCircle: ImageVector
                 curveTo(13.7581f, 10.8338f, 14.3643f, 11.3666f, 14.8978f, 11.2237f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(9.1024f, 12.7767f)
                 curveTo(9.6358f, 12.6337f, 9.8945f, 11.8692f, 9.6801f, 11.069f)
                 curveTo(9.4657f, 10.2688f, 8.8594f, 9.736f, 8.3259f, 9.8789f)
@@ -51,9 +56,11 @@ public val FacesEmotionsStickersGroup.EmojiFunnyCircle: ImageVector
                 curveTo(7.9626f, 12.3868f, 8.5689f, 12.9196f, 9.1024f, 12.7767f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(8.1852f, 15.751f)
                 curveTo(8.2859f, 15.3492f, 8.6933f, 15.1052f, 9.0951f, 15.2059f)
                 curveTo(10.2254f, 15.4892f, 11.5234f, 15.4927f, 12.8411f, 15.1396f)
@@ -71,7 +78,7 @@ public val FacesEmotionsStickersGroup.EmojiFunnyCircle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _emojiFunnyCircle!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.bold.EssentionalUiGroup
 
-public val EssentionalUiGroup.DangerTriangle: ImageVector
+val EssentionalUiGroup.DangerTriangle: ImageVector
     get() {
         if (_dangerTriangle != null) {
             return _dangerTriangle!!
         }
-        _dangerTriangle = Builder(name = "DangerTriangle", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _dangerTriangle = Builder(
+            name = "DangerTriangle", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(5.3117f, 10.7615f)
                 curveTo(8.2301f, 5.5872f, 9.6892f, 3.0f, 12.0f, 3.0f)
                 curveTo(14.3107f, 3.0f, 15.7699f, 5.5872f, 18.6883f, 10.7615f)
@@ -48,7 +52,7 @@ public val EssentionalUiGroup.DangerTriangle: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _dangerTriangle!!
     }
 

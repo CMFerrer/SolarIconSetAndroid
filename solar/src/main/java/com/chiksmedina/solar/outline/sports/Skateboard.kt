@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SportsGroup
 
-public val SportsGroup.Skateboard: ImageVector
+val SportsGroup.Skateboard: ImageVector
     get() {
         if (_skateboard != null) {
             return _skateboard!!
         }
-        _skateboard = Builder(name = "Skateboard", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _skateboard = Builder(
+            name = "Skateboard", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(2.624f, 6.584f)
                 lineTo(3.4366f, 7.8028f)
                 curveTo(4.0394f, 8.7069f, 5.0541f, 9.25f, 6.1407f, 9.25f)
@@ -61,7 +65,7 @@ public val SportsGroup.Skateboard: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _skateboard!!
     }
 

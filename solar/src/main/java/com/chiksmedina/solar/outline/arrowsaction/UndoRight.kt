@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ArrowsActionGroup
 
-public val ArrowsActionGroup.UndoRight: ImageVector
+val ArrowsActionGroup.UndoRight: ImageVector
     get() {
         if (_undoRight != null) {
             return _undoRight!!
         }
-        _undoRight = Builder(name = "UndoRight", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _undoRight = Builder(
+            name = "UndoRight", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(16.4697f, 3.4697f)
                 curveTo(16.7626f, 3.1768f, 17.2374f, 3.1768f, 17.5303f, 3.4697f)
                 lineTo(20.5303f, 6.4697f)
@@ -61,7 +65,7 @@ public val ArrowsActionGroup.UndoRight: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _undoRight!!
     }
 

@@ -11,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.ElectronicDevicesGroup
 
-public val ElectronicDevicesGroup.WirelessCharge: ImageVector
+val ElectronicDevicesGroup.WirelessCharge: ImageVector
     get() {
         if (_wirelessCharge != null) {
             return _wirelessCharge!!
         }
-        _wirelessCharge = Builder(name = "WirelessCharge", defaultWidth = 24.0.dp, defaultHeight =
-                24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _wirelessCharge = Builder(
+            name = "WirelessCharge", defaultWidth = 24.0.dp, defaultHeight =
+            24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.9294f, 2.7502f)
                 curveTo(7.9302f, 2.718f, 4.718f, 5.9302f, 4.7502f, 9.9294f)
                 curveTo(4.7826f, 13.938f, 8.062f, 17.2174f, 12.0706f, 17.2498f)
@@ -81,7 +85,7 @@ public val ElectronicDevicesGroup.WirelessCharge: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _wirelessCharge!!
     }
 

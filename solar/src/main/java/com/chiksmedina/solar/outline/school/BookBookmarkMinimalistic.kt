@@ -11,17 +11,21 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.outline.SchoolGroup
 
-public val SchoolGroup.BookBookmarkMinimalistic: ImageVector
+val SchoolGroup.BookBookmarkMinimalistic: ImageVector
     get() {
         if (_bookBookmarkMinimalistic != null) {
             return _bookBookmarkMinimalistic!!
         }
-        _bookBookmarkMinimalistic = Builder(name = "BookBookmarkMinimalistic", defaultWidth =
-                24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
-                24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _bookBookmarkMinimalistic = Builder(
+            name = "BookBookmarkMinimalistic", defaultWidth =
+            24.0.dp, defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight =
+            24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(9.9451f, 1.25f)
                 horizontalLineTo(14.0549f)
                 curveTo(15.4225f, 1.25f, 16.5248f, 1.25f, 17.3918f, 1.3665f)
@@ -110,7 +114,7 @@ public val SchoolGroup.BookBookmarkMinimalistic: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _bookBookmarkMinimalistic!!
     }
 

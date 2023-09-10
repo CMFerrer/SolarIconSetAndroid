@@ -1,13 +1,10 @@
 package com.chiksmedina.solar.boldduotone.search
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.EvenOdd
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -15,16 +12,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SearchGroup
 
-public val SearchGroup.RoundedMagniferBug: ImageVector
+val SearchGroup.RoundedMagniferBug: ImageVector
     get() {
         if (_roundedMagniferBug != null) {
             return _roundedMagniferBug!!
         }
-        _roundedMagniferBug = Builder(name = "RoundedMagniferBug", defaultWidth = 24.0.dp,
-                defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+        _roundedMagniferBug = Builder(
+            name = "RoundedMagniferBug", defaultWidth = 24.0.dp,
+            defaultHeight = 24.0.dp, viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(17.8196f, 19.7011f)
                 curveTo(17.7303f, 18.6069f, 18.6359f, 17.6934f, 19.7206f, 17.7835f)
                 curveTo(19.9087f, 17.7991f, 20.1338f, 17.8675f, 20.3632f, 17.9372f)
@@ -43,9 +44,11 @@ public val SearchGroup.RoundedMagniferBug: ImageVector
                 curveTo(17.9029f, 20.1179f, 17.835f, 19.8908f, 17.8196f, 19.7011f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(11.1566f, 20.3133f)
                 curveTo(16.2137f, 20.3133f, 20.3133f, 16.2137f, 20.3133f, 11.1566f)
                 curveTo(20.3133f, 6.0996f, 16.2137f, 2.0f, 11.1566f, 2.0f)
@@ -53,9 +56,11 @@ public val SearchGroup.RoundedMagniferBug: ImageVector
                 curveTo(2.0f, 16.2137f, 6.0996f, 20.3133f, 11.1566f, 20.3133f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = EvenOdd) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = EvenOdd
+            ) {
                 moveTo(11.0f, 6.5f)
                 curveTo(9.8592f, 6.5f, 8.8433f, 7.0321f, 8.1895f, 7.8604f)
                 lineTo(7.5099f, 7.5224f)
@@ -113,7 +118,7 @@ public val SearchGroup.RoundedMagniferBug: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _roundedMagniferBug!!
     }
 

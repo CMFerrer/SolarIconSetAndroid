@@ -1,12 +1,9 @@
 package com.chiksmedina.solar.boldduotone.security
 
 import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.graphics.PathFillType
 import androidx.compose.ui.graphics.PathFillType.Companion.NonZero
 import androidx.compose.ui.graphics.SolidColor
-import androidx.compose.ui.graphics.StrokeCap
 import androidx.compose.ui.graphics.StrokeCap.Companion.Butt
-import androidx.compose.ui.graphics.StrokeJoin
 import androidx.compose.ui.graphics.StrokeJoin.Companion.Miter
 import androidx.compose.ui.graphics.vector.ImageVector
 import androidx.compose.ui.graphics.vector.ImageVector.Builder
@@ -14,16 +11,20 @@ import androidx.compose.ui.graphics.vector.path
 import androidx.compose.ui.unit.dp
 import com.chiksmedina.solar.boldduotone.SecurityGroup
 
-public val SecurityGroup.Scanner: ImageVector
+val SecurityGroup.Scanner: ImageVector
     get() {
         if (_scanner != null) {
             return _scanner!!
         }
-        _scanner = Builder(name = "Scanner", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
-                viewportWidth = 24.0f, viewportHeight = 24.0f).apply {
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
-                    = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
-                    strokeLineMiter = 4.0f, pathFillType = NonZero) {
+        _scanner = Builder(
+            name = "Scanner", defaultWidth = 24.0.dp, defaultHeight = 24.0.dp,
+            viewportWidth = 24.0f, viewportHeight = 24.0f
+        ).apply {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, fillAlpha = 0.5f, strokeAlpha
+                = 0.5f, strokeLineWidth = 0.0f, strokeLineCap = Butt, strokeLineJoin = Miter,
+                strokeLineMiter = 4.0f, pathFillType = NonZero
+            ) {
                 moveTo(3.4645f, 3.4645f)
                 curveTo(2.0f, 4.9289f, 2.0f, 7.286f, 2.0f, 12.0f)
                 curveTo(2.0f, 16.714f, 2.0f, 19.0711f, 3.4645f, 20.5355f)
@@ -35,9 +36,11 @@ public val SecurityGroup.Scanner: ImageVector
                 curveTo(7.286f, 2.0f, 4.9289f, 2.0f, 3.4645f, 3.4645f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(10.004f, 5.7517f)
                 curveTo(10.4182f, 5.7495f, 10.7522f, 5.4119f, 10.75f, 4.9977f)
                 curveTo(10.7478f, 4.5835f, 10.4102f, 4.2495f, 9.996f, 4.2517f)
@@ -53,9 +56,11 @@ public val SecurityGroup.Scanner: ImageVector
                 curveTo(8.1327f, 5.7845f, 8.9107f, 5.7575f, 10.004f, 5.7517f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(14.0041f, 4.2517f)
                 curveTo(13.5899f, 4.2495f, 13.2523f, 4.5835f, 13.2501f, 4.9977f)
                 curveTo(13.2479f, 5.4119f, 13.5819f, 5.7495f, 13.9961f, 5.7517f)
@@ -71,9 +76,11 @@ public val SecurityGroup.Scanner: ImageVector
                 curveTo(15.9842f, 4.2822f, 15.0858f, 4.2575f, 14.0041f, 4.2517f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.0f, 11.2501f)
                 curveTo(4.5858f, 11.2501f, 4.25f, 11.5858f, 4.25f, 12.0001f)
                 curveTo(4.25f, 12.4143f, 4.5858f, 12.7501f, 5.0f, 12.7501f)
@@ -83,9 +90,11 @@ public val SecurityGroup.Scanner: ImageVector
                 horizontalLineTo(5.0f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(5.7523f, 14.9944f)
                 curveTo(5.7491f, 14.5802f, 5.4107f, 14.247f, 4.9965f, 14.2501f)
                 curveTo(4.5823f, 14.2533f, 4.2491f, 14.5916f, 4.2523f, 15.0058f)
@@ -101,9 +110,11 @@ public val SecurityGroup.Scanner: ImageVector
                 curveTo(5.792f, 16.4606f, 5.7595f, 15.9431f, 5.7523f, 14.9944f)
                 close()
             }
-            path(fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
-                    strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
-                    pathFillType = NonZero) {
+            path(
+                fill = SolidColor(Color(0xFF000000)), stroke = null, strokeLineWidth = 0.0f,
+                strokeLineCap = Butt, strokeLineJoin = Miter, strokeLineMiter = 4.0f,
+                pathFillType = NonZero
+            ) {
                 moveTo(19.7477f, 15.0058f)
                 curveTo(19.7509f, 14.5916f, 19.4177f, 14.2533f, 19.0035f, 14.2501f)
                 curveTo(18.5893f, 14.247f, 18.2509f, 14.5802f, 18.2477f, 14.9944f)
@@ -120,7 +131,7 @@ public val SecurityGroup.Scanner: ImageVector
                 close()
             }
         }
-        .build()
+            .build()
         return _scanner!!
     }
 
