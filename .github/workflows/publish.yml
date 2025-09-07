@@ -7,10 +7,6 @@ jobs:
     name: Release build and publish
     runs-on: macOS-latest
     steps:
-      - name: Grant execute permission for gradlew
-        run: chmod +x gradlew
-      - name: Run Gradle build
-        run: ./gradlew build
       - name: Check out code
         uses: actions/checkout@v4
       - name: Set up JDK 21
@@ -26,3 +22,7 @@ jobs:
           ORG_GRADLE_PROJECT_signingInMemoryKeyId: ${{ secrets.SIGNING_KEY_ID }}
           ORG_GRADLE_PROJECT_signingInMemoryKeyPassword: ${{ secrets.SIGNING_PASSWORD }}
           ORG_GRADLE_PROJECT_signingInMemoryKey: ${{ secrets.GPG_KEY_CONTENTS }}
+      - name: Grant execute permission for gradlew
+        run: chmod +x gradlew
+      - name: Run Gradle build
+        run: ./gradlew build
