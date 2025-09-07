@@ -1,45 +1,79 @@
+import org.jetbrains.kotlin.gradle.dsl.JvmTarget
+
 plugins {
-    id("com.android.library")
-    id("org.jetbrains.kotlin.android")
-    id("com.vanniktech.maven.publish")
+    alias(libs.plugins.kotlinMultiplatform)
+    alias(libs.plugins.androidLibrary)
+    alias(libs.plugins.vanniktech.mavenPublish)
+}
+
+group = "dev.chiksmedina.solar"
+version = "2.0.0"
+
+kotlin {
+    androidTarget {
+        publishLibraryVariants("release")
+        compilerOptions {
+            jvmTarget.set(JvmTarget.JVM_11)
+        }
+    }
+    iosX64()
+    iosArm64()
+    iosSimulatorArm64()
+
+    sourceSets {
+        commonMain {
+            dependencies {
+                implementation(libs.kotlin.stdlib)
+                implementation(libs.compose.ui)
+            }
+        }
+    }
+
 }
 
 android {
     namespace = "com.chiksmedina.solar"
-    compileSdk = 34
-
+    compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
-
-        minSdk = 21
-        testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
-        consumerProguardFiles("consumer-rules.pro")
-    }
-
-    buildTypes {
-        release {
-            isMinifyEnabled = false
-            proguardFiles(
-                getDefaultProguardFile("proguard-android-optimize.txt"),
-                "proguard-rules.pro"
-            )
-        }
+        minSdk = libs.versions.android.minSdk.get().toInt()
     }
     compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_1_8
-        targetCompatibility = JavaVersion.VERSION_1_8
-    }
-    kotlinOptions {
-        jvmTarget = "1.8"
+        sourceCompatibility = JavaVersion.VERSION_11
+        targetCompatibility = JavaVersion.VERSION_11
     }
 }
 
+mavenPublishing {
+    publishToMavenCentral()
 
+    signAllPublications()
 
-dependencies {
+    coordinates(group.toString(), "solar", version.toString())
 
-    val composeVersion = "1.6.0-alpha05"
-
-    implementation("androidx.core:core-ktx:1.12.0")
-    implementation("androidx.compose.ui:ui:$composeVersion")
-    implementation("androidx.compose.ui:ui-graphics:$composeVersion")
+    pom {
+        name = "Solar Icon Set"
+        description = "Solar is a library that provides icon pack for Android development"
+        inceptionYear = "2023"
+        url = "https://github.com/CMFerrer/SolarIconSetAndroid"
+        licenses {
+            license {
+                name = "MIT License"
+                url = "https://opensource.org/licenses/MIT"
+                distribution = "repo"
+            }
+        }
+        developers {
+            developer {
+                id = "chiksmedina"
+                name = "Chiks Medina"
+                email = "hola@chiksmedina.dev"
+                url = "https://github.com/CMFerrer"
+            }
+        }
+        scm {
+            url = "https://github.com/CMFerrer/SolarIconSetAndroid"
+            connection = "scm:git:git://github.com/CMFerrer/SolarIconSetAndroid.git"
+            developerConnection = "scm:git:ssh://git@github.com/CMFerrer/SolarIconSetAndroid.git"
+        }
+    }
 }
