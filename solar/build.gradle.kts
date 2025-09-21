@@ -7,7 +7,7 @@ plugins {
 }
 
 group = "dev.chiksmedina.solar"
-version = "2.0.0"
+version = "2.1.0"
 
 kotlin {
     androidTarget {
@@ -16,7 +16,8 @@ kotlin {
             jvmTarget.set(JvmTarget.JVM_11)
         }
     }
-    iosX64()
+    jvm()
+    macosArm64()
     iosArm64()
     iosSimulatorArm64()
 
@@ -32,7 +33,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.chiksmedina.solar"
+    namespace = "dev.chiksmedina.solar"
     compileSdk = libs.versions.android.compileSdk.get().toInt()
     defaultConfig {
         minSdk = libs.versions.android.minSdk.get().toInt()

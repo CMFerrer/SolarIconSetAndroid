@@ -7,7 +7,7 @@ Librería para Android que provee íconos de [Solar Icon Set](https://solaricons
 Disponible en `mavenCentral()`.
 
 ```kotlin
-implementation("dev.chiksmedina.solar:solar:1.0.1")
+implementation("dev.chiksmedina.solar:solar:2.1.0")
 ```
 ## Uso
 
