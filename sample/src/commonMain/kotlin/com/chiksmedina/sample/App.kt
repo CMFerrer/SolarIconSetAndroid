@@ -7,10 +7,10 @@ import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.chiksmedina.Solar
-import com.chiksmedina.solar.Linear
-import com.chiksmedina.solar.linear.Arrows
-import com.chiksmedina.solar.linear.arrows.ArrowUp
+import dev.chiksmedina.Solar
+import dev.chiksmedina.solar.Linear
+import dev.chiksmedina.solar.linear.Arrows
+import dev.chiksmedina.solar.linear.arrows.ArrowUp
 import org.jetbrains.compose.ui.tooling.preview.Preview
 
 @Composable

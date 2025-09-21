@@ -32,3 +32,4 @@ google-services.json
 .kotlin
 #So we don't accidentally commit our private keys
 *.gpg
+.DS_Store
