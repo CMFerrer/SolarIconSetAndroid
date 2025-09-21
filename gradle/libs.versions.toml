@@ -2,9 +2,9 @@
 agp = "8.13.0"
 android-minSdk = "24"
 android-compileSdk = "36"
-androidx-activity = "1.10.1"
-composeMultiplatform = "1.8.2"
-kotlin = "2.2.10"
+androidx-activity = "1.11.0"
+composeMultiplatform = "1.9.0"
+kotlin = "2.2.20"
 vanniktechMavenPublish = "0.34.0"
 
 [libraries]
